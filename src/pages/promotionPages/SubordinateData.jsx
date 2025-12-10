@@ -1,0 +1,1011 @@
+import React, { useEffect, useState, useMemo } from "react";
+import { Tabs, Tab } from "@mui/material";
+import Mobile from "../../components/layout/Mobile";
+import IconButton from "@mui/material/IconButton";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import SearchIcon from "@mui/icons-material/Search";
+import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import CardContent from "@mui/material/CardContent";
+import Card from "@mui/material/Card";
+import Button from "@mui/material/Button";
+import Drawer from "@mui/material/Drawer";
+import DatePickerHeader from "../../components/common/DatePickerHeader";
+import DatePickerBody from "../../components/common/DatePickerBody";
+import LevelHeader from "../../components/common/LevelHeader";
+import LevelBody from "../../components/common/LevelBody";
+import { domain } from "../../utils/Secret";
+import Divider from "@mui/material/Divider";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import { useNavigate } from "react-router-dom";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
+import LoadingLogo from "../../components/utils/LodingLogo";
+import { useAuth } from "../../context/AuthContext";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
+import Pagination from "@mui/material/Pagination";
+import PaginationItem from "@mui/material/PaginationItem";
+
+const getDaysInMonth = (year, month) => {
+  return Array.from(
+    { length: new Date(year, month, 0).getDate() },
+    (_, i) => i + 1
+  );
+};
+
+const SubordinateData = () => {
+  const today = new Date();
+  const [tabValue, setTabValue] = useState(0);
+  const [dailyDeposits, setDailyDeposits] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchDate, setSearchDate] = useState("");
+  const [user, setUser] = useState(null);
+  const [commissionHistory, setCommissionHistory] = useState(null);
+  const [datePickerOpen, setDatePickerOpen] = useState(false);
+  const [levelDrawerOpen, setLevelDrawerOpen] = useState(false);
+  const [year, setYear] = useState(today.getFullYear());
+  const [month, setMonth] = useState(today.getMonth() + 1);
+  const [day, setDay] = useState(today.getDate() - 1);
+  const [selectedLevel, setSelectedLevel] = useState("All");
+  const [searchLevel, setSearchLevel] = useState("All");
+  const [daysInMonth, setDaysInMonth] = useState(getDaysInMonth(2023, 1));
+  const [subordinateDataSummary, setSubordinateDataSummary] = useState([]);
+  const [filteredSummary, setFilteredSummary] = useState([]);
+  const navigate = useNavigate();
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const [summaryStats, setSummaryStats] = useState({
+    depositNumber: 0,
+    depositAmount: 0,
+    bettorsCount: 0,
+    totalBetAmount: 0,
+    firstDepositCount: 0,
+    firstDepositAmount: 0,
+  });
+  const [subordinateTurnOver, setSubordinateTurnOver] = useState({});
+  const { axiosInstance } = useAuth();
+
+  const [subordinatePage, setSubordinatePage] = useState(1);
+  const [commissionPage, setCommissionPage] = useState(1);
+  const [subordinatePagination, setSubordinatePagination] = useState({
+    currentPage: 1,
+    totalPages: 1,
+    totalItems: 0,
+    itemsPerPage: 10
+  });
+  const [commissionPagination, setCommissionPagination] = useState({
+    currentPage: 1,
+    totalPages: 1,
+    totalItems: 0,
+    itemsPerPage: 10
+  });
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const today = new Date();
+    today.setDate(today.getDate());
+    const formattedDate = today.toISOString().split("T")[0];
+    setSearchDate(formattedDate);
+    setDaysInMonth(getDaysInMonth(year, month));
+
+    if (day > daysInMonth.length) {
+      setDay(daysInMonth[daysInMonth.length - 1]);
+    }
+  }, [year, month, day]);
+
+  const initializeDate = () => {
+    const today = new Date();
+    today.setDate(today.getDate() - 1);
+    const formattedDate = today.toISOString().split("T")[0];
+  };
+
+  useEffect(() => {
+    initializeDate();
+  }, []);
+
+  const fetchData = async (date, subPage = 1, commPage = 1) => {
+    if (!date) return;
+
+    setIsLoading(true);
+
+    try {
+      const [subordinateResponse, analysisResponse] = await Promise.all([
+        axiosInstance.get(`${domain}/api/promotion/subordinate-details-data`, {
+          params: {
+            startDate: date,
+            page: subPage,
+            ...(selectedLevel === "All" ? {} : { level: selectedLevel }),
+          },
+          withCredentials: true,
+        }),
+        axiosInstance.get(`${domain}/api/subordinate/analysis`, {
+          params: {
+            timeFilter: "custom",
+            customDate: date,
+          },
+          withCredentials: true,
+        })
+      ]);
+
+      if (subordinateResponse.data.data) {
+        setUser(subordinateResponse.data.data.subordinates.data);
+        setCommissionHistory(subordinateResponse.data.data.commissionDetails.data);
+        setSubordinatePagination(subordinateResponse.data.data.subordinates.pagination);
+        setCommissionPagination(subordinateResponse.data.data.commissionDetails.pagination);
+      }
+
+      if (analysisResponse.data.data) {
+        const data = analysisResponse.data.data;
+        setSummaryStats({
+          depositNumber: data.filteredDirectDeposits + data.filteredIndirectDeposits,
+          depositAmount: data.filteredDirectDepositAmount + data.filteredIndirectDepositAmount,
+          bettorsCount: data.filteredDirectBettors + data.filteredIndirectBettors,
+          totalBetAmount: data.filteredDirectBetAmount + data.filteredIndirectBetAmount,
+          firstDepositCount: data.filteredDirectFirstDeposits + data.filteredIndirectFirstDeposits,
+          firstDepositAmount: data.totalIndirectFirstDepositAmount + data.totalDirectFirstDepositAmount,
+        });
+      }
+    } catch (error) {
+      console.error("Error fetching data:", {
+        message: error.message,
+        response: error.response?.data
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    if (tabValue === 0) {
+      fetchData(searchDate, subordinatePage, 1);
+    } else {
+      fetchData(searchDate, 1, commissionPage);
+    }
+  }, [tabValue, subordinatePage, commissionPage]);
+
+  useEffect(() => {
+    setSubordinatePage(1);
+    setCommissionPage(1);
+    fetchData(searchDate, 1, 1);
+  }, [searchDate, selectedLevel]);
+
+  const handleTabChange = (event, newValue) => {
+    setTabValue(newValue);
+  };
+
+  const handleDateChange = () => {
+    setSearchDate(
+      `${year}-${month < 10 ? `0${month}` : month}-${day < 10 ? `0${day}` : day}`
+    );
+    setDatePickerOpen(false);
+  };
+
+  const handleLevelConfirm = () => {
+    setSearchLevel(selectedLevel === "All" ? "All" : selectedLevel.toString());
+    setLevelDrawerOpen(false);
+  };
+
+  const handleSubordinatePageChange = (event, value) => {
+    setSubordinatePage(value);
+  };
+
+  const handleCommissionPageChange = (event, value) => {
+    setCommissionPage(value);
+  };
+
+  const handleCopyUserId = (userId) => {
+    navigator.clipboard.writeText(userId.toString());
+  };
+
+  const PaginationControls = ({ currentPage, totalPages, onChange }) => {
+    return totalPages > 1 ? (
+      <Box sx={{ display: 'flex', justifyContent: 'center', my: 2 }}>
+        <Pagination
+          count={totalPages}
+          page={currentPage}
+          onChange={onChange}
+          shape="rounded"
+          size="medium"
+          siblingCount={isSmallScreen ? 0 : 1}
+          renderItem={(item) => (
+            <PaginationItem
+              slots={{ previous: NavigateBeforeIcon, next: NavigateNextIcon }}
+              {...item}
+              sx={{
+                color: 'white',
+                '&.Mui-selected': {
+                  backgroundColor: '#FED358',
+                  color: 'black',
+                },
+                '&.MuiPaginationItem-root': {
+                  margin: '0 2px',
+                },
+              }}
+            />
+          )}
+        />
+      </Box>
+    ) : null;
+  };
+
+  return (
+    <div>
+      <Mobile>
+        <Box
+          display="flex"
+          flexDirection="column"
+          height="100vh"
+          position="relative"
+          backgroundColor="#110d14"
+        >
+          <Box flexGrow={1}>
+            <Grid
+              container
+              alignItems="center"
+              justifyContent="center"
+              sx={{
+                position: "sticky",
+                top: 0,
+                zIndex: 1000,
+                backgroundColor: "#110d14",
+                padding: "7px 12px",
+              }}
+            >
+              <Grid
+                item
+                xs={12}
+                container
+                alignItems="center"
+                justifyContent="center"
+              >
+                <IconButton
+                  sx={{
+                    color: "#FDE4BC",
+                    position: "absolute",
+                    left: 0,
+                    p: "12px",
+                  }}
+                  onClick={() => navigate(-1)}
+                >
+                  <ArrowBackIosNewIcon sx={{ fontSize: "19px" }} />
+                </IconButton>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    color: "#FDE4BC",
+                    textAlign: "center",
+                    fontSize: "19px",
+                  }}
+                >
+                  Subordinate Data
+                </Typography>
+              </Grid>
+            </Grid>
+
+            <Grid container spacing={2} sx={{ px: "16px", pt: "15px" }}>
+              <Grid item xs={12}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    backgroundColor: "#241e22",
+                    borderRadius: "5px",
+                    padding: "5px 10px",
+                  }}
+                >
+                  <input
+                    value={searchTerm}
+                    onChange={(event) => setSearchTerm(event.target.value)}
+                    placeholder="Search subordinate UID"
+                    style={{
+                      flexGrow: 1,
+                      border: "none",
+                      backgroundColor: "transparent",
+                      color: "#FDE4BC",
+                      outline: "none",
+                      padding: "10px",
+                      fontSize: "16px",
+                    }}
+                  />
+                  <IconButton
+                    onClick={() => { }}
+                    sx={{
+                      background: "#FED358",
+                      padding: "0px 16px",
+                      borderRadius: "50px",
+                      "&:hover": {
+                        background: "#FED358",
+                      },
+                    }}
+                  >
+                    <SearchIcon style={{ color: "black", fontSize: "32px" }} />
+                  </IconButton>
+                </Box>
+              </Grid>
+
+              <Grid item xs={12} sx={{ display: "flex", gap: 2, mb: 2 }}>
+                <Button
+                  variant="outlined"
+                  onClick={() => setLevelDrawerOpen(true)}
+                  sx={{
+                    width: "48%",
+                    height: "2.8rem",
+                    backgroundColor: "#241e22",
+                    textTransform: "none",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    padding: "0 16px",
+                    borderColor: "transparent",
+                    color: "#FDE4BC",
+                    borderRadius: "5px",
+                  }}
+                >
+                  {searchLevel === "All"
+                    ? "All Levels"
+                    : `Level ${searchLevel}`}
+                  <KeyboardArrowDownOutlinedIcon sx={{ color: "#B79C8B" }} />
+                </Button>
+
+                <Button
+                  variant="outlined"
+                  sx={{
+                    width: "48%",
+                    height: "2.8rem",
+                    backgroundColor: "#241e22",
+                    textTransform: "none",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    padding: "0 16px",
+                    borderColor: "transparent",
+                    color: "#FDE4BC",
+                    borderRadius: "5px",
+                  }}
+                  onClick={() => setDatePickerOpen(true)}
+                >
+                  {searchDate || "Choose Date"}
+                  <KeyboardArrowDownOutlinedIcon sx={{ color: "#B79C8B" }} />
+                </Button>
+              </Grid>
+            </Grid>
+
+            <Grid container justifyContent="center" alignItems="center">
+              <Box
+                sx={{
+                  padding: "15px 10px",
+                  backgroundColor: "#382e35",
+                  width: "88%",
+                  borderRadius: "10px",
+                  boxShadow: "0 8px 32px rgba(0, 0, 0, 0.2)",
+                  color: "white",
+                }}
+              >
+                <Grid container spacing={2}>
+                  <Grid container item xs={12} spacing={2}>
+                    <Grid item xs={6} sx={{}}>
+                      <Box sx={{ textAlign: "center" }}>
+                        <Typography
+                          variant="h6"
+                          fontWeight="bold"
+                           color="#FDE4BC"
+                          sx={{ borderRight: "1px solid #666462" }}
+                        >
+                          {summaryStats.depositNumber}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            fontSize: "13px",
+                            borderRight: "1px solid #666462",
+                            color:"#B79C8B"
+                          }}
+                        >
+                          Deposit number
+                        </Typography>
+                      </Box>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Box sx={{ textAlign: "center", }}>
+                        <Typography
+                          variant="h6"
+                          fontWeight="bold"
+                          color="#FDE4BC"
+                        >
+                          {summaryStats.depositAmount.toFixed(2)}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{ fontSize: "13px", color: "#FDE4BC" }}
+                        >
+                          Deposit amount
+                        </Typography>
+                      </Box>
+                    </Grid>
+                  </Grid>
+
+                  <Grid container item xs={12} spacing={2}>
+                    <Grid item xs={6} sx={{}}>
+                      <Box sx={{ textAlign: "center" }}>
+                        <Typography
+                          variant="h6"
+                          fontWeight="bold"
+                          sx={{
+                            borderRight: "1px solid #666462",
+                            color: "#FDE4BC",
+                          }}
+                        >
+                          {summaryStats.bettorsCount}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            fontSize: "13px",
+                            borderRight: "1px solid #666462",
+                            color: "#FDE4BC",
+                          }}
+                        >
+                          Number of bettors
+                        </Typography>
+                      </Box>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Box sx={{ textAlign: "center" }}>
+                        <Typography
+                          variant="h6"
+                          fontWeight="bold"
+                          color="#FDE4BC"
+                        >
+                          {summaryStats.totalBetAmount.toFixed(2)}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{ fontSize: "13px", color: "#FDE4BC" }}
+                        >
+                          Total bet
+                        </Typography>
+                      </Box>
+                    </Grid>
+                  </Grid>
+
+                  <Grid container item xs={12} spacing={2}>
+                    <Grid item xs={6} sx={{}}>
+                      <Box sx={{ textAlign: "center" }}>
+                        <Typography
+                          variant="h6"
+                          fontWeight="bold"
+                          sx={{
+                            borderRight: "1px solid #666462",
+                            color: "#FDE4BC",
+                          }}
+                        >
+                          {summaryStats.firstDepositCount}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            fontSize: "13px",
+                            borderRight: "1px solid #666462",
+                            color: "#FDE4BC",
+                          }}
+                        >
+                          Number of people making first deposit
+                        </Typography>
+                      </Box>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Box sx={{ textAlign: "center" }}>
+                        <Typography
+                          variant="h6"
+                          fontWeight="bold"
+                          color="#FDE4BC"
+                        >
+                          {summaryStats.firstDepositAmount.toFixed(2)}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{ fontSize: "13px", color: "#B79C8B" }}
+                        >
+                          First deposit amount
+                        </Typography>
+                      </Box>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Box>
+            </Grid>
+
+            <Box
+              sx={{
+                width: "92%",
+                margin: "12px auto",
+                backgroundColor: "#FED358",
+                borderRadius: "25px",
+              }}
+            >
+              <Tabs
+                value={tabValue}
+                onChange={handleTabChange}
+                textColor="inherit"
+                indicatorColor="primary"
+                variant="fullWidth"
+                sx={{
+                  backgroundColor: "#382e35",
+                  borderRadius: "5px",
+                  color: "#FDE4BC",
+                  "& .MuiTabs-indicator": {
+                    backgroundColor: "#FDE4BC",
+                  },
+                }}
+              >
+                <Tab
+                  label="Subordinate Details"
+                  sx={{
+                    borderBottom: tabValue === 0 ? "1px solid #3D363A" : "none",
+                    textTransform: "initial",
+                  }}
+                />
+                <Tab
+                  label="Commission Details"
+                  sx={{
+                    borderBottom: tabValue === 1 ? "1px solid #3D363A" : "none",
+                    textTransform: "initial",
+                  }}
+                />
+              </Tabs>
+              <Box sx={{ padding: "1px", backgroundColor: "#241e22" }}>
+                {tabValue === 0 && <div></div>}
+                {tabValue === 1 && <div></div>}
+              </Box>
+            </Box>
+
+            <Box sx={{ backgroundColor: "#110d14", px: "16px", borderRadius: "5px", }}>
+              {isLoading ? (
+                <Box sx={{ color: '#B79C8B', display: 'flex', justifyContent: 'center', py: 4 }}>
+                  Loading ...
+                </Box>
+              ) : tabValue === 0 ? (
+                !user || user.length === 0 ? (
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      padding: "16px",
+                      textAlign: "center",
+                    }}
+                  >
+                    <img
+                      src="/assets/No data-1.webp"
+                      alt="No Data Available"
+                      style={{ width: "200px", height: "auto" }}
+                    />
+                    <Typography
+                      variant="h7"
+                      color="#B79C8B"
+                      sx={{ marginTop: "16px" }}
+                    >
+                      No Data Available
+                    </Typography>
+                  </Box>
+                ) : (
+                  <>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Box
+                        sx={{
+                          backgroundColor: "#110d14",
+                          borderRadius: "5px",
+                          paddingBottom: "10px",
+                          width: "100%",
+                          maxWidth: "600px",
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            display: "grid",
+                            gridTemplateColumns: "1fr 1.5fr 1fr 1fr",
+                            padding: "12px",
+                            borderRadius: "5px",
+                          }}
+                        >
+                          <Typography
+                            variant="body2"
+                            sx={{
+                              textAlign: "start",
+                              color: "#FDE4BC",
+                            }}
+                          >
+                            UID
+                          </Typography>
+                          <Typography
+                            variant="body2"
+                            sx={{
+                              color: "#FDE4BC",
+                            }}
+                          >
+                            Joined
+                          </Typography>
+                          <Typography
+                            variant="body2"
+                            sx={{
+                              color: "#FDE4BC",
+                              textAlign: "center",
+                            }}
+                          >
+                            Commission
+                          </Typography>
+                          <Typography
+                            variant="body2"
+                            sx={{
+                              color: "#FDE4BC",
+                              textAlign: "end",
+                            }}
+                          >
+                            Level
+                          </Typography>
+                        </Box>
+
+                        <Divider
+                          sx={{
+                            borderColor: "#3D363A",
+                            borderWidth: "1px",
+                            marginBottom: "16px",
+                          }}
+                        />
+
+                        {user?.map((data, index) => (
+                          <Box
+                            key={index}
+                            sx={{
+                              display: "grid",
+                              gridTemplateColumns: "1fr 2fr 1fr 1fr",
+                              padding: "12px",
+                              textAlign: "left",
+                              backgroundColor: "#241e22",
+                              borderRadius: "8px",
+                              marginBottom:
+                                index !== user.length - 1 ? "8px" : "0",
+                            }}
+                          >
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#B79C8B",
+                              }}
+                            >
+                              {data.userId}
+                            </Typography>
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#B79C8B",
+                                ml: 4,
+                              }}
+                            >
+                              {new Date(data.joiningDate).toLocaleDateString()}
+                            </Typography>
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#B79C8B",
+                                textAlign: "center",
+                              }}
+                            >
+                              {data.totalCommission !== undefined
+                                ? data.totalCommission
+                                : 0}
+                            </Typography>
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#B79C8B",
+                                textAlign: "end",
+                              }}
+                            >
+                              {data.level}
+                            </Typography>
+                          </Box>
+                        ))}
+                      </Box>
+                    </Box>
+
+                    <PaginationControls
+                      currentPage={subordinatePage}
+                      totalPages={subordinatePagination.totalPages}
+                      onChange={handleSubordinatePageChange}
+                    />
+                  </>
+                )
+              ) : !commissionHistory || commissionHistory.length === 0 ? (
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    padding: "16px",
+                    textAlign: "center",
+                  }}
+                >
+                  <img
+                    src="/assets/No data-1.webp"
+                    alt="No Data Available"
+                    style={{ width: "200px", height: "auto" }}
+                  />
+                  <Typography
+                    variant="h7"
+                    color="#B79C8B"
+                    sx={{ marginTop: "16px" }}
+                  >
+                    No Data Available
+                  </Typography>
+                </Box>
+              ) : (
+                <>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "16px",
+                      backgroundColor: "#110d14",
+                      border: "none",
+                      outline: "none",
+                    }}
+                  >
+                    {commissionHistory.map((commission, index) => (
+                      <Card
+                        key={index}
+                        sx={{
+                          backgroundColor: "#241e22",
+                          borderRadius: "5px",
+                          paddingLeft: "8px",
+                          paddingRight: "8px",
+                          boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
+                          maxWidth: "400px",
+                          border: "none",
+                          height: "auto",
+                          pb: "10px",
+                          pt: "4px",
+                        }}
+                      >
+                        <CardContent
+                          sx={{
+                            p: "6px",
+                            paddingBottom: "0 !important",
+                          }}
+                        >
+                          <Box
+                            sx={{
+                              display: "flex",
+                              alignItems: "center",
+                              marginBottom: "4px",
+                              gap: "8px",
+                            }}
+                          >
+                            <Typography
+                              variant="subtitle1"
+                              sx={{
+                                color: "#FDE4BC",
+                                fontWeight: "bold",
+                              }}
+                            >
+                              UID: {commission.userId}
+                            </Typography>
+                            <IconButton
+                              sx={{
+                                padding: "0",
+                                color: "#FDE4BC",
+                              }}
+                              onClick={() => handleCopyUserId(commission.userId)}
+                            >
+                              <ContentCopyIcon fontSize="small" />
+                            </IconButton>
+                          </Box>
+
+                          <Divider sx={{ marginBottom: "6px", borderColor: "#3D363A" }} />
+
+                          <Box
+                            sx={{
+                              display: "grid",
+                              gridTemplateColumns: "1fr auto",
+                              gap: "4px 10px",
+                            }}
+                          >
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#B79C8B",
+                                textAlign: "start",
+                              }}
+                            >
+                              Level:
+                            </Typography>
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#B79C8B",
+                                textAlign: "end",
+                              }}
+                            >
+                              {commission.level}
+                            </Typography>
+
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#B79C8B",
+                                textAlign: "start",
+                              }}
+                            >
+                              Deposit amount:
+                            </Typography>
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#DD9138",
+                                textAlign: "end",
+                              }}
+                            >
+                              {commission.actualAmount}
+                            </Typography>
+
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#B79C8B",
+                                textAlign: "start",
+                              }}
+                            >
+                              Bet amount:
+                            </Typography>
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#DD9138",
+                                textAlign: "end",
+                              }}
+                            >
+                              {commission.gameType === "WINGO" ? "Wingo" : commission.gameType}
+                            </Typography>
+
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#B79C8B",
+                                textAlign: "start",
+                              }}
+                            >
+                              Commission:
+                            </Typography>
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#DD9138",
+                                textAlign: "end",
+                              }}
+                            >
+                              {commission.amount.toFixed(2)}
+                            </Typography>
+
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#B79C8B",
+                                textAlign: "start",
+                              }}
+                            >
+                              Time:
+                            </Typography>
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#837064",
+                                textAlign: "end",
+                              }}
+                            >
+                              {new Date(commission.timestamp).toLocaleDateString()}
+                            </Typography>
+                          </Box>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </Box>
+
+                  <PaginationControls
+                    currentPage={commissionPage}
+                    totalPages={commissionPagination.totalPages}
+                    onChange={handleCommissionPageChange}
+                  />
+                </>
+              )}
+            </Box>
+          </Box>
+          <br />
+          <br />
+          <br />
+        </Box>
+      </Mobile>
+
+      <Drawer
+        anchor="bottom"
+        open={datePickerOpen}
+        onClose={() => setDatePickerOpen(false)}
+        sx={{
+          "& .MuiDrawer-paper": {
+            width: "100%",
+            height: "auto",
+            margin: "0 auto",
+            maxWidth: isSmallScreen ? "600px" : "396px",
+            color: "white",
+            borderTopLeftRadius: "16px",
+            borderTopRightRadius: "16px",
+            overflow: "hidden",
+            padding: "0",
+            backgroundColor: "#241e22",
+          },
+        }}
+      >
+        <DatePickerHeader
+          onCancel={() => setDatePickerOpen(false)}
+          onConfirm={handleDateChange}
+        />
+        <DatePickerBody
+          year={year}
+          month={month}
+          day={day}
+          daysInMonth={daysInMonth}
+          setYear={setYear}
+          setMonth={setMonth}
+          setDay={setDay}
+        />
+      </Drawer>
+
+      <Drawer
+        anchor="bottom"
+        open={levelDrawerOpen}
+        onClose={() => setLevelDrawerOpen(false)}
+        sx={{
+          "& .MuiDrawer-paper": {
+            width: "100%",
+            height: "auto",
+            margin: "0 auto",
+            maxWidth: isSmallScreen ? "600px" : "396px",
+            backgroundColor: "#241e22",
+            color: "#a8a5a1",
+            borderTopLeftRadius: "16px",
+            borderTopRightRadius: "16px",
+          },
+        }}
+      >
+        <LevelHeader
+          onCancel={() => setLevelDrawerOpen(false)}
+          onConfirm={handleLevelConfirm}
+        />
+        <LevelBody
+          selectedLevel={selectedLevel}
+          setSelectedLevel={setSelectedLevel}
+          options={[
+            "Dummy",
+            "All",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+          ]}
+        />
+      </Drawer>
+    </div>
+  );
+};
+
+export default SubordinateData;

@@ -1,0 +1,221 @@
+.Card {
+    background-color: #241e22;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    padding: 16px;
+    position: relative;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    border-bottom: 0.5px solid #3B3833;
+  }
+  
+  .card-header-left h6 {
+    margin: 0;
+    font-size: 16px;
+    color:#FDE4BC
+  }
+  
+  .card-header-left p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .card-header-right {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .card-content .card-row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  
+  /* .card-content .label {
+    color: #FDE4BC;
+  }
+   */
+  .card-content .value {
+    color: #FDE4BC;
+    font-weight: 400;
+  }
+  .result-images{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .lottery-results-heading {
+    font-size: 16px;
+    /* margin: 16px 0 8px 0; */
+    margin-top:37px;
+  }
+  
+  .lottery-results {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 16px 0;
+  }
+  
+  .result-item {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #111111;
+  }
+  
+  .result-item.number {
+    background-color: #ff6347;
+    color: white;
+  }
+  
+  .result-item.small {
+    background-color: #4169e1;
+    color: white;
+  }
+  .result-item.big {
+    background-color: #ffa82e;
+    color: white;
+  }
+  
+  .color-red{
+    background-color: #ff6347;
+    color: white;
+  }
+  .color-green{
+    background-color: #40ad72;
+    color: white;
+  }
+  .color-mix{
+    background: linear-gradient(to right, #fd565c 50%, #b659fe 50%);
+    color: white;
+  }
+  .color-mix-zero{
+    background: linear-gradient(to right, #fd565c 50%, #b659fe 50%);
+    color: white;
+  }
+  .color-mix-five{
+    background: linear-gradient(to right, #40ad72 50%, #b659fe 50%);
+    color: white;
+  }
+  
+  .results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .grid-item {
+    background-color: #382e35;
+    padding: 12px;
+    border-radius: 4px;
+  }
+  
+  .grid-item .value {
+    color:#B79C8B;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  .grid-item .label2 {
+    color:#B79C8B;
+    font-size: 12px;
+  }
+  .card-content {
+    position: relative;
+    padding-left: 22px; /* Space for the icon line */
+  }
+  .card-content:before {
+    content: "";
+    position: absolute;
+    left: 5.9px;
+    height: 85%;
+    top: 4px; /* Start after first circle */
+    bottom: 24px; /* End before last circle */
+    width: 0.5px;
+    border-left: 0.5px dashed #f0960e;
+    z-index: 1;
+  }
+  .label {
+    position: relative;
+    color: #FDE4BC;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .label:before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5.5px;
+    border-radius: 50%;
+    background: #f0960e; /* Gold/orange color */
+    border: 2px solid white;
+    z-index: 2;
+    box-shadow: 0 0 0 1px #f0960e; /* Create the outer glow effect */
+  }
+  
+  /* .value {
+    font-weight: 500;
+    color: #ffffff;
+  } */
+  
+
+  .card-content2 {
+    position: relative;
+    padding-left: 22px; /* Space for the icon line */
+  }
+  .card-content2:before {
+    content: "";
+    position: absolute;
+    left: 5.9px;
+    height: 75%;
+    top: 4px; /* Start after first circle */
+    bottom: 24px; /* End before last circle */
+    width: 0.5px;
+    border-left: 0.5px dashed #f0960e;
+    z-index: 1;
+  }
+
+  .inner-content {
+    position: relative;
+    color: #FDE4BC;
+    font-size: 16px;
+    font-weight: 500;
+    /* margin-top: 20px; */
+  }
+  .inner-content:before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5.5px;
+    border-radius: 50%;
+    background: #f0960e; /* Gold/orange color */
+    border: 2px solid white;
+    z-index: 2;
+    box-shadow: 0 0 0 1px #f0960e; /* Create the outer glow effect */
+  }
+
+  .card-divider{
+    width:100%;
+    position:absolute;
+    left:0px;
+    background:#110d14;
+    height:24px;
+  }

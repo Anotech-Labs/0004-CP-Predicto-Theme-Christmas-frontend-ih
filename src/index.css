@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'HelveticaNeueCustom';
+  /* src: url('../public/assets/fonts/Helvetica-UltraLight.ttf') format('truetype'); */
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: 'HelveticaNeueCustom', Arial, sans-serif !important;
+   font-family: 'Times New Roman', Times, serif !important;
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;     */
+}
+body {
+  margin: 0;
+  background-color: gray;
+  font-family: 'HelveticaNeueCustom', Arial, sans-serif;
+}
+
+* {
+  font-family: 'HelveticaNeueCustom', Arial, sans-serif !important;
+}
+
+#root {
+  height: 100vh;
+}
+
+/* Override all MUI typography variants */
+.MuiTypography-root,
+.MuiTypography-h1,
+.MuiTypography-h2,
+.MuiTypography-h3,
+.MuiTypography-h4,
+.MuiTypography-h5,
+.MuiTypography-h6,
+.MuiTypography-subtitle1,
+.MuiTypography-subtitle2,
+.MuiTypography-body1,
+.MuiTypography-body2,
+.MuiButton-root,
+.MuiInputLabel-root,
+.MuiMenuItem-root,
+.MuiListItemText-root {
+  font-family: 'HelveticaNeueCustom', Arial, sans-serif !important;
+}

@@ -1,0 +1,20 @@
+export const banks = [
+    "Bank of Baroda",
+    "Union Bank of India",
+    "Central Bank of India",
+    "Yes Bank",
+    "HDFC Bank",
+    "Karnataka Bank",
+    "Standard Chartered Bank",
+    "IDBI Bank",
+    "Bank of India",
+    "Punjab National Bank",
+    "ICICI Bank",
+    "Canara Bank",
+    "Kotak Mahindra Bank",
+    "State Bank of India",
+    "Indian Bank",
+    "Axis Bank",
+    "Syndicate Bank",
+    "Citibank India"
+  ];

@@ -1,0 +1,15 @@
+export const domain =  import.meta.env.VITE_DOMAIN || "http://localhost:3000"
+export const frontendUrl =  import.meta.env.VITE_FRONTEND_URL|| "http://localhost:5173"
+export const wssdomain = import.meta.env.VITE_WSSDOMAIN || "wss://localhost:4000"
+export const wingowssdomain = import.meta.env.VITE_WINGO_WSSDOMAIN || "wss://localhost:4001"
+export const k3wssdomain = import.meta.env.VITE_K3_WSSDOMAIN || "wss://localhost:4002"
+export const fivedwssdomain = import.meta.env.VITE_FIVED_WSSDOMAIN || "wss://localhost:4003"
+export const carRaceWssDomain = import.meta.env.VITE_CARRACE_WSSDOMAIN || "wss://localhost:4004"
+export const carRaceAnimation = import.meta.env.VITE_CARRACE_ANIMATION || "http://localhost:5173"
+export const apidomain = import.meta.env.VITE_APIDOMAIN || 'https://bhartiyagames.site';
+export const clientPrefix = import.meta.env.VITE_CLIENT_PREFIX ||'k99';
+export const clientSecretKey = import.meta.env.VITE_CLIENT_SECRET_KEY || 'king';
+export const inviteCode = import.meta.env.VITE_INVITE_CODE || '4b7b88DGSA1407ac';
+export const imageKitId = import.meta.env.VITE_IMAGEKIT_API_ID || 'your_imageKitId';
+export const imageKitKey = import.meta.env.VITE_IMAGEKIT_API_KEY || 'your_imageKitKey';
+export const imageKitSecret = import.meta.env.VITE_IMAGEKIT_API_SECRET || 'your_imageKitSecret';

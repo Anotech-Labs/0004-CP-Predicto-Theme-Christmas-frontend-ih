@@ -1,0 +1,604 @@
+.swipeable-cards-container {
+  border-radius: .13333rem;
+  width: 95%;
+  min-height: 11rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: .29333rem;
+  padding: .1rem .5rem;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 100%;
+  margin: 10px auto;
+  max-width: 270px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 7px 10px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+/* .card.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+} */
+
+.card:nth-child(1) {
+  transform: translateX(10%);
+  pointer-events: auto;
+  z-index: 0;
+}
+
+.card:nth-child(2) {
+  transform: translateX(27%);
+  z-index: 0;
+}
+
+.card:nth-child(3) {
+  transform: translateX(40%);
+  z-index: 0;
+}
+
+.card:nth-child(4) {
+  transform: translateX(60%);
+  z-index: 0;
+}
+
+.card:nth-child(5) {
+  transform: translateX(80%);
+  z-index: 0;
+}
+
+@media (max-width: 370px) {
+  .card {
+      width: 90%;
+      margin: 0 5px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .card {
+      width: 80%;
+      margin: 0 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .card {
+      width: 70%;
+      max-width: 400px;
+      margin: 0 15px;
+  }
+}
+  
+  .content{
+  width: 100%;
+  }
+  
+  .card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card .left {
+    flex: 1;
+  }
+  
+  .card .l-top {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 5px; */
+    color: white;
+    font-size: 20px;
+    
+  }
+  
+  .card .l-top img {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+  
+  .card .l-mid {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    
+  }
+  
+  .card .l-bottom {
+    margin-top: 18px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    width: fit-content;
+    padding: 2px;
+  }
+  
+  .card .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card .right-bottom {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: right;
+    width: 100%;
+    color: white;
+  }
+  
+  .card .image-badge img {
+    width: 75px;
+    height: 65px;
+  }
+  
+  .mid {
+    position: relative;
+    height: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .gold .inner-progress {
+    background: linear-gradient(to right, #ed8f32, #ca7521);
+    box-shadow: 0 0.01333rem #ed8f32, inset 0 0.05333rem 0.05333rem #ca7521;
+  }
+  
+  .silver .inner-progress {
+    background: linear-gradient(to right, #889ebe, #6f85a5);
+    box-shadow: 0 0.01333rem #889ebe, inset 0 0.05333rem 0.05333rem #6f85a5;
+  }
+  
+  .bronze .inner-progress {
+    background: linear-gradient(to right, #fe7676, #f05c5c);
+    box-shadow: 0 0.01333rem #fe7676, inset 0 0.05333rem 0.05333rem #f05c5c;
+  }
+  
+  .platinum .inner-progress {
+    background: linear-gradient(to right, #b359ff, #8944fa);
+    box-shadow: 0 0.01333rem #b359ff, inset 0 0.05333rem 0.05333rem #8944fa;
+  }
+  
+  .diamond .inner-progress {
+    background: linear-gradient(to right, #308efe, #1177ea);
+    box-shadow: 0 0.01333rem #308efe, inset 0 0.05333rem 0.05333rem #1177ea;
+  }
+  
+  .transparent-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust transparency as needed */
+    border-radius: 5px; /* Same as inner progress bar */
+  }
+  
+  .inner-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+  }
+  
+  .card .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #888;
+  }
+  
+  
+  .associated-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .associated {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .level-title {
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  
+  .list {
+    width: 100%;
+  }
+  
+  .item-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .item-description {
+    flex: 1;
+  }
+  
+  .item-title {
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .item-details {
+    color: #888;
+    font-size: 0.9em;
+  }
+  
+  .reward-amounts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .reward-amount {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 2px 8px;
+    border-radius: 15px;
+    font-size: 0.9em;
+  }
+  
+  .reward-amount img {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .reward-amount span {
+    font-weight: 600;
+  }
+  
+  .wallet {
+    border: 1px solid #ffa500;
+    color: #ffa500;
+  }
+  
+  
+  
+  .my-benefits {
+    max-width: 400px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .my-benefits__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+  }
+  
+  .my-benefits__crown {
+    margin-right: 8px;
+    font-size: 24px;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .benefit-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+  }
+  
+  .benefit-card--wide {
+    grid-column: span 2;
+  }
+  
+  .benefit-card__image-container {
+    height: 100px;
+    background-color: #0f6518;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .benefit-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .benefit-card__reward-value {
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5% 50%;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  .benefit-card__reward-count {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .benefit-card__reward-count-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #0f6518;
+    border-radius: 50%;
+    margin-right: 4px;
+  }
+  
+  .benefit-card__title {
+    font-size: 14px;
+    /* font-weight: bold; */
+    margin: 8px 8px 4px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .benefit-card__description {
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    margin: 0 8px 8px;
+  }
+  .benefit-card__button {
+    width: calc(100% - 16px);
+    margin: 0 8px 8px;
+    padding: 8px 0;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .benefit-card__button--outlined {
+    background-color: transparent;
+    border: 1px solid #0f6518;
+    color: #0f6518;
+  }
+  
+  .benefit-card__button--filled {
+    background-color: #0f6518;
+    color: white;
+    border: none;
+  }
+  .benefit-card__button--highlight {
+    background-color: #0f6518;
+    color: #333;
+  }
+  
+  
+  
+  .history-rules-container {
+    font-family: Arial, sans-serif;
+    margin: 10px 15px;
+  }
+  
+  .history-section-group {
+    display: flex;
+    margin: 10px 0px;
+  }
+  
+  .history-tabs {
+    flex: 1;
+    padding: 15px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #a8a5a1;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #241e22;
+  }
+  
+  .history-tabs.active {
+    color: #FED358;
+  }
+  
+  .history-tabs.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #FED358;
+    border-radius: 1.5px;
+  }
+  
+  .history-section {
+    padding: 0px 5px;
+  }
+  
+  .no-data-container {
+    text-align: center;
+  }
+  
+  .no-data-history-img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .no-data-history-text {
+    display: block;
+    margin-top: 10px;
+    color: #ccc;
+  }
+  
+  .data-content {
+    font-size: small;
+  }
+  
+  .history-item {
+    border-bottom: 1px solid #3D363A;
+    padding: 10px 5px;
+    /* display: flex;
+    justify-content: space-between; */
+  }
+  
+  .title-blue {
+    color: #6ea8f4;
+  }
+  
+  .title-green {
+    color: #19b660;
+  }
+  
+  .title-red {
+    color: #fb5b5b;
+  }
+  .title-white {
+    color: white;
+  }
+  
+  .history-item-content{
+    display: flex;
+    align-items: center;
+  }
+  .history-item-left{
+    text-align: left;
+    width: 100%;
+  }
+  .history-item-right {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+  .history-item-exp{
+    color: #837064;
+  }
+  .history-item-title {
+    font-weight: bold;
+    color: #FED358;
+  }
+  
+  .history-item-description {
+    color: #FED358;
+    max-width: 250px;
+    margin: 2px 0;
+    text-align: right;
+  }
+  
+  .history-item-date {
+    color: #837064;
+    font-size: smaller;
+    margin: 2px 0;
+  }
+  
+  .history-item-points {
+    color: #57c165;
+    font-weight: bold;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .view-all-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 14px 20px;
+    width: 90%;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg,#F5B73B 0%, #FED358 100%);
+    color: black;
+    cursor: pointer;
+  }
+  
+  .rules-content {
+    font-size: small;
+    font-family: Arial, sans-serif;
+  }
+  
+  .rules-content h2 {
+    font-size: 19.2px;
+    color: #FED358;
+    margin: 0;
+  }
+  
+  .rules-content p {
+    font-size: 14.9px;
+    margin-bottom: 5px;
+    color: #B79C8B;
+    margin-top: 5px;
+  }
+  
+  .rules-card {
+    color: #80849c;
+    background-color: #241e22;
+    padding: 10px;
+    margin: 16px 0px;
+    padding-top: 0;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .rules-card-header {
+    /* font-weight: bold; */
+    color: white;
+    background-color: #cf7c10;
+    padding: 10px 15px;
+    border-radius: 0px 0px 8px 8px;
+    margin: 0px auto;
+    font-size: 12.8px;
+    width: max-content;
+    /* margin-bottom: 5px; */
+  }
+  
+  .rules-card-text {
+    color: #B79C8B;
+    margin-top: 10px;
+    font-size: 12.8px;
+    text-align: left;
+    line-height: 1.8;
+  }

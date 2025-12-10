@@ -1,0 +1,152 @@
+.outerContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bannerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 94%;
+  background-color: #241e22;
+  /* height: max-content; */
+  padding: 0 0.4rem 0.26667rem;
+  background: url("/assets/activity/headerRed.webp") no-repeat center /
+    cover;
+}
+
+.content {
+  /* width: 50%; */
+  padding: 0.3em 0.5em 0.3em 0.5em;
+}
+
+.contentOne {
+  color: rgb(255, 253, 251);
+}
+
+.contentOne h3 {
+  margin: 0;
+  text-align: left;
+}
+
+.contentOne p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: small;
+  text-align: left;
+}
+
+.contentTwo {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+  align-items: left;
+  width: 50%;
+  /* height: 35px; */
+  margin-bottom: 0.21333rem;
+  padding: 0.61333rem 0.41333rem 0.61333rem 0.14667rem;
+  color: #f54645;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 600;
+  line-height: 0.32rem;
+  background: #ffffff;
+  clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0 100%, 0 0);
+  word-break: break-all;
+}
+
+.contentThree p {
+  color: white;
+  text-align: left;
+}
+
+.contentThree h3 {
+  margin-top: -10px;
+  color: white;
+  text-align: left;
+}
+
+.buttonbox {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.attendanceButton {
+  color: #ffffff;
+}
+.cardbox {
+  width: 95%;
+  padding: 20px 10px;
+  display: flex;
+  /* height: 200%; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #110d14;
+  row-gap: 10px;
+}
+
+#coinbox-container {
+  width: 89%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-around;
+  gap: 10px;
+  background: #241e22;
+  border-radius: 10px;
+  padding: 1em;
+  color: "black";
+}
+#coinbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#coinbox-amount {
+  font-size: 1.2em;
+}
+#coinbox-image {
+  width: 130px;
+  height: 100%;
+}
+
+#coinbox-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.coinbox-container{
+  width:24%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2px;
+  background: #241e22;
+  border-radius: 10px;
+  padding: 0.8em;
+  color: rgb(22, 22, 22);
+  
+}
+.coinbox-amount{
+  font-size: 1em;
+  color:"white"
+}
+.coinbox-image{
+  width: 50px;
+  height: 50px;
+}
+
+.coinbox-image img{
+  width: 100%;
+  height: 100%;
+}
+
+.coinbox-container.disabled {
+  /* opacity: 0.5; */
+  cursor: not-allowed;
+}
