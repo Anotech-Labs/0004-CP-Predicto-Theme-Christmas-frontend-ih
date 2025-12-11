@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box";
+import { Checkbox, Box, FormLabel } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
@@ -7,18 +7,14 @@ import Container from "@mui/material/Container";
 import InputAdornment from "@mui/material/InputAdornment";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Radio from "@mui/material/Radio";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import MenuItem from "@mui/material/MenuItem";
 import IconButton from "@mui/material/IconButton";
 import RadioGroup from "@mui/material/RadioGroup";
 import Grid from "@mui/material/Grid";
-import Snackbar from "@mui/material/Snackbar";
-import Alert from "@mui/material/Alert";
 import { domain } from "../utils/Secret";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import FlagIcon from "@mui/icons-material/Flag";
-import LockIcon from "@mui/icons-material/Lock";
-
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import SendToMobileIcon from "@mui/icons-material/SendToMobile";
@@ -189,81 +185,59 @@ const ForgotPassword = () => {
       const timer = setTimeout(() => {
         setSnackbar((prev) => ({ ...prev, open: false }));
       }, 3000); // Auto-close after 3 seconds
-  
+
       return () => clearTimeout(timer);
     }
   }, [snackbar.open]);
   return (
     <Mobile>
-      {/* Header Grid - Unchanged */}
-      <Grid
-        container
-        alignItems="center"
-        justifyContent="space-between"
-        sx={{
-          position: "sticky",
-          top: 0,
-          zIndex: 1000,
-          backgroundColor: "#232626",
-          px: "2px",
-          height: "50px",
-          // py: "2px",
-          color: "black",
-        }}
-      >
-        <Grid item xs={4} textAlign="left">
-          <IconButton sx={{ color: "white" }} onClick={() => navigate(-1)}>
-            <ArrowBackIosNewIcon sx={{ fontSize: "20px" }} />
-          </IconButton>
-        </Grid>
-        <Grid item xs={4} textAlign="center">
-          <img
-            src="assets/logo/colorLogo.webp"
-            alt="logo"
-            style={{ width: "115px" }}
-          />
-        </Grid>
-        <Grid item xs={4} sx={{display:"flex",alignItems:"center",justifyContent:"flex-end"}}>
-          <img
-            src="assets/icons/english.webp"
-            alt="logo"
-            style={{ width: "25px", marginRight: "8px" }}
-          />
-          <Typography sx={{fontSize:"16px",color:"#FED358",marginRight: "13px" }}>EN</Typography>
-        </Grid>
-      </Grid>
-
-
-      {/* Title Grid - Unchanged */}
       <Grid
         container
         justifyContent="flex-start"
         alignItems="flex-start"
-        sx={{
-          background:
-            "linear-gradient(180deg, #FED358 , #FFB472 ),#241e22",
-          px: "16px",
-          pt: "10px",
-          pb: "25px",
-          color: "white",
-          minHeight: "fit-content",
-        }}
         direction="column"
-      >
-        <Typography variant="h7" sx={{ fontWeight: "bold", fontSize: "17px" }}>
-          Forgot password
-        </Typography>
-        <Typography
-          variant="caption"
+        sx={{
+          minHeight: "220px",
+          backgroundImage: "url('/assets/login/login.webp')",
+          backgroundPosition: "50%",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100%",
+          position: "relative", // important for absolute images
+          overflow: "hidden",
+        }}
+      > <img
+          src="/assets/login/shadow.webp"
+          alt="Top Image"
+          style={{
+            position: "absolute",
+            top: 0,
+            bottom: 0,
+            width: "100%",
+            height: "auto",
+          }}
+        />
+        {/* Wrapper for overlapping images */}
+        <Box
           sx={{
-            fontSize: "12px",
-            pt: "9px",
-            textAlign: "left",
-            lineHeight: 1.2,
+            position: "relative",
+            width: "100%",
+            height: "120px", // adjust as needed
           }}
         >
-          Please retrieve/change your password through your mobile phone number
-        </Typography>
+          {/* Second image (top shadow or overlay) */}
+          <img
+            src="/assets/logo/a_logo2.webp"
+            alt="Overlay Logo"
+            style={{
+              position: "absolute",
+              top: "10px",     // adjust spacing from the top
+              left: "10px",    // adjust spacing from the left
+              width: "auto",
+              height: "30px",  // set your desired logo size
+            }}
+          />
+
+        </Box>
       </Grid>
 
       {/* <Snackbar
@@ -277,77 +251,26 @@ const ForgotPassword = () => {
       </Snackbar> */}
 
       {/* Tabs - Unchanged */}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          marginBottom: "20px",
-        }}
-      >
-        <Grid
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            width: "90%",
-            borderBottom: "2px solid #FED358",
-          }}
-        >
-          <Tabs
-            value={tabValue}
-            onChange={handleTabChange}
-            TabIndicatorProps={{
-              style: {
-                backgroundColor: tabValue === 0 ? "transparent" : "transparent",
-              },
-            }}
-            sx={{ display: "flex", justifyContent: "center" }}
-          >
-            <Tab
-              sx={{
-                textTransform: "none",
-                fontWeight: "bold",
-                fontSize: "16px",
-              }}
-              icon={
-                <Box
-                  component="img"
-                  src="../assets/login/phonenumber.svg"
-                  alt=""
-                  sx={{ width: "16px", height: "auto" }}
-                />
-              }
-              label="phone reset"
-              style={{ color: tabValue === 0 ? "#FED358" : "grey" }}
-            />
-          </Tabs>
-        </Grid>
-      </Box>
 
       <Container
         disableGutters
         maxWidth="xs"
         sx={{
-          background: "#232626",
+          background: "#242626",
           minHeight: "100vh",
           display: "flex",
           flexDirection: "column",
         }}
       >
-        <Box sx={{ mx: 2, mt: 1 }}>
+        <Box sx={{ mx: 2 }}>
           {/* Phone Number Input */}
-          <Box sx={{ display: "flex", mb: 1 }}>
-            <Box
-              component="img"
-              src="/assets/login/phonenumber.svg"
-              alt=""
-              sx={{ width: "16px", marginRight: "5px" }}
-            />
-            <Typography variant="body2" sx={{ color: "#FDE4BC", fontSize: 17 }}>
+          <Box display="flex" alignItems="center" mt={1} mb={1.5}>
+            <FormLabel sx={{ marginLeft: "6px", color: "#ffffff", fontSize: "12px", fontWeight: "400" }}>
               Phone number
-            </Typography>
+            </FormLabel>
           </Box>
 
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 0, }}>
             <TextField
               select
               label=""
@@ -355,54 +278,51 @@ const ForgotPassword = () => {
               onChange={(e) => setCountryCode(e.target.value)}
               sx={{
                 width: "100px",
-                background: "#241e22",
-                marginBottom: -1,
-                borderRadius: "10px",
+                backgroundColor: "#242626",
                 "& .MuiOutlinedInput-root": {
-                  marginRight: "15px",
-                  height: "46px",
-                  lineHeight: "1.5",
+                  height: "40px",
+                  // borderRadius: "8px 0 0 8px",
                   "&.Mui-focused fieldset": {
-                    borderColor: "#454037",
+                    borderColor: "#D3D3D3",
+                    borderWidth: "1px",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#454037",
+                    borderColor: "#D3D3D3",
                   },
                   "& fieldset": {
-                    borderColor: "#454037",
-                    border: "none",
+                    borderColor: "#D3D3D3",
+                    borderRight: "none",
                   },
                 },
                 "& .MuiInputBase-input": {
-                  color: "#a8a5a1",
-                  textOverflow: "clip",
-                  whiteSpace: "nowrap",
-                  overflow: "hidden",
+                  color: "#ffffff",
+                  fontSize: "15px",
                 },
                 "& .MuiInputLabel-root": {
-                  color: "#a8a5a1",
+                  color: "#768096",
                 },
                 "& .MuiSelect-icon": {
-                  color: "#a8a5a1",
-                  marginRight: "4px",
+                  color: "#768096",
                 },
-              }}
-              InputLabelProps={{
-                style: { color: "#fff" },
               }}
               SelectProps={{
                 IconComponent: KeyboardArrowDownRoundedIcon,
                 renderValue: (selected) =>
                   countryCodes.find((item) => item.code === selected)?.code,
+
                 MenuProps: {
                   PaperProps: {
                     sx: {
-                      color: "#FDE4BC",
-                      background: "#FED358",
                       "& .MuiMenuItem-root": {
-                        background: "#FED358",
+                        fontSize: "14px",
                         "&:hover": {
-                          background: "#FED358",
+                          backgroundColor: "#242626",
+                        },
+                        "&.Mui-selected": {
+                          backgroundColor: "#e3f2fd",
+                          "&:hover": {
+                            backgroundColor: "#bbdefb",
+                          },
                         },
                       },
                     },
@@ -422,54 +342,54 @@ const ForgotPassword = () => {
               variant="outlined"
               autoComplete="off"
               autoFocus={false}
-              margin="normal"
               type="tel"
               value={mobile}
               onChange={(e) => {
                 const value = e.target.value;
+                // Allow only numbers and ensure max length of 10 digits
                 if (/^\d{0,10}$/.test(value)) {
                   setMobile(value);
                 }
               }}
               required
               sx={{
-                width: "80%",
-                backgroundColor: "#241e22",
-                borderRadius: "10px",
+                flex: 1,
+                backgroundColor: "transparent",
                 "& .MuiOutlinedInput-root": {
-                  height: "46px", // Smaller TextField size
+                  height: "40px",
+                  borderRadius: "0 8px 8px 0",
                   "& fieldset": {
-                    borderColor: "transparent", // Lighter border color
+                    borderColor: "#D3D3D3",
+                    borderLeft: "none",
                   },
                   "&:hover fieldset": {
-                    borderColor: "transparent", // Slightly lighter on hover
+                    borderColor: "#D3D3D3",
+                    borderLeft: "none",
                   },
                   "&.Mui-focused fieldset": {
-                    borderWidth: "0.1px",
-                    borderColor: "#454037 !important", // Focused border color
+                    borderWidth: "1px",
+                    borderColor: "#D3D3D3",
+                    borderLeft: "none",
                   },
                 },
                 "& .MuiInputBase-input": {
-                  color: "#FDE4BC",
-                  fontSize: "15px", // Slightly smaller text size
+                  color: "#ffffff",
+                  fontSize: "15px",
                 },
                 "& .MuiInputBase-input::placeholder": {
-                  fontWeight: "300",
-                  color: "#FDE4BC !important", // Placeholder color
+                  fontWeight: "400",
+                  color: "#999",
+                  opacity: 1,
                 },
-              }}
-              InputProps={{
-                style: { borderRadius: "10px", color: "#6e7167" },
               }}
             />
           </Box>
 
           {/* Verification Code */}
-          <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
-            <GppGoodIcon sx={{ mr: 1, color: "#FED358" }} />
-            <Typography variant="body2" sx={{ color: "#FDE4BC", fontSize: 17 }}>
-              Verification Code
-            </Typography>
+          <Box display="flex" alignItems="center" mt={2.5} mb={1.5} >
+            <FormLabel sx={{ marginLeft: "6px", color: "#ffffff", fontSize: "12px", fontWeight: "400" }}>
+              Verification code
+            </FormLabel>
           </Box>
 
           <TextField
@@ -479,32 +399,34 @@ const ForgotPassword = () => {
             value={otp}
             onChange={(e) => setOtp(e.target.value)}
             sx={{
-              backgroundColor: "#241e22",
-              borderRadius: "10px",
+              flex: 1,
+              backgroundColor: "transparent",
               "& .MuiOutlinedInput-root": {
-                height: "46px", // Smaller TextField size
+                height: "40px",
+                borderRadius: "1px",
                 "& fieldset": {
-                  borderColor: "transparent", // Lighter border color
+                  borderColor: "#D3D3D3",
                 },
                 "&:hover fieldset": {
-                  borderColor: "transparent", // Slightly lighter on hover
+                  borderColor: "#D3D3D3",
                 },
                 "&.Mui-focused fieldset": {
-                  borderWidth: "0.1px",
-                  borderColor: "#454037 !important", // Focused border color
+                  borderWidth: "1px",
+                  borderColor: "#D3D3D3",
                 },
               },
               "& .MuiInputBase-input": {
-                color: "#FDE4BC",
-                fontSize: "15px", // Slightly smaller text size
+                color: "#ffffff",
+                fontSize: "15px",
               },
               "& .MuiInputBase-input::placeholder": {
-                fontWeight: "300",
-                color: "#FDE4BC !important", // Placeholder color
+                fontWeight: "400",
+                color: "#999",
+                opacity: 1,
               },
             }}
             InputProps={{
-              style: { borderRadius: "10px", color: "#6e7167" },
+              style: { borderRadius: "1px", color: "#ffffff" },
               endAdornment: (
                 <InputAdornment position="end">
                   <Button
@@ -514,17 +436,17 @@ const ForgotPassword = () => {
                     disabled={!mobile || isVerifyButtonDisabled}
                     sx={{
                       background: isVerifyButtonDisabled
-                        ? "linear-gradient(90deg, #A0A0A0 0%, #808080 100%)"
-                        : "linear-gradient(180deg, #FED358 , #FFB472 )",
-                      color: "#FDE4BC",
-                      borderRadius: 50,
+                        ? "linear-gradient(180deg,#24ee89,#9fe871)"
+                        : "linear-gradient(180deg,#24ee89,#9fe871)",
+                      color: "#000",
+                      borderRadius: "4px",
                       textTransform: "capitalize",
                       px: 3,
                       py: 0.4,
                       "&:hover": {
                         background: isVerifyButtonDisabled
-                          ? "linear-gradient(90deg, #A0A0A0 0%, #808080 100%)"
-                          : "linear-gradient(180deg, #FED358 , #FFB472 )",
+                          ? "linear-gradient(180deg,#24ee89,#9fe871)"
+                          : "linear-gradient(180deg,#24ee89,#9fe871)",
                       },
                     }}
                   >
@@ -542,19 +464,16 @@ const ForgotPassword = () => {
           {/* New Password Section (Only show when OTP is verified) */}
           {otpVerified && (
             <>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 3 }}>
+              <Box display="flex" alignItems="center" mt={3} mb={1}>
                 <Box
                   component="img"
-                  src="../assets/icons/passwordIcon.svg"
+                  src="../assets/login/lock_black.webp"
                   alt=""
-                  sx={{ width: "20px", marginRight: "5px" }}
+                  sx={{ width: "20px" }}
                 />
-                <Typography
-                  variant="body2"
-                  sx={{ color: "#FDE4BC", fontSize: 17 }}
-                >
-                  Enter new password
-                </Typography>
+                <FormLabel sx={{ marginLeft: "6px", color: "#ffffff", fontSize: "12px", fontWeight: "400" }}>
+                  New password
+                </FormLabel>
               </Box>
 
               <TextField
@@ -565,57 +484,60 @@ const ForgotPassword = () => {
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
                 sx={{
-                  backgroundColor: "#241e22",
-                  borderRadius: "10px",
+                  flex: 1,
+                  backgroundColor: "transparent",
                   "& .MuiOutlinedInput-root": {
-                    height: "47.5px", // Smaller TextField size
+                    height: "40px",
+                    borderRadius: "1px",
                     "& fieldset": {
-                      borderColor: "transparent", // Lighter border color
+                      borderColor: "#D3D3D3",
                     },
                     "&:hover fieldset": {
-                      borderColor: "transparent", // Slightly lighter on hover
+                      borderColor: "#D3D3D3",
                     },
                     "&.Mui-focused fieldset": {
-                      borderWidth: "0.1px",
-                      borderColor: "#666255 !important", // Focused border color
+                      borderWidth: "1px",
+                      borderColor: "#D3D3D3",
                     },
                   },
                   "& .MuiInputBase-input": {
-                    color: "#FDE4BC",
-                    fontSize: "15px", // Slightly smaller text size
+                    color: "#ffffff",
+                    fontSize: "15px",
+                  },
+                  "& .MuiInputBase-input::placeholder": {
+                    fontWeight: "400",
+                    color: "#999",
+                    opacity: 1,
                   },
                 }}
                 InputProps={{
-                  style: { borderRadius: "10px", color: "#6e7167" },
+                  style: { borderRadius: "10px", color: "#ffffff" },
                   endAdornment: (
                     <InputAdornment
-                    edge="end"
+                      edge="end"
                       onClick={toggleNewPasswordVisibility}
                       sx={{ cursor: "pointer", color: "#c3c3c3", alignItems: "center" }}
                     >
                       {showPassword.newPassword ? (
-                        <VisibilityOffOutlinedIcon />
-                      ) : (
                         <RemoveRedEyeOutlinedIcon />
+                      ) : (
+                        <VisibilityOffOutlinedIcon />
                       )}
                     </InputAdornment>
                   ),
                 }}
               />
 
-              <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
+              <Box display="flex" alignItems="center" mt={3} mb={1}>
                 <Box
                   component="img"
-                  src="../assets/icons/passwordIcon.svg"
+                  src="../assets/login/lock_black.webp"
                   alt=""
-                  sx={{ width: "20px", marginRight: "5px" }}
+                  sx={{ width: "20px" }}
                 />
-                <Typography
-                  variant="body2"
-                  sx={{ color: "#FDE4BC", fontSize: 17 }}
-                >
-                  Confirm new password
-                </Typography>
+                <FormLabel sx={{ marginLeft: "6px", color: "#ffffff", fontSize: "12px", fontWeight: "400" }}>
+                  Confirm password
+                </FormLabel>
               </Box>
 
               <TextField
@@ -626,39 +548,44 @@ const ForgotPassword = () => {
                 value={confirmNewPassword}
                 onChange={(e) => setConfirmNewPassword(e.target.value)}
                 sx={{
-                  // width: "96%",
-                  backgroundColor: "#241e22",
-                  borderRadius: "10px",
+                  flex: 1,
+                  backgroundColor: "transparent",
                   "& .MuiOutlinedInput-root": {
-                    height: "47.5px", // Smaller TextField size
+                    height: "40px",
+                    borderRadius: "1px",
                     "& fieldset": {
-                      borderColor: "transparent", // Lighter border color
+                      borderColor: "#D3D3D3",
                     },
                     "&:hover fieldset": {
-                      borderColor: "transparent", // Slightly lighter on hover
+                      borderColor: "#D3D3D3",
                     },
                     "&.Mui-focused fieldset": {
-                      borderWidth: "0.1px",
-                      borderColor: "#666255 !important", // Focused border color
+                      borderWidth: "1px",
+                      borderColor: "#D3D3D3",
                     },
                   },
                   "& .MuiInputBase-input": {
-                    color: "#FDE4BC",
-                    fontSize: "15px", // Slightly smaller text size
+                    color: "#ffffff",
+                    fontSize: "15px",
+                  },
+                  "& .MuiInputBase-input::placeholder": {
+                    fontWeight: "400",
+                    color: "#999",
+                    opacity: 1,
                   },
                 }}
                 InputProps={{
-                  style: { borderRadius: "10px", color: "#6e7167" },
+                  style: { borderRadius: "10px", color: "#ffffff" },
                   endAdornment: (
                     <InputAdornment
-                       edge="end"
+                      edge="end"
                       onClick={toggleConfirmNewPasswordVisibility}
-                      sx={{ cursor: "pointer",color: "#c3c3c3", alignItems: "center" }}
+                      sx={{ cursor: "pointer", color: "#c3c3c3", alignItems: "center" }}
                     >
                       {showPassword.confirmNewPassword ? (
-                        <VisibilityOffOutlinedIcon />
-                      ) : (
                         <RemoveRedEyeOutlinedIcon />
+                      ) : (
+                        <VisibilityOffOutlinedIcon />
                       )}
                     </InputAdornment>
                   ),
@@ -680,46 +607,30 @@ const ForgotPassword = () => {
                 <FormControlLabel
                   value="remember"
                   control={
-                    <Radio
+                    <Checkbox
                       checked={isChecked}
                       onClick={handleToggle}
                       icon={
-                        <Box
+                        <RadioButtonUncheckedIcon
                           sx={{
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            width: 18.2,
-                            height: 18.2,
-                            border: "1.5px solid #c8c9cc",
-                            borderRadius: "50%",
+                            color: "#c8c9cc", // Unchecked color
+                            fontSize: 22, // Adjust size
                           }}
                         />
                       }
                       checkedIcon={
-                        <Box
+                        <CheckCircleIcon
                           sx={{
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            width: 20,
-                            height: 20,
-                            borderRadius: "50%",
-                            backgroundColor: "transparent",
+                            color: "#24ee89", // Checked color
+                            fontSize: 22, // Slightly bigger for effect
                           }}
-                        >
-                          <img
-                            src="/assets/login/rememberme.svg"
-                            alt="Checked"
-                            style={{ width: "100%", height: "auto" }}
-                          />
-                        </Box>
+                        />
                       }
                     />
                   }
                   label={
-                    <Typography sx={{ color: "#B79C8B", fontSize: 13 }}>
-                      I have read and agree <span style={{ color: "#D23838" }}>【Privacy Agreement】</span>
+                    <Typography sx={{ color: "#768096", fontSize: 13 }}>
+                      I have read and agree <span style={{ color: "#24ee89" }}>【Privacy Agreement】</span>
                     </Typography>
                   }
                 />
@@ -735,8 +646,8 @@ const ForgotPassword = () => {
                 disabled={!otpVerified || !isChecked}
                 style={{
                   background:
-                    "linear-gradient(180deg, #FED358 , #FFB472 ),#241e22",
-                  borderRadius: "360px",
+                    "linear-gradient(180deg,#24ee89,#9fe871)",
+                  borderRadius: "2px",
                   width: "85%",
                   height: "43px",
                   textTransform: "none",
@@ -745,7 +656,7 @@ const ForgotPassword = () => {
                   fontWeight: "bold",
                   marginBottom: "20px",
                   marginTop: "18px",
-                  color: "#221f2e",
+                  color: "#ffffff",
                   fontSize: "19px", // Replace with the desired royal gold color if different
                 }}
               >
@@ -767,7 +678,7 @@ const ForgotPassword = () => {
                 ...(isSmallScreen && { width: "70%" }),
                 transform: "translate(-50%, -50%)",
                 bgcolor: "rgba(0, 0, 0, 0.9)",
-                color: "#FDE4BC",
+                color: "white",
                 padding: "20px 30px",
                 borderRadius: "10px",
                 zIndex: 1000,

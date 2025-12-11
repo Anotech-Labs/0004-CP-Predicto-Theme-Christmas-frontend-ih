@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 // Custom Components
 import Mobile from "../components/layout/Mobile";
-import { domain ,inviteCode} from "../utils/Secret";
+import { domain } from "../utils/Secret";
 
 // MUI Core Components
 import Grid from "@mui/material/Grid";
@@ -16,10 +16,11 @@ import Typography from "@mui/material/Typography";
 import FormLabel from "@mui/material/FormLabel";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Radio from "@mui/material/Radio";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import MenuItem from "@mui/material/MenuItem";
 import Alert from "@mui/material/Alert";
-
+import Checkbox from "@mui/material/Checkbox";
 // MUI Icons
 // import TranslateIcon from "@mui/icons-material/Translate";
 // import Visibility from "@mui/icons-material/Visibility";
@@ -30,9 +31,6 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 // import MoveToInboxIcon from "@mui/icons-material/MoveToInbox";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 
-import Checkbox from '@mui/material/Checkbox';
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 // Other Libraries
 import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
@@ -70,11 +68,11 @@ const Register = () => {
   const query = new URLSearchParams(location.search);
   const initialInviteCode = query.get("invitecode");
 
-  const [invitecode, setInviteCode] = useState(initialInviteCode || inviteCode);
+  const [invitecode, setInviteCode] = useState(initialInviteCode || "");
 
   const handleRegister = async (e) => {
     e.preventDefault();
-  
+
     setError("");
     if (!isChecked) {
       setError("Please agree to the Privacy Agreement to continue.");
@@ -85,33 +83,31 @@ const Register = () => {
       setErrorMessage("Please enter a valid 10-digit mobile number.");
       return;
     }
-  
-    // New regex: requires at least one digit, 8+ characters, no special char/capital letter enforcement
-    const passwordRegex = /^(?=.*\d).{8,}$/;
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/;
     if (!passwordRegex.test(password)) {
       setError(
-        "Password must be at least 8 characters and include at least one number."
+        "Password must be at least 8 characters, include one letter, one number, and one special character."
       );
       return;
     }
-  
+
     if (password !== confirmPassword) {
       setError("Passwords do not match.");
       setErrorMessage("Passwords do not match.");
       return;
     }
-  
+
     try {
       const mobileNumber = parseInt(mobile, 10);
-  
+
       const response = await axios.post(`${domain}/api/user/register`, {
         mobile: mobileNumber,
         password,
         inviteCode: invitecode,
       });
-  
+
       if (response.data.success) {
-        login(response.data.data.tokens.accessToken, response.data.data.tokens.refreshToken);
+        login(response.data.data.tokens.accessToken, response.data.data.tokens.refreshToken)
         navigate("/");
       } else {
         setError(response.data.message || "Registration failed.");
@@ -119,6 +115,7 @@ const Register = () => {
       }
     } catch (err) {
       console.error("Registration Error:", err); // Debugging log
+
       const statusCode = err.response?.status;
       const errorMessage = err.response?.data?.message;
 
@@ -136,7 +133,6 @@ const Register = () => {
       }
     }
   };
-  
 
   const handleLogin = async () => {
     navigate("/login");
@@ -165,73 +161,60 @@ const Register = () => {
   return (
     <>
       <Mobile>
-        <Grid
-          container
-          alignItems="center"
-          justifyContent="space-between"
-          sx={{
-            position: "sticky",
-            top: 0,
-            zIndex: 1000,
-            backgroundColor: "#232626",
-            px: "2px",
-            height: "50px",
-            color: "black",
-          }}
-        >
-          <div id="recaptcha-container"></div>
-          <Grid item xs={4} textAlign="left">
-            <IconButton sx={{ color: "white" }} onClick={handleRedirect}>
-              <ArrowBackIosNewIcon sx={{ fontSize: "20px" }} />
-            </IconButton>
-          </Grid>
-          <Grid item xs={4} textAlign="center">
-            <img
-              src="assets/logo/colorLogo.webp"
-              alt="logo"
-              style={{ width: "115px" }}
-            />
-          </Grid>
-          <Grid item xs={4} sx={{display:"flex",alignItems:"center",justifyContent:"flex-end"}}>
-          <img
-            src="assets/icons/english.webp"
-            alt="logo"
-            style={{ width: "25px", marginRight: "8px" }}
+      <Grid
+        container
+        justifyContent="flex-start"
+        alignItems="flex-start"
+        direction="column"
+        sx={{
+          minHeight: "220px",
+          backgroundImage: "url('/assets/login/login.webp')",
+          backgroundPosition: "50%",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100%",
+          position: "relative", // important for absolute images
+          overflow: "hidden",
+        }}
+      > <img
+            src="/assets/login/shadow.webp"
+            alt="Top Image"
+            style={{
+              position: "absolute",
+              top: 0,
+              bottom: 0,
+              width: "100%",
+              height: "auto",
+            }}
           />
-          <Typography sx={{color:"#FED358",marginRight: "13px" }}>EN</Typography>
-        </Grid>
-        </Grid>
-        <Grid
-          container
-          justifyContent="flex-start"
-          alignItems="flex-start"
+        {/* Wrapper for overlapping images */}
+        <Box
           sx={{
-            // backgroundColor: "#0F6518",
-            background:
-              "#241e22",
-            padding: "8px 22px 50px",
-
-            color: "white",
-            minHeight: "fit-content",
+            position: "relative",
+            width: "100%",
+            height: "120px", // adjust as needed
           }}
-          direction="column"
         >
-          <Typography
-            variant="h7"
-            sx={{ fontWeight: "bold", fontSize: "17px" }}
-          >
-            Register
-          </Typography>
-          <Typography variant="subtitle2" sx={{ fontSize: "12px", pt: "9px" }}>
-            Please register by phone number or email
-          </Typography>
-        </Grid>
+          {/* Second image (top shadow or overlay) */}
+          <img
+            src="/assets/logo/a_logo2.webp"
+            alt="Overlay Logo"
+            style={{
+              position: "absolute",
+              top: "10px",     // adjust spacing from the top
+              left: "10px",    // adjust spacing from the left
+              width: "auto",
+              height: "30px",  // set your desired logo size
+            }}
+          />
+
+        </Box>
+      </Grid>
         <Grid
           container
           justifyContent="flex-start"
           alignItems="flex-start"
           sx={{
-            backgroundColor: "#232626",
+            backgroundColor: "#212327",
             px: "16px",
             color: "white",
             minHeight: "fit-content",
@@ -239,125 +222,66 @@ const Register = () => {
         >
           <Grid item xs={12} sx={{ marginBottom: "50px" }}>
             <form onSubmit={handleRegister}>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  marginBottom: "20px",
-                  // Add the bottom border here
-                }}
-              >
-                <Grid sx={{
-                  display: "flex",
-                  justifyContent: "center", width: "97%", borderBottom: "2px solid #FED358",
-                }}>
-                  <Tabs
-                    value={tabValue}
-                    onChange={handleTabChange}
-                    TabIndicatorProps={{
-                      style: {
-                        backgroundColor:
-                          tabValue === 0 ? "transparent" : "transparent",
-                      },
-                    }}
-                    sx={{ display: "flex", justifyContent: "center" }}
-                  >
-                    <Tab
-                      sx={{
-                        textTransform: "none",
-                        fontWeight: "bold",
-                        fontSize: "16px",
 
-                      }}
-                      icon={
-                        <Box
-                          component="img"
-                          src="../assets/login/phonenumber.svg"
-                          alt=""
-                          sx={{ width: "17px", height: "auto", mt: -0.6 }} // Adjust the size as needed
-                        />
-                      }
-                      label="Register your phone"
-                      style={{ color: tabValue === 0 ? "#FED358" : "grey" }}
-                    />
-                  </Tabs>
-                </Grid>
-              </Box>
-
-              <TabPanel value={tabValue} index={0}>
-                <Box display="flex" alignItems="center" mt={4}>
-                  <Box
-                    component="img"
-                    src="../assets/login/phonenumber.svg"
-                    alt=""
-                    sx={{
-                      ml: "10px",
-                      marginRight: "8px",
-                      width: "21px",
-                      height: "22px",
-                    }} // Adjust the size as needed
-                  />
-                  <FormLabel sx={{ color: "#FDE4BC" }}>Phone number</FormLabel>
+              <TabPanel value={tabValue} index={0} sx={{ px: "10px" }}>
+                <Box display="flex" alignItems="center" mt={4} mb={1}>
+                  <FormLabel sx={{ marginLeft: "6px", color: "#ffffff", fontSize: "12px", fontWeight: "400" }}>
+                    Phone number
+                  </FormLabel>
                 </Box>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Box sx={{ display: "flex", alignItems: "center", gap: 0 }}>
                   <TextField
                     select
                     label=""
                     value={countryCode}
                     onChange={(e) => setCountryCode(e.target.value)}
                     sx={{
-                      marginLeft: "8px",
-                      width: "110px",
-                      background: "#241e22",
-                      marginBottom: -1,
-                      borderRadius: "10px",
+                      width: "100px",
+                      backgroundColor: "#212327",
                       "& .MuiOutlinedInput-root": {
-                        marginRight: "6px",
-                        height: "47.5px",
-                        lineHeight: "1.5",
+                        height: "40px",
+                        // borderRadius: "8px 0 0 8px",
                         "&.Mui-focused fieldset": {
-                          borderColor: "#fff",
+                          borderColor: "#D3D3D3",
+                          borderWidth: "1px",
                         },
                         "&:hover fieldset": {
-                          borderColor: "#fff",
+                          borderColor: "#D3D3D3",
                         },
                         "& fieldset": {
-                          borderColor: "#fff",
-                          border: "none",
+                          borderColor: "#D3D3D3",
+                          borderRight: "none",
                         },
                       },
                       "& .MuiInputBase-input": {
-                        color: "#B79C8B",
-                        textOverflow: "clip",
-                        whiteSpace: "nowrap",
-                        overflow: "hidden",
+                        color: "#ffffff",
+                        fontSize: "15px",
                       },
                       "& .MuiInputLabel-root": {
-                        color: "#B79C8B",
+                        color: "#768096",
                       },
                       "& .MuiSelect-icon": {
-                        color: "#B79C8B",
-                        marginRight: "4px",
+                        color: "#768096",
                       },
-                    }}
-                    InputLabelProps={{
-                      style: { color: "#FDE4BC" },
                     }}
                     SelectProps={{
                       IconComponent: KeyboardArrowDownRoundedIcon,
                       renderValue: (selected) =>
-                        countryCodes.find((item) => item.code === selected)
-                          ?.code, // Show code only
+                        countryCodes.find((item) => item.code === selected)?.code,
 
                       MenuProps: {
                         PaperProps: {
                           sx: {
-                            color: "#FDE4BC",
-                            background: "#FED358",
                             "& .MuiMenuItem-root": {
-                              background: "#FED358",
+                              fontSize: "14px",
                               "&:hover": {
-                                background: "#FED358",
+                                backgroundColor: "#212327",
+                              },
+                              "&.Mui-selected": {
+                                backgroundColor: "#e3f2fd",
+                                "&:hover": {
+                                  backgroundColor: "#bbdefb",
+                                },
                               },
                             },
                           },
@@ -377,7 +301,6 @@ const Register = () => {
                     variant="outlined"
                     autoComplete="off"
                     autoFocus={false}
-                    margin="normal"
                     type="tel"
                     value={mobile}
                     onChange={(e) => {
@@ -389,58 +312,50 @@ const Register = () => {
                     }}
                     required
                     sx={{
-                      width: "80%",
-                      backgroundColor: "#241e22",
-                      borderRadius: "10px",
+                      flex: 1,
+                      backgroundColor: "transparent",
                       "& .MuiOutlinedInput-root": {
-                        height: "47.5px", // Smaller TextField size
+                        height: "40px",
+                        borderRadius: "0 8px 8px 0",
                         "& fieldset": {
-                          borderColor: "transparent", // Lighter border color
+                          borderColor: "#D3D3D3",
+                          borderLeft: "none",
                         },
                         "&:hover fieldset": {
-                          borderColor: "transparent", // Slightly lighter on hover
+                          borderColor: "#D3D3D3",
+                          borderLeft: "none",
                         },
                         "&.Mui-focused fieldset": {
-                          borderWidth: "0.1px",
-                          borderColor: "#666255 !important", // Focused border color
+                          borderWidth: "1px",
+                          borderColor: "#D3D3D3",
+                          borderLeft: "none",
                         },
                       },
                       "& .MuiInputBase-input": {
-                        color: "#FDE4BC",
-                        fontSize: "15px", // Slightly smaller text size
+                        color: "#ffffff",
+                        fontSize: "15px",
                       },
                       "& .MuiInputBase-input::placeholder": {
-                        fontWeight: "300",
-                        color: "#FDE4BC !important", // Placeholder color
+                        fontWeight: "400",
+                        color: "#999",
+                        opacity: 1,
                       },
-                    }}
-                    InputProps={{
-                      style: { borderRadius: "10px", color: "#FDE4BC" },
-                    }}
-                    InputLabelProps={{
-                      style: { color: "#FDE4BC" },
                     }}
                   />
                 </Box>
-                {mobile &&
-                  (!/^\d{10}$/.test(mobile) || mobile.length !== 10) && (
-                    <Typography color="error" variant="caption">
-                      Mobile number must be exactly 10 digits.
-                    </Typography>
-                  )}
+                {mobile && (!/^\d{10}$/.test(mobile) || mobile.length !== 10) && (
+                  <Typography color="error" variant="caption" sx={{ mt: 0.5, display: "block" }}>
+                    Mobile number must be exactly 10 digits.
+                  </Typography>
+                )}
               </TabPanel>
-
-              <Box display="flex" alignItems="center" mt={-0.2} mb={-0.2} >
-                <Box
-                  component="img"
-                  src="../assets/login/passwordIcon.svg"
-                  alt=""
-                  sx={{ width: "22px", height: "20px", ml: "10px", mr: "8px" }} // Adjust the size as needed
-                />
-                <FormLabel sx={{ color: "#FDE4BC" }}>Set Password</FormLabel>
+              <Box display="flex" alignItems="center" mt={2.5} >
+                <FormLabel sx={{ marginLeft: "6px", color: "#ffffff", fontSize: "12px", fontWeight: "400" }}>
+                  Set password
+                </FormLabel>
               </Box>
               <TextField
-                placeholder="Password"
+                placeholder="Please enter password"
                 type={showPassword ? "text" : "password"}
                 fullWidth
                 variant="outlined"
@@ -450,29 +365,34 @@ const Register = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 sx={{
-                  width: "96%",
-                  backgroundColor: "#241e22",
-                  borderRadius: "10px",
+                  flex: 1,
+                  backgroundColor: "transparent",
                   "& .MuiOutlinedInput-root": {
-                    height: "46px", // Smaller TextField size
+                    height: "40px",
+                    borderRadius: "1px",
                     "& fieldset": {
-                      borderColor: "transparent", // Lighter border color
+                      borderColor: "#D3D3D3",
                     },
                     "&:hover fieldset": {
-                      borderColor: "transparent", // Slightly lighter on hover
+                      borderColor: "#D3D3D3",
                     },
                     "&.Mui-focused fieldset": {
-                      borderWidth: "0.1px",
-                      borderColor: "#666255 !important", // Focused border color
+                      borderWidth: "1px",
+                      borderColor: "#D3D3D3",
                     },
                   },
                   "& .MuiInputBase-input": {
-                    color: "#FDE4BC",
-                    fontSize: "15px", // Slightly smaller text size
+                    color: "#ffffff",
+                    fontSize: "15px",
+                  },
+                  "& .MuiInputBase-input::placeholder": {
+                    fontWeight: "400",
+                    color: "#999",
+                    opacity: 1,
                   },
                 }}
                 InputProps={{
-                  style: { borderRadius: "10px", color: "#FDE4BC" },
+                  style: { borderRadius: "1px", color: "#6e7167" },
                   endAdornment: (
                     <IconButton
                       onClick={handleShowPassword}
@@ -499,18 +419,14 @@ const Register = () => {
                   ),
                 }}
                 InputLabelProps={{
-                  style: { color: "#FDE4BC" },
+                  style: { color: "#6e7167" },
                 }}
               />
 
               <Box display="flex" alignItems="center" mt={2}>
-                <Box
-                  component="img"
-                  src="../assets/login/passwordIcon.svg"
-                  alt=""
-                  sx={{ width: "22px", height: "20px", ml: "10px", mr: "8px" }} // Adjust the size as needed
-                />
-                <FormLabel sx={{ color: "#FDE4BC", lineHeight: 1 }}>Confirm Password</FormLabel>
+                <FormLabel sx={{ marginLeft: "6px", color: "#ffffff", fontSize: "12px", fontWeight: "400" }}>
+                  Confirm Password
+                  </FormLabel>
               </Box>
               <TextField
                 placeholder="Confirm Password"
@@ -521,29 +437,34 @@ const Register = () => {
                 variant="outlined"
                 margin="normal"
                 sx={{
-                  width: "96%",
-                  backgroundColor: "#241e22",
-                  borderRadius: "10px",
+                  flex: 1,
+                  backgroundColor: "transparent",
                   "& .MuiOutlinedInput-root": {
-                    height: "47.5px", // Smaller TextField size
+                    height: "40px",
+                    borderRadius: "1px",
                     "& fieldset": {
-                      borderColor: "transparent", // Lighter border color
+                      borderColor: "#D3D3D3",
                     },
                     "&:hover fieldset": {
-                      borderColor: "transparent", // Slightly lighter on hover
+                      borderColor: "#D3D3D3",
                     },
                     "&.Mui-focused fieldset": {
-                      borderWidth: "0.1px",
-                      borderColor: "#666255 !important", // Focused border color
+                      borderWidth: "1px",
+                      borderColor: "#D3D3D3",
                     },
                   },
                   "& .MuiInputBase-input": {
-                    color: "#FDE4BC",
-                    fontSize: "15px", // Slightly smaller text size
+                    color: "#ffffff",
+                    fontSize: "15px",
+                  },
+                  "& .MuiInputBase-input::placeholder": {
+                    fontWeight: "400",
+                    color: "#999",
+                    opacity: 1,
                   },
                 }}
                 InputProps={{
-                  style: { borderRadius: "10px", color: "#FDE4BC" },
+                  style: { borderRadius: "1px", color: "#6e7167" },
                   endAdornment: (
                     <IconButton
                       onClick={handleShowPassword}
@@ -572,15 +493,10 @@ const Register = () => {
                   style: { color: "#6e7167" },
                 }}
               />
-              <Box display="flex" alignItems="center" mt={1.7}>
-                {/* <MoveToInboxIcon sx={{ color: "#FED358" }} /> */}
-                <Box
-                  component="img"
-                  src="../assets/login/invitecode.svg"
-                  alt=""
-                  sx={{ ml: "11px", mr: "3px", width: "20px", height: "20px" }} // Adjust the size as needed
-                />
-                <FormLabel sx={{ color: "#FDE4BC", }}>Invite Code</FormLabel>
+              <Box display="flex" alignItems="center" mt={2.5} >
+                {/* <MoveToInboxIcon sx={{ color: "#e8910d" }} /> */}
+                <FormLabel sx={{ marginLeft: "6px", color: "#ffffff", fontSize: "12px", fontWeight: "400" }}>
+                  Invite Code</FormLabel>
               </Box>
               <TextField
                 placeholder="Please enter the invitation code"
@@ -588,44 +504,35 @@ const Register = () => {
                 onChange={(e) => setInviteCode(e.target.value)}
                 fullWidth
                 required
+                type="text"
                 variant="outlined"
                 margin="normal"
-                disabled
-                InputProps={{
-                  style: { borderRadius: "10px", color: "#FDE4BC" },
-                }}
-                InputLabelProps={{
-                  style: { color: "#FDE4BC" },
-                }}
+                // disabled
                 sx={{
-                  width: "96%",
-                  backgroundColor: "#241e22",
-                  borderRadius: "10px",
+                  flex: 1,
+                  backgroundColor: "transparent",
                   "& .MuiOutlinedInput-root": {
-                    height: "46px", // Smaller TextField size
+                    height: "40px",
+                    borderRadius: "1px",
                     "& fieldset": {
-                      borderColor: "transparent", // Lighter border color
+                      borderColor: "#D3D3D3",
                     },
                     "&:hover fieldset": {
-                      borderColor: "transparent", // Slightly lighter on hover
+                      borderColor: "#D3D3D3",
                     },
                     "&.Mui-focused fieldset": {
-                      borderWidth: "0.1px",
-                      borderColor: "#666255 !important", // Focused border color
+                      borderWidth: "1px",
+                      borderColor: "#D3D3D3",
                     },
-                    "& .Mui-disabled": {
-                      "&:hover": {
-                        borderColor: "transparent",
-                      },
-                      "-webkit-text-fill-color":"#B79C8B",
-                    },
-                    fontSize: "15px", // Slightly smaller text size
-                    color: "#FDE4BC",
-                    
+                  },
+                  "& .MuiInputBase-input": {
+                    color: "#ffffff",
+                    fontSize: "15px",
                   },
                   "& .MuiInputBase-input::placeholder": {
-                    color: "#FDE4BC !important", // Placeholder color
-                    fontWeight: "300",
+                    fontWeight: "400",
+                    color: "#999",
+                    opacity: 1,
                   },
                 }}
               />
@@ -634,8 +541,8 @@ const Register = () => {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  margin: "16px 0 8px",
-                  color: "FED358",
+                  margin: "4px 0 8px",
+                  color: "#e8910d",
                 }}
               >
                 <RadioGroup row>
@@ -656,7 +563,7 @@ const Register = () => {
                         checkedIcon={
                           <CheckCircleIcon
                             sx={{
-                              color: "#FED358 ", // Checked color
+                              color: "#24ee89", // Checked color
                               fontSize: 22, // Slightly bigger for effect
                             }}
                           />
@@ -664,15 +571,15 @@ const Register = () => {
                       />
                     }
                     label={
-                      <Typography sx={{ color: "#B79C8B", fontSize: 13 }}>
-                        I have read and agree <span style={{ color: "#D23838" }}>【Privacy Agreement】</span>
+                      <Typography sx={{ color: "#768096", fontSize: 13 }}>
+                        I have read and agree <span style={{ color: "#24ee89" }}>【Privacy Agreement】</span>
                       </Typography>
                     }
                   />
                 </RadioGroup>
               </Box>
               {error && (
-                <Alert severity="error" sx={{ mb: 2, bgcolor: "#232626", color: "#D23838" }}>
+                <Alert severity="error" sx={{ mb: 2, bgcolor: "#f1f2f5", color: "#D23838" }}>
                   {error}
                 </Alert>
               )}
@@ -682,17 +589,18 @@ const Register = () => {
                 fullWidth
                 style={{
                   background:
-                    "linear-gradient(180deg, #FED358 , #FFB472 ),#241e22",
-                  borderRadius: "360px",
+                    "linear-gradient(180deg,#9fe871,#24ee89)",
+                  borderRadius: "2px",
                   width: "85%",
                   height: "43px",
+                  textShadow: "0 5px 2px rgba(100,35,30,.501961)",
                   textTransform: "none",
                 }}
                 sx={{
                   fontWeight: "bold",
                   marginBottom: "20px",
                   marginTop: "18px",
-                  color: "#221f2e",
+                  color: "#ffffff",
                   fontSize: "19px", // Replace with the desired royal gold color if different
                 }}
               >
@@ -704,8 +612,8 @@ const Register = () => {
                 color="primary"
                 fullWidth
                 style={{
-                  borderRadius: "300px",
-                  borderColor: "#FED358",
+                  borderRadius: "2px",
+                  borderColor: "#24ee89",
                   // height:"15%",
                   marginBottom: "6px",
                   marginTop: "1px",
@@ -715,10 +623,10 @@ const Register = () => {
                   width: "85%",
                 }}
               >
-                <span style={{ color: "#a8a5a1" }}>I have an account </span>
+                <span style={{ color: "#24ee89" }}>I have an account </span>
                 <span
                   style={{
-                    color: "#FED358",
+                    color: "#24ee89",
                     marginLeft: "10px",
                     fontSize: "16px",
                     textTransform: "none",
