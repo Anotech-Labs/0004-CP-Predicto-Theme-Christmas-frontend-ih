@@ -70,7 +70,7 @@ const Feedback = () => {
         disableGutters
         maxWidth="xs"
         sx={{
-          bgcolor: "#110d14",
+          bgcolor: "#232626",
           height: "100vh",
           maxWidth: "100vw", // Set the maxWidth to 100vw to handle viewport width
           display: "flex",
@@ -85,7 +85,7 @@ const Feedback = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "7px 12px",
           }}
         >
@@ -116,7 +116,7 @@ const Feedback = () => {
           </Grid>
         </Grid>
 
-        <Box sx={{ p: 2, flexGrow: 1, background: "#110d14" }}>
+        <Box sx={{ p: 2, flexGrow: 1, background: "#232626" }}>
           <TextField
             fullWidth
             multiline

@@ -93,7 +93,7 @@ const ImageSlider = () => {
 
     marginLeft: "13px", // Left margin
     marginRight: "13px", // Right margin
-    backgroundColor:"#110d14 ",
+    backgroundColor:"#232626 ",
   }}
 >
   {/* Image Container */}

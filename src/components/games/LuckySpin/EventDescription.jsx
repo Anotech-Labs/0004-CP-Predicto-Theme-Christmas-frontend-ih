@@ -25,7 +25,7 @@ const EventDesc = () => {
       <Mobile>
         <Box
           sx={{
-            bgcolor: "#110d14",
+            bgcolor: "#232626",
             minHeight: "100vh",
             p: 0,
             maxWidth: "600px",
@@ -38,7 +38,7 @@ const EventDesc = () => {
             container
             alignItems="center"
             justifyContent="center"
-            sx={{ bgcolor: "#110d14", py: 0.8 }} // Background color for the header
+            sx={{ bgcolor: "#232626", py: 0.8 }} // Background color for the header
           >
             <Grid item xs={2}>
               <IconButton

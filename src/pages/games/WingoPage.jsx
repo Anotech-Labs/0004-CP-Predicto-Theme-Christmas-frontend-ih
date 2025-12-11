@@ -100,7 +100,7 @@ const StyledButtonGroup = styled(ButtonGroup)(({ theme }) => ({
   gap: "5.5px",
 }));
 const StyledButton = styled(Button)(({ theme, active, isRandom }) => ({
-  backgroundColor: isRandom ? "#241e22" : active ? "#17B15E" : "#110d14",
+  backgroundColor: isRandom ? "#241e22" : active ? "#17B15E" : "#232626",
   color: isRandom ? "#D23838" : active ? "#ffffff" : "#B79C8B",
   fontSize: "12px",
   padding: "3px 8px",
@@ -1093,7 +1093,7 @@ const WingoPage = ({ timerKey }) => {
     <>
       <Mobile>
         {/* <CountdownTimer setPeriodId={setPeriodId} selectedTimer={selectedTimer}/> */}
-        <div style={{ backgroundColor: "#110d14" }}>
+        <div style={{ backgroundColor: "#232626" }}>
           <Grid
             container
             alignItems="center"
@@ -1102,7 +1102,7 @@ const WingoPage = ({ timerKey }) => {
               position: "sticky",
               top: 0,
               zIndex: 5000,
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
               // padding: "4px 0px",
               color: "white",
             }}
@@ -1599,7 +1599,7 @@ const WingoPage = ({ timerKey }) => {
               container
               mt={2}
               sx={{
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 marginLeft: "auto",
                 marginRight: "auto",
                 // width: "calc(100% - 20px)",
@@ -2032,7 +2032,7 @@ const WingoPage = ({ timerKey }) => {
                           style={{
                             borderRadius: 15,
                             height: isSmallScreen2 ? 25 : 30,
-                            backgroundColor: "#110d14",
+                            backgroundColor: "#232626",
                             color: "#FDE4BC",
                           }}
                           InputProps={{
@@ -2107,7 +2107,7 @@ const WingoPage = ({ timerKey }) => {
                               // border: `1px solid #382e35`,
                               borderRadius: "4px",
                               padding: "4px 12px",
-                              backgroundColor: "#110d14",
+                              backgroundColor: "#232626",
                               color: "white",
                               minWidth: "55px",
                               textAlign: "center",

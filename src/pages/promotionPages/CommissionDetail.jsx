@@ -128,7 +128,7 @@ const CommissionDetail = () => {
           height="calc(var(--vh, 1vh) * 100)"
           position="relative"
         >
-          <Box flexGrow={1} sx={{ background: "#110d14" }}>
+          <Box flexGrow={1} sx={{ background: "#232626" }}>
             <Grid
               container
               alignItems="center"
@@ -137,7 +137,7 @@ const CommissionDetail = () => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 padding: "10px 12px",
               }}
             >

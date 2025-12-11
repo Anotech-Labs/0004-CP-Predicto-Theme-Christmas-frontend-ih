@@ -133,7 +133,7 @@ const CustomerService = () => {
         disableGutters
         maxWidth="xs"
         sx={{
-          bgcolor: "#110d14",
+          bgcolor: "#232626",
           height: "100vh",
           display: "flex",
           flexDirection: "column",
@@ -144,7 +144,7 @@ const CustomerService = () => {
       >
         <Box
           sx={{
-            bgcolor: "#110d14",
+            bgcolor: "#232626",
             padding: "8px 10px",
             display: "flex",
             alignItems: "center",
@@ -271,7 +271,7 @@ const CustomerService = () => {
             fullWidth
             sx={{
               background: "linear-gradient(180deg, #FED358 , #FFB472 )",
-              color: "#110d14",
+              color: "#232626",
               fontSize: "16px",
               fontWeight: "bold",
               borderRadius: "24px",

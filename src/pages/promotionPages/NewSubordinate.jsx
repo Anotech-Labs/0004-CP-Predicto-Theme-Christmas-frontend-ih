@@ -18,7 +18,7 @@ const Navbar = () => {
         position: "sticky",
         top: 0,
         zIndex: 1000,
-        backgroundColor: "#110d14",
+        backgroundColor: "#232626",
         padding: "7px 12px",
       }}
     >
@@ -57,7 +57,7 @@ const DateOptions = ({ selectedOption, setSelectedOption }) => {
     <Box
       sx={{
         padding: "8px",
-        backgroundColor: "#110d14",
+        backgroundColor: "#232626",
         display: "flex",
         // borderRadius: "20px",
         justifyContent: "space-between",
@@ -133,7 +133,7 @@ const SubordinateList = ({ filter }) => {
   return (
     <Box
       sx={{
-        backgroundColor: "#110d14",
+        backgroundColor: "#232626",
         padding: 1.5,
         flexGrow: 1,
         overflowY: "auto",

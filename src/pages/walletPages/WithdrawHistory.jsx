@@ -234,7 +234,7 @@ const WithdrawHistory = () => {
 
   return (
     <Mobile>
-      <Box sx={{ backgroundColor: "#110d14", minHeight: "100vh" }}>
+      <Box sx={{ backgroundColor: "#232626", minHeight: "100vh" }}>
         <Grid
           container
           alignItems="center"
@@ -243,7 +243,7 @@ const WithdrawHistory = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "7px 12px",
           }}
         >
@@ -281,7 +281,7 @@ const WithdrawHistory = () => {
             justifyContent: "space-between",
             gap: "8px",
             padding: 0,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             marginBottom: 1,
             mx: "auto",
             width: "calc(100% - 30px)",

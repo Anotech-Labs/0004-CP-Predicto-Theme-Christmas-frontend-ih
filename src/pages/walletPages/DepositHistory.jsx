@@ -258,7 +258,7 @@ const DepositHistory = () => {
           color="#f2f2f1"
           sx={{ minHeight: "100vh", bgcolor: "#F5F5F5" }}
         >
-          <Box flexGrow={1} sx={{ background: "#110d14" }}>
+          <Box flexGrow={1} sx={{ background: "#232626" }}>
             <Grid
               container
               alignItems="center"
@@ -267,7 +267,7 @@ const DepositHistory = () => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 padding: "7px 12px",
               }}
             >

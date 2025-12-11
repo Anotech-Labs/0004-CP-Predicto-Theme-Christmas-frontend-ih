@@ -38,7 +38,7 @@ const ChooseBank = ({selectedBank, setSelectedBank, setShowBankSelection}) => {
 
   return (
     <>
-      <Box sx={{ backgroundColor: "#110d14", p: 2 }}>
+      <Box sx={{ backgroundColor: "#232626", p: 2 }}>
         <Box sx={{ backgroundColor: "#241e22", mb: 2 }}>
           <TextField
             fullWidth

@@ -47,8 +47,8 @@ const FirstDepositCard = ({ bonus, onDeposit, depositType = "FIRST" })  => {
             flexGrow: 1,
             height: 16,
             borderRadius: 4,
-            backgroundColor: "#110d14",
-            "& .MuiLinearProgress-bar": { backgroundColor: "#110d14" },
+            backgroundColor: "#232626",
+            "& .MuiLinearProgress-bar": { backgroundColor: "#232626" },
           }}
         />
         <Typography

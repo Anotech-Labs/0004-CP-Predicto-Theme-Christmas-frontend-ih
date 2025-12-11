@@ -14,7 +14,7 @@
     transform: translate(-50%, -50%);
     width: 280px;
     padding: 0;
-    background-color: #110d14;
+    background-color: #232626;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     color: #ffffff;
@@ -52,7 +52,7 @@
   }
   
   .modal-footer {
-    background-color: #110d14;
+    background-color: #232626;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 20px;

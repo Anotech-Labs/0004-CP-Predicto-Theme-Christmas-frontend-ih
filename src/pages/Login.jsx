@@ -196,7 +196,7 @@ const Login = () => {
           position: "sticky",
           top: 0,
           zIndex: 1000,
-          backgroundColor: "#110d14",
+          backgroundColor: "#232626",
           px: "2px",
           height: "50px",
           // py: "2px",
@@ -352,7 +352,7 @@ const Login = () => {
         justifyContent="flex-start"
         alignItems="flex-start"
         sx={{
-          backgroundColor: "#110d14",
+          backgroundColor: "#232626",
           pl: "23px",
           pr: "23px",
           color: "white",
@@ -768,7 +768,7 @@ const Login = () => {
               fullWidth
               sx={{
                 "&:hover": {
-                  background: "#110d14",
+                  background: "#232626",
                 },
               }}
               style={{

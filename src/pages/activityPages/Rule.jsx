@@ -36,7 +36,7 @@ const Rule = () => {
       <Mobile>
         <Box
           sx={{
-            bgcolor: "#110d14",
+            bgcolor: "#232626",
             minHeight: "100vh",
             p: 0,
             maxWidth: "sm",
@@ -51,7 +51,7 @@ const Rule = () => {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
               padding: "7px 12px",
             }}
           >
@@ -237,7 +237,7 @@ const Rule = () => {
                   {bonusData.map((row, index) => (
                     <TableRow
                       key={index}
-                      sx={{ bgcolor: index % 2 === 0 ? "#241e22" : "#110d14" }}
+                      sx={{ bgcolor: index % 2 === 0 ? "#241e22" : "#232626" }}
                     >
                       <TableCell
                         sx={{

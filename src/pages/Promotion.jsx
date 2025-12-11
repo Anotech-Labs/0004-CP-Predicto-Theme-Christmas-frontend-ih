@@ -429,7 +429,7 @@ const Promotion = ({ children }) => {
               <LoadingLogo websiteName="Cognix" />
             </div>
           )}
-          <Box flexGrow={1} sx={{ backgroundColor: "#110d14" }}>
+          <Box flexGrow={1} sx={{ backgroundColor: "#232626" }}>
             <Grid
               container
               alignItems="center"
@@ -438,7 +438,7 @@ const Promotion = ({ children }) => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 padding: "10px 16px",
                 color: "#FDE4BC",
               }}

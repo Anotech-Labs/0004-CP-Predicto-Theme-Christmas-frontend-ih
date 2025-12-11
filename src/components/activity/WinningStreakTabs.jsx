@@ -321,7 +321,7 @@ const WinningStreakTabs = () => {
                                 background: selectedGame === tab.value
                                     ? "linear-gradient(180deg, #FED358 , #FFB472 )"
                                     : "#241e22",
-                                color: selectedGame === tab.value?"#110d14":"#FDE4BC",
+                                color: selectedGame === tab.value?"#232626":"#FDE4BC",
                             }}
                         >
                             <Grid sx={{ width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>

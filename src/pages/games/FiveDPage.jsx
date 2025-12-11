@@ -1350,7 +1350,7 @@ const FiveDPage = ({ timerKey }) => {
     return (
         <div>
             <Mobile>
-                <div style={{ backgroundColor: "#110d14", overflowX: "hidden" }}>
+                <div style={{ backgroundColor: "#232626", overflowX: "hidden" }}>
                     <Grid
                         container
                         alignItems="center"
@@ -1359,7 +1359,7 @@ const FiveDPage = ({ timerKey }) => {
                             position: "sticky",
                             top: 0,
                             zIndex: 5000,
-                            backgroundColor: "#110d14",
+                            backgroundColor: "#232626",
                             // padding: "4px 0px",
                             color: "white",
                         }}
@@ -1606,7 +1606,7 @@ const FiveDPage = ({ timerKey }) => {
                                 <Typography
                                     variant="body2"
                                     sx={{
-                                        fontSize: { xs: "13px", sm: "13px" }, color: "#110d14"
+                                        fontSize: { xs: "13px", sm: "13px" }, color: "#232626"
                                     }}
                                 >
                                     {results[0]?.sumSection}
@@ -2254,7 +2254,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     style={{
                                                         borderRadius: 15,
                                                         height: isSmallScreen2 ? 25 : 30,
-                                                        backgroundColor: "#110d14",
+                                                        backgroundColor: "#232626",
                                                         color: "#FDE4BC",
                                                     }}
                                                     InputProps={{
@@ -2319,7 +2319,7 @@ const FiveDPage = ({ timerKey }) => {
                                                             // border: `1px solid ${selectedColor}`,
                                                             borderRadius: "4px",
                                                             padding: "4px 12px",
-                                                            backgroundColor: "#110d14",
+                                                            backgroundColor: "#232626",
                                                             color: "white",
                                                             minWidth: "55px",
                                                             textAlign: "center",

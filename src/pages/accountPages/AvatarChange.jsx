@@ -79,7 +79,7 @@ const AvatarChange = () => {
       <Mobile>
         <Box
           sx={{
-            bgcolor: "#110d14",
+            bgcolor: "#232626",
             minHeight: "100vh",
             p: 0,
             maxWidth: "600px",
@@ -95,7 +95,7 @@ const AvatarChange = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "7px 12px",
           }}
         >

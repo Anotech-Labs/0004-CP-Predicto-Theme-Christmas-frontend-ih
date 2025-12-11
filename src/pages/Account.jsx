@@ -480,17 +480,17 @@ const options = [
           height="calc(var(--vh, 1vh) * 100)"
           position="relative"
           sx={{
-            backgroundColor: "#110d14", // Base background color
+            backgroundColor: "#232626", // Base background color
             overflowY: "scroll",
             overflowX: "hidden",
             "&::-webkit-scrollbar": {
               width: "0px",
             },
             "&::-webkit-scrollbar-track": {
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
             },
             "&::-webkit-scrollbar-thumb": {
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
             },
           }}
         >

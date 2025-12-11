@@ -98,13 +98,13 @@ const AddUSDT = () => {
     return (
         <Mobile>
             <Container disableGutters maxWidth="xs" sx={{
-                bgcolor: "#110d14", height: "100vh", display: "flex", flexDirection: "column",
+                bgcolor: "#232626", height: "100vh", display: "flex", flexDirection: "column",
                 "&.MuiContainer-root": {
                     maxWidth: "100%"
                 }
             }}>
                 {/* Header */}
-                <Box sx={{ bgcolor: "#110d14", padding: "8px 10px", display: "flex", alignItems: "center", color: "#FDE4BC" }}>
+                <Box sx={{ bgcolor: "#232626", padding: "8px 10px", display: "flex", alignItems: "center", color: "#FDE4BC" }}>
                     <ChevronLeftIcon sx={{ fontSize: 30, cursor: "pointer" }} onClick={() => navigate(-1)} />
                     <Typography variant="h6" sx={{ flexGrow: 1, textAlign: "center", color: "#FDE4BC" }}>
                         Add USDT Address

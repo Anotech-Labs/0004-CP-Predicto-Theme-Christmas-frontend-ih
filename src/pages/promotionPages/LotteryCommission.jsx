@@ -48,7 +48,7 @@ useEffect(() => {
         flexDirection="column"
         height="calc(var(--vh, 1vh) * 100)"
         position="relative"
-        backgroundColor="#110d14"
+        backgroundColor="#232626"
       >
         <Box flexGrow={1}>
         <Grid
@@ -59,7 +59,7 @@ useEffect(() => {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
               padding: "7px 12px",
             }}
           >

@@ -926,7 +926,7 @@ export const ResponsiveRacingWrapper = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            backgroundColor: "#110d14"
+            backgroundColor: "#232626"
         }}>
             <div
                 ref={containerRef}

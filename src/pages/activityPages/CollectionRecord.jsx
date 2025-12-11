@@ -72,7 +72,7 @@ function CollectionRecord() {
           position: "sticky",
           top: 0,
           zIndex: 1000,
-          backgroundColor: "#110d14",
+          backgroundColor: "#232626",
           padding: "7px 12px",
         }}
       >
@@ -98,7 +98,7 @@ function CollectionRecord() {
         </Grid>
       </Grid>
 
-      <Box sx={{ background: "#110d14", height: "100vh", padding: "11px" }}>
+      <Box sx={{ background: "#232626", height: "100vh", padding: "11px" }}>
         <Box
           sx={{
             display: "flex",
@@ -117,7 +117,7 @@ function CollectionRecord() {
               padding: "16px 0",
               borderRadius: "8px",
               width: "100%", // Equal width for all buttons
-              color: activeButton === "daily" ? "#110D14" : "#B79C8B",
+              color: activeButton === "daily" ? "#232626" : "#B79C8B",
               textAlign: "center",
               cursor: "pointer",
             }}
@@ -134,7 +134,7 @@ function CollectionRecord() {
               padding: "16px 0",
               borderRadius: "8px",
               width: "100%", // Equal width for all buttons
-              color: activeButton === "weekly" ? "#110D14" : "#B79C8B",
+              color: activeButton === "weekly" ? "#232626" : "#B79C8B",
               textAlign: "center",
               cursor: "pointer",
             }}
@@ -151,7 +151,7 @@ function CollectionRecord() {
               padding: "16px 0",
               borderRadius: "8px",
               width: "100%", // Equal width for all buttons
-              color: activeButton === "monthly" ? "#110D14" : "#B79C8B",
+              color: activeButton === "monthly" ? "#232626" : "#B79C8B",
               textAlign: "center",
               cursor: "pointer",
             }}

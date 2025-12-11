@@ -93,7 +93,7 @@ const EventDetails = () => {
       <Mobile>
         <Box
           sx={{
-            bgcolor: "#110d14",
+            bgcolor: "#232626",
             // minHeight: "100vh",
             height: "100vh",
             p: 0,
@@ -107,7 +107,7 @@ const EventDetails = () => {
             container
             alignItems="center"
             justifyContent="center"
-            sx={{ bgcolor: "#110d14", py: 0.8 }} // Background color for the header
+            sx={{ bgcolor: "#232626", py: 0.8 }} // Background color for the header
           >
             <Grid item xs={2}>
               <IconButton
@@ -221,7 +221,7 @@ const EventDetails = () => {
                 </Box>
               ))}
             </Box>
-            <Box sx={{ bgcolor: "#110d14", p: 1.5, borderRadius: 2, mb: 1, textAlign: "left", mx: 2, color: "#B79C8B" }}>
+            <Box sx={{ bgcolor: "#232626", p: 1.5, borderRadius: 2, mb: 1, textAlign: "left", mx: 2, color: "#B79C8B" }}>
               {/* Example text */}
               <Typography variant="body1" sx={{ mb: 0, fontSize: "13.2px" }}>
                 For example:

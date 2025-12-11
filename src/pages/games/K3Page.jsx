@@ -1693,7 +1693,7 @@ const K3Page = ({ timerKey }) => {
   return (
     <>
       <Mobile>
-        <div style={{ backgroundColor: "#110d14" }}>
+        <div style={{ backgroundColor: "#232626" }}>
           <Grid
             container
             alignItems="center"
@@ -1702,7 +1702,7 @@ const K3Page = ({ timerKey }) => {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
               padding: "0px 16px",
               color: "white",
             }}
@@ -2419,7 +2419,7 @@ const K3Page = ({ timerKey }) => {
                           style={{
                             borderRadius: 15,
                             height: isSmallScreen2 ? 25 : 30,
-                            backgroundColor: "#110d14",
+                            backgroundColor: "#232626",
                             color: "#FDE4BC",
                           }}
                           InputProps={{
@@ -2484,7 +2484,7 @@ const K3Page = ({ timerKey }) => {
                               // border: `1px solid #382e35`,
                               borderRadius: "4px",
                               padding: "4px 12px",
-                              backgroundColor: "#110d14",
+                              backgroundColor: "#232626",
                               color: "white",
                               minWidth: "55px",
                               textAlign: "center",
@@ -2603,7 +2603,7 @@ const K3Page = ({ timerKey }) => {
                       disabled={!agreed}
                       style={{
                         background: "#FED358",
-                        color: "#110d14",
+                        color: "#232626",
                         textTransform: "none",
                         borderRadius: "0px", height:"50px"
                       }}

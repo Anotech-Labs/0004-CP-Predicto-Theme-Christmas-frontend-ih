@@ -233,11 +233,11 @@ const ProgressQueries = () => {
   return (
     <Mobile>
       <Container disableGutters maxWidth="xs" sx={{
-        bgcolor: "#110d14", height: "100vh", display: "flex", flexDirection: "column",
+        bgcolor: "#232626", height: "100vh", display: "flex", flexDirection: "column",
         "&.MuiContainer-root": { maxWidth: "100%" }
       }}>
         {/* Header */}
-        <Box sx={{ bgcolor: "#110d14", padding: "8px 10px", display: "flex", alignItems: "center", color: "#FDE4BC" }}>
+        <Box sx={{ bgcolor: "#232626", padding: "8px 10px", display: "flex", alignItems: "center", color: "#FDE4BC" }}>
           <ChevronLeftIcon sx={{ fontSize: 30, cursor: "pointer" }} onClick={() => window.history.back()} />
           <Typography variant="h6" sx={{ flexGrow: 1, textAlign: "center", color: "#FDE4BC" }}>
             Progress Queries
@@ -246,7 +246,7 @@ const ProgressQueries = () => {
         </Box>
 
         {/* Search and Filter */}
-        <Box sx={{ p: 2, bgcolor: "#110d14" }}>
+        <Box sx={{ p: 2, bgcolor: "#232626" }}>
           {/* Dropdown filter replacing chips */}
           <FormControl fullWidth size="small"
             sx={{
@@ -275,10 +275,10 @@ const ProgressQueries = () => {
               MenuProps={{
                 PaperProps: {
                   sx: {
-                    bgcolor: "#110d14",
+                    bgcolor: "#232626",
                     "& .MuiMenuItem-root": {
                       color: "#A8A5A1",
-                      bgcolor: "#110d14",
+                      bgcolor: "#232626",
                       padding: "10px 16px",
                     },
                     "& .MuiMenuItem-root:hover": {
@@ -303,7 +303,7 @@ const ProgressQueries = () => {
 
         {/* Ticket List */}
         <Box sx={{
-          flexGrow: 1, p: 2, bgcolor: "#110d14", overflowY: "auto",
+          flexGrow: 1, p: 2, bgcolor: "#232626", overflowY: "auto",
           '&::-webkit-scrollbar': { // Hide scrollbar for WebKit browsers
             width: 0,
             background: 'transparent',
@@ -357,7 +357,7 @@ const ProgressQueries = () => {
                       </Box>
 
                       <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', mb: 0.5 }}>
-                        <Avatar sx={{ width: isSmallScreen ? 25 : 28, height: isSmallScreen ? 25 : 28, fontSize: isSmallScreen ? "12px" : "14px", bgcolor: '#110d14' }}>
+                        <Avatar sx={{ width: isSmallScreen ? 25 : 28, height: isSmallScreen ? 25 : 28, fontSize: isSmallScreen ? "12px" : "14px", bgcolor: '#232626' }}>
                           {typeIcons[ticket.type] || '📝'}
                         </Avatar>
                         <Typography variant="body1" sx={{ fontWeight: 'medium', color: '#f5f3f0', fontSize: isSmallScreen ? "13px" : "14px" }}>
@@ -415,7 +415,7 @@ const ProgressQueries = () => {
           TransitionComponent={isMobile ? Transition : undefined}
           PaperProps={{
             style: {
-              backgroundColor: '#110d14',
+              backgroundColor: '#232626',
               color: '#FDE4BC',
               margin: isMobile ? "20px" : undefined,
               borderRadius: isMobile ? 0 : undefined,
@@ -747,7 +747,7 @@ const ProgressQueries = () => {
                                   onClick={() => handleViewAttachment(attachment)}
                                   size="small"
                                   sx={{
-                                    bgcolor: '#110d14',
+                                    bgcolor: '#232626',
                                     color: 'white',
                                     '& .MuiChip-icon': { color: 'white' }
                                   }}
@@ -791,7 +791,7 @@ const ProgressQueries = () => {
           // maxWidth="md"
           PaperProps={{
             style: {
-              backgroundColor: '#110d14',
+              backgroundColor: '#232626',
               color: 'white',
               overflow: 'hidden',
               maxWidth:"340px"

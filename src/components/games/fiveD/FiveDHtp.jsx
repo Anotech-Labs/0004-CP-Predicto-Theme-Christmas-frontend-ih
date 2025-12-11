@@ -45,7 +45,7 @@ const FiveDHtp = ({ isOpen, onClose }) => {
           maxHeight: '300px',
           overflowY: 'auto',
           textAlign: 'left ',
-          background:"#110d14",
+          background:"#232626",
                     color:"#FDE4BC",
                     scrollbarWidth: "none",  // Hide scrollbar in Firefox
         msOverflowStyle: "none", // Hide scrollbar in IE/Edge
@@ -81,7 +81,7 @@ const FiveDHtp = ({ isOpen, onClose }) => {
       </div>
       <div
         style={{
-          backgroundColor: '#110d14',
+          backgroundColor: '#232626',
           borderBottomLeftRadius: '15px',
           borderBottomRightRadius: '15px',
           padding: '20px',

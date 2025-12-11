@@ -139,7 +139,7 @@ const AddBank = () => {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
               padding: "12px 16px",
               // borderBottom: "1px solid #e0e0e0",
             }}
@@ -164,7 +164,7 @@ const AddBank = () => {
         {showBankSelection ? (
           <ChooseBank selectedBank={selectedBank} setSelectedBank={setSelectedBank} setShowBankSelection={setShowBankSelection} />
         ) : (
-          <Box sx={{ px: "8px", backgroundColor: "#110d14", height: "100%" }}>
+          <Box sx={{ px: "8px", backgroundColor: "#232626", height: "100%" }}>
             <Box sx={{ backgroundColor: "#241e22", p: 1, mb: 3, borderRadius: "20px", display: "flex", alignItems: "center" }}>
               <Typography variant="body2" display="flex" alignItems="center" color="error" textAlign="left" sx={{ fontSize: "12px" }}>
                 <ErrorOutlineOutlinedIcon sx={{ mr: 1, fontSize: "20px" }} />

@@ -34,7 +34,7 @@ const Lucky10days = () => {
                 sx={{
                     margin: 0,
                     padding: 0,
-                    backgroundColor: "#110d14",
+                    backgroundColor: "#232626",
                     minHeight: "100vh",
                 }}
             >
@@ -47,7 +47,7 @@ const Lucky10days = () => {
                         position: "sticky",
                         top: 0,
                         zIndex: 1000,
-                        backgroundColor: "#110d14",
+                        backgroundColor: "#232626",
                         padding: "7px 12px",
                     }}
                 >

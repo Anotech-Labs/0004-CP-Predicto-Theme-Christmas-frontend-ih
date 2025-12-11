@@ -49,7 +49,7 @@ const InvitationRecord = () => {
 
     return (
         <Mobile>
-            <Box sx={{ bgcolor: '#110d14', minHeight: '100vh', maxWidth: 'sm', mx: 'auto' }}>
+            <Box sx={{ bgcolor: '#232626', minHeight: '100vh', maxWidth: 'sm', mx: 'auto' }}>
                 {/* App Bar */}
                 <Grid
                     container

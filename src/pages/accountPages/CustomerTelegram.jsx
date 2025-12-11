@@ -67,7 +67,7 @@ const CustomerTelegram = () => {
                 flexDirection="column"
                 height="100vh"
                 sx={{
-                    backgroundColor: "#110d14",
+                    backgroundColor: "#232626",
                 }}
             >
                 {/* Header */}
@@ -77,7 +77,7 @@ const CustomerTelegram = () => {
                         alignItems: 'center',
                         p: 2,
                         justifyContent: 'space-between',
-                        backgroundColor: '#110d14,'
+                        backgroundColor: '#232626,'
                     }}
                 >
                     <HomeIcon sx={{ color: '#fff' }} onClick={() => navigate('/')} />
@@ -112,7 +112,7 @@ const CustomerTelegram = () => {
                 </Box>
 
                 {/* Banner */}
-                <Box sx={{ p: 0, backgroundColor: '#110d14' }}>
+                <Box sx={{ p: 0, backgroundColor: '#232626' }}>
                     <Box
                         sx={{
                             position: 'relative',
@@ -134,7 +134,7 @@ const CustomerTelegram = () => {
                 </Box>
 
                 {/* Self Service Section */}
-                <Box sx={{ p: 2, bgcolor: '#110d14', flexGrow: 1 }}>
+                <Box sx={{ p: 2, bgcolor: '#232626', flexGrow: 1 }}>
                     <Typography
                         sx={{
                             fontSize: '18px',

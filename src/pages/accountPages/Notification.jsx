@@ -160,7 +160,7 @@ const Notification = ({ children }) => {
           flexDirection="column"
           height="calc(var(--vh, 1vh) * 100)"
           position="relative"
-          sx={{ bgcolor: "#110d14", mb: 10 }}
+          sx={{ bgcolor: "#232626", mb: 10 }}
         >
           <Grid
             container
@@ -170,7 +170,7 @@ const Notification = ({ children }) => {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
               padding: "7px 12px",
             }}
           >

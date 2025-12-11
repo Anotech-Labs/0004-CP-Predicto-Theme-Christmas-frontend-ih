@@ -234,12 +234,12 @@ const InvitationRule = ({ children }) => {
   return (
     <>
       <Mobile>
-        <div style={{ backgroundColor: "#110d14" }}>
+        <div style={{ backgroundColor: "#232626" }}>
           <Container
             disableGutters
             maxWidth="xs"
             sx={{
-              bgcolor: "#110d14",
+              bgcolor: "#232626",
               minHeight: "100dvh",
               display: "flex",
               flexDirection: "column",
@@ -254,7 +254,7 @@ const InvitationRule = ({ children }) => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "7px 12px",
           }}
         >

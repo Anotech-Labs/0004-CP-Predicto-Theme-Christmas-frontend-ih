@@ -18,6 +18,8 @@ import TopBanner from "./TopBanner";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import LoadingLogo from "../utils/LodingLogo";
 import Divider from '@mui/material/Divider';
+import { useAuth } from "../../context/AuthContext";
+import { Button } from "@mui/material";
 const HomeMain = ({ children }) => {
   const RhombusIcon = (props) => (
     <SvgIcon {...props}>
@@ -34,6 +36,7 @@ const HomeMain = ({ children }) => {
   const [selectedTabName, setSelectedTabName] = useState("All");
   const navigate = useNavigate()
   const { userWallet, getWalletBalance, isLoading } = useContext(UserContext);
+  const { isAuthenticated } = useAuth()
   useEffect(() => {
     const timer = setTimeout(() => {
       setLogoLoading(false); // Hide loading after 2 seconds
@@ -50,17 +53,17 @@ const HomeMain = ({ children }) => {
         height="calc(var(--vh, 1vh) * 100)"
         position="relative"
         sx={{
-          backgroundColor: "#110d14",
+          backgroundColor: "#232626",
           overflowY: "scroll",
           overflowX: "hidden",
           "&::-webkit-scrollbar": {
             width: "1px",
           },
           "&::-webkit-scrollbar-track": {
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
           },
           "&::-webkit-scrollbar-thumb": {
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
           },
         }}
       >
@@ -88,7 +91,7 @@ const HomeMain = ({ children }) => {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
               // padding: "5px 6px",
               px: "6px",
               // pt: "7px",
@@ -104,26 +107,67 @@ const HomeMain = ({ children }) => {
                 style={{ width: "140px", height: "auto" }}
               />
             </Grid>
+
             <Grid item xs={6} textAlign="right" sx={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
-              <IconButton
-                style={{ color: "#fed358" }}
-              // onClick={() => navigate("/customer-service")}
-              >
-                <CloudDownloadIcon />
-              </IconButton>
-              <img
-                src="assets/icons/english.webp"
-                alt="logo"
-                style={{ width: "18px", marginRight: "4px", marginLeft: "4px" }}
-              />
-              <Typography sx={{ fontSize: "15px", color: "#FED358", marginRight: "13px" }}>EN</Typography>
+              {isAuthenticated ? (
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    alignItems: "center",
+                  }}
+                >
+                  <IconButton
+                    style={{ color: "#fed358" }}
+                  // onClick={() => navigate("/customer-service")}
+                  >
+                    <CloudDownloadIcon />
+                  </IconButton>
+                  <img
+                    src="assets/icons/english.webp"
+                    alt="logo"
+                    style={{ width: "18px", marginRight: "4px", marginLeft: "4px" }}
+                  />
+                  <Typography sx={{ fontSize: "15px", color: "#FED358", marginRight: "13px" }}>EN</Typography>
+                </Box>) : (
+                <Box sx={{
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  alignItems: "center",
+                }}>
+                  <Button sx={{
+                    textTransform: "none",
+                    color: "#ffffff",
+                    border: "1px solid white",
+                    width: "60px",
+                    height: "30px",
+                    mr: 1,
+                    fontSize: "12px",
+                    textAlign: "center",
+                    lineHeight: "30px",
+                    fontWeight: "600",
+                  }}>Sign In</Button>
+                  <Button sx={{
+                    textTransform: "none",
+                    color: "#000000",
+                    width: "60px",
+                    height: "30px",
+                    fontSize: "12px",
+                    textAlign: "center",
+                    lineHeight: "30px",
+                    fontWeight: "600",
+                    background: "linear-gradient(90deg,#24ee89,#9fe871)",
+                    boxShadow: "0 0 12px rgba(35,238,136,.3),inset 0 -2px #1dca6a"
+                  }}>Sign Up </Button>
+                </Box>
+              )}
             </Grid>
           </Grid>
 
           {/* <TopBanner /> */}
           <ImageSlider />
-          <DetailsBox />
-          <Winning/>
+          {/* <DetailsBox /> */}
+          <Winning />
           {/* <WalletComponent /> */}
           {/* Tabs */}
           {/* <ScrollableTabs/> */}
@@ -159,7 +203,7 @@ const HomeMain = ({ children }) => {
                 Today's earnings chart
               </Typography>
             </Box>
-            <Box sx={{ width: "100%", borderRadius: "12px", background: "#110d14" }}>
+            <Box sx={{ width: "100%", borderRadius: "12px", background: "#232626" }}>
               <Stage /></Box>
           </Box>
 
@@ -178,7 +222,7 @@ const HomeMain = ({ children }) => {
               flexDirection="column"
               gap={1.5}
               sx={{
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 p: 1,
                 borderRadius: "8px",
               }} // Optional container styling

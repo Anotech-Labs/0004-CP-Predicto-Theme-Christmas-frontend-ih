@@ -233,7 +233,7 @@ function GameStatistic({ children }) {
           flexDirection="column"
           height="calc(var(--vh, 1vh) * 100)"
           position="relative"
-          sx={{ backgroundColor: "#110d14" }}
+          sx={{ backgroundColor: "#232626" }}
         >
           <Grid
             container
@@ -243,7 +243,7 @@ function GameStatistic({ children }) {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
               padding: "7px 12px",
             }}
           >
@@ -280,7 +280,7 @@ function GameStatistic({ children }) {
               display: "flex",
               justifyContent: "center",
               p: 2,
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
             }}
           >
             {["Today", "Yesterday", "This week", "This month"].map((label) => (

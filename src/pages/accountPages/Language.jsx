@@ -26,7 +26,7 @@ const Language = () => {
       disableGutters
       maxWidth="xs"
       sx={{
-        bgcolor: "#110d14",
+        bgcolor: "#232626",
         height: "100vh",
         display: "flex",
         flexDirection: "column",
@@ -40,7 +40,7 @@ const Language = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "7px 12px",
           }}
         >
@@ -75,7 +75,7 @@ const Language = () => {
         <ListItem
           onClick={() => handleLanguageSelect('en')}
           sx={{
-            bgcolor: selectedLang === 'en'?'#241e22':"#110d14",
+            bgcolor: selectedLang === 'en'?'#241e22':"#232626",
             borderRadius: '8px',
             mb: 1,
             borderBottom:"1px solid #3c3830",
@@ -117,7 +117,7 @@ const Language = () => {
         <ListItem
           onClick={() => handleLanguageSelect('hi')}
           sx={{
-            bgcolor: selectedLang === 'hi'?'#241e22':"#110d14",
+            bgcolor: selectedLang === 'hi'?'#241e22':"#232626",
             borderRadius: '8px',
             cursor: 'pointer',
             borderBottom:"1px solid #3c3830",

@@ -101,7 +101,7 @@ const GameRules = () => {
     return (
         <div>
             <Mobile>
-                <Box disableGutters maxWidth="xs" sx={{ bgcolor: '#110d14', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+                <Box disableGutters maxWidth="xs" sx={{ bgcolor: '#232626', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
                     <Grid
                         container
                         alignItems="center"
@@ -110,7 +110,7 @@ const GameRules = () => {
                             position: 'sticky',
                             top: 0,
                             zIndex: 1000,
-                            backgroundColor: '#110d14',
+                            backgroundColor: '#232626',
                             padding: '10px 16px',
                         }}
                     >

@@ -121,7 +121,7 @@ const GiftCoupon = ({ children }) => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 padding: "7px 12px",
               }}
             >
@@ -152,13 +152,13 @@ const GiftCoupon = ({ children }) => {
               </Grid>
             </Grid>
 
-            <Box sx={{ backgroundColor: "#110d14", height: "100%" }}>
+            <Box sx={{ backgroundColor: "#232626", height: "100%" }}>
               <img
                 src="../assets/activity/giftbg.webp"
                 alt="coupon"
                 style={{ width: "100%", height: "190px" }}
               />
-              <Box sx={{ backgroundColor: "#110d14", px: 1.5, pb: 1, mt: 1.5 }}>
+              <Box sx={{ backgroundColor: "#232626", px: 1.5, pb: 1, mt: 1.5 }}>
                 <Box
                   sx={{
                     backgroundColor: "#241e22",
@@ -213,7 +213,7 @@ const GiftCoupon = ({ children }) => {
                         marginBottom: "10px",
                         padding: "2px",
                         borderRadius: "20px",
-                        backgroundColor: "#110d14",
+                        backgroundColor: "#232626",
                         "& .MuiInputBase-input::placeholder": {
                           color: "#9598aa",
                         },
@@ -249,7 +249,7 @@ const GiftCoupon = ({ children }) => {
                 </Box>
               </Box>
 
-              <Box sx={{ padding: 1.5, boxShadow: "none", background: "#110d14",mb:3 }}>
+              <Box sx={{ padding: 1.5, boxShadow: "none", background: "#232626",mb:3 }}>
                 <Card
                   sx={{
                     borderRadius: 2,
@@ -287,7 +287,7 @@ const GiftCoupon = ({ children }) => {
                          <ListItem
                            alignItems="flex-start"
                            sx={{
-                             background: "#110d14",
+                             background: "#232626",
                              borderRadius: 2,
                              mb: 1,
                              padding: "12px 16px",

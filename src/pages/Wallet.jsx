@@ -225,7 +225,7 @@ const Wallet = ({ children }) => {
               <LoadingLogo websiteName="Cognix" />
             </div>
           )}
-          <Box flexGrow={1} sx={{ backgroundColor: "#110d14" }}>
+          <Box flexGrow={1} sx={{ backgroundColor: "#232626" }}>
             <Grid
               container
               alignItems="center"
@@ -234,7 +234,7 @@ const Wallet = ({ children }) => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 padding: "7px 12px",
               }}
             >
@@ -439,7 +439,7 @@ const Wallet = ({ children }) => {
                     width: "95%",
                     fontWeight: "bold",
                     textTransform: "initial",
-                    color:"#110D14"
+                    color:"#232626"
                   }}
                   fullWidth
                   onClick={handleTransfer}

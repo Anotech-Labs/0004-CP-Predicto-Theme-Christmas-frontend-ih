@@ -100,7 +100,7 @@ const PasswordChange = () => {
 
   return (
     <Mobile>
-      <Box sx={{ bgcolor: "#110d14", minHeight: "100vh" }}>
+      <Box sx={{ bgcolor: "#232626", minHeight: "100vh" }}>
         <Grid
           container
           alignItems="center"
@@ -109,7 +109,7 @@ const PasswordChange = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "4px 8px",
             color: "#FDE4BC",
           }}
@@ -145,7 +145,7 @@ const PasswordChange = () => {
           justifyContent="flex-start"
           alignItems="flex-start"
           sx={{
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             pl: "23px",
             pr: "23px",
             color: "white",

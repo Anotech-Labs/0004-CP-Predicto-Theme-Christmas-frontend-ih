@@ -65,10 +65,10 @@ const Activity = () => {
               <LoadingLogo websiteName="Cognix" />
             </div>
           )}
-          <Box flexGrow={1} sx={{ backgroundColor: "#110d14" }}>
+          <Box flexGrow={1} sx={{ backgroundColor: "#232626" }}>
             <Grid
               sx={{
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,

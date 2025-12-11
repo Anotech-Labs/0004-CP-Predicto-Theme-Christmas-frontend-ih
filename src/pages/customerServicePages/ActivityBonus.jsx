@@ -89,10 +89,10 @@ const ActivityBonus = () => {
     return (
         <Mobile>
             <Container disableGutters maxWidth="xs" sx={{
-                bgcolor: "#110d14", height: "100vh", display: "flex", flexDirection: "column"
+                bgcolor: "#232626", height: "100vh", display: "flex", flexDirection: "column"
             }}>
                 {/* Header */}
-                <Box sx={{ bgcolor: "#110d14", padding: "12px 10px", display: "flex", alignItems: "center" }}>
+                <Box sx={{ bgcolor: "#232626", padding: "12px 10px", display: "flex", alignItems: "center" }}>
                     <ChevronLeftIcon sx={{ fontSize: 30, cursor: "pointer", color: "#FDE4BC" }} onClick={() => navigate(-1)} />
                     <Typography variant="h6" sx={{ flexGrow: 1, textAlign: "center", fontWeight: "bold", color: "#FDE4BC" }}>
                         Activity Bonus

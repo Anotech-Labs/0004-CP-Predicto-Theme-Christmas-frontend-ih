@@ -187,9 +187,9 @@ function AppContent() {
         <Route path="/customer-telegram" element={<CustomerTelegram />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/tms/change-password" element={<TMSChangePassword />} />
+        <Route path="/" element={<Home />} />
 
         <Route element={<ProtectedRoute />}>
-          <Route path="/" element={<Home />} />
           <Route path="/activity" element={<Activity />} />
           <Route path="/promotion" element={<Promotion />} />
           <Route path="/wallet" element={<Wallet />} />
@@ -402,7 +402,7 @@ function AppContent() {
         <Route element={<AdminRoute />}>
           <Route path="/admin/dashboard" element={<Dashboard />} />
           {/* <Route path="/admin/tournament-management" element={<TournamentManagement />} /> */}
-                    {/* <Route path="/admin/dynamic-spin-event" element={<DynamicSpinEventAdmin />} /> */}
+          {/* <Route path="/admin/dynamic-spin-event" element={<DynamicSpinEventAdmin />} /> */}
           <Route
             path="/admin/pending-deposit"
             element={<PendingDepositRequest />}
@@ -463,7 +463,7 @@ function AppContent() {
           <Route path="/admin/banned-users" element={<BannedUsers />} />
           <Route path="/admin/user-details/:id" element={<UserDetails />} />
           <Route path="/admin/edit-bank-detail" element={<EditBankDetails />} />
-                    <Route path="/admin/upi-management" element={<UPIManagementAdmin />} />
+          <Route path="/admin/upi-management" element={<UPIManagementAdmin />} />
 
           <Route path="/admin/create-salary" element={<CreateSalary />} />
           <Route path="/admin/update-turn-over" element={<UpdateTurnOver />} />

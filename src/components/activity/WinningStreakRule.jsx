@@ -31,7 +31,7 @@ const bannerPosterContext = useContext(BannerPosterContext)
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "7px 12px",
           }}
         >

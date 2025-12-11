@@ -195,7 +195,7 @@ const RefundProcess = () => {
         disableGutters
         maxWidth="xs"
         sx={{
-          bgcolor: "#110d14",
+          bgcolor: "#232626",
           minHeight: "100vh",
           display: "flex",
           flexDirection: "column",
@@ -206,7 +206,7 @@ const RefundProcess = () => {
       >
         <Box
           sx={{
-            bgcolor: "#110d14",
+            bgcolor: "#232626",
             padding: "8px 10px",
             display: "flex",
             alignItems: "center",

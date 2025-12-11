@@ -373,7 +373,7 @@ Ready to upgrade? Contact us today!`;
   };
   
   useEffect(() => {
-    if (location.pathname !== "/register" && location.pathname !== "/forgot-password" && location.pathname !== "/customer-telegram" && location.pathname !== "/tms/change-password") {
+    if (location.pathname !== "/register" && location.pathname !== "/" && location.pathname !== "/forgot-password" && location.pathname !== "/customer-telegram" && location.pathname !== "/tms/change-password") {
       checkAuthStatus();
     } else {
       setIsLoading(false);

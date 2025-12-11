@@ -147,7 +147,7 @@ function FirstDepositBonus({ children }) {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "7px 12px",
           }}
         >
@@ -180,14 +180,14 @@ function FirstDepositBonus({ children }) {
 
         {/* Tabs for different deposit types */}
         {availableDepositTypes.length > 1 && (
-          <Box sx={{ display: "flex", justifyContent: "center",  backgroundColor: "#110d14", }}>
+          <Box sx={{ display: "flex", justifyContent: "center",  backgroundColor: "#232626", }}>
               <Tabs
                 value={activeTab}
                 onChange={handleTabChange}
                 // variant="scrollable"
                 scrollButtons="auto"
                 sx={{
-                  backgroundColor: "#110d14",
+                  backgroundColor: "#232626",
                   '& .MuiTab-root': {
                     color: '#A8A5A1',
                     '&.Mui-selected': {

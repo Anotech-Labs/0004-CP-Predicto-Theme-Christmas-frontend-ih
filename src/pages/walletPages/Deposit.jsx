@@ -910,7 +910,7 @@ const handleDeposit = (e) => {
           height="100dvh"
           position="relative"
         >
-          <Box flexGrow={1} sx={{ backgroundColor: "#110d14 " ,position: "relative", }}>
+          <Box flexGrow={1} sx={{ backgroundColor: "#232626 " ,position: "relative", }}>
             <Grid
               container
               alignItems="center"
@@ -919,7 +919,7 @@ const handleDeposit = (e) => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#110d14 ",
+                backgroundColor: "#232626 ",
                 padding: "7px 4px",
                 color: "white",
               }}
@@ -1297,7 +1297,7 @@ const handleDeposit = (e) => {
                   }}
                   sx={{
                     marginTop: "1rem",
-                    bgcolor: "#110d14",
+                    bgcolor: "#232626",
                     borderRadius: "50px",
                     "& .MuiOutlinedInput-root": {
                       borderRadius: "8px",
@@ -1375,7 +1375,7 @@ const handleDeposit = (e) => {
                 }}
                 sx={{
                   marginTop: "1rem",
-                  bgcolor: "#110d14",
+                  bgcolor: "#232626",
                   borderRadius: "50px",
                   "& .MuiOutlinedInput-root": {
                     borderRadius: "8px",
@@ -1541,7 +1541,7 @@ const handleDeposit = (e) => {
                 alignItems: "center",
                 justifyContent: "center",
                 "& .MuiDialog-paper": {
-                  backgroundColor: "#110d14", // Light green background
+                  backgroundColor: "#232626", // Light green background
                   borderRadius: "16px",
                   maxWidth: "350px",
                 },
@@ -1560,7 +1560,7 @@ const handleDeposit = (e) => {
                 Deposit
               </DialogTitle>
               <DialogContent>
-                <Grid container spacing={2} sx={{ backgroundColor: "#110d14" }}>
+                <Grid container spacing={2} sx={{ backgroundColor: "#232626" }}>
                   <Grid item xs={8}>
                     <Typography
                       variant="h6"

@@ -65,11 +65,11 @@ const Message = ({ children }) => {
           display="flex"
           flexDirection="column"
           height="calc(var(--vh, 1vh) * 100)"
-          sx={{ bgcolor: "#110d14" }}
+          sx={{ bgcolor: "#232626" }}
         >
           <Box
             sx={{
-              bgcolor: "#110d14",
+              bgcolor: "#232626",
               padding: "8px 10px",
               display: "flex",
               alignItems: "center",
@@ -96,7 +96,7 @@ const Message = ({ children }) => {
           </Box>
 
          <Card sx={{
-            background: "#110d14",
+            background: "#232626",
             py: 0,
             px: 2,
             overflowY: "auto",

@@ -141,7 +141,7 @@ const ActivityRewardTabs = () => {
       <Card
         key={task.id}
         sx={{
-          backgroundColor: "#110d14",
+          backgroundColor: "#232626",
           color: "#80849c",
           borderRadius: 0,
           boxShadow: "none",

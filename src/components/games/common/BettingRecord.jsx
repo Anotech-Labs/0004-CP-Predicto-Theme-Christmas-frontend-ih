@@ -314,7 +314,7 @@ const BettingRecord = () => {
 
     return (
         <Mobile>
-            <Box sx={{ backgroundColor: "#110d14", minHeight: "100vh" }}>
+            <Box sx={{ backgroundColor: "#232626", minHeight: "100vh" }}>
                 <Box sx={{
                     backgroundColor: "#241e22",
                     display: "flex",

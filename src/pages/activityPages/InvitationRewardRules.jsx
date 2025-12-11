@@ -125,7 +125,7 @@ const InvitationRewardRules = () => {
         <Mobile>
             <Box
                 sx={{
-                    bgcolor: "#110d14",
+                    bgcolor: "#232626",
                     minHeight: "100vh",
                     maxWidth: "sm",
                     mx: "auto",

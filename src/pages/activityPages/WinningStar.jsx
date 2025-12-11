@@ -252,7 +252,7 @@ const WinningStar = () => {
   return (
     <div>
       <Mobile>
-        <Box sx={{ bgcolor: "#110d14", minHeight: "100vh" }}>
+        <Box sx={{ bgcolor: "#232626", minHeight: "100vh" }}>
           <Grid
             container
             alignItems="center"
@@ -261,7 +261,7 @@ const WinningStar = () => {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              backgroundColor: "#110d14",
+              backgroundColor: "#232626",
               padding: "7px 12px",
             }}
           >

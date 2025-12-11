@@ -58,7 +58,7 @@ const DashedDivider = () => (
         content: '""',
         display: "block",
         borderRadius: "50%",
-        backgroundColor: "#110d14",
+        backgroundColor: "#232626",
         // backgroundColor: 'var(--bg_color_L1, #f6f6f6)',
         position: "absolute",
         width: "1.2rem",
@@ -314,7 +314,7 @@ const InvitationBonus = () => {
     <Mobile>
       <Box
         sx={{
-          bgcolor: "#110d14",
+          bgcolor: "#232626",
           minHeight: "100vh",
           maxWidth: "sm",
           mx: "auto",
@@ -328,7 +328,7 @@ const InvitationBonus = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "7px 12px",
           }}
         >

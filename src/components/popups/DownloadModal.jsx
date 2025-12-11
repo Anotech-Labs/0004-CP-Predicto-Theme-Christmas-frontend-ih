@@ -63,7 +63,7 @@ const DownloadModal = ({ onClose, iconSrc }) => {
                 <Typography
                     variant="body1"
                     sx={{
-                        color: '#110D14',
+                        color: '#232626',
                         fontFamily: "'-apple-system', 'Inter', sans-serif",
                         fontWeight: 700,
                         fontSize: "12.8px"

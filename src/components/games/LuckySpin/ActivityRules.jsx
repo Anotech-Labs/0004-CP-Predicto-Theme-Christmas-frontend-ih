@@ -24,7 +24,7 @@ const ActivityRules = () => {
             container
             alignItems="center"
             justifyContent="center"
-            sx={{ bgcolor: "#110d14", py: 0.8 }} // Background color for the header
+            sx={{ bgcolor: "#232626", py: 0.8 }} // Background color for the header
           >
             <Grid item xs={2}>
               <IconButton

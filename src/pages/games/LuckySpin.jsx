@@ -70,13 +70,13 @@ const LuckySpin = () => {
     };
     return (
         <Mobile>
-            <Grid sx={{ backgroundColor: "#110d14" }}>
+            <Grid sx={{ backgroundColor: "#232626" }}>
                 <Grid
                     item
                     container
                     alignItems="center"
                     justifyContent="center"
-                    sx={{ bgcolor: "#110d14", py: 1, }} // Background color for the header
+                    sx={{ bgcolor: "#232626", py: 1, }} // Background color for the header
                 >
                     <Grid item xs={2}>
                         <IconButton
@@ -106,7 +106,7 @@ const LuckySpin = () => {
                     alt="LuckySpin Banner"
                     width="100%"
                 />
-                <Box sx={{ mx: 1, mt: 1, backgroundColor: "#110d14" }}>
+                <Box sx={{ mx: 1, mt: 1, backgroundColor: "#232626" }}>
                     <Box
                         sx={{
                             backgroundColor: "#241e22",
@@ -134,7 +134,7 @@ const LuckySpin = () => {
                                 display: "flex",
                                 justifyContent: "space-between",
                                 alignItems: "center",
-                                backgroundColor: "#110d14", // green accent background
+                                backgroundColor: "#232626", // green accent background
                                 padding: "7px",
                                 borderRadius: "8px",
                                 mb: 2,
@@ -176,7 +176,7 @@ const LuckySpin = () => {
                                 display: "flex",
                                 justifyContent: "space-between",
                                 alignItems: "center",
-                                backgroundColor: "#110d14",
+                                backgroundColor: "#232626",
                                 padding: "8px",
                                 borderRadius: "8px",
                             }}

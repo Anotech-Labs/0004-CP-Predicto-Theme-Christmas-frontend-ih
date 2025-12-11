@@ -114,7 +114,7 @@ const CalendarDrawer = ({ isOpen, onClose, onRangeSelect }) => {
          height: "auto",
          margin: "0 auto",
          maxWidth: isSmallScreen ? "600px" : "396px",
-         backgroundColor: "#110d14",
+         backgroundColor: "#232626",
          color: "grey",
          borderTopLeftRadius: "16px",
          borderTopRightRadius: "16px",

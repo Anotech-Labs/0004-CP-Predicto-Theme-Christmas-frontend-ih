@@ -173,7 +173,7 @@ const Register = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             px: "2px",
             height: "50px",
             color: "black",
@@ -231,7 +231,7 @@ const Register = () => {
           justifyContent="flex-start"
           alignItems="flex-start"
           sx={{
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             px: "16px",
             color: "white",
             minHeight: "fit-content",
@@ -672,7 +672,7 @@ const Register = () => {
                 </RadioGroup>
               </Box>
               {error && (
-                <Alert severity="error" sx={{ mb: 2, bgcolor: "#110d14", color: "#D23838" }}>
+                <Alert severity="error" sx={{ mb: 2, bgcolor: "#232626", color: "#D23838" }}>
                   {error}
                 </Alert>
               )}

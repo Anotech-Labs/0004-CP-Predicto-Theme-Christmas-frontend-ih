@@ -114,7 +114,7 @@ const LuckyTenDaysInterest = () => {
                 flexDirection: 'column',
                 alignItems: 'center',
                 position: 'relative',
-                bgcolor: '#110d14',
+                bgcolor: '#232626',
                 p: "16px 5px"
             }}>
                 <Box>
@@ -326,7 +326,7 @@ const LuckyTenDaysInterest = () => {
         const rulesCount = reversedRules.length;
         return (
             <Box sx={{
-                bgcolor: '#110d14',
+                bgcolor: '#232626',
                 p: "16px 5px",
                 display: "flex",
                 alignItems: "center",
@@ -455,7 +455,7 @@ const LuckyTenDaysInterest = () => {
             sx={{
                 margin: 0,
                 padding: 0,
-                bgcolor: '#110d14',
+                bgcolor: '#232626',
                 color: '#FDE4BC'
             }}
         >

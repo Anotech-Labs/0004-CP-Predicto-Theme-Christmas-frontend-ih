@@ -103,13 +103,7 @@ const ScrollableTabs = () => {
                      <HomeSports onDetailClick={() => handleSwitchToTab("Sports")}/>
                              <HomeRummy />
                       <HomeFishing onDetailClick={() => handleSwitchToTab("Fishing")}/>
-                       <SuperJackpot />
-     
-            
-           
-   
-           
-           
+                       <SuperJackpot />           
           </>
         );
       case "Lottery":
@@ -145,10 +139,10 @@ const ScrollableTabs = () => {
     // mx: "13px"
      }}>
       {/* Scrollable tabs container */}
-      <Box
+      {/* <Box
         ref={scrollRef}
         sx={{
-          backgroundColor: '#110d14',
+          backgroundColor: '#232626',
           display: 'flex',
           overflowX: 'auto',
           scrollbarWidth: 'none', // Hide scrollbar for Firefox
@@ -220,10 +214,10 @@ const ScrollableTabs = () => {
             </Box>
           </Box>
         ))}
-      </Box>
+      </Box> */}
 
       {/* Content area */}
-      <Box sx={{px:2,pt:1,background:"linear-gradient(180deg,#231C21 42.3%,rgba(35,28,33,0) 100%)",borderRadius:"10px 10px 0px 0px"}}>
+      <Box sx={{px:2,pt:1,background:"transparent"}}>
         {renderComponent()}
       </Box>
     </Box>

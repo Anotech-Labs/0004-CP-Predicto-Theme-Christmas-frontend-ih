@@ -120,11 +120,11 @@ const Home = () => {
             onClose={handleDepositModalClose}
           />
           <HomeMain />
-          <DownloadModal />
+          {/* <DownloadModal /> */}
           <BottomNavigationArea />
         </Mobile>
         {isAuthenticated && <TelegramFloat />}
-        {isAuthenticated && <LuckySpinFloat />}
+        {/* {isAuthenticated && <LuckySpinFloat />} */}
         {isAuthenticated && <CustomerSupportButton />}
       </div>
     </Suspense>

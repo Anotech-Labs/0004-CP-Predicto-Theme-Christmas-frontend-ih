@@ -891,7 +891,7 @@ const WithDraw = ({ children }) => {
           height="calc(var(--vh, 1vh) * 100)"
           position="relative"
         >
-          <Box flexGrow={1} sx={{ backgroundColor: "#110d14 " }}>
+          <Box flexGrow={1} sx={{ backgroundColor: "#232626 " }}>
             <Grid
               container
               alignItems="center"
@@ -900,7 +900,7 @@ const WithDraw = ({ children }) => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 padding: "7px 4px",
                 color: "white",
                 mb: 2,
@@ -1520,7 +1520,7 @@ const WithDraw = ({ children }) => {
                       }}
                       sx={{
                         // marginTop: "1rem",
-                        bgcolor: "#110d14",
+                        bgcolor: "#232626",
                         borderRadius: "50px",
                         height: "47.5px",
                         "& .MuiOutlinedInput-root": {
@@ -1693,7 +1693,7 @@ const WithDraw = ({ children }) => {
                           sx={{
                             mb: 1.5,
                             "& .MuiOutlinedInput-root": {
-                              backgroundColor: "#110d14",
+                              backgroundColor: "#232626",
                               borderRadius: "10px",
                               height: "45px",
                               fontSize: "13px",
@@ -1760,7 +1760,7 @@ const WithDraw = ({ children }) => {
                           sx={{
                             mb: 1.5,
                             "& .MuiOutlinedInput-root": {
-                              backgroundColor: "#110d14",
+                              backgroundColor: "#232626",
                               borderRadius: "10px",
                               height: "45px",
                               fontSize: "13px",
@@ -2680,7 +2680,7 @@ const WithDraw = ({ children }) => {
               mx: 2,
               padding: "6px 8px",
               backgroundColor: "#ffd9ae", // Custom background color (Dark Gray)
-              color: "#110d14", // Custom text color
+              color: "#232626", // Custom text color
               "& .MuiSvgIcon-root": { color: "#FED358" }, // Changes the icon color to yellow
               "&.MuiAlert-action": { padding: "1px 0px 0px 0px" },
             }}

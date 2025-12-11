@@ -57,7 +57,7 @@ const NotificationModal = ({ open, onClose }) => {
           width: "90%",
           maxWidth: "313px",
           maxHeight: "450px",
-          bgcolor: "#110d14",
+          bgcolor: "#232626",
           borderRadius: "15px",
           boxShadow: 24,
           display: "flex",
@@ -150,7 +150,7 @@ const NotificationModal = ({ open, onClose }) => {
           sx={{
             textAlign: "center",
             p: 0.8,
-            background: "#110d14",
+            background: "#232626",
             // background: "linear-gradient(180deg, #FED358 , #FFB472 ),#111111",
             borderBottomLeftRadius: "15px",
             borderBottomRightRadius: "15px",

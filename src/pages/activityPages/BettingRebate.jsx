@@ -22,7 +22,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { useAuth } from '../../context/AuthContext';
 import { styled } from "@mui/material";
 const StyledTabs = styled(Tabs)(({ theme }) => ({
-  backgroundColor: "#110d14",
+  backgroundColor: "#232626",
   minHeight: "60px",
   padding: "8px 18px",
   "& .MuiTabs-scroller": {
@@ -248,7 +248,7 @@ const BettingRebate = () => {
     <Mobile>
       <Box
         sx={{
-          bgcolor: "#110d14",
+          bgcolor: "#232626",
           minHeight: "100vh",
           maxWidth: "100%",
           margin: "0 auto",
@@ -262,7 +262,7 @@ const BettingRebate = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "7px 12px",
           }}
         >

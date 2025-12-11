@@ -28,7 +28,7 @@ const AboutUs = () => {
         disableGutters
         maxWidth="xs"
         sx={{
-          bgcolor: "#110d14",
+          bgcolor: "#232626",
           height: "100vh",
           display: "flex",
           flexDirection: "column",
@@ -42,7 +42,7 @@ const AboutUs = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "7px 12px",
           }}
         >
@@ -93,7 +93,7 @@ const AboutUs = () => {
             sx={{
               px: 1,
               py: 2,
-              background: "#110d14",
+              background: "#232626",
               borderBottom: "1px solid #3D363A",
             }}
           >

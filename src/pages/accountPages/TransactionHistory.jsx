@@ -401,7 +401,7 @@ const TransactionHistory = () => {
 
   return (
     <Mobile>
-      <Box sx={{ backgroundColor: "#110d14", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+      <Box sx={{ backgroundColor: "#232626", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
         {/* Header section */}
         <Grid
           container
@@ -411,7 +411,7 @@ const TransactionHistory = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            backgroundColor: "#110d14",
+            backgroundColor: "#232626",
             padding: "3px 12px",
           }}
         >
@@ -446,7 +446,7 @@ const TransactionHistory = () => {
           margin: "12px 12px 25px 12px",
           display: "flex",
           gap: "12px",
-          backgroundColor: "#110d14",
+          backgroundColor: "#232626",
         }}>
           <Button
             variant="outlined"
@@ -493,7 +493,7 @@ const TransactionHistory = () => {
         </Box>
 
         {/* Transactions list */}
-        <Box sx={{ flexGrow: 1, backgroundColor: "#110d14", padding: "0", overflowY: "auto" }}>
+        <Box sx={{ flexGrow: 1, backgroundColor: "#232626", padding: "0", overflowY: "auto" }}>
           {error ? (
             <Typography variant="body1" color="error" sx={{ textAlign: "center", my: 4 }}>
               {error}
@@ -535,21 +535,21 @@ const TransactionHistory = () => {
                       </Box>
 
                       <Box sx={{ bgcolor: "#241e22", p: "12px 6px", borderBottomLeftRadius: "5px", borderBottomRightRadius: "5px" }}>
-                        <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1, background: "#110d14", p: 1, borderRadius: "5px" }}>
+                        <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1, background: "#232626", p: 1, borderRadius: "5px" }}>
                           <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>Detail</Typography>
                           <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>
                             {formatTransactionDetails(transaction.details, transaction.transactionType)}
                           </Typography>
                         </Box>
 
-                        <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1, background: "#110d14", p: 1, borderRadius: "5px" }}>
+                        <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1, background: "#232626", p: 1, borderRadius: "5px" }}>
                           <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>Time</Typography>
                           <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>
                             {format(new Date(transaction.createdAt), "yyyy-MM-dd HH:mm:ss")}
                           </Typography>
                         </Box>
 
-                        <Box sx={{ display: "flex", justifyContent: "space-between", background: "#110d14", p: 1, borderRadius: "5px" }}>
+                        <Box sx={{ display: "flex", justifyContent: "space-between", background: "#232626", p: 1, borderRadius: "5px" }}>
                           <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>Balance</Typography>
                           <Typography
                             variant="body2"

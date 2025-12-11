@@ -30,20 +30,21 @@ const BottomNavigationArea = () => {
         showLabels
         style={{
           position: "fixed",
-          bottom: "6px",
+          bottom: "0px",
           height: "10%",
-          backgroundImage: "url(/assets/tabBarBg-01df93c.webp)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundColor: "transparent",
+          // backgroundImage: "url(/assets/christmas2-CQdl-tRr.webp)",
+          // backgroundSize: "cover",
+          // backgroundPosition: "top",
+          backgroundColor: "#01441c",
           width: "100%",
           maxWidth: isSmallScreen ? "" : "396px",
           // paddiny: "1%",
           // Adjust height based on screen size
         }}
       >
+        <img src="/assets/christmas2-CQdl-tRr.webp" alt="" width={"100%"} style={{ position: "absolute", top: "-38px", zIndex:10, marginBottom: "20px"}} />
         <BottomNavigationAction
-          style={{ color: value === "/promotion" ? "#FED358" : "#837064" }}
+          style={{ color: value === "/promotion" ? "#ffffff" : "#ffffff" }}
           label="Promotion"
           value="/promotion"
           icon={
@@ -63,7 +64,7 @@ const BottomNavigationArea = () => {
           }
         />
         <BottomNavigationAction
-          style={{ color: value === "/activity" ? "#FED358" : "#837064" }}
+          style={{ color: value === "/activity" ? "#ffffff" : "#ffffff" }}
           label="Activity"
           value="/activity"
           icon={
@@ -84,7 +85,7 @@ const BottomNavigationArea = () => {
         />
 
         <BottomNavigationAction
-          label="Home"
+          // label="Home"
           value="/"
           icon={
             <img
@@ -93,14 +94,14 @@ const BottomNavigationArea = () => {
               height="50px"
               alt="icon"
               style={{
-                marginBottom: "10px", // hide image when src is empty
+                zIndex: 20
               }}
             />
           }
-          style={{ color: value === "/" ? "#FED358" : "#837064", marginBottom: "20px" }}
+          style={{ color: value === "/" ? "#ffffff" : "#ffffff", marginBottom: "20px" }}
         />
         <BottomNavigationAction
-          style={{ color: value === "/wallet" ? "#FED358" : "#837064" }}
+          style={{ color: value === "/wallet" ? "#ffffff" : "#ffffff" }}
           label="Wallet"
           value="/wallet"
           icon={
@@ -120,7 +121,7 @@ const BottomNavigationArea = () => {
           }
         />
         <BottomNavigationAction
-          style={{ color: value === "/account" ? "#FED358" : "#837064" }}
+          style={{ color: value === "/account" ? "#ffffff" : "#ffffff" }}
           label="Account"
           value="/account"
           icon={

@@ -25,7 +25,7 @@ import { domain } from "../../utils/Secret";
 // Styled Components
 const StyledContainer = styled(Container)(({ theme }) => ({
   padding: theme.spacing(2),
-  backgroundColor: "#110d14",
+  backgroundColor: "#232626",
   display: "flex",
   flexDirection: "column",
 }));
@@ -174,7 +174,7 @@ const UsdtAddress = () => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 padding: "12px 16px",
                 // borderBottom: "1px solid #e0e0e0",
               }}

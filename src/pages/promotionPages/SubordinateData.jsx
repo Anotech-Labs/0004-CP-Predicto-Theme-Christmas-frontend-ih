@@ -239,7 +239,7 @@ const SubordinateData = () => {
           flexDirection="column"
           height="100vh"
           position="relative"
-          backgroundColor="#110d14"
+          backgroundColor="#232626"
         >
           <Box flexGrow={1}>
             <Grid
@@ -250,7 +250,7 @@ const SubordinateData = () => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 padding: "7px 12px",
               }}
             >
@@ -560,7 +560,7 @@ const SubordinateData = () => {
               </Box>
             </Box>
 
-            <Box sx={{ backgroundColor: "#110d14", px: "16px", borderRadius: "5px", }}>
+            <Box sx={{ backgroundColor: "#232626", px: "16px", borderRadius: "5px", }}>
               {isLoading ? (
                 <Box sx={{ color: '#B79C8B', display: 'flex', justifyContent: 'center', py: 4 }}>
                   Loading ...
@@ -601,7 +601,7 @@ const SubordinateData = () => {
                     >
                       <Box
                         sx={{
-                          backgroundColor: "#110d14",
+                          backgroundColor: "#232626",
                           borderRadius: "5px",
                           paddingBottom: "10px",
                           width: "100%",
@@ -755,7 +755,7 @@ const SubordinateData = () => {
                       display: "flex",
                       flexDirection: "column",
                       gap: "16px",
-                      backgroundColor: "#110d14",
+                      backgroundColor: "#232626",
                       border: "none",
                       outline: "none",
                     }}

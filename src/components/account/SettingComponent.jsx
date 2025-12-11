@@ -338,7 +338,7 @@ function SettingComponent() {
                       '&:hover': {
                         backgroundColor: '#FF8C24'
                       },
-                      color:"#110d14"
+                      color:"#232626"
                     }}
                   >
                     Confirm

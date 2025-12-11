@@ -204,7 +204,7 @@ const ForgotPassword = () => {
           position: "sticky",
           top: 0,
           zIndex: 1000,
-          backgroundColor: "#110d14",
+          backgroundColor: "#232626",
           px: "2px",
           height: "50px",
           // py: "2px",
@@ -327,7 +327,7 @@ const ForgotPassword = () => {
         disableGutters
         maxWidth="xs"
         sx={{
-          background: "#110d14",
+          background: "#232626",
           minHeight: "100vh",
           display: "flex",
           flexDirection: "column",

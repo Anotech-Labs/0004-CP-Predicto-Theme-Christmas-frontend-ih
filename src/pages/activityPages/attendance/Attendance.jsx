@@ -241,7 +241,7 @@ const Attendance = ({ children }) => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#110d14",
+                backgroundColor: "#232626",
                 padding: "8px 16px",
                 color: "white",
               }}
@@ -336,7 +336,7 @@ const Attendance = ({ children }) => {
                     marginBottom: "100px",
                     textTransform: "initial",
                     // opacity: (!attendanceData.current.eligible || loading) ? 0.7 : 1,
-                    color: "#110d14 !important",  // Force white text
+                    color: "#232626 !important",  // Force white text
                     fontSize:"19.2px",
                     mt:2
                   }}
