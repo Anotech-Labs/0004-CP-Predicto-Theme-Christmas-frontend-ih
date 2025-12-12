@@ -125,7 +125,7 @@ const NumberTableWithLines = ({ historyData, selectedTab }) => {
                 {/* High/Low indicator always after the 9th ball */}
                 <div
                     style={{
-                        background: sizeValue === "BIG" ? "#DD9138" : "#5088D3",
+                        background: sizeValue === "BIG" ? "#24ee89" : "#5088D3",
                         color: "white",
                         width: "14px",
                         height: "15px",
@@ -136,7 +136,7 @@ const NumberTableWithLines = ({ historyData, selectedTab }) => {
                         fontSize: "10px",
                         alignItems: "center",
                         justifyContent: "center",
-                        border: sizeValue === "BIG" ? "1px solid #DD9138" : "1px solid #5088D3",
+                        border: sizeValue === "BIG" ? "1px solid #24ee89" : "1px solid #5088D3",
                     }}
                 >
                     {sizeValue === "BIG" ? "H" : "L"}
@@ -370,7 +370,7 @@ const Chart5D = ({ data }) => {
                     disabled={chartPage === 1}
                     sx={{
                         marginRight: "10px",
-                        backgroundColor: "#FED358",
+                        backgroundColor: "#24ee89",
                         "&.Mui-disabled": {
                             backgroundColor: "#3a4142", // Disabled background color
                             color: "#ffffff", // Optional: Change text color for better visibility
@@ -380,7 +380,7 @@ const Chart5D = ({ data }) => {
                 >
                     <ArrowBackIosRoundedIcon style={{ color: chartPage === 1 ? "#ffffff" : "#323738" }} />
                 </Button>
-                <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B", fontSize: "12.8px" }}>
+                <Grid sx={{ display: "flex", alignItems: "center", color: "#B3BEC1", fontSize: "12.8px" }}>
                     {chartPage}/{gameTotalPage}
                 </Grid>
                 <Button
@@ -389,7 +389,7 @@ const Chart5D = ({ data }) => {
                     disabled={chartPage === gameTotalPage}
                     sx={{
                         marginLeft: "10px",
-                        backgroundColor: "#FED358",
+                        backgroundColor: "#24ee89",
                         "&.Mui-disabled": {
                             backgroundColor: "#3a4142", // Disabled background color
                             color: "#ffffff", // Optional: Change text color for better visibility

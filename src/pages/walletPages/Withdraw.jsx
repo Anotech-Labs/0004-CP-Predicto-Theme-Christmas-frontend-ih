@@ -972,7 +972,7 @@ const WithDraw = ({ children }) => {
                         ? "linear-gradient(90deg,#24ee89,#9fe871)"
                         : "#323738",
                     color:
-                      withdrawalMethod === "Bank Card" ? "black" : "#B79C8B",
+                      withdrawalMethod === "Bank Card" ? "black" : "#B3BEC1",
                     borderRadius: 8,
                     padding: 16,
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
@@ -1006,7 +1006,7 @@ const WithDraw = ({ children }) => {
                       withdrawalMethod === "USDT"
                         ? "linear-gradient(90deg,#24ee89,#9fe871)"
                         : "#323738",
-                    color: withdrawalMethod === "USDT" ? "black" : "#B79C8B",
+                    color: withdrawalMethod === "USDT" ? "black" : "#B3BEC1",
                     borderRadius: 8,
                     padding: 16,
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
@@ -1135,7 +1135,7 @@ const WithDraw = ({ children }) => {
                       />
                       <Typography
                         variant="body1"
-                        sx={{ fontWeight: "bold", color: "#B79C8B" }}
+                        sx={{ fontWeight: "bold", color: "#B3BEC1" }}
                       >
                         TRC
                       </Typography>
@@ -1150,7 +1150,7 @@ const WithDraw = ({ children }) => {
                     >
                       <Typography
                         variant="body2"
-                        sx={{ color: "#B79C8B", fontSize: "13px" }}
+                        sx={{ color: "#B3BEC1", fontSize: "13px" }}
                       >
                         {usdtDetails?.address
                           ? usdtDetails.address.slice(0, 10) + "..."
@@ -1226,7 +1226,7 @@ const WithDraw = ({ children }) => {
                   />
                   <Typography
                     variant="body2"
-                    style={{ color: "#B79C8B", marginTop: "4px" }}
+                    style={{ color: "#B3BEC1", marginTop: "4px" }}
                   >
                     {truncatedBankName}
                   </Typography>
@@ -1234,18 +1234,18 @@ const WithDraw = ({ children }) => {
                 <Grid item style={{ margin: "0 10px" }}>
                   <div
                     style={{
-                      borderLeft: "1px solid #B79C8B",
+                      borderLeft: "1px solid #B3BEC1",
                       height: "30px",
                     }}
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant="body2" style={{ color: "#B79C8B" }}>
+                  <Typography variant="body2" style={{ color: "#B3BEC1" }}>
                     {bankDetails.accountNumber}
                   </Typography>
                 </Grid>
                 <Grid item style={{ marginLeft: "auto" }}>
-                  {/* <ChevronRightIcon style={{ color: "#666462" }} /> */}
+                  {/* <ChevronRightIcon style={{ color: "#626663" }} /> */}
                 </Grid>
               </Grid>
             ) : (
@@ -1506,7 +1506,7 @@ const WithDraw = ({ children }) => {
                           <InputAdornment position="start">
                             <span
                               style={{
-                                color: "#FED358",
+                                color: "#24ee89",
                                 fontSize: "20px",
                                 fontWeight: "bold",
                                 marginLeft: "0.5rem",
@@ -1525,13 +1525,13 @@ const WithDraw = ({ children }) => {
                         height: "47.5px",
                         "& .MuiOutlinedInput-root": {
                           borderRadius: "8px",
-                          color: "#FED358", // Set text color for input
+                          color: "#24ee89", // Set text color for input
                           "& fieldset": { border: "none" },
                           "&:hover fieldset": { border: "none" },
                           "&.Mui-focused fieldset": { border: "none" },
                           "& input": {
                             fontSize: "13px",
-                            color: "#FED358", // Ensure input text color is white
+                            color: "#24ee89", // Ensure input text color is white
                           },
                           "& input::placeholder": {
                             fontSize: "13px",
@@ -1550,7 +1550,7 @@ const WithDraw = ({ children }) => {
                         align="left"
                         mt={1}
                         sx={{
-                          color: "#B79C8B",
+                          color: "#B3BEC1",
                           fontSize: "12px",
                           mb: 1.1,
                         }}
@@ -1566,7 +1566,7 @@ const WithDraw = ({ children }) => {
                       <Typography
                         variant="body2"
                         align="left"
-                        sx={{ color: "#B79C8B", fontSize: "12px" }}
+                        sx={{ color: "#B3BEC1", fontSize: "12px" }}
                       >
                         Maximum Amount
                         <span style={{ color: "#f58530" }}>
@@ -1596,14 +1596,14 @@ const WithDraw = ({ children }) => {
                           mb: 0.5,
                           height: "20px",
                           minWidth: "67px", // Ensures the button has a minimum width
-                          borderColor: "#FED358", // Orange border
-                          color: "#FED358", // Orange text
+                          borderColor: "#24ee89", // Orange border
+                          color: "#24ee89", // Orange text
                           textTransform: "none", // Prevent capitalization
                           borderRadius: "5px",
                           padding: "0px 16px", // Adjust padding for button size
                           fontSize: "12px", // Match `body2` font size
                           // "&:hover": {
-                          //   borderColor: "#FED358", // Keep border color on hover
+                          //   borderColor: "#24ee89", // Keep border color on hover
                           //   backgroundColor: "rgba(221,145,56,0.1)", // Add light background on hover
                           // },
                         }}
@@ -1642,7 +1642,7 @@ const WithDraw = ({ children }) => {
                         fontSize: "15px",
                         color: "#221f2e", // Explicitly set text color
                         "&:hover": {
-                          bgcolor: "#FED358",
+                          bgcolor: "#24ee89",
                         },
                         "&.Mui-disabled": {
                           background: "rgb(144, 144, 144)", // Retain gradient for disabled state
@@ -1697,7 +1697,7 @@ const WithDraw = ({ children }) => {
                               borderRadius: "10px",
                               height: "45px",
                               fontSize: "13px",
-                              color: "#FED358",
+                              color: "#24ee89",
                               "& fieldset": {
                                 border: "none",
                               },
@@ -1764,7 +1764,7 @@ const WithDraw = ({ children }) => {
                               borderRadius: "10px",
                               height: "45px",
                               fontSize: "13px",
-                              color: "#FED358",
+                              color: "#24ee89",
                               "& fieldset": {
                                 border: "none",
                               },
@@ -1775,12 +1775,12 @@ const WithDraw = ({ children }) => {
                               fontWeight: "normal",
                               opacity: 1,
                             },
-                            color: "#FED358",
+                            color: "#24ee89",
                           }}
                           InputProps={{
                             startAdornment: (
                               <InputAdornment position="start">
-                                <Typography sx={{ color: "#FED358" }}>
+                                <Typography sx={{ color: "#24ee89" }}>
                                   ₹
                                 </Typography>
                               </InputAdornment>
@@ -1817,11 +1817,11 @@ const WithDraw = ({ children }) => {
                       >
                         <Typography
                           variant="body2"
-                          color="#FED358"
+                          color="#24ee89"
                           fontSize="13px"
                         >
                           Withdrawable balance{" "}
-                          <span style={{ color: "#DD9138" }}>
+                          <span style={{ color: "#24ee89" }}>
                             ₹{userWallet}
                           </span>
                         </Typography>
@@ -1829,8 +1829,8 @@ const WithDraw = ({ children }) => {
                           variant="outlined"
                           size="small"
                           sx={{
-                            borderColor: "#FED358",
-                            color: "#FED358",
+                            borderColor: "#24ee89",
+                            color: "#24ee89",
                             // minWidth: "60px",
                             fontSize: "13px",
                             padding: "0px 16px",
@@ -1860,7 +1860,7 @@ const WithDraw = ({ children }) => {
                         fontSize: "15px",
                         color: "#221f2e", // Explicitly set text color
                         "&:hover": {
-                          bgcolor: "#FED358",
+                          bgcolor: "#24ee89",
                         },
                         "&.Mui-disabled": {
                           background: "rgb(144, 144, 144)", // Retain gradient for disabled state
@@ -2141,7 +2141,7 @@ const WithDraw = ({ children }) => {
                       <Typography
                         variant="body2"
                         sx={{
-                          color: "#B79C8B",
+                          color: "#B3BEC1",
                           textAlign: "center",
                           mt: 1,
                         }}
@@ -2279,14 +2279,14 @@ const WithDraw = ({ children }) => {
                       <ListItemIcon
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
-                        <RhombusIcon sx={{ fontSize: 10, color: "#FED358" }} />
+                        <RhombusIcon sx={{ fontSize: 10, color: "#24ee89" }} />
                       </ListItemIcon>
                       <ListItemText
                         primary={
                           <Typography
                             variant="body2"
                             sx={{
-                              color: "#B79C8B",
+                              color: "#B3BEC1",
                               display: "flex",
                               alignItems: "center",
                               fontSize: "0.8rem", // Set font size to 0.8rem
@@ -2315,14 +2315,14 @@ const WithDraw = ({ children }) => {
                       <ListItemIcon
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
-                        <RhombusIcon sx={{ fontSize: 10, color: "#FED358" }} />
+                        <RhombusIcon sx={{ fontSize: 10, color: "#24ee89" }} />
                       </ListItemIcon>
                       <ListItemText
                         primary={
                           <Typography
                             variant="body1"
                             sx={{
-                              color: "#B79C8B",
+                              color: "#B3BEC1",
                               display: "flex",
                               alignItems: "center",
                               fontSize: "0.8rem", // Set font size to 0.8rem
@@ -2352,14 +2352,14 @@ const WithDraw = ({ children }) => {
                       <ListItemIcon
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
-                        <RhombusIcon sx={{ fontSize: 10, color: "#FED358" }} />
+                        <RhombusIcon sx={{ fontSize: 10, color: "#24ee89" }} />
                       </ListItemIcon>
                       <ListItemText
                         primary={
                           <Typography
                             variant="body1"
                             sx={{
-                              color: "#B79C8B",
+                              color: "#B3BEC1",
                               display: "flex",
                               alignItems: "center",
                               fontSize: "0.8rem", // Set font size to 0.8rem
@@ -2385,14 +2385,14 @@ const WithDraw = ({ children }) => {
                       <ListItemIcon
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
-                        <RhombusIcon sx={{ fontSize: 10, color: "#FED358" }} />
+                        <RhombusIcon sx={{ fontSize: 10, color: "#24ee89" }} />
                       </ListItemIcon>
                       <ListItemText
                         primary={
                           <Typography
                             variant="body1"
                             sx={{
-                              color: "#B79C8B",
+                              color: "#B3BEC1",
                               fontSize: "0.8rem", // Set font size to 0.8rem
                             }}
                           >
@@ -2423,14 +2423,14 @@ const WithDraw = ({ children }) => {
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
                         <RhombusIcon
-                          sx={{ fontSize: 10, color: "#FED358", mb: 7 }}
+                          sx={{ fontSize: 10, color: "#24ee89", mb: 7 }}
                         />
                       </ListItemIcon>
                       <ListItemText
                         primary={
                           <Typography
                             variant="body1"
-                            sx={{ color: "#B79C8B", fontSize: "0.8rem" }} // Set font size to 0.8rem
+                            sx={{ color: "#B3BEC1", fontSize: "0.8rem" }} // Set font size to 0.8rem
                           >
                             Please confirm your beneficial account information
                             before withdrawing. If your information is
@@ -2446,14 +2446,14 @@ const WithDraw = ({ children }) => {
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
                         <RhombusIcon
-                          sx={{ fontSize: 10, color: "#FED358", mb: 2.5 }}
+                          sx={{ fontSize: 10, color: "#24ee89", mb: 2.5 }}
                         />
                       </ListItemIcon>
                       <ListItemText
                         primary={
                           <Typography
                             variant="body1"
-                            sx={{ color: "#B79C8B", fontSize: "0.8rem" }} // Set font size to 0.8rem
+                            sx={{ color: "#B3BEC1", fontSize: "0.8rem" }} // Set font size to 0.8rem
                           >
                             If your beneficial information is incorrect, please
                             contact customer service.
@@ -2474,7 +2474,7 @@ const WithDraw = ({ children }) => {
                   alignItems: "center", // Vertically align items
                   marginBottom: "0.5rem",
                   marginTop: "1.5rem",
-                  color: "#B79C8B",
+                  color: "#B3BEC1",
                   textAlign: "left",
                   fontSize: "17px",
                 }}
@@ -2579,7 +2579,7 @@ const WithDraw = ({ children }) => {
                                 <Grid item xs={6}>
                                   <Typography
                                     sx={{
-                                      color: "#B79C8B",
+                                      color: "#B3BEC1",
                                       fontSize: "13px",
                                       lineHeight: "20px",
                                     }}
@@ -2592,7 +2592,7 @@ const WithDraw = ({ children }) => {
                                     sx={{
                                       fontSize,
                                       fontWeight: fontWeight || "medium",
-                                      color: color || "#B79C8B",
+                                      color: color || "#B3BEC1",
                                       lineHeight: "20px",
                                     }}
                                   >
@@ -2645,9 +2645,9 @@ const WithDraw = ({ children }) => {
                     fontSize: "16px",
                     textTransform: "initial",
                     borderRadius: "20px",
-                    color: "#FED358",
+                    color: "#24ee89",
                     background: "transparent",
-                    border: "1px solid #FED358",
+                    border: "1px solid #24ee89",
                     // "&:hover": {
                     //   background:
                     //     "linear-gradient(90deg,#24ee89,#9fe871)",
@@ -2681,7 +2681,7 @@ const WithDraw = ({ children }) => {
               padding: "6px 8px",
               backgroundColor: "#ffd9ae", // Custom background color (Dark Gray)
               color: "#232626", // Custom text color
-              "& .MuiSvgIcon-root": { color: "#FED358" }, // Changes the icon color to yellow
+              "& .MuiSvgIcon-root": { color: "#24ee89" }, // Changes the icon color to yellow
               "&.MuiAlert-action": { padding: "1px 0px 0px 0px" },
             }}
           >

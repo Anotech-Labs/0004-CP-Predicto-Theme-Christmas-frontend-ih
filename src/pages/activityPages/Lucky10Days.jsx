@@ -150,7 +150,7 @@ const Lucky10days = () => {
                             <Button
                                 variant="outlined"
                                 sx={{
-                                    border: "1px solid #FED358",
+                                    border: "1px solid #24ee89",
                                     borderRadius: "8px",
                                     padding: "0.5px 8px",
                                     fontSize: "13px",
@@ -158,7 +158,7 @@ const Lucky10days = () => {
                                     display: "inline-flex", // Use inline-flex to align items in a line
                                     alignItems: "center", // Center items vertically
                                     gap: "3px",
-                                    color: "#FED358",
+                                    color: "#24ee89",
                                 }}
                                 onClick={() =>
                                     navigate("/activity/lucky-10days/rule")

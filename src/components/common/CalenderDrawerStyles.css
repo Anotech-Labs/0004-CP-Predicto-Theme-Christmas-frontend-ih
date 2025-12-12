@@ -92,13 +92,13 @@
   
   .date-grid .date.selected-start,
   .date-grid .date.selected-end {
-    background-color: #FED358;
+    background-color: #24ee89;
     color: #fff;
     font-weight: 600;
   }
   
   .date-grid .date.in-range {
-    background-color: #FED358;
+    background-color: #24ee89;
   }
   
   /* Bottom section styling */

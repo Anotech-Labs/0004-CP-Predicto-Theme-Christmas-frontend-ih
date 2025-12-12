@@ -21,13 +21,13 @@ function CoinBox({ coinboxAmount, coinboxDay, onClick, disabled, status, message
       className={`coinbox-container ${disabled ? "disabled" : ""} ${isCurrentDay ? "current-day" : ""}`}
       onClick={disabled ? null : onClick}
       style={{
-        border: isCurrentDay ? '2px solid #FED358' : 'none',
+        border: isCurrentDay ? '2px solid #24ee89' : 'none',
         position: 'relative',
         height: '100px',
       }}
     >
       <div className="coinbox-amount" style={{
-        color: status === 'COMPLETED' ? '#B79C8B' : '#ffffff',
+        color: status === 'COMPLETED' ? '#B3BEC1' : '#ffffff',
         fontWeight: isCurrentDay ? 'bold' : 'normal'
       }}>
         {coinboxAmount}
@@ -36,18 +36,18 @@ function CoinBox({ coinboxAmount, coinboxDay, onClick, disabled, status, message
         <img src={coinimg} alt="" />
       </div>
       <div className="coinbox-day" style={{
-        color: "#B79C8B",
+        color: "#B3BEC1",
         fontWeight: isCurrentDay ? 'bold' : 'normal'
       }}>
         {coinboxDay}
       </div>
-      {message && <div className="requirement-message" style={{ fontSize: '10px', color: '#B79C8B' }}>{message}</div>}
+      {message && <div className="requirement-message" style={{ fontSize: '10px', color: '#B3BEC1' }}>{message}</div>}
       {isCurrentDay && (
         <div style={{
           position: 'absolute',
           top: '-10px',
           right: '-10px',
-          background: '#FED358',
+          background: '#24ee89',
           color: '#000000',
           padding: '2px 6px',
           borderRadius: '10px',
@@ -178,7 +178,7 @@ const Attendance = ({ children }) => {
           style={{
             cursor: isCurrentDay && isEligible ? 'pointer' : 'not-allowed',
             opacity: isCompleted ? 0.7 : 1,
-            border: isCurrentDay ? '2px solid #FED358' : 'none',
+            border: isCurrentDay ? '2px solid #24ee89' : 'none',
             position: 'relative'
           }}
         >
@@ -187,7 +187,7 @@ const Attendance = ({ children }) => {
               position: 'absolute',
               top: '-10px',
               right: '-10px',
-              background: '#FED358',
+              background: '#24ee89',
               color: '#000000',
               padding: '2px 6px',
               borderRadius: '10px',
@@ -201,19 +201,19 @@ const Attendance = ({ children }) => {
           </div>
           <div id="coinbox-content">
             <div id="coinbox-amount" style={{
-              color: isCompleted ? "#B79C8B" : "#ffffff",
+              color: isCompleted ? "#B3BEC1" : "#ffffff",
               fontWeight: isCurrentDay ? 'bold' : 'normal'
             }}>
               ₹{task.bonus.toFixed(2)}
             </div>
             <div id="coinbox-day" style={{
-              color: "#B79C8B",
+              color: "#B3BEC1",
               fontWeight: isCurrentDay ? 'bold' : 'normal'
             }}>
               {task.day} Day
             </div>
             {isCurrentDay && !isEligible && task.deposit?.remaining > 0 && (
-              <div className="requirement-message" style={{ fontSize: '10px', color: '#B79C8B' }}>
+              <div className="requirement-message" style={{ fontSize: '10px', color: '#B3BEC1' }}>
                 Deposit ₹{task.deposit.remaining} more
               </div>
             )}
@@ -330,7 +330,7 @@ const Attendance = ({ children }) => {
                     width: "90%",
                     height: "45px",
                     borderRadius: "20px",
-                    background: "linear-gradient(180deg, #FED358, #FFB472)",
+                    background: "linear-gradient(180deg, #24ee89, #9fe871)",
                     cursor: "pointer",
                     border: "none",
                     marginBottom: "100px",

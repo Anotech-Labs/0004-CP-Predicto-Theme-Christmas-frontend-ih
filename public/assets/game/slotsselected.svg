@@ -15,15 +15,15 @@
 </pattern>
 <linearGradient id="paint0_linear_1137_2193" x1="81" y1="64" x2="137" y2="64.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="#F5B73B"/>
-<stop offset="1" stop-color="#FED358"/>
+<stop offset="1" stop-color="#24ee89"/>
 </linearGradient>
 <linearGradient id="paint1_linear_1137_2193" x1="151" y1="64" x2="188" y2="64" gradientUnits="userSpaceOnUse">
 <stop stop-color="#F5B73B"/>
-<stop offset="0.999345" stop-color="#FED358"/>
+<stop offset="0.999345" stop-color="#24ee89"/>
 </linearGradient>
 <linearGradient id="paint2_linear_1137_2193" x1="29" y1="64" x2="66" y2="64" gradientUnits="userSpaceOnUse">
 <stop stop-color="#F5B73B"/>
-<stop offset="0.999345" stop-color="#FED358"/>
+<stop offset="0.999345" stop-color="#24ee89"/>
 </linearGradient>
 <image id="image0_1137_2193" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADRUlEQVR4nO3bPWtUQRgF4NcgRgsrPwlJ5py510TXSvADRUirFlYWgiAiiBaChQj6GywUkYCKiBaKjT8gYCGigpWiKIgxamIRFTRCTETNymyyEc3nJrs7dzfngYGUk/fcmTt3ZtZMREREREREREREREREREREREREREREMsF7v4dknyfzaoxWAwK93rndVvhDYeSzUAMC782Tv2N3RI3FGvwKgQypIMzKQzEYpqyBDHREjYUafAmBfFJBmIkHgkB/mLI+xO6IGouB9IZAelQQZuKhIPA6TFnPY3dEjaM1AJ6GEXJPBWEmHgoCd43kndgdUWOxBrfNA50qCDPxUJC8EPayTsfuiBqLgZw079x+FYSZeChI7gsjZHPsjqixUIPUuU3W3Ny8LGxqqSiMOzqAn865paNnIuRLBcLYgTwbP6QicFOBMPb74/rfU0PgqAJh7EAOjwcCoF2BMGog61pb/T9n6+H4UKEwViA9Ey47kDynQBgrkLMTAkmSZIcCYaz3x9bJbgQ1eOCdQmG1w+g2s0WT3tEieUaBsLojBDg15aW5tra2lbqFwmoG8n19U9OKKQMZ+ya5qlHCao2OKzYT5xwIDCsUVvbdAfyY8O0xzSi5qEBY6Zf5+VmFMTZK1hL4plBYqdEx4L1fbaUgeVyBsDIjxLljNgfhu+S+QmG5p6qHobZzCSRMXRvC0kyhsFyBDIaNXJsPkgcUCMs1VR2ycvDkZYXC+YUBdFq5hLNeDzxWKJxrII/SNG20chrbVtHZO0te4r4iucYqIU3TZu0Is5QVVR8AZ5WUJMlGAh81fXGmkdGftrbmrBoKZ/A6O8lPE8jbeS9vS9XS0tIU7hJppPD/MF4kSdJiMaRpuiqsIBQKi9PUgxnPN6oQSqO+Uxhe4JdyudwSy4oEOLgQTxsJDAM4YlmUOLfdk28WTBhkN4BtlmXt7e3Lw/D15EjsgvnKthvhf7VakTi3qx5/A0+gH8Beq0VhFRZuddfJaBkheS1sIVmtI7mlxjcnn3jvd1qdaQgrMZKfM1Dg/Kwa8NUDJzo6OhZbvQoXKDzQVQNhdIW+2kIQftdI8lZGv1uGQt9CH2PXSURERERERERERERERERERGzcH1uJvX3uht3SAAAAAElFTkSuQmCC"/>
 </defs>

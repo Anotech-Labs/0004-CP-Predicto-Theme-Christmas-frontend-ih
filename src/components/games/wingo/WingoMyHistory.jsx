@@ -74,9 +74,9 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
               onClick={handleDetailsClick}
               sx={{
                 textTransform: "none",
-                color: "#DD9138",
+                color: "#24ee89",
                 padding: "5px 7px",
-                border: "1px solid #DD9138",
+                border: "1px solid #24ee89",
                 borderRadius: "10px",
                 fontSize: "13px",
                 mb: 1,
@@ -204,7 +204,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                         </Typography>
                         <Typography
                           sx={{
-                            color: "#B79C8B",
+                            color: "#B3BEC1",
                             fontSize: "12px",
                           }}
                         >
@@ -218,7 +218,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                       <Box
                         sx={{
                           border: 1,
-                          borderColor: bet.result === "" ? "#DD9138" : bet.isWin ? "#17B15E"
+                          borderColor: bet.result === "" ? "#24ee89" : bet.isWin ? "#17B15E"
                             : "#D23838",
                           borderRadius: "7px",
                           pt: "0.2px",
@@ -233,7 +233,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                           variant="caption"
                           sx={{
                             fontSize: "12px",
-                            color: bet.result === "" ? "#DD9138" : bet.isWin ? "#17B15E"
+                            color: bet.result === "" ? "#24ee89" : bet.isWin ? "#17B15E"
                               : "#D23838",
                             // fontWeight: "bold",
                           }}
@@ -249,7 +249,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                         <Typography
                           variant="body2"
                           sx={{
-                            color: bet.result === "" ? "#DD9138" : bet.isWin ? "#17B15E"
+                            color: bet.result === "" ? "#24ee89" : bet.isWin ? "#17B15E"
                               : "#D23838",
                             fontWeight: "bold",
                           }}
@@ -354,13 +354,13 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                         {
                           label: "Status",
                           value: bet.result === "" ? "Pending" : !bet.isWin ? "Failed" : "Success",
-                          color: bet.result === "" ? "#DD9138" : !bet.isWin ? "#D23838" : "#17B15E",
+                          color: bet.result === "" ? "#24ee89" : !bet.isWin ? "#D23838" : "#17B15E",
 
                         },
                         {
                           label: "Win/lose",
                           value: bet.result === "" ? "Pending" : bet.winAmount > 0 ? `+₹${parseFloat(bet.winAmount).toFixed(2)}` : `-₹${parseFloat(bet.actualBetAmount).toFixed(2)}`,
-                          color: bet.result === "" ? "#DD9138" : bet.winAmount > 0 ? "#17B15E" : "#D23838",
+                          color: bet.result === "" ? "#24ee89" : bet.winAmount > 0 ? "#17B15E" : "#D23838",
                         },
                         {
                           label: "Order time",
@@ -385,7 +385,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                           <Typography
                             sx={{
                               fontSize: "15px",
-                              color: "#B79C8B",
+                              color: "#B3BEC1",
                               borderBottom: "none",
                             }}
                           >
@@ -394,7 +394,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                           <Typography
                             sx={{
                               fontSize: "15px",
-                              color: row.color || "#B79C8B",
+                              color: row.color || "#B3BEC1",
                               textAlign: "right",
                               borderBottom: "1px solid #3a4142",
                             }}
@@ -405,13 +405,13 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                               </Typography>
                             ) : row.label === "Result" &&
                               row.value === "" ? ( // If Result is empty, display a blank Typography
-                              <Typography sx={{ color: "#B79C8B" }}>
+                              <Typography sx={{ color: "#B3BEC1" }}>
                                 {" "}
                               </Typography>
                             ) : row.label === "Result" ? (
                               <Typography
                                 sx={{
-                                  color: "#B79C8B",
+                                  color: "#B3BEC1",
                                   fontSize:
                                     wordToNumber(row.value) >= 0 &&
                                       wordToNumber(row.value) <= 4
@@ -520,17 +520,17 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
           disabled={page === 1}
           sx={{
             marginRight: "10px",
-            backgroundColor: "#FED358",
+            backgroundColor: "#24ee89",
             "&.Mui-disabled": {
               backgroundColor: "#3a4142", // Disabled background color
-              color: "#B79C8B", // Optional: Change text color for better visibility
+              color: "#B3BEC1", // Optional: Change text color for better visibility
             },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#323738" }} />
+          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B3BEC1" : "#323738" }} />
         </Button>
-        <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B", fontSize: "13px" }}>
+        <Grid sx={{ display: "flex", alignItems: "center", color: "#B3BEC1", fontSize: "13px" }}>
           {page}/{totalPage}
         </Grid>
         <Button
@@ -539,15 +539,15 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
           disabled={page >= totalPage}
           sx={{
             marginLeft: "10px",
-            backgroundColor: "#FED358",
+            backgroundColor: "#24ee89",
             "&.Mui-disabled": {
               backgroundColor: "#3a4142", // Disabled background color
-              color: "#B79C8B", // Optional: Change text color for better visibility
+              color: "#B3BEC1", // Optional: Change text color for better visibility
             },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B79C8B" : "#323738" }} />
+          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B3BEC1" : "#323738" }} />
         </Button>
       </Box>
     </Grid>

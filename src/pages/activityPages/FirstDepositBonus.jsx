@@ -112,12 +112,12 @@ function FirstDepositBonus({ children }) {
               }}
             >
               <RhombusIcon
-                sx={{ color: "#FED358", mr: 1, mt: "4px", fontSize: 10 }}
+                sx={{ color: "#24ee89", mr: 1, mt: "4px", fontSize: 10 }}
               />
               <Typography
                 variant="body2"
                 paragraph
-                sx={{ textAlign: "justify", fontSize: "0.8rem" ,color:"#B79C8B"}}
+                sx={{ textAlign: "justify", fontSize: "0.8rem" ,color:"#B3BEC1"}}
               >
                 {rule}
               </Typography>
@@ -191,11 +191,11 @@ function FirstDepositBonus({ children }) {
                   '& .MuiTab-root': {
                     color: '#A8A5A1',
                     '&.Mui-selected': {
-                      color: '#FED358',
+                      color: '#24ee89',
                     },
                   },
                   '& .MuiTabs-indicator': {
-                    backgroundColor: '#FED358',
+                    backgroundColor: '#24ee89',
                   },
                 }}
               >

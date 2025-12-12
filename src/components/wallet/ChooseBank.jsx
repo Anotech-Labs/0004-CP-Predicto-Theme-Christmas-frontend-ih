@@ -58,7 +58,7 @@ const ChooseBank = ({selectedBank, setSelectedBank, setShowBankSelection}) => {
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <SearchIcon sx={{ color: "#FED358" }} />
+                  <SearchIcon sx={{ color: "#24ee89" }} />
                 </InputAdornment>
               ),
             }}

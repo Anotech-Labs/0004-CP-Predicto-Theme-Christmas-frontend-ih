@@ -53,7 +53,7 @@ const ActivityRules = () => {
         <Box
           sx={{
             backgroundColor: "#323738",
-            color: "#B79C8B",
+            color: "#B3BEC1",
             borderRadius: "12px",
             boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
             textAlign: "left",
@@ -88,7 +88,7 @@ const ActivityRules = () => {
 
           <Typography
             variant="body2"
-            sx={{ color: "#B79C8B", mx: 2, pb:2, fontSize: "12.6px" }}
+            sx={{ color: "#B3BEC1", mx: 2, pb:2, fontSize: "12.6px" }}
           >
             If a member applies repeatedly, the company reserves the right to
             cancel or withdraw member bonuses.
@@ -130,7 +130,7 @@ const ActivityRules = () => {
 
           <Typography
             variant="body2"
-            sx={{ color: "#B79C8B", mx: 2,pb:2, fontSize: "12.6px" }}
+            sx={{ color: "#B3BEC1", mx: 2,pb:2, fontSize: "12.6px" }}
           >
             If any group or individual is found to be dishonestly withdrawing
             bonuses or threatening or abusing company offers, the company
@@ -174,7 +174,7 @@ const ActivityRules = () => {
 
           <Typography
             variant="body2"
-            sx={{ color: "#B79C8B", mx: 2, pb:2, fontSize: "12.6px" }}
+            sx={{ color: "#B3BEC1", mx: 2, pb:2, fontSize: "12.6px" }}
           >
             and the right to modify or terminate the campaign without prior notice; these terms apply to all offers.
           </Typography>

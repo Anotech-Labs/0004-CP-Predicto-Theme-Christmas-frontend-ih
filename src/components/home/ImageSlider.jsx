@@ -147,7 +147,7 @@ const ImageSlider = () => {
           width: currentIndex === index ? "11px" : "4px",
           height: currentIndex === index ? "4px" : "4px",
           borderRadius: "50px",
-          backgroundColor: currentIndex === index ? "#fed358" : "#656565",
+          backgroundColor: currentIndex === index ? "#24ee89" : "#656565",
           cursor: "pointer",
           transition: "background-color 0.3s ease",
         }}

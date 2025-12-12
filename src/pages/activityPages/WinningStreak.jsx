@@ -179,7 +179,7 @@ const WinningStreak = () => {
                             <Button
                                 variant="outlined"
                                 sx={{
-                                    border: "1px solid #FED358",
+                                    border: "1px solid #24ee89",
                                     borderRadius: "8px",
                                     padding: "0.5px 8px",
                                     fontSize: "13px",
@@ -187,7 +187,7 @@ const WinningStreak = () => {
                                     display: "inline-flex",
                                     alignItems: "center",
                                     gap: "3px",
-                                    color: "#FED358",
+                                    color: "#24ee89",
                                 }}
                                 onClick={() =>
                                     navigate("/activity/winning-streak/rule")

@@ -291,11 +291,11 @@ const Rule = () => {
               justifyContent: "flex-start",
             }}
           >
-            <PlayArrowIcon sx={{ fontSize: "28px", color: "#FED358" }} />
+            <PlayArrowIcon sx={{ fontSize: "28px", color: "#24ee89" }} />
             <Typography
               variant="body2"
               sx={{
-                color: "#B79C8B",
+                color: "#B3BEC1",
                 display: "inline-flex",
                 alignItems: "center",
                 fontSize: "13px",

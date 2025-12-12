@@ -60,7 +60,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             <Typography
               variant="body2"
               sx={{ fontSize: isSmallScreen ? "11px" : "13px" }}
-              color="#B79C8B"
+              color="#B3BEC1"
             >
               Game name
             </Typography>
@@ -100,7 +100,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             <Typography
               variant="body2"
               sx={{ fontSize: isSmallScreen ? "11px" : "13px" }}
-              color="#B79C8B"
+              color="#B3BEC1"
             >
               Number of wins
             </Typography>
@@ -140,7 +140,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             <Typography
               variant="body2"
               sx={{ fontSize: isSmallScreen ? "11px" : "13px" }}
-              color="#B79C8B"
+              color="#B3BEC1"
             >
               Bonus
             </Typography>
@@ -180,7 +180,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             <Typography
               variant="body2"
               sx={{ fontSize: isSmallScreen ? "11px" : "13px" }}
-              color="#B79C8B"
+              color="#B3BEC1"
             >
               Winning time
             </Typography>
@@ -200,7 +200,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             <Typography
               variant="body2"
               sx={{ fontSize: isSmallScreen ? "11px" : "13px" }}
-              color="#B79C8B"
+              color="#B3BEC1"
             >
               {time}
             </Typography>

@@ -137,7 +137,7 @@ const AvatarChange = () => {
                     overflow: "hidden",
                     border:
                       selectedAvatar === image.split("/").pop()
-                        ? "4px solid #fed358"
+                        ? "4px solid #24ee89"
                         : "none", // Highlight selected avatar by file name
                     cursor: "pointer",
                   }}
@@ -155,7 +155,7 @@ const AvatarChange = () => {
                         position: "absolute",
                         bottom: 6,
                         right: 6,
-                        color: "#fed358",
+                        color: "#24ee89",
                         fontSize: 22,
                         backgroundColor: "white",
                         borderRadius: "50%",

@@ -78,12 +78,12 @@ const GameRules = () => {
                             }}
                         >
                             <RhombusIcon
-                                sx={{ color: "#FED358", mr: 1, mt: "4px", fontSize: 10 }}
+                                sx={{ color: "#24ee89", mr: 1, mt: "4px", fontSize: 10 }}
                             />
                             <Typography
                                 variant="body2"
                                 paragraph
-                                sx={{ textAlign: "justify", fontSize: "0.8rem",color:"#B79C8B" }}
+                                sx={{ textAlign: "justify", fontSize: "0.8rem",color:"#B3BEC1" }}
                             >
                                 {rule}
                             </Typography>
@@ -143,9 +143,9 @@ const GameRules = () => {
                                 <TableBody>
                                     {rulesData.map((row) => (
                                         <TableRow key={row.day} sx={{ backgroundColor: row.day % 2 === 0 ? '#3a4142' : '#323738', border: 'none' }}>
-                                            <TableCell align="center" sx={{ border: 'none',color:"#B79C8B" }}>{row.day}</TableCell>
-                                            <TableCell align="center" sx={{ border: 'none',color:"#B79C8B" }}>{formatCurrency(row.requiredDeposit)}</TableCell>
-                                            <TableCell align="center" sx={{ border: 'none',color:"#B79C8B" }}>{formatCurrency(row.bonusReward)}</TableCell>
+                                            <TableCell align="center" sx={{ border: 'none',color:"#B3BEC1" }}>{row.day}</TableCell>
+                                            <TableCell align="center" sx={{ border: 'none',color:"#B3BEC1" }}>{formatCurrency(row.requiredDeposit)}</TableCell>
+                                            <TableCell align="center" sx={{ border: 'none',color:"#B3BEC1" }}>{formatCurrency(row.bonusReward)}</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>

@@ -548,7 +548,7 @@ const K3Page = ({ timerKey }) => {
       // case "TWO_DIFFERENT":
       //   return { shape: "box", bgcolor: "#D23838" }; // Red
       case "BIG_SMALL":
-        return { shape: "box", bgcolor: totalSum === "Big" ? "#fed358" : "#5088D3" }; // Orange for Big/Small
+        return { shape: "box", bgcolor: totalSum === "Big" ? "#24ee89" : "#5088D3" }; // Orange for Big/Small
       case "ODD_EVEN":
         return { shape: "box", bgcolor: totalSum === "Odd" ? "#D23838" : "#17B15E" }; // Yellow for Odd/Even
       default:
@@ -1456,7 +1456,7 @@ const K3Page = ({ timerKey }) => {
                   variant="body2"
                   fontSize={{ xs: 10, sm: 11, md: 12 }}
                   align="center"
-                  color="#B79C8B"
+                  color="#B3BEC1"
                 // sx={{ mt: 0.5 }}
                 >
                   {image.factor}
@@ -1478,7 +1478,7 @@ const K3Page = ({ timerKey }) => {
               {
                 label: "Big",
                 multiplier: "1.92X",
-                bgColor: "#fed358",
+                bgColor: "#24ee89",
                 action: "BIG_SMALL",
               },
               {
@@ -1788,7 +1788,7 @@ const K3Page = ({ timerKey }) => {
               marginTop: "-65px",
               backgroundColor: "#3a4142",
               borderRadius: "10px",
-              color: "#B79C8B",
+              color: "#B3BEC1",
             }}
           >
             {images.map((image) => (
@@ -1819,7 +1819,7 @@ const K3Page = ({ timerKey }) => {
                 <div
                   style={{
                     textAlign: "center",
-                    color: activeId === image.id ? "#323738" : "#B79C8B",
+                    color: activeId === image.id ? "#323738" : "#B3BEC1",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -1869,7 +1869,7 @@ const K3Page = ({ timerKey }) => {
               <Grid item xs={2} textAlign={"left"}>
                 <Typography
                   variant="body1"
-                  color="#B79C8B"
+                  color="#B3BEC1"
                   sx={{ fontSize: "0.8rem" }}
                 >
                   Period
@@ -1879,7 +1879,7 @@ const K3Page = ({ timerKey }) => {
                 <Button
                   variant="outlined"
                   sx={{
-                    border: "1px solid #fed358",
+                    border: "1px solid #24ee89",
                     borderRadius: "15px",
                     padding: "1.5px 17px",
                     fontSize: "11.7px",
@@ -1887,9 +1887,9 @@ const K3Page = ({ timerKey }) => {
                     display: "inline-flex", // Use inline-flex to align items in a line
                     alignItems: "center", // Center items vertically
                     gap: "3px",
-                    color: "#fed358",
+                    color: "#24ee89",
                   }}
-                  // startIcon={<NoteIcon sx={{ color: "#fed358" }} />}
+                  // startIcon={<NoteIcon sx={{ color: "#24ee89" }} />}
                   onClick={handleOpenPopup}
                 >
                   <img src="/assets/k3/howtoplay.svg" alt="" width="12px" />
@@ -1904,7 +1904,7 @@ const K3Page = ({ timerKey }) => {
               >
                 <Typography
                   variant="body5"
-                  color="#B79C8B"
+                  color="#B3BEC1"
                   sx={{ fontSize: "12px" }}
                 >
                   Time Remaining
@@ -1985,7 +1985,7 @@ const K3Page = ({ timerKey }) => {
                   alignItems: "center",
                   justifyContent: "center",
                   overflow: "hidden",
-                  color: "#fed358",
+                  color: "#24ee89",
                   fontWeight: "bold",
                   textAlign: "center",
                   position: "absolute",
@@ -2036,8 +2036,8 @@ const K3Page = ({ timerKey }) => {
                   <Tab
                     label="Total"
                     style={{
-                      background: values === 0 ? "#fed358" : "#3a4142",
-                      color: values === 0 ? "#323738" : "#B79C8B",
+                      background: values === 0 ? "#24ee89" : "#3a4142",
+                      color: values === 0 ? "#323738" : "#B3BEC1",
                       borderBottom: values === 0 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
                       minWidth: "auto",
@@ -2054,7 +2054,7 @@ const K3Page = ({ timerKey }) => {
                     label="2 same"
                     style={{
                       backgroundColor:
-                        values === 1 ? "#fed358" : "#3a4142",
+                        values === 1 ? "#24ee89" : "#3a4142",
                       color: values === 1 ? "#323738" : "grey",
                       borderBottom: values === 1 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
@@ -2068,7 +2068,7 @@ const K3Page = ({ timerKey }) => {
                     label="3 same"
                     style={{
                       backgroundColor:
-                        values === 2 ? "#fed358" : "#3a4142",
+                        values === 2 ? "#24ee89" : "#3a4142",
                       color: values === 2 ? "#323738" : "grey",
                       borderBottom: values === 2 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
@@ -2082,7 +2082,7 @@ const K3Page = ({ timerKey }) => {
                     label="Different"
                     style={{
                       backgroundColor:
-                        values === 3 ? "#fed358" : "#3a4142",
+                        values === 3 ? "#24ee89" : "#3a4142",
                       color: values === 3 ? "#323738" : "grey",
                       borderBottom: values === 3 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
@@ -2310,8 +2310,8 @@ const K3Page = ({ timerKey }) => {
                         variant="contained"
                         style={{
                           backgroundColor:
-                            activeBetAmount === 1 ? "#FED358" : "#3a4142",
-                          color: activeBetAmount === 1 ? "#ffffff" : "#B79C8B",
+                            activeBetAmount === 1 ? "#24ee89" : "#3a4142",
+                          color: activeBetAmount === 1 ? "#ffffff" : "#B3BEC1",
                           minWidth: "30px",
                           padding: "2px 6px",
                           fontSize: "17px"
@@ -2327,8 +2327,8 @@ const K3Page = ({ timerKey }) => {
                         variant="contained"
                         style={{
                           backgroundColor:
-                            activeBetAmount === 10 ? "#FED358" : "#3a4142",
-                          color: activeBetAmount === 10 ? "#ffffff" : "#B79C8B",
+                            activeBetAmount === 10 ? "#24ee89" : "#3a4142",
+                          color: activeBetAmount === 10 ? "#ffffff" : "#B3BEC1",
                           minWidth: "30px",
                           padding: "2px 6px",
                           fontSize: "17px"
@@ -2344,8 +2344,8 @@ const K3Page = ({ timerKey }) => {
                         variant="contained"
                         style={{
                           backgroundColor:
-                            activeBetAmount === 100 ? "#FED358" : "#3a4142",
-                          color: activeBetAmount === 100 ? "#ffffff" : "#B79C8B",
+                            activeBetAmount === 100 ? "#24ee89" : "#3a4142",
+                          color: activeBetAmount === 100 ? "#ffffff" : "#B3BEC1",
                           minWidth: "30px",
                           padding: "2px 6px",
                           fontSize: "17px"
@@ -2361,8 +2361,8 @@ const K3Page = ({ timerKey }) => {
                         variant="contained"
                         style={{
                           backgroundColor:
-                            activeBetAmount === 1000 ? "#FED358" : "#3a4142",
-                          color: activeBetAmount === 1000 ? "#ffffff" : "#B79C8B",
+                            activeBetAmount === 1000 ? "#24ee89" : "#3a4142",
+                          color: activeBetAmount === 1000 ? "#ffffff" : "#B3BEC1",
                           minWidth: "30px",
                           padding: "2px 6px",
                           fontSize: "17px"
@@ -2432,7 +2432,7 @@ const K3Page = ({ timerKey }) => {
                             },
                           }}
                           InputLabelProps={{
-                            style: { color: "#B79C8B", fontSize: isSmallScreen2 ? "8px" : "12px", },
+                            style: { color: "#B3BEC1", fontSize: isSmallScreen2 ? "8px" : "12px", },
                           }}
                         />
                       </Grid>
@@ -2471,7 +2471,7 @@ const K3Page = ({ timerKey }) => {
                             <RemoveIcon
                               fontSize="small"
                               sx={{
-                                color: "#FED358",
+                                color: "#24ee89",
                                 fontSize: 38,
                               }}
                             />
@@ -2504,7 +2504,7 @@ const K3Page = ({ timerKey }) => {
                             <AddIcon
                               fontSize="small"
                               sx={{
-                                color: "#FED358",
+                                color: "#24ee89",
                                 fontSize: 38,
                               }}
                             />
@@ -2534,8 +2534,8 @@ const K3Page = ({ timerKey }) => {
                           borderRadius: "5px",
                           margin: "5px",
                           ...(activeButton === value
-                            ? { backgroundColor: "#FED358", color: "#ffffff" }
-                            : { backgroundColor: "#3a4142", color: "#B79C8B" }),
+                            ? { backgroundColor: "#24ee89", color: "#ffffff" }
+                            : { backgroundColor: "#3a4142", color: "#B3BEC1" }),
                         }}
                       >
                         X{value}
@@ -2557,13 +2557,13 @@ const K3Page = ({ timerKey }) => {
                       checkedIcon={
                         <CheckCircleIcon
                           sx={{
-                            color: "#FED358 ", // Checked color
+                            color: "#24ee89 ", // Checked color
                             fontSize: 22, // Slightly bigger for effect
                           }}
                         />
                       }
                     />
-                    <span style={{ marginLeft: 8, fontSize: "13px" ,color:"#B79C8B"}}>
+                    <span style={{ marginLeft: 8, fontSize: "13px" ,color:"#B3BEC1"}}>
                       I agree
                     </span>
                     <span
@@ -2586,7 +2586,7 @@ const K3Page = ({ timerKey }) => {
                       fullWidth
                       style={{
                         backgroundColor: "#3a4142",
-                        color: "#B79C8B",
+                        color: "#B3BEC1",
                         textTransform: "none",
                         borderRadius: "0px",
                         height:"50px"
@@ -2602,7 +2602,7 @@ const K3Page = ({ timerKey }) => {
                       fullWidth
                       disabled={!agreed}
                       style={{
-                        background: "#FED358",
+                        background: "#24ee89",
                         color: "#232626",
                         textTransform: "none",
                         borderRadius: "0px", height:"50px"
@@ -2747,7 +2747,7 @@ const K3Page = ({ timerKey }) => {
                           activeTab === index
                             ? "linear-gradient(90deg,#24ee89,#9fe871)"
                             : "#323738",
-                        color: activeTab === index ? "#323738" : "#B79C8B",
+                        color: activeTab === index ? "#323738" : "#B3BEC1",
                         borderRadius: 2,
                         display: "flex",
                         alignItems: "center",
@@ -2756,7 +2756,7 @@ const K3Page = ({ timerKey }) => {
                         transition: "all 0.3s",
                         // "&:hover": {
                         //   backgroundColor:
-                        //     activeTab === index ? "#fed358" : "#f5f5f5",
+                        //     activeTab === index ? "#24ee89" : "#f5f5f5",
                         // },
                       }}
                     >

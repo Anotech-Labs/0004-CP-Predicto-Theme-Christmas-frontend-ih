@@ -242,7 +242,7 @@ const ActivityReward = () => {
                 />
                 <Typography
                   variant="h6"
-                  sx={{ color: "#dd9138", fontSize: "1rem" }}
+                  sx={{ color: "#24ee89", fontSize: "1rem" }}
                 >
                   ₹{task.bonusAmount}
                 </Typography>
@@ -385,7 +385,7 @@ const ActivityReward = () => {
           >
             <Typography
               variant="body1"
-              sx={{ color: "#B79C8B", textAlign: "center" }}
+              sx={{ color: "#B3BEC1", textAlign: "center" }}
             >
               Check your daily missions and claim your rewards!
             </Typography>

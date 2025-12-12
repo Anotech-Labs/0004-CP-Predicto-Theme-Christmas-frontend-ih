@@ -162,10 +162,10 @@ const EventDetails = () => {
                         }}
                       >
                         <div style={{ color: '#d23838', fontSize: '12px', }}>₹{task.amount.toFixed(2)}</div>
-                        <div style={{ color: '#B79C8B', fontSize: '11px' }}>Total depositsBalance</div>
+                        <div style={{ color: '#B3BEC1', fontSize: '11px' }}>Total depositsBalance</div>
                       </TableCell>
                       <TableCell sx={{ color: '#ffffff', textAlign: 'center', fontSize: '13.8px', borderBottom: "none" }}>+{task.spins}</TableCell>
-                      <TableCell sx={{ color: '#B79C8B', textAlign: 'center', textWrap: "nowrap", fontSize: '14px', borderBottom: "none" }}>00:00-23:59</TableCell>
+                      <TableCell sx={{ color: '#B3BEC1', textAlign: 'center', textWrap: "nowrap", fontSize: '14px', borderBottom: "none" }}>00:00-23:59</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -209,19 +209,19 @@ const EventDetails = () => {
                   }}
                 >
                   <RhombusIcon
-                    sx={{ color: "#FED358", mr: 1, mt: "4px", fontSize: 10 }}
+                    sx={{ color: "#24ee89", mr: 1, mt: "4px", fontSize: 10 }}
                   />
                   <Typography
                     variant="body2"
                     paragraph
-                    sx={{ textAlign: "left", fontSize: "13.2px", color: "#B79C8B" }}
+                    sx={{ textAlign: "left", fontSize: "13.2px", color: "#B3BEC1" }}
                   >
                     {rule}
                   </Typography>
                 </Box>
               ))}
             </Box>
-            <Box sx={{ bgcolor: "#232626", p: 1.5, borderRadius: 2, mb: 1, textAlign: "left", mx: 2, color: "#B79C8B" }}>
+            <Box sx={{ bgcolor: "#232626", p: 1.5, borderRadius: 2, mb: 1, textAlign: "left", mx: 2, color: "#B3BEC1" }}>
               {/* Example text */}
               <Typography variant="body1" sx={{ mb: 0, fontSize: "13.2px" }}>
                 For example:

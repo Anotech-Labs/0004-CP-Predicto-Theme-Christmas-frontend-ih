@@ -345,7 +345,7 @@ const DepositHistory = () => {
                       color:
                         state.selectedMethod === method.name
                           ? "#221f2e"
-                          : "#B79C8B",
+                          : "#B3BEC1",
                       borderRadius: "5px",
                       // fontWeight: "bold",
                       fontSize: "13px",
@@ -392,7 +392,7 @@ const DepositHistory = () => {
                   display: "flex",
                   justifyContent: "space-between",
                   padding: "0 16px",
-                  color: "#B79C8B",
+                  color: "#B3BEC1",
                   fontWeight: "bold",
                   borderRadius: "5px",
                   fontSize: "14px",
@@ -412,7 +412,7 @@ const DepositHistory = () => {
                   fontSize: "11.5px",
                   justifyContent: "space-between",
                   padding: "0 10px",
-                  color: "#B79C8B",
+                  color: "#B3BEC1",
                   fontWeight: "bold",
                   borderRadius: "5px",
                   whiteSpace: "nowrap", // Prevent text wrapping
@@ -480,7 +480,7 @@ const DepositHistory = () => {
                           container
                           xs={12}
                           mb={1}
-                          sx={{ borderBottom: "1px solid #B79C8B", display: "flex", alignItems: "center" }}
+                          sx={{ borderBottom: "1px solid #B3BEC1", display: "flex", alignItems: "center" }}
                         >
                           <Grid item xs={6}>
                             <Box
@@ -513,7 +513,7 @@ const DepositHistory = () => {
                         </Grid>
                         <Grid container spacing={1}>
                           <Grid item xs={3} textAlign="left">
-                            <Typography variant="body2" sx={{ color: "#B79C8B" }}>
+                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
                               Balance
                             </Typography>
                           </Grid>
@@ -529,32 +529,32 @@ const DepositHistory = () => {
                             </Typography>
                           </Grid>
                           <Grid item xs={3} textAlign="left">
-                            <Typography variant="body2" sx={{ color: "#B79C8B" }}>
+                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
                               Type
                             </Typography>
                           </Grid>
                           <Grid item xs={9} textAlign="end">
-                            <Typography variant="body2" sx={{ color: "#B79C8B" }}>
+                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
                               {deposit.depositMethod}
                             </Typography>
                           </Grid>
                           <Grid item xs={3} textAlign="left">
-                            <Typography variant="body2" sx={{ color: "#B79C8B" }}>
+                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
                               Time
                             </Typography>
                           </Grid>
                           <Grid item xs={9} textAlign="end">
-                            <Typography variant="body2" sx={{ color: "#B79C8B" }}>
+                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
                               {new Date(deposit.depositDate).toLocaleString()}
                             </Typography>
                           </Grid>
                           <Grid item xs={4} textAlign="left">
-                            <Typography variant="body2" sx={{ color: "#B79C8B" }}>
+                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
                               Order number
                             </Typography>
                           </Grid>
                           <Grid item xs={8} textAlign="end">
-                            <Typography variant="body2" sx={{ color: "#B79C8B" }}>
+                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
                               {deposit.depositId}
                             </Typography>
                           </Grid>
@@ -623,7 +623,7 @@ const DepositHistory = () => {
               </Button>
               <Button 
                 onClick={toggleOptionsDrawer(false)}
-                sx={{ color: "#FED358", fontWeight: "bold" }}
+                sx={{ color: "#24ee89", fontWeight: "bold" }}
               >
                 Confirm
               </Button>

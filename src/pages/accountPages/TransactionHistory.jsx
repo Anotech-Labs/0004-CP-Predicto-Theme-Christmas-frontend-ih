@@ -396,7 +396,7 @@ const TransactionHistory = () => {
 
   // Get text color for title (to ensure readability against background)
   const getTitleTextColor = (bgColor) => {
-    return bgColor === "#F44336" || bgColor === "#4CAF50" || bgColor === "#B79C8B" ? "#B79C8B" : "#000";
+    return bgColor === "#F44336" || bgColor === "#4CAF50" || bgColor === "#B3BEC1" ? "#B3BEC1" : "#000";
   };
 
   return (
@@ -462,7 +462,7 @@ const TransactionHistory = () => {
               fontSize: "15px",
               justifyContent: "space-between",
               padding: "0 10px",
-              color: "#B79C8B",
+              color: "#B3BEC1",
               fontWeight: "550",
               borderRadius: "5px",
             }}
@@ -482,7 +482,7 @@ const TransactionHistory = () => {
               display: "flex",
               fontSize: "15px",
               padding: "0 10px",
-              color: "#B79C8B",
+              color: "#B3BEC1",
               fontWeight: "600",
               borderRadius: "5px",
             }}
@@ -536,21 +536,21 @@ const TransactionHistory = () => {
 
                       <Box sx={{ bgcolor: "#323738", p: "12px 6px", borderBottomLeftRadius: "5px", borderBottomRightRadius: "5px" }}>
                         <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1, background: "#232626", p: 1, borderRadius: "5px" }}>
-                          <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>Detail</Typography>
-                          <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>
+                          <Typography variant="body2" sx={{ color: "#B3BEC1", fontSize: "12px" }}>Detail</Typography>
+                          <Typography variant="body2" sx={{ color: "#B3BEC1", fontSize: "12px" }}>
                             {formatTransactionDetails(transaction.details, transaction.transactionType)}
                           </Typography>
                         </Box>
 
                         <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1, background: "#232626", p: 1, borderRadius: "5px" }}>
-                          <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>Time</Typography>
-                          <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>
+                          <Typography variant="body2" sx={{ color: "#B3BEC1", fontSize: "12px" }}>Time</Typography>
+                          <Typography variant="body2" sx={{ color: "#B3BEC1", fontSize: "12px" }}>
                             {format(new Date(transaction.createdAt), "yyyy-MM-dd HH:mm:ss")}
                           </Typography>
                         </Box>
 
                         <Box sx={{ display: "flex", justifyContent: "space-between", background: "#232626", p: 1, borderRadius: "5px" }}>
-                          <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>Balance</Typography>
+                          <Typography variant="body2" sx={{ color: "#B3BEC1", fontSize: "12px" }}>Balance</Typography>
                           <Typography
                             variant="body2"
                             sx={{
@@ -685,7 +685,7 @@ const TransactionHistory = () => {
                     textAlign: "center",
                     borderRadius: "0",
                     backgroundColor: isSelected ? "#323738" : "transparent",
-                    color: isSelected ? "#B79C8B" : "#888",
+                    color: isSelected ? "#B3BEC1" : "#888",
                     justifyContent: "center",
                     textTransform: "none",
                     fontSize: "15px",

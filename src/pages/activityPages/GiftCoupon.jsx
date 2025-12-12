@@ -171,7 +171,7 @@ const GiftCoupon = ({ children }) => {
                     gutterBottom
                     align="left"
                     sx={{ fontSize: "15px" }}
-                    color="#B79C8B"
+                    color="#B3BEC1"
                   >
                     Hi
                   </Typography>
@@ -180,7 +180,7 @@ const GiftCoupon = ({ children }) => {
                     gutterBottom
                     align="left"
                     sx={{ fontSize: "15px" }}
-                    color="#B79C8B"
+                    color="#B3BEC1"
                   >
                     We have a gift for you
                   </Typography>
@@ -298,7 +298,7 @@ const GiftCoupon = ({ children }) => {
                                <Typography
                                  variant="subtitle1"
                                  sx={{
-                                   color: "#FED358",
+                                   color: "#24ee89",
                                    marginBottom: "4px", // Add margin to separate "Coupon" and the code
                                  }}
                                >
@@ -307,7 +307,7 @@ const GiftCoupon = ({ children }) => {
                                <Typography
                                  variant="subtitle1"
                                  sx={{
-                                   color: "#FED358",
+                                   color: "#24ee89",
                                  }}
                                >
                                  {transaction?.couponCode}
@@ -326,7 +326,7 @@ const GiftCoupon = ({ children }) => {
                                <Typography
                                  variant="subtitle1"
                                  sx={{
-                                   color: "#FED358",
+                                   color: "#24ee89",
                                    fontWeight: "bold",
                                  }}
                                >
@@ -335,7 +335,7 @@ const GiftCoupon = ({ children }) => {
                                <Typography
                                  variant="body2"
                                  sx={{
-                                   color: "#FED358",
+                                   color: "#24ee89",
                                  }}
                                >
                                  {new Date(transaction.claimedAt).toLocaleDateString()}
@@ -368,7 +368,7 @@ const GiftCoupon = ({ children }) => {
                           alt="No data"
                           style={{ width: "100px", marginBottom: "10px" }}
                         />
-                        <Typography variant="body2" sx={{ color: "#666462" }}>
+                        <Typography variant="body2" sx={{ color: "#626663" }}>
                           No Data
                         </Typography>
                       </Box>

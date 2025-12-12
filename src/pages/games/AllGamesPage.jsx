@@ -421,7 +421,7 @@ const categories = [
 const LotteryItem = styled(Box)({
     display: "flex",
     justifyContent: "space-between",
-    // border: "1px solid #FED358",
+    // border: "1px solid #24ee89",
     borderRadius: "20px",
     // width: "100%",
     background: "linear-gradient(90deg,#24ee89,#9fe871)",
@@ -661,7 +661,7 @@ const AllGamesPage = () => {
                                 >
                                     <span
                                         style={{
-                                            color: "#FED358",
+                                            color: "#24ee89",
                                             fontSize: "18px",
                                             fontWeight: "bold",
                                         }}
@@ -743,7 +743,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}
@@ -805,7 +805,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}
@@ -866,7 +866,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}
@@ -927,7 +927,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}
@@ -988,7 +988,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}
@@ -1049,7 +1049,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}
@@ -1117,7 +1117,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}
@@ -1171,7 +1171,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}
@@ -1225,7 +1225,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}
@@ -1279,7 +1279,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}
@@ -1333,7 +1333,7 @@ const AllGamesPage = () => {
                             >
                                 <span
                                     style={{
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         fontSize: "20px",
                                         fontWeight: "bold",
                                     }}

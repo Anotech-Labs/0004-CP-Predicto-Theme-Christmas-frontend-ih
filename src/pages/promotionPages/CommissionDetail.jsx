@@ -216,12 +216,12 @@ const CommissionDetail = () => {
                     },
                   },
                   input: {
-                    color: "#B79C8B",
+                    color: "#B3BEC1",
                     padding: "8px",
                   },
                   "& .MuiOutlinedInput-root input::placeholder": {
                     fontSize: "5px",
-                    color: "#B79C8B", // Placeholder color
+                    color: "#B3BEC1", // Placeholder color
                   },
                 }}
               />
@@ -267,7 +267,7 @@ const CommissionDetail = () => {
                 background: "#323738",
                 padding:'12px',
                 borderRadius: "8px",
-                color: "#B79C8B",
+                color: "#B3BEC1",
                 width: "94%",
                 margin: "auto", // Center horizontally
                 maxWidth: "1200px", // Limit the maximum width

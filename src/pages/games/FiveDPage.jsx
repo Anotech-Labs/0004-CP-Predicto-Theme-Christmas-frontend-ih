@@ -143,7 +143,7 @@ const SumCircle = styled(Box)({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#FED358",
+    backgroundColor: "#24ee89",
     color: "#ffffff",
 })
 
@@ -1099,7 +1099,7 @@ const FiveDPage = ({ timerKey }) => {
                 setSelectedColor("rgb(254,170,87)")
                 break
             default:
-                setSelectedColor("#FED358")
+                setSelectedColor("#24ee89")
         }
     }
 
@@ -1459,7 +1459,7 @@ const FiveDPage = ({ timerKey }) => {
                                 <div
                                     style={{
                                         textAlign: "center",
-                                        color: activeId === image.id ? "black" : "#B79C8B",
+                                        color: activeId === image.id ? "black" : "#B3BEC1",
                                         display: "flex",
                                         flexDirection: "column",
                                         alignItems: "center",
@@ -1514,7 +1514,7 @@ const FiveDPage = ({ timerKey }) => {
                                 alignItems: "center",
                                 justifyContent: "center",
                                 mr: { xs: 1, sm: 1 },
-                                color: "#B79C8B"
+                                color: "#B3BEC1"
                             }}
                         >
                             <Typography
@@ -1579,7 +1579,7 @@ const FiveDPage = ({ timerKey }) => {
                                         </SumCircle>
                                         <Typography
                                             variant="caption"
-                                            sx={{ mt: 0.25, fontSize: { xs: "14px", sm: "14px" }, color: "#B79C8B" }}
+                                            sx={{ mt: 0.25, fontSize: { xs: "14px", sm: "14px" }, color: "#B3BEC1" }}
                                         >
                                             {result.letter}
                                         </Typography>
@@ -1602,7 +1602,7 @@ const FiveDPage = ({ timerKey }) => {
                             <Typography variant="body2" sx={{ fontWeight: "bold", mr: 1 }}>
                                 =
                             </Typography>
-                            <SumCircle sx={{ background: "#FED358" }}>
+                            <SumCircle sx={{ background: "#24ee89" }}>
                                 <Typography
                                     variant="body2"
                                     sx={{
@@ -1631,7 +1631,7 @@ const FiveDPage = ({ timerKey }) => {
                             <Grid item xs={2} sx={{textAlign: "left" }}>
                                 <Typography
                                     variant="body1"
-                                    color="#B79C8B"
+                                    color="#B3BEC1"
                                     sx={{ fontSize: "0.8rem" }}
                                 >
                                     Period
@@ -1641,14 +1641,14 @@ const FiveDPage = ({ timerKey }) => {
                                 <Button
                                     variant="outlined"
                                     sx={{
-                                        border: "1px solid #FED358",
+                                        border: "1px solid #24ee89",
                                         borderRadius: "15px",
                                         padding: "1.5px 17px",
                                         fontSize: "0.6rem",
                                         textTransform: "initial",
                                         display: "inline-flex", // Use inline-flex to align items in a line
                                         alignItems: "center", // Center items vertically
-                                        color: "#FED358",
+                                        color: "#24ee89",
                                         gap: "3px",
                                     }}
                                     // startIcon={<NoteIcon />}
@@ -1660,7 +1660,7 @@ const FiveDPage = ({ timerKey }) => {
                                 <FiveDHtp isOpen={isPopupOpen} onClose={handleClosePopup} />
                             </Grid>
                             <Grid item xs={5} sx={{ paddingLeft: "10px", textAlign: "right" }}>
-                                <Typography variant="body5" color="#B79C8B" sx={{ fontSize: "12.8px" }}>
+                                <Typography variant="body5" color="#B3BEC1" sx={{ fontSize: "12.8px" }}>
                                     Time Remaining
                                 </Typography>
                             </Grid>
@@ -1731,7 +1731,7 @@ const FiveDPage = ({ timerKey }) => {
                                     alignItems: "center",
                                     justifyContent: "center",
                                     overflow: "hidden",
-                                    color: "#FED358",
+                                    color: "#24ee89",
                                     fontWeight: "bold",
                                     textAlign: "center",
                                     position: "absolute",
@@ -1799,7 +1799,7 @@ const FiveDPage = ({ timerKey }) => {
                                                 backgroundColor:
                                                     selectedElement === label ? selectedColor : "#3a4142",
                                                 color:
-                                                    selectedElement === label ? "#ffffff" : "#B79C8B",
+                                                    selectedElement === label ? "#ffffff" : "#B3BEC1",
                                                 borderRadius: "5px",
                                                 textAlign: "center",
                                                 cursor: "pointer",
@@ -1856,7 +1856,7 @@ const FiveDPage = ({ timerKey }) => {
                                                 backgroundColor: "transparent",
                                                 cursor: "pointer",
                                                 "&:active": {
-                                                    backgroundColor: "#FED358",
+                                                    backgroundColor: "#24ee89",
                                                 },
                                                 opacity: isSum ? 0 : 1,
                                                 pointerEvents: isSum ? "none" : "auto",
@@ -1884,7 +1884,7 @@ const FiveDPage = ({ timerKey }) => {
                                             variant="body2"
                                             sx={{
                                                 marginTop: "2px",
-                                                color: "#B79C8B",
+                                                color: "#B3BEC1",
                                                 fontSize: "0.75rem",
                                                 textAlign: "center",
                                                 opacity: isSum ? 0 : 1,
@@ -2088,7 +2088,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     selectedCategory === label
                                                         ? selectedColor
                                                         : "#3a4142",
-                                                color: "#B79C8B",
+                                                color: "#B3BEC1",
                                                 borderRadius: "5px",
                                                 textAlign: "center",
                                                 cursor: "pointer",
@@ -2193,7 +2193,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     style={{
                                                         ...(activeBetAmount === amount
                                                             ? { backgroundColor: selectedColor, color: "#201d2b" }
-                                                            : { backgroundColor: "#3a4142", color: "#B79C8B" }),
+                                                            : { backgroundColor: "#3a4142", color: "#B3BEC1" }),
                                                         boxShadow: "none", // Add this to remove shadow
                                                         minWidth: "30px",
                                                         padding: "2px 6px",
@@ -2266,7 +2266,7 @@ const FiveDPage = ({ timerKey }) => {
                                                         },
                                                     }}
                                                     InputLabelProps={{
-                                                        style: { color: "#B79C8B", fontSize: isSmallScreen2 ? "8px" : "12px", },
+                                                        style: { color: "#B3BEC1", fontSize: isSmallScreen2 ? "8px" : "12px", },
                                                     }}
                                                 />
                                             </Grid>
@@ -2369,7 +2369,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     margin: "5px",
                                                     ...(activeButton === value
                                                         ? { backgroundColor: selectedColor, color: "#201d2b" }
-                                                        : { backgroundColor: "#3a4142", color: "#B79C8B" }),
+                                                        : { backgroundColor: "#3a4142", color: "#B3BEC1" }),
                                                 }}
                                             >
                                                 X{value}
@@ -2391,13 +2391,13 @@ const FiveDPage = ({ timerKey }) => {
                       checkedIcon={
                         <CheckCircleIcon
                           sx={{
-                            color: "#FED358 ", // Checked color
+                            color: "#24ee89 ", // Checked color
                             fontSize: 22, // Slightly bigger for effect
                           }}
                         />
                       }
                     />
-                                        <span style={{ marginLeft: 8, fontSize: "13px", color: "#B79C8B" }}>
+                                        <span style={{ marginLeft: 8, fontSize: "13px", color: "#B3BEC1" }}>
                                             I agree
                                         </span>
                                         <span
@@ -2420,7 +2420,7 @@ const FiveDPage = ({ timerKey }) => {
                                         <Button
                                             onClick={handleCancelBet}
                                             fullWidth
-                                            style={{ backgroundColor: "#3a4142", color: "#B79C8B", textTransform: "none", borderRadius: "0px" }}
+                                            style={{ backgroundColor: "#3a4142", color: "#B3BEC1", textTransform: "none", borderRadius: "0px" }}
                                             variant="contained"
                                         >
                                             Cancel
@@ -2539,7 +2539,7 @@ const FiveDPage = ({ timerKey }) => {
                                                 height: "40px", // Adjust this value to change the tab height
                                                 background:
                                                     activeTab === index ? "linear-gradient(90deg,#24ee89,#9fe871)" : "#323738",
-                                                color: activeTab === index ? "#221f2e" : "#B79C8B",
+                                                color: activeTab === index ? "#221f2e" : "#B3BEC1",
                                                 borderRadius: 2,
                                                 display: "flex",
                                                 alignItems: "center",
@@ -2589,17 +2589,17 @@ const FiveDPage = ({ timerKey }) => {
                                                 disabled={historyPage === 1}
                                                 sx={{
                                                     marginRight: "10px",
-                                                    backgroundColor: "#FED358",
+                                                    backgroundColor: "#24ee89",
                                                     "&.Mui-disabled": {
                                                         backgroundColor: "#3a4142",
-                                                        color: "#B79C8B",
+                                                        color: "#B3BEC1",
                                                     },
                                                     "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
                                                 }}
                                             >
-                                                <ArrowBackIosRoundedIcon style={{ color: historyPage === 1 ? "#B79C8B" : "#323738" }} />
+                                                <ArrowBackIosRoundedIcon style={{ color: historyPage === 1 ? "#B3BEC1" : "#323738" }} />
                                             </Button>
-                                            <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B" ,fontSize:"14px"}}>
+                                            <Grid sx={{ display: "flex", alignItems: "center", color: "#B3BEC1" ,fontSize:"14px"}}>
                                                 {historyPage}/{gameTotalPage}
                                             </Grid>
                                             <Button
@@ -2608,15 +2608,15 @@ const FiveDPage = ({ timerKey }) => {
                                                 disabled={historyPage === gameTotalPage}
                                                 sx={{
                                                     marginLeft: "10px",
-                                                    backgroundColor: "#FED358",
+                                                    backgroundColor: "#24ee89",
                                                     "&.Mui-disabled": {
                                                         backgroundColor: "#3a4142",
-                                                        color: "#B79C8B",
+                                                        color: "#B3BEC1",
                                                     },
                                                     "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
                                                 }}
                                             >
-                                                <ArrowForwardIosRoundedIcon style={{ color: historyPage === gameTotalPage ? "#B79C8B" : "#323738" }} />
+                                                <ArrowForwardIosRoundedIcon style={{ color: historyPage === gameTotalPage ? "#B3BEC1" : "#323738" }} />
                                             </Button>
                                         </Box>
                                     </TabPanel>

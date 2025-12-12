@@ -150,7 +150,7 @@ const LuckyTenDaysInterest = () => {
                         bottom: 0,
                         width: '100%',
                         height: `${progressPercentage}%`,
-                        background: 'linear-gradient(90deg, #FF6B00, #DD9138)',
+                        background: 'linear-gradient(90deg, #FF6B00, #24ee89)',
                         transition: 'height 0.5s ease-in-out'
                     }} />
                     {/* Day 6 Label on the right side */}
@@ -162,7 +162,7 @@ const LuckyTenDaysInterest = () => {
                         left: '60%',  // Puts the text on the right side of the progress bar
                         bottom: '19%',       // Adjusts vertical position (between Day 1 and Day 11)
                         transform: 'translateY(-50%)',
-                        color: '#B79C8B',
+                        color: '#B3BEC1',
                         fontSize: '12px',
                         zIndex: 4
                     }}
@@ -175,7 +175,7 @@ const LuckyTenDaysInterest = () => {
                         right: '60%',  // Puts the text on the right side of the progress bar
                         bottom: '28%',       // Adjusts vertical position (between Day 1 and Day 11)
                         transform: 'translateY(-50%)',
-                        color: '#B79C8B',
+                        color: '#B3BEC1',
                         fontSize: '12px',
                         zIndex: 4
                     }}
@@ -188,7 +188,7 @@ const LuckyTenDaysInterest = () => {
                         left: '69%',  // Puts the text on the right side of the progress bar
                         bottom: '38%',       // Adjusts vertical position (between Day 1 and Day 11)
                         transform: 'translateY(-50%)',
-                        color: '#B79C8B',
+                        color: '#B3BEC1',
                         fontSize: '12px',
                         zIndex: 4
                     }}
@@ -201,7 +201,7 @@ const LuckyTenDaysInterest = () => {
                         right: '60%',  // Puts the text on the right side of the progress bar
                         top: '44%',       // Adjusts vertical position (between Day 1 and Day 11)
                         transform: 'translateY(-50%)',
-                        color: '#B79C8B',
+                        color: '#B3BEC1',
                         fontSize: '12px',
                         zIndex: 4
                     }}
@@ -214,7 +214,7 @@ const LuckyTenDaysInterest = () => {
                         left: '60%',  // Puts the text on the right side of the progress bar
                         top: '35%',       // Adjusts vertical position (between Day 1 and Day 11)
                         transform: 'translateY(-50%)',
-                        color: '#B79C8B',
+                        color: '#B3BEC1',
                         fontSize: '12px',
                         zIndex: 4
                     }}
@@ -233,7 +233,7 @@ const LuckyTenDaysInterest = () => {
                     // Render label based on position
                     const renderLabel = () => {
                         const labelStyle = {
-                            color: '#B79C8B',
+                            color: '#B3BEC1',
                             position: 'absolute',
                             zIndex: 4,
                             fontSize: '12px',
@@ -389,7 +389,7 @@ const LuckyTenDaysInterest = () => {
 
                                 <Typography
                                     sx={{
-                                        color: isChecked ? "#FED358" : "grey",
+                                        color: isChecked ? "#24ee89" : "grey",
                                         fontSize: 12,
                                         display: "flex",
                                         alignItems: "center",
@@ -400,7 +400,7 @@ const LuckyTenDaysInterest = () => {
                                     {isChecked ? (
                                         <CheckCircleIcon
                                             sx={{
-                                                color: "#FED358",
+                                                color: "#24ee89",
                                                 fontSize: 16,
                                                 ml: 0.5
                                             }}
@@ -427,7 +427,7 @@ const LuckyTenDaysInterest = () => {
                         <Typography
                             sx={{
                                 fontSize: 12,
-                                color: '#B79C8B',
+                                color: '#B3BEC1',
                                 textAlign: 'center',
                                 position:"absolute",
                                 top:"50%",

@@ -39,7 +39,7 @@ const StyledTabs = styled(Tabs)(({ theme }) => ({
 }));
 
 const StyledTab = styled(Tab)(({ theme }) => ({
-  color: "#B79C8B",
+  color: "#B3BEC1",
   minHeight: "55px",
   padding: "5px 30px",
   fontSize: "13px",
@@ -359,7 +359,7 @@ const BettingRebate = () => {
                 <Box
                   component="span"
                   sx={{
-                    border: "1px solid #FED358",
+                    border: "1px solid #24ee89",
                     borderRadius: "5px",
                     px: 1,
                     py: 0.3,
@@ -369,11 +369,11 @@ const BettingRebate = () => {
                   }}
                 >
                   <VerifiedUserIcon
-                    sx={{ color: "#FED358", mr: 0.5, fontSize: "18px" }}
+                    sx={{ color: "#24ee89", mr: 0.5, fontSize: "18px" }}
                   />
                   <Typography
                     variant="caption"
-                    sx={{ color: "#FED358", fontSize: "12px" }}
+                    sx={{ color: "#24ee89", fontSize: "12px" }}
                   >
                     Real-time count
                   </Typography>
@@ -409,7 +409,7 @@ const BettingRebate = () => {
               >
                 <Typography
                   variant="body2"
-                  sx={{ color: "#B79C8B", fontSize: "12px" }}
+                  sx={{ color: "#B3BEC1", fontSize: "12px" }}
                 >
                   Upgrade VIP level to increase rebate rate
                 </Typography>
@@ -426,7 +426,7 @@ const BettingRebate = () => {
                   >
                     <Typography
                       variant="body2"
-                      color="#B79C8B"
+                      color="#B3BEC1"
                       sx={{ fontSize: "12px" }}
                     >
                       Rebate rate
@@ -435,7 +435,7 @@ const BettingRebate = () => {
                       variant="h5"
                       sx={{
                         fontWeight: "bold",
-                        color: "#DD9138",
+                        color: "#24ee89",
                         fontSize: "17px",
                       }}
                     >
@@ -454,7 +454,7 @@ const BettingRebate = () => {
                   >
                     <Typography
                       variant="body2"
-                      color="#B79C8B"
+                      color="#B3BEC1"
                       sx={{ fontSize: "12px" }}
                     >
                       Total rebate
@@ -463,7 +463,7 @@ const BettingRebate = () => {
                       variant="h5"
                       sx={{
                         fontWeight: "bold",
-                        color: "#DD9138",
+                        color: "#24ee89",
                         fontSize: "17px",
                       }}
                     >
@@ -474,7 +474,7 @@ const BettingRebate = () => {
               </Grid>
               <Typography
                 variant="body2"
-                color="#B79C8B"
+                color="#B3BEC1"
                 sx={{
                   mb: 1.5,
                   // fontStyle: "italic",
@@ -491,7 +491,7 @@ const BettingRebate = () => {
                 onClick={handleClaimRebate}
                   disabled={isDisable}
                 sx={{
-                  background: "linear-gradient(180deg, #FED358, #FFB472)",
+                  background: "linear-gradient(180deg, #24ee89, #9fe871)",
                   color: "black",
                   borderRadius: "25px",
                   textTransform: "none",
@@ -556,7 +556,7 @@ const BettingRebate = () => {
             <Box
               component="span"
               sx={{
-                bgcolor: "#FED358",
+                bgcolor: "#24ee89",
                 mr: 0.8,
                 // borderRadius: "2px",
                 width: "2px",
@@ -570,8 +570,8 @@ const BettingRebate = () => {
           <Button
             variant="outlined"
             sx={{
-              color: "#FED358",
-              borderColor: "#FED358",
+              color: "#24ee89",
+              borderColor: "#24ee89",
               width: "100%",
               // maxWidth: "280px",
               borderRadius: "50px",
@@ -607,10 +607,10 @@ const BettingRebate = () => {
                       {record.gameName}
                     </Typography>
                     <Grid container justifyContent="space-between" alignItems="center">
-                      <Typography variant="body2" color="#B79C8B">
+                      <Typography variant="body2" color="#B3BEC1">
                         {new Date(record.claimedAt).toLocaleString()}
                       </Typography>
-                      <Typography sx={{ fontWeight: "bold", color: "#FED358" }}>
+                      <Typography sx={{ fontWeight: "bold", color: "#24ee89" }}>
                         Completed
                       </Typography>
                     </Grid>
@@ -629,7 +629,7 @@ const BettingRebate = () => {
                         </Box>
                         <Box mt={0.8}>
                           {["Betting rebate", "Rebate rate", "Rebate amount"].map((label, index) => (
-                            <Typography key={index} variant="body2" color="#B79C8B" lineHeight={2.5} textAlign="start" >
+                            <Typography key={index} variant="body2" color="#B3BEC1" lineHeight={2.5} textAlign="start" >
                               {label}
                             </Typography>
                           ))}
@@ -641,7 +641,7 @@ const BettingRebate = () => {
                         {[
                           {
                             value: record.bettingRebate,
-                            color: "#B79C8B",
+                            color: "#B3BEC1",
                           },
                           {
                             value: `${parseFloat(record.rebateRate).toFixed(2)}%`,

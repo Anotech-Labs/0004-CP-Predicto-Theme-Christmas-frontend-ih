@@ -59,14 +59,14 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    color: #B79C8B;
+    color: #B3BEC1;
   }
   
   .settingpage-name h4,
   .settingpage-uid h4 {
     font-weight: 400;
     /* margin-left: 10px; */
-    color: #B79C8B;
+    color: #B3BEC1;
   }
   
   .settingpage-name {
@@ -135,7 +135,7 @@
 .bottom-goto{
     display: flex;
     align-items: center;
-    color: #B79C8B;
+    color: #B3BEC1;
 }
 
 .leftflex{

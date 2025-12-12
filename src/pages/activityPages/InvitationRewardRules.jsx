@@ -104,12 +104,12 @@ const InvitationRewardRules = () => {
                             }}
                         >
                             <RhombusIcon
-                                sx={{ color: "#FED358", mr: 1, mt: "4px", fontSize: 10 }}
+                                sx={{ color: "#24ee89", mr: 1, mt: "4px", fontSize: 10 }}
                             />
                             <Typography
                                 variant="body2"
                                 paragraph
-                                sx={{ textAlign: "left", fontSize: "0.8rem",color:"#B79C8B" }}
+                                sx={{ textAlign: "left", fontSize: "0.8rem",color:"#B3BEC1" }}
                             >
                                 {rule}
                             </Typography>
@@ -158,7 +158,7 @@ const InvitationRewardRules = () => {
                 <Box sx={{ mt: 1.5 }}>
                     <Box sx={{
                         m: "8px 16px",
-                        color: "#B79C8B",
+                        color: "#B3BEC1",
                         fontSize: "13.8668px",
                         fontWeight: "400",
                         textAlign: "left"
@@ -187,13 +187,13 @@ const InvitationRewardRules = () => {
                             <Table>
                                 <TableHead sx={{ background: "#cf7c10" }}>
                                     <TableRow>
-                                        <TableCell sx={{ color: '#FFFFFF', fontWeight: '400', fontSize: "15px", padding: '10px 8px',borderBottom:"1px solid #666462"}}>
+                                        <TableCell sx={{ color: '#FFFFFF', fontWeight: '400', fontSize: "15px", padding: '10px 8px',borderBottom:"1px solid #626663"}}>
                                             Invite Account
                                         </TableCell>
-                                        <TableCell sx={{ color: '#FFFFFF', fontWeight: '400', fontSize: "15px", padding: '10px 8px',borderBottom:"1px solid #666462" }}>
+                                        <TableCell sx={{ color: '#FFFFFF', fontWeight: '400', fontSize: "15px", padding: '10px 8px',borderBottom:"1px solid #626663" }}>
                                             Deposit Amount
                                         </TableCell>
-                                        <TableCell sx={{ color: '#FFFFFF', fontWeight: '400', fontSize: "15px", padding: '10px 8px',borderBottom:"1px solid #666462" }}>
+                                        <TableCell sx={{ color: '#FFFFFF', fontWeight: '400', fontSize: "15px", padding: '10px 8px',borderBottom:"1px solid #626663" }}>
                                             Bonus
                                         </TableCell>
                                     </TableRow>
@@ -204,9 +204,9 @@ const InvitationRewardRules = () => {
                                             key={data.id}
                                             sx={{ '&:nth-of-type(odd)': { bgcolor: '#323738' } ,'&:nth-of-type(even)': { bgcolor: '#1a1000' } }}
                                         >
-                                            <TableCell sx={{color: '#B79C8B',borderBottom:"none" }}>{data.requiredReferrals} People</TableCell>
-                                            <TableCell sx={{color: '#B79C8B',borderBottom:"none" }}>₹{Number(data.minDepositAmount).toFixed(2)}</TableCell>
-                                            <TableCell sx={{color: '#B79C8B',borderBottom:"none" }}>₹{Number(data.bonusAmount).toLocaleString()}</TableCell>
+                                            <TableCell sx={{color: '#B3BEC1',borderBottom:"none" }}>{data.requiredReferrals} People</TableCell>
+                                            <TableCell sx={{color: '#B3BEC1',borderBottom:"none" }}>₹{Number(data.minDepositAmount).toFixed(2)}</TableCell>
+                                            <TableCell sx={{color: '#B3BEC1',borderBottom:"none" }}>₹{Number(data.bonusAmount).toLocaleString()}</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>

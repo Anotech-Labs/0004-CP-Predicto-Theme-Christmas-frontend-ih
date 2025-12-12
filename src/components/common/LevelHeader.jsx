@@ -22,7 +22,7 @@ const LevelHeader = ({ onCancel, onConfirm }) => (
   onClick={onConfirm}
   variant="contained"
   sx={{
-    color: "#FED358",
+    color: "#24ee89",
     backgroundColor: "transparent",
     textTransform: "none",
     boxShadow:"none",

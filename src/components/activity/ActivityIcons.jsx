@@ -71,7 +71,7 @@ const ActivityIcons = () => {
                 />
                 <Typography
                   sx={{
-                    color: "#B79C8B",
+                    color: "#B3BEC1",
                     textTransform: "initial",
                     fontSize: "11px",
                   }}

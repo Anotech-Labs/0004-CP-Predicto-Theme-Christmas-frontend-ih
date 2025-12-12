@@ -290,11 +290,11 @@ const InvitationRule = ({ children }) => {
               variant="h7"
               sx={{
                 marginTop: 2,
-                color: "#B79C8B",
+                color: "#B3BEC1",
                 
                 textAlign: "center",
                 "& p": {
-                  color: "#FED358",
+                  color: "#24ee89",
                   margin: 0,
                   fontSize:"19.2px",
                   fontWeight:"bold"
@@ -348,7 +348,7 @@ const InvitationRule = ({ children }) => {
                     variant="body2"
                     
                     color="textPrimary"
-                    sx={{ color: "#B79C8B", textAlign: "left",fontSize:"13px" }}
+                    sx={{ color: "#B3BEC1", textAlign: "left",fontSize:"13px" }}
                   >
                     {rule}
                   </Typography>
@@ -475,7 +475,7 @@ const InvitationRule = ({ children }) => {
                       <TableCell 
                         align="center" 
                         sx={{
-                          color: "#B79C8B",
+                          color: "#B3BEC1",
                           padding: "8px 16px",
                           fontWeight:"bold"
                         }}
@@ -485,7 +485,7 @@ const InvitationRule = ({ children }) => {
                       <TableCell 
                         align="center" 
                         sx={{
-                          color: "#B79C8B",
+                          color: "#B3BEC1",
                           padding: "8px 16px",
                            fontWeight:"bold"
                         }}
@@ -495,7 +495,7 @@ const InvitationRule = ({ children }) => {
                       <TableCell 
                         align="center" 
                         sx={{
-                          color: "#B79C8B",
+                          color: "#B3BEC1",
                           padding: "8px 16px",
                            fontWeight:"bold"
                         }}
@@ -549,7 +549,7 @@ const InvitationRule = ({ children }) => {
                   <Typography
                     variant="body2"
                     color="textPrimary"
-                    sx={{ color: "#B79C8B", textAlign: "left",fontSize:"13px" }}
+                    sx={{ color: "#B3BEC1", textAlign: "left",fontSize:"13px" }}
                   >
                     {rule}
                   </Typography>

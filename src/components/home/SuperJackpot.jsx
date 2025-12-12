@@ -296,7 +296,7 @@ const Characteristic = () => {
                       <Typography
                         sx={{
                           fontSize: "12px",
-                          color: "#FED358",
+                          color: "#24ee89",
                         }}
                       >
                         ₹50.00

@@ -190,7 +190,7 @@ const Activity = () => {
                       variant="h1"
                       color="text.secondary"
                       sx={{
-                        color: "#B79C8B",
+                        color: "#B3BEC1",
                         fontSize: "12px",
                         padding: "0px 10px",
                       }}
@@ -251,7 +251,7 @@ const Activity = () => {
                       variant="h1"
                       color="text.secondary"
                       sx={{
-                        color: "#B79C8B;",
+                        color: "#B3BEC1;",
                         fontSize: "12px",
                         padding: "0px 10px",
                       }}

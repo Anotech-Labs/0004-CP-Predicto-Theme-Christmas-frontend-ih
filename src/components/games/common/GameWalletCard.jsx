@@ -97,7 +97,7 @@ const GameWalletCard = () => {
             }}
           >
             {/* <AccountBalanceWallet
-              sx={{ marginRight: "10px", color: "#FED358" }}
+              sx={{ marginRight: "10px", color: "#24ee89" }}
             /> */}
             <Box
               component="img"

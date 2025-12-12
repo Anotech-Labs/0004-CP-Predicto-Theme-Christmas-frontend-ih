@@ -81,7 +81,7 @@ const ImageSubtitleGrid = ({ imageSrc, subtitle1, subtitle2, onClick }) => {
         </Typography>
         <Typography
           sx={{
-            color: "#B79C8B",
+            color: "#B3BEC1",
             fontSize: isSmallScreen ? "12px" : "13px",
             lineHeight: 1.2,
             textAlign: "left",
@@ -104,11 +104,11 @@ const images = [
       <path
         opacity="0.4"
         d="M5 32.2035V27.8035C5 25.2035 7.125 23.0535 9.75 23.0535C14.275 23.0535 16.125 19.8535 13.85 15.9285C12.55 13.6785 13.325 10.7535 15.6 9.4535L19.925 6.9785C21.9 5.8035 24.45 6.5035 25.625 8.4785L25.9 8.9535C28.15 12.8785 31.85 12.8785 34.125 8.9535L34.4 8.4785C35.575 6.5035 38.125 5.8035 40.1 6.9785L44.425 9.4535C46.7 10.7535 47.475 13.6785 46.175 15.9285C43.9 19.8535 45.75 23.0535 50.275 23.0535C52.875 23.0535 55.025 25.1785 55.025 27.8035V32.2035C55.025 34.8035 52.9 36.9535 50.275 36.9535C45.75 36.9535 43.9 40.1535 46.175 44.0785C47.475 46.3535 46.7 49.2535 44.425 50.5535L40.1 53.0285C38.125 54.2035 35.575 53.5035 34.4 51.5285L34.125 51.0535C31.875 47.1285 28.175 47.1285 25.9 51.0535L25.625 51.5285C24.45 53.5035 21.9 54.2035 19.925 53.0285L15.6 50.5535C14.5102 49.926 13.714 48.8919 13.3859 47.6779C13.0578 46.464 13.2247 45.1695 13.85 44.0785C16.125 40.1535 14.275 36.9535 9.75 36.9535C7.125 36.9535 5 34.8035 5 32.2035Z"
-        fill="#9FE871" // Use "#fed358" if you want it to adapt to surrounding text color
+        fill="#9FE871" // Use "#24ee89" if you want it to adapt to surrounding text color
       />
       <path
         d="M30 38.125C32.1549 38.125 34.2215 37.269 35.7452 35.7452C37.269 34.2215 38.125 32.1549 38.125 30C38.125 27.8451 37.269 25.7785 35.7452 24.2548C34.2215 22.731 32.1549 21.875 30 21.875C27.8451 21.875 25.7785 22.731 24.2548 24.2548C22.731 25.7785 21.875 27.8451 21.875 30C21.875 32.1549 22.731 34.2215 24.2548 35.7452C25.7785 37.269 27.8451 38.125 30 38.125Z"
-        fill="#24EE89" // Use "#fed358" here too if dynamic color is preferred
+        fill="#24EE89" // Use "#24ee89" here too if dynamic color is preferred
       />
     </svg>),
     caption: "Settings"
@@ -122,10 +122,10 @@ const images = [
   },
   // {
   //   url: (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
-  //     <path d="M21 34H12V50.5C12 52.9853 14.0146 55 16.5 55C18.9854 55 21 52.9853 21 50.5V34Z" fill="#fed358" />
-  //     <path opacity="0.6" d="M23.75 15H11.25C9.17887 15 7.5 16.6789 7.5 18.75V31.25C7.5 33.3211 9.17887 35 11.25 35H25" fill="#fed358" />
-  //     <path opacity="0.6" d="M42.5 17.5H45C49.1421 17.5 52.5 20.8579 52.5 25C52.5 29.1421 49.1421 32.5 45 32.5H42.5" fill="#fed358" />
-  //     <path d="M42.2432 42.5C42.3851 42.5 42.5 42.3849 42.5 42.2428V7.75724C42.5 7.61518 42.3851 7.5 42.2432 7.5H37.9706C28.3219 7.5 20.5 15.3351 20.5 25C20.5 34.6649 28.3219 42.5 37.9706 42.5H42.2432Z" fill="#fed358" />
+  //     <path d="M21 34H12V50.5C12 52.9853 14.0146 55 16.5 55C18.9854 55 21 52.9853 21 50.5V34Z" fill="#24ee89" />
+  //     <path opacity="0.6" d="M23.75 15H11.25C9.17887 15 7.5 16.6789 7.5 18.75V31.25C7.5 33.3211 9.17887 35 11.25 35H25" fill="#24ee89" />
+  //     <path opacity="0.6" d="M42.5 17.5H45C49.1421 17.5 52.5 20.8579 52.5 25C52.5 29.1421 49.1421 32.5 45 32.5H42.5" fill="#24ee89" />
+  //     <path d="M42.2432 42.5C42.3851 42.5 42.5 42.3849 42.5 42.2428V7.75724C42.5 7.61518 42.3851 7.5 42.2432 7.5H37.9706C28.3219 7.5 20.5 15.3351 20.5 25C20.5 34.6649 28.3219 42.5 37.9706 42.5H42.2432Z" fill="#24ee89" />
   //   </svg>
   //   ), caption: "Notification"
   // },
@@ -295,11 +295,11 @@ const options = [
     //     <path
     //       opacity="0.4"
     //       d="M43 51.25H18C10.5 51.25 5.5 47.5 5.5 38.75V21.25C5.5 12.5 10.5 8.75 18 8.75H43C50.5 8.75 55.5 12.5 55.5 21.25V38.75C55.5 47.5 50.5 51.25 43 51.25Z"
-    //       fill="#fed358"
+    //       fill="#24ee89"
     //     />
     //     <path
     //       d="M30.4987 32.1818C28.3987 32.1818 26.2737 31.5318 24.6487 30.2068L16.8237 23.9568C16.4598 23.6408 16.2319 23.1966 16.1876 22.7167C16.1433 22.2369 16.286 21.7584 16.5858 21.3812C16.8857 21.0039 17.3196 20.757 17.7971 20.6919C18.2746 20.6268 18.7588 20.7486 19.1487 21.0318L26.9737 27.2818C28.8737 28.8068 32.0987 28.8068 33.9987 27.2818L41.8237 21.0318C42.6237 20.3818 43.8237 20.5068 44.4487 21.3318C45.0987 22.1318 44.9737 23.3318 44.1487 23.9568L36.3237 30.2068C34.7237 31.5318 32.5987 32.1818 30.4987 32.1818Z"
-    //       fill="#fed358"
+    //       fill="#24ee89"
     //     />
     //   </svg>),
     //   subLabel: null,
@@ -349,11 +349,11 @@ const options = [
     //     <path
     //       opacity="0.4"
     //       d="M53 56.875H8C6.975 56.875 6.125 56.025 6.125 55C6.125 53.975 6.975 53.125 8 53.125H53C54.025 53.125 54.875 53.975 54.875 55C54.875 56.025 54.025 56.875 53 56.875Z"
-    //       fill="#fed358"
+    //       fill="#24ee89"
     //     />
     //     <path
     //       d="M14.5 20.9475H10.5C9.125 20.9475 8 22.0725 8 23.4475V44.9975C8 46.3725 9.125 47.4975 10.5 47.4975H14.5C15.875 47.4975 17 46.3725 17 44.9975V23.4475C17 22.0475 15.875 20.9475 14.5 20.9475ZM32.5 12.9775H28.5C27.125 12.9775 26 14.1025 26 15.4775V45.0025C26 46.3775 27.125 47.5025 28.5 47.5025H32.5C33.875 47.5025 35 46.3775 35 45.0025V15.4775C35 14.1025 33.875 12.9775 32.5 12.9775ZM50.5 5H46.5C45.125 5 44 6.125 44 7.5V45C44 46.375 45.125 47.5 46.5 47.5H50.5C51.875 47.5 53 46.375 53 45V7.5C53 6.125 51.875 5 50.5 5Z"
-    //       fill="#fed358"
+    //       fill="#24ee89"
     //     />
     //   </svg>),
     //   subLabel: null,
@@ -680,7 +680,7 @@ const options = [
                     variant="h6"
                     align="left"
                     sx={{
-                      color: "#B79C8B",
+                      color: "#B3BEC1",
                       fontSize: isSmallScreen ? "13px" : "15px",
                     }}
                   >
@@ -1076,7 +1076,7 @@ const options = [
                   >
                     <Box
                       sx={{
-                        bgcolor: "#FED358",
+                        bgcolor: "#24ee89",
                         borderRadius: "50%",
                         p: "16px 18px",
                         mb: 2,
@@ -1088,7 +1088,7 @@ const options = [
                       variant="h5"
                       sx={{
                         fontWeight: 600,
-                        color: "#FED358",
+                        color: "#24ee89",
                       }}
                     >
                       Admin area
@@ -1128,9 +1128,9 @@ const options = [
                             edge="end"
                           >
                             {showPassword ? (
-                              <Visibility sx={{ color: "#FED358" }} />
+                              <Visibility sx={{ color: "#24ee89" }} />
                             ) : (
-                              <VisibilityOff sx={{ color: "#FED358" }} />
+                              <VisibilityOff sx={{ color: "#24ee89" }} />
                             )}
                           </IconButton>
                         ),
@@ -1146,17 +1146,17 @@ const options = [
                             borderColor: "#ccc", // Border color on hover
                           },
                           "&.Mui-focused fieldset": {
-                            borderColor: "#FED358", // Border color when focused
+                            borderColor: "#24ee89", // Border color when focused
                           },
                         },
                         "& .MuiInputLabel-root": {
                           color: "#999", // Default placeholder color
                         },
                         "& .MuiInputLabel-root.Mui-focused": {
-                          color: "#FED358", // Placeholder color when focused
+                          color: "#24ee89", // Placeholder color when focused
                         },
                         "& .MuiOutlinedInput-input": {
-                          color: "#FED358", // Input text color (grey)
+                          color: "#24ee89", // Input text color (grey)
                         },
                       }}
                     />
@@ -1175,11 +1175,11 @@ const options = [
                       onClick={() => setOpenPasswordDialog(false)}
                       sx={{
                         borderRadius: "10px",
-                        color: "#FED358",
-                        border: "1px solid #FED358",
+                        color: "#24ee89",
+                        border: "1px solid #24ee89",
                         textTransform: "none",
                         "&:hover": {
-                          border: "1px solid #FED358",
+                          border: "1px solid #24ee89",
                           bgcolor: "rgba(15, 101, 24, 0.04)",
                         },
                       }}
@@ -1192,11 +1192,11 @@ const options = [
                       onClick={() => handlePasswordSubmit()}
                       sx={{
                         borderRadius: "10px",
-                        bgcolor: "#FED358",
+                        bgcolor: "#24ee89",
                         color: "#000000",
                         textTransform: "none",
                         "&:hover": {
-                          bgcolor: "#FED358",
+                          bgcolor: "#24ee89",
                           opacity: 0.9,
                         },
                       }}
@@ -1283,7 +1283,7 @@ const options = [
                       <Typography
                         variant="caption"
                         align="center"
-                        sx={{ marginTop: index === 0?"5px":index === 5?"9px":index === 4?"9px": "2px", color: "#B79C8B" }}
+                        sx={{ marginTop: index === 0?"5px":index === 5?"9px":index === 4?"9px": "2px", color: "#B3BEC1" }}
                       >
                         {image.caption}
                       </Typography>
@@ -1299,7 +1299,7 @@ const options = [
                 border: "1px solid #9FE871",
                 borderRadius: "50px",
                 marginTop: "8%",
-                marginBottom: "25%",
+                marginBottom: "30%",
               }}
             >
               <Grid
@@ -1369,7 +1369,7 @@ const options = [
                   variant="contained"
                   sx={{
                     background:
-                      "linear-gradient(180deg, #FED358, #FFB472)",
+                      "linear-gradient(180deg, #24ee89, #9fe871)",
                     width: "90%",
                     color: "black",
                     maxWidth: "280px",
@@ -1384,8 +1384,8 @@ const options = [
                 <Button
                   variant="outlined"
                   sx={{
-                    color: "#FED358",
-                    borderColor: "#FED358",
+                    color: "#24ee89",
+                    borderColor: "#24ee89",
                     width: "90%",
                     maxWidth: "280px",
                     borderRadius: "50px",

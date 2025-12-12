@@ -78,7 +78,7 @@ const DetailsBox = () => {
         }}
       >
         <IconButton>
-          <VolumeUpIcon sx={{ color: "#FED358", fontSize: "20px" }} />
+          <VolumeUpIcon sx={{ color: "#24ee89", fontSize: "20px" }} />
         </IconButton>
 
         <Box 

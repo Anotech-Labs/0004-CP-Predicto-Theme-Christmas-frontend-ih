@@ -358,7 +358,7 @@ const RefundProcess = () => {
           {/* Refund Data Display */}
           {isLoadingRefundData ? (
             <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
-              <CircularProgress sx={{ color: "#FED358 " }} />
+              <CircularProgress sx={{ color: "#24ee89 " }} />
             </Box>
           ) : refundData ? (
             <Box sx={{ mt: 2 }}>
@@ -373,7 +373,7 @@ const RefundProcess = () => {
                   p: 2,
                 }}
               >
-                <Typography variant="h6" sx={{ mb: 1, color: "#FED358 " }}>
+                <Typography variant="h6" sx={{ mb: 1, color: "#24ee89 " }}>
                   Refund Summary
                 </Typography>
                 <Grid container spacing={2}>
@@ -404,7 +404,7 @@ const RefundProcess = () => {
                       </Typography>
                       <Typography
                         variant="body1"
-                        sx={{ fontWeight: "bold", color: "#FED358 " }}
+                        sx={{ fontWeight: "bold", color: "#24ee89 " }}
                       >
                         ₹{refundData.refundAmount.toFixed(2)}
                       </Typography>
@@ -425,7 +425,7 @@ const RefundProcess = () => {
                     p: 2,
                   }}
                 >
-                  <Typography variant="h6" sx={{ mb: 1, color: "#FED358 " }}>
+                  <Typography variant="h6" sx={{ mb: 1, color: "#24ee89 " }}>
                     Game Types Summary
                   </Typography>
                   {refundData.gameTypeSummaries.map((summary, index) => (
@@ -445,7 +445,7 @@ const RefundProcess = () => {
                             size="small"
                             sx={{
                               bgcolor: summary.pendingRefunds > 0 ? "rgba(249, 89, 89, 0.1)" : "rgba(0, 0, 0, 0.1)",
-                              color: summary.pendingRefunds > 0 ? "#FED358 " : "#A8A5A1",
+                              color: summary.pendingRefunds > 0 ? "#24ee89 " : "#A8A5A1",
                               borderRadius: 1,
                             }}
                           />
@@ -483,7 +483,7 @@ const RefundProcess = () => {
                                                 size="small"
                                                 sx={{
                                                     bgcolor: "rgba(249, 89, 89, 0.1)",
-                                                    color: "#FED358 ",
+                                                    color: "#24ee89 ",
                                                     borderRadius: 1,
                                                 }}
                                             />
@@ -506,7 +506,7 @@ const RefundProcess = () => {
                   }}
                 >
                   <AccordionSummary
-                    expandIcon={<ExpandMoreIcon sx={{ color: "#FED358 " }} />}
+                    expandIcon={<ExpandMoreIcon sx={{ color: "#24ee89 " }} />}
                     sx={{
                       borderBottom: "1px solid rgba(249, 89, 89, 0.1)",
                       minHeight: "48px",
@@ -579,7 +579,7 @@ const RefundProcess = () => {
                   }}
                 >
                   <AccordionSummary
-                    expandIcon={<ExpandMoreIcon sx={{ color: "#FED358 " }} />}
+                    expandIcon={<ExpandMoreIcon sx={{ color: "#24ee89 " }} />}
                     sx={{
                       borderBottom: "1px solid rgba(249, 89, 89, 0.1)",
                       minHeight: "48px",
@@ -616,7 +616,7 @@ const RefundProcess = () => {
                                     size="small"
                                     sx={{
                                       bgcolor: "rgba(249, 89, 89, 0.1)",
-                                      color: "#FED358 ",
+                                      color: "#24ee89 ",
                                       height: "20px",
                                       fontSize: "10px",
                                     }}
@@ -716,7 +716,7 @@ const RefundProcess = () => {
  .loader {
  border: 4px solid rgba(255, 255, 255, 0.3);
  border-radius: 50%;
- border-top: 4px solid #FED358 ;
+ border-top: 4px solid #24ee89 ;
  width: 40px;
  height: 40px;
  margin: 0 auto;

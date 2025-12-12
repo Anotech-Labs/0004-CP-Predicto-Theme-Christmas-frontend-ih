@@ -174,7 +174,7 @@ const AddBank = () => {
 
             <Box mb={2}>
               <Box display="flex" alignItems="center" mb={1}>
-                <Box sx={{ mr: 2, color: "#FED358" }}>
+                <Box sx={{ mr: 2, color: "#24ee89" }}>
                   <AccountBalanceIcon />
                 </Box>
                 <Typography sx={{ color: "#ffffff",fontSize:"12.8px" }}>Choose a bank</Typography>
@@ -202,7 +202,7 @@ const AddBank = () => {
 
             <Box mb={2}>
               <Box display="flex" alignItems="center" mb={1}>
-                <Box sx={{ mr: 1.2, color: "#FED358" }}>
+                <Box sx={{ mr: 1.2, color: "#24ee89" }}>
                   <PersonIcon sx={{fontSize:30}}/>
                 </Box>
                 <Typography sx={{ color: "#ffffff",fontSize:"12.8px" }}>Full recipient's name</Typography>
@@ -246,7 +246,7 @@ const AddBank = () => {
 
             <Box mb={2}>
               <Box display="flex" alignItems="center" mb={1}>
-                <Box sx={{ mr: 1.2, color: "#FED358" }}>
+                <Box sx={{ mr: 1.2, color: "#24ee89" }}>
                   <CreditCardIcon sx={{fontSize:30}}/>
                 </Box>
                 <Typography sx={{ color: "#ffffff" ,fontSize:"12.8px"}}>Bank account number</Typography>
@@ -295,7 +295,7 @@ const AddBank = () => {
 
             <Box mb={2}>
               <Box display="flex" alignItems="center" mb={1}>
-                <Box sx={{ mr: 1.2, color: "#FED358" }}>
+                <Box sx={{ mr: 1.2, color: "#24ee89" }}>
                   <VpnKeyIcon sx={{fontSize:30}}/>
                 </Box>
                 <Typography sx={{ color: "#ffffff",fontSize:"12.8px" }}>Bank IFSC code</Typography>
@@ -339,7 +339,7 @@ const AddBank = () => {
 
             <Box mb={2}>
               <Box display="flex" alignItems="center" mb={1}>
-                <Box sx={{ mr: 1.2, color: "#FED358" }}>
+                <Box sx={{ mr: 1.2, color: "#24ee89" }}>
                   <PhoneIcon sx={{fontSize:30}}/>
                 </Box>
                 <Typography sx={{ color: "#ffffff",fontSize:"12.8px" }}>Phone number</Typography>

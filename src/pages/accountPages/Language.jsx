@@ -106,7 +106,7 @@ const Language = () => {
             checkedIcon={
               <CheckCircleIcon
                 sx={{
-                  color: "#fed358", // Checked color
+                  color: "#24ee89", // Checked color
                   fontSize: 22, // Slightly bigger for effect
                 }}
               />
@@ -147,7 +147,7 @@ const Language = () => {
             checkedIcon={
               <CheckCircleIcon
                 sx={{
-                  color: "#fed358", // Checked color
+                  color: "#24ee89", // Checked color
                   fontSize: 22, // Slightly bigger for effect
                 }}
               />

@@ -155,7 +155,7 @@ const Message = ({ children }) => {
                         <Typography
                           variant="body2"
                           sx={{
-                            color: "#B79C8B",
+                            color: "#B3BEC1",
                             mb: 1,
                             mt: 0.1,
                             p: 0.3,

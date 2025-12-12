@@ -69,18 +69,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #B79C8B;
+    color: #B3BEC1;
     padding: 0.7rem;
   }
   
   .exp-number {
-    color: #FED358; /* Green color for the number */
+    color: #24ee89; /* Green color for the number */
     font-size: 14px; /* Slightly larger for emphasis */
     margin-bottom: 0; /* Ensure no space below the number */
   }
   
   .exp-text {
-    color: #B79C8B; /* Lighter color for the text */
+    color: #B3BEC1; /* Lighter color for the text */
     font-size: 14px; /* Adjust the size for better readability */
     margin-top: 0; /* Remove spacing between the number and text */
   }
@@ -90,7 +90,7 @@
   } */
   
   .n-box {
-    color: #B79C8B;
+    color: #B3BEC1;
     border: 1px solid #454037;
     margin: 10px auto;
     width: 87%;

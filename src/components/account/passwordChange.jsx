@@ -355,10 +355,10 @@ const PasswordChange = () => {
               )}
   <Box display="flex" alignItems="center" justifyContent="right"mt={1}>
                 
-                <Typography sx={{  color: "#B79C8B", fontSize: "13.8px" ,cursor:"pointer"}}>
+                <Typography sx={{  color: "#B3BEC1", fontSize: "13.8px" ,cursor:"pointer"}}>
                   Forgot original login password 
                 </Typography>
-                <ArrowForwardIosIcon sx={{color: "#B79C8B",fontSize: "13.8px",cursor:"pointer"}}/>
+                <ArrowForwardIosIcon sx={{color: "#B3BEC1",fontSize: "13.8px",cursor:"pointer"}}/>
               </Box>
               <Button
                 variant="contained"

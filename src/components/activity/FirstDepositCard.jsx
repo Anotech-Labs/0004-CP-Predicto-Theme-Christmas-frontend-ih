@@ -25,18 +25,18 @@ const FirstDepositCard = ({ bonus, onDeposit, depositType = "FIRST" })  => {
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <Typography variant="body1" sx={{ fontSize: "14px", color: "#ffffff" }}>
         {depositLabel} deposit{" "}
-          <Typography component="span" sx={{ color: "#DD9138" }}>
+          <Typography component="span" sx={{ color: "#24ee89" }}>
             ₹{bonus.minimumDeposit}
           </Typography>
         </Typography>
         <Typography
           variant="body1"
-          sx={{ color: "#DD9138", fontSize: "15px" }}
+          sx={{ color: "#24ee89", fontSize: "15px" }}
         >
           + ₹{bonus.bonus}.00
         </Typography>
       </Box>
-      <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px", textAlign: "left" }}>
+      <Typography variant="body2" sx={{ color: "#B3BEC1", fontSize: "12px", textAlign: "left" }}>
       Deposit ₹{bonus.minimumDeposit} for the {depositType.toLowerCase()} time and you will receive ₹{bonus.bonus} bonus
       </Typography>
       <Box sx={{ display: "flex", alignItems: "center", position: "relative" }}>
@@ -71,12 +71,12 @@ const FirstDepositCard = ({ bonus, onDeposit, depositType = "FIRST" })  => {
             minWidth: 80,
             height: 30,
             fontSize: "12px",
-            borderColor: "#DD9138",
-            color: "#DD9138",
+            borderColor: "#24ee89",
+            color: "#24ee89",
             borderRadius: "6px",
             textTransform: "none",
             "&:hover": {
-              borderColor: "#DD9138",
+              borderColor: "#24ee89",
               backgroundColor: "rgba(15, 101, 24, 0.04)",
             },
           }}

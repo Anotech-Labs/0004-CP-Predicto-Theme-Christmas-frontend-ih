@@ -1,11 +1,11 @@
 <svg width="47" height="43" viewBox="0 0 47 43" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="1" y="21.4629" width="36" height="26" rx="5" transform="rotate(-36.5975 1 21.4629)" fill="url(#paint0_linear_126_581)"/>
-<rect x="22.7837" y="30.8741" width="11" height="2" rx="1" transform="rotate(-36.5975 22.7837 30.8741)" fill="#FED358"/>
-<rect x="17.1638" y="35.0475" width="6" height="2" rx="1" transform="rotate(-36.5975 17.1638 35.0475)" fill="#FED358"/>
-<rect y="38" width="47" height="3" rx="1.5" fill="#FED358"/>
+<rect x="22.7837" y="30.8741" width="11" height="2" rx="1" transform="rotate(-36.5975 22.7837 30.8741)" fill="#24ee89"/>
+<rect x="17.1638" y="35.0475" width="6" height="2" rx="1" transform="rotate(-36.5975 17.1638 35.0475)" fill="#24ee89"/>
+<rect y="38" width="47" height="3" rx="1.5" fill="#24ee89"/>
 <defs>
 <linearGradient id="paint0_linear_126_581" x1="19" y1="27.4629" x2="19" y2="28.4629" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FED358"/>
+<stop stop-color="#24ee89"/>
 <stop offset="1" stop-color="#705c2f"/>
 </linearGradient>
 </defs>

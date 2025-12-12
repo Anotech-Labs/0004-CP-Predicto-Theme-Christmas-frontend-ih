@@ -304,7 +304,7 @@ const Notification = ({ children }) => {
 
                         <Typography
                           variant="body2"
-                          color="#666462"
+                          color="#626663"
                           textAlign="left"
                           sx={{
                             wordBreak: "break-word",
@@ -325,7 +325,7 @@ const Notification = ({ children }) => {
                           {notification.body.length > 50 && (
                             <Button
                               onClick={() => toggleMessageExpansion(index)}
-                              sx={{ color: "#FED358", padding: 0 }}
+                              sx={{ color: "#24ee89", padding: 0 }}
                             >
                               {expandedMessages[index] ? "Show less" : "Show more"}
                             </Button>
@@ -360,7 +360,7 @@ const Notification = ({ children }) => {
               backgroundColor: "rgba(0, 0, 0, 0.8)",
               color: "white",
               "& .MuiAlert-icon": {
-                color: "#FED358",
+                color: "#24ee89",
               },
             }}
           >

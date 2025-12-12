@@ -73,14 +73,14 @@ const GameStatsItem = ({ stats }) => {
                 alignItems: "center",
               }}
             >
-              <Typography variant="body2" color="#B79C8B">
+              <Typography variant="body2" color="#B3BEC1">
                 {" "}
                 {/* Smaller text */}
                 Total bet
               </Typography>
               <Typography
                 variant="body2"
-                sx={{ fontWeight: "", color: "#B79C8B" }}
+                sx={{ fontWeight: "", color: "#B3BEC1" }}
               >
                 {" "}
                 {/* Smaller text */}₹{Number(stats.totalAmount).toFixed(2)}
@@ -93,14 +93,14 @@ const GameStatsItem = ({ stats }) => {
                 alignItems: "center",
               }}
             >
-              <Typography variant="body2" color="#B79C8B">
+              <Typography variant="body2" color="#B3BEC1">
                 {" "}
                 {/* Smaller text */}
                 Number of bets
               </Typography>
               <Typography
                 variant="body2"
-                sx={{ fontWeight: "", color: "#B79C8B" }}
+                sx={{ fontWeight: "", color: "#B3BEC1" }}
               >
                 {" "}
                 {/* Smaller text */}
@@ -114,12 +114,12 @@ const GameStatsItem = ({ stats }) => {
                 alignItems: "center",
               }}
             >
-              <Typography variant="body2" color="#B79C8B">
+              <Typography variant="body2" color="#B3BEC1">
                 {" "}
                 {/* Smaller text */}
                 Winning amount
               </Typography>
-              <Typography variant="body2" sx={{ color: "#B79C8B" }}>
+              <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
                 {" "}
                 {/* Smaller text */}₹{Number(stats.totalWinAmount).toFixed(2)}
               </Typography>
@@ -294,7 +294,7 @@ function GameStatistic({ children }) {
                     activeButton === label
                       ? "linear-gradient(90deg,#24ee89,#9fe871)"
                       : "#323738",
-                  color: activeButton === label ? "black" : "#B79C8B",
+                  color: activeButton === label ? "black" : "#B3BEC1",
 
                   borderRadius: "20px",
                   marginRight: "10px",
@@ -331,16 +331,16 @@ function GameStatistic({ children }) {
             }}
           >
             {loading ? (
-              <CircularProgress size={24} sx={{ color: "#FED358" }} />
+              <CircularProgress size={24} sx={{ color: "#24ee89" }} />
             ) : (
               <>
                 <Typography
                   variant="h5"
-                  sx={{ color: "#FED358", fontWeight: "bold" }}
+                  sx={{ color: "#24ee89", fontWeight: "bold" }}
                 >
                   ₹{Number(stats.totalAmount).toFixed(2)}
                 </Typography>
-                <Typography variant="subtitle1" sx={{ color: "#B79C8B" }}>
+                <Typography variant="subtitle1" sx={{ color: "#B3BEC1" }}>
                   Total bet
                 </Typography>
               </>
@@ -370,7 +370,7 @@ function GameStatistic({ children }) {
                   alt="No data"
                   sx={{ width: "100px", mt: 2, opacity: 0.5 }}
                 />
-                <Typography variant="body2" sx={{ color: "#B79C8B", mt: 1 }}>
+                <Typography variant="body2" sx={{ color: "#B3BEC1", mt: 1 }}>
                   No data available
                 </Typography>
               </Box>

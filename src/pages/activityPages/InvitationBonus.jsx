@@ -75,7 +75,7 @@ const DashedDivider = () => (
         margin: 0,
         border: "none",
         // borderTop: '0.01333rem dashed var(--Dividing-line_color, #f0f0f0)',
-        borderTop: "0.01333rem dashed #666462",
+        borderTop: "0.01333rem dashed #626663",
         width: "98%",
         position: "absolute",
         top: 0,
@@ -434,7 +434,7 @@ const InvitationBonus = () => {
             </Box>
             <Typography
               variant="body2"
-              sx={{ color: "#B79C8B", fontWeight: "500" }}
+              sx={{ color: "#B3BEC1", fontWeight: "500" }}
             >
               Invitation reward rules
             </Typography>
@@ -469,7 +469,7 @@ const InvitationBonus = () => {
             </Box>
             <Typography
               variant="body2"
-              sx={{ color: "#B79C8B", fontWeight: "500" }}
+              sx={{ color: "#B3BEC1", fontWeight: "500" }}
             >
               Invitation record
             </Typography>
@@ -575,7 +575,7 @@ const InvitationBonus = () => {
                         sx={{
                           width: "100%",
                           height: "1px",
-                          backgroundColor: "#666462",
+                          backgroundColor: "#626663",
                           mt: 0.8,
                         }}
                       />
@@ -674,7 +674,7 @@ const InvitationBonus = () => {
                       </Typography>
                       <Typography
                         sx={{
-                          color: "#B79C8B",
+                          color: "#B3BEC1",
                           fontSize: "12px",
                           fontWeight: 400,
                         }}
@@ -688,7 +688,7 @@ const InvitationBonus = () => {
                       flexItem
                       sx={{
                         mx: 2,
-                        bgcolor: "#666462",
+                        bgcolor: "#626663",
                         width: "0.5px",
                         height: "50",
                       }}
@@ -708,7 +708,7 @@ const InvitationBonus = () => {
                       </Typography>
                       <Typography
                         sx={{
-                          color: "#B79C8B",
+                          color: "#B3BEC1",
                           fontSize: "12px",
                           fontWeight: 400,
                         }}
@@ -731,11 +731,11 @@ const InvitationBonus = () => {
                           border: "transparent",
                           color: "#ffffff",
                         },
-                        background: "linear-gradient(180deg, #FED358, #FFB472)",
+                        background: "linear-gradient(180deg, #24ee89, #9fe871)",
                         border: bonusStatus.disabled
                           ? "1px solid  grey"
-                          : "1px solid #FED358",
-                        color: bonusStatus.disabled ? "grey" : "#FED358",
+                          : "1px solid #24ee89",
+                        color: bonusStatus.disabled ? "grey" : "#24ee89",
                         boxShadow: "transparent",
                         // '&:hover': {
                         //   // background: bonusStatus.disabled ? '#343434' : 'linear-gradient(90deg,#24ee89,#9fe871)',
@@ -778,7 +778,7 @@ const InvitationBonus = () => {
                         // width: "100%",
                         backgroundColor: "#00000080",
                         color:"#ffffff",
-                        "& .MuiAlert-icon": { color: "#FED358" },
+                        "& .MuiAlert-icon": { color: "#24ee89" },
                       }}
                     >
                       {snackbar.message}

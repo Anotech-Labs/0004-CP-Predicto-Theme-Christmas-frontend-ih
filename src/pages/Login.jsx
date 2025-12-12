@@ -193,44 +193,69 @@ const Login = () => {
           backgroundPosition: "50%",
           backgroundRepeat: "no-repeat",
           backgroundSize: "100%",
-          position: "relative", // important for absolute images
+          position: "relative",
           overflow: "hidden",
         }}
-      > <img
-            src="/assets/login/shadow.webp"
-            alt="Top Image"
-            style={{
-              position: "absolute",
-              top: 0,
-              bottom: 0,
-              width: "100%",
-              height: "auto",
-            }}
-          />
-        {/* Wrapper for overlapping images */}
+      >
+        {/* Background Shadow Image */}
+        <img
+          src="/assets/login/shadow.webp"
+          alt="Top Image"
+          style={{
+            position: "absolute",
+            top: 0,
+            bottom: 0,
+            width: "100%",
+            height: "auto",
+          }}
+        />
+
+        {/* Wrapper for logo + cross */}
         <Box
           sx={{
             position: "relative",
             width: "100%",
-            height: "120px", // adjust as needed
+            height: "120px",
           }}
         >
-          {/* Second image (top shadow or overlay) */}
+          {/* Logo */}
           <img
             src="/assets/logo/a_logo2.webp"
             alt="Overlay Logo"
             style={{
               position: "absolute",
-              top: "10px",     // adjust spacing from the top
-              left: "10px",    // adjust spacing from the left
+              top: "10px",
+              left: "10px",
               width: "auto",
-              height: "30px",  // set your desired logo size
+              height: "30px",
             }}
           />
 
+          {/* CROSS BUTTON */}
+          <Box
+            sx={{
+              position: "absolute",
+              top: "10px",
+              right: "10px",
+              height: "2rem",
+              width: "2rem",
+              backgroundColor: "rgba(255,255,255,0.157)",
+              color: "#b3bec1",
+              borderRadius: "0.375rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "1.3rem",
+              cursor: "pointer",
+              zIndex: 20,
+              userSelect: "none",
+            }}
+            onClick={() => navigate("/")}
+          >
+            x
+          </Box>
         </Box>
       </Grid>
-
       <Box
         sx={{
           position: "fixed",

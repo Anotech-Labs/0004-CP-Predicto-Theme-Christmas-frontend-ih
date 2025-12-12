@@ -212,7 +212,7 @@ function SettingComponent() {
                 sx={{
                   width: "3px",
                   height: "90%",
-                  backgroundColor: "#fed358",
+                  backgroundColor: "#24ee89",
                   color: "transparent",
                   // borderRadius: "5px",
                   // marginLeft:"-16px"

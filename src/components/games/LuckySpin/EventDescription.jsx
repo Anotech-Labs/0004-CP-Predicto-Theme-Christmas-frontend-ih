@@ -175,7 +175,7 @@ const EventDesc = () => {
               >
                 <Typography
                   variant="body2"
-                  sx={{ color: "#B79C8B",px:2, fontSize: "12px" }}
+                  sx={{ color: "#B3BEC1",px:2, fontSize: "12px" }}
                 >
                   Members who meet the requirements of{" "}
                   <Box component="span" sx={{ color: "#D23838" }}>
@@ -190,7 +190,7 @@ const EventDesc = () => {
 
                 <Typography
                   variant="body2"
-                  sx={{ color: "#B79C8B", my: 2,px:2, fontSize: "12px" }}
+                  sx={{ color: "#B3BEC1", my: 2,px:2, fontSize: "12px" }}
                 >
                   Need to bind a{" "}
                   <Box component="span" sx={{ color: "#D23838" }}>
@@ -200,7 +200,7 @@ const EventDesc = () => {
                 </Typography>
                 <Typography
                   variant="body2"
-                  sx={{ color: "#B79C8B", fontSize: "12px", mt: 1,px:2, }}
+                  sx={{ color: "#B3BEC1", fontSize: "12px", mt: 1,px:2, }}
                 >
                   With hundreds of millions in cash and many other prizes up for
                   grabs, get ready for endless surprises and big prizes every

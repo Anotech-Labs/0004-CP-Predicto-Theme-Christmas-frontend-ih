@@ -157,7 +157,7 @@ const InviteLink = ({ children }) => {
                   textAlign: "center",
                   fontSize: "15px",
                   mt: "15px",
-                  color: "#B79C8B",
+                  color: "#B3BEC1",
                 }}
               >
                 Please swipe left - right to choose your favorite poster
@@ -312,8 +312,8 @@ const InviteLink = ({ children }) => {
                     fullWidth
                     onClick={handleCopyLink}
                     style={{
-                      color: "#FED358",
-                      borderColor: "#FED358",
+                      color: "#24ee89",
+                      borderColor: "#24ee89",
                       borderRadius: "20px",
                       textTransform: "none",
                     }}

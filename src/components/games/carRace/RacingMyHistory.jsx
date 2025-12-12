@@ -105,9 +105,9 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
               onClick={handleDetailsClick}
               sx={{
                 textTransform: "none",
-                color: "#DD9138",
+                color: "#24ee89",
                 padding: "5px 7px",
-                border: "1px solid #DD9138",
+                border: "1px solid #24ee89",
                 borderRadius: "10px",
                 fontSize: "13px",
                 mb: 1,
@@ -227,7 +227,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                         </Typography>
                         <Typography
                           sx={{
-                            color: "#B79C8B",
+                            color: "#B3BEC1",
                             fontSize: "12px",
                           }}
                         >
@@ -242,7 +242,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                       <Box
                         sx={{
                           border: 1,
-                          borderColor: !bet.resultElements ? "#DD9138" : bet.isWin ? "#17B15E" : "#D23838",
+                          borderColor: !bet.resultElements ? "#24ee89" : bet.isWin ? "#17B15E" : "#D23838",
                           borderRadius: "7px",
                           pt: "0.2px",
                           pb: "0.1px",
@@ -255,7 +255,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                           variant="caption"
                           sx={{
                             fontSize: "12px",
-                            color: !bet.resultElements ? "#DD9138" : bet.isWin ? "#17B15E" : "#D23838",
+                            color: !bet.resultElements ? "#24ee89" : bet.isWin ? "#17B15E" : "#D23838",
                           }}
                         >
                           {!bet.resultElements ? "Pending" : bet.isWin ? "Success" : "Failed"}
@@ -278,7 +278,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                         <Typography
                           variant="body2"
                           sx={{
-                            color: "#DD9138",
+                            color: "#24ee89",
                             fontWeight: "bold",
                           }}
                         >
@@ -363,7 +363,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                           label: "Status",
                           value: !bet.resultElements ? "Pending" : bet.isWin ? "Success" : "Failed",
                           color: !bet.resultElements
-                            ? "#DD9138" // Pending color
+                            ? "#24ee89" // Pending color
                             : bet.isWin
                               ? "#17B15E" // Success color
                               : "#D23838", // Failed color
@@ -377,7 +377,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                               ? `+₹${parseFloat(bet.winAmount || 0).toFixed(2)}`
                               : `-₹${parseFloat(bet.actualBetAmount || 0).toFixed(2)}`,
                           color: !bet.resultElements
-                            ? "#DD9138"
+                            ? "#24ee89"
                             : bet.isWin
                               ? "#17B15E"
                               : "#D23838",
@@ -404,7 +404,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                           <Typography
                             sx={{
                               fontSize: "15px",
-                              color: "#B79C8B",
+                              color: "#B3BEC1",
                               borderBottom: "none",
                             }}
                           >
@@ -413,7 +413,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                           <Typography
                             sx={{
                               fontSize: "15px",
-                              color: row.color || "#B79C8B",
+                              color: row.color || "#B3BEC1",
                               textAlign: "right",
                               borderBottom: "1px solid #3a4142",
                             }}
@@ -531,17 +531,17 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
           disabled={page === 1}
           sx={{
             marginRight: "10px",
-            backgroundColor: "#FED358",
+            backgroundColor: "#24ee89",
             "&.Mui-disabled": {
               backgroundColor: "#3a4142",
-              color: "#B79C8B",
+              color: "#B3BEC1",
             },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#323738" }} />
+          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B3BEC1" : "#323738" }} />
         </Button>
-        <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B", fontSize: "13px" }}>
+        <Grid sx={{ display: "flex", alignItems: "center", color: "#B3BEC1", fontSize: "13px" }}>
           {page}/{totalPage}
         </Grid>
         <Button
@@ -550,15 +550,15 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
           disabled={page >= totalPage}
           sx={{
             marginLeft: "10px",
-            backgroundColor: "#FED358",
+            backgroundColor: "#24ee89",
             "&.Mui-disabled": {
               backgroundColor: "#3a4142",
-              color: "#B79C8B",
+              color: "#B3BEC1",
             },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B79C8B" : "#323738" }} />
+          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B3BEC1" : "#323738" }} />
         </Button>
       </Box>
     </Grid>

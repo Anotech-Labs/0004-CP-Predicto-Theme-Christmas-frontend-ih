@@ -132,7 +132,7 @@ const HotSlot = () => {
                     />
                     <Button
                       sx={{
-                        background: `linear-gradient(to right, #fed358 ${game.odds}, #18423d ${game.odds})`,
+                        background: `linear-gradient(to right, #24ee89 ${game.odds}, #18423d ${game.odds})`,
                         color: '#05012B',
                         padding: '1px 2px',
                         width: "100%",
@@ -143,7 +143,7 @@ const HotSlot = () => {
                         gap: "10px",
                         fontSize: '14px',
                         '&:hover': {
-                          background: `linear-gradient(to right, #fed358 ${game.odds}, #18423d ${game.odds})`,
+                          background: `linear-gradient(to right, #24ee89 ${game.odds}, #18423d ${game.odds})`,
                           opacity: 0.9,
                         },
                       }}
@@ -248,7 +248,7 @@ const HotSlot = () => {
                     />
                     <Button
                       sx={{
-                        background: `linear-gradient(to right, #fed358 ${game.odds}, #18423d ${game.odds})`,
+                        background: `linear-gradient(to right, #24ee89 ${game.odds}, #18423d ${game.odds})`,
                         color: '#05012B',
                         padding: '1px 2px',
                         width: "100%",
@@ -259,7 +259,7 @@ const HotSlot = () => {
                         gap: "10px",
                         fontSize: '14px',
                         '&:hover': {
-                          background: `linear-gradient(to right, #fed358 ${game.odds}, #18423d ${game.odds})`,
+                          background: `linear-gradient(to right, #24ee89 ${game.odds}, #18423d ${game.odds})`,
                           opacity: 0.9,
                         },
                       }}

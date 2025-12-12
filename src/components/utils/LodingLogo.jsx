@@ -36,11 +36,11 @@ const LoadingLogo = () => {
             size={150}
             thickness={1}
             sx={{
-              color: () => "#f5b43b",
+              color: () => "#24EE89",
             }}
           />
           <img
-            src="/assets/logo/a_logo2.webp"
+            src="/assets/logo/a_logo.webp"
             alt="logo"
             style={{
               position: "absolute",

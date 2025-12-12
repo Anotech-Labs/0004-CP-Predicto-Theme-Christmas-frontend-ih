@@ -156,7 +156,7 @@ const K3Charts = ({ data ,page, setPage ,totalPage}) => {
           disabled={page === 1}
           sx={{
             marginRight: "10px",
-            backgroundColor: "#FED358",
+            backgroundColor: "#24ee89",
             "&.Mui-disabled": {
               backgroundColor: "#5a5145", // Disabled background color
               color: "#ffffff", // Optional: Change text color for better visibility
@@ -175,7 +175,7 @@ const K3Charts = ({ data ,page, setPage ,totalPage}) => {
           disabled={page >= totalPage}
           sx={{
             marginLeft: "10px",
-            backgroundColor: "#FED358",
+            backgroundColor: "#24ee89",
             "&.Mui-disabled": {
               backgroundColor: "#5a5145", // Disabled background color
               color: "#ffffff", // Optional: Change text color for better visibility

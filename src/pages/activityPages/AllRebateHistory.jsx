@@ -39,7 +39,7 @@ const StyledTabs = styled(Tabs)(({ theme }) => ({
 }));
 
 const StyledTab = styled(Tab)(({ theme }) => ({
-  color: "#B79C8B",
+  color: "#B3BEC1",
   minHeight: "55px",
   padding: "5px 30px",
   fontSize: "13px",
@@ -392,7 +392,7 @@ const AllRebateHistory = () => {
                 <Box
                   component="span"
                   sx={{
-                    border: "1px solid #FED358",
+                    border: "1px solid #24ee89",
                     borderRadius: "5px",
                     px: 1,
                     py: 0.3,
@@ -402,11 +402,11 @@ const AllRebateHistory = () => {
                   }}
                 >
                   <VerifiedUserIcon
-                    sx={{ color: "#FED358", mr: 0.5, fontSize: "18px" }}
+                    sx={{ color: "#24ee89", mr: 0.5, fontSize: "18px" }}
                   />
                   <Typography
                     variant="caption"
-                    sx={{ color: "#FED358", fontSize: "12px" }}
+                    sx={{ color: "#24ee89", fontSize: "12px" }}
                   >
                     Real-time count
                   </Typography>
@@ -442,7 +442,7 @@ const AllRebateHistory = () => {
               >
                 <Typography
                   variant="body2"
-                  sx={{ color: "#B79C8B", fontSize: "12px" }}
+                  sx={{ color: "#B3BEC1", fontSize: "12px" }}
                 >
                   Upgrade VIP level to increase rebate rate
                 </Typography>
@@ -459,7 +459,7 @@ const AllRebateHistory = () => {
                   >
                     <Typography
                       variant="body2"
-                      color="#B79C8B"
+                      color="#B3BEC1"
                       sx={{ fontSize: "12px" }}
                     >
                       Rebate rate
@@ -487,7 +487,7 @@ const AllRebateHistory = () => {
                   >
                     <Typography
                       variant="body2"
-                      color="#B79C8B"
+                      color="#B3BEC1"
                       sx={{ fontSize: "12px" }}
                     >
                       Total rebate
@@ -507,7 +507,7 @@ const AllRebateHistory = () => {
               </Grid>
               <Typography
                 variant="body2"
-                color="#B79C8B"
+                color="#B3BEC1"
                 sx={{
                   mb: 1.5,
                   fontStyle: "italic",
@@ -574,7 +574,7 @@ const AllRebateHistory = () => {
             <Box
               component="span"
               sx={{
-                bgcolor: "#FED358",
+                bgcolor: "#24ee89",
                 mr: 1,
                 borderRadius: "2px",
                 width: "4px",
@@ -607,10 +607,10 @@ const AllRebateHistory = () => {
                       {record.gameName}
                     </Typography>
                     <Grid container justifyContent="space-between" alignItems="center">
-                      <Typography variant="body2" color="#B79C8B">
+                      <Typography variant="body2" color="#B3BEC1">
                         {new Date(record.claimedAt).toLocaleString()}
                       </Typography>
-                      <Typography sx={{ fontWeight: "bold", color: "#FED358" }}>
+                      <Typography sx={{ fontWeight: "bold", color: "#24ee89" }}>
                         Completed
                       </Typography>
                     </Grid>
@@ -629,7 +629,7 @@ const AllRebateHistory = () => {
                         </Box>
                         <Box mt={0.8}>
                           {["Betting rebate", "Rebate rate", "Rebate amount"].map((label, index) => (
-                            <Typography key={index} variant="body2" color="#B79C8B" lineHeight={2.5} textAlign="start" >
+                            <Typography key={index} variant="body2" color="#B3BEC1" lineHeight={2.5} textAlign="start" >
                               {label}
                             </Typography>
                           ))}
@@ -641,7 +641,7 @@ const AllRebateHistory = () => {
                         {[
                           {
                             value: record.bettingRebate,
-                            color: "#B79C8B",
+                            color: "#B3BEC1",
                           },
                           {
                             value: `${parseFloat(record.rebateRate).toFixed(2)}%`,

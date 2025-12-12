@@ -19,18 +19,18 @@ const GamingProvidersGrid = () => {
     ];
 
     const socials = [
-        { id: 1, name: 'Telegram', image: '/assets/social/tele.png', bg: '#1393c6', width: '6.5rem' },
-        { id: 2, name: 'Facebook', image: '/assets/social/fb.png', bg: '#2b56a7', width: '6.5rem' },
-        { id: 3, name: 'Instagram', image: '/assets/social/insta.png', bg: '#d92f73', width: '6.5rem' },
-        { id: 4, name: 'WhatsApp', image: '/assets/social/whats.png', bg: '#1db341', width: '6.5rem' },
-        { id: 5, name: 'YouTube', image: '/assets/social/yt.png', bg: '#c60e1b', width: '6.5rem' },
+        { id: 1, name: 'Telegram', image: '/assets/provider/tele.png', bg: '#1393c6', width: '6.5rem' },
+        { id: 2, name: 'Facebook', image: '/assets/provider/fb.png', bg: '#2b56a7', width: '6.5rem' },
+        { id: 3, name: 'Instagram', image: '/assets/provider/insta.png', bg: '#d92f73', width: '6.5rem' },
+        { id: 4, name: 'WhatsApp', image: '/assets/provider/whats.png', bg: '#1db341', width: '6.5rem' },
+        { id: 5, name: 'YouTube', image: '/assets/provider/yt.png', bg: '#c60e1b', width: '6.5rem' },
     ];
 
     return (
         <Box
             sx={{
                 width: '100%',
-                mx: 1.2,
+                mx: 1.5,
                 mt: 1.5,
             }}
         >
@@ -40,7 +40,7 @@ const GamingProvidersGrid = () => {
                 sx={{
                     display: 'flex',
                     flexWrap: 'wrap',
-                    width: "calc(100% - 12px)",
+                    width: "calc(100% - 15px)",
                     // px: 1
                 }}
             >

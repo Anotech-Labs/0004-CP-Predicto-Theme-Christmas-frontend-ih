@@ -439,7 +439,7 @@
   }
   
   .history-tabs.active {
-    color: #FED358;
+    color: #24ee89;
   }
   
   .history-tabs.active::after {
@@ -450,7 +450,7 @@
     transform: translateX(-50%);
     width: 50px;
     height: 2px;
-    background-color: #FED358;
+    background-color: #24ee89;
     border-radius: 1.5px;
   }
   
@@ -518,11 +518,11 @@
   }
   .history-item-title {
     font-weight: bold;
-    color: #FED358;
+    color: #24ee89;
   }
   
   .history-item-description {
-    color: #FED358;
+    color: #24ee89;
     max-width: 250px;
     margin: 2px 0;
     text-align: right;
@@ -550,7 +550,7 @@
     width: 90%;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(90deg,#F5B73B 0%, #FED358 100%);
+    background: linear-gradient(90deg,#F5B73B 0%, #24ee89 100%);
     color: black;
     cursor: pointer;
   }
@@ -562,14 +562,14 @@
   
   .rules-content h2 {
     font-size: 19.2px;
-    color: #FED358;
+    color: #24ee89;
     margin: 0;
   }
   
   .rules-content p {
     font-size: 14.9px;
     margin-bottom: 5px;
-    color: #B79C8B;
+    color: #B3BEC1;
     margin-top: 5px;
   }
   
@@ -586,7 +586,7 @@
   .rules-card-header {
     /* font-weight: bold; */
     color: white;
-    background-color: #cf7c10;
+    background-color: #00441b;
     padding: 10px 15px;
     border-radius: 0px 0px 8px 8px;
     margin: 0px auto;
@@ -596,7 +596,7 @@
   }
   
   .rules-card-text {
-    color: #B79C8B;
+    color: #B3BEC1;
     margin-top: 10px;
     font-size: 12.8px;
     text-align: left;

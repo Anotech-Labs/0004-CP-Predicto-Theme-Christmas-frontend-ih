@@ -193,10 +193,10 @@ const WinningStreakTabs = () => {
                     </Box>
 
                     <Box sx={{ display: "flex", justifyContent: "space-between", mb: 0.5 }}>
-                        <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: 12 }}>
+                        <Typography variant="body2" sx={{ color: "#B3BEC1", fontSize: 12 }}>
                             {Math.min(progressPercentage, 100).toFixed(2)}% completion
                         </Typography>
-                        <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: 12 }}>
+                        <Typography variant="body2" sx={{ color: "#B3BEC1", fontSize: 12 }}>
                             {progressText}
                         </Typography>
                     </Box>
@@ -210,14 +210,14 @@ const WinningStreakTabs = () => {
                             mb: 2,
                             backgroundColor: "#6b4000",
                             "& .MuiLinearProgress-bar": {
-                                background: "#FED358",
+                                background: "#24ee89",
                             },
                         }}
                     />
 
                     <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                         <Box>
-                            <Typography variant="body2" sx={{ color: "#B79C8B", mb: 0.5 }}>
+                            <Typography variant="body2" sx={{ color: "#B3BEC1", mb: 0.5 }}>
                                 Reward -
                                 <Typography component="span" sx={{ color: "#FF5722", fontWeight: "bold", ml: 1 }}>
                                     ₹{bonusAmount.toFixed(2)}

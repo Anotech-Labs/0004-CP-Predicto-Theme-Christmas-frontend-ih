@@ -100,7 +100,7 @@ const HomeMain = ({ children }) => {
                 zIndex: 1000,
                 backgroundColor: "#232626",
                 px: "6px",
-                pt: "6px",
+                pt: "3px",
                 color: "white",
               }}
             >
@@ -108,7 +108,7 @@ const HomeMain = ({ children }) => {
                 <img
                   src="/assets/logo/colorLogo.webp"
                   alt="logo"
-                  style={{ width: "140px", height: "auto" }}
+                  style={{ width: "120px", height: "auto" }}
                 />
               </Grid>
 
@@ -134,8 +134,8 @@ const HomeMain = ({ children }) => {
                       textTransform: "none",
                       color: "#ffffff",
                       border: "1px solid white",
-                      width: "60px",
-                      height: "30px",
+                      width: "70px",
+                      height: "35px",
                       mr: 1,
                       fontSize: "12px",
                       textAlign: "center",
@@ -151,8 +151,8 @@ const HomeMain = ({ children }) => {
                     sx={{
                       textTransform: "none",
                       color: "#000000",
-                      width: "60px",
-                      height: "30px",
+                      width: "70px",
+                      height: "35px",
                       fontSize: "12px",
                       textAlign: "center",
                       lineHeight: "30px",

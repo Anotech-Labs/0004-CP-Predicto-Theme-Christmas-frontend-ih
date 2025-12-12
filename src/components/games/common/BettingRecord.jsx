@@ -220,7 +220,7 @@ const BettingRecord = () => {
         if (loading) {
             return (
                 <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
-                    <CircularProgress sx={{ color: "#DD9138" }} />
+                    <CircularProgress sx={{ color: "#24ee89" }} />
                 </Box>
             );
         }
@@ -344,7 +344,7 @@ const BettingRecord = () => {
                         variant="fullWidth"
                         sx={{
                             "& .MuiTabs-indicator": {
-                                backgroundColor: "#DD9138",
+                                backgroundColor: "#24ee89",
                             },
                             "& .MuiTab-root": {
                                 color: "#646566",

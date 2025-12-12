@@ -161,7 +161,7 @@ const GameHistory = ({
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  background: "#FED358",
+                  background: "#24ee89",
                   color: "black",
                   margin: isMediumScreen ? "2px 3px" : "2px",
                   aspectRatio: "1 / 1",

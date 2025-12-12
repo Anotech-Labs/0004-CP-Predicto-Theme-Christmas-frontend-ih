@@ -195,7 +195,7 @@ const ActivityRewardTabs = () => {
             <Box sx={{ position: "absolute", top: "10px", right: "10px" }}>
               <Typography
                 variant="subtitle2"
-                sx={{ color: "#B79C8B", fontSize: "0.75rem" }}
+                sx={{ color: "#B3BEC1", fontSize: "0.75rem" }}
               >
                 {task.isClaimedToday
                   ? "Claimed"
@@ -224,7 +224,7 @@ const ActivityRewardTabs = () => {
                   alt="Task Icon"
                   style={{ width: "25px", height: "25px", marginRight: "8px" }}
                 />
-                <Typography variant="body2" sx={{ color: "#B79C8B" }}>
+                <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
                   {task.name.toLowerCase()} betting bonus
                 </Typography>
               </Box>
@@ -260,7 +260,7 @@ const ActivityRewardTabs = () => {
                 marginBottom: 1,
               }}
             >
-              <Typography variant="body2" sx={{ color: "#B79C8B" }}>
+              <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
                 Award amount
               </Typography>
               <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -276,7 +276,7 @@ const ActivityRewardTabs = () => {
                 />
                 <Typography
                   variant="h6"
-                  sx={{ color: "#dd9138", fontSize: "1rem" }}
+                  sx={{ color: "#24ee89", fontSize: "1rem" }}
                 >
                   ₹{task.bonusAmount}
                 </Typography>
@@ -289,11 +289,11 @@ const ActivityRewardTabs = () => {
               variant="outlined"
               sx={{
                 width: "100%",
-                color: task.isClaimedToday ? "#FED358" : "#FED358",
-                borderColor: task.isClaimedToday ? "#FED358" : "#FED358",
+                color: task.isClaimedToday ? "#24ee89" : "#24ee89",
+                borderColor: task.isClaimedToday ? "#24ee89" : "#24ee89",
                 "&.Mui-disabled": {
-                  border: "1px solid #FED358",
-                  color: "#FED358",
+                  border: "1px solid #24ee89",
+                  color: "#24ee89",
                 },
                 borderRadius: "20px",
                 textTransform: "none",
@@ -338,9 +338,9 @@ const ActivityRewardTabs = () => {
             //   backgroundColor: '#e8f5e9',
             // },
             "&.Mui-selected": {
-              color: "#FED358",
+              color: "#24ee89",
               fontWeight: "600",
-              borderBottom: "2px solid #FED358",
+              borderBottom: "2px solid #24ee89",
               fontSize: "13px",
             },
           },

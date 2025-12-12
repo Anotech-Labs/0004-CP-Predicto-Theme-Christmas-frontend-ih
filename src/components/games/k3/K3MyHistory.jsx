@@ -66,9 +66,9 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
               onClick={handleDetailsClick}
               sx={{
                 textTransform: "none",
-                color: "#DD9138",
+                color: "#24ee89",
                 padding: "5px 7px",
-                border: "1px solid #DD9138",
+                border: "1px solid #24ee89",
                 borderRadius: "10px",
                 fontSize: "13px",
                 mb: 1,
@@ -149,19 +149,19 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
 
                             // Check bet type and use respective flags
                             if (type === "BIG_SMALL") {
-                              return bet.isBig ? "#DD9138" : "#5088D3"; // Orange for Big, Blue for Small
+                              return bet.isBig ? "#24ee89" : "#5088D3"; // Orange for Big, Blue for Small
                             }
                             if (type === "ODD_EVEN") {
                               return bet.isOdd ? "#D23838" : "#17B15E"; // Red for Odd, Green for Even
                             }
 
                             // Colors for other bet types
-                            if (type === "TOTAL_SUM") return "#DD9138"; // Orange
+                            if (type === "TOTAL_SUM") return "#24ee89"; // Orange
                             if (type === "ALL_DIFFERENT") return "#5088D3"; // Blue
                             if (type === "TWO_SAME") return "#D23838"; // Red
                             if (type === "THREE_SAME") return "#17B15E"; // Green
 
-                            return "#DD9138"; // Default color (orange)
+                            return "#24ee89"; // Default color (orange)
                           })(),
                           display: "flex",
                           justifyContent: "center",
@@ -215,7 +215,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                         </Typography>
                         <Typography
                           sx={{
-                            color: "#B79C8B",
+                            color: "#B3BEC1",
                             fontSize: "12px",
                           }}
                         >
@@ -230,7 +230,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                         sx={{
                           border: 1,
                           borderColor: bet.resultDice.length <= 0
-                            ? "#DD9138"
+                            ? "#24ee89"
                             : bet.isWin
                               ? "#17B15E"
                               : "#D23838",
@@ -249,7 +249,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                             fontSize: "12px",
                             color:
                               bet.resultDice.length <= 0
-                                ? "#DD9138"
+                                ? "#24ee89"
                                 : bet.isWin
                                   ? "#17B15E"
                                   : "#D23838",
@@ -404,7 +404,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                               variant="body1"
                               style={{
                                 color: bet.resultDice.length <= 0
-                                  ? "#DD9138"
+                                  ? "#24ee89"
                                   : bet.isWin
                                     ? "#17B15E"
                                     : "#D23838",
@@ -425,7 +425,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                               ? "Pending" : bet.isWin ? `+\u20B9${bet.winAmount.toFixed(2)}`
                                 : `-\u20B9${Math.abs(bet.actualBetAmount).toFixed(2)}`,
                           color: bet.resultDice.length <= 0
-                            ? "#DD9138"
+                            ? "#24ee89"
                             : bet.isWin
                               ? "#17B15E"
                               : "#D23838",
@@ -457,7 +457,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                               // fontWeight: "bold",
                               fontSize: "15px",
                               // padding: "2px 6px",
-                              color: "#B79C8B",
+                              color: "#B3BEC1",
                               borderBottom: "none",
                             }}
                           >
@@ -466,7 +466,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                           <Typography
                             sx={{
                               fontSize: "15px",
-                              color: row.color || "#B79C8B",
+                              color: row.color || "#B3BEC1",
                               textAlign: "right",
                               // padding: "2px 6px",
                               borderBottom: "1px solid #3a4142",
@@ -509,7 +509,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
             disabled={page === 1}
             sx={{
               marginRight: "10px",
-              backgroundColor: "#FED358",
+              backgroundColor: "#24ee89",
               "&.Mui-disabled": {
                 backgroundColor: "#5a5145", // Disabled background color
                 color: "#ffffff", // Optional: Change text color for better visibility
@@ -528,7 +528,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
             disabled={page >= totalPage}
             sx={{
               marginLeft: "10px",
-              backgroundColor: "#FED358",
+              backgroundColor: "#24ee89",
               "&.Mui-disabled": {
                 backgroundColor: "#5a5145", // Disabled background color
                 color: "#ffffff", // Optional: Change text color for better visibility

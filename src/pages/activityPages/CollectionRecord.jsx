@@ -117,7 +117,7 @@ function CollectionRecord() {
               padding: "16px 0",
               borderRadius: "8px",
               width: "100%", // Equal width for all buttons
-              color: activeButton === "daily" ? "#232626" : "#B79C8B",
+              color: activeButton === "daily" ? "#232626" : "#B3BEC1",
               textAlign: "center",
               cursor: "pointer",
             }}
@@ -134,7 +134,7 @@ function CollectionRecord() {
               padding: "16px 0",
               borderRadius: "8px",
               width: "100%", // Equal width for all buttons
-              color: activeButton === "weekly" ? "#232626" : "#B79C8B",
+              color: activeButton === "weekly" ? "#232626" : "#B3BEC1",
               textAlign: "center",
               cursor: "pointer",
             }}
@@ -151,7 +151,7 @@ function CollectionRecord() {
               padding: "16px 0",
               borderRadius: "8px",
               width: "100%", // Equal width for all buttons
-              color: activeButton === "monthly" ? "#232626" : "#B79C8B",
+              color: activeButton === "monthly" ? "#232626" : "#B3BEC1",
               textAlign: "center",
               cursor: "pointer",
             }}
@@ -214,7 +214,7 @@ function CollectionRecord() {
                       >
                         <MilitaryTechIcon
                           style={{
-                            color: "#FED358",
+                            color: "#24ee89",
                             marginRight: "8px", // Adjusted icon margin
                           }}
                           fontSize="large"
@@ -227,7 +227,7 @@ function CollectionRecord() {
                         sx={{
                           display: "flex",
                           alignItems: "center",
-                          color: "#B79C8B",
+                          color: "#B3BEC1",
                           mt: 1, // Adjusted margin top
                         }}
                       >
@@ -246,7 +246,7 @@ function CollectionRecord() {
                           variant="caption"
                           sx={{
                             ml: 2,
-                            color: "#FED358",
+                            color: "#24ee89",
                             fontWeight: "bold",
                           }}
                         >

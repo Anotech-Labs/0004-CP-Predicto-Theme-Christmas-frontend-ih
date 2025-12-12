@@ -457,7 +457,7 @@ const Wallet = ({ children }) => {
                     width={55}
                     height={55}
                   />
-                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem" ,fontFamily: "'Times New Roman', Times,  ",}}>
+                  <Typography sx={{ color: "#B3BEC1", fontSize: "0.8rem" ,fontFamily: "'Times New Roman', Times,  ",}}>
 
                     Deposit{" "}
                   </Typography>
@@ -469,7 +469,7 @@ const Wallet = ({ children }) => {
                     width={55}
                     height={55}
                   />
-                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem" ,fontFamily: "'Times New Roman', Times,  ",}}>
+                  <Typography sx={{ color: "#B3BEC1", fontSize: "0.8rem" ,fontFamily: "'Times New Roman', Times,  ",}}>
                     Withdraw
                   </Typography>
                 </Grid>
@@ -480,7 +480,7 @@ const Wallet = ({ children }) => {
                      width={55}
                     height={55}
                   />
-                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem",fontFamily: "'Times New Roman', Times,  ", }}>
+                  <Typography sx={{ color: "#B3BEC1", fontSize: "0.8rem",fontFamily: "'Times New Roman', Times,  ", }}>
                     Deposit history
                   </Typography>
                 </Grid>
@@ -491,7 +491,7 @@ const Wallet = ({ children }) => {
                      width={55}
                     height={55}
                   />
-                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem",fontFamily: "'Times New Roman', Times,  ", }}>
+                  <Typography sx={{ color: "#B3BEC1", fontSize: "0.8rem",fontFamily: "'Times New Roman', Times,  ", }}>
                     Withdrawal History
                   </Typography>
                 </Grid>
@@ -546,7 +546,7 @@ const Wallet = ({ children }) => {
                       <Typography
                         variant="body2"
                         sx={{
-                          color: "#666462",
+                          color: "#626663",
                           fontSize: "12px",
                           textTransform: 'uppercase',
                           letterSpacing: 1,

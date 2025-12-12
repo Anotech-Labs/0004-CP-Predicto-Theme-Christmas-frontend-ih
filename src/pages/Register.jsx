@@ -161,54 +161,80 @@ const Register = () => {
   return (
     <>
       <Mobile>
-      <Grid
-        container
-        justifyContent="flex-start"
-        alignItems="flex-start"
-        direction="column"
-        sx={{
-          minHeight: "220px",
-          backgroundImage: "url('/assets/login/login.webp')",
-          backgroundPosition: "50%",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100%",
-          position: "relative", // important for absolute images
-          overflow: "hidden",
-        }}
-      > <img
-            src="/assets/login/shadow.webp"
-            alt="Top Image"
-            style={{
-              position: "absolute",
-              top: 0,
-              bottom: 0,
-              width: "100%",
-              height: "auto",
-            }}
-          />
-        {/* Wrapper for overlapping images */}
-        <Box
-          sx={{
-            position: "relative",
-            width: "100%",
-            height: "120px", // adjust as needed
-          }}
-        >
-          {/* Second image (top shadow or overlay) */}
-          <img
-            src="/assets/logo/a_logo2.webp"
-            alt="Overlay Logo"
-            style={{
-              position: "absolute",
-              top: "10px",     // adjust spacing from the top
-              left: "10px",    // adjust spacing from the left
-              width: "auto",
-              height: "30px",  // set your desired logo size
-            }}
-          />
-
-        </Box>
-      </Grid>
+       <Grid
+              container
+              justifyContent="flex-start"
+              alignItems="flex-start"
+              direction="column"
+              sx={{
+                minHeight: "220px",
+                backgroundImage: "url('/assets/login/login.webp')",
+                backgroundPosition: "50%",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "100%",
+                position: "relative",
+                overflow: "hidden",
+              }}
+            >
+              {/* Background Shadow Image */}
+              <img
+                src="/assets/login/shadow.webp"
+                alt="Top Image"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  bottom: 0,
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+      
+              {/* Wrapper for logo + cross */}
+              <Box
+                sx={{
+                  position: "relative",
+                  width: "100%",
+                  height: "120px",
+                }}
+              >
+                {/* Logo */}
+                <img
+                  src="/assets/logo/a_logo2.webp"
+                  alt="Overlay Logo"
+                  style={{
+                    position: "absolute",
+                    top: "10px",
+                    left: "10px",
+                    width: "auto",
+                    height: "30px",
+                  }}
+                />
+      
+                {/* CROSS BUTTON */}
+                <Box
+                  sx={{
+                    position: "absolute",
+                    top: "10px",
+                    right: "10px",
+                    height: "2rem",
+                    width: "2rem",
+                    backgroundColor: "rgba(255,255,255,0.157)",
+                    color: "#b3bec1",
+                    borderRadius: "0.375rem",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: "1.3rem",
+                    cursor: "pointer",
+                    zIndex: 20,
+                    userSelect: "none",
+                  }}
+                  onClick={() => navigate("/")}
+                >
+                  x
+                </Box>
+              </Box>
+            </Grid>
         <Grid
           container
           justifyContent="flex-start"

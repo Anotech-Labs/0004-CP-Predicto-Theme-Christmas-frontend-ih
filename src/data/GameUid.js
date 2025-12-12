@@ -62,7 +62,10 @@ export const JILI_GAME_UIDS = {
     "47": "b92f491a63ac84b106b056e9d46d35c5", // Super Rich
     "48": "e5ff8e72418fcc608d72ea21cc65fb70", // RomaX
     "49": "490096198e28f770a3f85adb6ee49e0f", // Golden Empire
-    "50": "a990de177577a2e6a889aaac5f57b429"  // Fortune Gems
+    "50": "a990de177577a2e6a889aaac5f57b429",  // Fortune Gems
+    "51": "3aca3084a5c1a8c77c52d6147ee3d2ab", // 7up7down
+    "52": "e5091890bbb65a5f9ceb657351fa73c1", // PAPPU
+    "53": "d4fc911a31b3a61edd83bdd95e36f3bf", // European Roulette
  
 };
 

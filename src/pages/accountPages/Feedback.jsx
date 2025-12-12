@@ -139,7 +139,7 @@ const Feedback = () => {
                 "& textarea": {
                   textAlign: "left",
                   "&::placeholder": {
-                    color: "#B79C8B", // Set placeholder color to white
+                    color: "#B3BEC1", // Set placeholder color to white
                   },
                 },
                 "& fieldset": {

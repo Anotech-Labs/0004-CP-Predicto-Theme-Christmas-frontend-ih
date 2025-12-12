@@ -988,7 +988,7 @@ const handleDeposit = (e) => {
                             ? "linear-gradient(90deg,#24ee89,#9fe871)"
                             : "#323738",
                         borderRadius: 8,
-                        color: paymentMode === mode ? "black" : "#B79C8B",
+                        color: paymentMode === mode ? "black" : "#B3BEC1",
                         padding: "20px 0px",
                         boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                         height: "65px",
@@ -1134,7 +1134,7 @@ const handleDeposit = (e) => {
                               color:
                                 selectedChannel === index
                                   ? "#221f2e"
-                                  : "#B79C8B",
+                                  : "#B3BEC1",
                               fontSize: "15px",
                             }}
                           >
@@ -1145,7 +1145,7 @@ const handleDeposit = (e) => {
                               color:
                                 selectedChannel === index
                                   ? "#221f2e"
-                                  : "#B79C8B",
+                                  : "#B3BEC1",
                               fontSize: "15px",
                             }}
                           >
@@ -1224,7 +1224,7 @@ const handleDeposit = (e) => {
                           selectedValue === value
                             ? "linear-gradient(90deg,#24ee89,#9fe871)"
                             : "#323738",
-                        color: selectedValue === value ? "#221F2E" : "#FED358",
+                        color: selectedValue === value ? "#221F2E" : "#24ee89",
                         borderColor: "#ffffff",
                         justifyContent: "center",
 
@@ -1308,7 +1308,7 @@ const handleDeposit = (e) => {
                       "& input": {
                         fontSize: "14px",
                         fontWeight: "bold",
-                        color: "#FED358", // Ensure input text color is white
+                        color: "#24ee89", // Ensure input text color is white
                       },
                       "& input::placeholder": {
                         fontSize: "14px",
@@ -1331,7 +1331,7 @@ const handleDeposit = (e) => {
                     <InputAdornment position="start">
                       <span
                         style={{
-                          color: "#FED358",
+                          color: "#24ee89",
                           fontSize: "20px",
                           fontWeight: "bold",
                           marginLeft: "0.5rem",
@@ -1386,7 +1386,7 @@ const handleDeposit = (e) => {
                     "& input": {
                       fontSize: "14px",
                       fontWeight: "bold",
-                      color: "#FED358", // Ensure input text color is white
+                      color: "#24ee89", // Ensure input text color is white
                     },
                     "& input::placeholder": {
                       fontSize: "14px",
@@ -1468,12 +1468,12 @@ const handleDeposit = (e) => {
                       alignItems: "baseline",
                       fontSize: "13px",
                       mb: 1.5, // Increased bottom margin
-                      color: "#B79C8B",
+                      color: "#B3BEC1",
                     }}
                     align="left"
                   >
                     <RhombusIcon
-                      sx={{ fontSize: 9, color: "#FED358", mr: 1 }} // Slightly larger icon for better visibility
+                      sx={{ fontSize: 9, color: "#24ee89", mr: 1 }} // Slightly larger icon for better visibility
                     />
                     If the transfer time is up, please fill out the deposit form
                     again.
@@ -1485,12 +1485,12 @@ const handleDeposit = (e) => {
                       alignItems: "baseline",
                       fontSize: "13px",
                       mb: 1.5, // Increased bottom margin
-                      color: "#B79C8B",
+                      color: "#B3BEC1",
                     }}
                     align="left"
                   >
                     <RhombusIcon
-                      sx={{ fontSize: 9, color: "#FED358", mr: 1 }} // Slightly larger icon for better visibility
+                      sx={{ fontSize: 9, color: "#24ee89", mr: 1 }} // Slightly larger icon for better visibility
                     />
                     The transfer amount must match the order you created,
                     otherwise the money cannot be credited successfully.
@@ -1502,12 +1502,12 @@ const handleDeposit = (e) => {
                       alignItems: "baseline",
                       fontSize: "13px",
                       mb: 1.5, // Increased bottom margin
-                      color: "#B79C8B",
+                      color: "#B3BEC1",
                     }}
                     align="left"
                   >
                     <RhombusIcon
-                      sx={{ fontSize: 9, color: "#FED358", mr: 1 }} // Slightly larger icon for better visibility
+                      sx={{ fontSize: 9, color: "#24ee89", mr: 1 }} // Slightly larger icon for better visibility
                     />
                     If you transfer the wrong amount, our company will not be
                     responsible for the lost amount!
@@ -1518,12 +1518,12 @@ const handleDeposit = (e) => {
                       display: "flex",
                       alignItems: "baseline",
                       fontSize: "13px",
-                      color: "#B79C8B",
+                      color: "#B3BEC1",
                     }}
                     align="left"
                   >
                     <RhombusIcon
-                      sx={{ fontSize: 9, color: "#FED358", mr: 1 }} // Slightly larger icon for better visibility
+                      sx={{ fontSize: 9, color: "#24ee89", mr: 1 }} // Slightly larger icon for better visibility
                     />
                     Note: Do not cancel the deposit order after the money has
                     been transferred.
@@ -1851,7 +1851,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={3} textAlign="left">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B79C8B" }}
+                              sx={{ color: "#B3BEC1" }}
                             >
                               Balance
                             </Typography>
@@ -1870,7 +1870,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={3} textAlign="left">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B79C8B" }}
+                              sx={{ color: "#B3BEC1" }}
                             >
                               Type
                             </Typography>
@@ -1878,7 +1878,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={9} textAlign="end">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B79C8B" }}
+                              sx={{ color: "#B3BEC1" }}
                             >
                               {deposit.depositMethod}
                             </Typography>
@@ -1886,7 +1886,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={3} textAlign="left">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B79C8B" }}
+                              sx={{ color: "#B3BEC1" }}
                             >
                               Time
                             </Typography>
@@ -1894,7 +1894,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={9} textAlign="end">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B79C8B" }}
+                              sx={{ color: "#B3BEC1" }}
                             >
                               {new Date(deposit.depositDate).toLocaleString()}
                             </Typography>
@@ -1902,7 +1902,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={4} textAlign="left">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B79C8B" }}
+                              sx={{ color: "#B3BEC1" }}
                             >
                               Order number
                             </Typography>
@@ -1910,7 +1910,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={8} textAlign="end">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B79C8B" }}
+                              sx={{ color: "#B3BEC1" }}
                             >
                               {deposit.depositId}
                               <IconButton
@@ -1972,9 +1972,9 @@ const handleDeposit = (e) => {
                       fontSize: "16px",
                       textTransform: "initial",
                       borderRadius: "20px",
-                      color: "#FED358",
+                      color: "#24ee89",
                       background: "transparent",
-                      border: "1px solid #FED358",
+                      border: "1px solid #24ee89",
                       // "&:hover": {
                       //   background:
                       //     "linear-gradient(90deg,#24ee89,#9fe871)",

@@ -322,7 +322,7 @@ const WithdrawHistory = () => {
                   selectedType === label
                     ? "linear-gradient(90deg,#24ee89,#9fe871)"
                     : "#323738",
-                color: selectedType === label ? "black" : "#B79C8B",
+                color: selectedType === label ? "black" : "#B3BEC1",
                 borderColor:
                   selectedType === label ? "transparent" : "transparent",
                 borderRadius: 2,
@@ -373,7 +373,7 @@ const WithdrawHistory = () => {
               backgroundColor: "#323738",
               justifyContent: "space-between",
               textTransform: "none",
-              color: "#B79C8B",
+              color: "#B3BEC1",
               padding: "0 16px",
               fontWeight: "bold",
               borderRadius: "5px",
@@ -393,7 +393,7 @@ const WithdrawHistory = () => {
               fontSize: "11.5px",
               justifyContent: "space-between",
               padding: "0 10px",
-              color: "#B79C8B",
+              color: "#B3BEC1",
               fontWeight: "bold",
               borderRadius: "5px",
               whiteSpace: "nowrap", // Prevent text wrapping
@@ -413,7 +413,7 @@ const WithdrawHistory = () => {
         {/* Loading State */}
         {isLoading && (
           <Box sx={{ textAlign: "center", my: 4 }}>
-            <Typography sx={{ color: "#B79C8B" }}>Loading...</Typography>
+            <Typography sx={{ color: "#B3BEC1" }}>Loading...</Typography>
           </Box>
         )}
 
@@ -425,7 +425,7 @@ const WithdrawHistory = () => {
               onClick={fetchWithdrawals}
               sx={{
                 mt: 2,
-                color: "#FED358",
+                color: "#24ee89",
                 "&:hover": {
                   backgroundColor: "rgba(240, 150, 14, 0.1)",
                 },
@@ -439,7 +439,7 @@ const WithdrawHistory = () => {
         {/* Empty State */}
         {!isLoading && !error && withdrawals.length === 0 && (
           <Box sx={{ textAlign: "center", my: 4 }}>
-            <Typography sx={{ color: "#B79C8B" }}>
+            <Typography sx={{ color: "#B3BEC1" }}>
               No withdrawal history found
             </Typography>
           </Box>
@@ -457,7 +457,7 @@ const WithdrawHistory = () => {
                 }
                 sx={{
                   backgroundColor: "#323738",
-                  color: "#B79C8B",
+                  color: "#B3BEC1",
                   marginBottom: 2,
                   borderRadius: 2,
                   overflow: "hidden",
@@ -583,7 +583,7 @@ const WithdrawHistory = () => {
             {/* Loading more indicator */}
             {isLoadingMore && (
               <Box sx={{ textAlign: "center", py: 2 }}>
-                <Typography sx={{ color: "#B79C8B" }}>
+                <Typography sx={{ color: "#B3BEC1" }}>
                   Loading more...
                 </Typography>
               </Box>
@@ -592,7 +592,7 @@ const WithdrawHistory = () => {
             {/* No more data indicator */}
             {!hasMore && withdrawals.length > 0 && (
               <Box sx={{ textAlign: "center", py: 2 }}>
-                <Typography sx={{ color: "#B79C8B" }}>
+                <Typography sx={{ color: "#B3BEC1" }}>
                   No more withdrawals to load
                 </Typography>
               </Box>
@@ -735,7 +735,7 @@ const WithdrawHistory = () => {
                 Cancel
               </Typography>
               <Typography
-                sx={{ color: "#FED358", fontWeight: "bold", cursor: "pointer" }}
+                sx={{ color: "#24ee89", fontWeight: "bold", cursor: "pointer" }}
               >
                 Confirm
               </Typography>
@@ -747,7 +747,7 @@ const WithdrawHistory = () => {
                   label={status}
                   onClick={() => handleStatusChange(status)}
                   sx={{
-                    color: "#B79C8B",
+                    color: "#B3BEC1",
                     fontWeight: "normal",
                     // borderBottom: "1px solid #e0e0e0",
                     textAlign: "center",

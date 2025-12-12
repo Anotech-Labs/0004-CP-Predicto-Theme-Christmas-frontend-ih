@@ -203,7 +203,7 @@ const CustomerService = () => {
               sx={{ cursor: "pointer" }}
               secondaryAction={
                 <IconButton edge="end" aria-label="go to">
-                  <ChevronRightIcon sx={{ color: "#B79C8B" }} />
+                  <ChevronRightIcon sx={{ color: "#B3BEC1" }} />
                 </IconButton>
               }
             >
@@ -223,7 +223,7 @@ const CustomerService = () => {
               <ListItemText
                 primary={item.title}
                 primaryTypographyProps={{ fontWeight: "medium", my: "6px" }}
-                sx={{ color: "#B79C8B" }}
+                sx={{ color: "#B3BEC1" }}
               />
             </ListItem>
           ))}
@@ -247,7 +247,7 @@ const CustomerService = () => {
           </Typography>
           <Typography
             variant="body2"
-            sx={{ color: "#B79C8B", mt: 1, fontSize: "12px" }}
+            sx={{ color: "#B3BEC1", mt: 1, fontSize: "12px" }}
           >
             1. Please select the corresponding question and submit it for
             review. After successful submission, the customer service specialist
@@ -255,7 +255,7 @@ const CustomerService = () => {
           </Typography>
           <Typography
             variant="body2"
-            sx={{ color: "#B79C8B", mt: 1, fontSize: "12px" }}
+            sx={{ color: "#B3BEC1", mt: 1, fontSize: "12px" }}
           >
             2. 15 minutes after submitting for review, you can use{" "}
             <strong>Progress Query</strong> to view the review results of the
@@ -310,7 +310,7 @@ const CustomerService = () => {
         <DialogTitle
           sx={{
             background:
-              "linear-gradient(135deg, #F5B73B 0%, #FED358 100%)",
+              "linear-gradient(135deg, #F5B73B 0%, #24ee89 100%)",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",

@@ -272,7 +272,7 @@ const SuperJackpot = () => {
               alt="No Data Available"
               style={{ width: "200px", height: "auto" }}
             />
-            <Typography variant="body1" color="#B79C8B">
+            <Typography variant="body1" color="#B3BEC1">
               You don't have a big jackpot yet, let's bet
             </Typography>
           </Box>

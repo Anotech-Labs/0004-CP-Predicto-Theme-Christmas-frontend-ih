@@ -162,7 +162,7 @@ const AttendanceHistory = ({ children }) => {
                   my: 2,
                   backgroundColor: '#e9ecef',
                   '& .MuiLinearProgress-bar': {
-                    backgroundColor: '#FED358'
+                    backgroundColor: '#24ee89'
                   },
                   borderRadius: 1
                 }}
@@ -181,9 +181,9 @@ const AttendanceHistory = ({ children }) => {
                         transition: 'all 0.3s ease-in-out',
                         overflow: 'hidden',
                         position: 'relative',
-                        borderColor: '#FED358',
+                        borderColor: '#24ee89',
                         // '&:hover': {
-                        //   borderColor: '#FED358',
+                        //   borderColor: '#24ee89',
                         //   boxShadow: '0 4px 12px rgba(15, 101, 24, 0.12)',
                         //   transform: 'translateY(-2px)'
                         // },
@@ -194,14 +194,14 @@ const AttendanceHistory = ({ children }) => {
                           left: 0,
                           width: '6px',
                           height: '100%',
-                          backgroundColor: '#FED358',
+                          backgroundColor: '#24ee89',
                           opacity: 0.7
                         }
                       }}
                     >
                       <CardContent sx={{ p: 1, pl: 4 }}>
                         <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
-                          {/* <LocalFireDepartmentIcon sx={{ color: '#FED358', mr: 1, fontSize: '1.2rem' }} /> */}
+                          {/* <LocalFireDepartmentIcon sx={{ color: '#24ee89', mr: 1, fontSize: '1.2rem' }} /> */}
                           <Typography
                             variant="subtitle2"
                             sx={{
@@ -220,7 +220,7 @@ const AttendanceHistory = ({ children }) => {
                           sx={{
                             mt: 1.5,
                             fontWeight: 700,
-                            color: '#FED358',
+                            color: '#24ee89',
                             fontFamily: 'Inter, sans-serif',
                             display: 'flex',
                             alignItems: 'baseline',
@@ -255,9 +255,9 @@ const AttendanceHistory = ({ children }) => {
                         transition: 'all 0.3s ease-in-out',
                         overflow: 'hidden',
                         position: 'relative',
-                        borderColor: '#FED358',
+                        borderColor: '#24ee89',
                         // '&:hover': {
-                        //   borderColor: '#FED358',
+                        //   borderColor: '#24ee89',
                         //   boxShadow: '0 4px 12px rgba(15, 101, 24, 0.12)',
                         //   transform: 'translateY(-2px)'
                         // },
@@ -268,14 +268,14 @@ const AttendanceHistory = ({ children }) => {
                           left: 0,
                           width: '6px',
                           height: '100%',
-                          backgroundColor: '#FED358',
+                          backgroundColor: '#24ee89',
                           opacity: 0.7
                         }
                       }}
                     >
                       <CardContent sx={{ p: 1, pl: 4 }}>
                         <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
-                          {/* <EmojiEventsIcon sx={{ color: '#FED358', mr: 1, fontSize: '1.2rem' }} /> */}
+                          {/* <EmojiEventsIcon sx={{ color: '#24ee89', mr: 1, fontSize: '1.2rem' }} /> */}
                           <Typography
                             variant="subtitle2"
                             sx={{
@@ -294,7 +294,7 @@ const AttendanceHistory = ({ children }) => {
                           sx={{
                             mt: 1.5,
                             fontWeight: 700,
-                            color: '#FED358',
+                            color: '#24ee89',
                             fontFamily: 'Inter, sans-serif',
                             display: 'flex',
                             alignItems: 'baseline',
@@ -333,7 +333,7 @@ const AttendanceHistory = ({ children }) => {
                     overflow: 'hidden',
                     position: 'relative',
                     '&:hover': {
-                      borderColor: '#FED358',
+                      borderColor: '#24ee89',
                       boxShadow: '0 4px 12px rgba(15, 101, 24, 0.12)',
                       transform: 'translateY(-2px)'
                     },
@@ -344,7 +344,7 @@ const AttendanceHistory = ({ children }) => {
                       left: 0,
                       width: '6px',
                       height: '100%',
-                      backgroundColor: '#FED358',
+                      backgroundColor: '#24ee89',
                       opacity: 0.7
                     }
                   }}
@@ -369,7 +369,7 @@ const AttendanceHistory = ({ children }) => {
                         label={`${historyData.progress.percentageComplete.toFixed(2)}%`}
                         sx={{
                           backgroundColor: 'rgba(15, 101, 24, 0.12)',
-                          color: '#FED358',
+                          color: '#24ee89',
                           fontWeight: 600,
                           fontSize: '0.75rem',
                           height: 24
@@ -386,7 +386,7 @@ const AttendanceHistory = ({ children }) => {
                           borderRadius: 5,
                           backgroundColor: '#e9ecef',
                           '& .MuiLinearProgress-bar': {
-                            backgroundColor: '#FED358',
+                            backgroundColor: '#24ee89',
                             borderRadius: 5,
                             transition: 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)'
                           }
@@ -436,7 +436,7 @@ const AttendanceHistory = ({ children }) => {
                       <Typography
                         variant="body2"
                         sx={{
-                          color: '#FED358',
+                          color: '#24ee89',
                           fontWeight: 600,
                           fontFamily: 'Inter, sans-serif',
                           fontSize: '0.75rem',
@@ -461,7 +461,7 @@ const AttendanceHistory = ({ children }) => {
                   border: '1px solid #e0e0e0',
                   transition: 'all 0.2s ease-in-out',
                   '&:hover': {
-                    borderColor: '#FED358',
+                    borderColor: '#24ee89',
                     boxShadow: '0 2px 8px rgba(15, 101, 24, 0.08)'
                   }
                 }}
@@ -539,7 +539,7 @@ const AttendanceHistory = ({ children }) => {
                             <TableCell 
                               sx={{ 
                                 fontWeight: 500,
-                                color: milestone.isNext ? '#FED358' : '#1a1a1a',
+                                color: milestone.isNext ? '#24ee89' : '#1a1a1a',
                                 fontSize: '0.875rem',
                                 fontFamily: 'Inter, sans-serif',
                                 padding: '12px 16px'
@@ -558,7 +558,7 @@ const AttendanceHistory = ({ children }) => {
                             </TableCell>
                             <TableCell 
                               sx={{ 
-                                color: '#FED358',
+                                color: '#24ee89',
                                 fontWeight: 500,
                                 fontSize: '0.875rem',
                                 fontFamily: 'Inter, sans-serif',
@@ -609,7 +609,7 @@ const AttendanceHistory = ({ children }) => {
                                 alignItems: 'center',
                                 justifyContent: 'space-between',
                                 padding: '0px',
-                                borderBottom: '1px solid #666462'
+                                borderBottom: '1px solid #626663'
                               }}
                             >
                               {/* Left Side: Continuous Attendance Info */}
@@ -627,7 +627,7 @@ const AttendanceHistory = ({ children }) => {
                                 <Typography variant="body2" fontWeight={400}>
                                   Continuous attendance {claim.day} Day
                                 </Typography>
-                                <Typography variant="caption" color="#666462">
+                                <Typography variant="caption" color="#626663">
                                   {formatDate(claim.date)}
                                 </Typography>
                               </TableCell>
@@ -638,7 +638,7 @@ const AttendanceHistory = ({ children }) => {
                                   display: 'flex',
                                   alignItems: 'center',
                                   justifyContent: 'center',
-                                  background: '#FED358',
+                                  background: '#24ee89',
                                   borderRadius: '20px',
                                   padding: '5px 15px',
                                   fontSize: '0.875rem',

@@ -47,7 +47,7 @@ const InputContainer = styled(Box)(({ theme }) => ({
   marginBottom: theme.spacing(2),
   display: "flex",
   alignItems: "center",
-  color: "#666462",
+  color: "#626663",
   boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
 }));
 

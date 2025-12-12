@@ -435,7 +435,7 @@ useEffect(() => {
                     marginTop: "12px",
                     backgroundColor:
                       gameType === "wingo" ? "#232626" : "#3a4142",
-                    color: gameType === "wingo" ? "white" : "#fed358",
+                    color: gameType === "wingo" ? "white" : "#24ee89",
                     textAlign: "center",
                     fontWeight: "bold",
                     lineHeight: "25px",
@@ -456,7 +456,7 @@ useEffect(() => {
                     marginTop: "8px",
                     backgroundColor:
                       gameType === "wingo" ? "#232626" : "#3a4142",
-                    color: gameType === "wingo" ? "white" : "#fed358",
+                    color: gameType === "wingo" ? "white" : "#24ee89",
                     fontWeight: "bold",
                     textAlign: "center",
                     lineHeight: "25px",
@@ -475,7 +475,7 @@ useEffect(() => {
                     height: "22px",
                     backgroundColor:
                       gameType === "wingo" ? "#232626" : "transparent",
-                    color: gameType === "wingo" ? "white" : "#fed358",
+                    color: gameType === "wingo" ? "white" : "#24ee89",
                     marginTop: "8px",
                     fontWeight: "bold",
                     textAlign: "center",
@@ -493,7 +493,7 @@ useEffect(() => {
                     height: "31px",
                     backgroundColor:
                       gameType === "wingo" ? "#232626" : "#3a4142",
-                    color: gameType === "wingo" ? "white" : "#fed358",
+                    color: gameType === "wingo" ? "white" : "#24ee89",
                     marginTop: "10px",
                     fontWeight: "bold",
                     textAlign: "center",
@@ -514,7 +514,7 @@ useEffect(() => {
                     height: "31px",
                     backgroundColor:
                       gameType === "wingo" ? "#232626" : "#3a4142",
-                    color: gameType === "wingo" ? "white" : "#fed358",
+                    color: gameType === "wingo" ? "white" : "#24ee89",
                     fontWeight: "bold",
                     marginTop: "8px",
                     textAlign: "center",

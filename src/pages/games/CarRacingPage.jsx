@@ -815,7 +815,7 @@ const CarRacingPage = ({ timerKey }) => {
                                 <div
                                     style={{
                                         textAlign: "center",
-                                        color: activeId === image.id ? "black" : "#B79C8B",
+                                        color: activeId === image.id ? "black" : "#B3BEC1",
                                         display: "flex",
                                         flexDirection: "column",
                                         alignItems: "center",
@@ -915,7 +915,7 @@ const CarRacingPage = ({ timerKey }) => {
                                     alignItems: "center",
                                     justifyContent: "center",
                                     overflow: "hidden",
-                                    color: "#FED358",
+                                    color: "#24ee89",
                                     fontWeight: "bold",
                                     textAlign: "center",
                                     position: "absolute",
@@ -1039,7 +1039,7 @@ const CarRacingPage = ({ timerKey }) => {
                                                     variant="body2"
                                                     sx={{
                                                         mt: 1,
-                                                        color: "#B79C8B",
+                                                        color: "#B3BEC1",
                                                     }}
                                                 >
                                                     9
@@ -1087,7 +1087,7 @@ const CarRacingPage = ({ timerKey }) => {
                                                     variant="body2"
                                                     sx={{
                                                         mt: 1,
-                                                        color: "#B79C8B",
+                                                        color: "#B3BEC1",
                                                     }}
                                                 >
                                                     9
@@ -1254,7 +1254,7 @@ const CarRacingPage = ({ timerKey }) => {
                                 margin: "0 auto",
                                 maxWidth: isSmallScreen ? "600px" : "396px",
                                 background: "#323738",
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 borderTopLeftRadius: "16px",
                                 borderTopRightRadius: "16px",
                             },
@@ -1265,7 +1265,7 @@ const CarRacingPage = ({ timerKey }) => {
                             alignItems="center"
                             style={{
                                 position: "relative",
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 background: "#323738",
                             }}
                         >
@@ -1323,7 +1323,7 @@ const CarRacingPage = ({ timerKey }) => {
                                                     variant="body2"
                                                     sx={{
                                                         mt: 1,
-                                                        color: "#B79C8B",
+                                                        color: "#B3BEC1",
                                                     }}
                                                 >
                                                     9
@@ -1368,7 +1368,7 @@ const CarRacingPage = ({ timerKey }) => {
                                                     variant="body2"
                                                     sx={{
                                                         mt: 1,
-                                                        color: "#B79C8B",
+                                                        color: "#B3BEC1",
                                                     }}
                                                 >
                                                     9
@@ -1552,7 +1552,7 @@ const CarRacingPage = ({ timerKey }) => {
                                                     style={{
                                                         ...(activeBetAmount === amount
                                                             ? { background: selectedColor, color: "#201d2b" }
-                                                            : { background: "#3a3834", color: "#B79C8B" }),
+                                                            : { background: "#3a3834", color: "#B3BEC1" }),
                                                         boxShadow: "none",
                                                         minWidth: "30px",
                                                         padding: "2px 6px",
@@ -1625,7 +1625,7 @@ const CarRacingPage = ({ timerKey }) => {
                                                         },
                                                     }}
                                                     InputLabelProps={{
-                                                        style: { color: "#B79C8B", fontSize: isSmallScreen2 ? "8px" : "12px", },
+                                                        style: { color: "#B3BEC1", fontSize: isSmallScreen2 ? "8px" : "12px", },
                                                     }}
                                                 />
                                             </Grid>
@@ -1733,7 +1733,7 @@ const CarRacingPage = ({ timerKey }) => {
                                     <Grid
                                         container
                                         justifyContent="flex-end"
-                                        sx={{ color: "#B79C8B" }}
+                                        sx={{ color: "#B3BEC1" }}
                                     >
                                         {[1, 5, 10, 20, 50, 100].map((value) => (
                                             <div
@@ -1743,7 +1743,7 @@ const CarRacingPage = ({ timerKey }) => {
                                                 style={{
                                                     ...(activeButton === value
                                                         ? { background: selectedColor, color: "#201d2b" }
-                                                        : { background: "#3a3834", color: "#B79C8B" }),
+                                                        : { background: "#3a3834", color: "#B3BEC1" }),
                                                     padding: "5px 8px",
                                                     borderRadius: "5px",
                                                     margin: "5px",
@@ -1768,13 +1768,13 @@ const CarRacingPage = ({ timerKey }) => {
                                             checkedIcon={
                                                 <CheckCircleIcon
                                                     sx={{
-                                                        color: "#FED358 ", // Checked color
+                                                        color: "#24ee89 ", // Checked color
                                                         fontSize: 22, // Slightly bigger for effect
                                                     }}
                                                 />
                                             }
                                         />
-                                        <span style={{ marginLeft: 8, fontSize: "13px", color: "#B79C8B" }}>
+                                        <span style={{ marginLeft: 8, fontSize: "13px", color: "#B3BEC1" }}>
                                             I agree
                                         </span>
                                         <span
@@ -1797,7 +1797,7 @@ const CarRacingPage = ({ timerKey }) => {
                                         <Button
                                             onClick={handleCancelBet}
                                             fullWidth
-                                            style={{ background: "#3a3834", color: "#B79C8B", textTransform: "none", borderRadius: "0px" }}
+                                            style={{ background: "#3a3834", color: "#B3BEC1", textTransform: "none", borderRadius: "0px" }}
                                             variant="contained"
                                         >
                                             Cancel

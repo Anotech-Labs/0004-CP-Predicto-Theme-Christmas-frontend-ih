@@ -170,7 +170,7 @@ const ScrollableTabs = () => {
               flexShrink: 0,
               width: '70px',
               // Add indicator for selected tab
-              // borderBottom: selectedItem === item.name ? '3px solid #FED358' : '2px solid transparent',
+              // borderBottom: selectedItem === item.name ? '3px solid #24ee89' : '2px solid transparent',
               paddingBottom: '5px'
             }}
             onClick={() => handleFilter(item.name)}
@@ -211,7 +211,7 @@ const ScrollableTabs = () => {
             >
               {item.name}
             </Box>
-            <Box sx={{ width: "50%", height: "3px", background: selectedItem === item.name ? "#FED358" : "transparent", borderRadius: "5px", mt: 1 ,boxShadow: selectedItem === item.name ? "0 .05333rem .26667rem #fed358a6":"none"}}>
+            <Box sx={{ width: "50%", height: "3px", background: selectedItem === item.name ? "#24ee89" : "transparent", borderRadius: "5px", mt: 1 ,boxShadow: selectedItem === item.name ? "0 .05333rem .26667rem #24ee89a6":"none"}}>
 
             </Box>
           </Box>

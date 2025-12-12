@@ -217,7 +217,7 @@ const SubordinateData = () => {
               sx={{
                 color: 'white',
                 '&.Mui-selected': {
-                  backgroundColor: '#FED358',
+                  backgroundColor: '#24ee89',
                   color: 'black',
                 },
                 '&.MuiPaginationItem-root': {
@@ -313,11 +313,11 @@ const SubordinateData = () => {
                   <IconButton
                     onClick={() => { }}
                     sx={{
-                      background: "#FED358",
+                      background: "#24ee89",
                       padding: "0px 16px",
                       borderRadius: "50px",
                       "&:hover": {
-                        background: "#FED358",
+                        background: "#24ee89",
                       },
                     }}
                   >
@@ -346,7 +346,7 @@ const SubordinateData = () => {
                   {searchLevel === "All"
                     ? "All Levels"
                     : `Level ${searchLevel}`}
-                  <KeyboardArrowDownOutlinedIcon sx={{ color: "#B79C8B" }} />
+                  <KeyboardArrowDownOutlinedIcon sx={{ color: "#B3BEC1" }} />
                 </Button>
 
                 <Button
@@ -366,7 +366,7 @@ const SubordinateData = () => {
                   onClick={() => setDatePickerOpen(true)}
                 >
                   {searchDate || "Choose Date"}
-                  <KeyboardArrowDownOutlinedIcon sx={{ color: "#B79C8B" }} />
+                  <KeyboardArrowDownOutlinedIcon sx={{ color: "#B3BEC1" }} />
                 </Button>
               </Grid>
             </Grid>
@@ -390,7 +390,7 @@ const SubordinateData = () => {
                           variant="h6"
                           fontWeight="bold"
                            color="#ffffff"
-                          sx={{ borderRight: "1px solid #666462" }}
+                          sx={{ borderRight: "1px solid #626663" }}
                         >
                           {summaryStats.depositNumber}
                         </Typography>
@@ -398,8 +398,8 @@ const SubordinateData = () => {
                           variant="body2"
                           sx={{
                             fontSize: "13px",
-                            borderRight: "1px solid #666462",
-                            color:"#B79C8B"
+                            borderRight: "1px solid #626663",
+                            color:"#B3BEC1"
                           }}
                         >
                           Deposit number
@@ -432,7 +432,7 @@ const SubordinateData = () => {
                           variant="h6"
                           fontWeight="bold"
                           sx={{
-                            borderRight: "1px solid #666462",
+                            borderRight: "1px solid #626663",
                             color: "#ffffff",
                           }}
                         >
@@ -442,7 +442,7 @@ const SubordinateData = () => {
                           variant="body2"
                           sx={{
                             fontSize: "13px",
-                            borderRight: "1px solid #666462",
+                            borderRight: "1px solid #626663",
                             color: "#ffffff",
                           }}
                         >
@@ -476,7 +476,7 @@ const SubordinateData = () => {
                           variant="h6"
                           fontWeight="bold"
                           sx={{
-                            borderRight: "1px solid #666462",
+                            borderRight: "1px solid #626663",
                             color: "#ffffff",
                           }}
                         >
@@ -486,7 +486,7 @@ const SubordinateData = () => {
                           variant="body2"
                           sx={{
                             fontSize: "13px",
-                            borderRight: "1px solid #666462",
+                            borderRight: "1px solid #626663",
                             color: "#ffffff",
                           }}
                         >
@@ -505,7 +505,7 @@ const SubordinateData = () => {
                         </Typography>
                         <Typography
                           variant="body2"
-                          sx={{ fontSize: "13px", color: "#B79C8B" }}
+                          sx={{ fontSize: "13px", color: "#B3BEC1" }}
                         >
                           First deposit amount
                         </Typography>
@@ -520,7 +520,7 @@ const SubordinateData = () => {
               sx={{
                 width: "92%",
                 margin: "12px auto",
-                backgroundColor: "#FED358",
+                backgroundColor: "#24ee89",
                 borderRadius: "25px",
               }}
             >
@@ -562,7 +562,7 @@ const SubordinateData = () => {
 
             <Box sx={{ backgroundColor: "#232626", px: "16px", borderRadius: "5px", }}>
               {isLoading ? (
-                <Box sx={{ color: '#B79C8B', display: 'flex', justifyContent: 'center', py: 4 }}>
+                <Box sx={{ color: '#B3BEC1', display: 'flex', justifyContent: 'center', py: 4 }}>
                   Loading ...
                 </Box>
               ) : tabValue === 0 ? (
@@ -584,7 +584,7 @@ const SubordinateData = () => {
                     />
                     <Typography
                       variant="h7"
-                      color="#B79C8B"
+                      color="#B3BEC1"
                       sx={{ marginTop: "16px" }}
                     >
                       No Data Available
@@ -678,7 +678,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                               }}
                             >
                               {data.userId}
@@ -686,7 +686,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 ml: 4,
                               }}
                             >
@@ -695,7 +695,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 textAlign: "center",
                               }}
                             >
@@ -706,7 +706,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 textAlign: "end",
                               }}
                             >
@@ -742,7 +742,7 @@ const SubordinateData = () => {
                   />
                   <Typography
                     variant="h7"
-                    color="#B79C8B"
+                    color="#B3BEC1"
                     sx={{ marginTop: "16px" }}
                   >
                     No Data Available
@@ -822,7 +822,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 textAlign: "start",
                               }}
                             >
@@ -831,7 +831,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 textAlign: "end",
                               }}
                             >
@@ -841,7 +841,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 textAlign: "start",
                               }}
                             >
@@ -850,7 +850,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#DD9138",
+                                color: "#24ee89",
                                 textAlign: "end",
                               }}
                             >
@@ -860,7 +860,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 textAlign: "start",
                               }}
                             >
@@ -869,7 +869,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#DD9138",
+                                color: "#24ee89",
                                 textAlign: "end",
                               }}
                             >
@@ -879,7 +879,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 textAlign: "start",
                               }}
                             >
@@ -888,7 +888,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#DD9138",
+                                color: "#24ee89",
                                 textAlign: "end",
                               }}
                             >
@@ -898,7 +898,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#B79C8B",
+                                color: "#B3BEC1",
                                 textAlign: "start",
                               }}
                             >

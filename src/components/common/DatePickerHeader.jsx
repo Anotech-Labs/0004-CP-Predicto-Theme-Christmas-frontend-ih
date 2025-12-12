@@ -53,7 +53,7 @@ const DatePickerHeader = ({ onCancel, onConfirm }) => (
     <Button
       onClick={onConfirm}
       sx={{
-        color: "#FED358",
+        color: "#24ee89",
         textTransform: "none",
         fontWeight: "normal",
         minWidth: "auto", // Remove extra padding around the button text

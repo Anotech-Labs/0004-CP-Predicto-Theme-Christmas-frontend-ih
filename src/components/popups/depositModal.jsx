@@ -166,13 +166,13 @@ const DepositModal = ({ open, onClose }) => {
             <Checkbox
               checked={isChecked}
               onChange={(e) => setIsChecked(e.target.checked)}
-              icon={<RadioButtonUncheckedIcon sx={{ color: "#B79C8B" }} />}
-              checkedIcon={<CheckCircleIcon sx={{ color: "#B79C8B" }} />}
+              icon={<RadioButtonUncheckedIcon sx={{ color: "#B3BEC1" }} />}
+              checkedIcon={<CheckCircleIcon sx={{ color: "#B3BEC1" }} />}
               sx={{ padding: 0 }}
             />
             <Typography
               variant="body2"
-              sx={{ fontSize: "12px", color: "#B79C8B", textAlign: "right" }}
+              sx={{ fontSize: "12px", color: "#B3BEC1", textAlign: "right" }}
             >
               No more reminders today
             </Typography>

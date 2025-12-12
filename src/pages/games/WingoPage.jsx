@@ -101,7 +101,7 @@ const StyledButtonGroup = styled(ButtonGroup)(({ theme }) => ({
 }));
 const StyledButton = styled(Button)(({ theme, active, isRandom }) => ({
   backgroundColor: isRandom ? "#323738" : active ? "#17B15E" : "#232626",
-  color: isRandom ? "#D23838" : active ? "#ffffff" : "#B79C8B",
+  color: isRandom ? "#D23838" : active ? "#ffffff" : "#B3BEC1",
   fontSize: "12px",
   padding: "3px 8px",
   border: isRandom ? "1px solid #D23838" : "none",
@@ -1215,7 +1215,7 @@ const WingoPage = ({ timerKey }) => {
                 <div
                   style={{
                     textAlign: "center",
-                    color: activeId === image.id ? "black" : "#B79C8B",
+                    color: activeId === image.id ? "black" : "#B3BEC1",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -1499,7 +1499,7 @@ const WingoPage = ({ timerKey }) => {
                 alignItems: "center",
                 justifyContent: "center",
                 overflow: "hidden",
-                color: "#FED358",
+                color: "#24ee89",
                 fontWeight: "bold",
                 textAlign: "center",
                 position: "absolute",
@@ -1691,9 +1691,9 @@ const WingoPage = ({ timerKey }) => {
                     width: "100%",
                     borderRadius: "20px 0 0 20px",
                     margin: "0",
-                    backgroundColor: "#DD9138",
+                    backgroundColor: "#24ee89",
                     "&:hover": {
-                      backgroundColor: "#DD9138",
+                      backgroundColor: "#24ee89",
                     },
                     textTransform: "none"
                   }}
@@ -2044,7 +2044,7 @@ const WingoPage = ({ timerKey }) => {
                             },
                           }}
                           InputLabelProps={{
-                            style: { color: "#B79C8B", fontSize: isSmallScreen2 ? "8px" : "12px", },
+                            style: { color: "#B3BEC1", fontSize: isSmallScreen2 ? "8px" : "12px", },
                           }}
                         />
                       </Grid>
@@ -2200,13 +2200,13 @@ const WingoPage = ({ timerKey }) => {
                       checkedIcon={
                         <CheckCircleIcon
                           sx={{
-                            color: "#FED358 ", // Checked color
+                            color: "#24ee89 ", // Checked color
                             fontSize: 22, // Slightly bigger for effect
                           }}
                         />
                       }
                     />
-                    <span style={{ marginLeft: 8, fontSize: "13px",color:"#B79C8B" }}>
+                    <span style={{ marginLeft: 8, fontSize: "13px",color:"#B3BEC1" }}>
                       I agree
                     </span>
                     <span
@@ -2229,7 +2229,7 @@ const WingoPage = ({ timerKey }) => {
                       onClick={handleCancelBet}
                       fullWidth
                       style={{
-                        backgroundColor: "#3a4142", color: "#B79C8B", textTransform: "none",
+                        backgroundColor: "#3a4142", color: "#B3BEC1", textTransform: "none",
                         borderRadius: "0px",
                       }}
                       variant="contained"
