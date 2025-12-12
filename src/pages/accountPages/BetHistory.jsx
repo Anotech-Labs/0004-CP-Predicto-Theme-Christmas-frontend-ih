@@ -223,7 +223,7 @@ const diceImageMap = {
 
 const colorMap = {
   small: "#5088D3",
-  big: "#DD9138",
+  big: "#24ee89",
   odd: "#D23838",
   even: "#17B15E",
   red: "#fb4e4e",

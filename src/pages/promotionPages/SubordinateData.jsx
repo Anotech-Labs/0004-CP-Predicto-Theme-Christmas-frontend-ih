@@ -850,7 +850,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#DD9138",
+                                color: "#24ee89",
                                 textAlign: "end",
                               }}
                             >
@@ -869,7 +869,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#DD9138",
+                                color: "#24ee89",
                                 textAlign: "end",
                               }}
                             >
@@ -888,7 +888,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#DD9138",
+                                color: "#24ee89",
                                 textAlign: "end",
                               }}
                             >

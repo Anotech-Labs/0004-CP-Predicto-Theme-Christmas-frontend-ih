@@ -276,7 +276,7 @@ const ActivityRewardTabs = () => {
                 />
                 <Typography
                   variant="h6"
-                  sx={{ color: "#dd9138", fontSize: "1rem" }}
+                  sx={{ color: "#24ee89", fontSize: "1rem" }}
                 >
                   ₹{task.bonusAmount}
                 </Typography>

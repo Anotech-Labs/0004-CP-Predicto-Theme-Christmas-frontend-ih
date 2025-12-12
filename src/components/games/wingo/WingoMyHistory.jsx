@@ -74,9 +74,9 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
               onClick={handleDetailsClick}
               sx={{
                 textTransform: "none",
-                color: "#DD9138",
+                color: "#24ee89",
                 padding: "5px 7px",
-                border: "1px solid #DD9138",
+                border: "1px solid #24ee89",
                 borderRadius: "10px",
                 fontSize: "13px",
                 mb: 1,
@@ -218,7 +218,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                       <Box
                         sx={{
                           border: 1,
-                          borderColor: bet.result === "" ? "#DD9138" : bet.isWin ? "#17B15E"
+                          borderColor: bet.result === "" ? "#24ee89" : bet.isWin ? "#17B15E"
                             : "#D23838",
                           borderRadius: "7px",
                           pt: "0.2px",
@@ -233,7 +233,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                           variant="caption"
                           sx={{
                             fontSize: "12px",
-                            color: bet.result === "" ? "#DD9138" : bet.isWin ? "#17B15E"
+                            color: bet.result === "" ? "#24ee89" : bet.isWin ? "#17B15E"
                               : "#D23838",
                             // fontWeight: "bold",
                           }}
@@ -249,7 +249,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                         <Typography
                           variant="body2"
                           sx={{
-                            color: bet.result === "" ? "#DD9138" : bet.isWin ? "#17B15E"
+                            color: bet.result === "" ? "#24ee89" : bet.isWin ? "#17B15E"
                               : "#D23838",
                             fontWeight: "bold",
                           }}
@@ -354,13 +354,13 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                         {
                           label: "Status",
                           value: bet.result === "" ? "Pending" : !bet.isWin ? "Failed" : "Success",
-                          color: bet.result === "" ? "#DD9138" : !bet.isWin ? "#D23838" : "#17B15E",
+                          color: bet.result === "" ? "#24ee89" : !bet.isWin ? "#D23838" : "#17B15E",
 
                         },
                         {
                           label: "Win/lose",
                           value: bet.result === "" ? "Pending" : bet.winAmount > 0 ? `+₹${parseFloat(bet.winAmount).toFixed(2)}` : `-₹${parseFloat(bet.actualBetAmount).toFixed(2)}`,
-                          color: bet.result === "" ? "#DD9138" : bet.winAmount > 0 ? "#17B15E" : "#D23838",
+                          color: bet.result === "" ? "#24ee89" : bet.winAmount > 0 ? "#17B15E" : "#D23838",
                         },
                         {
                           label: "Order time",

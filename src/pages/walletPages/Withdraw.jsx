@@ -1821,7 +1821,7 @@ const WithDraw = ({ children }) => {
                           fontSize="13px"
                         >
                           Withdrawable balance{" "}
-                          <span style={{ color: "#DD9138" }}>
+                          <span style={{ color: "#24ee89" }}>
                             ₹{userWallet}
                           </span>
                         </Typography>

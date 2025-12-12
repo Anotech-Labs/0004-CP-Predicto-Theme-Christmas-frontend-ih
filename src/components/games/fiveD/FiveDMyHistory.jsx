@@ -133,9 +133,9 @@ const FiveDMyHistory = ({ bets, page, setPage, hideDetailsButton, totalPage }) =
               onClick={handleDetailsClick}
               sx={{
                 textTransform: "none",
-                color: "#DD9138",
+                color: "#24ee89",
                 padding: "5px 7px",
-                border: "1px solid #DD9138",
+                border: "1px solid #24ee89",
                 borderRadius: "10px",
                 fontSize: "13px",
                 mb: 1,
@@ -223,7 +223,7 @@ const FiveDMyHistory = ({ bets, page, setPage, hideDetailsButton, totalPage }) =
                       sx={{
                         border: 1,
                         borderColor: !getResultNumbers(bet) || String(getResultNumbers(bet)).trim() === ""
-                          ? "#DD9138" : bet.isWin ? "#17B15E" : "#D23838",
+                          ? "#24ee89" : bet.isWin ? "#17B15E" : "#D23838",
                         borderRadius: "7px",
                         pt: "0.2px",
                         pb: "0.1px",
@@ -237,7 +237,7 @@ const FiveDMyHistory = ({ bets, page, setPage, hideDetailsButton, totalPage }) =
                         sx={{
                           fontSize: "12px",
                           color: !getResultNumbers(bet) || String(getResultNumbers(bet)).trim() === ""
-                            ? "#DD9138" : bet.isWin ? "#17B15E" : "#D23838",
+                            ? "#24ee89" : bet.isWin ? "#17B15E" : "#D23838",
                         }}
                       >
                         {!getResultNumbers(bet) || String(getResultNumbers(bet)).trim() === ""
@@ -369,7 +369,7 @@ const FiveDMyHistory = ({ bets, page, setPage, hideDetailsButton, totalPage }) =
                             ? "Success"
                             : "Failed",
                         color: !getResultNumbers(bet) || String(getResultNumbers(bet)).trim() === ""
-                          ? "#DD9138" // Pending color (Orange)
+                          ? "#24ee89" // Pending color (Orange)
                           : bet.isWin
                             ? "#17B15E" // Success (Green)
                             : "#D23838", // Failed (Red)

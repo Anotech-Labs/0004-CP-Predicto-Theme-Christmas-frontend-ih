@@ -1691,9 +1691,9 @@ const WingoPage = ({ timerKey }) => {
                     width: "100%",
                     borderRadius: "20px 0 0 20px",
                     margin: "0",
-                    backgroundColor: "#DD9138",
+                    backgroundColor: "#24ee89",
                     "&:hover": {
-                      backgroundColor: "#DD9138",
+                      backgroundColor: "#24ee89",
                     },
                     textTransform: "none"
                   }}

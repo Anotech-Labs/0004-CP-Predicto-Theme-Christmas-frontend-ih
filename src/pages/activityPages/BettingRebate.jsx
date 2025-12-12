@@ -435,7 +435,7 @@ const BettingRebate = () => {
                       variant="h5"
                       sx={{
                         fontWeight: "bold",
-                        color: "#DD9138",
+                        color: "#24ee89",
                         fontSize: "17px",
                       }}
                     >
@@ -463,7 +463,7 @@ const BettingRebate = () => {
                       variant="h5"
                       sx={{
                         fontWeight: "bold",
-                        color: "#DD9138",
+                        color: "#24ee89",
                         fontSize: "17px",
                       }}
                     >

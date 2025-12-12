@@ -125,7 +125,7 @@ const NumberTableWithLines = ({ historyData, selectedTab }) => {
                 {/* High/Low indicator always after the 9th ball */}
                 <div
                     style={{
-                        background: sizeValue === "BIG" ? "#DD9138" : "#5088D3",
+                        background: sizeValue === "BIG" ? "#24ee89" : "#5088D3",
                         color: "white",
                         width: "14px",
                         height: "15px",
@@ -136,7 +136,7 @@ const NumberTableWithLines = ({ historyData, selectedTab }) => {
                         fontSize: "10px",
                         alignItems: "center",
                         justifyContent: "center",
-                        border: sizeValue === "BIG" ? "1px solid #DD9138" : "1px solid #5088D3",
+                        border: sizeValue === "BIG" ? "1px solid #24ee89" : "1px solid #5088D3",
                     }}
                 >
                     {sizeValue === "BIG" ? "H" : "L"}

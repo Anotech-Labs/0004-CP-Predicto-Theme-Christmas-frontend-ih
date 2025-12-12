@@ -150,7 +150,7 @@ const LuckyTenDaysInterest = () => {
                         bottom: 0,
                         width: '100%',
                         height: `${progressPercentage}%`,
-                        background: 'linear-gradient(90deg, #FF6B00, #DD9138)',
+                        background: 'linear-gradient(90deg, #FF6B00, #24ee89)',
                         transition: 'height 0.5s ease-in-out'
                     }} />
                     {/* Day 6 Label on the right side */}
