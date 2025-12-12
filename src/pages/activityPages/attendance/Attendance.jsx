@@ -330,7 +330,7 @@ const Attendance = ({ children }) => {
                     width: "90%",
                     height: "45px",
                     borderRadius: "20px",
-                    background: "linear-gradient(180deg, #24ee89, #FFB472)",
+                    background: "linear-gradient(180deg, #24ee89, #9fe871)",
                     cursor: "pointer",
                     border: "none",
                     marginBottom: "100px",

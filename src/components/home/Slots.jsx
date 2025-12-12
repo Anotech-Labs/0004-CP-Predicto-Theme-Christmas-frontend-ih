@@ -52,7 +52,7 @@ const TabButton = styled(Box)(({ active }) => ({
     borderRadius: "5px",
     transition: "all 0.3s ease",
     background: active
-        ? "linear-gradient(180deg, #24ee89 0%, #FFB472 100%)"
+        ? "linear-gradient(180deg, #24ee89 0%, #9fe871 100%)"
         : "transparent",
     // Transform the container into a parallelogram
     // transform: "skew(-3deg)",
@@ -414,7 +414,7 @@ const Slots = () => {
                         </Grid>
                     </Box>
                 </Box>
-                <Button onClick={handleAllGamesClick} sx={{ mt: 1, background: "linear-gradient(180deg, #24ee89 0%, #FFB472 100%)", textTransform: "none", color: "#05012b", width: "100%", borderRadius: "50px",   fontFamily: "'Times New Roman', Times,  ", }}>View All</Button>
+                <Button onClick={handleAllGamesClick} sx={{ mt: 1, background: "linear-gradient(180deg, #24ee89 0%, #9fe871 100%)", textTransform: "none", color: "#05012b", width: "100%", borderRadius: "50px",   fontFamily: "'Times New Roman', Times,  ", }}>View All</Button>
 
             </Box>
         </Box>

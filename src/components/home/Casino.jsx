@@ -49,7 +49,7 @@ const TabButton = styled(Box)(({ active }) => ({
     borderRadius: "5px",
     transition: "all 0.3s ease",
     background: active
-        ? "linear-gradient(180deg, #24ee89 0%, #FFB472 100%)"
+        ? "linear-gradient(180deg, #24ee89 0%, #9fe871 100%)"
         : "transparent",
     // Transform the container into a parallelogram
     // transform: "skew(-3deg)",

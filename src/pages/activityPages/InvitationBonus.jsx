@@ -731,7 +731,7 @@ const InvitationBonus = () => {
                           border: "transparent",
                           color: "#ffffff",
                         },
-                        background: "linear-gradient(180deg, #24ee89, #FFB472)",
+                        background: "linear-gradient(180deg, #24ee89, #9fe871)",
                         border: bonusStatus.disabled
                           ? "1px solid  grey"
                           : "1px solid #24ee89",

@@ -1369,7 +1369,7 @@ const options = [
                   variant="contained"
                   sx={{
                     background:
-                      "linear-gradient(180deg, #24ee89, #FFB472)",
+                      "linear-gradient(180deg, #24ee89, #9fe871)",
                     width: "90%",
                     color: "black",
                     maxWidth: "280px",

@@ -491,7 +491,7 @@ const BettingRebate = () => {
                 onClick={handleClaimRebate}
                   disabled={isDisable}
                 sx={{
-                  background: "linear-gradient(180deg, #24ee89, #FFB472)",
+                  background: "linear-gradient(180deg, #24ee89, #9fe871)",
                   color: "black",
                   borderRadius: "25px",
                   textTransform: "none",

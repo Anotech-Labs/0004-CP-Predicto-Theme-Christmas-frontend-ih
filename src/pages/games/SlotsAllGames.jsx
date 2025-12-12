@@ -341,7 +341,7 @@ const pathId = location.pathname.split('/').pop()
                                 key={gameKey}
                                 onClick={() => setActiveGame(gameKey)}
                                 sx={{
-                                    background: activeGame === gameKey ? "linear-gradient(180deg, #24ee89 0%, #FFB472 100%)" : "#323738",
+                                    background: activeGame === gameKey ? "linear-gradient(180deg, #24ee89 0%, #9fe871 100%)" : "#323738",
                                     color: activeGame === gameKey ? "#232626" : "#B3BEC1",
                                     textTransform: "none",
                                     display: "flex",
