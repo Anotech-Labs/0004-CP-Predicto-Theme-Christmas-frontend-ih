@@ -801,8 +801,8 @@ const Promotion = ({ children }) => {
                 width: "87%",
                 marginLeft: "auto",
                 marginRight: "auto",
-                // marginTop: "20px", // Adjust as needed
-                marginBottom: "10px",
+                marginTop: "30px", // Adjust as needed
+                marginBottom: "5px",
                 // backgroundColor: "#0F6518",
                 background: "linear-gradient(90deg,#24ee89,#9fe871)",
 
