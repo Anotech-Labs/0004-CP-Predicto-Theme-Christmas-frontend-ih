@@ -96,12 +96,11 @@ const Deposit = ({ children }) => {
   const [availableGateways, setAvailableGateways] = useState([]);
   const [paymentModes, setPaymentModes] = useState({});
 
-
   const gatewayToPaymentMode = {
-    IQPAY: 'UPIxIQPay',
-    WATCHPAY: 'UPIxWatchPay',
-    LGPAY: 'UPIxLGPay',
-    PAYTM: 'UPIxPAYTM',
+    IQPAY: "UPIxIQPay",
+    WATCHPAY: "UPIxWatchPay",
+    LGPAY: "UPIxLGPay",
+    PAYTM: "UPIxPAYTM",
   };
 
   const allPaymentModes = {
@@ -116,45 +115,45 @@ const Deposit = ({ children }) => {
         { name: "FFPay-QR", balance: "100 - 50K", bonus: "3%" },
         { name: "WPay-QR", balance: "100 - 50K", bonus: "3%" },
         { name: "Happy-QR", balance: "100 - 50K", bonus: "3%" },
-      ]
+      ],
     },
-    "UPIxPAYTM": {
+    UPIxPAYTM: {
       amounts: upiPaytmAmounts,
       channels: [
         { name: "QR-ARpay", balance: "200 - 50K", bonus: "3%" },
         { name: "QR-7Day", balance: "200 - 50K", bonus: "3%" },
         { name: "QR-Happy", balance: "200 - 50K", bonus: "3%" },
         { name: "QR-OoPay", balance: "200 - 50K", bonus: "3%" },
-      ]
+      ],
     },
-    "UPIxWatchPay": {
+    UPIxWatchPay: {
       amounts: upiWatchPayAmounts,
       channels: [
         { name: "QR-ARpay", balance: "100 - 50K", bonus: "3%" },
         { name: "QR-7Day", balance: "100 - 50K", bonus: "3%" },
         { name: "QR-Happy", balance: "100 - 50K", bonus: "3%" },
         { name: "QR-OoPay", balance: "100 - 50K", bonus: "3%" },
-      ]
+      ],
     },
-    "UPIxLGPay": {
+    UPIxLGPay: {
       amounts: upiLGPayAmounts,
       channels: [
         { name: "QR-ARpay", balance: "100 - 50K", bonus: "3%" },
         { name: "QR-7Day", balance: "100 - 50K", bonus: "3%" },
         { name: "QR-Happy", balance: "100 - 50K", bonus: "3%" },
         { name: "QR-OoPay", balance: "100 - 50K", bonus: "3%" },
-      ]
+      ],
     },
-    "UPIxIQPay": {
+    UPIxIQPay: {
       amounts: upiIQPayAmounts,
       channels: [
         { name: "QR-ARpay", balance: "100 - 50K", bonus: "3%" },
         { name: "QR-7Day", balance: "100 - 50K", bonus: "3%" },
         { name: "QR-Happy", balance: "100 - 50K", bonus: "3%" },
         { name: "QR-OoPay", balance: "100 - 50K", bonus: "3%" },
-      ]
+      ],
     },
-    "USDT": {
+    USDT: {
       amounts: usdtAmounts,
       channels: [
         {
@@ -162,9 +161,9 @@ const Deposit = ({ children }) => {
           balance: "10-1M",
           bonus: "3%",
           image: "../../assets/3-6bb1e3bd.webp",
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
   // const paymentModes = useMemo(() => {
   //   const dynamicModes = {};
@@ -184,42 +183,42 @@ const Deposit = ({ children }) => {
           `${domain}/api/wallet/paymentGateway/available`
         );
         //console.log("Available Gateways Response:", response.data.data);
-  
+
         const sortedGateways = response.data.data
-          .filter(gateway => gateway.available && gatewayToPaymentMode[gateway.name])
+          .filter(
+            (gateway) => gateway.available && gatewayToPaymentMode[gateway.name]
+          )
           .sort((a, b) => {
             // Prioritize IQPAY
             if (a.name === "IQPAY") return -1;
             if (b.name === "IQPAY") return 1;
             return 0;
           });
-  
+
         const dynamicModes = sortedGateways.reduce((acc, gateway) => {
           const modeKey = gatewayToPaymentMode[gateway.name];
           return { ...acc, [modeKey]: allPaymentModes[modeKey] };
         }, {});
-  
+
         // Append static fallback modes
         setPaymentModes({
           ...dynamicModes,
           "UPI x QR": allPaymentModes["UPI x QR"],
-          "USDT": allPaymentModes["USDT"]
+          USDT: allPaymentModes["USDT"],
         });
-  
       } catch (error) {
         console.error("Error fetching available gateways:", error);
-  
+
         // Fallback to defaults if API fails
         setPaymentModes({
           "UPI x QR": allPaymentModes["UPI x QR"],
-          "USDT": allPaymentModes["USDT"]
+          USDT: allPaymentModes["USDT"],
         });
       }
     };
-  
+
     fetchAvailableGateways();
   }, []);
-
 
   // Function to determine the color based on deposit status
   const getStatusColor = (status) => {
@@ -237,17 +236,16 @@ const Deposit = ({ children }) => {
 
   const paymentAmounts = {
     "UPI x QR": upiQrAmounts,
-    "UPIxPAYTM": upiPaytmAmounts,
-    "UPIxWatchPay": upiWatchPayAmounts,
-    "UPIxLGPay": upiLGPayAmounts,
-    "UPIxIQPay": upiIQPayAmounts,
-    "USDT": usdtAmounts
+    UPIxPAYTM: upiPaytmAmounts,
+    UPIxWatchPay: upiWatchPayAmounts,
+    UPIxLGPay: upiLGPayAmounts,
+    UPIxIQPay: upiIQPayAmounts,
+    USDT: usdtAmounts,
   };
 
   const getAmountArray = () => {
     return paymentModes[paymentMode]?.amounts || [];
   };
-
 
   // Fetching deposit history data from the API
   const fetchDepositHistory = async () => {
@@ -276,7 +274,10 @@ const Deposit = ({ children }) => {
           `${domain}/api/additional/deposit-bonus/percentage`,
           { withCredentials: true }
         );
-        if (response.data.success && response.data.data.depositBonusPercentage > 0) {
+        if (
+          response.data.success &&
+          response.data.data.depositBonusPercentage > 0
+        ) {
           setDepositBonusPercentage(response.data.data.depositBonusPercentage);
         }
       } catch (error) {
@@ -383,13 +384,13 @@ const Deposit = ({ children }) => {
   };
 
   const sendDepositRequest = async () => {
-    setUtrAlert(false) //(dont remove this code)
-    setUtr("")
-    setDuplicateUtrAlert("")
-    fetchDepositHistory()
+    setUtrAlert(false); //(dont remove this code)
+    setUtr("");
+    setDuplicateUtrAlert("");
+    fetchDepositHistory();
     if (!utr) {
-      setUtrAlert(true)
-      return
+      setUtrAlert(true);
+      return;
     }
 
     // Call your createDeposit endpoint
@@ -408,29 +409,28 @@ const Deposit = ({ children }) => {
         }
       );
 
-
       if (response.data.success) {
-        setOpenDepositDialog(false)
-        setAmount("")
-        setUsdtAmount("")
+        setOpenDepositDialog(false);
+        setAmount("");
+        setUsdtAmount("");
         setIsPopupVisible(true);
         setPopupMessage("Deposit Request successfull!");
         setTimeout(() => {
-          setIsPopupVisible(false)
-        }, 2000)
+          setIsPopupVisible(false);
+        }, 2000);
       } else {
         setDuplicateUtrAlert(
           response.message || "An error occurred while processing your request."
-        )
+        );
       }
-      fetchDepositHistory()
+      fetchDepositHistory();
     } catch (error) {
       //console.log("Error creating deposit:", error)
       setDuplicateUtrAlert(
         "An unexpected error occurred. Please try again later."
-      )
+      );
     }
-  }
+  };
 
   useEffect(() => {
     if (openDepositDialog) {
@@ -479,8 +479,8 @@ const Deposit = ({ children }) => {
         `Amount must be at least ${paymentMode === "USDT" ? "10$" : "₹100"}`
       );
       setTimeout(() => {
-        setIsPopupVisible(false)
-      }, 2000)
+        setIsPopupVisible(false);
+      }, 2000);
       return;
     }
 
@@ -516,14 +516,13 @@ const Deposit = ({ children }) => {
 
         // Ensure that payOrderId is present and retCode is SUCCESS
         if (payOrderId && retCode === "SUCCESS") {
-          const payUrl = payParams.payUrl; // Extract payment URL from 
+          const payUrl = payParams.payUrl; // Extract payment URL from
           handleSuccessfulPayment(payUrl);
         } else {
           console.error("Invalid payment response:", paymentResponse);
           throw new Error("Invalid payment response. Please try again.");
         }
       } else if (paymentMode === "UPIxLGPay") {
-
         response = await axios.post(
           `${domain}/create-lgpay-order`,
           {
@@ -556,10 +555,10 @@ const Deposit = ({ children }) => {
           {
             amount: currentAmount,
             orderId: orderNumber, // Send the generated unique order number
-          },
+          }
         );
 
-       if (
+        if (
           response.data.data.data.paymentGatewayRes.tradeResult === "1" &&
           response.data.data.data.paymentGatewayRes.payInfo &&
           response.data.data.data.paymentGatewayRes.respCode === "SUCCESS"
@@ -586,7 +585,7 @@ const Deposit = ({ children }) => {
           {
             amount: currentAmount,
             orderId: orderNumber, // Send the generated unique order number
-          },
+          }
         );
 
         // Check if the order creation was successful based on IQPay response structure
@@ -659,15 +658,17 @@ const Deposit = ({ children }) => {
           const statusResponse = await axiosInstance.post(
             `${domain}/api/wallet/paymentGateway/iqpay/order-status`,
             {
-              merchant_ref_id: orderSn
+              merchant_ref_id: orderSn,
             }
           );
 
           //console.log("IQPay payment status:", statusResponse.data);
 
           // Check if payment is completed or failed
-          if (statusResponse.data.status === true &&
-            statusResponse.data.data.status === "SUCCESS") {
+          if (
+            statusResponse.data.status === true &&
+            statusResponse.data.data.status === "SUCCESS"
+          ) {
             clearInterval(intervalId);
             setIsPolling(false);
             // Handle successful payment completion
@@ -677,8 +678,10 @@ const Deposit = ({ children }) => {
               setIsPopupVisible(false);
               // Refresh wallet or navigate to success page
             }, 2000);
-          } else if (statusResponse.data.status === true &&
-            statusResponse.data.data.status === "CANCELLED") {
+          } else if (
+            statusResponse.data.status === true &&
+            statusResponse.data.data.status === "CANCELLED"
+          ) {
             clearInterval(intervalId);
             setIsPolling(false);
             // Handle failed payment
@@ -751,8 +754,8 @@ const Deposit = ({ children }) => {
       "Payment request failed. Please try again or check your details."
     );
     setTimeout(() => {
-      setIsPopupVisible(false)
-    }, 2000)
+      setIsPopupVisible(false);
+    }, 2000);
   };
 
   const navigate = useNavigate();
@@ -812,62 +815,62 @@ const Deposit = ({ children }) => {
 
   // Add this to your Deposit.jsx file - Modified handleDeposit function
 
-const handleDeposit = (e) => {
-  e.preventDefault();
-  const minAmount = paymentMode === "USDT" ? 10 : 100;
-  const currentAmount =
-    paymentMode === "USDT" ? parseFloat(usdtAmount) : parseFloat(amount);
+  const handleDeposit = (e) => {
+    e.preventDefault();
+    const minAmount = paymentMode === "USDT" ? 10 : 100;
+    const currentAmount =
+      paymentMode === "USDT" ? parseFloat(usdtAmount) : parseFloat(amount);
 
-  if (isNaN(currentAmount) || currentAmount < minAmount) {
-    setIsPopupVisible(true);
-    setPopupMessage(
-      `Amount must be at least ${paymentMode === "USDT" ? "10$" : "₹100"}`
-    );
-    setTimeout(() => {
-      setIsPopupVisible(false);
-    }, 2000);
-  } else {
-    // Check for UPIxPAYTM payment mode and minimum amount of 200
-    if (paymentMode === "UPIxPAYTM" && currentAmount < 200) {
+    if (isNaN(currentAmount) || currentAmount < minAmount) {
       setIsPopupVisible(true);
       setPopupMessage(
-        "For UPI payments, the minimum deposit amount is ₹200. Please increase your deposit amount."
+        `Amount must be at least ${paymentMode === "USDT" ? "10$" : "₹100"}`
       );
       setTimeout(() => {
         setIsPopupVisible(false);
       }, 2000);
     } else {
-      // Handle different payment gateways
-      if (paymentMode === "UPIxPAYTM") {
-        handleSubmit(e);
-      } else if (paymentMode === "UPIxWatchPay") {
-        handleSubmit(e);
-      } else if (paymentMode === "UPIxLGPay") {
-        handleSubmit(e);
-      } else if (paymentMode === "UPIxIQPay") {
-        handleSubmit(e);
-      } else if (paymentMode === "USDT") {
-        // Generate random parameters for USDT payment
-        const randomParam = Math.random().toString(36).substring(2, 15);
-        const timestamp = Date.now();
-        // Navigate to USDT deposit page with random parameters and amount
-        window.location.href = `/usdt-deposit/${randomParam}/${timestamp}?amount=${usdtAmount}`;
-      } else if (paymentMode === "UPI x QR") {
-        // ✅ NEW: Navigate to UPI Manual Deposit page
-        const randomParam = Math.random().toString(36).substring(2, 15);
-        const timestamp = Date.now();
-        window.location.href = `/upi-deposit/${randomParam}/${timestamp}?amount=${amount}`;
+      // Check for UPIxPAYTM payment mode and minimum amount of 200
+      if (paymentMode === "UPIxPAYTM" && currentAmount < 200) {
+        setIsPopupVisible(true);
+        setPopupMessage(
+          "For UPI payments, the minimum deposit amount is ₹200. Please increase your deposit amount."
+        );
+        setTimeout(() => {
+          setIsPopupVisible(false);
+        }, 2000);
       } else {
-        // Fallback for other payment modes
-        if (isRestricted) {
-          createRestrictedDeposit(amount);
+        // Handle different payment gateways
+        if (paymentMode === "UPIxPAYTM") {
+          handleSubmit(e);
+        } else if (paymentMode === "UPIxWatchPay") {
+          handleSubmit(e);
+        } else if (paymentMode === "UPIxLGPay") {
+          handleSubmit(e);
+        } else if (paymentMode === "UPIxIQPay") {
+          handleSubmit(e);
+        } else if (paymentMode === "USDT") {
+          // Generate random parameters for USDT payment
+          const randomParam = Math.random().toString(36).substring(2, 15);
+          const timestamp = Date.now();
+          // Navigate to USDT deposit page with random parameters and amount
+          window.location.href = `/usdt-deposit/${randomParam}/${timestamp}?amount=${usdtAmount}`;
+        } else if (paymentMode === "UPI x QR") {
+          // ✅ NEW: Navigate to UPI Manual Deposit page
+          const randomParam = Math.random().toString(36).substring(2, 15);
+          const timestamp = Date.now();
+          window.location.href = `/upi-deposit/${randomParam}/${timestamp}?amount=${amount}`;
         } else {
-          setOpenDepositDialog(true);
+          // Fallback for other payment modes
+          if (isRestricted) {
+            createRestrictedDeposit(amount);
+          } else {
+            setOpenDepositDialog(true);
+          }
         }
       }
     }
-  }
-};
+  };
   const [get1, setGet1] = useState("");
   const [get2, setGet2] = useState("");
   useEffect(() => {
@@ -910,7 +913,10 @@ const handleDeposit = (e) => {
           height="100dvh"
           position="relative"
         >
-          <Box flexGrow={1} sx={{ backgroundColor: "#232626 " ,position: "relative", }}>
+          <Box
+            flexGrow={1}
+            sx={{ backgroundColor: "#232626 ", position: "relative" }}
+          >
             <Grid
               container
               alignItems="center"
@@ -988,7 +994,7 @@ const handleDeposit = (e) => {
                             ? "linear-gradient(90deg,#24ee89,#9fe871)"
                             : "#323738",
                         borderRadius: 8,
-                        color: paymentMode === mode ? "black" : "#B3BEC1",
+                        color: paymentMode === mode ? "black" : "#B79C8B",
                         padding: "20px 0px",
                         boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                         height: "65px",
@@ -1046,7 +1052,6 @@ const handleDeposit = (e) => {
                   </Grid>
                 );
               })}
-
             </Grid>
 
             {/* Channels Based on Payment Mode */}
@@ -1134,7 +1139,7 @@ const handleDeposit = (e) => {
                               color:
                                 selectedChannel === index
                                   ? "#221f2e"
-                                  : "#B3BEC1",
+                                  : "#B79C8B",
                               fontSize: "15px",
                             }}
                           >
@@ -1145,7 +1150,7 @@ const handleDeposit = (e) => {
                               color:
                                 selectedChannel === index
                                   ? "#221f2e"
-                                  : "#B3BEC1",
+                                  : "#B79C8B",
                               fontSize: "15px",
                             }}
                           >
@@ -1203,7 +1208,12 @@ const handleDeposit = (e) => {
                       variant="outlined"
                       onClick={() => handleButtonClick(value)}
                       startIcon={
-                        <Typography sx={{ color: selectedValue === value ? "#FFFFFF" : "#b3bec1" }}>
+                        <Typography
+                          sx={{
+                            color:
+                              selectedValue === value ? "#FFFFFF" : "#b3bec1",
+                          }}
+                        >
                           {paymentMode === "USDT" ? (
                             <img
                               src="/assets/wallet/USDT.webp"
@@ -1224,9 +1234,12 @@ const handleDeposit = (e) => {
                           selectedValue === value
                             ? "linear-gradient(90deg,#24ee89,#9fe871)"
                             : "#323738",
-                        color: selectedValue === value ? "#221F2E" : "#24ee89",
-                        borderColor: "#ffffff",
+                        color: selectedValue === value ? "#221F2E" : "#FED358",
                         justifyContent: "center",
+
+                        border: "1px solid",
+                        // borderRadius: "50px",
+                        borderImage: "linear-gradient(90deg,#24EE89,#9FE871) 1",
 
                         "& .MuiButton-startIcon": {
                           position: "absolute",
@@ -1238,8 +1251,8 @@ const handleDeposit = (e) => {
                         {paymentMode === "USDT"
                           ? value
                           : value >= 1000
-                            ? `${value / 1000}K`
-                            : value}
+                          ? `${value / 1000}K`
+                          : value}
                       </Typography>
                     </Button>
                   </Grid>
@@ -1308,7 +1321,7 @@ const handleDeposit = (e) => {
                       "& input": {
                         fontSize: "14px",
                         fontWeight: "bold",
-                        color: "#24ee89", // Ensure input text color is white
+                        color: "#FED358", // Ensure input text color is white
                       },
                       "& input::placeholder": {
                         fontSize: "14px",
@@ -1331,7 +1344,7 @@ const handleDeposit = (e) => {
                     <InputAdornment position="start">
                       <span
                         style={{
-                          color: "#24ee89",
+                          color: "#FED358",
                           fontSize: "20px",
                           fontWeight: "bold",
                           marginLeft: "0.5rem",
@@ -1386,7 +1399,7 @@ const handleDeposit = (e) => {
                     "& input": {
                       fontSize: "14px",
                       fontWeight: "bold",
-                      color: "#24ee89", // Ensure input text color is white
+                      color: "#FED358", // Ensure input text color is white
                     },
                     "& input::placeholder": {
                       fontSize: "14px",
@@ -1404,8 +1417,7 @@ const handleDeposit = (e) => {
                 sx={{
                   mt: 2,
                   textTransform: "initial",
-                  background:
-                    "linear-gradient(90deg,#24ee89,#9fe871)",
+                  background: "linear-gradient(90deg,#24ee89,#9fe871)",
                   borderRadius: "16px",
                   color: "white",
                   "&:hover": { bgcolor: "#0e5415" },
@@ -1446,7 +1458,7 @@ const handleDeposit = (e) => {
                     variant="body1"
                     fontWeight="bold"
                     align="left"
-                    sx={{ lineHeight: 1.3, fontSize: "16px",color:"#ffffff" }}
+                    sx={{ lineHeight: 1.3, fontSize: "16px", color: "#ffffff" }}
                   >
                     Recharge Instructions
                   </Typography>
@@ -1468,12 +1480,12 @@ const handleDeposit = (e) => {
                       alignItems: "baseline",
                       fontSize: "13px",
                       mb: 1.5, // Increased bottom margin
-                      color: "#B3BEC1",
+                      color: "#B79C8B",
                     }}
                     align="left"
                   >
                     <RhombusIcon
-                      sx={{ fontSize: 9, color: "#24ee89", mr: 1 }} // Slightly larger icon for better visibility
+                      sx={{ fontSize: 9, color: "#FED358", mr: 1 }} // Slightly larger icon for better visibility
                     />
                     If the transfer time is up, please fill out the deposit form
                     again.
@@ -1485,12 +1497,12 @@ const handleDeposit = (e) => {
                       alignItems: "baseline",
                       fontSize: "13px",
                       mb: 1.5, // Increased bottom margin
-                      color: "#B3BEC1",
+                      color: "#B79C8B",
                     }}
                     align="left"
                   >
                     <RhombusIcon
-                      sx={{ fontSize: 9, color: "#24ee89", mr: 1 }} // Slightly larger icon for better visibility
+                      sx={{ fontSize: 9, color: "#FED358", mr: 1 }} // Slightly larger icon for better visibility
                     />
                     The transfer amount must match the order you created,
                     otherwise the money cannot be credited successfully.
@@ -1502,12 +1514,12 @@ const handleDeposit = (e) => {
                       alignItems: "baseline",
                       fontSize: "13px",
                       mb: 1.5, // Increased bottom margin
-                      color: "#B3BEC1",
+                      color: "#B79C8B",
                     }}
                     align="left"
                   >
                     <RhombusIcon
-                      sx={{ fontSize: 9, color: "#24ee89", mr: 1 }} // Slightly larger icon for better visibility
+                      sx={{ fontSize: 9, color: "#FED358", mr: 1 }} // Slightly larger icon for better visibility
                     />
                     If you transfer the wrong amount, our company will not be
                     responsible for the lost amount!
@@ -1518,12 +1530,12 @@ const handleDeposit = (e) => {
                       display: "flex",
                       alignItems: "baseline",
                       fontSize: "13px",
-                      color: "#B3BEC1",
+                      color: "#B79C8B",
                     }}
                     align="left"
                   >
                     <RhombusIcon
-                      sx={{ fontSize: 9, color: "#24ee89", mr: 1 }} // Slightly larger icon for better visibility
+                      sx={{ fontSize: 9, color: "#FED358", mr: 1 }} // Slightly larger icon for better visibility
                     />
                     Note: Do not cancel the deposit order after the money has
                     been transferred.
@@ -1549,8 +1561,7 @@ const handleDeposit = (e) => {
             >
               <DialogTitle
                 sx={{
-                  background:
-                    "linear-gradient(90deg,#24ee89,#9fe871)",
+                  background: "linear-gradient(90deg,#24ee89,#9fe871)",
                   color: "black",
                   fontWeight: "bold",
                   borderTopLeftRadius: "16px",
@@ -1597,7 +1608,9 @@ const handleDeposit = (e) => {
                         </Grid>
                       ) : (
                         <Grid item xs={12}>
-                          <Typography variant="h7" sx={{ color: '#a8a5a1' }}>Loading QR Code...</Typography>
+                          <Typography variant="h7" sx={{ color: "#a8a5a1" }}>
+                            Loading QR Code...
+                          </Typography>
                         </Grid>
                       )}
                       <Grid item xs={12}>
@@ -1843,7 +1856,9 @@ const handleDeposit = (e) => {
                                 color: getStatusColor(deposit.depositStatus),
                               }}
                             >
-                              {deposit.depositStatus.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase())}
+                              {deposit.depositStatus
+                                .toLowerCase()
+                                .replace(/\b\w/g, (char) => char.toUpperCase())}
                             </Typography>
                           </Grid>
                         </Grid>
@@ -1851,7 +1866,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={3} textAlign="left">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B3BEC1" }}
+                              sx={{ color: "#B79C8B" }}
                             >
                               Balance
                             </Typography>
@@ -1870,7 +1885,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={3} textAlign="left">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B3BEC1" }}
+                              sx={{ color: "#B79C8B" }}
                             >
                               Type
                             </Typography>
@@ -1878,7 +1893,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={9} textAlign="end">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B3BEC1" }}
+                              sx={{ color: "#B79C8B" }}
                             >
                               {deposit.depositMethod}
                             </Typography>
@@ -1886,7 +1901,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={3} textAlign="left">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B3BEC1" }}
+                              sx={{ color: "#B79C8B" }}
                             >
                               Time
                             </Typography>
@@ -1894,7 +1909,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={9} textAlign="end">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B3BEC1" }}
+                              sx={{ color: "#B79C8B" }}
                             >
                               {new Date(deposit.depositDate).toLocaleString()}
                             </Typography>
@@ -1902,7 +1917,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={4} textAlign="left">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B3BEC1" }}
+                              sx={{ color: "#B79C8B" }}
                             >
                               Order number
                             </Typography>
@@ -1910,7 +1925,7 @@ const handleDeposit = (e) => {
                           <Grid item xs={8} textAlign="end">
                             <Typography
                               variant="body2"
-                              sx={{ color: "#B3BEC1" }}
+                              sx={{ color: "#B79C8B" }}
                             >
                               {deposit.depositId}
                               <IconButton
@@ -1972,9 +1987,9 @@ const handleDeposit = (e) => {
                       fontSize: "16px",
                       textTransform: "initial",
                       borderRadius: "20px",
-                      color: "#24ee89",
+                      color: "#FED358",
                       background: "transparent",
-                      border: "1px solid #24ee89",
+                      border: "1px solid #FED358",
                       // "&:hover": {
                       //   background:
                       //     "linear-gradient(90deg,#24ee89,#9fe871)",

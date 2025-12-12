@@ -15,7 +15,6 @@ const CalendarDrawer = ({ isOpen, onClose, onRangeSelect }) => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
-
   const months = [
     "January",
     "February",
@@ -87,7 +86,12 @@ const CalendarDrawer = ({ isOpen, onClose, onRangeSelect }) => {
   const isDateInRange = (date) => {
     const dateStr = `${currentYear}-${currentMonth + 1}-${date}`;
     const selectedDate = new Date(dateStr);
-    return startDate && endDate && selectedDate >= startDate && selectedDate <= endDate;
+    return (
+      startDate &&
+      endDate &&
+      selectedDate >= startDate &&
+      selectedDate <= endDate
+    );
   };
 
   const formatDateRange = () => {
@@ -107,23 +111,26 @@ const CalendarDrawer = ({ isOpen, onClose, onRangeSelect }) => {
   };
 
   return (
-    <Drawer anchor="bottom" open={isOpen} onClose={onClose}
-    sx= {{
-      "& .MuiDrawer-paper": {
-         width: "100%",
-         height: "auto",
-         margin: "0 auto",
-         maxWidth: isSmallScreen ? "600px" : "396px",
-         backgroundColor: "#232626",
-         color: "grey",
-         borderTopLeftRadius: "16px",
-         borderTopRightRadius: "16px",
-       },
-   }}
+    <Drawer
+      anchor="bottom"
+      open={isOpen}
+      onClose={onClose}
+      sx={{
+        "& .MuiDrawer-paper": {
+          width: "100%",
+          height: "auto",
+          margin: "0 auto",
+          maxWidth: isSmallScreen ? "600px" : "396px",
+          backgroundColor: "#232626",
+          color: "grey",
+          borderTopLeftRadius: "16px",
+          borderTopRightRadius: "16px",
+        },
+      }}
     >
       <Box className="drawer">
         <Box className="drawer-header">
-          <Typography >Calendar</Typography>
+          <Typography>Calendar</Typography>
           {/* <span className="close-button" onClick={onClose}>
             
           </span> */}
@@ -133,7 +140,7 @@ const CalendarDrawer = ({ isOpen, onClose, onRangeSelect }) => {
           <IconButton onClick={() => handleMonthChange("prev")}>
             <ArrowBackIosIcon />
           </IconButton>
-          <Typography >
+          <Typography>
             {months[currentMonth]} {currentYear}
           </Typography>
           <IconButton onClick={() => handleMonthChange("next")}>
@@ -158,13 +165,17 @@ const CalendarDrawer = ({ isOpen, onClose, onRangeSelect }) => {
               className={`date ${
                 startDate &&
                 startDate.toLocaleDateString() ===
-                  new Date(`${currentYear}-${currentMonth + 1}-${date}`).toLocaleDateString()
+                  new Date(
+                    `${currentYear}-${currentMonth + 1}-${date}`
+                  ).toLocaleDateString()
                   ? "selected-start"
                   : ""
               } ${
                 endDate &&
                 endDate.toLocaleDateString() ===
-                  new Date(`${currentYear}-${currentMonth + 1}-${date}`).toLocaleDateString()
+                  new Date(
+                    `${currentYear}-${currentMonth + 1}-${date}`
+                  ).toLocaleDateString()
                   ? "selected-end"
                   : ""
               } ${isDateInRange(date) ? "in-range" : ""}`}
@@ -186,10 +197,12 @@ const CalendarDrawer = ({ isOpen, onClose, onRangeSelect }) => {
             disabled={!startDate}
             sx={{
               // backgroundColor: "#0f6518",
-              color: "#fff",
+              color: "#000",
               fontSize: "12px",
               // fontWeight: "400",
               padding: "6px 14px",
+              textTransform: "initial",
+              fontWeight: "bold",
               borderRadius: "8px",
               // "&:hover": {
               //   backgroundColor: "#0f6518",

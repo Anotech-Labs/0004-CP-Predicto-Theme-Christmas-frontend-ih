@@ -64,6 +64,7 @@ const DatePickerBody = ({ year, month, day, daysInMonth, setYear, setMonth, setD
         display: "flex",
         justifyContent: "space-between",
         padding: "20px",
+        backgroundColor: "#232626", // Updated background color
       }}
     >
       <VerticalPicker initialValue={year} onChange={handleYearChange} options={yearOptions} />

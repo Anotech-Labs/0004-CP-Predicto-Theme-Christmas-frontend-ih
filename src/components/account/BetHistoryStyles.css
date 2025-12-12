@@ -176,15 +176,15 @@
 
   .card-content2 {
     position: relative;
-    padding-left: 22px; /* Space for the icon line */
+    padding-left: 22px;
   }
   .card-content2:before {
     content: "";
     position: absolute;
     left: 5.9px;
     height: 75%;
-    top: 4px; /* Start after first circle */
-    bottom: 24px; /* End before last circle */
+    top: 4px;
+    bottom: 24px; 
     width: 0.5px;
     border-left: 0.5px dashed #f0960e;
     z-index: 1;
@@ -195,7 +195,7 @@
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
-    /* margin-top: 20px; */
+    margin-top: 20px;
   }
   .inner-content:before {
     content: "";

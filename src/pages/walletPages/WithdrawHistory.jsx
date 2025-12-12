@@ -63,7 +63,7 @@ const WithdrawHistory = () => {
         (entries) => {
           if (entries[0].isIntersecting && hasMore) {
             // Ensure we're keeping the current filter context
-          
+
             loadMore();
           }
         },
@@ -175,7 +175,7 @@ const WithdrawHistory = () => {
     navigate(-1);
   };
   const handleTypeChange = (type) => {
-    if(selectedType === type) return; // Prevent unnecessary state updates
+    if (selectedType === type) return; // Prevent unnecessary state updates
     //console.log("Changing type to:", type); // Debug log
     setPage(1);
     setHasMore(true);
@@ -317,12 +317,13 @@ const WithdrawHistory = () => {
               // onClick={() => !disabled && handleTypeChange(label)}
               sx={{
                 display: "flex",
+                fontWeight: "bold",
                 alignItems: "center",
                 background:
                   selectedType === label
                     ? "linear-gradient(90deg,#24ee89,#9fe871)"
                     : "#323738",
-                color: selectedType === label ? "black" : "#B3BEC1",
+                color: selectedType === label ? "black" : "#B79C8B",
                 borderColor:
                   selectedType === label ? "transparent" : "transparent",
                 borderRadius: 2,
@@ -373,7 +374,7 @@ const WithdrawHistory = () => {
               backgroundColor: "#323738",
               justifyContent: "space-between",
               textTransform: "none",
-              color: "#B3BEC1",
+              color: "#B79C8B",
               padding: "0 16px",
               fontWeight: "bold",
               borderRadius: "5px",
@@ -393,7 +394,7 @@ const WithdrawHistory = () => {
               fontSize: "11.5px",
               justifyContent: "space-between",
               padding: "0 10px",
-              color: "#B3BEC1",
+              color: "#B79C8B",
               fontWeight: "bold",
               borderRadius: "5px",
               whiteSpace: "nowrap", // Prevent text wrapping
@@ -403,8 +404,8 @@ const WithdrawHistory = () => {
           >
             {startDate && endDate
               ? `${formatDisplayDate(startDate)} - ${formatDisplayDate(
-                endDate
-              )}`
+                  endDate
+                )}`
               : "Choose a date"}
             <KeyboardArrowDownOutlinedIcon />
           </Button>
@@ -413,7 +414,7 @@ const WithdrawHistory = () => {
         {/* Loading State */}
         {isLoading && (
           <Box sx={{ textAlign: "center", my: 4 }}>
-            <Typography sx={{ color: "#B3BEC1" }}>Loading...</Typography>
+            <Typography sx={{ color: "#B79C8B" }}>Loading...</Typography>
           </Box>
         )}
 
@@ -425,7 +426,7 @@ const WithdrawHistory = () => {
               onClick={fetchWithdrawals}
               sx={{
                 mt: 2,
-                color: "#24ee89",
+                color: "#FED358",
                 "&:hover": {
                   backgroundColor: "rgba(240, 150, 14, 0.1)",
                 },
@@ -439,7 +440,7 @@ const WithdrawHistory = () => {
         {/* Empty State */}
         {!isLoading && !error && withdrawals.length === 0 && (
           <Box sx={{ textAlign: "center", my: 4 }}>
-            <Typography sx={{ color: "#B3BEC1" }}>
+            <Typography sx={{ color: "#B79C8B" }}>
               No withdrawal history found
             </Typography>
           </Box>
@@ -457,7 +458,7 @@ const WithdrawHistory = () => {
                 }
                 sx={{
                   backgroundColor: "#323738",
-                  color: "#B3BEC1",
+                  color: "#768096",
                   marginBottom: 2,
                   borderRadius: 2,
                   overflow: "hidden",
@@ -471,6 +472,7 @@ const WithdrawHistory = () => {
                         <Chip
                           label="Withdraw"
                           sx={{
+                            fontWeight: "bold",
                             backgroundColor:
                               withdrawal.withdrawStatus === "COMPLETED"
                                 ? "#27ae60"
@@ -505,8 +507,8 @@ const WithdrawHistory = () => {
                       </Grid>
                     </Grid>
                   </Box>
-                  <Box sx={{ padding: 1.5 }}>
-                    <Grid container spacing={1} sx={{ textAlign: "left" }}>
+                  <Box sx={{ paddingX: 1.5, paddingY: 1 }}>
+                    <Grid container sx={{ textAlign: "left" }}>
                       {[
                         {
                           label: "Balance",
@@ -525,7 +527,9 @@ const WithdrawHistory = () => {
                         },
                         {
                           label: "Type",
-                          value: withdrawal.withdrawMethod,
+                          value: withdrawal.withdrawMethod === "BANK_TRANSFER"
+                            ? "Bank Transfer"
+                            : withdrawal.withdrawMethod,
                           fontSize: "12px",
                         },
                         {
@@ -583,7 +587,7 @@ const WithdrawHistory = () => {
             {/* Loading more indicator */}
             {isLoadingMore && (
               <Box sx={{ textAlign: "center", py: 2 }}>
-                <Typography sx={{ color: "#B3BEC1" }}>
+                <Typography sx={{ color: "#B79C8B" }}>
                   Loading more...
                 </Typography>
               </Box>
@@ -592,7 +596,7 @@ const WithdrawHistory = () => {
             {/* No more data indicator */}
             {!hasMore && withdrawals.length > 0 && (
               <Box sx={{ textAlign: "center", py: 2 }}>
-                <Typography sx={{ color: "#B3BEC1" }}>
+                <Typography sx={{ color: "#B79C8B" }}>
                   No more withdrawals to load
                 </Typography>
               </Box>
@@ -720,12 +724,13 @@ const WithdrawHistory = () => {
             },
           }}
         >
-          <Box sx={{ padding: 3 }}>
+          <Box sx={{}}>
             <Box
               sx={{
+                padding: "16px 16px",
                 display: "flex",
                 justifyContent: "space-between",
-                marginBottom: "16px",
+                // marginBottom: "16px",
               }}
             >
               <Typography
@@ -735,25 +740,28 @@ const WithdrawHistory = () => {
                 Cancel
               </Typography>
               <Typography
-                sx={{ color: "#24ee89", fontWeight: "bold", cursor: "pointer" }}
+                sx={{ color: "#24EE89", fontWeight: "bold", cursor: "pointer" }}
               >
                 Confirm
               </Typography>
             </Box>
-            <List>
-              {["All", "PENDING", "COMPLETED", "REJECTED"].map((status) => (
+            <List sx={{ backgroundColor: "#232626" }}>
+              {["All", "Pending", "Completed", "Rejected"].map((status) => (
                 <ListItem
                   key={status}
-                  label={status}
                   onClick={() => handleStatusChange(status)}
                   sx={{
-                    color: "#B3BEC1",
+                    color: "#B79C8B",
                     fontWeight: "normal",
-                    // borderBottom: "1px solid #e0e0e0",
                     textAlign: "center",
                   }}
                 >
-                  <ListItemText primary={status} />
+                  <ListItemText
+                    primary={status}
+                    primaryTypographyProps={{
+                      textTransform: "none !important", // Force it
+                    }}
+                  />
                 </ListItem>
               ))}
             </List>

@@ -7,7 +7,7 @@ const DatePickerHeader = ({ onCancel, onConfirm }) => (
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
-      padding: "7px 16px", // Adjusted padding for better spacing
+      padding: "16px 16px", // Adjusted padding for better spacing
       backgroundColor: "#323738", // Updated background color
       borderRadius: "8px 8px 0 0", // Add a rounded corner for the top
       border: "none", // Ensure no border is applied
@@ -53,7 +53,7 @@ const DatePickerHeader = ({ onCancel, onConfirm }) => (
     <Button
       onClick={onConfirm}
       sx={{
-        color: "#24ee89",
+        color: "#24EE89",
         textTransform: "none",
         fontWeight: "normal",
         minWidth: "auto", // Remove extra padding around the button text

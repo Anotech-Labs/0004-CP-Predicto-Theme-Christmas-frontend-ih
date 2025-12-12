@@ -1,4 +1,10 @@
-import React, { useCallback, useEffect, useReducer, useState, useRef } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useReducer,
+  useState,
+  useRef,
+} from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
@@ -43,26 +49,55 @@ const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     case "SET_FILTER":
-      return { ...state, selectedFilter: action.payload, page: 1, depositHistory: [], hasMore: true, initialLoad: true };
+      return {
+        ...state,
+        selectedFilter: action.payload,
+        page: 1,
+        depositHistory: [],
+        hasMore: true,
+        initialLoad: true,
+      };
     case "SET_METHOD":
-      return { ...state, selectedMethod: action.payload, page: 1, depositHistory: [], hasMore: true, initialLoad: true };
+      return {
+        ...state,
+        selectedMethod: action.payload,
+        page: 1,
+        depositHistory: [],
+        hasMore: true,
+        initialLoad: true,
+      };
     case "TOGGLE_OPTIONS_DRAWER":
       return { ...state, isOptionsDrawerOpen: action.payload };
     case "SET_DATE":
-      return { ...state, selectedDate: action.payload, page: 1, depositHistory: [], hasMore: true, initialLoad: true };
+      return {
+        ...state,
+        selectedDate: action.payload,
+        page: 1,
+        depositHistory: [],
+        hasMore: true,
+        initialLoad: true,
+      };
     case "FETCH_START":
       return { ...state, loading: true, error: null };
     case "FETCH_SUCCESS":
-      return { 
-        ...state, 
-        depositHistory: state.page === 1 ? action.payload : [...state.depositHistory, ...action.payload], 
+      return {
+        ...state,
+        depositHistory:
+          state.page === 1
+            ? action.payload
+            : [...state.depositHistory, ...action.payload],
         loading: false,
         hasMore: action.payload.length > 0,
         initialLoad: false,
-        page: state.page + (action.payload.length > 0 ? 1 : 0)
+        page: state.page + (action.payload.length > 0 ? 1 : 0),
       };
     case "FETCH_ERROR":
-      return { ...state, error: action.payload, loading: false, initialLoad: false };
+      return {
+        ...state,
+        error: action.payload,
+        loading: false,
+        initialLoad: false,
+      };
     default:
       return state;
   }
@@ -80,16 +115,19 @@ const DepositHistory = () => {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const [filteredData, setfilteredData] = useState([]);
   const observer = useRef();
-  const lastDepositElementRef = useCallback(node => {
-    if (state.loading) return;
-    if (observer.current) observer.current.disconnect();
-    observer.current = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting && state.hasMore) {
-        fetchDepositHistory();
-      }
-    });
-    if (node) observer.current.observe(node);
-  }, [state.loading, state.hasMore]);
+  const lastDepositElementRef = useCallback(
+    (node) => {
+      if (state.loading) return;
+      if (observer.current) observer.current.disconnect();
+      observer.current = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && state.hasMore) {
+          fetchDepositHistory();
+        }
+      });
+      if (node) observer.current.observe(node);
+    },
+    [state.loading, state.hasMore]
+  );
 
   // const [selectedDateRange, setSelectedDateRange] = useState({
   //   start: null,
@@ -173,7 +211,9 @@ const DepositHistory = () => {
       );
 
       const newData = response.data.data || [];
-      setfilteredData(state.page === 1 ? newData : [...filteredData, ...newData]);
+      setfilteredData(
+        state.page === 1 ? newData : [...filteredData, ...newData]
+      );
       dispatch({ type: "FETCH_SUCCESS", payload: newData });
     } catch (error) {
       dispatch({ type: "FETCH_ERROR", payload: error.message });
@@ -339,13 +379,14 @@ const DepositHistory = () => {
                       textTransform: "none",
                       display: "flex",
                       justifyContent: "center",
+                      fontWeight: "bold",
                       alignItems: "center",
                       padding: "0 8px",
                       gap: "10px",
                       color:
                         state.selectedMethod === method.name
                           ? "#221f2e"
-                          : "#B3BEC1",
+                          : "#B79C8B",
                       borderRadius: "5px",
                       // fontWeight: "bold",
                       fontSize: "13px",
@@ -392,7 +433,7 @@ const DepositHistory = () => {
                   display: "flex",
                   justifyContent: "space-between",
                   padding: "0 16px",
-                  color: "#B3BEC1",
+                  color: "#B79C8B",
                   fontWeight: "bold",
                   borderRadius: "5px",
                   fontSize: "14px",
@@ -412,7 +453,7 @@ const DepositHistory = () => {
                   fontSize: "11.5px",
                   justifyContent: "space-between",
                   padding: "0 10px",
-                  color: "#B3BEC1",
+                  color: "#B79C8B",
                   fontWeight: "bold",
                   borderRadius: "5px",
                   whiteSpace: "nowrap", // Prevent text wrapping
@@ -422,7 +463,9 @@ const DepositHistory = () => {
               >
                 <span>
                   {state.selectedDate[0] && state.selectedDate[1]
-                    ? `${formatDateDisplay(state.selectedDate[0])} - ${formatDateDisplay(state.selectedDate[1])}`
+                    ? `${formatDateDisplay(
+                        state.selectedDate[0]
+                      )} - ${formatDateDisplay(state.selectedDate[1])}`
                     : "Choose a date"}
                 </span>
                 <KeyboardArrowDownOutlinedIcon />
@@ -467,7 +510,11 @@ const DepositHistory = () => {
                   {filteredData.map((deposit, index) => (
                     <Card
                       key={deposit.depositId}
-                      ref={index === filteredData.length - 1 ? lastDepositElementRef : null}
+                      ref={
+                        index === filteredData.length - 1
+                          ? lastDepositElementRef
+                          : null
+                      }
                       sx={{
                         marginBottom: "12px",
                         borderRadius: "8px",
@@ -475,17 +522,25 @@ const DepositHistory = () => {
                         boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
                       }}
                     >
-                      <CardContent sx={{ paddingX: "16px", position: "relative" }}>
+                      <CardContent
+                        sx={{ paddingX: "16px", position: "relative" }}
+                      >
                         <Grid
                           container
                           xs={12}
                           mb={1}
-                          sx={{ borderBottom: "1px solid #B3BEC1", display: "flex", alignItems: "center" }}
+                          sx={{
+                            borderBottom: "1px solid #B79C8B",
+                            display: "flex",
+                            alignItems: "center",
+                          }}
                         >
                           <Grid item xs={6}>
                             <Box
                               sx={{
-                                backgroundColor: getStatusColor(deposit.depositStatus),
+                                backgroundColor: getStatusColor(
+                                  deposit.depositStatus
+                                ),
                                 color: "#FFFFFF",
                                 borderRadius: "5px",
                                 padding: "4px",
@@ -498,7 +553,11 @@ const DepositHistory = () => {
                               Deposit
                             </Box>
                           </Grid>
-                          <Grid item xs={6} sx={{ display: "flex", justifyContent: "flex-end" }}>
+                          <Grid
+                            item
+                            xs={6}
+                            sx={{ display: "flex", justifyContent: "flex-end" }}
+                          >
                             <Typography
                               variant="body2"
                               sx={{
@@ -507,13 +566,18 @@ const DepositHistory = () => {
                                 color: getStatusColor(deposit.depositStatus),
                               }}
                             >
-                              {deposit.depositStatus.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase())}
+                              {deposit.depositStatus
+                                .toLowerCase()
+                                .replace(/\b\w/g, (char) => char.toUpperCase())}
                             </Typography>
                           </Grid>
                         </Grid>
                         <Grid container spacing={1}>
                           <Grid item xs={3} textAlign="left">
-                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
+                            <Typography
+                              variant="body2"
+                              sx={{ color: "#B79C8B" }}
+                            >
                               Balance
                             </Typography>
                           </Grid>
@@ -529,32 +593,50 @@ const DepositHistory = () => {
                             </Typography>
                           </Grid>
                           <Grid item xs={3} textAlign="left">
-                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
+                            <Typography
+                              variant="body2"
+                              sx={{ color: "#B79C8B" }}
+                            >
                               Type
                             </Typography>
                           </Grid>
                           <Grid item xs={9} textAlign="end">
-                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
+                            <Typography
+                              variant="body2"
+                              sx={{ color: "#B79C8B" }}
+                            >
                               {deposit.depositMethod}
                             </Typography>
                           </Grid>
                           <Grid item xs={3} textAlign="left">
-                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
+                            <Typography
+                              variant="body2"
+                              sx={{ color: "#B79C8B" }}
+                            >
                               Time
                             </Typography>
                           </Grid>
                           <Grid item xs={9} textAlign="end">
-                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
+                            <Typography
+                              variant="body2"
+                              sx={{ color: "#B79C8B" }}
+                            >
                               {new Date(deposit.depositDate).toLocaleString()}
                             </Typography>
                           </Grid>
                           <Grid item xs={4} textAlign="left">
-                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
+                            <Typography
+                              variant="body2"
+                              sx={{ color: "#B79C8B" }}
+                            >
                               Order number
                             </Typography>
                           </Grid>
                           <Grid item xs={8} textAlign="end">
-                            <Typography variant="body2" sx={{ color: "#B3BEC1" }}>
+                            <Typography
+                              variant="body2"
+                              sx={{ color: "#B79C8B" }}
+                            >
                               {deposit.depositId}
                             </Typography>
                           </Grid>
@@ -574,14 +656,14 @@ const DepositHistory = () => {
                   flexDirection="column"
                   alignItems="center"
                   justifyContent="center"
-                  sx={{ height: "100%" }}
+                  sx={{ minHeight: "50vh" }} // full page height
                 >
                   <img
-                    src="/assets/No data-1.webp"
+                    src="/assets/No data-2.webp"
                     alt="No Data"
-                    style={{ maxWidth: "100%", height: "auto" }}
+                    style={{ width: "150px" }}
                   />
-                  <Typography variant="h6" sx={{ marginTop: "16px" }}>
+                  <Typography variant="h6" sx={{ marginTop: "16px", fontSize:"14px" , opacity:0.7}}>
                     No deposit history available.
                   </Typography>
                 </Box>
@@ -617,18 +699,26 @@ const DepositHistory = () => {
             >
               <Button
                 onClick={toggleOptionsDrawer(false)}
-                sx={{ color: "#969799", fontWeight: "normal" }}
+                sx={{
+                  color: "#969799",
+                  fontWeight: "normal",
+                  textTransform: "initial",
+                }}
               >
                 Cancel
               </Button>
-              <Button 
+              <Button
                 onClick={toggleOptionsDrawer(false)}
-                sx={{ color: "#24ee89", fontWeight: "bold" }}
+                sx={{
+                  color: "#24ee89",
+                  fontWeight: "bold",
+                  textTransform: "initial",
+                }}
               >
                 Confirm
               </Button>
             </Box>
-            <List>
+            <List sx={{ backgroundColor: "#232626" }}>
               {["All", "Completed", "Pending", "Cancelled"].map((filter) => (
                 <ListItem
                   button

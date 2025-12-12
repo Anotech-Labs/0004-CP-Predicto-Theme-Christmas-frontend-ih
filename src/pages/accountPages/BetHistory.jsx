@@ -57,7 +57,11 @@ const tabsData = [
 
 // Updated filter options for both lottery and API games - commented out most options
 const filterOptions = {
-  Lottery: ["All", "WINGO", "K3DICE", "5D", 
+  Lottery: [
+    "All",
+    "WINGO",
+    "K3DICE",
+    "5D",
     // "CAR RACE"
   ],
   Original: ["All", "SPRIBE", "INOUT"],
@@ -499,9 +503,9 @@ const BetHistory = () => {
         const betTypeParam =
           selectedOption === "5D"
             ? "FIVED"
-            // : selectedOption === "CAR RACE"
+            : // : selectedOption === "CAR RACE"
             // ? "CAR_RACE"
-            : selectedOption !== "All"
+            selectedOption !== "All"
             ? selectedOption
             : null;
 
@@ -783,13 +787,14 @@ const BetHistory = () => {
           </div>
         </div>
 
-        <div className="card-divider">
+        {/* <div className="card-divider">
           <img
             src="/assets/divider.webp"
             alt=""
             style={{ width: "100%", height: "100%" }}
           />
-        </div>
+        </div> */}
+        
 
         <div className="card-content2">
           <div className="card-row2">
@@ -887,9 +892,9 @@ const BetHistory = () => {
                   ? `Win Go ${bet.formattedTimer}`
                   : bet.betType === "FIVED"
                   ? `5D ${bet.formattedTimer}`
-                  // : bet.betType === "CAR_RACE"
-                  // ? `Car Race ${bet.formattedTimer}`
-                  : `${capitalizeText(bet.betType)} ${bet.formattedTimer}`
+                  : // : bet.betType === "CAR_RACE"
+                    // ? `Car Race ${bet.formattedTimer}`
+                    `${capitalizeText(bet.betType)} ${bet.formattedTimer}`
                 : "N/A"}
             </span>
           </div>
@@ -922,19 +927,29 @@ const BetHistory = () => {
           </div>
         </div>
 
-        <div className="card-divider">
+        {/* <div className="card-divider">
           <img
             src="/assets/divider.webp"
             alt=""
             style={{ width: "100%", height: "100%" }}
           />
-        </div>
+        </div> */}
 
+        <div
+          style={{
+            width: "100%",
+            height: "2px",
+            backgroundImage: "radial-gradient(#fff 1px, transparent 1px)",
+            backgroundSize: "10px 2px", // bigger gaps = fewer dots
+            backgroundRepeat: "repeat-x",
+            margin: "12px auto",
+          }}
+        ></div>
         <div className="card-content2">
           <div className="card-row2">
             <div
               className="inner-content lottery-results-heading"
-              style={{ textAlign: "left", color: "#1E2637" }}
+              style={{ textAlign: "left", color: "#fff" }}
             >
               Lottery Results
             </div>
@@ -1616,9 +1631,9 @@ const BetHistory = () => {
                           ? "Win Go"
                           : option.toUpperCase() === "K3DICE"
                           ? "K3"
-                          // : option.toUpperCase() === "CAR RACE"
-                          // ? "Car Race"
-                          : capitalizeText(option)
+                          : // : option.toUpperCase() === "CAR RACE"
+                            // ? "Car Race"
+                            capitalizeText(option)
                       }
                       sx={{ textAlign: "center" }}
                     />

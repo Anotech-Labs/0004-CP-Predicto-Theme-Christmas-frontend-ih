@@ -480,8 +480,8 @@ const WithDraw = ({ children }) => {
         setIsPopupVisible(true);
         setPopupMessage(
           error.response?.data?.message ||
-            error.response?.data?.error ||
-            "Bank Card withdrawal request failed"
+          error.response?.data?.error ||
+          "Bank Card withdrawal request failed"
         );
         setTimeout(() => {
           setIsPopupVisible(false);
@@ -584,8 +584,8 @@ const WithDraw = ({ children }) => {
         setIsPopupVisible(true);
         setPopupMessage(
           error.response?.data?.message ||
-            error.response?.data?.error ||
-            "USDT withdrawal request failed"
+          error.response?.data?.error ||
+          "USDT withdrawal request failed"
         );
         setTimeout(() => {
           setIsPopupVisible(false);
@@ -705,8 +705,8 @@ const WithDraw = ({ children }) => {
         setIsPopupVisible(true);
         setPopupMessage(
           error.response?.data?.message ||
-            error.response?.data?.error ||
-            "UPI withdrawal request failed."
+          error.response?.data?.error ||
+          "UPI withdrawal request failed."
         );
         setTimeout(() => {
           setIsPopupVisible(false);
@@ -972,7 +972,7 @@ const WithDraw = ({ children }) => {
                         ? "linear-gradient(90deg,#24ee89,#9fe871)"
                         : "#323738",
                     color:
-                      withdrawalMethod === "Bank Card" ? "black" : "#B3BEC1",
+                      withdrawalMethod === "Bank Card" ? "black" : "#B79C8B",
                     borderRadius: 8,
                     padding: 16,
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
@@ -1006,7 +1006,7 @@ const WithDraw = ({ children }) => {
                       withdrawalMethod === "USDT"
                         ? "linear-gradient(90deg,#24ee89,#9fe871)"
                         : "#323738",
-                    color: withdrawalMethod === "USDT" ? "black" : "#B3BEC1",
+                    color: withdrawalMethod === "USDT" ? "black" : "#B79C8B",
                     borderRadius: 8,
                     padding: 16,
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
@@ -1095,11 +1095,11 @@ const WithDraw = ({ children }) => {
               <Grid
                 container
                 spacing={1}
-                mt={2}
+
                 xs={12}
                 style={{
                   width: "92%",
-                  margin: "1rem auto",
+                  margin: "10px auto",
                   background: "#323738",
                   borderRadius: "10px",
                   // padding: "10px", // Add padding for visual consistency
@@ -1135,7 +1135,7 @@ const WithDraw = ({ children }) => {
                       />
                       <Typography
                         variant="body1"
-                        sx={{ fontWeight: "bold", color: "#B3BEC1" }}
+                        sx={{ fontWeight: "bold", color: "#B79C8B" }}
                       >
                         TRC
                       </Typography>
@@ -1150,7 +1150,7 @@ const WithDraw = ({ children }) => {
                     >
                       <Typography
                         variant="body2"
-                        sx={{ color: "#B3BEC1", fontSize: "13px" }}
+                        sx={{ color: "#B79C8B", fontSize: "13px" }}
                       >
                         {usdtDetails?.address
                           ? usdtDetails.address.slice(0, 10) + "..."
@@ -1211,7 +1211,7 @@ const WithDraw = ({ children }) => {
                 alignItems="center"
                 style={{
                   width: "92%",
-                  margin: "20px auto",
+                  margin: "10px auto",
                   // boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                   backgroundColor: "#323738",
                   borderRadius: "10px",
@@ -1226,7 +1226,7 @@ const WithDraw = ({ children }) => {
                   />
                   <Typography
                     variant="body2"
-                    style={{ color: "#B3BEC1", marginTop: "4px" }}
+                    style={{ color: "#B79C8B", marginTop: "4px" }}
                   >
                     {truncatedBankName}
                   </Typography>
@@ -1234,18 +1234,18 @@ const WithDraw = ({ children }) => {
                 <Grid item style={{ margin: "0 10px" }}>
                   <div
                     style={{
-                      borderLeft: "1px solid #B3BEC1",
+                      borderLeft: "1px solid #B79C8B",
                       height: "30px",
                     }}
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant="body2" style={{ color: "#B3BEC1" }}>
+                  <Typography variant="body2" style={{ color: "#B79C8B" }}>
                     {bankDetails.accountNumber}
                   </Typography>
                 </Grid>
                 <Grid item style={{ marginLeft: "auto" }}>
-                  {/* <ChevronRightIcon style={{ color: "#626663" }} /> */}
+                  {/* <ChevronRightIcon style={{ color: "#666462" }} /> */}
                 </Grid>
               </Grid>
             ) : (
@@ -1473,7 +1473,7 @@ const WithDraw = ({ children }) => {
             <Grid
               container
               spacing={1}
-              mt={2}
+              // mt={2}
               xs={12}
               sx={{
                 width: "92%",
@@ -1490,6 +1490,7 @@ const WithDraw = ({ children }) => {
                 <>
                   {bankDetails?.bankName.length > 0 && (
                     <TextField
+
                       id="outlined-basic"
                       variant="outlined"
                       fullWidth
@@ -1506,7 +1507,7 @@ const WithDraw = ({ children }) => {
                           <InputAdornment position="start">
                             <span
                               style={{
-                                color: "#24ee89",
+                                color: "#FED358",
                                 fontSize: "20px",
                                 fontWeight: "bold",
                                 marginLeft: "0.5rem",
@@ -1519,19 +1520,19 @@ const WithDraw = ({ children }) => {
                         ),
                       }}
                       sx={{
-                        // marginTop: "1rem",
+                        marginTop: "0.5rem",
                         bgcolor: "#232626",
                         borderRadius: "50px",
                         height: "47.5px",
                         "& .MuiOutlinedInput-root": {
                           borderRadius: "8px",
-                          color: "#24ee89", // Set text color for input
+                          color: "#FED358", // Set text color for input
                           "& fieldset": { border: "none" },
                           "&:hover fieldset": { border: "none" },
                           "&.Mui-focused fieldset": { border: "none" },
                           "& input": {
                             fontSize: "13px",
-                            color: "#24ee89", // Ensure input text color is white
+                            color: "#FED358", // Ensure input text color is white
                           },
                           "& input::placeholder": {
                             fontSize: "13px",
@@ -1550,9 +1551,9 @@ const WithDraw = ({ children }) => {
                         align="left"
                         mt={1}
                         sx={{
-                          color: "#B3BEC1",
+                          color: "#B79C8B",
                           fontSize: "12px",
-                          mb: 1.1,
+                          mb: 1,
                         }}
                       >
                         Minimum Amount:{" "}
@@ -1566,11 +1567,11 @@ const WithDraw = ({ children }) => {
                       <Typography
                         variant="body2"
                         align="left"
-                        sx={{ color: "#B3BEC1", fontSize: "12px" }}
+                        sx={{ color: "#B79C8B", fontSize: "12px" }}
                       >
                         Maximum Amount
                         <span style={{ color: "#f58530" }}>
-                          ₹{" "}
+                          {" "}₹{" "}
                           {withdrawData
                             ? withdrawData.maxWithdrawAmount
                             : "0.00"}
@@ -1596,14 +1597,14 @@ const WithDraw = ({ children }) => {
                           mb: 0.5,
                           height: "20px",
                           minWidth: "67px", // Ensures the button has a minimum width
-                          borderColor: "#24ee89", // Orange border
-                          color: "#24ee89", // Orange text
+                          borderColor: "#FED358", // Orange border
+                          color: "#FED358", // Orange text
                           textTransform: "none", // Prevent capitalization
                           borderRadius: "5px",
                           padding: "0px 16px", // Adjust padding for button size
                           fontSize: "12px", // Match `body2` font size
                           // "&:hover": {
-                          //   borderColor: "#24ee89", // Keep border color on hover
+                          //   borderColor: "#FED358", // Keep border color on hover
                           //   backgroundColor: "rgba(221,145,56,0.1)", // Add light background on hover
                           // },
                         }}
@@ -1642,7 +1643,7 @@ const WithDraw = ({ children }) => {
                         fontSize: "15px",
                         color: "#221f2e", // Explicitly set text color
                         "&:hover": {
-                          bgcolor: "#24ee89",
+                          bgcolor: "#FED358",
                         },
                         "&.Mui-disabled": {
                           background: "rgb(144, 144, 144)", // Retain gradient for disabled state
@@ -1697,7 +1698,7 @@ const WithDraw = ({ children }) => {
                               borderRadius: "10px",
                               height: "45px",
                               fontSize: "13px",
-                              color: "#24ee89",
+                              color: "#FED358",
                               "& fieldset": {
                                 border: "none",
                               },
@@ -1764,7 +1765,7 @@ const WithDraw = ({ children }) => {
                               borderRadius: "10px",
                               height: "45px",
                               fontSize: "13px",
-                              color: "#24ee89",
+                              color: "#FED358",
                               "& fieldset": {
                                 border: "none",
                               },
@@ -1775,12 +1776,12 @@ const WithDraw = ({ children }) => {
                               fontWeight: "normal",
                               opacity: 1,
                             },
-                            color: "#24ee89",
+                            color: "#FED358",
                           }}
                           InputProps={{
                             startAdornment: (
                               <InputAdornment position="start">
-                                <Typography sx={{ color: "#24ee89" }}>
+                                <Typography sx={{ color: "#FED358" }}>
                                   ₹
                                 </Typography>
                               </InputAdornment>
@@ -1817,11 +1818,11 @@ const WithDraw = ({ children }) => {
                       >
                         <Typography
                           variant="body2"
-                          color="#24ee89"
+                          color="#FED358"
                           fontSize="13px"
                         >
                           Withdrawable balance{" "}
-                          <span style={{ color: "#24ee89" }}>
+                          <span style={{ color: "#DD9138" }}>
                             ₹{userWallet}
                           </span>
                         </Typography>
@@ -1829,8 +1830,8 @@ const WithDraw = ({ children }) => {
                           variant="outlined"
                           size="small"
                           sx={{
-                            borderColor: "#24ee89",
-                            color: "#24ee89",
+                            borderColor: "#FED358",
+                            color: "#FED358",
                             // minWidth: "60px",
                             fontSize: "13px",
                             padding: "0px 16px",
@@ -1860,7 +1861,7 @@ const WithDraw = ({ children }) => {
                         fontSize: "15px",
                         color: "#221f2e", // Explicitly set text color
                         "&:hover": {
-                          bgcolor: "#24ee89",
+                          bgcolor: "#FED358",
                         },
                         "&.Mui-disabled": {
                           background: "rgb(144, 144, 144)", // Retain gradient for disabled state
@@ -2141,7 +2142,7 @@ const WithDraw = ({ children }) => {
                       <Typography
                         variant="body2"
                         sx={{
-                          color: "#B3BEC1",
+                          color: "#B79C8B",
                           textAlign: "center",
                           mt: 1,
                         }}
@@ -2258,212 +2259,148 @@ const WithDraw = ({ children }) => {
                 <Box
                   sx={{
                     width: "100%",
-                    // paddingLeft:"-8px",
-                    margin: "22px 5px 10px 5px",
                     borderRadius: 5,
-                    // padding: 1,
                     alignItems: "center",
                   }}
                 >
                   <List
                     sx={{
                       backgroundColor: "#323738",
-                      py: 1.5,
-                      px: 2,
+                      // px: 1.5,
+                      py: 1,
                       border: "1px solid #363636",
                       borderRadius: "8px",
-                      lineHeight: "1.5",
                     }}
                   >
-                    <ListItem sx={{ padding: "5px 0" }}>
-                      <ListItemIcon
-                        sx={{ minWidth: "unset", marginRight: "8px" }}
-                      >
-                        <RhombusIcon sx={{ fontSize: 10, color: "#24ee89" }} />
+                    {/* Need to Bet */}
+                    <ListItem sx={{ py: 0.4 }}>
+                      <ListItemIcon sx={{ minWidth: "14px", mr: 1 }}>
+                        <RhombusIcon sx={{ fontSize: 10, color: "#24EE89" }} />
                       </ListItemIcon>
-                      <ListItemText
-                        primary={
-                          <Typography
-                            variant="body2"
-                            sx={{
-                              color: "#B3BEC1",
-                              display: "flex",
-                              alignItems: "center",
-                              fontSize: "0.8rem", // Set font size to 0.8rem
-                            }}
-                          >
-                            Need to bet
-                            <span
-                              style={{
-                                color: "rgb(210,56,56)",
-                                marginLeft: "4px",
-                                marginRight: "4px",
-                              }}
-                            >
-                              ₹
-                              {betAmount && !isNaN(Number(betAmount.amount))
-                                ? Number(betAmount.amount).toFixed(2)
-                                : "0.00"}
-                            </span>
-                            to be able to withdraw
-                          </Typography>
-                        }
-                      />
+                      <Typography
+                        sx={{
+                          color: "#B79C8B",
+                          display: "flex",
+                          alignItems: "center",
+                          fontSize: "0.7rem",
+                        }}
+                      >
+                        Need to bet
+                        <span
+                          style={{
+                            color: "rgb(210,56,56)",
+                            margin: "0 4px",
+                          }}
+                        >
+                          ₹
+                          {betAmount && !isNaN(Number(betAmount.amount))
+                            ? Number(betAmount.amount).toFixed(2)
+                            : "0.00"}
+                        </span>
+                        to be able to withdraw
+                      </Typography>
                     </ListItem>
 
-                    <ListItem sx={{ padding: "8px 0", mt: -1.5 }}>
-                      <ListItemIcon
-                        sx={{ minWidth: "unset", marginRight: "8px" }}
-                      >
-                        <RhombusIcon sx={{ fontSize: 10, color: "#24ee89" }} />
+                    {/* Withdraw Hour */}
+                    <ListItem sx={{ py: 0.4 }}>
+                      <ListItemIcon sx={{ minWidth: "14px", mr: 1 }}>
+                        <RhombusIcon sx={{ fontSize: 10, color: "#24EE89" }} />
                       </ListItemIcon>
-                      <ListItemText
-                        primary={
-                          <Typography
-                            variant="body1"
-                            sx={{
-                              color: "#B3BEC1",
-                              display: "flex",
-                              alignItems: "center",
-                              fontSize: "0.8rem", // Set font size to 0.8rem
-                            }}
-                          >
-                            Withdraw Hour{" "}
-                            <span
-                              style={{
-                                color: "rgb(210,56,56)",
-                                marginLeft: "4px",
-                              }}
-                            >
-                              {withdrawData
-                                ? `${withdrawData.withdrawalStartHour}:00 ${withdrawData.withdrawalStartPeriod}`
-                                : "00:00"}
-                              -
-                              {withdrawData
-                                ? `${withdrawData.withdrawalEndHour}:00 ${withdrawData.withdrawalEndPeriod}`
-                                : "23:59"}
-                            </span>
-                          </Typography>
-                        }
-                      />
+                      <Typography
+                        sx={{
+                          color: "#B79C8B",
+                          fontSize: "0.7rem",
+                        }}
+                      >
+                        Withdraw Hour{" "}
+                        <span style={{ color: "rgb(210,56,56)", marginLeft: "4px" }}>
+                          {withdrawData
+                            ? `${withdrawData.withdrawalStartHour}:00 ${withdrawData.withdrawalStartPeriod}`
+                            : "00:00"}
+                          -
+                          {withdrawData
+                            ? `${withdrawData.withdrawalEndHour}:00 ${withdrawData.withdrawalEndPeriod}`
+                            : "23:59"}
+                        </span>
+                      </Typography>
                     </ListItem>
 
-                    <ListItem sx={{ padding: "8px 0", mt: -1.5 }}>
-                      <ListItemIcon
-                        sx={{ minWidth: "unset", marginRight: "8px" }}
-                      >
-                        <RhombusIcon sx={{ fontSize: 10, color: "#24ee89" }} />
+                    {/* Withdrawal Times Limit */}
+                    <ListItem sx={{ py: 0.4 }}>
+                      <ListItemIcon sx={{ minWidth: "14px", mr: 1 }}>
+                        <RhombusIcon sx={{ fontSize: 10, color: "#24EE89" }} />
                       </ListItemIcon>
-                      <ListItemText
-                        primary={
-                          <Typography
-                            variant="body1"
-                            sx={{
-                              color: "#B3BEC1",
-                              display: "flex",
-                              alignItems: "center",
-                              fontSize: "0.8rem", // Set font size to 0.8rem
-                            }}
-                          >
-                            Daily Withdrawal Times Limits{" "}
-                            <span
-                              style={{
-                                color: "rgb(210,56,56)",
-                                marginLeft: "4px",
-                              }}
-                            >
-                              {withdrawData
-                                ? withdrawData.maxWithdrawRequestsPerDay
-                                : "3"}
-                            </span>
-                          </Typography>
-                        }
-                      />
+                      <Typography
+                        sx={{
+                          color: "#B79C8B",
+                          fontSize: "0.7rem",
+                        }}
+                      >
+                        Daily Withdrawal Times Limits{" "}
+                        <span style={{ color: "rgb(210,56,56)", marginLeft: "4px" }}>
+                          {withdrawData
+                            ? withdrawData.maxWithdrawRequestsPerDay
+                            : "3"}
+                        </span>
+                      </Typography>
                     </ListItem>
 
-                    <ListItem sx={{ padding: "8px 0", mt: -1.5 }}>
-                      <ListItemIcon
-                        sx={{ minWidth: "unset", marginRight: "8px" }}
-                      >
-                        <RhombusIcon sx={{ fontSize: 10, color: "#24ee89" }} />
+                    {/* Amount Range */}
+                    <ListItem sx={{ py: 0.4 }}>
+                      <ListItemIcon sx={{ minWidth: "14px", mr: 1 }}>
+                        <RhombusIcon sx={{ fontSize: 10, color: "#24EE89" }} />
                       </ListItemIcon>
-                      <ListItemText
-                        primary={
-                          <Typography
-                            variant="body1"
-                            sx={{
-                              color: "#B3BEC1",
-                              fontSize: "0.8rem", // Set font size to 0.8rem
-                            }}
-                          >
-                            Withdrawal amount range{" "}
-                            <span
-                              style={{
-                                color: "rgb(210,56,56)",
-
-                                marginLeft: "4px",
-                              }}
-                            >
-                              ₹
-                              {withdrawData
-                                ? withdrawData.minWithdrawAmount
-                                : "0.00"}
-                              -₹
-                              {withdrawData
-                                ? withdrawData.maxWithdrawAmount
-                                : "0.00"}
-                            </span>
-                          </Typography>
-                        }
-                      />
+                      <Typography
+                        sx={{
+                          color: "#B79C8B",
+                          fontSize: "0.7rem",
+                        }}
+                      >
+                        Withdrawal amount range{" "}
+                        <span style={{ color: "rgb(210,56,56)", marginLeft: "4px" }}>
+                          ₹{withdrawData ? withdrawData.minWithdrawAmount : "0.00"} - ₹
+                          {withdrawData ? withdrawData.maxWithdrawAmount : "0.00"}
+                        </span>
+                      </Typography>
                     </ListItem>
 
-                    <ListItem sx={{ padding: "8px 0", mt: -1.5 }}>
-                      <ListItemIcon
-                        sx={{ minWidth: "unset", marginRight: "8px" }}
-                      >
-                        <RhombusIcon
-                          sx={{ fontSize: 10, color: "#24ee89", mb: 7 }}
-                        />
+                    {/* Confirm Beneficial Account (Big Line) */}
+                    <ListItem sx={{ py: 0.4 }}>
+                      <ListItemIcon sx={{ minWidth: "14px", mr: 1 }}>
+                        <RhombusIcon sx={{ fontSize: 10, color: "#24EE89" }} />
                       </ListItemIcon>
-                      <ListItemText
-                        primary={
-                          <Typography
-                            variant="body1"
-                            sx={{ color: "#B3BEC1", fontSize: "0.8rem" }} // Set font size to 0.8rem
-                          >
-                            Please confirm your beneficial account information
-                            before withdrawing. If your information is
-                            incorrect, our company will not be liable for the
-                            amount of loss.
-                          </Typography>
-                        }
-                      />
+                      <Typography
+                        sx={{
+                          color: "#B79C8B",
+                          fontSize: "0.7rem",
+                          lineHeight: "1.2",
+                        }}
+                      >
+                        Please confirm your beneficial account information before
+                        withdrawing. If your information is incorrect, our company will
+                        not be liable for the amount of loss.
+                      </Typography>
                     </ListItem>
 
-                    <ListItem sx={{ padding: "8px 0", mt: -1.5 }}>
-                      <ListItemIcon
-                        sx={{ minWidth: "unset", marginRight: "8px" }}
-                      >
-                        <RhombusIcon
-                          sx={{ fontSize: 10, color: "#24ee89", mb: 2.5 }}
-                        />
+                    {/* Contact Customer Service */}
+                    <ListItem sx={{ py: 0.4 }}>
+                      <ListItemIcon sx={{ minWidth: "14px", mr: 1 }}>
+                        <RhombusIcon sx={{ fontSize: 10, color: "#24EE89" }} />
                       </ListItemIcon>
-                      <ListItemText
-                        primary={
-                          <Typography
-                            variant="body1"
-                            sx={{ color: "#B3BEC1", fontSize: "0.8rem" }} // Set font size to 0.8rem
-                          >
-                            If your beneficial information is incorrect, please
-                            contact customer service.
-                          </Typography>
-                        }
-                      />
+                      <Typography
+                        sx={{
+                          color: "#B79C8B",
+                          fontSize: "0.7rem",
+                        }}
+                      >
+                        If your beneficial information is incorrect, please contact
+                        customer service.
+                      </Typography>
                     </ListItem>
                   </List>
                 </Box>
               </Grid>
+
             </Grid>
 
             <Box sx={{ paddingX: "1rem", marginBottom: "3rem" }}>
@@ -2473,8 +2410,8 @@ const WithDraw = ({ children }) => {
                   display: "flex", // Flexbox to align items
                   alignItems: "center", // Vertically align items
                   marginBottom: "0.5rem",
-                  marginTop: "1.5rem",
-                  color: "#B3BEC1",
+                  marginTop: "1rem",
+                  color: "#B79C8B",
                   textAlign: "left",
                   fontSize: "17px",
                 }}
@@ -2493,7 +2430,7 @@ const WithDraw = ({ children }) => {
                   <Card
                     key={withdrawal.id}
                     sx={{
-                      marginBottom: 2,
+                      marginBottom: 1,
                       borderRadius: 2,
                       overflow: "hidden",
                       background: "#323738",
@@ -2501,39 +2438,43 @@ const WithDraw = ({ children }) => {
                     }}
                   >
                     <CardContent sx={{ padding: 0, mb: -2 }}>
-                      <Box
-                        sx={{ padding: 1, borderBottom: "1px solid #454037" }}
-                      >
+
+                      {/* Header */}
+                      <Box sx={{ padding: 1, borderBottom: "1px solid #454037" }}>
                         <Grid container alignItems="center">
+
+                          {/* Left Side Chip */}
                           <Grid item xs={6} sx={{ textAlign: "left" }}>
                             <Chip
                               label="Withdraw"
                               sx={{
                                 backgroundColor:
                                   withdrawal.withdrawStatus === "COMPLETED"
-                                    ? "#27ae60"
+                                    ? "#27AE60"
                                     : withdrawal.withdrawStatus === "PENDING"
-                                    ? "#f39c12"
-                                    : "#e74c3c",
+                                      ? "#F39C12"
+                                      : "#E74C3C",
                                 color: "white",
-                                // fontWeight: "bold",
-                                height: "24px", // Adjusting height to match the image
+                                height: "24px",
                                 fontSize: "14px",
                                 borderRadius: "4px",
+                                textTransform: "initial",   // NORMAL CASE
                               }}
                             />
                           </Grid>
+
+                          {/* Right Side STATUS TEXT */}
                           <Grid item xs={6} sx={{ textAlign: "right" }}>
                             <Typography
                               sx={{
                                 color:
                                   withdrawal.withdrawStatus === "COMPLETED"
-                                    ? "#27ae60"
+                                    ? "#27AE60"
                                     : withdrawal.withdrawStatus === "PENDING"
-                                    ? "#f39c12"
-                                    : "#e74c3c",
-                                // fontWeight: "bold",
-                                fontSize: "14px",
+                                      ? "#F39C12"
+                                      : "#E74C3C",
+                                fontSize: "12px",            // SMALLER
+                                textTransform: "initial",    // NORMAL CASE
                               }}
                             >
                               {withdrawal.withdrawStatus}
@@ -2541,18 +2482,21 @@ const WithDraw = ({ children }) => {
                           </Grid>
                         </Grid>
                       </Box>
+
+                      {/* Content */}
                       <Box sx={{ padding: 1.5 }}>
                         <Grid container spacing={1} sx={{ textAlign: "left" }}>
+
                           {[
                             {
                               label: "Balance",
                               value: `₹${withdrawal.withdrawAmount}`,
                               color:
                                 withdrawal.withdrawStatus === "COMPLETED"
-                                  ? "#27ae60"
+                                  ? "#27AE60"
                                   : withdrawal.withdrawStatus === "PENDING"
-                                  ? "#f39c12"
-                                  : "#e74c3c",
+                                    ? "#F39C12"
+                                    : "#E74C3C",
                               fontSize: "14px",
                               fontWeight: "bold",
                             },
@@ -2563,9 +2507,7 @@ const WithDraw = ({ children }) => {
                             },
                             {
                               label: "Time",
-                              value: new Date(
-                                withdrawal.withdrawDate
-                              ).toLocaleString(),
+                              value: new Date(withdrawal.withdrawDate).toLocaleString(),
                               fontSize: "12px",
                             },
                             {
@@ -2573,39 +2515,46 @@ const WithDraw = ({ children }) => {
                               value: withdrawal.id,
                               fontSize: "12px",
                             },
-                          ].map(
-                            ({ label, value, color, fontSize, fontWeight }) => (
-                              <React.Fragment key={label}>
-                                <Grid item xs={6}>
-                                  <Typography
-                                    sx={{
-                                      color: "#B3BEC1",
-                                      fontSize: "13px",
-                                      lineHeight: "20px",
-                                    }}
-                                  >
-                                    {label}
-                                  </Typography>
-                                </Grid>
-                                <Grid item xs={6} sx={{ textAlign: "right" }}>
-                                  <Typography
-                                    sx={{
-                                      fontSize,
-                                      fontWeight: fontWeight || "medium",
-                                      color: color || "#B3BEC1",
-                                      lineHeight: "20px",
-                                    }}
-                                  >
-                                    {value}
-                                  </Typography>
-                                </Grid>
-                              </React.Fragment>
-                            )
-                          )}
+                          ].map(({ label, value, color, fontSize, fontWeight }) => (
+                            <React.Fragment key={label}>
+
+                              {/* Left Label */}
+                              <Grid item xs={6}>
+                                <Typography
+                                  sx={{
+                                    color: "#B79C8B",
+                                    fontSize: "13px",
+                                    lineHeight: "20px",
+                                  }}
+                                >
+                                  {label}
+                                </Typography>
+                              </Grid>
+
+                              {/* Right Value */}
+                              <Grid item xs={6} sx={{ textAlign: "right" }}>
+                                <Typography
+                                  sx={{
+                                    fontSize,
+                                    fontWeight: fontWeight || "medium",
+                                    color: color || "#B79C8B",
+                                    lineHeight: "20px",
+                                    textTransform: "initial",   // NORMAL CASE
+                                  }}
+                                >
+                                  {value}
+                                </Typography>
+                              </Grid>
+
+                            </React.Fragment>
+                          ))}
+
                         </Grid>
                       </Box>
                     </CardContent>
                   </Card>
+
+
                 ))
               ) : (
                 <Box sx={{ textAlign: "center", marginTop: "20px" }}>
@@ -2632,7 +2581,7 @@ const WithDraw = ({ children }) => {
               <Box
                 sx={{
                   textAlign: "center",
-                  marginTop: "10%",
+                  marginTop: "5%",
                   marginBottom: "20%",
                 }}
               >
@@ -2647,7 +2596,7 @@ const WithDraw = ({ children }) => {
                     borderRadius: "20px",
                     color: "#24ee89",
                     background: "transparent",
-                    border: "1px solid #24ee89",
+                    border: "1px solid #24EE89",
                     // "&:hover": {
                     //   background:
                     //     "linear-gradient(90deg,#24ee89,#9fe871)",
@@ -2681,7 +2630,7 @@ const WithDraw = ({ children }) => {
               padding: "6px 8px",
               backgroundColor: "#ffd9ae", // Custom background color (Dark Gray)
               color: "#232626", // Custom text color
-              "& .MuiSvgIcon-root": { color: "#24ee89" }, // Changes the icon color to yellow
+              "& .MuiSvgIcon-root": { color: "#FED358" }, // Changes the icon color to yellow
               "&.MuiAlert-action": { padding: "1px 0px 0px 0px" },
             }}
           >
