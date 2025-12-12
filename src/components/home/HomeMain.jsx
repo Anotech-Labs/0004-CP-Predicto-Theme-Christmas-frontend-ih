@@ -108,7 +108,7 @@ const HomeMain = ({ children }) => {
                 <img
                   src="/assets/logo/colorLogo.webp"
                   alt="logo"
-                  style={{ width: "120px", height: "auto" }}
+                  style={{ width: "90px", height: "auto" }}
                 />
               </Grid>
 
@@ -179,7 +179,7 @@ const HomeMain = ({ children }) => {
                 zIndex: 1000,
                 backgroundColor: "#232626",
                 px: "6px",
-                pt: "6px",
+                py: "6px",
                 color: "white",
                 display: "flex"
               }}

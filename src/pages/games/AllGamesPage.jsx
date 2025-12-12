@@ -1126,7 +1126,7 @@ const AllGamesPage = () => {
                                 </span>{" "}
                                 Mini games
                             </Typography>
-                            <Grid container spacing={1} marginLeft="8px" marginRight="8px">
+                            <Grid container spacing={0.5} sx={{ px: "10px" }}>
                                 {filteredMiniGamesItems.map((item, index) => (
                                     <Grid
                                         item
@@ -1136,7 +1136,7 @@ const AllGamesPage = () => {
                                             border: "none",
                                             position: "relative",
                                             background: "transparent",
-                                            p: 1,
+                                            p: 0.5,
                                         }}
                                         onClick={() => handleApiClick(item.id, currentCategory, "SPRIBE")}
                                     >
@@ -1180,7 +1180,7 @@ const AllGamesPage = () => {
                                 </span>{" "}
                                 Fishing
                             </Typography>
-                            <Grid container spacing={1}  marginLeft="8px" marginRight="8px">
+                            <Grid container spacing={0.5} sx={{ px: "10px" }}>
                                 {filteredFishGamesItems.map((item, index) => (
                                     <Grid
                                         item
@@ -1190,7 +1190,7 @@ const AllGamesPage = () => {
                                             border: "none",
                                             position: "relative",
                                             background: "transparent",
-                                            p: 1,
+                                            p: 0.5,
                                         }}
                                         onClick={() => handleApiClick(item.id, currentCategory, "FISH")}
                                     >
@@ -1234,7 +1234,7 @@ const AllGamesPage = () => {
                                 </span>{" "}
                                 Casino
                             </Typography>
-                            <Grid container spacing={1}  marginLeft="8px" marginRight="8px">
+                            <Grid container spacing={0.5} sx={{ px: "10px" }}>
                                 {filteredCasinoItems.map((item, index) => (
                                     <Grid
                                         item
@@ -1244,7 +1244,7 @@ const AllGamesPage = () => {
                                             border: "none",
                                             position: "relative",
                                             background: "transparent",
-                                            p: 1,
+                                            p: 0.5,
                                         }}
                                         onClick={() => handleApiClick(item.id, currentCategory, "CASINO")}
                                     >
@@ -1288,17 +1288,17 @@ const AllGamesPage = () => {
                                 </span>{" "}
                                 PVC
                             </Typography>
-                            <Grid container spacing={1}  marginLeft="8px" marginRight="8px">
+                            <Grid container spacing={1} sx={{ px: "10px" }}>
                                 {filteredPVCItems.map((item, index) => (
                                     <Grid
                                         item
-                                        xs={4}
+                                        xs={6}
                                         key={item.id || index}
                                         sx={{
                                             border: "none",
                                             position: "relative",
                                             bgcolor: "transparent",
-                                            p: 1,
+                                            p: 0.5,
                                         }}
                                         // onClick={() => handleApiClick(item.id, currentCategory, "PVC")}
                                         onClick={() => navigate(`/pvc/allgames?index=${index}`)}
@@ -1309,7 +1309,7 @@ const AllGamesPage = () => {
                                             style={{
                                                 width: "100%",
                                                 aspectRatio: "3/4",
-                                                borderRadius: "5px"
+                                                borderRadius: "8px"
                                             }}
                                         />
                                     </Grid>
@@ -1342,17 +1342,17 @@ const AllGamesPage = () => {
                                 </span>{" "}
                                 Sport
                             </Typography>
-                            <Grid container spacing={1}  marginLeft="8px" marginRight="8px">
+                            <Grid container spacing={1} sx={{ px: "10px" }}>
                                 {filteredSportsItems.map((item, index) => (
                                     <Grid
                                         item
-                                        xs={4}
+                                        xs={6}
                                         key={item.id || index}
                                         sx={{
                                             border: "none",
                                             position: "relative",
                                             bgcolor: "transparent",
-                                            p: 1,
+                                            p: 0.5,
                                         }}
                                         onClick={() => handleApiClick(item.id, currentCategory, "SPORT")}
                                     >
@@ -1362,7 +1362,7 @@ const AllGamesPage = () => {
                                             style={{
                                                 width: "100%",
                                                 aspectRatio: "3/4",
-                                                borderRadius: "5px"
+                                                borderRadius: "8px"
                                             }}
                                         />
                                     </Grid>

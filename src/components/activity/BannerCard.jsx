@@ -185,7 +185,7 @@ const BannerCard = () => {
             </Grid>
           )
         })}
-        <Grid sx={{ width: "100%", mt: 2 }}>
+        <Grid sx={{ width: "100%", my: 2, color:"white", opacity:0.5 }}>
         <Typography>No more</Typography>
       </Grid>
       </Grid>

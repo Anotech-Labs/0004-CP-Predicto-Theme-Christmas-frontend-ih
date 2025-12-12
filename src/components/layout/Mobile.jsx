@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import ChristmasEffects from "../effects/Snowflakes";
 
 const Mobile = ({ children }) => {
   useEffect(() => {
@@ -49,8 +50,10 @@ const Mobile = ({ children }) => {
               display: "none", // Hide scrollbar in the inner box
             },
             wordWrap: "break-word", // Break the word and wrap onto the next line
+            position: "relative",
           }}
         >
+          <ChristmasEffects numberOfSnowflakes={50} />
           {children}
         </Box>
       </Container>

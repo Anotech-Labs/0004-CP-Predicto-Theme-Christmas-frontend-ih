@@ -14,6 +14,8 @@ import ActivityIcons from "../components/activity/ActivityIcons";
 import BannerCard from "../components/activity/BannerCard";
 import Champion from "../components/home/Champion";
 import LoadingLogo from "../components/utils/LodingLogo";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+
 const Activity = () => {
   useEffect(() => {
     const setVh = () => {
@@ -67,21 +69,35 @@ const Activity = () => {
           )}
           <Box flexGrow={1} sx={{ backgroundColor: "#232626" }}>
             <Grid
-              sx={{
-                backgroundColor: "#232626",
-                position: "sticky",
-                top: 0,
-                zIndex: 1000,
-              }}
-            >
-              <Grid item xs={12} textAlign="center">
-                <img
-                  src="/assets/logo/colorLogo.webp"
-                  alt="logo"
-                  style={{ width: "130px",  }}
-                />
-              </Grid>
-            </Grid>
+  item
+  xs={12}
+  textAlign="center"
+  sx={{
+    display: "flex",
+    alignItems: "center",
+    padding: "5px 0",
+  }}
+>
+  {/* BACK BUTTON */}
+  <ArrowBackIosNewIcon
+    onClick={() => navigate(-1)}
+    style={{
+      color: "white",
+      fontSize: "20px",
+      position: "absolute",
+      left: "16px",
+      cursor: "pointer",
+    }}
+  />
+
+  {/* LOGO */}
+  <img
+    src="/assets/logo/colorLogo.webp"
+    alt="logo"
+    style={{ width: "80px", margin: "0 auto" }}
+  />
+</Grid>
+
             <Grid
               container
               alignItems="center"
@@ -89,7 +105,7 @@ const Activity = () => {
               sx={{
                 width: "100%",
                 background: "#323738",
-                padding: "8px 16px",
+                padding: "24px 16px",
                 color: "white",
                 mb: 2,
               }}

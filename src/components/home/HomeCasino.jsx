@@ -85,7 +85,7 @@ const { handleApiClick } = useContext(GameContext);
               marginLeft: "3px",
               whiteSpace: "nowrap",
               fontWeight:"bold",
-              fontFamily: "'Times New Roman', Times,  ",
+              fontFamily: "'Poppins', sans-serif",
             }}
           >
             Casino
@@ -110,7 +110,7 @@ const { handleApiClick } = useContext(GameContext);
               backgroundColor: "#3a4142",
               "&.MuiButtonBase-root": { minWidth: 0, padding: "3px 8px", boxShadow: "none", },
             }}
-          ><Typography sx={{ color: "#ffffff", fontSize: "12px", textTransform: "none", fontWeight: "bold",  fontFamily: "'Times New Roman', Times,  ", }}>All</Typography> </Button>
+          ><Typography sx={{ color: "#ffffff", fontSize: "12px", textTransform: "none", fontWeight: "bold",  fontFamily: "'Poppins', sans-serif", }}>All</Typography> </Button>
           <Button
             variant="contained"
             onClick={handlePrev}

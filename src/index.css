@@ -1,12 +1,14 @@
 @font-face {
   font-family: 'HelveticaNeueCustom';
+  src: url('/assets/fonts/Helvetica-normal.ttf') format('truetype');
   /* src: url('../public/assets/fonts/Helvetica-UltraLight.ttf') format('truetype'); */
   font-weight: normal;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 * {
-  font-family: 'HelveticaNeueCustom', Arial, sans- ;
-   font-family: 'Times New Roman', Times,  ;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
   /* -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;     */
@@ -14,11 +16,13 @@
 body {
   margin: 0;
   background-color: gray;
-  font-family: 'HelveticaNeueCustom', Arial, sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
 }
 
 * {
-  font-family: 'HelveticaNeueCustom', Arial, sans- ;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
 }
 
 #root {
@@ -40,6 +44,8 @@ body {
 .MuiButton-root,
 .MuiInputLabel-root,
 .MuiMenuItem-root,
-.MuiListItemText-root {
-  font-family: 'HelveticaNeueCustom', Arial, sans- ;
+.MuiListItemText-root,
+.MuiListItemText-primary {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif !important;
 }

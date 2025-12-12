@@ -106,7 +106,7 @@ const HomeSlots = ({onDetailClick = () => {}}) => {
               marginLeft: "2px",
               whiteSpace: "nowrap",
               fontWeight:"bold",
-              fontFamily: "'Times New Roman', Times,  ",
+              fontFamily: "'Poppins', sans-serif",
             }}
           >
             Slots
@@ -131,7 +131,7 @@ const HomeSlots = ({onDetailClick = () => {}}) => {
               backgroundColor: "#3a4142",
               "&.MuiButtonBase-root": { minWidth: 0, padding: "3px 8px", boxShadow: "none", },
             }}
-          ><Typography sx={{ color: "#ffffff", fontSize: "12px", textTransform: "none", fontWeight: "bold",  fontFamily: "'Times New Roman', Times,  ", }}>Detail</Typography> </Button>
+          ><Typography sx={{ color: "#ffffff", fontSize: "12px", textTransform: "none", fontWeight: "bold",  fontFamily: "'Poppins', sans-serif", }}>Detail</Typography> </Button>
           <Button
             variant="contained"
             onClick={handlePrev}

@@ -1103,7 +1103,7 @@ const WingoPage = ({ timerKey }) => {
               top: 0,
               zIndex: 5000,
               backgroundColor: "#232626",
-              // padding: "4px 0px",
+              padding: "4px 0px",
               color: "white",
             }}
           >
@@ -1116,7 +1116,7 @@ const WingoPage = ({ timerKey }) => {
               <img
                 src="/assets/logo/colorLogo.webp"
                 alt="logo"
-                style={{ width: "140px", }}
+                style={{ width: "90px", }}
                 onClick={() => navigate('/')}
               />
             </Grid>

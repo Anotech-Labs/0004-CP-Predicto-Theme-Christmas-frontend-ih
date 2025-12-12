@@ -76,6 +76,7 @@ const BottomNavigationArea = () => {
       />
       <BottomNavigationAction
         style={{ color: value === "/promotion" ? "#24ee89" : "#ffffff", fontWeight: 600 }}
+        sx={{ "& .MuiBottomNavigationAction-label": { fontFamily: "'Poppins', sans-serif" } }}
         label="Promotion"
         value="/promotion"
         icon={
@@ -97,6 +98,7 @@ const BottomNavigationArea = () => {
       />
       <BottomNavigationAction
         style={{ color: value === "/activity" ? "#24ee89" : "#ffffff", fontWeight: 600 }}
+        sx={{ "& .MuiBottomNavigationAction-label": { fontFamily: "'Poppins', sans-serif" } }}
         label="Activity"
         value="/activity"
         icon={
@@ -140,6 +142,7 @@ const BottomNavigationArea = () => {
       />
       <BottomNavigationAction
         style={{ color: value === "/wallet" ? "#24ee89" : "#ffffff", fontWeight: 600 }}
+        sx={{ "& .MuiBottomNavigationAction-label": { fontFamily: "'Poppins', sans-serif" } }}
         label="Wallet"
         value="/wallet"
         icon={
@@ -161,6 +164,7 @@ const BottomNavigationArea = () => {
       />
       <BottomNavigationAction
         style={{ color: value === "/account" ? "#24ee89" : "#ffffff", fontWeight: 600 }}
+        sx={{ "& .MuiBottomNavigationAction-label": { fontFamily: "'Poppins', sans-serif" } }}
         label="Account"
         value="/account"
         icon={

@@ -127,9 +127,9 @@ const AvatarChange = () => {
         </Grid>
 
           {/* Avatar Grid */}
-          <Grid container spacing={2} sx={{ p: 2 }}>
+          <Grid container spacing={0.5} sx={{ px: "10px", py: 1 }}>
             {images.map((image, index) => (
-              <Grid item xs={4} key={index}>
+              <Grid item xs={4} key={index} sx={{ p: 0.5 }}>
                 <Box
                   sx={{
                     position: "relative",
@@ -137,7 +137,7 @@ const AvatarChange = () => {
                     overflow: "hidden",
                     border:
                       selectedAvatar === image.split("/").pop()
-                        ? "4px solid #24ee89"
+                        ? "3px solid #24ee89"
                         : "none", // Highlight selected avatar by file name
                     cursor: "pointer",
                   }}

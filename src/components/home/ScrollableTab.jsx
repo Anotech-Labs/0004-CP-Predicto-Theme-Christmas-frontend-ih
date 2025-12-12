@@ -97,15 +97,15 @@ const ScrollableTabs = () => {
       case "Lobby":
         return (
           <>
-          <Lottery />
-           <HomeMiniGames onDetailClick={() => navigate("/all-games/Mini games")}/>
-            <HomeCasino onDetailClick={() => navigate("/all-games/Casino")}/>
-            <HomeSlots onDetailClick={() => navigate("/all-games/Slots")}/>
-              {/* <TopBanner/> */}
-                     <HomeSports onDetailClick={() => navigate("/all-games/Sports")}/>
-                             <HomeRummy />
-                      <HomeFishing onDetailClick={() => navigate("/all-games/Fishing")}/>
-                       <SuperJackpot />           
+            <Lottery />
+            <HomeMiniGames onDetailClick={() => navigate("/all-games/Mini games")} />
+            <HomeCasino onDetailClick={() => navigate("/all-games/Casino")} />
+            <HomeSlots onDetailClick={() => navigate("/all-games/Slots")} />
+            {/* <TopBanner/> */}
+            <HomeSports onDetailClick={() => navigate("/all-games/Sports")} />
+            <HomeRummy />
+            <HomeFishing onDetailClick={() => navigate("/all-games/Fishing")} />
+            <SuperJackpot />
           </>
         );
       case "Lottery":
@@ -138,8 +138,8 @@ const ScrollableTabs = () => {
 
   return (
     <Box sx={{
-    // mx: "13px"
-     }}>
+      // mx: "13px"
+    }}>
       {/* Scrollable tabs container */}
       {/* <Box
         ref={scrollRef}
@@ -219,7 +219,7 @@ const ScrollableTabs = () => {
       </Box> */}
 
       {/* Content area */}
-      <Box sx={{px:2,background:"transparent"}}>
+      <Box sx={{ px: "10px", background: "transparent" }}>
         {renderComponent()}
       </Box>
     </Box>

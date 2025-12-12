@@ -138,6 +138,7 @@ const Lottery = () => {
                 whiteSpace: "nowrap",
                 textAlign:"left",
                 fontWeight:"bold",
+                fontFamily: "'Poppins', sans-serif",
               }}
             >
               Lottery

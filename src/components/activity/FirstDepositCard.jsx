@@ -9,7 +9,7 @@ const FirstDepositCard = ({ bonus, onDeposit, depositType = "FIRST" })  => {
   return (
   <Card
     sx={{
-      mb: 2,
+      mb: 1,
       backgroundColor: "#3a4142",
       boxShadow: "none",
       // border: "1px solid #E0E0E0",

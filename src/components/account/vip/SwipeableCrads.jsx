@@ -542,7 +542,7 @@ const SwipeableCards = () => {
                   }}
                 >
                   <div className="d-img">
-                    {/* <Diamond sx={{ color: "#f0960e", fontSize: 30 }} /> */}
+                    {/* <Diamond sx={{ color: "#24EE89", fontSize: 30 }} /> */}
                     <img
                       src="/assets/vipIcons/orangediamond.svg"
                       alt="Gift"
@@ -621,7 +621,7 @@ const SwipeableCards = () => {
                           width: "100%",
                           alignItems: "center",
                           height: "30%",
-                          border: "1px solid #f0960e",
+                          border: "1px solid #24EE89",
                           borderRadius: "5px",
                         }}
                       >
@@ -638,7 +638,7 @@ const SwipeableCards = () => {
                             style={{ width: " 100% ", height: "100%" }}
                           />
                         </div>
-                        <div style={{ color: "#f0960e", fontSize: "0.8rem" }}>
+                        <div style={{ color: "#24EE89", fontSize: "0.8rem" }}>
                           {claimedLevels.has(level.id)
                             ? "Received"
                             : level.bonuses.oneTime}
@@ -653,7 +653,7 @@ const SwipeableCards = () => {
                           width: "100%",
                           alignItems: "center",
                           height: "30%",
-                          border: "1px solid #f0960e",
+                          border: "1px solid #24EE89",
                           borderRadius: "5px",
                         }}
                       >
@@ -670,7 +670,7 @@ const SwipeableCards = () => {
                             style={{ width: " 100% ", height: "100%" }}
                           />
                         </div>
-                        <div style={{ color: "#f0960e", fontSize: "0.8rem" }}>
+                        <div style={{ color: "#24EE89", fontSize: "0.8rem" }}>
                           0
                         </div>
                       </div>
@@ -730,7 +730,7 @@ const SwipeableCards = () => {
                           alignItems: "center",
                           width: "100%",
                           height: "30%",
-                          border: "1px solid #f0960e",
+                          border: "1px solid #24EE89",
                           borderRadius: "5px",
                         }}
                       >
@@ -747,7 +747,7 @@ const SwipeableCards = () => {
                             style={{ width: " 100% ", height: "100%" }}
                           />
                         </div>
-                        <div style={{ color: "#f0960e", fontSize: "0.8rem" }}>
+                        <div style={{ color: "#24EE89", fontSize: "0.8rem" }}>
                           {level.bonuses.monthly}
                         </div>
                       </div>
@@ -760,7 +760,7 @@ const SwipeableCards = () => {
                           height: "30%",
                           margin: "5px auto",
                           alignItems: "center",
-                          border: "1px solid #f0960e",
+                          border: "1px solid #24EE89",
                           borderRadius: "5px",
                         }}
                       >
@@ -777,7 +777,7 @@ const SwipeableCards = () => {
                             style={{ width: " 100% ", height: "100%" }}
                           />
                         </div>
-                        <div style={{ color: "#f0960e", fontSize: "0.8rem" }}>
+                        <div style={{ color: "#24EE89", fontSize: "0.8rem" }}>
                           0
                         </div>
                       </div>
@@ -848,7 +848,7 @@ const SwipeableCards = () => {
                           justifyContent: "center",
                           gap: "8px",
                           margin: "5px auto",
-                          border: "1px solid #f0960e",
+                          border: "1px solid #24EE89",
                           borderRadius: "5px",
                           alignItems: "center",
                         }}
@@ -865,7 +865,7 @@ const SwipeableCards = () => {
                           />
                         </div>
 
-                        <div style={{ color: "#f0960e", fontSize: "0.8rem" }}>
+                        <div style={{ color: "#24EE89", fontSize: "0.8rem" }}>
                           {level.bonuses.rebatePercentage}%
                         </div>
                       </div>
@@ -881,11 +881,12 @@ const SwipeableCards = () => {
                           padding: "10px",
                           marginTop: "20px",
                           background:
-                            "linear-gradient(90deg,#F5B73B 0%, #F5853B 100%)",
+                            "#24EE89",
                           color: "black",
                           border: "none",
                           borderRadius: "5px",
                           cursor: "pointer",
+                          fontWeight: "bold",
                           marginLeft: "0",
                         }}
                       >

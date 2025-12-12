@@ -538,7 +538,7 @@ const TransactionHistory = () => {
                       <Box sx={{ bgcolor: "#323738", p: "8px 6px", borderBottomLeftRadius: "5px", borderBottomRightRadius: "5px" }}>
                         <Box sx={{ display: "flex", justifyContent: "space-between", mb: 0.5, background: "#232626", px: 1, py:0.7, borderRadius: "5px" }}>
                           <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>Detail</Typography>
-                          <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>
+                          <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "10px" }}>
                             {formatTransactionDetails(transaction.details, transaction.transactionType)}
                           </Typography>
                         </Box>

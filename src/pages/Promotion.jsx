@@ -612,10 +612,10 @@ const Promotion = ({ children }) => {
                         sx={{
                           color: "white",
                           fontSize: isSmallScreen2
-                            ? "0.7rem"
+                            ? "0.5rem"
                             : isSmallScreen
-                              ? "0.75rem"
-                              : "0.875rem",
+                              ? "0.5rem"
+                              : "0.75rem",
                         }}
                         align="center"
                       >
@@ -659,10 +659,10 @@ const Promotion = ({ children }) => {
                         sx={{
                           color: "white",
                           fontSize: isSmallScreen2
-                            ? "0.7rem"
+                            ? "0.5rem"
                             : isSmallScreen
-                              ? "0.75rem"
-                              : "0.875rem",
+                              ? "0.5rem"
+                              : "0.75rem",
                         }}
                         align="center"
                       >

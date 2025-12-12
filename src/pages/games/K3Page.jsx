@@ -1703,7 +1703,7 @@ const K3Page = ({ timerKey }) => {
               top: 0,
               zIndex: 1000,
               backgroundColor: "#232626",
-              padding: "0px 16px",
+              padding: "4px 16px",
               color: "white",
             }}
           >
@@ -1721,7 +1721,7 @@ const K3Page = ({ timerKey }) => {
               <img
                 src="/assets/logo/colorLogo.webp"
                 alt="logo"
-                style={{ width: "140px" }}
+                style={{ width: "90px" }}
                 onClick={() => navigate('/')}
               />
             </Grid>

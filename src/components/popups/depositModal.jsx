@@ -129,7 +129,7 @@ const DepositModal = ({ open, onClose }) => {
             padding: 1,
             overflowY: "auto",
             maxHeight: "60vh",
-            background: "#323738",
+            background: "#232626",
             "&::-webkit-scrollbar": {
               display: "none",
             },
@@ -148,6 +148,7 @@ const DepositModal = ({ open, onClose }) => {
 
         <Box
           sx={{
+            borderRadius:"0 0 8px 8px",
             padding: 1.5,
             display: "flex",
             justifyContent: "space-between",
@@ -172,7 +173,7 @@ const DepositModal = ({ open, onClose }) => {
             />
             <Typography
               variant="body2"
-              sx={{ fontSize: "12px", color: "#B3BEC1", textAlign: "right" }}
+              sx={{ fontSize: "10px", color: "#B3BEC1", textAlign: "right" }}
             >
               No more reminders today
             </Typography>
@@ -185,7 +186,8 @@ const DepositModal = ({ open, onClose }) => {
               p:"5px 30px",
               borderRadius:"20px",
               textTransform: "none",
-              fontFamily:"800"
+              fontFamily:"800",
+              fontWeight: "bold"
             }}
             onClick={() => navigate("/activity/first-deposit-bonus")}
           >
