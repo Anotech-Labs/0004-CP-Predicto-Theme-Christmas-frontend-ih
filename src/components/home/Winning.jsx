@@ -138,7 +138,7 @@ const Winning = () => {
         `}
       </style>
 
-      <Box display="flex" alignItems="center" mt={4} mb={-1} mx={"13px"}>
+      {/* <Box display="flex" alignItems="center" mt={4} mb={-1} mx={"13px"}>
 
         <img src="/assets/icons/winningInformation.webp" alt="" width="25px" />
         <Typography
@@ -155,7 +155,7 @@ const Winning = () => {
         >
           Winning information
         </Typography>
-      </Box>
+      </Box> */}
 
       <Box sx={{ mt:3,mx: 1.5, background: "#323738", width: "calc(100% - 25px)", borderRadius: "15px" }}>
         <Grid sx={{ display: "flex", justifyContent: "space-between", px: "10px", mt: 2, py: 2 }}>

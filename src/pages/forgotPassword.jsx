@@ -197,21 +197,27 @@ const ForgotPassword = () => {
         alignItems="flex-start"
         direction="column"
         sx={{
-          background:
-            "linear-gradient(90deg,#24ee89,#9fe871),#323738",
-          px: "16px",
-          pt: "10px",
-          pb: "25px",
-          color: "white",
-          minHeight: "fit-content",
+          minHeight: "220px",
+          backgroundImage: "url('/assets/login/login.webp')",
+          backgroundPosition: "50%",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100%",
+          position: "relative", // important for absolute images
+          overflow: "hidden",
         }}
-        direction="column"
-      >
-        <Typography variant="h7" sx={{ fontWeight: "bold", fontSize: "17px" }}>
-          Forgot password
-        </Typography>
-        <Typography
-          variant="caption"
+      > <img
+          src="/assets/login/shadow.webp"
+          alt="Top Image"
+          style={{
+            position: "absolute",
+            top: 0,
+            bottom: 0,
+            width: "100%",
+            height: "auto",
+          }}
+        />
+        {/* Wrapper for overlapping images */}
+        <Box
           sx={{
             position: "relative",
             width: "100%",
@@ -272,9 +278,7 @@ const ForgotPassword = () => {
               onChange={(e) => setCountryCode(e.target.value)}
               sx={{
                 width: "100px",
-                background: "#323738",
-                marginBottom: -1,
-                borderRadius: "10px",
+                backgroundColor: "#242626",
                 "& .MuiOutlinedInput-root": {
                   height: "40px",
                   // borderRadius: "8px 0 0 8px",
@@ -349,9 +353,8 @@ const ForgotPassword = () => {
               }}
               required
               sx={{
-                width: "80%",
-                backgroundColor: "#323738",
-                borderRadius: "10px",
+                flex: 1,
+                backgroundColor: "transparent",
                 "& .MuiOutlinedInput-root": {
                   height: "40px",
                   borderRadius: "0 8px 8px 0",
@@ -396,8 +399,8 @@ const ForgotPassword = () => {
             value={otp}
             onChange={(e) => setOtp(e.target.value)}
             sx={{
-              backgroundColor: "#323738",
-              borderRadius: "10px",
+              flex: 1,
+              backgroundColor: "transparent",
               "& .MuiOutlinedInput-root": {
                 height: "40px",
                 borderRadius: "1px",
@@ -433,17 +436,17 @@ const ForgotPassword = () => {
                     disabled={!mobile || isVerifyButtonDisabled}
                     sx={{
                       background: isVerifyButtonDisabled
-                        ? "linear-gradient(90deg, #A0A0A0 0%, #808080 100%)"
-                        : "linear-gradient(90deg,#24ee89,#9fe871)",
-                      color: "#ffffff",
-                      borderRadius: 50,
+                        ? "linear-gradient(180deg,#24ee89,#9fe871)"
+                        : "linear-gradient(180deg,#24ee89,#9fe871)",
+                      color: "#000",
+                      borderRadius: "4px",
                       textTransform: "capitalize",
                       px: 3,
                       py: 0.4,
                       "&:hover": {
                         background: isVerifyButtonDisabled
-                          ? "linear-gradient(90deg, #A0A0A0 0%, #808080 100%)"
-                          : "linear-gradient(90deg,#24ee89,#9fe871)",
+                          ? "linear-gradient(180deg,#24ee89,#9fe871)"
+                          : "linear-gradient(180deg,#24ee89,#9fe871)",
                       },
                     }}
                   >
@@ -481,8 +484,8 @@ const ForgotPassword = () => {
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
                 sx={{
-                  backgroundColor: "#323738",
-                  borderRadius: "10px",
+                  flex: 1,
+                  backgroundColor: "transparent",
                   "& .MuiOutlinedInput-root": {
                     height: "40px",
                     borderRadius: "1px",
@@ -545,9 +548,8 @@ const ForgotPassword = () => {
                 value={confirmNewPassword}
                 onChange={(e) => setConfirmNewPassword(e.target.value)}
                 sx={{
-                  // width: "96%",
-                  backgroundColor: "#323738",
-                  borderRadius: "10px",
+                  flex: 1,
+                  backgroundColor: "transparent",
                   "& .MuiOutlinedInput-root": {
                     height: "40px",
                     borderRadius: "1px",
@@ -644,8 +646,8 @@ const ForgotPassword = () => {
                 disabled={!otpVerified || !isChecked}
                 style={{
                   background:
-                    "linear-gradient(90deg,#24ee89,#9fe871),#323738",
-                  borderRadius: "360px",
+                    "linear-gradient(180deg,#24ee89,#9fe871)",
+                  borderRadius: "2px",
                   width: "85%",
                   height: "43px",
                   textTransform: "none",
