@@ -343,7 +343,7 @@ const SwipeableCards = () => {
       margin: "12px 10px 20px 10px",
     },
     associated: {
-      backgroundColor: "#222121",
+      backgroundColor: "#323738",
       padding: "8px",
       borderRadius: "10px",
     },

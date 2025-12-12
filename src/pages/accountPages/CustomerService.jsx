@@ -65,61 +65,61 @@ const CustomerService = () => {
   };
 
   const serviceOptions = [
-    {
-      title: "Deposit Not Received",
-      icon: "/assets/customer-support/deposit.svg",
-      link: "/tms/deposit-recharge-history",
-    },
-    {
-      title: "Withdrawal Problem",
-      icon: "/assets/customer-support/withdrawal.svg",
-      link: "/tms/withdrawal-history",
-    },
-    {
-      title: "IFSC Modification",
-      icon: "/assets/customer-support/IFSC.svg",
-      link: "/tms/change-ifsc",
-    },
-    {
-      title: "Change ID Login Password",
-      icon: "/assets/customer-support/changePass.svg",
-      link: "/tms/change-password",
-    },
-    {
-      title: "Change Bank Name",
-      icon: "/assets/customer-support/bank.svg",
-      link: "/tms/change-bank-name",
-    },
-    {
-      title: "Modify Bank Information",
-      icon: "/assets/customer-support/bank.svg",
-      link: "/tms/modify-bank-details",
-    },
-    {
-      title: "Add USDT Address",
-      icon: "/assets/customer-support/USDT_Add.svg",
-      link: "/tms/change-usdt",
-    },
-    {
-      title: "Activity Bonus",
-      icon: "/assets/customer-support/activityBonus.webp",
-      link: "/tms/activity-bonus",
-    },
-    {
-      title: "Game Problems",
-      icon: "/assets/customer-support/gameProblem.svg",
-      link: "/tms/game-problem",
-    },
+    // {
+    //   title: "Deposit Not Received",
+    //   icon: "/assets/customer-support/deposit.svg",
+    //   link: "/tms/deposit-recharge-history",
+    // },
+    // {
+    //   title: "Withdrawal Problem",
+    //   icon: "/assets/customer-support/withdrawal.svg",
+    //   link: "/tms/withdrawal-history",
+    // },
+    // {
+    //   title: "IFSC Modification",
+    //   icon: "/assets/customer-support/IFSC.svg",
+    //   link: "/tms/change-ifsc",
+    // },
+    // {
+    //   title: "Change ID Login Password",
+    //   icon: "/assets/customer-support/changePass.svg",
+    //   link: "/tms/change-password",
+    // },
+    // {
+    //   title: "Change Bank Name",
+    //   icon: "/assets/customer-support/bank.svg",
+    //   link: "/tms/change-bank-name",
+    // },
+    // {
+    //   title: "Modify Bank Information",
+    //   icon: "/assets/customer-support/bank.svg",
+    //   link: "/tms/modify-bank-details",
+    // },
+    // {
+    //   title: "Add USDT Address",
+    //   icon: "/assets/customer-support/USDT_Add.svg",
+    //   link: "/tms/change-usdt",
+    // },
+    // {
+    //   title: "Activity Bonus",
+    //   icon: "/assets/customer-support/activityBonus.webp",
+    //   link: "/tms/activity-bonus",
+    // },
+    // {
+    //   title: "Game Problems",
+    //   icon: "/assets/customer-support/gameProblem.svg",
+    //   link: "/tms/game-problem",
+    // },
     {
       title: "Refund Policy",
       icon: "/assets/customer-support/refund.svg",
       link: "/tms/refund-policy",
     },
-    {
-      title: "Others",
-      icon: "/assets/customer-support/gameProblem.svg",
-      link: "/tms/others-issue",
-    },
+    // {
+    //   title: "Others",
+    //   icon: "/assets/customer-support/gameProblem.svg",
+    //   link: "/tms/others-issue",
+    // },
     {
       title: "Telegram Support",
       icon: "/assets/customer-support/gameProblem.svg",
@@ -230,7 +230,7 @@ const CustomerService = () => {
         </List>
 
         {/* Kind Tips Section */}
-        <Box
+        {/* <Box
           sx={{
             p: 2,
             borderRadius: 2,
@@ -262,10 +262,10 @@ const CustomerService = () => {
             work order you submitted.
           </Typography>
           
-        </Box>
+        </Box> */}
 
         {/* Progress Query Button */}
-        <Box sx={{ p: 2 }}>
+        {/* <Box sx={{ p: 2 }}>
           <Button
             variant="contained"
             fullWidth
@@ -283,7 +283,7 @@ const CustomerService = () => {
           >
             Progress Query
           </Button>
-        </Box>
+        </Box> */}
         <br />
         <br />
         <br />
