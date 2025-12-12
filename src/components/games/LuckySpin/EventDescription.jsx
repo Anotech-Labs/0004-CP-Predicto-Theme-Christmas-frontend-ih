@@ -71,7 +71,7 @@ const EventDesc = () => {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  bgcolor: "#382e35",
+                  bgcolor: "#3a4142",
                   width: "100%",
                   padding: "6px 0px",
                   clipPath: "polygon(0 0, 100% 0%, 96% 100%, 0% 100%)",
@@ -98,7 +98,7 @@ const EventDesc = () => {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  bgcolor: "#382e35",
+                  bgcolor: "#3a4142",
                   width: "100%",
                   padding: "6px 0px",
                   clipPath: "polygon(0 0, 100% 0%, 96% 100%, 0% 100%)",
@@ -150,7 +150,7 @@ const EventDesc = () => {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  bgcolor: "#382e35",
+                  bgcolor: "#3a4142",
                   width: "100%",
                   padding: "6px 0px",
                   clipPath: "polygon(0 0, 100% 0%, 96% 100%, 0% 100%)",

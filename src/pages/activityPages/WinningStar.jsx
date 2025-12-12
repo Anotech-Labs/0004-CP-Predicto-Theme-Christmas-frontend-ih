@@ -49,7 +49,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             item
             xs={6}
             sx={{
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               py: 0.5, // Reduced padding
               px: 1.5, // Reduced padding
               borderBottom: "2px solid #323738", // Reduced border thickness
@@ -69,7 +69,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             item
             xs={6}
             sx={{
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               py: 0.5,
               px: 1.5,
               borderBottom: "2px solid #323738",
@@ -89,7 +89,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             item
             xs={6}
             sx={{
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               py: 0.5,
               px: 1.5,
               borderBottom: "2px solid #323738",
@@ -109,7 +109,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             item
             xs={6}
             sx={{
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               py: 0.5,
               px: 1.5,
               borderBottom: "2px solid #323738",
@@ -129,7 +129,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             item
             xs={6}
             sx={{
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               py: 0.5,
               px: 1.5,
               borderBottom: "2px solid #323738",
@@ -149,7 +149,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             item
             xs={6}
             sx={{
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               py: 0.5,
               px: 1.5,
               borderBottom: "2px solid #323738",
@@ -169,7 +169,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             item
             xs={6}
             sx={{
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               py: 0.5,
               px: 1.5,
               borderBottom: "2px solid #323738",
@@ -189,7 +189,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
             item
             xs={6}
             sx={{
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               py: 0.5,
               px: 1.5,
               borderBottom: "2px solid #323738",

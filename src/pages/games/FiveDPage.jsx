@@ -108,7 +108,7 @@ const TopButton = styled(Tab)(({ theme, selected, index }) => ({
     fontWeight: "bold",
     fontSize: "16px", // Default font size for larger screens
     color: selected ? "transparent" : "#ffffff",
-    backgroundColor: selected ? "#323738" : "#382e35",
+    backgroundColor: selected ? "#323738" : "#3a4142",
     backgroundImage: selected ? `url(${box[index]})` : "none",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -1427,7 +1427,7 @@ const FiveDPage = ({ timerKey }) => {
                             maxWidth: "93%",
                             boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                             marginTop: "-65px",
-                            backgroundColor: "#382e35",
+                            backgroundColor: "#3a4142",
                             borderRadius: "13px",
                             color: "white",
                         }}
@@ -1566,7 +1566,7 @@ const FiveDPage = ({ timerKey }) => {
                                             alignItems: "center",
                                         }}
                                     >
-                                        <SumCircle sx={{ background: "#382e35" }}>
+                                        <SumCircle sx={{ background: "#3a4142" }}>
                                             <Typography
                                                 variant="body2"
                                                 sx={{
@@ -1749,7 +1749,7 @@ const FiveDPage = ({ timerKey }) => {
                                             borderRadius: "20px",
                                             fontSize: "130px",
                                             paddingRight: "20px",
-                                            backgroundColor: "#382e35",
+                                            backgroundColor: "#3a4142",
                                         }}
                                     >
                                         {firstHalf}
@@ -1761,7 +1761,7 @@ const FiveDPage = ({ timerKey }) => {
                                             borderRadius: "20px",
                                             fontSize: "130px",
                                             paddingRight: "20px",
-                                            backgroundColor: "#382e35",
+                                            backgroundColor: "#3a4142",
                                         }}
                                     >
                                         {secondHalf}
@@ -1797,7 +1797,7 @@ const FiveDPage = ({ timerKey }) => {
                                         <Box
                                             style={{
                                                 backgroundColor:
-                                                    selectedElement === label ? selectedColor : "#382e35",
+                                                    selectedElement === label ? selectedColor : "#3a4142",
                                                 color:
                                                     selectedElement === label ? "#ffffff" : "#B79C8B",
                                                 borderRadius: "5px",
@@ -1846,13 +1846,13 @@ const FiveDPage = ({ timerKey }) => {
                                                 width: "35px",
                                                 height: "35px",
                                                 borderRadius: "50%",
-                                                border: "1px solid #837064",
+                                                border: "1px solid #b3bec1",
                                                 display: "flex",
                                                 justifyContent: "center",
                                                 alignItems: "center",
                                                 margin: "0 auto",
                                                 fontSize: "14px",
-                                                color: "#837064",
+                                                color: "#b3bec1",
                                                 backgroundColor: "transparent",
                                                 cursor: "pointer",
                                                 "&:active": {
@@ -1917,7 +1917,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     backgroundColor:
                                                         selectedCategory === label
                                                             ? selectedColor
-                                                            : "#382e35",
+                                                            : "#3a4142",
                                                     color: "#ffffff",
                                                     borderRadius: "5px",
                                                     textAlign: "center",
@@ -2087,7 +2087,7 @@ const FiveDPage = ({ timerKey }) => {
                                                 backgroundColor:
                                                     selectedCategory === label
                                                         ? selectedColor
-                                                        : "#382e35",
+                                                        : "#3a4142",
                                                 color: "#B79C8B",
                                                 borderRadius: "5px",
                                                 textAlign: "center",
@@ -2140,7 +2140,7 @@ const FiveDPage = ({ timerKey }) => {
                                                 borderRadius: "50%",
                                                 border: selectedNumbers.includes(value)
                                                     ? `2px solid ${selectedColor}`
-                                                    : "1px solid #837064",
+                                                    : "1px solid #b3bec1",
                                                 display: "flex",
                                                 justifyContent: "center",
                                                 alignItems: "center",
@@ -2148,7 +2148,7 @@ const FiveDPage = ({ timerKey }) => {
                                                 fontSize: "0.8rem",
                                                 color: selectedNumbers.includes(value)
                                                     ? "#fff"
-                                                    : "#837064",
+                                                    : "#b3bec1",
                                                 backgroundColor: selectedNumbers.includes(value)
                                                     ? selectedColor
                                                     : "transparent",
@@ -2164,7 +2164,7 @@ const FiveDPage = ({ timerKey }) => {
                                             variant="body2"
                                             sx={{
                                                 marginTop: "2px",
-                                                color: "#837064",
+                                                color: "#b3bec1",
                                                 fontSize: "0.75rem",
                                                 textAlign: "center",
                                             }}
@@ -2193,7 +2193,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     style={{
                                                         ...(activeBetAmount === amount
                                                             ? { backgroundColor: selectedColor, color: "#201d2b" }
-                                                            : { backgroundColor: "#382e35", color: "#B79C8B" }),
+                                                            : { backgroundColor: "#3a4142", color: "#B79C8B" }),
                                                         boxShadow: "none", // Add this to remove shadow
                                                         minWidth: "30px",
                                                         padding: "2px 6px",
@@ -2369,7 +2369,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     margin: "5px",
                                                     ...(activeButton === value
                                                         ? { backgroundColor: selectedColor, color: "#201d2b" }
-                                                        : { backgroundColor: "#382e35", color: "#B79C8B" }),
+                                                        : { backgroundColor: "#3a4142", color: "#B79C8B" }),
                                                 }}
                                             >
                                                 X{value}
@@ -2420,7 +2420,7 @@ const FiveDPage = ({ timerKey }) => {
                                         <Button
                                             onClick={handleCancelBet}
                                             fullWidth
-                                            style={{ backgroundColor: "#382e35", color: "#B79C8B", textTransform: "none", borderRadius: "0px" }}
+                                            style={{ backgroundColor: "#3a4142", color: "#B79C8B", textTransform: "none", borderRadius: "0px" }}
                                             variant="contained"
                                         >
                                             Cancel
@@ -2591,7 +2591,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     marginRight: "10px",
                                                     backgroundColor: "#FED358",
                                                     "&.Mui-disabled": {
-                                                        backgroundColor: "#382e35",
+                                                        backgroundColor: "#3a4142",
                                                         color: "#B79C8B",
                                                     },
                                                     "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
@@ -2610,7 +2610,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     marginLeft: "10px",
                                                     backgroundColor: "#FED358",
                                                     "&.Mui-disabled": {
-                                                        backgroundColor: "#382e35",
+                                                        backgroundColor: "#3a4142",
                                                         color: "#B79C8B",
                                                     },
                                                     "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },

@@ -198,7 +198,7 @@ const ScrollableTabs = () => {
 
             <Box
               sx={{
-                color: selectedItem === item.name ? "#ffffff" : "#837064",
+                color: selectedItem === item.name ? "#ffffff" : "#b3bec1",
                 fontSize: '12.8px',
                 textAlign: 'center',
                 width: '100%',
@@ -206,7 +206,7 @@ const ScrollableTabs = () => {
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
                 transition: 'color 0.3s ease',
-                fontFamily: "'Times New Roman', Times, serif !important",
+                fontFamily: "'Times New Roman', Times,  ",
               }}
             >
               {item.name}

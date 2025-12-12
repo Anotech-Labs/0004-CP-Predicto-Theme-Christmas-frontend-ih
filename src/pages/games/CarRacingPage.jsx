@@ -783,7 +783,7 @@ const CarRacingPage = ({ timerKey }) => {
                             width: "calc(100% - 30px)",
                             boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                             marginTop: "-65px",
-                            backgroundColor: "#382e35",
+                            backgroundColor: "#3a4142",
                             borderRadius: "13px",
                             color: "white",
                         }}
@@ -933,7 +933,7 @@ const CarRacingPage = ({ timerKey }) => {
                                             borderRadius: "20px",
                                             fontSize: "130px",
                                             paddingRight: "20px",
-                                            backgroundColor: "#382e35",
+                                            backgroundColor: "#3a4142",
                                         }}
                                     >
                                         {0}
@@ -945,7 +945,7 @@ const CarRacingPage = ({ timerKey }) => {
                                             borderRadius: "20px",
                                             fontSize: "130px",
                                             paddingRight: "20px",
-                                            backgroundColor: "#382e35",
+                                            backgroundColor: "#3a4142",
                                         }}
                                     >
                                         {remainingTime}

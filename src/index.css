@@ -5,8 +5,8 @@
   font-style: normal;
 }
 * {
-  font-family: 'HelveticaNeueCustom', Arial, sans-serif !important;
-   font-family: 'Times New Roman', Times, serif !important;
+  font-family: 'HelveticaNeueCustom', Arial, sans- ;
+   font-family: 'Times New Roman', Times,  ;
   /* -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;     */
@@ -18,7 +18,7 @@ body {
 }
 
 * {
-  font-family: 'HelveticaNeueCustom', Arial, sans-serif !important;
+  font-family: 'HelveticaNeueCustom', Arial, sans- ;
 }
 
 #root {
@@ -41,5 +41,5 @@ body {
 .MuiInputLabel-root,
 .MuiMenuItem-root,
 .MuiListItemText-root {
-  font-family: 'HelveticaNeueCustom', Arial, sans-serif !important;
+  font-family: 'HelveticaNeueCustom', Arial, sans- ;
 }

@@ -129,9 +129,9 @@ const getTypographyStyles = (isMobile) => ({
 
 // Base styles with Inter font
 const globalStyles = {
-  fontFamily: "Inter, sans-serif !important",
+  fontFamily: "Inter, sans- ",
   "& *": {
-    fontFamily: "Inter, sans-serif !important",
+    fontFamily: "Inter, sans- ",
   },
 };
 

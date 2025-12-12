@@ -153,7 +153,7 @@ else if (withdrawalMethod === "UPI") {
     <Typography
       variant="body2"
       style={{ marginTop: 8 }}
-      sx={{ fontFamily: "'Times New Roman', Times, serif !important" }}
+      sx={{ fontFamily: "'Times New Roman', Times,  " }}
     >
       UPI
     </Typography>

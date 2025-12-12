@@ -324,7 +324,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
             marginRight: "10px",
             backgroundColor: "#FED358",
             "&.Mui-disabled": {
-              backgroundColor: "#382e35", // Disabled background color
+              backgroundColor: "#3a4142", // Disabled background color
               color: "#B79C8B", // Optional: Change text color for better visibility
             },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
@@ -343,7 +343,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
             marginLeft: "10px",
             backgroundColor: "#FED358",
             "&.Mui-disabled": {
-              backgroundColor: "#382e35", // Disabled background color
+              backgroundColor: "#3a4142", // Disabled background color
               color: "#B79C8B", // Optional: Change text color for better visibility
             },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },

@@ -48,7 +48,7 @@ const StyledTab = styled(Tab)(({ selected, index }) => ({
     fontWeight: "bold",
     fontSize: "16px",
     color: selected ? "transparent" : "#ffffff",
-    backgroundColor: selected ? "#323738" : "#382e35",
+    backgroundColor: selected ? "#323738" : "#3a4142",
     backgroundImage: selected ? `url(${chart[index]})` : "none",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -372,7 +372,7 @@ const Chart5D = ({ data }) => {
                         marginRight: "10px",
                         backgroundColor: "#FED358",
                         "&.Mui-disabled": {
-                            backgroundColor: "#382e35", // Disabled background color
+                            backgroundColor: "#3a4142", // Disabled background color
                             color: "#ffffff", // Optional: Change text color for better visibility
                         },
                         "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
@@ -391,7 +391,7 @@ const Chart5D = ({ data }) => {
                         marginLeft: "10px",
                         backgroundColor: "#FED358",
                         "&.Mui-disabled": {
-                            backgroundColor: "#382e35", // Disabled background color
+                            backgroundColor: "#3a4142", // Disabled background color
                             color: "#ffffff", // Optional: Change text color for better visibility
                         },
                         "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },

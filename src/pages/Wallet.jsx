@@ -299,7 +299,7 @@ const Wallet = ({ children }) => {
                     sx={{ fontSize: "25.6px" }}
                   >{`\u20B9${userWallet ? userWallet : " Loading"
                     }`}</Typography>
-                  <Typography color={"white"} sx={{ fontSize: "13.5px" ,fontFamily: "'Times New Roman', Times, serif !important",}}>
+                  <Typography color={"white"} sx={{ fontSize: "13.5px" ,fontFamily: "'Times New Roman', Times,  ",}}>
                     Total balance
                   </Typography>
                 </Grid>
@@ -351,7 +351,7 @@ const Wallet = ({ children }) => {
                     variant="determinate"
                     value={100}
                     size={80}
-                    sx={{ color: "#382e35" }}
+                    sx={{ color: "#3a4142" }}
                   />
                   <CircularProgress
                     variant="determinate"
@@ -381,10 +381,10 @@ const Wallet = ({ children }) => {
 
                 <Typography
                   variant="h6"
-                  sx={{ color: "#fde4bc", fontSize: "1rem",fontFamily: "'Times New Roman', Times, serif !important", }}
+                  sx={{ color: "#fde4bc", fontSize: "1rem",fontFamily: "'Times New Roman', Times,  ", }}
                 >{`\u20B9${userWallet ? userWallet : "Loading..."
                   }`}</Typography>
-                <Typography sx={{ color: "#fde4bc", fontSize: "0.9rem",fontFamily: "'Times New Roman', Times, serif !important", }}>
+                <Typography sx={{ color: "#fde4bc", fontSize: "0.9rem",fontFamily: "'Times New Roman', Times,  ", }}>
                   Main wallet
                 </Typography>
               </Grid>
@@ -394,7 +394,7 @@ const Wallet = ({ children }) => {
                     variant="determinate"
                     value={100}
                     size={80}
-                    sx={{ color: "#382e35" }}
+                    sx={{ color: "#3a4142" }}
                   />
                   <CircularProgress
                     variant="determinate"
@@ -423,9 +423,9 @@ const Wallet = ({ children }) => {
                 </Box>
 
                 <Typography
-                  sx={{ color: "#fde4bc", fontSize: "1rem",fontFamily: "'Times New Roman', Times, serif !important", }}
+                  sx={{ color: "#fde4bc", fontSize: "1rem",fontFamily: "'Times New Roman', Times,  ", }}
                   >{`₹${getThirdPartyBalance? getThirdPartyBalance: "Loading..."}`}</Typography>
-                <Typography sx={{ color: "#fde4bc", fontSize: "0.9rem",fontFamily: "'Times New Roman', Times, serif !important",}}>
+                <Typography sx={{ color: "#fde4bc", fontSize: "0.9rem",fontFamily: "'Times New Roman', Times,  ",}}>
                   3rd party wallet
                 </Typography>
               </Grid>
@@ -457,7 +457,7 @@ const Wallet = ({ children }) => {
                     width={55}
                     height={55}
                   />
-                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem" ,fontFamily: "'Times New Roman', Times, serif !important",}}>
+                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem" ,fontFamily: "'Times New Roman', Times,  ",}}>
 
                     Deposit{" "}
                   </Typography>
@@ -469,7 +469,7 @@ const Wallet = ({ children }) => {
                     width={55}
                     height={55}
                   />
-                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem" ,fontFamily: "'Times New Roman', Times, serif !important",}}>
+                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem" ,fontFamily: "'Times New Roman', Times,  ",}}>
                     Withdraw
                   </Typography>
                 </Grid>
@@ -480,7 +480,7 @@ const Wallet = ({ children }) => {
                      width={55}
                     height={55}
                   />
-                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem",fontFamily: "'Times New Roman', Times, serif !important", }}>
+                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem",fontFamily: "'Times New Roman', Times,  ", }}>
                     Deposit history
                   </Typography>
                 </Grid>
@@ -491,7 +491,7 @@ const Wallet = ({ children }) => {
                      width={55}
                     height={55}
                   />
-                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem",fontFamily: "'Times New Roman', Times, serif !important", }}>
+                  <Typography sx={{ color: "#B79C8B", fontSize: "0.8rem",fontFamily: "'Times New Roman', Times,  ", }}>
                     Withdrawal History
                   </Typography>
                 </Grid>

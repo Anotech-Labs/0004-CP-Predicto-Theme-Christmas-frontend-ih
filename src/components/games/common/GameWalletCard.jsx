@@ -52,7 +52,7 @@ const GameWalletCard = () => {
           sx={{
             backgroundImage: `url("/assets/walletbg.webp")`,
             backgroundSize: "cover",
-            backgroundColor: "#382E35",
+            backgroundColor: "#3a4142",
             backgroundPosition: "center",
             margin: "20px 15px 10px 15px",
             borderRadius: "30px",

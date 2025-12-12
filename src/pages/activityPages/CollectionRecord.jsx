@@ -113,7 +113,7 @@ function CollectionRecord() {
               background:
                 activeButton === "daily"
                   ? "linear-gradient(90deg,#24ee89,#9fe871)"
-                  : "#382e35",
+                  : "#3a4142",
               padding: "16px 0",
               borderRadius: "8px",
               width: "100%", // Equal width for all buttons
@@ -130,7 +130,7 @@ function CollectionRecord() {
               background:
                 activeButton === "weekly"
                   ? "linear-gradient(90deg,#24ee89,#9fe871)"
-                  : "#382e35",
+                  : "#3a4142",
               padding: "16px 0",
               borderRadius: "8px",
               width: "100%", // Equal width for all buttons
@@ -147,7 +147,7 @@ function CollectionRecord() {
               background:
                 activeButton === "monthly"
                   ? "linear-gradient(90deg,#24ee89,#9fe871)"
-                  : "#382e35",
+                  : "#3a4142",
               padding: "16px 0",
               borderRadius: "8px",
               width: "100%", // Equal width for all buttons

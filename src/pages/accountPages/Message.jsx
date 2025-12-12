@@ -168,7 +168,7 @@ const Message = ({ children }) => {
                         </Typography>
                         <Typography
                           variant="caption"
-                          sx={{ color: "#837064", textAlign: "left", fontSize: "11px" }}
+                          sx={{ color: "#b3bec1", textAlign: "left", fontSize: "11px" }}
                         >
                           {new Date(notification.createdAt).toLocaleString()}
                         </Typography>

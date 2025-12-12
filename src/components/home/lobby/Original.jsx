@@ -99,7 +99,7 @@ const Original = ({onDetailClick = () => {}}) => {
               backgroundColor: "#ffffff",
               "&.MuiButtonBase-root": { minWidth: 0, padding: "3px 8px", boxShadow: "none", },
             }}
-          ><Typography sx={{ color: "#ffffff", fontSize: "12px", textTransform: "none", fontWeight: "bold",  fontFamily: "'Times New Roman', Times, serif !important", }}>Detail</Typography> </Button>
+          ><Typography sx={{ color: "#ffffff", fontSize: "12px", textTransform: "none", fontWeight: "bold",  fontFamily: "'Times New Roman', Times,  ", }}>Detail</Typography> </Button>
           <Button
             variant="contained"
             onClick={handlePrev}

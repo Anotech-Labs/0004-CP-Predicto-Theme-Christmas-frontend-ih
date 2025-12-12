@@ -65,7 +65,7 @@ const navigate = useNavigate();
               marginLeft: "7px",
               whiteSpace: "nowrap",
               fontWeight:"bold",
-              fontFamily: "'Times New Roman', Times, serif !important",
+              fontFamily: "'Times New Roman', Times,  ",
             }}
           >
             PVC

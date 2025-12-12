@@ -59,7 +59,7 @@ const WalletCard = ({ name }) => {
         </Grid>
         <Grid item>
           <Typography fontSize="15px" sx={{ color: "black", marginLeft: "5px", 
-                      fontFamily: "'Times New Roman', Times, serif !important",}} align="left">
+                      fontFamily: "'Times New Roman', Times,  ",}} align="left">
             {name}
           </Typography>
         </Grid>
@@ -78,7 +78,7 @@ const WalletCard = ({ name }) => {
           <Typography
             fontSize="27px"
             sx={{ color: "#221f2e", fontWeight: "bold",
-              fontFamily: "'Times New Roman', Times, serif !important", }}
+              fontFamily: "'Times New Roman', Times,  ", }}
           >
             {`\u20B9 ${userWallet ? parseFloat(userWallet).toFixed(2) : "Loading..."
               }`}

@@ -449,7 +449,7 @@ const FiveDMyHistory = ({ bets, page, setPage, hideDetailsButton, totalPage }) =
           sx={{
             marginRight: "10px",
             backgroundColor: "#FED358",
-            "&.Mui-disabled": { backgroundColor: "#382e35", color: "#B79C8B" },
+            "&.Mui-disabled": { backgroundColor: "#3a4142", color: "#B79C8B" },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
@@ -465,7 +465,7 @@ const FiveDMyHistory = ({ bets, page, setPage, hideDetailsButton, totalPage }) =
           sx={{
             marginLeft: "10px",
             backgroundColor: "#FED358",
-            "&.Mui-disabled": { backgroundColor: "#382e35", color: "#B79C8B" },
+            "&.Mui-disabled": { backgroundColor: "#3a4142", color: "#B79C8B" },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >

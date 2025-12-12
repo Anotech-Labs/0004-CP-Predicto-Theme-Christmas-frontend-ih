@@ -273,7 +273,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                     sx={{ display: "flex", justifyContent: "center", mx: 1, mt: 1 }}
                   >
                     <Divider
-                      sx={{ borderColor: "#382e35", width: "96%" }}
+                      sx={{ borderColor: "#3a4142", width: "96%" }}
                     ></Divider>
                   </Box>
                 )}
@@ -374,7 +374,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                           key={rowIndex}
                           sx={{
                             border: "0.4rem solid #323738",
-                            backgroundColor: "#382e35",
+                            backgroundColor: "#3a4142",
                             borderRadius: "13px",
                             display: "flex",
                             padding: "2px 6px",
@@ -396,7 +396,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                               fontSize: "15px",
                               color: row.color || "#B79C8B",
                               textAlign: "right",
-                              borderBottom: "1px solid #382e35",
+                              borderBottom: "1px solid #3a4142",
                             }}
                           >
                             {row.label === "Amount after tax" ? (
@@ -493,7 +493,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                   sx={{ display: "flex", justifyContent: "center", mx: 1, mt: 2.2 }}
                 >
                   <Divider
-                    sx={{ borderColor: "#382e35", width: "100%" }}
+                    sx={{ borderColor: "#3a4142", width: "100%" }}
                   ></Divider>
                 </Box>
               </AccordionDetails>
@@ -522,7 +522,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
             marginRight: "10px",
             backgroundColor: "#FED358",
             "&.Mui-disabled": {
-              backgroundColor: "#382e35", // Disabled background color
+              backgroundColor: "#3a4142", // Disabled background color
               color: "#B79C8B", // Optional: Change text color for better visibility
             },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
@@ -541,7 +541,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
             marginLeft: "10px",
             backgroundColor: "#FED358",
             "&.Mui-disabled": {
-              backgroundColor: "#382e35", // Disabled background color
+              backgroundColor: "#3a4142", // Disabled background color
               color: "#B79C8B", // Optional: Change text color for better visibility
             },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },

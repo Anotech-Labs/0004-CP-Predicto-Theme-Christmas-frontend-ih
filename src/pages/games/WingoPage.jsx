@@ -1183,7 +1183,7 @@ const WingoPage = ({ timerKey }) => {
               width: "calc(100% - 30px)",
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
               marginTop: "-65px",
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               borderRadius: "13px",
               color: "white",
             }}
@@ -1517,7 +1517,7 @@ const WingoPage = ({ timerKey }) => {
                     borderRadius: "20px",
                     fontSize: "130px",
                     paddingRight: "20px",
-                    backgroundColor: "#382e35",
+                    backgroundColor: "#3a4142",
                   }}
                 >
                   {firstHalf}
@@ -1529,7 +1529,7 @@ const WingoPage = ({ timerKey }) => {
                     borderRadius: "20px",
                     fontSize: "130px",
                     paddingRight: "20px",
-                    backgroundColor: "#382e35",
+                    backgroundColor: "#3a4142",
                   }}
                 >
                   {secondHalf}
@@ -1874,7 +1874,7 @@ const WingoPage = ({ timerKey }) => {
                               fontSize: "17px"
                             }
                             : {
-                              backgroundColor: "#382e35", color: "#ffffff", minWidth: "30px",
+                              backgroundColor: "#3a4142", color: "#ffffff", minWidth: "30px",
                               padding: "2px 6px",
                               fontSize: "17px"
                             }
@@ -1907,7 +1907,7 @@ const WingoPage = ({ timerKey }) => {
                               fontSize: "17px"
                             }
                             : {
-                              backgroundColor: "#382e35", color: "#ffffff", minWidth: "30px",
+                              backgroundColor: "#3a4142", color: "#ffffff", minWidth: "30px",
                               padding: "2px 6px",
                               fontSize: "17px"
                             }
@@ -1939,7 +1939,7 @@ const WingoPage = ({ timerKey }) => {
                               fontSize: "17px"
                             }
                             : {
-                              backgroundColor: "#382e35", color: "#ffffff", minWidth: "30px",
+                              backgroundColor: "#3a4142", color: "#ffffff", minWidth: "30px",
                               padding: "2px 6px",
                               fontSize: "17px"
                             }
@@ -1971,7 +1971,7 @@ const WingoPage = ({ timerKey }) => {
                               fontSize: "17px"
                             }
                             : {
-                              backgroundColor: "#382e35", color: "#ffffff", minWidth: "30px",
+                              backgroundColor: "#3a4142", color: "#ffffff", minWidth: "30px",
                               padding: "2px 6px",
                               fontSize: "17px"
                             }
@@ -2104,7 +2104,7 @@ const WingoPage = ({ timerKey }) => {
                           <Typography
                             variant="body1"
                             sx={{
-                              // border: `1px solid #382e35`,
+                              // border: `1px solid #3a4142`,
                               borderRadius: "4px",
                               padding: "4px 12px",
                               backgroundColor: "#232626",
@@ -2178,7 +2178,7 @@ const WingoPage = ({ timerKey }) => {
                                   : selectedColor,
                               color: "white",
                             }
-                            : { backgroundColor: "#382e35", color: "#ffffff" }),
+                            : { backgroundColor: "#3a4142", color: "#ffffff" }),
                         }}
                       >
                         X{value}
@@ -2229,7 +2229,7 @@ const WingoPage = ({ timerKey }) => {
                       onClick={handleCancelBet}
                       fullWidth
                       style={{
-                        backgroundColor: "#382e35", color: "#B79C8B", textTransform: "none",
+                        backgroundColor: "#3a4142", color: "#B79C8B", textTransform: "none",
                         borderRadius: "0px",
                       }}
                       variant="contained"

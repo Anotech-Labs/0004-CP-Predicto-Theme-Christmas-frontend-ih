@@ -14,7 +14,7 @@ const AdminRoute = () => {
       <style>
         {`
           .outlet-wrapper * {
-            font-family: Inter, sans-serif !important;
+            font-family: Inter, sans- ;
           }
         `}
       </style>

@@ -13,7 +13,7 @@ export default function TrendingGamesMosaic() {
     return (
         <Box
             sx={{
-                width: "100%",
+                width: "auto",
                 bgcolor: "transparent",
                 color: "white",
                 textAlign: "left"
@@ -72,7 +72,7 @@ export default function TrendingGamesMosaic() {
                         component="img"
                         src={items.aviator}
                         alt="Aviator"
-                        sx={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                        sx={{ width: "auto", height: "100%", objectFit: "contain", objectPosition: "center", display: "block" }}
                     />
                 </Box>
 
@@ -90,7 +90,7 @@ export default function TrendingGamesMosaic() {
                         component="img"
                         src={items.sevenUp}
                         alt="7up7down"
-                        sx={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                        sx={{ width: "auto", height: "100%", display: "block", objectFit: "contain", objectPosition: "center" }}
                     />
                 </Box>
 
@@ -108,7 +108,7 @@ export default function TrendingGamesMosaic() {
                         component="img"
                         src={items.pappu}
                         alt="Pappu"
-                        sx={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                        sx={{ width: "auto", height: "100%", objectFit: "contain", objectPosition: "center", display: "block" }}
                     />
                 </Box>
 
@@ -126,7 +126,7 @@ export default function TrendingGamesMosaic() {
                         component="img"
                         src={items.roulette}
                         alt="European Roulette"
-                        sx={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                        sx={{ width: "auto", height: "100%", objectFit: "contain", objectPosition: "center", display: "block" }}
                     />
                 </Box>
 
@@ -144,7 +144,7 @@ export default function TrendingGamesMosaic() {
                         component="img"
                         src={items.crazy}
                         alt="Crazy Time"
-                        sx={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                        sx={{ width: "auto", height: "100%", objectFit: "contain", objectPosition: "center", display: "block" }}
                     />
                 </Box>
             </Box>

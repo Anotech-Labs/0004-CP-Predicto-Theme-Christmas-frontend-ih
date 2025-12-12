@@ -514,7 +514,7 @@
     width: 100%;
 }
   .history-item-exp{
-    color: #837064;
+    color: #b3bec1;
   }
   .history-item-title {
     font-weight: bold;
@@ -529,7 +529,7 @@
   }
   
   .history-item-date {
-    color: #837064;
+    color: #b3bec1;
     font-size: smaller;
     margin: 2px 0;
   }

@@ -283,7 +283,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                     sx={{ display: "flex", justifyContent: "center", mx: 1, mt: 1 }}
                   >
                     <Divider
-                      sx={{ borderColor: "#382e35", width: "96%" }}
+                      sx={{ borderColor: "#3a4142", width: "96%" }}
                     ></Divider>
                   </Box>
                 )}
@@ -292,7 +292,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                 sx={{ display: "flex", justifyContent: "center", mx: 2, mb: 1 }}
               >
                 <Divider
-                  sx={{ borderColor: "#382e35", width: "100%" }}
+                  sx={{ borderColor: "#3a4142", width: "100%" }}
                 ></Divider>
               </Box> */}
               <AccordionDetails sx={{ px: 1, pb: 0 }}>
@@ -444,7 +444,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                           key={rowIndex}
                           sx={{
                             border: "0.4rem solid #323738",
-                            backgroundColor: "#382e35",
+                            backgroundColor: "#3a4142",
                             borderRadius: "13px",
                             display: "flex",
                             padding: "2px 6px",
@@ -469,7 +469,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                               color: row.color || "#B79C8B",
                               textAlign: "right",
                               // padding: "2px 6px",
-                              borderBottom: "1px solid #382e35",
+                              borderBottom: "1px solid #3a4142",
                             }}
                           >
                             {row.value}
@@ -484,7 +484,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                   sx={{ display: "flex", justifyContent: "center", mx: 1, mt: 2.2 }}
                 >
                   <Divider
-                    sx={{ borderColor: "#382e35", width: "100%" }}
+                    sx={{ borderColor: "#3a4142", width: "100%" }}
                   ></Divider>
                 </Box>
               </AccordionDetails>

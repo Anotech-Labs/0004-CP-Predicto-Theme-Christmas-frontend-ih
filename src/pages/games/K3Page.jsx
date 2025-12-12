@@ -1786,7 +1786,7 @@ const K3Page = ({ timerKey }) => {
               width: "calc(100% - 28px)",
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
               marginTop: "-65px",
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               borderRadius: "10px",
               color: "#B79C8B",
             }}
@@ -2036,7 +2036,7 @@ const K3Page = ({ timerKey }) => {
                   <Tab
                     label="Total"
                     style={{
-                      background: values === 0 ? "#fed358" : "#382e35",
+                      background: values === 0 ? "#fed358" : "#3a4142",
                       color: values === 0 ? "#323738" : "#B79C8B",
                       borderBottom: values === 0 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
@@ -2054,7 +2054,7 @@ const K3Page = ({ timerKey }) => {
                     label="2 same"
                     style={{
                       backgroundColor:
-                        values === 1 ? "#fed358" : "#382e35",
+                        values === 1 ? "#fed358" : "#3a4142",
                       color: values === 1 ? "#323738" : "grey",
                       borderBottom: values === 1 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
@@ -2068,7 +2068,7 @@ const K3Page = ({ timerKey }) => {
                     label="3 same"
                     style={{
                       backgroundColor:
-                        values === 2 ? "#fed358" : "#382e35",
+                        values === 2 ? "#fed358" : "#3a4142",
                       color: values === 2 ? "#323738" : "grey",
                       borderBottom: values === 2 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
@@ -2082,7 +2082,7 @@ const K3Page = ({ timerKey }) => {
                     label="Different"
                     style={{
                       backgroundColor:
-                        values === 3 ? "#fed358" : "#382e35",
+                        values === 3 ? "#fed358" : "#3a4142",
                       color: values === 3 ? "#323738" : "grey",
                       borderBottom: values === 3 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
@@ -2310,7 +2310,7 @@ const K3Page = ({ timerKey }) => {
                         variant="contained"
                         style={{
                           backgroundColor:
-                            activeBetAmount === 1 ? "#FED358" : "#382e35",
+                            activeBetAmount === 1 ? "#FED358" : "#3a4142",
                           color: activeBetAmount === 1 ? "#ffffff" : "#B79C8B",
                           minWidth: "30px",
                           padding: "2px 6px",
@@ -2327,7 +2327,7 @@ const K3Page = ({ timerKey }) => {
                         variant="contained"
                         style={{
                           backgroundColor:
-                            activeBetAmount === 10 ? "#FED358" : "#382e35",
+                            activeBetAmount === 10 ? "#FED358" : "#3a4142",
                           color: activeBetAmount === 10 ? "#ffffff" : "#B79C8B",
                           minWidth: "30px",
                           padding: "2px 6px",
@@ -2344,7 +2344,7 @@ const K3Page = ({ timerKey }) => {
                         variant="contained"
                         style={{
                           backgroundColor:
-                            activeBetAmount === 100 ? "#FED358" : "#382e35",
+                            activeBetAmount === 100 ? "#FED358" : "#3a4142",
                           color: activeBetAmount === 100 ? "#ffffff" : "#B79C8B",
                           minWidth: "30px",
                           padding: "2px 6px",
@@ -2361,7 +2361,7 @@ const K3Page = ({ timerKey }) => {
                         variant="contained"
                         style={{
                           backgroundColor:
-                            activeBetAmount === 1000 ? "#FED358" : "#382e35",
+                            activeBetAmount === 1000 ? "#FED358" : "#3a4142",
                           color: activeBetAmount === 1000 ? "#ffffff" : "#B79C8B",
                           minWidth: "30px",
                           padding: "2px 6px",
@@ -2481,7 +2481,7 @@ const K3Page = ({ timerKey }) => {
                           <Typography
                             variant="body1"
                             sx={{
-                              // border: `1px solid #382e35`,
+                              // border: `1px solid #3a4142`,
                               borderRadius: "4px",
                               padding: "4px 12px",
                               backgroundColor: "#232626",
@@ -2535,7 +2535,7 @@ const K3Page = ({ timerKey }) => {
                           margin: "5px",
                           ...(activeButton === value
                             ? { backgroundColor: "#FED358", color: "#ffffff" }
-                            : { backgroundColor: "#382e35", color: "#B79C8B" }),
+                            : { backgroundColor: "#3a4142", color: "#B79C8B" }),
                         }}
                       >
                         X{value}
@@ -2585,7 +2585,7 @@ const K3Page = ({ timerKey }) => {
                       onClick={handleCancelBet}
                       fullWidth
                       style={{
-                        backgroundColor: "#382e35",
+                        backgroundColor: "#3a4142",
                         color: "#B79C8B",
                         textTransform: "none",
                         borderRadius: "0px",

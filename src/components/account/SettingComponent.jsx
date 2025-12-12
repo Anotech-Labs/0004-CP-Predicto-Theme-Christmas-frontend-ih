@@ -229,7 +229,7 @@ function SettingComponent() {
                 component: "form",
                 onSubmit: handleChangeUsername,
                 sx: {
-                  backgroundColor: '#382e35',
+                  backgroundColor: '#3a4142',
                   borderRadius: '12px',
                   width: '100%',
                   maxWidth: '370px',

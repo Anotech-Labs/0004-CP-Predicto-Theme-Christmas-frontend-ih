@@ -375,7 +375,7 @@ const SubordinateData = () => {
               <Box
                 sx={{
                   padding: "15px 10px",
-                  backgroundColor: "#382e35",
+                  backgroundColor: "#3a4142",
                   width: "88%",
                   borderRadius: "10px",
                   boxShadow: "0 8px 32px rgba(0, 0, 0, 0.2)",
@@ -531,7 +531,7 @@ const SubordinateData = () => {
                 indicatorColor="primary"
                 variant="fullWidth"
                 sx={{
-                  backgroundColor: "#382e35",
+                  backgroundColor: "#3a4142",
                   borderRadius: "5px",
                   color: "#ffffff",
                   "& .MuiTabs-indicator": {
@@ -907,7 +907,7 @@ const SubordinateData = () => {
                             <Typography
                               variant="body2"
                               sx={{
-                                color: "#837064",
+                                color: "#b3bec1",
                                 textAlign: "end",
                               }}
                             >

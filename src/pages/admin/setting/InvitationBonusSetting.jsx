@@ -67,24 +67,24 @@ const darkTheme = createTheme({
 
 // Base font styles
 const StyledContainer = styled('div')({
-  fontFamily: 'Inter, sans-serif !important',
+  fontFamily: 'Inter, sans- ',
   '& *': {
-    fontFamily: 'Inter, sans-serif !important'
+    fontFamily: 'Inter, sans- '
   }
 });
 
 const StyledTypography = styled(Typography)({
-  fontFamily: 'Inter, sans-serif !important',
+  fontFamily: 'Inter, sans- ',
   fontWeight: 500
 });
 
 const StyledTextField = styled(TextField)({
   '& .MuiInputBase-input': {
-    fontFamily: 'Inter, sans-serif !important',
+    fontFamily: 'Inter, sans- ',
     color: '#f8fafc',
   },
   '& .MuiInputLabel-root': {
-    fontFamily: 'Inter, sans-serif !important',
+    fontFamily: 'Inter, sans- ',
     color: '#94a3b8',
     fontWeight: 500,
     '&.Mui-focused': {
@@ -106,7 +106,7 @@ const StyledTextField = styled(TextField)({
 });
 
 const AddButton = styled(Button)({
-  fontFamily: 'Inter, sans-serif !important',
+  fontFamily: 'Inter, sans- ',
   backgroundColor: '#6366f1',
   color: '#fff',
   textTransform: 'none',
@@ -118,7 +118,7 @@ const AddButton = styled(Button)({
 });
 
 const EditButton = styled(Button)({
-  fontFamily: 'Inter, sans-serif !important',
+  fontFamily: 'Inter, sans- ',
   textTransform: 'none',
   fontWeight: 500,
   color: '#6366f1',
@@ -130,7 +130,7 @@ const EditButton = styled(Button)({
 });
 
 const StyledTableCell = styled(TableCell)({
-  fontFamily: 'Inter, sans-serif !important',
+  fontFamily: 'Inter, sans- ',
   fontWeight: 500,
   padding: '16px',
   color: '#f8fafc',

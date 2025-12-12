@@ -191,7 +191,7 @@ const Characteristic = () => {
               marginLeft: "6px",
               whiteSpace: "nowrap",
               fontWeight:"bold",
-              fontFamily: "'Times New Roman', Times, serif !important",
+              fontFamily: "'Times New Roman', Times,  ",
             }}
           >
             Super Jackpot
@@ -199,14 +199,14 @@ const Characteristic = () => {
         </Grid>
       </Grid>
       <Typography
-        sx={{ fontSize: "12px", textAlign: "left", color: "#837064",
-              fontFamily: "'Times New Roman', Times, serif !important", }}
+        sx={{ fontSize: "12px", textAlign: "left", color: "#b3bec1",
+              fontFamily: "'Times New Roman', Times,  ", }}
       >
         When you win a super jackpot, you will receive additional rewards
       </Typography>
       <Typography
-        sx={{ fontSize: "12px", textAlign: "left",  color: "#837064",
-              fontFamily: "'Times New Roman', Times, serif !important", }}
+        sx={{ fontSize: "12px", textAlign: "left",  color: "#b3bec1",
+              fontFamily: "'Times New Roman', Times,  ", }}
       >
         Maximum bonus{" "}
         <span style={{ color: "rgb(240, 150, 14)" }}>₹300.00</span>
@@ -286,9 +286,9 @@ const Characteristic = () => {
                     >
                       <Typography
                         sx={{
-                          color: "#837064",
+                          color: "#b3bec1",
                           fontSize: "12px",
-              fontFamily: "'Times New Roman', Times, serif !important",
+              fontFamily: "'Times New Roman', Times,  ",
                         }}
                       >
                         {game.game}

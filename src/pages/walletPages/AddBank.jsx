@@ -222,7 +222,7 @@ const AddBank = () => {
                       color: "#ffffff", // Input text color
                       pl:1,
                       "&::placeholder": {
-                        color: "#837064", // Placeholder color
+                        color: "#b3bec1", // Placeholder color
                         opacity: 1, // Ensure full visibility
                         // pl:1
                       },
@@ -271,7 +271,7 @@ const AddBank = () => {
                       color: "#ffffff", // Input text color
                       pl:1,
                       "&::placeholder": {
-                        color: "#837064", // Placeholder color
+                        color: "#b3bec1", // Placeholder color
                         opacity: 1, // Ensure full visibility
                         // pl:1
                       },
@@ -315,7 +315,7 @@ const AddBank = () => {
                       color: "#ffffff", // Input text color
                       pl:1,
                       "&::placeholder": {
-                        color: "#837064", // Placeholder color
+                        color: "#b3bec1", // Placeholder color
                         opacity: 1, // Ensure full visibility
                         // pl:1
                       },
@@ -366,7 +366,7 @@ const AddBank = () => {
                       color: "#ffffff", // Input text color
                       pl:1,
                       "&::placeholder": {
-                        color: "#837064", // Placeholder color
+                        color: "#b3bec1", // Placeholder color
                         opacity: 1, // Ensure full visibility
                         // pl:1
                       },

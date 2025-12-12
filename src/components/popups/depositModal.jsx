@@ -97,7 +97,7 @@ const DepositModal = ({ open, onClose }) => {
       >
         <Box
           sx={{
-            background: "#382e35",
+            background: "#3a4142",
             padding: 2,
             display: "flex",
             flexDirection: "column",
@@ -152,7 +152,7 @@ const DepositModal = ({ open, onClose }) => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            bgcolor: "#382e35",
+            bgcolor: "#3a4142",
           }}
         >
           <Box

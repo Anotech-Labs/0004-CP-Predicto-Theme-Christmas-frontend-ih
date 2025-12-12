@@ -1071,7 +1071,7 @@ const WithDraw = ({ children }) => {
                         fontWeight: "bold",
                         fontSize: "18px",
                         fontFamily:
-                          "'Times New Roman', Times, serif !important",
+                          "'Times New Roman', Times,  ",
                       }}
                     >
                       UPI
@@ -1082,7 +1082,7 @@ const WithDraw = ({ children }) => {
                     align="center"
                     style={{ marginTop: 8 }}
                     sx={{
-                      fontFamily: "'Times New Roman', Times, serif !important",
+                      fontFamily: "'Times New Roman', Times,  ",
                     }}
                   >
                     UPI
@@ -1195,7 +1195,7 @@ const WithDraw = ({ children }) => {
                       <Typography
                         variant="caption"
                         align="center"
-                        style={{ marginTop: 8, color: "#837064" }}
+                        style={{ marginTop: 8, color: "#b3bec1" }}
                       >
                         Add address
                       </Typography>
@@ -1293,13 +1293,13 @@ const WithDraw = ({ children }) => {
                       align="center"
                       style={{
                         marginTop: 2,
-                        color: "#837064",
+                        color: "#b3bec1",
                         fontSize: "15px",
                       }}
                     >
                       Add Bank Details
                     </Typography>
-                    <Button sx={{ textTransform: "none", color: "#837064" }}>
+                    <Button sx={{ textTransform: "none", color: "#b3bec1" }}>
                       Go Here
                     </Button>
                   </Grid>
@@ -1535,7 +1535,7 @@ const WithDraw = ({ children }) => {
                           },
                           "& input::placeholder": {
                             fontSize: "13px",
-                            color: "#837064", // Ensure placeholder color is white
+                            color: "#b3bec1", // Ensure placeholder color is white
                             opacity: 1, // Ensure opacity doesn't dim the color
                           },
                         },
@@ -1703,7 +1703,7 @@ const WithDraw = ({ children }) => {
                               },
                             },
                             "& .MuiInputBase-input::placeholder": {
-                              color: "#837064",
+                              color: "#b3bec1",
                               fontSize: "13px",
                               opacity: 1,
                             },
@@ -1770,7 +1770,7 @@ const WithDraw = ({ children }) => {
                               },
                             },
                             "& .MuiInputBase-input::placeholder": {
-                              color: "#837064",
+                              color: "#b3bec1",
                               fontSize: "13px",
                               fontWeight: "normal",
                               opacity: 1,
@@ -1973,7 +1973,7 @@ const WithDraw = ({ children }) => {
                               fontSize: "12px",
                               mb: 1.1,
                               fontFamily:
-                                "'Times New Roman', Times, serif !important",
+                                "'Times New Roman', Times,  ",
                             }}
                           >
                             Minimum Amount:{" "}
@@ -1991,7 +1991,7 @@ const WithDraw = ({ children }) => {
                               color: "#80849C",
                               fontSize: "12px",
                               fontFamily:
-                                "'Times New Roman', Times, serif !important",
+                                "'Times New Roman', Times,  ",
                             }}
                           >
                             Maximum Amount:{" "}

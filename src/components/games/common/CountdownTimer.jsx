@@ -434,7 +434,7 @@ useEffect(() => {
                     height: "31px",
                     marginTop: "12px",
                     backgroundColor:
-                      gameType === "wingo" ? "#232626" : "#382e35",
+                      gameType === "wingo" ? "#232626" : "#3a4142",
                     color: gameType === "wingo" ? "white" : "#fed358",
                     textAlign: "center",
                     fontWeight: "bold",
@@ -455,7 +455,7 @@ useEffect(() => {
                     height: "31px",
                     marginTop: "8px",
                     backgroundColor:
-                      gameType === "wingo" ? "#232626" : "#382e35",
+                      gameType === "wingo" ? "#232626" : "#3a4142",
                     color: gameType === "wingo" ? "white" : "#fed358",
                     fontWeight: "bold",
                     textAlign: "center",
@@ -492,7 +492,7 @@ useEffect(() => {
                     borderRadius:"2px",
                     height: "31px",
                     backgroundColor:
-                      gameType === "wingo" ? "#232626" : "#382e35",
+                      gameType === "wingo" ? "#232626" : "#3a4142",
                     color: gameType === "wingo" ? "white" : "#fed358",
                     marginTop: "10px",
                     fontWeight: "bold",
@@ -513,7 +513,7 @@ useEffect(() => {
                     borderRadius:"2px",
                     height: "31px",
                     backgroundColor:
-                      gameType === "wingo" ? "#232626" : "#382e35",
+                      gameType === "wingo" ? "#232626" : "#3a4142",
                     color: gameType === "wingo" ? "white" : "#fed358",
                     fontWeight: "bold",
                     marginTop: "8px",

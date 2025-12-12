@@ -294,7 +294,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                     sx={{ display: "flex", justifyContent: "center", mx: 1, mt: 1 }}
                   >
                     <Divider
-                      sx={{ borderColor: "#382e35", width: "96%" }}
+                      sx={{ borderColor: "#3a4142", width: "96%" }}
                     ></Divider>
                   </Box>
                 )}
@@ -394,7 +394,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                           key={rowIndex}
                           sx={{
                             border: "0.3rem solid #323738",
-                            backgroundColor: "#382e35",
+                            backgroundColor: "#3a4142",
                             borderRadius: "10px",
                             display: "flex",
                             padding: "2px 6px",
@@ -415,7 +415,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                               fontSize: "15px",
                               color: row.color || "#B79C8B",
                               textAlign: "right",
-                              borderBottom: "1px solid #382e35",
+                              borderBottom: "1px solid #3a4142",
                             }}
                           >
                             {row.label === "Amount after tax" ? (
@@ -506,7 +506,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                   sx={{ display: "flex", justifyContent: "center", mx: 1, mt: 2.2 }}
                 >
                   <Divider
-                    sx={{ borderColor: "#382e35", width: "100%" }}
+                    sx={{ borderColor: "#3a4142", width: "100%" }}
                   ></Divider>
                 </Box>
               </AccordionDetails>
@@ -533,7 +533,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
             marginRight: "10px",
             backgroundColor: "#FED358",
             "&.Mui-disabled": {
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               color: "#B79C8B",
             },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
@@ -552,7 +552,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
             marginLeft: "10px",
             backgroundColor: "#FED358",
             "&.Mui-disabled": {
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               color: "#B79C8B",
             },
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },

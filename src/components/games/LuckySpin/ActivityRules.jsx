@@ -63,7 +63,7 @@ const ActivityRules = () => {
         >
           <Box
             sx={{
-              bgcolor: "#382e35",
+              bgcolor: "#3a4142",
               py: 0.5,
               maxWidth: 100,
               margin: "0 auto",
@@ -107,7 +107,7 @@ const ActivityRules = () => {
         >
           <Box
             sx={{
-              bgcolor: "#382e35",
+              bgcolor: "#3a4142",
               py: 0.5,
               maxWidth: 100,
               margin: "0 auto",
@@ -151,7 +151,7 @@ const ActivityRules = () => {
         >
           <Box
             sx={{
-              bgcolor: "#382e35",
+              bgcolor: "#3a4142",
               py: 0.5,
               maxWidth: 100,
               margin: "0 auto",

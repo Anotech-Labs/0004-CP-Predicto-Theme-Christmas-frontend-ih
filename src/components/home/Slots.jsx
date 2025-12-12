@@ -354,7 +354,7 @@ const Slots = () => {
                     <img src="/assets/gameFilter/slots.webp" alt="" width="21px" />
                     <Typography sx={{
                         fontSize: "16px", color: "#ffffff", mx: 1, whiteSpace: "nowrap", fontWeight: "bold",
-                        fontFamily: "'Times New Roman', Times, serif !important",
+                        fontFamily: "'Times New Roman', Times,  ",
                     }}>
                         Slots
                     </Typography>
@@ -414,7 +414,7 @@ const Slots = () => {
                         </Grid>
                     </Box>
                 </Box>
-                <Button onClick={handleAllGamesClick} sx={{ mt: 1, background: "linear-gradient(180deg, #FED358 0%, #FFB472 100%)", textTransform: "none", color: "#05012b", width: "100%", borderRadius: "50px",   fontFamily: "'Times New Roman', Times, serif !important", }}>View All</Button>
+                <Button onClick={handleAllGamesClick} sx={{ mt: 1, background: "linear-gradient(180deg, #FED358 0%, #FFB472 100%)", textTransform: "none", color: "#05012b", width: "100%", borderRadius: "50px",   fontFamily: "'Times New Roman', Times,  ", }}>View All</Button>
 
             </Box>
         </Box>

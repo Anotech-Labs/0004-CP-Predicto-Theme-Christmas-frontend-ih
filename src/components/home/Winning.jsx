@@ -150,7 +150,7 @@ const Winning = () => {
             marginLeft: "2px",
             alignItems: "center",
             fontWeight: "bold",
-            fontFamily: "'Times New Roman', Times, serif !important",
+            fontFamily: "'Times New Roman', Times,  ",
           }}
         >
           Winning information
@@ -159,9 +159,9 @@ const Winning = () => {
 
       <Box sx={{ mt:3,mx: 1.5, background: "#323738", width: "calc(100% - 25px)", borderRadius: "15px" }}>
         <Grid sx={{ display: "flex", justifyContent: "space-between", px: "10px", mt: 2, py: 2 }}>
-          <Grid sx={{ color: "#B3BEC1", fontSize: "14px", width: "30%", textAlign: "left",  fontFamily: "'Times New Roman', Times, serif !important", }} >Game</Grid>
-          <Grid sx={{ color: "#B3BEC1", fontSize: "14px", width: "30%",  fontFamily: "'Times New Roman', Times, serif !important", }}>Player</Grid>
-          <Grid sx={{ color: "#B3BEC1", fontSize: "14px", width: "30%",textAlign:"right" ,  fontFamily: "'Times New Roman', Times, serif !important",}}>Profit</Grid>
+          <Grid sx={{ color: "#B3BEC1", fontSize: "14px", width: "30%", textAlign: "left",  fontFamily: "'Times New Roman', Times,  ", }} >Game</Grid>
+          <Grid sx={{ color: "#B3BEC1", fontSize: "14px", width: "30%",  fontFamily: "'Times New Roman', Times,  ", }}>Player</Grid>
+          <Grid sx={{ color: "#B3BEC1", fontSize: "14px", width: "30%",textAlign:"right" ,  fontFamily: "'Times New Roman', Times,  ",}}>Profit</Grid>
         </Grid>
         <Divider sx={{ color: "#E1E1E1" }}></Divider>
         <Box sx={{  mx: "13px" }} className={`winner-container ${animationClass}`}>
@@ -195,7 +195,7 @@ const Winning = () => {
                       />
                     </Box>
                     <Box sx={{ textAlign: "left" }}>
-                      <Typography sx={{ color: "#ffffff", fontSize: "12.8px",  fontFamily: "'Times New Roman', Times, serif !important", }}>
+                      <Typography sx={{ color: "#ffffff", fontSize: "12.8px",  fontFamily: "'Times New Roman', Times,  ", }}>
                         Card 365
                       </Typography>
                     </Box>
@@ -203,14 +203,14 @@ const Winning = () => {
 
                   {/* Right Section: Details and Amount */}
                   <Box sx={{ textAlign: "center",display:"flex",justifyContent:"center",width:"30%" }}>
-                    <Typography sx={{ color: "#ffffff", fontSize: "12.8px" ,  fontFamily: "'Times New Roman', Times, serif !important",}}>
+                    <Typography sx={{ color: "#ffffff", fontSize: "12.8px" ,  fontFamily: "'Times New Roman', Times,  ",}}>
                       {item.txt}
                     </Typography>
                     </Box>
 
                   {/* Right Section: Details and Amount */}
                   <Box sx={{ textAlign: "right" ,width:"30%"}}>
-                    <Typography sx={{ color: "#24ee89", fontSize: "12.8px", mt: "5px" ,  fontFamily: "'Times New Roman', Times, serif !important",}}>
+                    <Typography sx={{ color: "#24ee89", fontSize: "12.8px", mt: "5px" ,  fontFamily: "'Times New Roman', Times,  ",}}>
                       ₹{item.txt2}
                     </Typography>
                   </Box>

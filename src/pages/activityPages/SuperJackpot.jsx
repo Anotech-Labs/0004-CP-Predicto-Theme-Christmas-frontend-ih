@@ -167,7 +167,7 @@ const SuperJackpot = () => {
                 maxWidth: 380,
 
                 bgcolor: "#5a5145",
-                color: "#837064",
+                color: "#b3bec1",
                 height: "36px",
                 fontSize: "13px",
                 // fontWeight: "bold",

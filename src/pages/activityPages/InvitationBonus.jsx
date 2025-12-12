@@ -396,7 +396,7 @@ const InvitationBonus = () => {
             margin: 3,
             display: "flex",
             justifyContent: "space-around",
-            background: "#382e35",
+            background: "#3a4142",
             borderRadius: "16px",
             marginTop: "-3%",
             zIndex: 10,

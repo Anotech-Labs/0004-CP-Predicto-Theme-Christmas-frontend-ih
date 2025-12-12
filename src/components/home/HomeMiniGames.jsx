@@ -78,7 +78,7 @@ const HomeMiniGames = ({onDetailClick = () => {}}) => {
           sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}
         >
 
-          <img src="/assets/gameFilter/miniGames.webp" alt="" width="22px" />
+          {/* <img src="/assets/gameFilter/miniGames.webp" alt="" width="22px" /> */}
           <Typography
                       sx={{
                         fontSize: "14px",
@@ -87,7 +87,7 @@ const HomeMiniGames = ({onDetailClick = () => {}}) => {
                         marginLeft: "3px",
                         whiteSpace: "nowrap",
                         fontWeight:"bold",
-                        fontFamily: "'Times New Roman', Times, serif !important",
+                        fontFamily: "'Times New Roman', Times,  ",
                       }}
                     >
                       Mini games
@@ -109,19 +109,19 @@ const HomeMiniGames = ({onDetailClick = () => {}}) => {
             onClick={onDetailClick}
             sx={{
               marginRight: "10px",
-              backgroundColor: "#382e35",
+              backgroundColor: "#3a4142",
               "&.MuiButtonBase-root": { minWidth: 0, padding: "3px 8px", boxShadow: "none", },
             }}
-          ><Typography sx={{ color: "#FED358", fontSize: "12px", textTransform: "none", fontWeight: "bold",  fontFamily: "'Times New Roman', Times, serif !important", }}>All</Typography> </Button>
+          ><Typography sx={{ color: "#ffffff", fontSize: "12px", textTransform: "none", fontWeight: "bold",  fontFamily: "'Times New Roman', Times,  ", }}>All</Typography> </Button>
           <Button
             variant="contained"
             onClick={handlePrev}
             sx={{
-              backgroundColor: "#2c242a",
+              backgroundColor: "#373e3f",
               "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 8px", boxShadow: "none", },
             }}
           >
-            <ArrowBackIosRoundedIcon style={{ color: "#837064", fontSize: "12px" }} />
+            <ArrowBackIosRoundedIcon style={{ color: "#b3bec1", fontSize: "12px" }} />
           </Button>
           <Button
             variant="contained"
@@ -129,12 +129,12 @@ const HomeMiniGames = ({onDetailClick = () => {}}) => {
             sx={{
 
               marginLeft: "10px",
-              backgroundColor: "#2c242a",
+              backgroundColor: "#373e3f",
               "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 8px", boxShadow: "none", },
 
             }}
           >
-            <ArrowForwardIosRoundedIcon style={{ color: "#837064", fontSize: "12px" }} />
+            <ArrowForwardIosRoundedIcon style={{ color: "#b3bec1", fontSize: "12px" }} />
           </Button>
         </Grid>
       </Grid>

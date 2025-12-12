@@ -399,7 +399,7 @@ const BettingRebate = () => {
               </Typography>
               <Box
                 sx={{
-                  bgcolor: "#382e35",
+                  bgcolor: "#3a4142",
                   borderRadius: "5px",
                   p: 1,
                   mb: 1,
@@ -418,7 +418,7 @@ const BettingRebate = () => {
                 <Grid item xs={6}>
                   <Box
                     sx={{
-                      bgcolor: "#382e35",
+                      bgcolor: "#3a4142",
                       borderRadius: "8px",
                       p: 1,
                       textAlign: "left",
@@ -446,7 +446,7 @@ const BettingRebate = () => {
                 <Grid item xs={6}>
                   <Box
                     sx={{
-                      bgcolor: "#382e35",
+                      bgcolor: "#3a4142",
                       borderRadius: "8px",
                       p: 1,
                       textAlign: "left",

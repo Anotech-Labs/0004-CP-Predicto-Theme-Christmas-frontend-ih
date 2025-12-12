@@ -84,7 +84,7 @@ const CustomTextField = styled(TextField)({
     minWidth: "100%",
   },
   "& .MuiOutlinedInput-root": {
-    fontFamily: "Inter, sans-serif !important",
+    fontFamily: "Inter, sans- ",
     height: "40px",
     "&.Mui-focused": {
       "& .MuiOutlinedInput-notchedOutline": {
@@ -100,7 +100,7 @@ const CustomTextField = styled(TextField)({
     },
   },
   "& .MuiInputLabel-root": {
-    fontFamily: "Inter, sans-serif !important",
+    fontFamily: "Inter, sans- ",
     color: "#94a3b8",
     fontSize: "13px",
     "&.Mui-focused": {
@@ -108,7 +108,7 @@ const CustomTextField = styled(TextField)({
     },
   },
   "& .MuiOutlinedInput-input": {
-    fontFamily: "Inter, sans-serif !important",
+    fontFamily: "Inter, sans- ",
     fontSize: "14px",
     padding: "8px 14px",
     "&::placeholder": {
@@ -116,7 +116,7 @@ const CustomTextField = styled(TextField)({
     },
   },
   "& .MuiSelect-select": {
-    fontFamily: "Inter, sans-serif !important",
+    fontFamily: "Inter, sans- ",
     fontSize: "14px",
   },
 });
@@ -255,7 +255,7 @@ const WithdrawalLimitSetting = () => {
           <Typography
             variant="h6"
             sx={{
-              fontFamily: "Inter, sans-serif !important",
+              fontFamily: "Inter, sans- ",
               fontSize: "18px",
               fontWeight: 600,
               color: "#f8fafc",
@@ -292,7 +292,7 @@ const WithdrawalLimitSetting = () => {
               label={
                 <Typography
                   sx={{
-                    fontFamily: "Inter, sans-serif !important",
+                    fontFamily: "Inter, sans- ",
                     fontSize: "14px",
                     color: "#94a3b8",
                   }}
@@ -307,7 +307,7 @@ const WithdrawalLimitSetting = () => {
             <>
               <Typography
                 sx={{
-                  fontFamily: "Inter, sans-serif !important",
+                  fontFamily: "Inter, sans- ",
                   fontSize: "13px",
                   fontWeight: 500,
                   color: "#94a3b8",
@@ -371,7 +371,7 @@ const WithdrawalLimitSetting = () => {
 
           <Typography
             sx={{
-              fontFamily: "Inter, sans-serif !important",
+              fontFamily: "Inter, sans- ",
               fontSize: "13px",
               fontWeight: 500,
               color: "#94a3b8",
@@ -405,7 +405,7 @@ const WithdrawalLimitSetting = () => {
                   startAdornment: (
                     <Typography
                       sx={{
-                        fontFamily: "Inter, sans-serif !important",
+                        fontFamily: "Inter, sans- ",
                         fontSize: "14px",
                         color: "#94a3b8",
                         mr: 0.5,
@@ -429,7 +429,7 @@ const WithdrawalLimitSetting = () => {
                   startAdornment: (
                     <Typography
                       sx={{
-                        fontFamily: "Inter, sans-serif !important",
+                        fontFamily: "Inter, sans- ",
                         fontSize: "14px",
                         color: "#94a3b8",
                         mr: 0.5,
@@ -448,7 +448,7 @@ const WithdrawalLimitSetting = () => {
             fullWidth
             variant="contained"
             sx={{
-              fontFamily: "Inter, sans-serif !important",
+              fontFamily: "Inter, sans- ",
               mt: 3,
               height: "40px",
               backgroundColor: "#6366f1",
@@ -478,9 +478,9 @@ const WithdrawalLimitSetting = () => {
           severity={snackbar.severity}
           sx={{
             width: "100%",
-            fontFamily: "Inter, sans-serif !important",
+            fontFamily: "Inter, sans- ",
             "& .MuiAlert-message": {
-              fontFamily: "Inter, sans-serif !important",
+              fontFamily: "Inter, sans- ",
               fontSize: "14px",
             },
           }}

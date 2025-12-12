@@ -1094,7 +1094,7 @@ const handleDeposit = (e) => {
                         background:
                           selectedChannel === index
                             ? "linear-gradient(90deg,#24ee89,#9fe871)"
-                            : "#382e35",
+                            : "#3a4142",
                         cursor: "pointer",
                         height: paymentMode === "USDT" ? "65px" : "50px", // Set height conditionally based on payment mode
                         display: "flex",
@@ -1203,7 +1203,7 @@ const handleDeposit = (e) => {
                       variant="outlined"
                       onClick={() => handleButtonClick(value)}
                       startIcon={
-                        <Typography sx={{ color: selectedValue === value ? "#FFFFFF" : "#837064" }}>
+                        <Typography sx={{ color: selectedValue === value ? "#FFFFFF" : "#b3bec1" }}>
                           {paymentMode === "USDT" ? (
                             <img
                               src="/assets/wallet/USDT.webp"
@@ -1269,7 +1269,7 @@ const handleDeposit = (e) => {
                             marginRight: "1rem",
                             height: "100%",
                             width: "1px",
-                            background: "#837064",
+                            background: "#b3bec1",
                           }}
                         >
                           .
@@ -1313,7 +1313,7 @@ const handleDeposit = (e) => {
                       "& input::placeholder": {
                         fontSize: "14px",
                         fontWeight: "normal",
-                        color: "#837064", // Ensure placeholder color is white
+                        color: "#b3bec1", // Ensure placeholder color is white
                         opacity: 1, // Ensure opacity doesn't dim the color
                       },
                     },
@@ -1347,7 +1347,7 @@ const handleDeposit = (e) => {
                           margin: "0 1rem",
                           height: "100%",
                           width: "1px",
-                          background: "#837064",
+                          background: "#b3bec1",
                         }}
                       >
                         .
@@ -1391,7 +1391,7 @@ const handleDeposit = (e) => {
                     "& input::placeholder": {
                       fontSize: "14px",
                       fontWeight: "normal",
-                      color: "#837064", // Ensure placeholder color is white
+                      color: "#b3bec1", // Ensure placeholder color is white
                       opacity: 1, // Ensure opacity doesn't dim the color
                     },
                   },
