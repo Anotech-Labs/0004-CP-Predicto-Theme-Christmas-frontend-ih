@@ -144,7 +144,7 @@ const DepositBonusSettings = () => {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Paper
+      {/* <Paper
         elevation={0}
         sx={{
           p: { xs: 2, sm: 3, md: 4 },
@@ -331,7 +331,7 @@ const DepositBonusSettings = () => {
             </Alert>
           </Fade>
         )}
-      </Paper>
+      </Paper> */}
     </ThemeProvider>
   );
 };

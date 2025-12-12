@@ -455,7 +455,7 @@ const TransactionHistory = () => {
               flex: 1,
               width: "48%",
               height: "2.8rem",
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               border: "transparent",
               textTransform: "none",
               display: "flex",
@@ -476,7 +476,7 @@ const TransactionHistory = () => {
             sx={{
               flex: 1,
               justifyContent: "space-between",
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               border: "transparent",
               textTransform: "none",
               display: "flex",
@@ -534,7 +534,7 @@ const TransactionHistory = () => {
                         </Typography>
                       </Box>
 
-                      <Box sx={{ bgcolor: "#241e22", p: "12px 6px", borderBottomLeftRadius: "5px", borderBottomRightRadius: "5px" }}>
+                      <Box sx={{ bgcolor: "#323738", p: "12px 6px", borderBottomLeftRadius: "5px", borderBottomRightRadius: "5px" }}>
                         <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1, background: "#232626", p: 1, borderRadius: "5px" }}>
                           <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>Detail</Typography>
                           <Typography variant="body2" sx={{ color: "#B79C8B", fontSize: "12px" }}>
@@ -587,7 +587,7 @@ const TransactionHistory = () => {
               height: "auto",
               margin: "0 auto",
               maxWidth: isSmallScreen ? "600px" : "396px",
-              background: "#241e22",
+              background: "#323738",
               color: "black",
               borderTopLeftRadius: "12px",
               borderTopRightRadius: "12px",
@@ -638,7 +638,7 @@ const TransactionHistory = () => {
           <Box
             sx={{
               padding: "16px",
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               display: "flex",
               justifyContent: "space-between",
               // borderBottom: "1px solid rgba(255,255,255,0.1)"
@@ -684,7 +684,7 @@ const TransactionHistory = () => {
                     width: "100%",
                     textAlign: "center",
                     borderRadius: "0",
-                    backgroundColor: isSelected ? "#241e22" : "transparent",
+                    backgroundColor: isSelected ? "#323738" : "transparent",
                     color: isSelected ? "#B79C8B" : "#888",
                     justifyContent: "center",
                     textTransform: "none",

@@ -165,7 +165,7 @@ const AddBank = () => {
           <ChooseBank selectedBank={selectedBank} setSelectedBank={setSelectedBank} setShowBankSelection={setShowBankSelection} />
         ) : (
           <Box sx={{ px: "8px", backgroundColor: "#232626", height: "100%" }}>
-            <Box sx={{ backgroundColor: "#241e22", p: 1, mb: 3, borderRadius: "20px", display: "flex", alignItems: "center" }}>
+            <Box sx={{ backgroundColor: "#323738", p: 1, mb: 3, borderRadius: "20px", display: "flex", alignItems: "center" }}>
               <Typography variant="body2" display="flex" alignItems="center" color="error" textAlign="left" sx={{ fontSize: "12px" }}>
                 <ErrorOutlineOutlinedIcon sx={{ mr: 1, fontSize: "20px" }} />
                 To ensure the safety of your funds, please bind your bank account
@@ -182,7 +182,7 @@ const AddBank = () => {
               <Box
                 onClick={() => setShowBankSelection(true)}
                 sx={{
-                  background: "linear-gradient(180deg, #FED358 , #FFB472 ),#241e22",
+                  background: "linear-gradient(90deg,#24ee89,#9fe871),#323738",
                   py: 0.5,
                   px: 2,
                   display: "flex",
@@ -215,7 +215,7 @@ const AddBank = () => {
                   onChange={(e) => setName(e.target.value)}
                   variant="standard"
                   sx={{
-                    background:"#241e22",
+                    background:"#323738",
                     borderRadius:"6px",
                     py:1,
                     input: {
@@ -228,16 +228,16 @@ const AddBank = () => {
                       },
                     },
                     "& .MuiInput-underline:before": {
-                      borderBottomColor: "#241e22", // Light grey (default)
+                      borderBottomColor: "#323738", // Light grey (default)
                     },
                     "& .MuiInput-underline:hover:before": {
-                         borderBottom: "1px solid #241e22",// Grey on hover
+                         borderBottom: "1px solid #323738",// Grey on hover
                     },
                     "& .MuiInput-underline:hover:after": {
-                         borderBottom: "1px solid #241e22",// Grey on hover
+                         borderBottom: "1px solid #323738",// Grey on hover
                     },
                     "& .MuiInput-underline:after": {
-                      borderBottomColor: "#241e22", // White when focused (typing)
+                      borderBottomColor: "#323738", // White when focused (typing)
                     },
                   }}
                 />
@@ -264,7 +264,7 @@ const AddBank = () => {
                   }}
                   variant="standard"
                  sx={{
-                    background:"#241e22",
+                    background:"#323738",
                     borderRadius:"6px",
                     py:1,
                     input: {
@@ -277,16 +277,16 @@ const AddBank = () => {
                       },
                     },
                     "& .MuiInput-underline:before": {
-                      borderBottomColor: "#241e22", // Light grey (default)
+                      borderBottomColor: "#323738", // Light grey (default)
                     },
                     "& .MuiInput-underline:hover:before": {
-                         borderBottom: "1px solid #241e22",// Grey on hover
+                         borderBottom: "1px solid #323738",// Grey on hover
                     },
                     "& .MuiInput-underline:hover:after": {
-                         borderBottom: "1px solid #241e22",// Grey on hover
+                         borderBottom: "1px solid #323738",// Grey on hover
                     },
                     "& .MuiInput-underline:after": {
-                      borderBottomColor: "#241e22", // White when focused (typing)
+                      borderBottomColor: "#323738", // White when focused (typing)
                     },
                   }}
                 />
@@ -308,7 +308,7 @@ const AddBank = () => {
                   onChange={(e) => setIfscCode(e.target.value)}
                   variant="standard"
                   sx={{
-                    background:"#241e22",
+                    background:"#323738",
                     borderRadius:"6px",
                     py:1,
                     input: {
@@ -321,16 +321,16 @@ const AddBank = () => {
                       },
                     },
                     "& .MuiInput-underline:before": {
-                      borderBottomColor: "#241e22", // Light grey (default)
+                      borderBottomColor: "#323738", // Light grey (default)
                     },
                     "& .MuiInput-underline:hover:before": {
-                         borderBottom: "1px solid #241e22",// Grey on hover
+                         borderBottom: "1px solid #323738",// Grey on hover
                     },
                     "& .MuiInput-underline:hover:after": {
-                         borderBottom: "1px solid #241e22",// Grey on hover
+                         borderBottom: "1px solid #323738",// Grey on hover
                     },
                     "& .MuiInput-underline:after": {
-                      borderBottomColor: "#241e22", // White when focused (typing)
+                      borderBottomColor: "#323738", // White when focused (typing)
                     },
                   }}
                 />
@@ -359,7 +359,7 @@ const AddBank = () => {
                   }
                   variant="standard"
                   sx={{
-                    background:"#241e22",
+                    background:"#323738",
                     borderRadius:"6px",
                     py:1,
                     input: {
@@ -372,16 +372,16 @@ const AddBank = () => {
                       },
                     },
                     "& .MuiInput-underline:before": {
-                      borderBottomColor: "#241e22", // Light grey (default)
+                      borderBottomColor: "#323738", // Light grey (default)
                     },
                     "& .MuiInput-underline:hover:before": {
-                         borderBottom: "1px solid #241e22",// Grey on hover
+                         borderBottom: "1px solid #323738",// Grey on hover
                     },
                     "& .MuiInput-underline:hover:after": {
-                         borderBottom: "1px solid #241e22",// Grey on hover
+                         borderBottom: "1px solid #323738",// Grey on hover
                     },
                     "& .MuiInput-underline:after": {
-                      borderBottomColor: "#241e22", // White when focused (typing)
+                      borderBottomColor: "#323738", // White when focused (typing)
                     },
                   }}
                 />
@@ -394,12 +394,12 @@ const AddBank = () => {
               onClick={handleSubmit}
               disabled={!isFormValid}
               sx={{
-                background: "linear-gradient(180deg, #FED358 , #FFB472 ),#241e22",
+                background: "linear-gradient(90deg,#24ee89,#9fe871),#323738",
                 borderRadius: "24px",
                 p: 1,
                 mb: 3,
                 "&:hover": {
-                  background: "linear-gradient(180deg, #FED358 , #FFB472 ),#241e22",
+                  background: "linear-gradient(90deg,#24ee89,#9fe871),#323738",
                 },
                 textTransform: "none"
               }}

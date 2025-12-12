@@ -161,7 +161,7 @@ const GiftCoupon = ({ children }) => {
               <Box sx={{ backgroundColor: "#232626", px: 1.5, pb: 1, mt: 1.5 }}>
                 <Box
                   sx={{
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     padding: 2,
                     borderRadius: 3,
                   }}
@@ -235,11 +235,11 @@ const GiftCoupon = ({ children }) => {
                         my: "20px",
                         // textDecoration:"none",
                         padding: "11px",
-                        background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                        background: "linear-gradient(90deg,#24ee89,#9fe871)",
                         color: "black",
                         textTransform: "none",
                         "&:hover": {
-                          background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                          background: "linear-gradient(90deg,#24ee89,#9fe871)",
                         },
                       }}
                     >
@@ -254,7 +254,7 @@ const GiftCoupon = ({ children }) => {
                   sx={{
                     borderRadius: 2,
                     overflow: "hidden",
-                    border: "none", background: "#241e22",
+                    border: "none", background: "#323738",
                     height: "100%",
                     padding: "0px",
                   }}

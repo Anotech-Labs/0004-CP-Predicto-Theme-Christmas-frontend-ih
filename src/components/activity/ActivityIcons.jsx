@@ -16,16 +16,16 @@ const ActivityIcons = () => {
   const navigate = useNavigate()
 
   const rewards = [
-    {
-      image: activityRewardIcon,
-      label: "Activity Reward",
-      link: "/activity/activity-reward",
-    },
-    {
-      image: invitationBonusIcon,
-      label: "Invitation Bonus",
-      link: "/activity/invitation-bonus",
-    },
+    // {
+    //   image: activityRewardIcon,
+    //   label: "Activity Reward",
+    //   link: "/activity/activity-reward",
+    // },
+    // {
+    //   image: invitationBonusIcon,
+    //   label: "Invitation Bonus",
+    //   link: "/activity/invitation-bonus",
+    // },
     {
       image: bettingRebateIcon,
       label: "Betting Rebate",

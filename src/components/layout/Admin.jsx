@@ -263,11 +263,11 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
       icon: <SportsBaseballIcon />,
       link: "/admin/fived-admin",
     },
-    {
-      text: "Car Race Admin",
-      icon: <DirectionsBusIcon />,
-      link: "/admin/car-race-admin",
-    },
+    // {
+    //   text: "Car Race Admin",
+    //   icon: <DirectionsBusIcon />,
+    //   link: "/admin/car-race-admin",
+    // },
   ];
 
   const rechargeItems = [
@@ -302,11 +302,11 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
       icon: <OfflineBoltIcon />,
       link: "/admin/active-users",
     },
-    {
-      text: "Banned User",
-      icon: <NotInterestedIcon />,
-      link: "/admin/banned-users",
-    },
+    // {
+    //   text: "Banned User",
+    //   icon: <NotInterestedIcon />,
+    //   link: "/admin/banned-users",
+    // },
   ];
 
   const addonItems = [
@@ -315,11 +315,11 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
       icon: <GiftIcon />,
       link: "/admin/create-giftcode",
     },
-    {
-      text: "Notifications",
-      icon: <NotificationsIcon />,
-      link: "/admin/create-notifications",
-    },
+    // {
+    //   text: "Notifications",
+    //   icon: <NotificationsIcon />,
+    //   link: "/admin/create-notifications",
+    // },
   ];
 
   const settingsItems = [
@@ -329,60 +329,60 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
       link: "/admin/upi-setting",
       disabled: isDemoAdmin,
     },
-    {
-      text: "Withdrawal Settings",
-      icon: isDemoAdmin ? <LockIcon /> : <SyncAltIcon />,
-      link: "/admin/withdrawal-setting",
-      disabled: isDemoAdmin,
-    },
-    {
-      text: "First Deposit Bonus",
-      icon: isDemoAdmin ? <LockIcon /> : <VolunteerActivismIcon />,
-      link: "/admin/first-deposit-setting",
-      disabled: isDemoAdmin,
-    },
-    {
-      text: "Other Deposit Bonus",
-      icon: isDemoAdmin ? <LockIcon /> : <VolunteerActivismIcon />,
-      link: "/admin/other-deposit-setting",
-      disabled: isDemoAdmin,
-    },
-    {
-      text: "Activity Setting",
-      icon: isDemoAdmin ? <LockIcon /> : <CelebrationIcon />,
-      link: "/admin/activity-reward",
-      disabled: isDemoAdmin,
-    },
-    {
-      text: "Inviation Bonus",
-      icon: isDemoAdmin ? <LockIcon /> : <SelfImprovementIcon />,
-      link: "/admin/invitation-bonus",
-      disabled: isDemoAdmin,
-    },
-    {
-      text: "Attendance Bonus",
-      icon: isDemoAdmin ? <LockIcon /> : <BatteryCharging80Icon />,
-      link: "/admin/attendance-bonus",
-      disabled: isDemoAdmin,
-    },
-    {
-      text: "Lucky Streak Setting",
-      icon: isDemoAdmin ? <LockIcon /> : <SentimentVerySatisfiedIcon />,
-      link: "/admin/lucky-streak-setting",
-      disabled: isDemoAdmin,
-    },
-    {
-      text: "Winning Streak Setting",
-      icon: isDemoAdmin ? <LockIcon /> : <MilitaryTechIcon />,
-      link: "/admin/winning-streak-setting",
-      disabled: isDemoAdmin,
-    },
-    {
-      text: "Lucky Spin",
-      icon: isDemoAdmin ? <LockIcon /> : <AnimationIcon />,
-      link: "/admin/lucky-spin",
-      disabled: isDemoAdmin,
-    },
+    // {
+    //   text: "Withdrawal Settings",
+    //   icon: isDemoAdmin ? <LockIcon /> : <SyncAltIcon />,
+    //   link: "/admin/withdrawal-setting",
+    //   disabled: isDemoAdmin,
+    // },
+    // {
+    //   text: "First Deposit Bonus",
+    //   icon: isDemoAdmin ? <LockIcon /> : <VolunteerActivismIcon />,
+    //   link: "/admin/first-deposit-setting",
+    //   disabled: isDemoAdmin,
+    // },
+    // {
+    //   text: "Other Deposit Bonus",
+    //   icon: isDemoAdmin ? <LockIcon /> : <VolunteerActivismIcon />,
+    //   link: "/admin/other-deposit-setting",
+    //   disabled: isDemoAdmin,
+    // },
+    // {
+    //   text: "Activity Setting",
+    //   icon: isDemoAdmin ? <LockIcon /> : <CelebrationIcon />,
+    //   link: "/admin/activity-reward",
+    //   disabled: isDemoAdmin,
+    // },
+    // {
+    //   text: "Inviation Bonus",
+    //   icon: isDemoAdmin ? <LockIcon /> : <SelfImprovementIcon />,
+    //   link: "/admin/invitation-bonus",
+    //   disabled: isDemoAdmin,
+    // },
+    // {
+    //   text: "Attendance Bonus",
+    //   icon: isDemoAdmin ? <LockIcon /> : <BatteryCharging80Icon />,
+    //   link: "/admin/attendance-bonus",
+    //   disabled: isDemoAdmin,
+    // },
+    // {
+    //   text: "Lucky Streak Setting",
+    //   icon: isDemoAdmin ? <LockIcon /> : <SentimentVerySatisfiedIcon />,
+    //   link: "/admin/lucky-streak-setting",
+    //   disabled: isDemoAdmin,
+    // },
+    // {
+    //   text: "Winning Streak Setting",
+    //   icon: isDemoAdmin ? <LockIcon /> : <MilitaryTechIcon />,
+    //   link: "/admin/winning-streak-setting",
+    //   disabled: isDemoAdmin,
+    // },
+    // {
+    //   text: "Lucky Spin",
+    //   icon: isDemoAdmin ? <LockIcon /> : <AnimationIcon />,
+    //   link: "/admin/lucky-spin",
+    //   disabled: isDemoAdmin,
+    // },
   ];
 
   const allItems = [
@@ -392,21 +392,21 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
       icon: <SportsEsportsIcon />,
       subItems: gameManagementItems,
     },
-    {
-      text: "Illegal Bets",
-      icon: <ReportProblemIcon />,
-      link: "/admin/illegal-bets",
-    },
-    {
-      text: "Profit/Loss",
-      icon: <MonetizationOnIcon />,
-      link: "/admin/profit-loss",
-    },
-    {
-      text: "Agent Performance",
-      icon: <SupportAgentIcon />,
-      link: "/admin/agent-performance",
-    },
+    // {
+    //   text: "Illegal Bets",
+    //   icon: <ReportProblemIcon />,
+    //   link: "/admin/illegal-bets",
+    // },
+    // {
+    //   text: "Profit/Loss",
+    //   icon: <MonetizationOnIcon />,
+    //   link: "/admin/profit-loss",
+    // },
+    // {
+    //   text: "Agent Performance",
+    //   icon: <SupportAgentIcon />,
+    //   link: "/admin/agent-performance",
+    // },
     // {
     //   text: "Tournament",
     //   icon: <TournamentIcon />,
@@ -417,17 +417,17 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
     //   icon: <CasinoIcon />,
     //   link: "/admin/dynamic-spin-event",
     // },
-    { text: "IP Records", icon: <RoomIcon />, link: "/admin/ip-tracking" },
-    {
-      text: "Referral Tree",
-      icon: <AccountTreeIcon />,
-      link: "/admin/referral-tree",
-    },
-    {
-      text: "Top Performance",
-      icon: <StarIcon />,
-      link: "/admin/top-performance",
-    },
+    // { text: "IP Records", icon: <RoomIcon />, link: "/admin/ip-tracking" },
+    // {
+    //   text: "Referral Tree",
+    //   icon: <AccountTreeIcon />,
+    //   link: "/admin/referral-tree",
+    // },
+    // {
+    //   text: "Top Performance",
+    //   icon: <StarIcon />,
+    //   link: "/admin/top-performance",
+    // },
     {
       text: "Api Transaction",
       icon: <ReceiptLongIcon />,
@@ -448,12 +448,12 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
       icon: <PeopleIcon />,
       subItems: memberItems,
     },
-    {
-      text: "Banner Poster Update",
-      icon: isDemoAdmin ? <LockIcon /> : <ImageIcon />,
-      link: "/admin/banner-poster-update",
-      disabled: isDemoAdmin,
-    },
+    // {
+    //   text: "Banner Poster Update",
+    //   icon: isDemoAdmin ? <LockIcon /> : <ImageIcon />,
+    //   link: "/admin/banner-poster-update",
+    //   disabled: isDemoAdmin,
+    // },
     {
       text: "Additional",
       icon: <GiftIcon />,
@@ -471,52 +471,52 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
       subItems: settingsItems,
       link: "/admin/system-setting",
     },
-    {
-      text: "Create Salary",
-      icon: isDemoAdmin ? <LockIcon /> : <SavingsIcon />,
-      link: "/admin/create-salary",
-    },
-    {
-      text: "Update Turn Over",
-      icon: isDemoAdmin ? <LockIcon /> : <ManageHistoryIcon />,
-      link: "/admin/update-turn-over",
-    },
-    {
-      text: "Edit Bank Details",
-      icon: <AssuredWorkloadIcon />,
-      link: "/admin/edit-bank-detail",
-    },
-    {
-      text: "UPI Management",
-      icon: <AccountBalanceWalletIcon />,
-      link: "/admin/upi-management",
-    },
-    {
-      text: "Create User",
-      icon: <SupervisedUserCircleIcon />,
-      link: "/admin/create-user",
-    },
-    {
-      text: "Support Ticket",
-      icon: <HelpIcon />,
-      link: "/admin/support-system",
-    },
+    // {
+    //   text: "Create Salary",
+    //   icon: isDemoAdmin ? <LockIcon /> : <SavingsIcon />,
+    //   link: "/admin/create-salary",
+    // },
+    // {
+    //   text: "Update Turn Over",
+    //   icon: isDemoAdmin ? <LockIcon /> : <ManageHistoryIcon />,
+    //   link: "/admin/update-turn-over",
+    // },
+    // {
+    //   text: "Edit Bank Details",
+    //   icon: <AssuredWorkloadIcon />,
+    //   link: "/admin/edit-bank-detail",
+    // },
+    // {
+    //   text: "UPI Management",
+    //   icon: <AccountBalanceWalletIcon />,
+    //   link: "/admin/upi-management",
+    // },
+    // {
+    //   text: "Create User",
+    //   icon: <SupervisedUserCircleIcon />,
+    //   link: "/admin/create-user",
+    // },
+    // {
+    //   text: "Support Ticket",
+    //   icon: <HelpIcon />,
+    //   link: "/admin/support-system",
+    // },
   ];
 
   const itemSets = {
     ADMIN: allItems,
     FINANCEHEAD: [
       { text: "Dashboard", icon: <DashboardIcon />, link: "/admin/dashboard" },
-      {
-        text: "Illegal Bets",
-        icon: <ReportProblemIcon />,
-        link: "/admin/illegal-bets",
-      },
-      {
-        text: "Profit/Loss",
-        icon: <MonetizationOnIcon />,
-        link: "/admin/profit-loss",
-      },
+      // {
+      //   text: "Illegal Bets",
+      //   icon: <ReportProblemIcon />,
+      //   link: "/admin/illegal-bets",
+      // },
+      // {
+      //   text: "Profit/Loss",
+      //   icon: <MonetizationOnIcon />,
+      //   link: "/admin/profit-loss",
+      // },
       {
         text: "Api Transaction",
         icon: <ReceiptLongIcon />,
@@ -560,36 +560,36 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
         link: "/admin/upi-setting",
         disabled: isDemoAdmin,
       },
-      {
-        text: "Withdrawal Settings",
-        icon: isDemoAdmin ? <LockIcon /> : <SettingsIcon />,
-        link: "/admin/withdrawal-setting",
-        disabled: isDemoAdmin,
-      },
-      {
-        text: "Lucky Streak Setting",
-        icon: isDemoAdmin ? <LockIcon /> : <SentimentVerySatisfiedIcon />,
-        link: "/admin/lucky-streak-setting",
-        disabled: isDemoAdmin,
-      },
-      {
-        text: "Winning Streak Setting",
-        icon: isDemoAdmin ? <LockIcon /> : <MilitaryTechIcon />,
-        link: "/admin/winning-streak-setting",
-        disabled: isDemoAdmin,
-      },
+      // {
+      //   text: "Withdrawal Settings",
+      //   icon: isDemoAdmin ? <LockIcon /> : <SettingsIcon />,
+      //   link: "/admin/withdrawal-setting",
+      //   disabled: isDemoAdmin,
+      // },
+      // {
+      //   text: "Lucky Streak Setting",
+      //   icon: isDemoAdmin ? <LockIcon /> : <SentimentVerySatisfiedIcon />,
+      //   link: "/admin/lucky-streak-setting",
+      //   disabled: isDemoAdmin,
+      // },
+      // {
+      //   text: "Winning Streak Setting",
+      //   icon: isDemoAdmin ? <LockIcon /> : <MilitaryTechIcon />,
+      //   link: "/admin/winning-streak-setting",
+      //   disabled: isDemoAdmin,
+      // },
       {
         text: "Activity Setting",
         icon: isDemoAdmin ? <LockIcon /> : <UpdateIcon />,
         link: "/admin/activity-reward",
         disabled: isDemoAdmin,
       },
-      {
-        text: "Lucky Spin",
-        icon: isDemoAdmin ? <LockIcon /> : <AnimationIcon />,
-        link: "/admin/lucky-spin",
-        disabled: isDemoAdmin,
-      },
+      // {
+      //   text: "Lucky Spin",
+      //   icon: isDemoAdmin ? <LockIcon /> : <AnimationIcon />,
+      //   link: "/admin/lucky-spin",
+      //   disabled: isDemoAdmin,
+      // },
       {
         text: "Attendance Bonus",
         icon: isDemoAdmin ? <LockIcon /> : <UpdateIcon />,
@@ -627,17 +627,17 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
         icon: <GiftIcon />,
         subItems: addonItems,
       },
-      {
-        text: "Notifications",
-        icon: <NotificationsIcon />,
-        link: "/admin/create-notifications",
-      },
-      {
-        text: "Create Salary",
-        icon: isDemoAdmin ? <LockIcon /> : <SavingsIcon />,
-        link: "/admin/create-salary",
-        disabled: isDemoAdmin,
-      },
+      // {
+      //   text: "Notifications",
+      //   icon: <NotificationsIcon />,
+      //   link: "/admin/create-notifications",
+      // },
+      // {
+      //   text: "Create Salary",
+      //   icon: isDemoAdmin ? <LockIcon /> : <SavingsIcon />,
+      //   link: "/admin/create-salary",
+      //   disabled: isDemoAdmin,
+      // },
       {
         text: "Create Gift Code",
         icon: <GiftIcon />,
@@ -647,17 +647,17 @@ const getDrawerItems = (accountType, isDemoAdmin) => {
     SUPPORTHEAD: [
       { text: "Dashboard", icon: <DashboardIcon />, link: "/admin/dashboard" },
       { text: "Members", icon: <PeopleIcon />, link: "/admin/active-users" },
-      { text: "Support", icon: <HelpIcon />, link: "/admin/support-system" },
-      {
-        text: "Edit Bank Details",
-        icon: <AssuredWorkloadIcon />,
-        link: "/admin/edit-bank-detail",
-      },
-      {
-        text: "UPI Management",
-        icon: <AccountBalanceWalletIcon />,
-        link: "/admin/upi-management",
-      },
+      // { text: "Support", icon: <HelpIcon />, link: "/admin/support-system" },
+      // {
+      //   text: "Edit Bank Details",
+      //   icon: <AssuredWorkloadIcon />,
+      //   link: "/admin/edit-bank-detail",
+      // },
+      // {
+      //   text: "UPI Management",
+      //   icon: <AccountBalanceWalletIcon />,
+      //   link: "/admin/upi-management",
+      // },
     ],
   };
 

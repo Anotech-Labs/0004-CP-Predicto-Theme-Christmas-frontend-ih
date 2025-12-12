@@ -969,8 +969,8 @@ const WithDraw = ({ children }) => {
                   style={{
                     background:
                       withdrawalMethod === "Bank Card"
-                        ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                        : "#241e22",
+                        ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                        : "#323738",
                     color:
                       withdrawalMethod === "Bank Card" ? "black" : "#B79C8B",
                     borderRadius: 8,
@@ -1004,8 +1004,8 @@ const WithDraw = ({ children }) => {
                   style={{
                     background:
                       withdrawalMethod === "USDT"
-                        ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                        : "#241e22",
+                        ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                        : "#323738",
                     color: withdrawalMethod === "USDT" ? "black" : "#B79C8B",
                     borderRadius: 8,
                     padding: 16,
@@ -1033,7 +1033,7 @@ const WithDraw = ({ children }) => {
                 </div>
               </Grid>
 
-              <Grid item xs={4}>
+              {/* <Grid item xs={4}>
                 <div
                   onClick={() => setWithdrawalMethod("UPI")}
                   style={{
@@ -1088,7 +1088,7 @@ const WithDraw = ({ children }) => {
                     UPI
                   </Typography>
                 </div>
-              </Grid>
+              </Grid> */}
             </Grid>
 
             {withdrawalMethod === "USDT" && (
@@ -1100,7 +1100,7 @@ const WithDraw = ({ children }) => {
                 style={{
                   width: "92%",
                   margin: "1rem auto",
-                  background: "#241e22",
+                  background: "#323738",
                   borderRadius: "10px",
                   // padding: "10px", // Add padding for visual consistency
                 }}
@@ -1114,7 +1114,7 @@ const WithDraw = ({ children }) => {
                       padding: "8px 16px",
                       borderRadius: "8px",
                       boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)",
-                      background: "#241e22",
+                      background: "#323738",
                       width: "100%",
                       height: "100%", // Ensure Card takes full height of the parent
                       margin: "0 auto",
@@ -1213,7 +1213,7 @@ const WithDraw = ({ children }) => {
                   width: "92%",
                   margin: "20px auto",
                   // boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   borderRadius: "10px",
                   padding: "10px",
                   height: "80px",
@@ -1265,7 +1265,7 @@ const WithDraw = ({ children }) => {
                     // marginLeft: "20px",
                     margin: "1rem auto",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     borderRadius: "8px",
                   }}
                 >
@@ -1337,7 +1337,7 @@ const WithDraw = ({ children }) => {
             )}
 
             {/* UPI Display Section */}
-            {withdrawalMethod === "UPI" && upiDetails.primaryUPI ? (
+            {/* {withdrawalMethod === "UPI" && upiDetails.primaryUPI ? (
               <Grid
                 container
                 alignItems="center"
@@ -1469,7 +1469,7 @@ const WithDraw = ({ children }) => {
               </Typography>
             ) : (
               ""
-            )}
+            )} */}
             <Grid
               container
               spacing={1}
@@ -1479,7 +1479,7 @@ const WithDraw = ({ children }) => {
                 width: "92%",
                 margin: "0 auto",
                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
                 borderRadius: "10px",
                 padding: "5px 12px",
               }}
@@ -1635,7 +1635,7 @@ const WithDraw = ({ children }) => {
                         mt: 1.4,
                         ml: "-8px",
                         background:
-                          "linear-gradient(180deg, #FED358 , #FFB472 )",
+                          "linear-gradient(90deg,#24ee89,#9fe871)",
                         borderRadius: "20px",
                         height: "42px",
                         textTransform: "none",
@@ -1853,7 +1853,7 @@ const WithDraw = ({ children }) => {
                       variant="contained"
                       sx={{
                         background:
-                          "linear-gradient(180deg, #FED358 , #FFB472 )",
+                          "linear-gradient(90deg,#24ee89,#9fe871)",
                         borderRadius: "20px",
                         height: "42px",
                         textTransform: "none",
@@ -2092,7 +2092,7 @@ const WithDraw = ({ children }) => {
                       // maxWidth: "400px",
                       p: 2,
                       m: 0,
-                      bgcolor: "#241e22",
+                      bgcolor: "#323738",
                       maxWidth: "330px",
                     },
                   }}
@@ -2267,7 +2267,7 @@ const WithDraw = ({ children }) => {
                 >
                   <List
                     sx={{
-                      backgroundColor: "#241e22",
+                      backgroundColor: "#323738",
                       py: 1.5,
                       px: 2,
                       border: "1px solid #363636",
@@ -2496,7 +2496,7 @@ const WithDraw = ({ children }) => {
                       marginBottom: 2,
                       borderRadius: 2,
                       overflow: "hidden",
-                      background: "#241e22",
+                      background: "#323738",
                       boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
                     }}
                   >
@@ -2650,7 +2650,7 @@ const WithDraw = ({ children }) => {
                     border: "1px solid #FED358",
                     // "&:hover": {
                     //   background:
-                    //     "linear-gradient(180deg, #FED358 , #FFB472 )",
+                    //     "linear-gradient(90deg,#24ee89,#9fe871)",
                     // },
                   }}
                 >

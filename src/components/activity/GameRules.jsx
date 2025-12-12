@@ -39,7 +39,7 @@ const GameRules = () => {
 
     function Rules() {
         return (
-            <Paper sx={{ mb: 2, overflow: "hidden", borderRadius: "5px", margin: 0 ,background:"#241e22"}}>
+            <Paper sx={{ mb: 2, overflow: "hidden", borderRadius: "5px", margin: 0 ,background:"#323738"}}>
                 <Box
                     sx={{
                         background: "#cf7c10",
@@ -142,7 +142,7 @@ const GameRules = () => {
                                 </TableHead>
                                 <TableBody>
                                     {rulesData.map((row) => (
-                                        <TableRow key={row.day} sx={{ backgroundColor: row.day % 2 === 0 ? '#382e35' : '#241e22', border: 'none' }}>
+                                        <TableRow key={row.day} sx={{ backgroundColor: row.day % 2 === 0 ? '#382e35' : '#323738', border: 'none' }}>
                                             <TableCell align="center" sx={{ border: 'none',color:"#B79C8B" }}>{row.day}</TableCell>
                                             <TableCell align="center" sx={{ border: 'none',color:"#B79C8B" }}>{formatCurrency(row.requiredDeposit)}</TableCell>
                                             <TableCell align="center" sx={{ border: 'none',color:"#B79C8B" }}>{formatCurrency(row.bonusReward)}</TableCell>

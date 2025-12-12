@@ -31,7 +31,7 @@ const ScrollableBox = styled(Box)({
 })
 
 const LotteryButton = styled(Box)(({ theme, active }) => ({
-    background: active ? "linear-gradient(180deg, #FED358 , #FFB472 )" : "#241e22",
+    background: active ? "linear-gradient(90deg,#24ee89,#9fe871)" : "#323738",
     color: active ? "#000" : "#a8a5a1",
     cursor: "pointer",
     padding: "4px 14px",
@@ -424,7 +424,7 @@ const LotteryItem = styled(Box)({
     // border: "1px solid #FED358",
     borderRadius: "20px",
     // width: "100%",
-    background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+    background: "linear-gradient(90deg,#24ee89,#9fe871)",
     textAlign: "left",
     margin: "5px",
     paddingBottom: "0px",
@@ -597,7 +597,7 @@ const AllGamesPage = () => {
         <Mobile>
             <Box
                 sx={{
-                    background: "#241e22",
+                    background: "#323738",
                     padding: "8px 10px",
                     display: "flex",
                     alignItems: "center",
@@ -784,7 +784,7 @@ const AllGamesPage = () => {
                             <Grid container spacing={1} onClick={() => navigate("/all-slots/JILI")} sx={{ justifyContent: "center", mt: 0,mb:1 }}>
                                 <Button
                                     sx={{
-                                        background: " linear-gradient(180deg, #FED358 , #FFB472 )",
+                                        background: " linear-gradient(90deg,#24ee89,#9fe871)",
                                         color: "white",
                                         textTransform: "none",
                                         borderRadius: "40px",
@@ -845,7 +845,7 @@ const AllGamesPage = () => {
                             <Grid container spacing={1} onClick={() => navigate("/all-slots/PG")} sx={{ justifyContent: "center",  mt: 0,mb:1 }}>
                                 <Button
                                     sx={{
-                                        background: " linear-gradient(180deg, #FED358 , #FFB472 )",
+                                        background: " linear-gradient(90deg,#24ee89,#9fe871)",
                                         color: "white",
                                         textTransform: "none",
                                         borderRadius: "40px",
@@ -906,7 +906,7 @@ const AllGamesPage = () => {
                             <Grid container spacing={1} onClick={() => navigate("/all-slots/CQ9")}  sx={{ justifyContent: "center", mt: 0,mb:1 }}>
                                 <Button
                                     sx={{
-                                        background: " linear-gradient(180deg, #FED358 , #FFB472 )",
+                                        background: " linear-gradient(90deg,#24ee89,#9fe871)",
                                         color: "white",
                                         textTransform: "none",
                                         borderRadius: "40px",
@@ -967,7 +967,7 @@ const AllGamesPage = () => {
                             <Grid container spacing={1} onClick={() => navigate("/all-slots/JDB")} sx={{ justifyContent: "center",  mt: 0,mb:1}}>
                                 <Button
                                     sx={{
-                                        background: " linear-gradient(180deg, #FED358 , #FFB472 )",
+                                        background: " linear-gradient(90deg,#24ee89,#9fe871)",
                                         color: "white",
                                         textTransform: "none",
                                         borderRadius: "40px",
@@ -1028,7 +1028,7 @@ const AllGamesPage = () => {
                             <Grid container spacing={1} onClick={() => navigate("/all-slots/MG")} sx={{ justifyContent: "center",  mt: 0,mb:1}}>
                                 <Button
                                     sx={{
-                                        background: " linear-gradient(180deg, #FED358 , #FFB472 )",
+                                        background: " linear-gradient(90deg,#24ee89,#9fe871)",
                                         color: "white",
                                         textTransform: "none",
                                         borderRadius: "40px",
@@ -1089,7 +1089,7 @@ const AllGamesPage = () => {
                             <Grid container spacing={1} onClick={() => navigate("/all-slots/EVO")} sx={{ justifyContent: "center",  mt: 0,mb:5 }}>
                                 <Button
                                     sx={{
-                                        background: " linear-gradient(180deg, #FED358 , #FFB472 )",
+                                        background: " linear-gradient(90deg,#24ee89,#9fe871)",
                                         color: "white",
                                         textTransform: "none",
                                         borderRadius: "40px",

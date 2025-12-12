@@ -59,24 +59,24 @@ const BannerCard = () => {
       text: "Deposit Bonus",
       url: "/activity/first-deposit-bonus",
     },
-    {
-      key: "luckyspin",
-      fallback: "/assets/Banner/ban_luckyspin.webp",
-      text: "Lucky Spin Bonus",
-      url: "/lucky-spinner",
-    },
-    {
-      key: "winstreak",
-      fallback: "/assets/winningStreak/winningStreakBanner.webp",
-      text: "Winning Streak",
-      url: "/activity/winning-streak",
-    },
-    {
-      key: "luckydays",
-      fallback: "/assets/lucky10days/lucky10DaysBanner.webp",
-      text: "Lucky 10 Days",
-      url: "/activity/lucky-10days",
-    },
+    // {
+    //   key: "luckyspin",
+    //   fallback: "/assets/Banner/ban_luckyspin.webp",
+    //   text: "Lucky Spin Bonus",
+    //   url: "/lucky-spinner",
+    // },
+    // {
+    //   key: "winstreak",
+    //   fallback: "/assets/winningStreak/winningStreakBanner.webp",
+    //   text: "Winning Streak",
+    //   url: "/activity/winning-streak",
+    // },
+    // {
+    //   key: "luckydays",
+    //   fallback: "/assets/lucky10days/lucky10DaysBanner.webp",
+    //   text: "Lucky 10 Days",
+    //   url: "/activity/lucky-10days",
+    // },
     {
       key: "realtimerebate",
       fallback: "/assets/Banner/ban_realtimerebate.webp",
@@ -143,7 +143,7 @@ const BannerCard = () => {
                   border: "none", // Ensure no border is shown
                   boxShadow: "none", // Ensure no shadow is causing the issue
                   overflow: "hidden", // Ensure no overflow causes visual artifacts
-                  backgroundColor: "#241e22", // Match the background color
+                  backgroundColor: "#323738", // Match the background color
                 }}
                 onClick={() => navigate(card.url)} // Add onClick event here
               >
@@ -158,7 +158,7 @@ const BannerCard = () => {
                 />
                 <CardContent
                   sx={{
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     padding: "12px",
                     "&.MuiCardContent-root:last-child": {
                       paddingBottom: "12px",

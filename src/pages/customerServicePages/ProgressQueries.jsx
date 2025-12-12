@@ -263,7 +263,7 @@ const ProgressQueries = () => {
               onChange={handleFilterChange}
               displayEmpty
               sx={{
-                bgcolor: "#241e22",
+                bgcolor: "#323738",
                 borderRadius: 1,
                 color: "#A8A5A1", height: "40px",
                 "& .MuiSelect-icon": { color: "#A8A5A1" },
@@ -285,7 +285,7 @@ const ProgressQueries = () => {
                       bgcolor: "transparent",
                     },
                     "& .MuiMenuItem-root.Mui-selected": {
-                      bgcolor: "#241e22",
+                      bgcolor: "#323738",
                     },
                   },
                 },
@@ -330,7 +330,7 @@ const ProgressQueries = () => {
                       width: '100%',
                       borderLeft: `4px solid ${statusColors[ticket.status] || '#757575'}`,
                       cursor: 'pointer',
-                      bgcolor: '#241e22',
+                      bgcolor: '#323738',
                       color: '#FDE4BC'
                     }}
                     onClick={() => handleTicketClick(ticket)}
@@ -429,7 +429,7 @@ const ProgressQueries = () => {
             <>
               {/* Mobile AppBar for fullscreen dialog */}
               {isMobile ? (
-                <AppBar position="sticky" sx={{ bgcolor: '#241e22' }}>
+                <AppBar position="sticky" sx={{ bgcolor: '#323738' }}>
                   <Toolbar>
                     <IconButton edge="start" color="inherit" onClick={handleCloseTicketDetail}>
                       <ChevronLeftIcon />
@@ -492,7 +492,7 @@ const ProgressQueries = () => {
                 </Box>
 
                 {/* Ticket Details */}
-                <Box sx={{ mb: 3, p: 1.5, bgcolor: '#241e22', borderRadius: 1 }}>
+                <Box sx={{ mb: 3, p: 1.5, bgcolor: '#323738', borderRadius: 1 }}>
                   <Typography variant="subtitle2" gutterBottom color="#f5f3f0">Details</Typography>
 
                   {selectedTicket.type === 'WITHDRAWAL_PROBLEM' && selectedTicket.ticketDetails && (
@@ -695,7 +695,7 @@ const ProgressQueries = () => {
                           label={attachment.fileName?.substring(0, 15) || "File"}
                           onClick={() => handleViewAttachment(attachment)}
                           sx={{
-                            bgcolor: '#241e22',
+                            bgcolor: '#323738',
                             color: '#FDE4BC',
                             '& .MuiChip-icon': { color: '#FDE4BC' }
                           }}
@@ -717,7 +717,7 @@ const ProgressQueries = () => {
                           key={response.id}
                           sx={{
                             p: 1.5,
-                            bgcolor: '#241e22',
+                            bgcolor: '#323738',
                             borderRadius: 1,
                             mb: 1,
                             flexDirection: 'column',
@@ -798,7 +798,7 @@ const ProgressQueries = () => {
             },
           }}
         >
-          <AppBar position="static" sx={{ bgcolor: '#241e22', position: 'relative' }}>
+          <AppBar position="static" sx={{ bgcolor: '#323738', position: 'relative' }}>
             <Toolbar>
               <IconButton edge="start" color="inherit" onClick={handleCloseImageViewer}>
                 <CloseIcon />

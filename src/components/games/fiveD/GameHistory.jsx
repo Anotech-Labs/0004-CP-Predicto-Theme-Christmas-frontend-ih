@@ -44,14 +44,14 @@ const GameHistory = ({
   // Defensive checks
   if (!paginatedData || paginatedData.length === 0) {
     return (
-      <Grid container sx={{ backgroundColor: "#241e22", padding: "20px", color: "#FDE4BC" }}>
+      <Grid container sx={{ backgroundColor: "#323738", padding: "20px", color: "#FDE4BC" }}>
         No game history available
       </Grid>
     );
   }
 
   return (
-    <Grid container px={0} sx={{ backgroundColor: "#241e22" }}>
+    <Grid container px={0} sx={{ backgroundColor: "#323738" }}>
       {columns.map((column, index) => (
         <Grid
           item
@@ -80,7 +80,7 @@ const GameHistory = ({
         justifyContent="space-around"
         sx={{
           // mt: 1.5,
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           // padding: "4px 0",
         }}
       >

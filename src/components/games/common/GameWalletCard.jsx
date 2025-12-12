@@ -43,7 +43,7 @@ const GameWalletCard = () => {
         direction="column"
         sx={{
           height: "300px",
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           borderRadius: "0 0 70px 70px",
           textAlign: "center",
         }}

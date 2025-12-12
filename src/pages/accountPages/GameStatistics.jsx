@@ -22,7 +22,7 @@ const GameStatsItem = ({ stats }) => {
         padding: "16px",
         borderRadius: "8px",
         boxShadow: 1,
-        backgroundColor: "#241e22",
+        backgroundColor: "#323738",
         mt: 2,
       }}
     >
@@ -292,8 +292,8 @@ function GameStatistic({ children }) {
                   height: "30px",
                   background:
                     activeButton === label
-                      ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                      : "#241e22",
+                      ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                      : "#323738",
                   color: activeButton === label ? "black" : "#B79C8B",
 
                   borderRadius: "20px",
@@ -327,7 +327,7 @@ function GameStatistic({ children }) {
               mt: 2,
               mx: 2,
               // border: "1px solid #e0e0e0", // Light gray border
-              bgcolor: "#241e22",
+              bgcolor: "#323738",
             }}
           >
             {loading ? (

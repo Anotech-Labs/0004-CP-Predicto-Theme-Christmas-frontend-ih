@@ -44,7 +44,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
 
       <div
         style={{
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           padding: "10px",
           marginBottom: "20px",
           fontSize: isMiddleScreen ? "10px" : "12px",
@@ -71,7 +71,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
                   width: "18px",
                   height: "18px",
                   borderRadius: "50%",
-                  backgroundColor: "#241e22", // Change background to white
+                  backgroundColor: "#323738", // Change background to white
                   color: "#D23838", // Change text color to red
                   textAlign: "center",
                   lineHeight: "18px",
@@ -104,7 +104,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
                   width: "18px",
                   height: "18px",
                   borderRadius: "50%",
-                  // backgroundColor: "#241e22", // Change background to white
+                  // backgroundColor: "#323738", // Change background to white
                   // color: "red", // Change text color to red
                   textAlign: "center",
                   lineHeight: "18px",
@@ -138,7 +138,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
                   width: "18px",
                   height: "18px",
                   borderRadius: "50%",
-                  // backgroundColor: "#241e22", // Change background to white
+                  // backgroundColor: "#323738", // Change background to white
                   // color: "red", // Change text color to red
                   textAlign: "center",
                   lineHeight: "18px",
@@ -171,7 +171,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
                   width: "18px",
                   height: "18px",
                   borderRadius: "50%",
-                  // backgroundColor: "#241e22", // Change background to white
+                  // backgroundColor: "#323738", // Change background to white
                   // color: "red", // Change text color to red
                   textAlign: "center",
                   lineHeight: "18px",
@@ -205,7 +205,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
                   width: "18px",
                   height: "18px",
                   borderRadius: "50%",
-                  // backgroundColor: "#241e22", // Change background to white
+                  // backgroundColor: "#323738", // Change background to white
                   // color: "red", // Change text color to red
                   textAlign: "center",
                   lineHeight: "18px",
@@ -311,7 +311,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
           display: "flex",
           justifyContent: "space-evenly",
           marginTop: "10px",
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           padding: { xs: "10px"},
           borderRadius: "0 0 10px 10px",
         }}
@@ -330,7 +330,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#241e22" }} />
+          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#323738" }} />
         </Button>
         <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B",fontSize:"12.8px" }}>
           {page}/{totalPage}
@@ -349,7 +349,7 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B79C8B" : "#241e22" }} />
+          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B79C8B" : "#323738" }} />
         </Button>
       </Box>
     </div>

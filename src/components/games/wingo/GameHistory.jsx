@@ -67,7 +67,7 @@ const GameHistory = ({ data, page, setPage, totalPage }) => {
         container
         direction="row"
         justifyContent="space-evenly"
-        backgroundColor="#241e22"
+        backgroundColor="#323738"
       >
         {data.map((row) => (
           <React.Fragment key={row.periodId}>
@@ -194,7 +194,7 @@ const GameHistory = ({ data, page, setPage, totalPage }) => {
           display: "flex",
           justifyContent: "center",
           marginTop: "20px",
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           padding: { xs: "10px 0", sm: "20px 0" },
           borderRadius: "0 0 10px 10px",
           gap:"30px"
@@ -214,7 +214,7 @@ const GameHistory = ({ data, page, setPage, totalPage }) => {
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#241e22"  }} />
+          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#323738"  }} />
         </Button>
         <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B" ,fontSize:"12.8px"}}>
           {page}/{totalPage}
@@ -233,7 +233,7 @@ const GameHistory = ({ data, page, setPage, totalPage }) => {
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowForwardIosRoundedIcon style={{color: page === totalPage ? "#B79C8B" : "#241e22"}} />
+          <ArrowForwardIosRoundedIcon style={{color: page === totalPage ? "#B79C8B" : "#323738"}} />
         </Button>
       </Box>
     </Grid>

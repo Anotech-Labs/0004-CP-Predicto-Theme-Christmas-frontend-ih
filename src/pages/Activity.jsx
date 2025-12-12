@@ -88,7 +88,7 @@ const Activity = () => {
               justifyContent="space-between"
               sx={{
                 width: "100%",
-                background: "#241e22",
+                background: "#323738",
                 padding: "8px 16px",
                 color: "white",
                 mb: 2,
@@ -147,7 +147,7 @@ const Activity = () => {
                     border: "none", // Ensure no border is shown
                     boxShadow: "none", // Ensure no shadow is causing the issue
                     overflow: "hidden", // Ensure no overflow causes visual artifacts
-                    backgroundColor: "#241e22", // Match the background color
+                    backgroundColor: "#323738", // Match the background color
                     margin: "0", // Remove any default margin
                     padding: "0", // Remove any default padding
                     height: "100%", // Ensure the card takes full height
@@ -164,7 +164,7 @@ const Activity = () => {
                   />
                   <CardContent
                     sx={{
-                      backgroundColor: "#241e22",
+                      backgroundColor: "#323738",
                       textAlign: "left",
                       height: "70px",
                       "&.MuiCardContent-root:last-child": {
@@ -208,7 +208,7 @@ const Activity = () => {
                     border: "none", // Ensure no border is shown
                     boxShadow: "none", // Ensure no shadow is causing the issue
                     overflow: "hidden", // Ensure no overflow causes visual artifacts
-                    backgroundColor: "#241e22", // Match the background color
+                    backgroundColor: "#323738", // Match the background color
                     margin: "0", // Remove any default margin
                     padding: "0", // Remove any default padding
                     height: "100%", // Ensure the card takes full height
@@ -225,7 +225,7 @@ const Activity = () => {
                   />
                   <CardContent
                     sx={{
-                      backgroundColor: "#241e22",
+                      backgroundColor: "#323738",
                       textAlign: "left",
                       height: "70px",
                       "&.MuiCardContent-root:last-child": {

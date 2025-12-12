@@ -485,7 +485,7 @@ const InvitationBonus = () => {
                   key={index}
                   sx={{
                     width: "100%",
-                    bgcolor: "#241e22",
+                    bgcolor: "#323738",
                     // bgcolor: 'var(--bg_color_L2, #fff)',
                     borderRadius: "10px",
                     my: "1rem",
@@ -495,7 +495,7 @@ const InvitationBonus = () => {
                   {/* Head Section */}
                   <Box
                     sx={{
-                      background: "#241e22",
+                      background: "#323738",
                       p: 0,
                       display: "flex",
                       justifyContent: "space-between",
@@ -528,7 +528,7 @@ const InvitationBonus = () => {
                           justifyContent: "center",
                           alignItems: "center",
                           bgcolor: "#fde4bc",
-                          color: "#241e22",
+                          color: "#323738",
                           width: 19,
                           height: 19,
                           marginLeft: "7px",
@@ -583,7 +583,7 @@ const InvitationBonus = () => {
                   </Box>
 
                   {/* Details Section */}
-                  <Box sx={{ p: 1.5, bgcolor: "#241e22" }}>
+                  <Box sx={{ p: 1.5, bgcolor: "#323738" }}>
                     <Box
                       sx={{
                         display: "flex",
@@ -657,7 +657,7 @@ const InvitationBonus = () => {
                       justifyContent: "space-between",
                       alignItems: "center",
                       p: 2,
-                      bgcolor: "#241e22",
+                      bgcolor: "#323738",
                     }}
                   >
                     <Box sx={{ flex: 1, textAlign: "center" }}>
@@ -738,7 +738,7 @@ const InvitationBonus = () => {
                         color: bonusStatus.disabled ? "grey" : "#FED358",
                         boxShadow: "transparent",
                         // '&:hover': {
-                        //   // background: bonusStatus.disabled ? '#343434' : 'linear-gradient(180deg, #FED358 , #FFB472 )',
+                        //   // background: bonusStatus.disabled ? '#343434' : 'linear-gradient(90deg,#24ee89,#9fe871)',
                         // },
                         textTransform: "none",
                         borderRadius: "20px",

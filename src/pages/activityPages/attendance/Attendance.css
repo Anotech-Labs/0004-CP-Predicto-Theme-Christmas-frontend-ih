@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 94%;
-  background-color: #241e22;
+  background-color: #323738;
   /* height: max-content; */
   padding: 0 0.4rem 0.26667rem;
   background: url("/assets/activity/headerRed.webp") no-repeat center /
@@ -95,7 +95,7 @@
   height: 100px;
   justify-content: space-around;
   gap: 10px;
-  background: #241e22;
+  background: #323738;
   border-radius: 10px;
   padding: 1em;
   color: "black";
@@ -126,7 +126,7 @@
   flex-direction: column;
   justify-content: space-around;
   gap: 2px;
-  background: #241e22;
+  background: #323738;
   border-radius: 10px;
   padding: 0.8em;
   color: rgb(22, 22, 22);

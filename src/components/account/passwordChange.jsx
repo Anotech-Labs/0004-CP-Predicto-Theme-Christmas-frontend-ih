@@ -177,7 +177,7 @@ const PasswordChange = () => {
                 onChange={(e) => setCurrentPassword(e.target.value)}
                 sx={{
                   width: "98%",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   borderRadius: "10px",
                   "& .MuiOutlinedInput-root": {
                     height: "46px",
@@ -242,7 +242,7 @@ const PasswordChange = () => {
                 onChange={(e) => setNewPassword(e.target.value)}
                 sx={{
                   width: "98%",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   borderRadius: "10px",
                   "& .MuiOutlinedInput-root": {
                     height: "46px",
@@ -305,7 +305,7 @@ const PasswordChange = () => {
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 sx={{
                   width: "98%",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   borderRadius: "10px",
                   "& .MuiOutlinedInput-root": {
                     height: "46px",
@@ -368,7 +368,7 @@ const PasswordChange = () => {
                 style={{
                   marginTop: "70px",
                   background: isChangeButtonActive
-                    ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                    ? "linear-gradient(90deg,#24ee89,#9fe871)"
                     : "#454456",
                   borderRadius: "300px",
                   color: isChangeButtonActive ? "#221f2e" : "#a8a5a1",

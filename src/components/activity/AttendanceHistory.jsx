@@ -124,7 +124,7 @@ const AttendanceHistory = ({ children }) => {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               padding: "8px 16px",
               color: "white",
             }}
@@ -176,7 +176,7 @@ const AttendanceHistory = ({ children }) => {
                       elevation={0}
                       sx={{
                         borderRadius: 3,
-                        backgroundColor: '#241e22',
+                        backgroundColor: '#323738',
                         // border: '1px solid #e8e8e8',
                         transition: 'all 0.3s ease-in-out',
                         overflow: 'hidden',
@@ -250,7 +250,7 @@ const AttendanceHistory = ({ children }) => {
                       elevation={0}
                       sx={{
                         borderRadius: 3,
-                        backgroundColor: '#241e22',
+                        backgroundColor: '#323738',
                         // border: '1px solid #3B3833',
                         transition: 'all 0.3s ease-in-out',
                         overflow: 'hidden',
@@ -327,7 +327,7 @@ const AttendanceHistory = ({ children }) => {
                   sx={{
                     mb: 3.5,
                     borderRadius: 3,
-                    backgroundColor: '#241e22',
+                    backgroundColor: '#323738',
                     border: '1px solid #3B3833',
                     transition: 'all 0.3s ease-in-out',
                     overflow: 'hidden',
@@ -457,7 +457,7 @@ const AttendanceHistory = ({ children }) => {
                 sx={{ 
                   mb: 3,
                   borderRadius: 2.5,
-                  backgroundColor: '#241e22',
+                  backgroundColor: '#323738',
                   border: '1px solid #e0e0e0',
                   transition: 'all 0.2s ease-in-out',
                   '&:hover': {
@@ -580,7 +580,7 @@ const AttendanceHistory = ({ children }) => {
                   elevation={0}
                   sx={{
                     borderRadius: 2,
-                    backgroundColor: '#241e22',
+                    backgroundColor: '#323738',
                     border: '1px solid #3B3833',
                     padding: '0px'
                   }}

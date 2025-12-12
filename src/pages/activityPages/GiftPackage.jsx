@@ -143,7 +143,7 @@ const GiftPackage = () => {
             borderRadius: "50px",
             textAlign: "left",
             color: "red",
-            bgcolor: "#241e22",
+            bgcolor: "#323738",
           }}
         >
           <InfoOutlinedIcon sx={{ mr: 1, color: "red" }} />

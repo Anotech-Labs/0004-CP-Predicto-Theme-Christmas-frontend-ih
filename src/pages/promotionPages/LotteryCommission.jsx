@@ -113,7 +113,7 @@ const DetailsBox = ({ selectedDate, commissionData }) => (
       // border: "1px solid #E0E0E0",
       borderRadius: "8px",
       padding: "12px",
-      backgroundColor: "#241e22",
+      backgroundColor: "#323738",
       color: "white",
       maxWidth: "400px",
       margin: "8px auto",
@@ -190,7 +190,7 @@ const CommissionDetailsBox = ({ commissionData, levels }) => {
         // border: "1px solid #E0E0E0",
         borderRadius: "8px",
         // padding: "16px",
-        backgroundColor: "#241e22",
+        backgroundColor: "#323738",
         color: "#FDE4BC",
         maxWidth: "400px",
         margin: "16px auto",
@@ -235,7 +235,7 @@ const CommissionDetailsBox = ({ commissionData, levels }) => {
       <Typography
         variant="h6"
         sx={{
-          background: " linear-gradient(180deg, #FED358 , #FFB472 )",
+          background: " linear-gradient(90deg,#24ee89,#9fe871)",
           padding: "2px 16px",
           // borderRadius: "4px",
           color: "white",

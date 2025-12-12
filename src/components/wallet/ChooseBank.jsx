@@ -39,7 +39,7 @@ const ChooseBank = ({selectedBank, setSelectedBank, setShowBankSelection}) => {
   return (
     <>
       <Box sx={{ backgroundColor: "#232626", p: 2 }}>
-        <Box sx={{ backgroundColor: "#241e22", mb: 2 }}>
+        <Box sx={{ backgroundColor: "#323738", mb: 2 }}>
           <TextField
             fullWidth
             variant="filled"
@@ -65,7 +65,7 @@ const ChooseBank = ({selectedBank, setSelectedBank, setShowBankSelection}) => {
           />
         </Box>
 
-        <Box sx={{ backgroundColor: "#241e22", borderRadius: "4px" }}>
+        <Box sx={{ backgroundColor: "#323738", borderRadius: "4px" }}>
           <List>
             {filteredBanks.map((bank) => (
               <ListItem

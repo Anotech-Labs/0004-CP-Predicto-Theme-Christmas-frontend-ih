@@ -294,7 +294,7 @@ const InviteLink = ({ children }) => {
                       display: "block",
                       textAlign: "center",
                       padding: "10px",
-                      background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                      background: "linear-gradient(90deg,#24ee89,#9fe871)",
                       color: "black",
                       borderRadius: "20px",
                       textDecoration: "none",

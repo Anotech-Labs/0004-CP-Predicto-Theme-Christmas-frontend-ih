@@ -148,7 +148,7 @@ const EventDetails = () => {
                     <TableRow
                       key={index}
                       sx={{
-                        '&:nth-of-type(odd)': { backgroundColor: '#241e22' },
+                        '&:nth-of-type(odd)': { backgroundColor: '#323738' },
                         '&:nth-of-type(even)': { backgroundColor: '#1a1000' },
                       }}
                     >
@@ -175,7 +175,7 @@ const EventDetails = () => {
 
           <Paper sx={{
             overflow: "hidden", borderRadius: "10px", margin: 1, mt: 4,
-            background: "#241e22",
+            background: "#323738",
           }}>
             <Box
               sx={{

@@ -17,7 +17,7 @@ const fontSize= isSmallScreen?"12px":"14px"
   const navigate = useNavigate()
 
   return (
-    <Paper elevation={3} sx={{ p: 2, maxWidth: 400, mx: "auto", borderRadius: 2, my: 2, bgcolor: "#241e22", color: "#ccc" }}>
+    <Paper elevation={3} sx={{ p: 2, maxWidth: 400, mx: "auto", borderRadius: 2, my: 2, bgcolor: "#323738", color: "#ccc" }}>
       <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
         <Button variant="contained" color="success" size="small"  sx={{ textTransform: "none" }}>
           Withdrawal
@@ -55,7 +55,7 @@ const fontSize= isSmallScreen?"12px":"14px"
       <Button
         fullWidth
         variant="contained"
-        sx={{ borderRadius: 4, background: "linear-gradient(180deg, #FED358 , #FFB472 )", textTransform: "none" }}
+        sx={{ borderRadius: 4, background: "linear-gradient(90deg,#24ee89,#9fe871)", textTransform: "none" }}
         onClick={() => navigate(`/tms/withdrawal-issue?transactionId=${withdrawal.transactionId}&amount=${withdrawal.withdrawAmount}`)}
       >
         Submit Receipt

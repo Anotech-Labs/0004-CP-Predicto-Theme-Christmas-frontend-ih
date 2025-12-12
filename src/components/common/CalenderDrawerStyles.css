@@ -38,7 +38,7 @@
     justify-content: space-between;
     margin: 20px 0;
     padding: 5px;
-    background-color: #241e22;
+    background-color: #323738;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
@@ -126,7 +126,7 @@
   
   /* Confirm button styling */
   .confirm-button {
-    background: linear-gradient(180deg, #FED358 , #FFB472 );
+    background: linear-gradient(90deg,#24ee89,#9fe871);
     color: black;
     font-size: 16px;
     /* font-weight: 600; */

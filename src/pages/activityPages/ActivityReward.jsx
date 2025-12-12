@@ -174,7 +174,7 @@ const ActivityReward = () => {
             </Box>
 
             <Divider
-              sx={{ backgroundColor: "#241e22", marginBottom: 1, mt: "13px" }}
+              sx={{ backgroundColor: "#323738", marginBottom: 1, mt: "13px" }}
             />
 
             <Box
@@ -249,7 +249,7 @@ const ActivityReward = () => {
               </Box>
             </Box>
 
-            <Divider sx={{ backgroundColor: "#241e22", marginBottom: 1 }} />
+            <Divider sx={{ backgroundColor: "#323738", marginBottom: 1 }} />
 
             <Button
               variant="outlined"
@@ -292,7 +292,7 @@ const ActivityReward = () => {
           justifyContent="space-between"
           sx={{ position: "sticky",
             top: 0,
-            zIndex: 1000, padding: "5px 16px", background: "#241e22" }}
+            zIndex: 1000, padding: "5px 16px", background: "#323738" }}
         >
           <Grid item>
             <IconButton sx={{ color: "#FDE4BC" }} onClick={handleRedirect}>
@@ -377,7 +377,7 @@ const ActivityReward = () => {
           <CardContent
             sx={{
               padding: 1.2,
-              bgcolor: "#241e22",
+              bgcolor: "#323738",
               "&:last-child": {
                 pb: 1.2,
               },

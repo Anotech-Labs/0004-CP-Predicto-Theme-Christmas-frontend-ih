@@ -985,8 +985,8 @@ const handleDeposit = (e) => {
                       style={{
                         background:
                           paymentMode === mode
-                            ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                            : "#241e22",
+                            ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                            : "#323738",
                         borderRadius: 8,
                         color: paymentMode === mode ? "black" : "#B79C8B",
                         padding: "20px 0px",
@@ -1058,7 +1058,7 @@ const handleDeposit = (e) => {
                 padding: "13px",
                 paddingBottom: "15px",
                 paddingTop: "15px",
-                background: "#241e22",
+                background: "#323738",
                 // width: "87%",
                 margin: "auto 13px",
                 mt: 2,
@@ -1093,7 +1093,7 @@ const handleDeposit = (e) => {
                         borderRadius: "8px",
                         background:
                           selectedChannel === index
-                            ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                            ? "linear-gradient(90deg,#24ee89,#9fe871)"
                             : "#382e35",
                         cursor: "pointer",
                         height: paymentMode === "USDT" ? "65px" : "50px", // Set height conditionally based on payment mode
@@ -1174,7 +1174,7 @@ const handleDeposit = (e) => {
             </Box>
             {/* Deposit Amount */}
             <Box
-              sx={{ bgcolor: "#241e22", p: 2, borderRadius: 2, margin: "13px" }}
+              sx={{ bgcolor: "#323738", p: 2, borderRadius: 2, margin: "13px" }}
             >
               <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
                 <img
@@ -1222,10 +1222,10 @@ const handleDeposit = (e) => {
                         width: "100%",
                         background:
                           selectedValue === value
-                            ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                            : "#241e22",
+                            ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                            : "#323738",
                         color: selectedValue === value ? "#221F2E" : "#FED358",
-                        borderColor: "#373737",
+                        borderColor: "#ffffff",
                         justifyContent: "center",
 
                         "& .MuiButton-startIcon": {
@@ -1405,7 +1405,7 @@ const handleDeposit = (e) => {
                   mt: 2,
                   textTransform: "initial",
                   background:
-                    "linear-gradient(180deg, #FED358 , #FFB472 )",
+                    "linear-gradient(90deg,#24ee89,#9fe871)",
                   borderRadius: "16px",
                   color: "white",
                   "&:hover": { bgcolor: "#0e5415" },
@@ -1424,7 +1424,7 @@ const handleDeposit = (e) => {
               sx={{
                 margin: "10px auto", // Centered horizontally with automatic margins
                 borderRadius: 2,
-                bgcolor: "#241e22",
+                bgcolor: "#323738",
                 color: "white",
                 mt: 2,
                 width: "93%",
@@ -1550,7 +1550,7 @@ const handleDeposit = (e) => {
               <DialogTitle
                 sx={{
                   background:
-                    "linear-gradient(180deg, #FED358 , #FFB472 )",
+                    "linear-gradient(90deg,#24ee89,#9fe871)",
                   color: "black",
                   fontWeight: "bold",
                   borderTopLeftRadius: "16px",
@@ -1622,7 +1622,7 @@ const handleDeposit = (e) => {
                             width: "100%",
                             mb: 2,
                             "& .MuiOutlinedInput-root": {
-                              backgroundColor: "#241e22", // Dark background color
+                              backgroundColor: "#323738", // Dark background color
                               borderRadius: "8px",
                               "& fieldset": {
                                 border: "1px solid #808080", // Gray border
@@ -1799,7 +1799,7 @@ const handleDeposit = (e) => {
                       key={deposit.depositId}
                       sx={{
                         marginBottom: "16px",
-                        bgcolor: "#241e22",
+                        bgcolor: "#323738",
                         borderRadius: "8px",
                         boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
                       }}
@@ -1977,7 +1977,7 @@ const handleDeposit = (e) => {
                       border: "1px solid #FED358",
                       // "&:hover": {
                       //   background:
-                      //     "linear-gradient(180deg, #FED358 , #FFB472 )",
+                      //     "linear-gradient(90deg,#24ee89,#9fe871)",
                       // },
                     }}
                   >

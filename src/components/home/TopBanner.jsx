@@ -30,7 +30,7 @@ const TopBanner = () => {
                 <Box sx={{  display: "flex", justifyContent: "space-between",gap:1.8}}>
                     <Grid sx={{}}>
                         <Box
-                            onClick={() => navigate("/lucky-spinner")}
+                            // onClick={() => navigate("/lucky-spinner")}
                             sx={{
                                 borderRadius: 3,
                                 display: 'flex',

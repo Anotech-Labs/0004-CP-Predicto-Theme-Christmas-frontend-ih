@@ -152,7 +152,7 @@ const ActivityRewardTabs = () => {
           <Box
             sx={{
               padding: 2,
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               borderRadius: "10px",
               boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
               position: "relative",
@@ -167,8 +167,8 @@ const ActivityRewardTabs = () => {
                 width: "35%",
                 height: "30px",
                 background: task.isClaimedToday
-                  ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                  : "linear-gradient(180deg, #FED358 , #FFB472 )",
+                  ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                  : "linear-gradient(90deg,#24ee89,#9fe871)",
                 borderTopLeftRadius: "10px",
                 borderBottomRightRadius: "10px",
                 display: "flex",
@@ -246,8 +246,8 @@ const ActivityRewardTabs = () => {
                 marginBottom: 1,
                 "& .MuiLinearProgress-bar": {
                   background: task.isClaimedToday
-                    ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                    : "linear-gradient(180deg, #FED358 , #FFB472 )",
+                    ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                    : "linear-gradient(90deg,#24ee89,#9fe871)",
                 },
               }}
             />
@@ -317,7 +317,7 @@ const ActivityRewardTabs = () => {
       sx={{
         borderRadius: "8px",
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-        bgcolor: "#241e22",
+        bgcolor: "#323738",
         overflow: "hidden",
       }}
     >

@@ -100,7 +100,7 @@ const StyledButtonGroup = styled(ButtonGroup)(({ theme }) => ({
   gap: "5.5px",
 }));
 const StyledButton = styled(Button)(({ theme, active, isRandom }) => ({
-  backgroundColor: isRandom ? "#241e22" : active ? "#17B15E" : "#232626",
+  backgroundColor: isRandom ? "#323738" : active ? "#17B15E" : "#232626",
   color: isRandom ? "#D23838" : active ? "#ffffff" : "#B79C8B",
   fontSize: "12px",
   padding: "3px 8px",
@@ -1198,7 +1198,7 @@ const WingoPage = ({ timerKey }) => {
                   cursor: "pointer",
                   background:
                     activeId === image.id
-                      ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                      ? "linear-gradient(90deg,#24ee89,#9fe871)"
                       : "transparent",
                   borderRadius: "10px",
                   display: "flex",
@@ -1472,7 +1472,7 @@ const WingoPage = ({ timerKey }) => {
               marginRight: "auto",
               width: "calc(100% - 30px)",
               borderRadius: "15px",
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               position: "relative",
               pointerEvents: openDialog ? "none" : "auto",
               padding: "10px"
@@ -2347,8 +2347,8 @@ const WingoPage = ({ timerKey }) => {
                         height: "40px", // Adjust this value to change the tab height
                         background:
                           activeTab === index
-                            ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                            : "#241e22",
+                            ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                            : "#323738",
                         color: activeTab === index ? "black" : "#929292",
                         borderRadius: 2,
                         display: "flex",

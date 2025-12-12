@@ -70,7 +70,7 @@ const NotificationModal = ({ open, onClose }) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+            background: "linear-gradient(90deg,#24ee89,#9fe871)",
             borderTopLeftRadius: "15px",
             borderTopRightRadius: "15px",
             p: 1,
@@ -151,7 +151,7 @@ const NotificationModal = ({ open, onClose }) => {
             textAlign: "center",
             p: 0.8,
             background: "#232626",
-            // background: "linear-gradient(180deg, #FED358 , #FFB472 ),#111111",
+            // background: "linear-gradient(90deg,#24ee89,#9fe871),#111111",
             borderBottomLeftRadius: "15px",
             borderBottomRightRadius: "15px",
           }}
@@ -160,12 +160,12 @@ const NotificationModal = ({ open, onClose }) => {
             variant="contained"
             sx={{
               boxShadow: "none",
-              background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+              background: "linear-gradient(90deg,#24ee89,#9fe871)",
               color: "#ffffff",
               borderRadius:"20px",
               textTransform: "none",
               "&:hover": {
-                backgroundColor: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                backgroundColor: "linear-gradient(90deg,#24ee89,#9fe871)",
                 boxShadow: "none",
               },
               fontSize:"16px",

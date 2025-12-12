@@ -320,8 +320,8 @@ const WithdrawHistory = () => {
                 alignItems: "center",
                 background:
                   selectedType === label
-                    ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                    : "#241e22",
+                    ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                    : "#323738",
                 color: selectedType === label ? "black" : "#B79C8B",
                 borderColor:
                   selectedType === label ? "transparent" : "transparent",
@@ -370,7 +370,7 @@ const WithdrawHistory = () => {
             sx={{
               width: "48%",
               height: "2.8rem",
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               justifyContent: "space-between",
               textTransform: "none",
               color: "#B79C8B",
@@ -387,7 +387,7 @@ const WithdrawHistory = () => {
             sx={{
               width: "48%",
               height: "2.8rem",
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               textTransform: "none",
               display: "flex",
               fontSize: "11.5px",
@@ -456,7 +456,7 @@ const WithdrawHistory = () => {
                   index === withdrawals.length - 1 ? lastWithdrawalRef : null
                 }
                 sx={{
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   color: "#B79C8B",
                   marginBottom: 2,
                   borderRadius: 2,
@@ -713,7 +713,7 @@ const WithdrawHistory = () => {
               height: "auto",
               margin: "0 auto",
               maxWidth: isSmallScreen ? "600px" : "396px",
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               color: "black",
               borderTopLeftRadius: "16px",
               borderTopRightRadius: "16px",

@@ -1295,7 +1295,7 @@ const BetHistory = () => {
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
-                backgroundColor: "#241e22 ",
+                backgroundColor: "#323738 ",
                 padding: "7px 4px",
                 color: "white",
               }}
@@ -1362,8 +1362,8 @@ const BetHistory = () => {
                       width: "100%",
                       background:
                         activeButton === tab.label
-                          ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                          : "#241e22",
+                          ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                          : "#323738",
                       color: activeButton === tab.label ? "#221f2e" : "#a8a5a1",
                       borderRadius: 1,
                       padding: "5px 0",
@@ -1371,8 +1371,8 @@ const BetHistory = () => {
                       "&:hover": {
                         background:
                           activeButton === tab.label
-                            ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                            : "#241e22",
+                            ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                            : "#323738",
                       },
                     }}
                   >
@@ -1409,17 +1409,17 @@ const BetHistory = () => {
               <Button
                 variant="outlined"
                 sx={{
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   color: "#A8A5A1",
-                  borderColor: "#241e22",
+                  borderColor: "#323738",
                   borderRadius: 1,
                   padding: "10px 10px",
                   textTransform: "capitalize",
                   justifyContent: "space-between",
                   width: "100%",
                   "&:hover": {
-                    backgroundColor: "#241e22",
-                    borderColor: "#241e22",
+                    backgroundColor: "#323738",
+                    borderColor: "#323738",
                   },
                 }}
                 onClick={handleFilterClick}
@@ -1438,17 +1438,17 @@ const BetHistory = () => {
                 onClick={() => setDatePickerOpen(true)}
                 sx={{
                   color: "#A8A5A1",
-                  borderColor: "#241e22",
+                  borderColor: "#323738",
                   borderRadius: 1,
                   padding: "10px 10px",
                   textTransform: "capitalize",
                   width: "100%",
                   justifyContent: "space-between",
                   marginLeft: "8px",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   "&:hover": {
-                    backgroundColor: "#241e22",
-                    borderColor: "#241e22",
+                    backgroundColor: "#323738",
+                    borderColor: "#323738",
                   },
                 }}
               >
@@ -1553,7 +1553,7 @@ const BetHistory = () => {
                 height: "auto",
                 margin: "0 auto",
                 maxWidth: isSmallScreen ? "600px" : "396px",
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
                 color: "#1E2637",
                 borderTopLeftRadius: "16px",
                 borderTopRightRadius: "16px",
@@ -1578,12 +1578,12 @@ const BetHistory = () => {
                     sx={{
                       background:
                         option === selectedOption
-                          ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                          ? "linear-gradient(90deg,#24ee89,#9fe871)"
                           : "#3b3833",
                       "&:hover": {
                         background:
                           option === selectedOption
-                            ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                            ? "linear-gradient(90deg,#24ee89,#9fe871)"
                             : "#3b3833",
                       },
                       color: option === selectedOption ? "#f1f2f5" : "#a8a5a1",
@@ -1644,7 +1644,7 @@ const BetHistory = () => {
                 borderTopRightRadius: "16px",
                 overflow: "hidden",
                 padding: "0",
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
               },
             }}
           >

@@ -129,7 +129,7 @@ const DepositModal = ({ open, onClose }) => {
             padding: 1,
             overflowY: "auto",
             maxHeight: "60vh",
-            background: "#241e22",
+            background: "#323738",
             "&::-webkit-scrollbar": {
               display: "none",
             },
@@ -180,7 +180,7 @@ const DepositModal = ({ open, onClose }) => {
           <Button
             variant="contained"
             sx={{
-              background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+              background: "linear-gradient(90deg,#24ee89,#9fe871)",
               color: "black",
               p:"5px 30px",
               borderRadius:"20px",

@@ -1761,7 +1761,7 @@ const UserDetails = () => {
               }
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <Button
+              {/* <Button
                 fullWidth
                 variant="contained"
                 startIcon={<WalletIcon />}
@@ -1804,7 +1804,7 @@ const UserDetails = () => {
                 }}
               >
                 {isLocked ? 'Unban User' : 'Ban User'}
-              </Button>
+              </Button> */}
             </Grid>
           </Grid>
         </Grid>

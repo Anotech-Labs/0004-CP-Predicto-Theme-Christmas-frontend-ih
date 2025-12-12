@@ -124,7 +124,7 @@ const Message = ({ children }) => {
                     my: 1.5,
                     boxShadow: 2,
                     borderRadius: 2,
-                    bgcolor: "#241e22",
+                    bgcolor: "#323738",
                     textAlign: "left"
                   }}
                 >

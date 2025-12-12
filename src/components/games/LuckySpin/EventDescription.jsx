@@ -66,7 +66,7 @@ const EventDesc = () => {
 
           <Grid sx={{ mx: 1, mt: 2 }}>
             {/* Activity Time */}
-            <Box sx={{ backgroundColor: "#241e22", textAlign: "left" }}>
+            <Box sx={{ backgroundColor: "#323738", textAlign: "left" }}>
               <Box
                 sx={{
                   display: "flex",
@@ -85,7 +85,7 @@ const EventDesc = () => {
                   Activity time
                 </Typography>
               </Box>
-              <Box sx={{ width: "90%", bgcolor: "#241e22", padding: "8px 16px" }}>
+              <Box sx={{ width: "90%", bgcolor: "#323738", padding: "8px 16px" }}>
                 <Typography variant="body2" sx={{ color: "#FDE4BC", fontSize: "12px" }}>
                   From now on
                 </Typography>
@@ -93,7 +93,7 @@ const EventDesc = () => {
             </Box>
 
             {/* Validity Period */}
-            <Box sx={{ backgroundColor: "#241e22", mt: 1, textAlign: "left" }}>
+            <Box sx={{ backgroundColor: "#323738", mt: 1, textAlign: "left" }}>
               <Box
                 sx={{
                   display: "flex",
@@ -112,7 +112,7 @@ const EventDesc = () => {
                   Validity period
                 </Typography>
               </Box>
-              <Box sx={{ width: "90%", bgcolor: "#241e22", padding: "8px 16px" }}>
+              <Box sx={{ width: "90%", bgcolor: "#323738", padding: "8px 16px" }}>
                 <Typography variant="body2" sx={{ color: "#FDE4BC", fontSize: "12px" }}>
                   Official website notification shall prevail
                 </Typography>
@@ -125,7 +125,7 @@ const EventDesc = () => {
               sx={{
                 padding: 1,
                 my: 2.5,
-                bgcolor: "#241e22",
+                bgcolor: "#323738",
                 borderRadius: "8px",
                 textAlign: "left",
               }}
@@ -145,7 +145,7 @@ const EventDesc = () => {
             </ListItem>
 
             {/* Conditions of Participation */}
-            <Box sx={{ backgroundColor: "#241e22", mt: 1, textAlign: "left" }}>
+            <Box sx={{ backgroundColor: "#323738", mt: 1, textAlign: "left" }}>
               <Box
                 sx={{
                   display: "flex",
@@ -167,7 +167,7 @@ const EventDesc = () => {
               <Box
                 sx={{
                   width: "100%",
-                  bgcolor: "#241e22",
+                  bgcolor: "#323738",
                   padding: "8px 0px",
                   borderRadius: "8px",
                   boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",

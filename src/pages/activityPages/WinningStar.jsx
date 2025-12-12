@@ -23,7 +23,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
         mb: 2,
         borderRadius: 2,
         margin: 1.5,
-        bgcolor: "#241e22",
+        bgcolor: "#323738",
         color: "white",
       }}
     >
@@ -52,7 +52,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
               backgroundColor: "#382e35",
               py: 0.5, // Reduced padding
               px: 1.5, // Reduced padding
-              borderBottom: "2px solid #241e22", // Reduced border thickness
+              borderBottom: "2px solid #323738", // Reduced border thickness
               textAlign: "left",
               borderRadius: "5px 0 0 5px",
             }}
@@ -72,7 +72,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
               backgroundColor: "#382e35",
               py: 0.5,
               px: 1.5,
-              borderBottom: "2px solid #241e22",
+              borderBottom: "2px solid #323738",
               textAlign: "left",
               borderRadius: "0 5px 5px 0",
             }}
@@ -92,7 +92,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
               backgroundColor: "#382e35",
               py: 0.5,
               px: 1.5,
-              borderBottom: "2px solid #241e22",
+              borderBottom: "2px solid #323738",
               textAlign: "left",
               borderRadius: "5px 0 0 5px",
             }}
@@ -112,7 +112,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
               backgroundColor: "#382e35",
               py: 0.5,
               px: 1.5,
-              borderBottom: "2px solid #241e22",
+              borderBottom: "2px solid #323738",
               textAlign: "left",
               borderRadius: "0 5px 5px 0",
             }}
@@ -132,7 +132,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
               backgroundColor: "#382e35",
               py: 0.5,
               px: 1.5,
-              borderBottom: "2px solid #241e22",
+              borderBottom: "2px solid #323738",
               textAlign: "left",
               borderRadius: "5px 0 0 5px",
             }}
@@ -152,7 +152,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
               backgroundColor: "#382e35",
               py: 0.5,
               px: 1.5,
-              borderBottom: "2px solid #241e22",
+              borderBottom: "2px solid #323738",
               textAlign: "left",
               borderRadius: "0 5px 5px 0",
             }}
@@ -172,7 +172,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
               backgroundColor: "#382e35",
               py: 0.5,
               px: 1.5,
-              borderBottom: "2px solid #241e22",
+              borderBottom: "2px solid #323738",
               textAlign: "left",
               borderRadius: "5px 0 0 5px",
             }}
@@ -192,7 +192,7 @@ const WinningItem = ({ avatar, nickname, gameName, wins, bonus, time }) => {
               backgroundColor: "#382e35",
               py: 0.5,
               px: 1.5,
-              borderBottom: "2px solid #241e22",
+              borderBottom: "2px solid #323738",
               textAlign: "left",
               borderRadius: "0 5px 5px 0",
             }}

@@ -44,7 +44,7 @@ const PvcAllGames = () => {
             {/* Header */}
             <Box
                 sx={{
-                    background: "#241e22",
+                    background: "#323738",
                     padding: "8px 10px",
                     display: "flex",
                     alignItems: "center",
@@ -86,7 +86,7 @@ const PvcAllGames = () => {
                                 fullWidth
                                 onClick={() => setActiveGame(gameKey)}
                                 sx={{
-                                    background: activeGame === gameKey ? "linear-gradient(180deg, #FED358 , #FFB472 )" : "#241e22",
+                                    background: activeGame === gameKey ? "linear-gradient(90deg,#24ee89,#9fe871)" : "#323738",
                                     color: activeGame === gameKey ? "#202331" : "#a7a5a1",
                                     textTransform: "none",
                                     display: "flex",

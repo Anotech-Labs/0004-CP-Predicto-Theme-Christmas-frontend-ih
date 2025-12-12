@@ -39,69 +39,69 @@ const settingsData = [
     link: "/admin/upi-setting",
     color: "#4CAF50"
   },
-  {
-    icon: AccountBalanceIcon,
-    title: "Withdrawal Rules",
-    description: "Control how much money users can take out at once. Set the smallest amount (minimum) and largest amount (maximum) that users are allowed to withdraw.",
-    link: "/admin/withdrawal-setting",
-    color: "#2196F3"
-  },
-  {
-    icon: RequestQuoteIcon,
-    title: "First Deposit Bonus",
-    description: "Create special rewards for new users when they add money for the first time. This helps attract new customers by giving them extra bonus money or benefits.",
-    link: "/admin/first-deposit-setting",
-    color: "#F44336"
-  },
-  {
-    icon: CreditCardIcon,
-    title: "Other Deposit Bonus",
-    description: "Create special rewards for new users when they add money for the seccond or third time. This helps attract new customers by giving them extra bonus money or benefits.",
-    link: "/admin/other-deposit-setting",
-    color: "#FF9800"
-  },
-  {
-    icon: CalendarTodayIcon,
-    title: "Activity Rewards",
-    description: "Create rewards for different actions users take in the app. Give points, bonuses, or special items when users complete certain activities or tasks.",
-    link: "/admin/activity-reward",
-    color: "#9C27B0"
-  },
-  {
-    icon: PeopleIcon,
-    title: "Invitation Rewards",
-    description: "Set up bonuses for users who bring their friends to the app. When someone invites a new person who joins, both can receive special rewards.",
-    link: "/admin/invitation-bonus",
-    color: "#00BCD4"
-  },
-  {
-    icon: CheckCircleIcon,
-    title: "Attendance Bonus",
-    description: "Set up daily login rewards where users must deposit a specific amount to be eligible. You can also customize the bonus amount they receive upon successful check-in.",
-    link: "/admin/attendance-bonus",
-    color: "#009688"
-  },
-  {
-    icon: EmojiEventsIcon,
-    title: "Lucky Streak Rewards",
-    description: "Set up rewards for users who recharge frequently in each month. You can customize both the required recharge amount and the reward amount.",
-    link: "/admin/lucky-streak-setting",
-    color: "#FFC107"
-  },
-  {
-    icon: MilitaryTechIcon,
-    title: "Winning Streak Bonus",
-    description: "Create special rewards for users who win multiple games in a row. This encourages continued play and rewards skillful players with extra bonuses.",
-    link: "/admin/winning-streak-setting",
-    color: "#673AB7"
-  },
-  {
-    icon: CasinoIcon,
-    title: "Lucky Spin Wheel",
-    description: "Set up the prizes and chances on the spinning wheel game. You control what rewards users can win when they spin the wheel and how often they can spin.",
-    link: "/admin/lucky-spin",
-    color: "#E91E63"
-  },
+  // {
+  //   icon: AccountBalanceIcon,
+  //   title: "Withdrawal Rules",
+  //   description: "Control how much money users can take out at once. Set the smallest amount (minimum) and largest amount (maximum) that users are allowed to withdraw.",
+  //   link: "/admin/withdrawal-setting",
+  //   color: "#2196F3"
+  // },
+  // {
+  //   icon: RequestQuoteIcon,
+  //   title: "First Deposit Bonus",
+  //   description: "Create special rewards for new users when they add money for the first time. This helps attract new customers by giving them extra bonus money or benefits.",
+  //   link: "/admin/first-deposit-setting",
+  //   color: "#F44336"
+  // },
+  // {
+  //   icon: CreditCardIcon,
+  //   title: "Other Deposit Bonus",
+  //   description: "Create special rewards for new users when they add money for the seccond or third time. This helps attract new customers by giving them extra bonus money or benefits.",
+  //   link: "/admin/other-deposit-setting",
+  //   color: "#FF9800"
+  // },
+  // {
+  //   icon: CalendarTodayIcon,
+  //   title: "Activity Rewards",
+  //   description: "Create rewards for different actions users take in the app. Give points, bonuses, or special items when users complete certain activities or tasks.",
+  //   link: "/admin/activity-reward",
+  //   color: "#9C27B0"
+  // },
+  // {
+  //   icon: PeopleIcon,
+  //   title: "Invitation Rewards",
+  //   description: "Set up bonuses for users who bring their friends to the app. When someone invites a new person who joins, both can receive special rewards.",
+  //   link: "/admin/invitation-bonus",
+  //   color: "#00BCD4"
+  // },
+  // {
+  //   icon: CheckCircleIcon,
+  //   title: "Attendance Bonus",
+  //   description: "Set up daily login rewards where users must deposit a specific amount to be eligible. You can also customize the bonus amount they receive upon successful check-in.",
+  //   link: "/admin/attendance-bonus",
+  //   color: "#009688"
+  // },
+  // {
+  //   icon: EmojiEventsIcon,
+  //   title: "Lucky Streak Rewards",
+  //   description: "Set up rewards for users who recharge frequently in each month. You can customize both the required recharge amount and the reward amount.",
+  //   link: "/admin/lucky-streak-setting",
+  //   color: "#FFC107"
+  // },
+  // {
+  //   icon: MilitaryTechIcon,
+  //   title: "Winning Streak Bonus",
+  //   description: "Create special rewards for users who win multiple games in a row. This encourages continued play and rewards skillful players with extra bonuses.",
+  //   link: "/admin/winning-streak-setting",
+  //   color: "#673AB7"
+  // },
+  // {
+  //   icon: CasinoIcon,
+  //   title: "Lucky Spin Wheel",
+  //   description: "Set up the prizes and chances on the spinning wheel game. You control what rewards users can win when they spin the wheel and how often they can spin.",
+  //   link: "/admin/lucky-spin",
+  //   color: "#E91E63"
+  // },
 ];
 
 // Dashboard data
@@ -138,13 +138,13 @@ const manageGames = [
     link: "/admin/fived-admin",
     color: "#9C27B0"
   },
-  {
-    icon: DirectionsCarIcon,
-    title: "Car Race Admin",
-    description: "Manage the Car Race game settings including race intervals, odds adjustment, and winner determination. Monitor betting amounts and race statistics.",
-    link: "/admin/car-race-admin",
-    color: "#FFC107"
-  },
+  // {
+  //   icon: DirectionsCarIcon,
+  //   title: "Car Race Admin",
+  //   description: "Manage the Car Race game settings including race intervals, odds adjustment, and winner determination. Monitor betting amounts and race statistics.",
+  //   link: "/admin/car-race-admin",
+  //   color: "#FFC107"
+  // },
 ];
 
 // Deposits data
@@ -192,13 +192,13 @@ const manageUser = [
     link: "/admin/active-users",
     color: "#009688"
   },
-  {
-    icon: BlockIcon,
-    title: "Banned User",
-    description: "Review banned user accounts and their violation history. Manage ban durations and requirements for account reinstatement.",
-    link: "/admin/banned-users",
-    color: "#E91E63"
-  },
+  // {
+  //   icon: BlockIcon,
+  //   title: "Banned User",
+  //   description: "Review banned user accounts and their violation history. Manage ban durations and requirements for account reinstatement.",
+  //   link: "/admin/banned-users",
+  //   color: "#E91E63"
+  // },
 ];
 
 // Additional features data
@@ -210,59 +210,59 @@ const additional = [
     link: "/admin/create-giftcode",
     color: "#673AB7"
   },
-  {
-    icon: NotificationsIcon,
-    title: "Notifications",
-    description: "Create system-wide notifications for all users or targeted messages for specific user groups. Schedule announcements and promotional alerts.",
-    link: "/admin/create-notifications",
-    color: "#00BCD4"
-  },
+  // {
+  //   icon: NotificationsIcon,
+  //   title: "Notifications",
+  //   description: "Create system-wide notifications for all users or targeted messages for specific user groups. Schedule announcements and promotional alerts.",
+  //   link: "/admin/create-notifications",
+  //   color: "#00BCD4"
+  // },
 ];
 
 // Others data
 const others = [
-  {
-    icon: ReceiptLongIcon,
-    title: "Illegal Bets",
-    description: "Monitor and investigate suspicious betting patterns. Identify and review bets that violate platform rules or show signs of fraudulent activity.",
-    link: "/admin/illegal-bets",
-    color: "#673AB7"
-  },
-  {
-    icon: AccountBalanceIcon,
-    title: "Profit/Loss",
-    description: "Track financial performance with detailed profit and loss reports. Analyze revenue streams and expenses across different time periods.",
-    link: "/admin/profit-loss",
-    color: "#00BCD4"
-  },
-  {
-    icon: PeopleIcon,
-    title: "Agent Performance",
-    description: "Evaluate agent effectiveness and productivity metrics. Track referrals, commissions earned, and overall contribution to platform growth.",
-    link: "/admin/agent-performance",
-    color: "#4CAF50"
-  },
-  {
-    icon: TrackChangesIcon,
-    title: "IP Records",
-    description: "Monitor user login locations and access patterns. Identify suspicious activities and potential security concerns through IP tracking.",
-    link: "/admin/ip-tracking",
-    color: "#F44336"
-  },
-  {
-    icon: GroupIcon,
-    title: "Referral Tree",
-    description: "Visualize the hierarchical structure of user referrals. Track multi-level marketing relationships and affiliate performance.",
-    link: "/admin/referral-tree",
-    color: "#2196F3"
-  },
-  {
-    icon: EmojiEventsIcon,
-    title: "Top Performance",
-    description: "Identify top-performing users, games, and promotions. Analyze success patterns and influential factors in platform growth.",
-    link: "/admin/top-performance",
-    color: "#FF9800"
-  },
+  // {
+  //   icon: ReceiptLongIcon,
+  //   title: "Illegal Bets",
+  //   description: "Monitor and investigate suspicious betting patterns. Identify and review bets that violate platform rules or show signs of fraudulent activity.",
+  //   link: "/admin/illegal-bets",
+  //   color: "#673AB7"
+  // },
+  // {
+  //   icon: AccountBalanceIcon,
+  //   title: "Profit/Loss",
+  //   description: "Track financial performance with detailed profit and loss reports. Analyze revenue streams and expenses across different time periods.",
+  //   link: "/admin/profit-loss",
+  //   color: "#00BCD4"
+  // },
+  // {
+  //   icon: PeopleIcon,
+  //   title: "Agent Performance",
+  //   description: "Evaluate agent effectiveness and productivity metrics. Track referrals, commissions earned, and overall contribution to platform growth.",
+  //   link: "/admin/agent-performance",
+  //   color: "#4CAF50"
+  // },
+  // {
+  //   icon: TrackChangesIcon,
+  //   title: "IP Records",
+  //   description: "Monitor user login locations and access patterns. Identify suspicious activities and potential security concerns through IP tracking.",
+  //   link: "/admin/ip-tracking",
+  //   color: "#F44336"
+  // },
+  // {
+  //   icon: GroupIcon,
+  //   title: "Referral Tree",
+  //   description: "Visualize the hierarchical structure of user referrals. Track multi-level marketing relationships and affiliate performance.",
+  //   link: "/admin/referral-tree",
+  //   color: "#2196F3"
+  // },
+  // {
+  //   icon: EmojiEventsIcon,
+  //   title: "Top Performance",
+  //   description: "Identify top-performing users, games, and promotions. Analyze success patterns and influential factors in platform growth.",
+  //   link: "/admin/top-performance",
+  //   color: "#FF9800"
+  // },
   {
     icon: RequestQuoteIcon,
     title: "Api Transaction",
@@ -277,41 +277,41 @@ const others = [
     link: "/admin/vip-levels",
     color: "#E91E63"
   },
-  {
-    icon: PaymentsIcon,
-    title: "Create Salary",
-    description: "Set up and manage staff compensation programs. Define salary structures, commission rates, and payment schedules for team members.",
-    link: "/admin/create-salary",
-    color: "#009688"
-  },
-  {
-    icon: CasinoIcon,
-    title: "Update Turn Over",
-    description: "Manage user betting requirements and turnover obligations. Track and update wagering conditions for bonuses and promotional offers.",
-    link: "/admin/update-turn-over",
-    color: "#FFC107"
-  },
-  {
-    icon: AccountBalanceIcon,
-    title: "Edit Bank Details",
-    description: "Update and manage platform banking information. Maintain accurate payment processing details for deposits and withdrawals.",
-    link: "/admin/edit-bank-detail",
-    color: "#795548"
-  },
-  {
-    icon: GroupIcon,
-    title: "Create User",
-    description: "Add new user accounts with custom configurations. Set initial permissions, balances, and account restrictions for platform users.",
-    link: "/admin/create-user",
-    color: "#3F51B5"
-  },
-  {
-    icon: SupportAgentIcon,
-    title: "Support Ticket",
-    description: "Manage customer service requests and inquiries. Track ticket status, assign support agents, and monitor resolution progress.",
-    link: "/admin/support-system",
-    color: "#4CAF50"
-  },
+  // {
+  //   icon: PaymentsIcon,
+  //   title: "Create Salary",
+  //   description: "Set up and manage staff compensation programs. Define salary structures, commission rates, and payment schedules for team members.",
+  //   link: "/admin/create-salary",
+  //   color: "#009688"
+  // },
+  // {
+  //   icon: CasinoIcon,
+  //   title: "Update Turn Over",
+  //   description: "Manage user betting requirements and turnover obligations. Track and update wagering conditions for bonuses and promotional offers.",
+  //   link: "/admin/update-turn-over",
+  //   color: "#FFC107"
+  // },
+  // {
+  //   icon: AccountBalanceIcon,
+  //   title: "Edit Bank Details",
+  //   description: "Update and manage platform banking information. Maintain accurate payment processing details for deposits and withdrawals.",
+  //   link: "/admin/edit-bank-detail",
+  //   color: "#795548"
+  // },
+  // {
+  //   icon: GroupIcon,
+  //   title: "Create User",
+  //   description: "Add new user accounts with custom configurations. Set initial permissions, balances, and account restrictions for platform users.",
+  //   link: "/admin/create-user",
+  //   color: "#3F51B5"
+  // },
+  // {
+  //   icon: SupportAgentIcon,
+  //   title: "Support Ticket",
+  //   description: "Manage customer service requests and inquiries. Track ticket status, assign support agents, and monitor resolution progress.",
+  //   link: "/admin/support-system",
+  //   color: "#4CAF50"
+  // },
 ];
 
 const DashboardCard = ({ icon: Icon, title, description, link, color }) => {

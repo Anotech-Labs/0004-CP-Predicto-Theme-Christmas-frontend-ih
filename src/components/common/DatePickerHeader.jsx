@@ -8,7 +8,7 @@ const DatePickerHeader = ({ onCancel, onConfirm }) => (
       justifyContent: "space-between",
       alignItems: "center",
       padding: "7px 16px", // Adjusted padding for better spacing
-      backgroundColor: "#241e22", // Updated background color
+      backgroundColor: "#323738", // Updated background color
       borderRadius: "8px 8px 0 0", // Add a rounded corner for the top
       border: "none", // Ensure no border is applied
       outline: "none", // Ensure no outline is applied

@@ -42,7 +42,7 @@ const DownloadModal = ({ onClose, iconSrc }) => {
                 transform: 'translateX(-50%)',
                 width: '10rem', // Adjusted for realistic size
                 height: '2.5rem',
-                background: 'linear-gradient(180deg, #FED358 , #FFB472 )',
+                background: 'linear-gradient(90deg,#24ee89,#9fe871)',
                 borderRadius: '1.5rem',
                 display: 'flex',
                 alignItems: 'center',

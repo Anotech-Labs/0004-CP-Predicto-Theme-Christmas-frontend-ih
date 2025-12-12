@@ -489,7 +489,7 @@ const Promotion = ({ children }) => {
                 sx={{
                   borderRadius: "0px 0px 0 0",
                   backgroundImage:
-                    "url(/assets/icons/promotionbg.webp),linear-gradient(180deg, #FED358 , #FFB472 )",
+                    "url(/assets/icons/promotionbg.webp),linear-gradient(90deg,#24ee89,#9fe871)",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
 
@@ -524,7 +524,7 @@ const Promotion = ({ children }) => {
                 <Typography
                   variant="body2"
                   color="#FED358"
-                  backgroundColor="#241e22"
+                  backgroundColor="#323738"
                   align="center"
                   mt="3px"
                   padding="2.2px 15px"
@@ -625,7 +625,7 @@ const Promotion = ({ children }) => {
                     <Grid
                       sx={{
                         width: "1px",
-                        bgcolor: "#241e22",
+                        bgcolor: "#323738",
                         color: "transparent",
                         height: "180%",
                       }}
@@ -680,7 +680,7 @@ const Promotion = ({ children }) => {
                       px: "7px",
                       pt: "10px",
                       pb: isSmallScreen2 ? "10px" : "4px",
-                      backgroundColor: "#241e22",
+                      backgroundColor: "#323738",
                       borderRadius: "0 0 8px 8px",
                       position: "relative", // To ensure the divider aligns correctly
                     }}
@@ -804,12 +804,12 @@ const Promotion = ({ children }) => {
                 // marginTop: "20px", // Adjust as needed
                 marginBottom: "10px",
                 // backgroundColor: "#0F6518",
-                background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                background: "linear-gradient(90deg,#24ee89,#9fe871)",
 
                 "&:hover": {
                   // backgroundColor: "#0F6518",
                   background:
-                    "linear-gradient(180deg, #FED358 , #FFB472 )",
+                    "linear-gradient(90deg,#24ee89,#9fe871)",
                 },
                 color: "black",
                 fontWeight: "bold",
@@ -829,10 +829,10 @@ const Promotion = ({ children }) => {
                     }
                   }}
                   sx={{
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     "&:hover": {
                       // backgroundColor: "#0F6518",
-                      background: "#241e22",
+                      background: "#323738",
                     },
                     px: 2.1,
                     py: isSmallScreen2 ? "10px" : isSmallScreen ? "12px" : 2.2,
@@ -955,7 +955,7 @@ const Promotion = ({ children }) => {
             <Grid
               mt={4}
               sx={{
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
                 borderRadius: "8px",
                 marginLeft: "auto",
                 marginRight: "auto",

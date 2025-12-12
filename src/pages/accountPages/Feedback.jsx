@@ -127,7 +127,7 @@ const Feedback = () => {
             variant="outlined"
             InputProps={{
               sx: {
-                bgcolor: "#241e22",
+                bgcolor: "#323738",
                 borderRadius: 2,
                 textAlign: "center",
                 lineHeight: "1.3",
@@ -172,7 +172,7 @@ const Feedback = () => {
             variant="contained"
             onClick={handleSubmit}
             sx={{
-              background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+              background: "linear-gradient(90deg,#24ee89,#9fe871)",
               color: "black",
               mt: "30px",
               // mb:"30px",

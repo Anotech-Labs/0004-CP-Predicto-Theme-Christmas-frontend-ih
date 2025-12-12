@@ -435,7 +435,7 @@
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
-    background-color: #241e22;
+    background-color: #323738;
   }
   
   .history-tabs.active {
@@ -575,7 +575,7 @@
   
   .rules-card {
     color: #80849c;
-    background-color: #241e22;
+    background-color: #323738;
     padding: 10px;
     margin: 16px 0px;
     padding-top: 0;

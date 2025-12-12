@@ -798,7 +798,7 @@ const CarRacingPage = ({ timerKey }) => {
                                     cursor: "pointer",
                                     background:
                                         activeId === image.id
-                                            ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                                            ? "linear-gradient(90deg,#24ee89,#9fe871)"
                                             : "transparent",
                                     borderRadius: "10px",
                                     display: "flex",
@@ -889,7 +889,7 @@ const CarRacingPage = ({ timerKey }) => {
                             maxWidth: "94%",
                             boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                             p: 0,
-                            backgroundColor: "#241e22",
+                            backgroundColor: "#323738",
                             borderRadius: "10px",
                         }}
                     >
@@ -1253,7 +1253,7 @@ const CarRacingPage = ({ timerKey }) => {
                                 height: "auto",
                                 margin: "0 auto",
                                 maxWidth: isSmallScreen ? "600px" : "396px",
-                                background: "#241e22",
+                                background: "#323738",
                                 color: "#B79C8B",
                                 borderTopLeftRadius: "16px",
                                 borderTopRightRadius: "16px",
@@ -1266,7 +1266,7 @@ const CarRacingPage = ({ timerKey }) => {
                             style={{
                                 position: "relative",
                                 color: "#B79C8B",
-                                background: "#241e22",
+                                background: "#323738",
                             }}
                         >
                             {/* Top Buttons and Categories */}
@@ -1916,7 +1916,7 @@ const CarRacingPage = ({ timerKey }) => {
                                             sx={{
                                                 height: "40px",
                                                 background:
-                                                    activeTab === index ? "linear-gradient(180deg, #FED358 , #FFB472 )" : "#241e22",
+                                                    activeTab === index ? "linear-gradient(90deg,#24ee89,#9fe871)" : "#323738",
                                                 color: activeTab === index ? "#000" : "grey",
                                                 borderRadius: 1,
                                                 display: "flex",
@@ -1926,7 +1926,7 @@ const CarRacingPage = ({ timerKey }) => {
                                                 transition: "all 0.3s",
                                                 "&:hover": {
                                                     background:
-                                                        activeTab === index ? "linear-gradient(180deg, #FED358 , #FFB472 )" : "#241e22",
+                                                        activeTab === index ? "linear-gradient(90deg,#24ee89,#9fe871)" : "#323738",
                                                 },
                                             }}
                                         >

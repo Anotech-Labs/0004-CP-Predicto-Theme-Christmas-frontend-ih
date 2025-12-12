@@ -318,7 +318,7 @@ const InvitationRule = ({ children }) => {
                     borderRadius: 2,
                     p: 2,
                     mb: 2,
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     backgroundImage:"url('/assets/header.svg')",
                     backgroundPosition: "center -8px",
                     backgroundSize: "cover",
@@ -425,7 +425,7 @@ const InvitationRule = ({ children }) => {
                       <TableRow 
                       key={row.level} 
                       sx={{
-                        background: index % 2 === 0 ? "#241e22" : "#1a1000",
+                        background: index % 2 === 0 ? "#323738" : "#1a1000",
                         '& .MuiTableCell-root': {  // Remove default cell borders
                           borderBottom: 'none'
                         }
@@ -520,7 +520,7 @@ const InvitationRule = ({ children }) => {
                     borderRadius: 2,
                     p: 2,
                     mb: 2,
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     backgroundImage:"url('/assets/header.svg')",
                     backgroundPosition: "center -8px",
                     backgroundSize: "cover",

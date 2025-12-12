@@ -316,7 +316,7 @@ const BettingRecord = () => {
         <Mobile>
             <Box sx={{ backgroundColor: "#232626", minHeight: "100vh" }}>
                 <Box sx={{
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -337,7 +337,7 @@ const BettingRecord = () => {
                     </Typography>
                 </Box>
 
-                <Box sx={{ backgroundColor: "#241e22", mb: 2 }}>
+                <Box sx={{ backgroundColor: "#323738", mb: 2 }}>
                     <Tabs
                         value={activeTab}
                         onChange={handleTabChange}

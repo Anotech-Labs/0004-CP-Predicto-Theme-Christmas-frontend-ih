@@ -280,7 +280,7 @@ function SettingComponent() {
               </DialogTitle>
 
               <DialogContent sx={{ px: 1.5, pb: 1 }}>
-                <Grid sx={{background:"#241e22", px:1.8, py:2.5, borderRadius:3}}>
+                <Grid sx={{background:"#323738", px:1.8, py:2.5, borderRadius:3}}>
                   <Box sx={{ display: 'flex', alignItems: 'center', mb: 1,gap:1 }}>
                   <img
                                       src="/assets/icons/nickname.svg"
@@ -330,7 +330,7 @@ function SettingComponent() {
                     sx={{
                       mt: 20,
                       py: 1.5,
-                      background: 'linear-gradient(180deg, #FED358 , #FFB472 ),#241e22',
+                      background: 'linear-gradient(90deg,#24ee89,#9fe871),#323738',
                       borderRadius: '50px',
                       textTransform: 'none',
                       height: "36px",
@@ -376,7 +376,7 @@ function SettingComponent() {
             settingBottomImage={lockimg}
             bottomBoxName="Login Password"
             bottomGoto="Edit"
-            backgroundColor="#241e22"
+            backgroundColor="#323738"
             // onClick={handleOpenResetPassword}
             onClick={()=> navigate('/account/settings/PasswordChange')}
           />

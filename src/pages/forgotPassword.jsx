@@ -241,7 +241,7 @@ const ForgotPassword = () => {
         alignItems="flex-start"
         sx={{
           background:
-            "linear-gradient(180deg, #FED358 , #FFB472 ),#241e22",
+            "linear-gradient(90deg,#24ee89,#9fe871),#323738",
           px: "16px",
           pt: "10px",
           pb: "25px",
@@ -355,7 +355,7 @@ const ForgotPassword = () => {
               onChange={(e) => setCountryCode(e.target.value)}
               sx={{
                 width: "100px",
-                background: "#241e22",
+                background: "#323738",
                 marginBottom: -1,
                 borderRadius: "10px",
                 "& .MuiOutlinedInput-root": {
@@ -434,7 +434,7 @@ const ForgotPassword = () => {
               required
               sx={{
                 width: "80%",
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
                 borderRadius: "10px",
                 "& .MuiOutlinedInput-root": {
                   height: "46px", // Smaller TextField size
@@ -479,7 +479,7 @@ const ForgotPassword = () => {
             value={otp}
             onChange={(e) => setOtp(e.target.value)}
             sx={{
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               borderRadius: "10px",
               "& .MuiOutlinedInput-root": {
                 height: "46px", // Smaller TextField size
@@ -515,7 +515,7 @@ const ForgotPassword = () => {
                     sx={{
                       background: isVerifyButtonDisabled
                         ? "linear-gradient(90deg, #A0A0A0 0%, #808080 100%)"
-                        : "linear-gradient(180deg, #FED358 , #FFB472 )",
+                        : "linear-gradient(90deg,#24ee89,#9fe871)",
                       color: "#FDE4BC",
                       borderRadius: 50,
                       textTransform: "capitalize",
@@ -524,7 +524,7 @@ const ForgotPassword = () => {
                       "&:hover": {
                         background: isVerifyButtonDisabled
                           ? "linear-gradient(90deg, #A0A0A0 0%, #808080 100%)"
-                          : "linear-gradient(180deg, #FED358 , #FFB472 )",
+                          : "linear-gradient(90deg,#24ee89,#9fe871)",
                       },
                     }}
                   >
@@ -565,7 +565,7 @@ const ForgotPassword = () => {
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
                 sx={{
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   borderRadius: "10px",
                   "& .MuiOutlinedInput-root": {
                     height: "47.5px", // Smaller TextField size
@@ -627,7 +627,7 @@ const ForgotPassword = () => {
                 onChange={(e) => setConfirmNewPassword(e.target.value)}
                 sx={{
                   // width: "96%",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   borderRadius: "10px",
                   "& .MuiOutlinedInput-root": {
                     height: "47.5px", // Smaller TextField size
@@ -735,7 +735,7 @@ const ForgotPassword = () => {
                 disabled={!otpVerified || !isChecked}
                 style={{
                   background:
-                    "linear-gradient(180deg, #FED358 , #FFB472 ),#241e22",
+                    "linear-gradient(90deg,#24ee89,#9fe871),#323738",
                   borderRadius: "360px",
                   width: "85%",
                   height: "43px",

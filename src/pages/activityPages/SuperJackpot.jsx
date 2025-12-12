@@ -195,7 +195,7 @@ const SuperJackpot = () => {
                 <Button
                   fullWidth
                   sx={{
-                    bgcolor: "#241e22",
+                    bgcolor: "#323738",
                     color: "#FDE4BC",
                     fontSize: "13px",
                     borderRadius: "10px",
@@ -224,7 +224,7 @@ const SuperJackpot = () => {
                 <Button
                   fullWidth
                   sx={{
-                    bgcolor: "#241e22",
+                    bgcolor: "#323738",
                     color: "#FDE4BC",
                     borderRadius: "10px",
                     py: 1.5,
@@ -260,7 +260,7 @@ const SuperJackpot = () => {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              bgcolor: "#241e22",
+              bgcolor: "#323738",
               margin: 2,
               borderRadius: "10px",
               mb: 2,
@@ -284,7 +284,7 @@ const SuperJackpot = () => {
               fullWidth
               onClick={() => navigate("/")}
               sx={{
-                background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                background: "linear-gradient(90deg,#24ee89,#9fe871)",
                 color: "black",
                 // fontWeight: "bold",
                 maxWidth: 350,

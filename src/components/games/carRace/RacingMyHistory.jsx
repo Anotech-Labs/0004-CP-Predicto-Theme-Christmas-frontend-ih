@@ -86,7 +86,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
     <Grid container sx={{ justifyContent: "center" }}>
       <Box
         sx={{
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           width: "100%",
           borderRadius: "10px 10px 0 0px",
         }}
@@ -135,7 +135,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
             <Accordion
               key={bet._id}
               sx={{
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
                 boxShadow: "none",
                 "&::before": {
                   backgroundColor: "transparent",
@@ -393,7 +393,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
                         <Grid
                           key={rowIndex}
                           sx={{
-                            border: "0.3rem solid #241e22",
+                            border: "0.3rem solid #323738",
                             backgroundColor: "#382e35",
                             borderRadius: "10px",
                             display: "flex",
@@ -520,7 +520,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
           justifyContent: "center",
           gap: "32px",
           marginTop: "20px",
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           padding: { xs: "10px 0", sm: "15px 0" },
           borderRadius: "0 0 10px 10px",
         }}
@@ -539,7 +539,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#241e22" }} />
+          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#323738" }} />
         </Button>
         <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B", fontSize: "13px" }}>
           {page}/{totalPage}
@@ -558,7 +558,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B79C8B" : "#241e22" }} />
+          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B79C8B" : "#323738" }} />
         </Button>
       </Box>
     </Grid>

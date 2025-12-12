@@ -144,7 +144,7 @@ setPopupMessage("All fields are required!");
                         value={modificationType}
                         // disabled
                         sx={{
-                            bgcolor: "#241e22",
+                            bgcolor: "#323738",
                             borderRadius: 1,
                             color: "#A8A5A1",height:"50px",
                             "& .MuiSelect-icon": { color: "#A8A5A1" },
@@ -156,11 +156,11 @@ setPopupMessage("All fields are required!");
                         MenuProps={{
                             PaperProps: {
                                 sx: {
-                                    bgcolor: "#241e22", // Dropdown menu background color
+                                    bgcolor: "#323738", // Dropdown menu background color
                                     // borderRadius: "8px",
                                     "& .MuiMenuItem-root": {
                                         color: "#A8A5A1", // Text color in dropdown
-                                        bgcolor: "#241e22",
+                                        bgcolor: "#323738",
                                         padding: "10px 16px", // Adjusted padding
                                         //   border: "1px solid #3B3833"
                                     },
@@ -263,7 +263,7 @@ setPopupMessage("All fields are required!");
                     {/* Bank Details Screenshot */}
                     <Typography variant="subtitle1" sx={{ color: "#FDE4BC", mt: 3, mb: 1, }}>Bank Details Screenshot <span style={{ color: "red" }}>*</span> <span style={{ fontStyle: "italic", opacity: 0.7, fontSize: "12px" }}>
                     ( Upto <span style={{ color: "red" }}>2 mb</span> )</span></Typography>
-                    <Box component="label" sx={{ width: 100, height: 100, bgcolor: "#241e22", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: 2, cursor: "pointer", overflow: "hidden", border: "1px solid #3B3833" }}>
+                    <Box component="label" sx={{ width: 100, height: 100, bgcolor: "#323738", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: 2, cursor: "pointer", overflow: "hidden", border: "1px solid #3B3833" }}>
                         {screenshot ? <img src={URL.createObjectURL(screenshot)} alt="Screenshot" style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                             <AddPhotoAlternateIcon sx={{ color: "#FDE4BC", fontSize: 45 }} />}
                         <input type="file" accept="image/*" hidden onChange={handleImageUpload} />
@@ -272,7 +272,7 @@ setPopupMessage("All fields are required!");
                     {/* Submit Button */}
                     {error && <Typography color="error" sx={{ mb: 2 }}>{error}</Typography>}
                     <Button variant="contained" fullWidth sx={{
-                        background: "linear-gradient(180deg, #FED358 , #FFB472 )", color: "white", borderRadius: 4, mt: 2, mb: 4,
+                        background: "linear-gradient(90deg,#24ee89,#9fe871)", color: "white", borderRadius: 4, mt: 2, mb: 4,
                         textTransform: "none", "&:disabled": {
                             background: "#454456", // Disabled color
                             color: "#A8A5A1", // Adjust text color for better readability
@@ -334,7 +334,7 @@ setPopupMessage("All fields are required!");
     )
 }
 const inputStyles = {
-    bgcolor: "#241e22",
+    bgcolor: "#323738",
     input: { color: "#f5f3f0" ,fontSize:"14px",height:"15px"},
     "& .MuiOutlinedInput-root": {
         "& fieldset": {

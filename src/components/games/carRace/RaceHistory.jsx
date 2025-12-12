@@ -41,19 +41,19 @@ const NumberCircle = styled(Box)(() => ({
   width: 20,
   height: 20,
   borderRadius: "50%",
-  border: "2px solid #241e22",
+  border: "2px solid #323738",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   margin: "0 1px",
-  backgroundColor: "#241e22",
+  backgroundColor: "#323738",
 }));
 
 const ResultCircle = styled(Box)(({ bgcolor }) => ({
   width: 15,
   height: 15,
   borderRadius: "10%",
-  backgroundColor: "#241e22",
+  backgroundColor: "#323738",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -90,7 +90,7 @@ const RaceHistory = ({ data, page, setPage, totalPage }) => {
       : "linear-gradient(90deg, #00BE50 0%, #9BDF00 100%)";
 
   return (
-    <Card sx={{ maxWidth: "100%", bgcolor: "#241e22" }}>
+    <Card sx={{ maxWidth: "100%", bgcolor: "#323738" }}>
       <CardContent sx={{ p: 0 }}>
         <Grid container sx={{ bgcolor: "#cf7c10" }}>
           <Grid item xs={4}><HeaderCell>Period</HeaderCell></Grid>
@@ -151,7 +151,7 @@ const RaceHistory = ({ data, page, setPage, totalPage }) => {
             display: "flex",
             justifyContent: "center",
             marginTop: "20px",
-            backgroundColor: "#241e22",
+            backgroundColor: "#323738",
             padding: { xs: "10px 0", sm: "20px 0" },
             borderRadius: "0 0 10px 10px",
             gap: "30px"
@@ -171,7 +171,7 @@ const RaceHistory = ({ data, page, setPage, totalPage }) => {
               "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
             }}
           >
-            <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#241e22" }} />
+            <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#323738" }} />
           </Button>
           <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B",fontSize:"12.8px" }}>
             {page}/{totalPage}
@@ -190,7 +190,7 @@ const RaceHistory = ({ data, page, setPage, totalPage }) => {
               "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
             }}
           >
-            <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B79C8B" : "#241e22" }} />
+            <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B79C8B" : "#323738" }} />
           </Button>
         </Box>
       </CardContent>

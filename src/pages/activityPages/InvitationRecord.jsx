@@ -59,7 +59,7 @@ const InvitationRecord = () => {
                         position: 'sticky',
                         top: 0,
                         zIndex: 1000,
-                        backgroundColor: '#241e22',
+                        backgroundColor: '#323738',
                         padding: "7px 12px",
                     }}
                 >
@@ -94,7 +94,7 @@ const InvitationRecord = () => {
                                 <Box
                                     key={item.uid}
                                     sx={{
-                                        background: '#241e22',
+                                        background: '#323738',
                                         borderRadius: '12px',
                                         padding: '10px',
                                         mb: 2,

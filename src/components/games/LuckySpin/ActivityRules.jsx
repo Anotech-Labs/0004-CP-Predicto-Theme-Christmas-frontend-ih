@@ -28,7 +28,7 @@ const ActivityRules = () => {
           >
             <Grid item xs={2}>
               <IconButton
-                sx={{ color: "#FDE4BC", ml: -2 }} // #241e22 color for the icon
+                sx={{ color: "#FDE4BC", ml: -2 }} // #323738 color for the icon
                 onClick={handleBackClick}
               >
                 <ArrowBackIosNewIcon sx={{ fontSize:"19px"}}/>
@@ -38,7 +38,7 @@ const ActivityRules = () => {
               <Typography
                 variant="h6"
                 sx={{
-                  color: "#FDE4BC", // #241e22 color for the text
+                  color: "#FDE4BC", // #323738 color for the text
                   flexGrow: 1,
                   textAlign: "center",
                   mr: 8,
@@ -52,7 +52,7 @@ const ActivityRules = () => {
       <Box sx={{ mx: 2, mt: 2 }}>
         <Box
           sx={{
-            backgroundColor: "#241e22",
+            backgroundColor: "#323738",
             color: "#B79C8B",
             borderRadius: "12px",
             boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
@@ -96,7 +96,7 @@ const ActivityRules = () => {
         </Box>
         <Box
           sx={{
-            backgroundColor: "#241e22",
+            backgroundColor: "#323738",
             color: "#FDE4BC",
             borderRadius: "12px",
             boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
@@ -140,7 +140,7 @@ const ActivityRules = () => {
         </Box>
         <Box
           sx={{
-            backgroundColor: "#241e22",
+            backgroundColor: "#323738",
             color: "#FDE4BC",
             borderRadius: "12px",
             boxShadow: "0 4px 8px rgba(0,0,0,0.1)",

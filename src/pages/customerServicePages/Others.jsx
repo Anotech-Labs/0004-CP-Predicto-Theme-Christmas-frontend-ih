@@ -137,7 +137,7 @@ const [isPopupVisible, setIsPopupVisible] = useState(false); // State for popup 
                     {/* Submit Button */}
                     {error && <Typography color="error" sx={{ mb: 2 }}>{error}</Typography>}
                     <Button variant="contained" fullWidth sx={{
-                        background: "linear-gradient(180deg, #FED358 , #FFB472 )", color: "white", borderRadius: 4, mt: 2, textTransform: "none", "&:disabled": {
+                        background: "linear-gradient(90deg,#24ee89,#9fe871)", color: "white", borderRadius: 4, mt: 2, textTransform: "none", "&:disabled": {
                             background: "#454456", // Disabled color
                             color: "#A8A5A1", // Adjust text color for better readability
                         },
@@ -198,7 +198,7 @@ const [isPopupVisible, setIsPopupVisible] = useState(false); // State for popup 
     )
 }
 const inputStyles = {
-    bgcolor: "#241e22",
+    bgcolor: "#323738",
     input: { color: "#f5f3f0",fontSize:"14px" },
     "& .MuiOutlinedInput-root": {
         color: "#f5f3f0",

@@ -188,7 +188,7 @@ const CustomerService = () => {
           Self Service
         </Typography>
 
-        <List sx={{ bgcolor: "#241e22", m: 2, borderRadius: 2 }}>
+        <List sx={{ bgcolor: "#323738", m: 2, borderRadius: 2 }}>
           {serviceOptions.map((item, index) => (
             <ListItem
               component="div"
@@ -236,7 +236,7 @@ const CustomerService = () => {
             borderRadius: 2,
             mx: 2,
             textAlign: "left",
-            background: "#241e22",
+            background: "#323738",
           }}
         >
           <Typography
@@ -270,7 +270,7 @@ const CustomerService = () => {
             variant="contained"
             fullWidth
             sx={{
-              background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+              background: "linear-gradient(90deg,#24ee89,#9fe871)",
               color: "#232626",
               fontSize: "16px",
               fontWeight: "bold",
@@ -300,7 +300,7 @@ const CustomerService = () => {
             width: "370px",
             minWidth: "370px",
             m: 2,
-            background: "#241e22",
+            background: "#323738",
             borderRadius: "12px",
             boxShadow: "0 8px 24px 0 rgba(31, 38, 135, 0.1)",
             border: "none",
@@ -332,7 +332,7 @@ const CustomerService = () => {
             <CloseIcon />
           </IconButton>
         </DialogTitle>
-        <DialogContent sx={{ p: 0, background: "#241e22" }}>
+        <DialogContent sx={{ p: 0, background: "#323738" }}>
           {isLoading ? (
             <Box sx={{ p: 3, textAlign: "center",color:"#E3EFFF" }}>
               <Typography>Loading Telegram channels...</Typography>

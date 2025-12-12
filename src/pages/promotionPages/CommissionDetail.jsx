@@ -201,7 +201,7 @@ const CommissionDetail = () => {
                   },
                 }}
                 sx={{
-                  background: "#241e22",
+                  background: "#323738",
                   borderRadius: 2,
                   color: "black",
                   "& .MuiOutlinedInput-root": {
@@ -237,7 +237,7 @@ const CommissionDetail = () => {
                   height: "auto",
                   margin: "0 auto",
                   maxWidth: isSmallScreen ? "600px" : "396px",
-                  background: "#241e22",
+                  background: "#323738",
                   color: "black",
                   borderTopLeftRadius: "12px",
                   borderTopRightRadius: "12px",
@@ -264,7 +264,7 @@ const CommissionDetail = () => {
             {/* Gray Box Section with Cards */}
             <Box
               sx={{
-                background: "#241e22",
+                background: "#323738",
                 padding:'12px',
                 borderRadius: "8px",
                 color: "#B79C8B",

@@ -158,7 +158,7 @@ const WinningStreakTabs = () => {
             <Card
                 key={`${game.gameType}-${rule.ruleId}-${index}`}
                 sx={{
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     color: "#FFFFFF",
                     borderRadius: 3,
                     boxShadow: "none",
@@ -228,7 +228,7 @@ const WinningStreakTabs = () => {
                             variant="contained"
                             sx={{
                                 background: canClaim
-                                    ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                                    ? "linear-gradient(90deg,#24ee89,#9fe871)"
                                     : "#555",
                                 color: "#ffffff",
                                 borderRadius: 3,
@@ -319,8 +319,8 @@ const WinningStreakTabs = () => {
                                 justifyContent: "center",
                                 cursor: "pointer",
                                 background: selectedGame === tab.value
-                                    ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                                    : "#241e22",
+                                    ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                                    : "#323738",
                                 color: selectedGame === tab.value?"#232626":"#FDE4BC",
                             }}
                         >

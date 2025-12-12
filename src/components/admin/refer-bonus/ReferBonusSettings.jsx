@@ -155,7 +155,7 @@ const ReferBonusSettings = () => {
 
     return (
         <ThemeProvider theme={darkTheme}>
-            <Paper
+            {/* <Paper
                 elevation={0}
                 sx={{
                     p: { xs: 2, sm: 3, md: 4 },
@@ -373,7 +373,7 @@ const ReferBonusSettings = () => {
                         </Alert>
                     </Fade>
                 )}
-            </Paper>
+            </Paper> */}
         </ThemeProvider>
     );
 };

@@ -249,7 +249,7 @@ const Login = () => {
         sx={{
           // backgroundColor: "#0F6518",
           background:
-            "#241e22",
+            "#323738",
           px: "16px",
           pt: "10px",
           pb: "40px",
@@ -444,7 +444,7 @@ const Login = () => {
                   onChange={(e) => setCountryCode(e.target.value)}
                   sx={{
                     width: "100px",
-                    background: "#241e22",
+                    background: "#323738",
                     marginBottom: -1,
                     borderRadius: "10px",
                     "& .MuiOutlinedInput-root": {
@@ -525,7 +525,7 @@ const Login = () => {
                   required
                   sx={{
                     width: "80%",
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     borderRadius: "10px",
                     "& .MuiOutlinedInput-root": {
                       height: "46px", // Smaller TextField size
@@ -590,7 +590,7 @@ const Login = () => {
                 }
                 required
                 sx={{
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   borderRadius: "10px",
                   "& .MuiOutlinedInput-root": {
                     height: "46px", // Smaller TextField size
@@ -644,7 +644,7 @@ const Login = () => {
                 // paddingRight:"10px",
                 // marginRight:"100px",
                 margin: "1px",
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
                 borderRadius: "10px",
                 "& .MuiOutlinedInput-root": {
                   height: "46px", // Smaller TextField size

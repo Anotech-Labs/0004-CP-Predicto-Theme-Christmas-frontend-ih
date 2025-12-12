@@ -46,10 +46,10 @@ const StyledTab = styled(Tab)(({ theme }) => ({
   textTransform: "none",
   marginRight: "8px",
   borderRadius: "5px",
-  backgroundColor: "#241e22",
+  backgroundColor: "#323738",
   "&.Mui-selected": {
-    color: "#241e22",
-    background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+    color: "#323738",
+    background: "linear-gradient(90deg,#24ee89,#9fe871)",
   },
   "& .MuiTab-iconWrapper": {
     marginBottom: "5px !important", // Space between icon and label
@@ -330,7 +330,7 @@ const BettingRebate = () => {
             variant="outlined"
             sx={{
               p: 1,
-              bgcolor: "#241e22",
+              bgcolor: "#323738",
               borderRadius: "12px",
               boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
             }}
@@ -600,7 +600,7 @@ const BettingRebate = () => {
                       p: 2,
                       borderRadius: "12px",
                       // boxShadow: "0 2px 4px rgba(0,0,0,0.05)",
-                      bgcolor: "#241e22",
+                      bgcolor: "#323738",
                     }}
                   >
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>

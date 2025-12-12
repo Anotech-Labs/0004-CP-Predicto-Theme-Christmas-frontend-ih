@@ -113,7 +113,7 @@ const TMSChangePassword = () => {
           <TextField fullWidth type={showPassword ? "text" : "password"} placeholder="Confirm Password" variant="outlined" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} autoComplete="new-password" InputProps={{ endAdornment: (<InputAdornment position="end"><IconButton sx={{ color: "gray" }} onClick={() => setShowPassword(!showPassword)}>{showPassword ? <Visibility /> : <VisibilityOff />}</IconButton></InputAdornment>) }} sx={inputStyles} />
           {error && <Typography color="error" sx={{ mb: 2 }}>{error}</Typography>}
           <Button variant="contained" fullWidth sx={{
-            background: "linear-gradient(180deg, #FED358 , #FFB472 )", color: "white", borderRadius: 4, mt: 4, textTransform: "none", "&:disabled": {
+            background: "linear-gradient(90deg,#24ee89,#9fe871)", color: "white", borderRadius: 4, mt: 4, textTransform: "none", "&:disabled": {
               background: "#454456", // Disabled color
               color: "#A8A5A1", // Adjust text color for better readability
             },
@@ -169,7 +169,7 @@ const TMSChangePassword = () => {
 }
 const inputStyles = {
 
-  bgcolor: "#241e22",
+  bgcolor: "#323738",
   input: { color: "#f5f3f0", height: "15px", fontSize: "14px" },
   "& .MuiOutlinedInput-root": {
     "& fieldset": {

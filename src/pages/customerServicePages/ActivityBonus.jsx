@@ -179,7 +179,7 @@ const ActivityBonus = () => {
                         variant="contained"
                         fullWidth
                         sx={{
-                            background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                            background: "linear-gradient(90deg,#24ee89,#9fe871)",
                             color: "white",
                             borderRadius: 4,
                             mt: 3,
@@ -247,7 +247,7 @@ const ActivityBonus = () => {
     )
 }
 const inputStyles = {
-    bgcolor: "#241e22",
+    bgcolor: "#323738",
     input: { color: "#f5f3f0", height: "15px", fontSize: "14px" },
     "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button": {
             WebkitAppearance: "none",

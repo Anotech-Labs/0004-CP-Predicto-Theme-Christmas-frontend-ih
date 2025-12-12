@@ -21,7 +21,7 @@ const CustomPagination = styled(Pagination)({
   },
   "& .MuiPaginationItem-previousNext": {
     backgroundColor: "#0F6518",
-    color: "#241e22",
+    color: "#323738",
     padding: "3px",
     width: "auto", // Ensure it doesn't stretch
     height: "auto", // Ensure it doesn't stretch
@@ -74,7 +74,7 @@ const K3Charts = ({ data ,page, setPage ,totalPage}) => {
     <div style={{marginTop:"20px"}}>
       <div
         style={{
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           borderRadius: "10px",
           color: "black",
           // padding: "1px",
@@ -145,7 +145,7 @@ const K3Charts = ({ data ,page, setPage ,totalPage}) => {
           justifyContent: "center",
           gap:"32px",
           marginTop: "20px",
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           padding: { xs: "10px 0", sm: "15px 0" },
           borderRadius: "0 0 10px 10px",
         }}
@@ -164,7 +164,7 @@ const K3Charts = ({ data ,page, setPage ,totalPage}) => {
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#FDE4BC" : "#241e22" }} />
+          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#FDE4BC" : "#323738" }} />
         </Button>
         <Grid sx={{ display: "flex", alignItems: "center", color: "#FDE4BC",fontSize:"12.8px" }}>
           {page}/{totalPage}
@@ -183,7 +183,7 @@ const K3Charts = ({ data ,page, setPage ,totalPage}) => {
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#FDE4BC" : "#241e22" }} />
+          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#FDE4BC" : "#323738" }} />
         </Button>
       </Box>
     </div>

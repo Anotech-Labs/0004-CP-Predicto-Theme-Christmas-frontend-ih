@@ -19,7 +19,7 @@ const DeleteConfirmationModal = ({ open, onClose, onConfirm }) => {
         sx={{
           width: '100%',
           maxWidth: '320px',
-          bgcolor: '#241e22',
+          bgcolor: '#323738',
           borderRadius: '14px',
           overflow: 'hidden',
           boxShadow: 24,
@@ -28,7 +28,7 @@ const DeleteConfirmationModal = ({ open, onClose, onConfirm }) => {
         <Box
           sx={{
             p: 2,
-            bgcolor: '#241e22',
+            bgcolor: '#323738',
             textAlign: 'center',
           }}
         >
@@ -90,7 +90,7 @@ const DeleteConfirmationModal = ({ open, onClose, onConfirm }) => {
               sx={{
                 flex: 1,
                 py: 1.5,
-                background: 'linear-gradient(180deg, #FED358 , #FFB472 )',
+                background: 'linear-gradient(90deg,#24ee89,#9fe871)',
                 color: 'black',
                 borderRadius: 0,
                 textTransform:"none"

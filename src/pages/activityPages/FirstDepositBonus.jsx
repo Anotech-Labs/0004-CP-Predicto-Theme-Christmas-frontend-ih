@@ -73,7 +73,7 @@ function FirstDepositBonus({ children }) {
   // ActivityRules Component
   function ActivityRules() {
     return (
-      <Paper sx={{ mb: 2, overflow: "hidden", borderRadius: "5px", margin: 0 ,background:"#241e22"}}>
+      <Paper sx={{ mb: 2, overflow: "hidden", borderRadius: "5px", margin: 0 ,background:"#323738"}}>
         <Box
           sx={{
             bgcolor: "#cf7c10",

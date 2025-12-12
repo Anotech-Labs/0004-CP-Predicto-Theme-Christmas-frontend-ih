@@ -31,7 +31,7 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 }));
 
 const WarningBox = styled(Box)(({ theme }) => ({
-  backgroundColor: "#241e22",
+  backgroundColor: "#323738",
   padding: theme.spacing(1.5),
   marginBottom: theme.spacing(2),
   display: "flex",
@@ -41,7 +41,7 @@ const WarningBox = styled(Box)(({ theme }) => ({
 }));
 
 const InputContainer = styled(Box)(({ theme }) => ({
-  backgroundColor: "#241e22",
+  backgroundColor: "#323738",
   padding: theme.spacing(1),
   borderRadius: "12px",
   marginBottom: theme.spacing(2),
@@ -52,7 +52,7 @@ const InputContainer = styled(Box)(({ theme }) => ({
 }));
 
 const SaveButton = styled(Button)(({ theme }) => ({
-  background: "linear-gradient(180deg, #FED358 , #FFB472 ),#241e22",
+  background: "linear-gradient(90deg,#24ee89,#9fe871),#323738",
   color: "white",
   fontWeight: "bold",
   borderRadius: "24px",

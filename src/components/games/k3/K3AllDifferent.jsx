@@ -102,7 +102,7 @@ const K3AllDifferent = ({
         <span
           style={{
             background: "rgb(250, 87, 74)",
-            color: "#241e22",
+            color: "#323738",
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
@@ -172,7 +172,7 @@ const K3AllDifferent = ({
           <span
             style={{
               background: "rgb(250, 87, 74)",
-              color: "#241e22",
+              color: "#323738",
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
@@ -219,7 +219,7 @@ const K3AllDifferent = ({
         <span
           style={{
             background: "rgb(250, 87, 74)",
-            color: "#241e22",
+            color: "#323738",
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",

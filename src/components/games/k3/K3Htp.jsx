@@ -30,7 +30,7 @@ const K3Htp = ({ isOpen, onClose }) => {
         >
             <div
                 style={{
-                    background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                    background: "linear-gradient(90deg,#24ee89,#9fe871)",
                     borderTopLeftRadius: '15px',
                     borderTopRightRadius: '15px',
                     padding: '15px',
@@ -82,7 +82,7 @@ const K3Htp = ({ isOpen, onClose }) => {
             >
                 <div
                     style={{
-                        backgroundImage: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                        backgroundImage: "linear-gradient(90deg,#24ee89,#9fe871)",
                         padding: '10px 70px',
                         width: 'fit-content',
                         margin: '0 auto',

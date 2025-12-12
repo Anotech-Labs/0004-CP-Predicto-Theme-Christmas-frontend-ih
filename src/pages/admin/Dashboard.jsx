@@ -796,9 +796,9 @@ const Dashboard = () => {
           </Grid>
 
           {/* Game Settings Card */}
-          <Grid item xs={12}>
+          {/* <Grid item xs={12}>
             <GameSettingsCard />
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
     </ThemeProvider>

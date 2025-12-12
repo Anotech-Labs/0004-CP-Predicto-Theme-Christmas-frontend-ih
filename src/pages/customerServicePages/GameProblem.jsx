@@ -124,7 +124,7 @@ const GameProblem = () => {
                         value={gameType}
                         onChange={(e) => setGameType(e.target.value)} 
                         sx={{
-                            bgcolor: "#241e22",
+                            bgcolor: "#323738",
                             borderRadius: 1,
                             color: "#A8A5A1",
                             fontSize:"14px",
@@ -137,11 +137,11 @@ const GameProblem = () => {
                         MenuProps={{
                             PaperProps: {
                                 sx: {
-                                    bgcolor: "#241e22", // Dropdown menu background color
+                                    bgcolor: "#323738", // Dropdown menu background color
                                     // borderRadius: "8px",
                                     "& .MuiMenuItem-root": {
                                         color: "#A8A5A1", // Text color in dropdown
-                                        bgcolor: "#241e22",
+                                        bgcolor: "#323738",
                                         padding: "10px 16px", // Adjusted padding
                                         //   border: "1px solid #3B3833"
                                     },
@@ -191,7 +191,7 @@ const GameProblem = () => {
 
                 {/* Submit Button */}
                 {error && <Typography color="error" sx={{ mb: 2 }}>{error}</Typography>}
-                <Button variant="contained" fullWidth sx={{ background: "linear-gradient(180deg, #FED358 , #FFB472 )", color: "white", borderRadius: 4, mt: 2 ,textTransform:"none","&:disabled": {
+                <Button variant="contained" fullWidth sx={{ background: "linear-gradient(90deg,#24ee89,#9fe871)", color: "white", borderRadius: 4, mt: 2 ,textTransform:"none","&:disabled": {
       background: "#454456", // Disabled color
       color: "#A8A5A1", // Adjust text color for better readability
     },}} onClick={handleSubmit} disabled={loading}>
@@ -252,7 +252,7 @@ const GameProblem = () => {
     )
 }
 const inputStyles = {
-    bgcolor: "#241e22",
+    bgcolor: "#323738",
     input: { color: "#f5f3f0" ,height:"15px",fontSize:"14px"},
     "& .MuiOutlinedInput-root": {
          color: "#f5f3f0",

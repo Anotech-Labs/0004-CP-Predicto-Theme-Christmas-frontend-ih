@@ -334,8 +334,8 @@ const DepositHistory = () => {
                       height: "2.5rem",
                       background:
                         state.selectedMethod === method.name
-                          ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                          : "#241e22",
+                          ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                          : "#323738",
                       textTransform: "none",
                       display: "flex",
                       justifyContent: "center",
@@ -387,7 +387,7 @@ const DepositHistory = () => {
                 sx={{
                   width: "48%",
                   height: "2.8rem",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   textTransform: "none",
                   display: "flex",
                   justifyContent: "space-between",
@@ -406,7 +406,7 @@ const DepositHistory = () => {
                 sx={{
                   width: "48%",
                   height: "2.8rem",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   textTransform: "none",
                   display: "flex",
                   fontSize: "11.5px",
@@ -471,7 +471,7 @@ const DepositHistory = () => {
                       sx={{
                         marginBottom: "12px",
                         borderRadius: "8px",
-                        backgroundColor: "#241e22",
+                        backgroundColor: "#323738",
                         boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
                       }}
                     >
@@ -600,7 +600,7 @@ const DepositHistory = () => {
                 height: "auto",
                 margin: "0 auto",
                 maxWidth: isSmallScreen ? "600px" : "396px",
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
                 color: "white",
                 borderTopLeftRadius: "16px",
                 borderTopRightRadius: "16px",

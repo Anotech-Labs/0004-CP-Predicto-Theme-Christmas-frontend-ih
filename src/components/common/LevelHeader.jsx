@@ -8,7 +8,7 @@ const LevelHeader = ({ onCancel, onConfirm }) => (
       justifyContent: "space-between",
       alignItems: "center",
       padding: "7px 16px",
-      backgroundColor: "#241e22",
+      backgroundColor: "#323738",
       color: "#a8a5a1",
     }}
   >

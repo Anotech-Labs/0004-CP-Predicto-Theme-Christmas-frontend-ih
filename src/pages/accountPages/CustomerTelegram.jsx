@@ -147,7 +147,7 @@ const CustomerTelegram = () => {
                         Self Service
                     </Typography>
 
-                    <List sx={{ bgcolor: '#241e22', borderRadius: '12px', overflow: 'hidden' }}>
+                    <List sx={{ bgcolor: '#323738', borderRadius: '12px', overflow: 'hidden' }}>
                         {services.map((service, index) => (
                             <Box key={index}>
                                 <ListItem
@@ -206,7 +206,7 @@ const CustomerTelegram = () => {
                     <Box
                         sx={{
                             mt: 3,
-                            bgcolor: '#241e22',
+                            bgcolor: '#323738',
                             borderRadius: '12px',
                             p: 2,
                         }}

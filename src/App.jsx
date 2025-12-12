@@ -206,20 +206,20 @@ function AppContent() {
 
           <Route path="/gift-coupon" element={<GiftCoupon />} />
           <Route path="/attendance" element={<Attendance />} />
-          <Route
+          {/* <Route
             path="/activity/activity-reward"
             element={<ActivityReward />}
-          />
+          /> */}
           <Route
             path="/activity/activity-reward/collection-record"
             element={<CollectionRecord />}
           />
-          <Route
+          {/* <Route
             path="/activity/invitation-bonus"
             element={<InvitationBonus />}
-          />
-          <Route path="/activity/winning-streak" element={<WinningStreak />} />
-          <Route path="/activity/lucky-10days" element={<Lucky10days />} />
+          /> */}
+          {/* <Route path="/activity/winning-streak" element={<WinningStreak />} />
+          <Route path="/activity/lucky-10days" element={<Lucky10days />} /> */}
           <Route
             path="/activity/first-deposit-bonus"
             element={<FirstDepositBonus />}
@@ -364,7 +364,7 @@ function AppContent() {
           <Route path="/5d" element={<FiveDPage />} />
           <Route path="/car-race" element={<CarRacingPage />} />
 
-          <Route path="/lucky-spinner" element={<LuckySpin />} />
+          {/* <Route path="/lucky-spinner" element={<LuckySpin />} /> */}
           <Route path="/lucky-spinner/event-desc" element={<EventDesc />} />
           <Route
             path="/lucky-spinner/event-details"
@@ -415,29 +415,29 @@ function AppContent() {
           <Route path="/admin/all-withdraw" element={<AllWithdraws />} />
 
           <Route path="/admin/create-giftcode" element={<CreateGift />} />
-          <Route
+          {/* <Route
             path="/admin/create-notifications"
             element={<CreateNotifications />}
-          />
+          /> */}
           <Route
             path="/admin/push-notifications"
             element={<PushNotificationAdmin />}
           />
 
           <Route path="/admin/upi-setting" element={<UpiComissionSetting />} />
-          <Route
+          {/* <Route
             path="/admin/withdrawal-setting"
             element={<WithdrawalLimitSetting />}
-          />
-          <Route
+          /> */}
+          {/* <Route
             path="/admin/lucky-streak-setting"
             element={<LuckyStreakSetting />}
-          />
-          <Route path="/admin/lucky-spin" element={<LuckySpinSetting />} />
-          <Route
+          /> */}
+          {/* <Route path="/admin/lucky-spin" element={<LuckySpinSetting />} /> */}
+          {/* <Route
             path="/admin/winning-streak-setting"
             element={<WinningStreakSetting />}
-          />
+          /> */}
           <Route
             path="/admin/first-deposit-setting"
             element={<FirstDepositBonusSetting />}
@@ -446,7 +446,7 @@ function AppContent() {
             path="/admin/other-deposit-setting"
             element={<OtherDepositSetting />}
           />
-          <Route
+          {/* <Route
             path="/admin/activity-reward"
             element={<ActivityRewardSetting />}
           />
@@ -457,51 +457,51 @@ function AppContent() {
           <Route
             path="/admin/attendance-bonus"
             element={<AttendanceBonusSetting />}
-          />
+          /> */}
 
           <Route path="/admin/active-users" element={<ActiveUsers />} />
-          <Route path="/admin/banned-users" element={<BannedUsers />} />
+          {/* <Route path="/admin/banned-users" element={<BannedUsers />} /> */}
           <Route path="/admin/user-details/:id" element={<UserDetails />} />
-          <Route path="/admin/edit-bank-detail" element={<EditBankDetails />} />
-          <Route path="/admin/upi-management" element={<UPIManagementAdmin />} />
+          {/* <Route path="/admin/edit-bank-detail" element={<EditBankDetails />} /> */}
+          {/* <Route path="/admin/upi-management" element={<UPIManagementAdmin />} /> */}
 
-          <Route path="/admin/create-salary" element={<CreateSalary />} />
-          <Route path="/admin/update-turn-over" element={<UpdateTurnOver />} />
+          {/* <Route path="/admin/create-salary" element={<CreateSalary />} /> */}
+          {/* <Route path="/admin/update-turn-over" element={<UpdateTurnOver />} /> */}
 
           {/* Games management */}
           <Route path="/admin/wingo-admin" element={<WingoGameMonitor />} />
           <Route path="/admin/k3-admin" element={<K3GameMonitor />} />
           <Route path="/admin/fived-admin" element={<FiveDGameMonitor />} />
-          <Route
+          {/* <Route
             path="/admin/car-race-admin"
             element={<CarRaceGameMonitor />}
-          />
+          /> */}
 
           {/* Illegal Bet Monitor */}
-          <Route path="/admin/illegal-bets" element={<IllegalBetMonitor />} />
+          {/* <Route path="/admin/illegal-bets" element={<IllegalBetMonitor />} /> */}
 
           {/* Profit and Loss */}
-          <Route path="/admin/profit-loss" element={<ProfitAndLoss />} />
+          {/* <Route path="/admin/profit-loss" element={<ProfitAndLoss />} />
           <Route
             path="/admin/agent-performance"
             element={<AgentPerformance />}
           />
           <Route path="/admin/ip-tracking" element={<IPInformation />} />
-          <Route path="/admin/top-performance" element={<TopPerformance />} />
+          <Route path="/admin/top-performance" element={<TopPerformance />} /> */}
           <Route path="/admin/api-transaction" element={<ApiTransaction />} />
 
           {/* VIP Page */}
           <Route path="/admin/vip-levels" element={<VIP />} />
-          <Route path="/admin/create-user" element={<CreateUser />} />
+          {/* <Route path="/admin/create-user" element={<CreateUser />} /> */}
           <Route path="/admin/referral-tree" element={<RefferalTree />} />
           <Route path="/admin/system-setting" element={<SystemSetting />} />
-          <Route
+          {/* <Route
             path="admin/support-system"
             element={<SupportTicketSystem />}
-          />
+          /> */}
 
           {/* Banner Poster Update */}
-          <Route path="admin/banner-poster-update" element={<BannerPosterUpdate />} />
+          {/* <Route path="admin/banner-poster-update" element={<BannerPosterUpdate />} /> */}
         </Route>
         <Route element={<AgentRoute />}>
           <Route

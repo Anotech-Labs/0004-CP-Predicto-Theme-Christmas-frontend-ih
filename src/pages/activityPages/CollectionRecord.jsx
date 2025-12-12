@@ -112,7 +112,7 @@ function CollectionRecord() {
             sx={{
               background:
                 activeButton === "daily"
-                  ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                  ? "linear-gradient(90deg,#24ee89,#9fe871)"
                   : "#382e35",
               padding: "16px 0",
               borderRadius: "8px",
@@ -129,7 +129,7 @@ function CollectionRecord() {
             sx={{
               background:
                 activeButton === "weekly"
-                  ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                  ? "linear-gradient(90deg,#24ee89,#9fe871)"
                   : "#382e35",
               padding: "16px 0",
               borderRadius: "8px",
@@ -146,7 +146,7 @@ function CollectionRecord() {
             sx={{
               background:
                 activeButton === "monthly"
-                  ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                  ? "linear-gradient(90deg,#24ee89,#9fe871)"
                   : "#382e35",
               padding: "16px 0",
               borderRadius: "8px",
@@ -203,7 +203,7 @@ function CollectionRecord() {
                 <Grid item xs={12} key={reward.id || index}>
                   <Card
                     sx={{
-                      background: "#241e22",
+                      background: "#323738",
                       color: "#F5F3F0",
                       borderRadius: "8px", // Added border radius for cards
                     }}

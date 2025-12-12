@@ -1801,7 +1801,7 @@ const K3Page = ({ timerKey }) => {
                   cursor: "pointer",
                   background:
                     activeId === image.id
-                      ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                      ? "linear-gradient(90deg,#24ee89,#9fe871)"
                       : "transparent",
                   borderRadius: "10px",
                   display: "flex",
@@ -1819,7 +1819,7 @@ const K3Page = ({ timerKey }) => {
                 <div
                   style={{
                     textAlign: "center",
-                    color: activeId === image.id ? "#241e22" : "#B79C8B",
+                    color: activeId === image.id ? "#323738" : "#B79C8B",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -1861,7 +1861,7 @@ const K3Page = ({ timerKey }) => {
               width: "calc(100% - 44px)",
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
               p: "16px 8px 8px 8px",
-              backgroundColor: "#241e22",
+              backgroundColor: "#323738",
               borderRadius: "10px",
             }}
           >
@@ -2003,7 +2003,7 @@ const K3Page = ({ timerKey }) => {
                       borderRadius: "20px",
                       fontSize: "130px",
                       paddingRight: "20px",
-                      backgroundColor: "#241e22",
+                      backgroundColor: "#323738",
                     }}
                   >
                     {firstHalf}
@@ -2015,7 +2015,7 @@ const K3Page = ({ timerKey }) => {
                       borderRadius: "20px",
                       fontSize: "130px",
                       paddingRight: "20px",
-                      backgroundColor: "#241e22",
+                      backgroundColor: "#323738",
                     }}
                   >
                     {secondHalf}
@@ -2037,7 +2037,7 @@ const K3Page = ({ timerKey }) => {
                     label="Total"
                     style={{
                       background: values === 0 ? "#fed358" : "#382e35",
-                      color: values === 0 ? "#241e22" : "#B79C8B",
+                      color: values === 0 ? "#323738" : "#B79C8B",
                       borderBottom: values === 0 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
                       minWidth: "auto",
@@ -2055,7 +2055,7 @@ const K3Page = ({ timerKey }) => {
                     style={{
                       backgroundColor:
                         values === 1 ? "#fed358" : "#382e35",
-                      color: values === 1 ? "#241e22" : "grey",
+                      color: values === 1 ? "#323738" : "grey",
                       borderBottom: values === 1 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
                       minWidth: "auto",
@@ -2069,7 +2069,7 @@ const K3Page = ({ timerKey }) => {
                     style={{
                       backgroundColor:
                         values === 2 ? "#fed358" : "#382e35",
-                      color: values === 2 ? "#241e22" : "grey",
+                      color: values === 2 ? "#323738" : "grey",
                       borderBottom: values === 2 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
                       minWidth: "auto",
@@ -2083,7 +2083,7 @@ const K3Page = ({ timerKey }) => {
                     style={{
                       backgroundColor:
                         values === 3 ? "#fed358" : "#382e35",
-                      color: values === 3 ? "#241e22" : "grey",
+                      color: values === 3 ? "#323738" : "grey",
                       borderBottom: values === 3 ? "none" : "",
                       borderRadius: "5px 5px 0px 0px",
                       minWidth: "auto",
@@ -2132,7 +2132,7 @@ const K3Page = ({ timerKey }) => {
               style={{
                 position: "relative",
                 color: "#FDE4BC",
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
               }}
             >
               <Grid
@@ -2144,7 +2144,7 @@ const K3Page = ({ timerKey }) => {
                   // marginBottom: "-5px",
                   height: "40px",
                   color: "#FDE4BC",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   paddingTop: "10px",
                   paddingLeft: 9,
                   textAlign: "left",
@@ -2745,9 +2745,9 @@ const K3Page = ({ timerKey }) => {
                         height: "40px",
                         background:
                           activeTab === index
-                            ? "linear-gradient(180deg, #FED358 , #FFB472 )"
-                            : "#241e22",
-                        color: activeTab === index ? "#241e22" : "#B79C8B",
+                            ? "linear-gradient(90deg,#24ee89,#9fe871)"
+                            : "#323738",
+                        color: activeTab === index ? "#323738" : "#B79C8B",
                         borderRadius: 2,
                         display: "flex",
                         alignItems: "center",

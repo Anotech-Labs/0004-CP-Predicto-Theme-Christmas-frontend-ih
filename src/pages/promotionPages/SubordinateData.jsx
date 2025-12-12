@@ -291,7 +291,7 @@ const SubordinateData = () => {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     borderRadius: "5px",
                     padding: "5px 10px",
                   }}
@@ -333,7 +333,7 @@ const SubordinateData = () => {
                   sx={{
                     width: "48%",
                     height: "2.8rem",
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     textTransform: "none",
                     display: "flex",
                     justifyContent: "space-between",
@@ -354,7 +354,7 @@ const SubordinateData = () => {
                   sx={{
                     width: "48%",
                     height: "2.8rem",
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     textTransform: "none",
                     display: "flex",
                     justifyContent: "space-between",
@@ -554,7 +554,7 @@ const SubordinateData = () => {
                   }}
                 />
               </Tabs>
-              <Box sx={{ padding: "1px", backgroundColor: "#241e22" }}>
+              <Box sx={{ padding: "1px", backgroundColor: "#323738" }}>
                 {tabValue === 0 && <div></div>}
                 {tabValue === 1 && <div></div>}
               </Box>
@@ -669,7 +669,7 @@ const SubordinateData = () => {
                               gridTemplateColumns: "1fr 2fr 1fr 1fr",
                               padding: "12px",
                               textAlign: "left",
-                              backgroundColor: "#241e22",
+                              backgroundColor: "#323738",
                               borderRadius: "8px",
                               marginBottom:
                                 index !== user.length - 1 ? "8px" : "0",
@@ -764,7 +764,7 @@ const SubordinateData = () => {
                       <Card
                         key={index}
                         sx={{
-                          backgroundColor: "#241e22",
+                          backgroundColor: "#323738",
                           borderRadius: "5px",
                           paddingLeft: "8px",
                           paddingRight: "8px",
@@ -949,7 +949,7 @@ const SubordinateData = () => {
             borderTopRightRadius: "16px",
             overflow: "hidden",
             padding: "0",
-            backgroundColor: "#241e22",
+            backgroundColor: "#323738",
           },
         }}
       >
@@ -978,7 +978,7 @@ const SubordinateData = () => {
             height: "auto",
             margin: "0 auto",
             maxWidth: isSmallScreen ? "600px" : "396px",
-            backgroundColor: "#241e22",
+            backgroundColor: "#323738",
             color: "#a8a5a1",
             borderTopLeftRadius: "16px",
             borderTopRightRadius: "16px",

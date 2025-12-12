@@ -121,7 +121,7 @@ setPopupMessage("Withdrawal issue submitted successfully!")
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         sx={{
-                            bgcolor: "#241e22",
+                            bgcolor: "#323738",
                             borderRadius: 1,
                             "& .MuiOutlinedInput-root": {
                                 color: "white", // Ensure text is white
@@ -172,7 +172,7 @@ setPopupMessage("Withdrawal issue submitted successfully!")
 
                     <Button
                         variant="contained"
-                        sx={{ mt: 3, background: "linear-gradient(180deg, #FED358 , #FFB472 )", borderRadius: 4,textTransform:"none","&:disabled": {
+                        sx={{ mt: 3, background: "linear-gradient(90deg,#24ee89,#9fe871)", borderRadius: 4,textTransform:"none","&:disabled": {
                             background: "#454456", // Disabled color
                             color: "#A8A5A1", // Adjust text color for better readability
                           }, }}
@@ -237,7 +237,7 @@ setPopupMessage("Withdrawal issue submitted successfully!")
 
 // Styles
 const inputStyles = {
-    bgcolor: "#241e22",
+    bgcolor: "#323738",
   input: { color: "#f5f3f0",height:"15px",fontSize:"14px" },
  "& .MuiOutlinedInput-root": {
       "& fieldset": {

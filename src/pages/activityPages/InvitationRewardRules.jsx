@@ -67,7 +67,7 @@ const InvitationRewardRules = () => {
 
     function InvitationRules() {
         return (
-            <Paper sx={{ mb: 2, overflow: "hidden", borderRadius: "5px", margin: 0,background:"#241e22"}}>
+            <Paper sx={{ mb: 2, overflow: "hidden", borderRadius: "5px", margin: 0,background:"#323738"}}>
                 <Box
                     sx={{
                         background: "#cf7c10",
@@ -140,7 +140,7 @@ const InvitationRewardRules = () => {
                         position: 'sticky',
                         top: 0,
                         zIndex: 1000,
-                        backgroundColor: '#241e22',
+                        backgroundColor: '#323738',
                         padding: "7px 12px",
                     }}
                 >
@@ -202,7 +202,7 @@ const InvitationRewardRules = () => {
                                     {rewardData.map((data, index) => (
                                         <TableRow
                                             key={data.id}
-                                            sx={{ '&:nth-of-type(odd)': { bgcolor: '#241e22' } ,'&:nth-of-type(even)': { bgcolor: '#1a1000' } }}
+                                            sx={{ '&:nth-of-type(odd)': { bgcolor: '#323738' } ,'&:nth-of-type(even)': { bgcolor: '#1a1000' } }}
                                         >
                                             <TableCell sx={{color: '#B79C8B',borderBottom:"none" }}>{data.requiredReferrals} People</TableCell>
                                             <TableCell sx={{color: '#B79C8B',borderBottom:"none" }}>₹{Number(data.minDepositAmount).toFixed(2)}</TableCell>

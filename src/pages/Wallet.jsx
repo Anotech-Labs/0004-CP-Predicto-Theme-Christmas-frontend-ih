@@ -269,7 +269,7 @@ const Wallet = ({ children }) => {
               container
               spacing={1}
               sx={{
-                background: "#241e22",
+                background: "#323738",
                 height: "11rem",
                 padding: "0px",
               }}
@@ -340,7 +340,7 @@ const Wallet = ({ children }) => {
                 marginLeft: "auto",
                 marginRight: "auto",
                 width: " calc(100% - 30px)",
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
                 borderRadius: "20px",
               }}
             >
@@ -434,7 +434,7 @@ const Wallet = ({ children }) => {
                 <Button
                   variant="contained"
                   sx={{
-                    background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                    background: "linear-gradient(90deg,#24ee89,#9fe871)",
                     borderRadius: "20px",
                     width: "95%",
                     fontWeight: "bold",
@@ -512,7 +512,7 @@ const Wallet = ({ children }) => {
                         flexDirection: 'column',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        backgroundColor: '#241e22',
+                        backgroundColor: '#323738',
                         '&::before': {
                           content: '""',
                           display: 'block',

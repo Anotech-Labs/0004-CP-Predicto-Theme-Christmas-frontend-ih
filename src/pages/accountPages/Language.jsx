@@ -75,7 +75,7 @@ const Language = () => {
         <ListItem
           onClick={() => handleLanguageSelect('en')}
           sx={{
-            bgcolor: selectedLang === 'en'?'#241e22':"#232626",
+            bgcolor: selectedLang === 'en'?'#323738':"#232626",
             borderRadius: '8px',
             mb: 1,
             borderBottom:"1px solid #3c3830",
@@ -117,7 +117,7 @@ const Language = () => {
         <ListItem
           onClick={() => handleLanguageSelect('hi')}
           sx={{
-            bgcolor: selectedLang === 'hi'?'#241e22':"#232626",
+            bgcolor: selectedLang === 'hi'?'#323738':"#232626",
             borderRadius: '8px',
             cursor: 'pointer',
             borderBottom:"1px solid #3c3830",

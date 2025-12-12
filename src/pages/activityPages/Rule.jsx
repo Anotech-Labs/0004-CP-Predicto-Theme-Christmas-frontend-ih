@@ -237,7 +237,7 @@ const Rule = () => {
                   {bonusData.map((row, index) => (
                     <TableRow
                       key={index}
-                      sx={{ bgcolor: index % 2 === 0 ? "#241e22" : "#232626" }}
+                      sx={{ bgcolor: index % 2 === 0 ? "#323738" : "#232626" }}
                     >
                       <TableCell
                         sx={{
@@ -284,7 +284,7 @@ const Rule = () => {
               px: 1,
               py: 2,
               mb: 2,
-              bgcolor: "#241e22",
+              bgcolor: "#323738",
               borderRadius: "10px",
               margin: 1.5,
               display: "flex",
@@ -314,7 +314,7 @@ const Rule = () => {
               // startIcon={<HeadsetMicIcon />}
               sx={{
                 width: "100%",
-                background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                background: "linear-gradient(90deg,#24ee89,#9fe871)",
                 color: "black",
                 fontWeight: "bold",
                 "&:hover": {

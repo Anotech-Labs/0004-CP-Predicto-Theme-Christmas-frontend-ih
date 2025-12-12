@@ -81,7 +81,7 @@ const ChangeIFSC = () => {
                         Current IFSC Code
                     </Typography>
                     <TextField fullWidth placeholder="Current IFSC Code" variant="outlined" value={currentIFSC} onChange={(e) => setCurrentIFSC(e.target.value)} 
-                    sx={{ bgcolor: "#241e22", "& .MuiOutlinedInput-root": {
+                    sx={{ bgcolor: "#323738", "& .MuiOutlinedInput-root": {
                                 color: "#f5f3f0", // Ensure text is white
                                 input:{ height: "15px", fontSize: "14px"},
                                 "& fieldset": { borderColor: "#3B3833" }, // Border color
@@ -99,7 +99,7 @@ const ChangeIFSC = () => {
                         autoComplete="new-password"
                         value={newIFSC}
                         onChange={(e) => setNewIFSC(e.target.value)}
-                        sx={{ bgcolor: "#241e22", "& .MuiOutlinedInput-root": {
+                        sx={{ bgcolor: "#323738", "& .MuiOutlinedInput-root": {
                             color: "#f5f3f0", // Ensure text is white
                             input:{ height: "15px", fontSize: "14px"},
                             "& fieldset": { borderColor: "#3B3833" }, // Border color
@@ -107,7 +107,7 @@ const ChangeIFSC = () => {
                             "&.Mui-focused fieldset": { border: "1px solid #3B3833" }
                         }, borderRadius: 1, input: { color: "#f5f3f0" }, label: { color: "#A8A5A1" } }} />
                     {error && <Typography color="error" sx={{ mb: 2 }}>{error}</Typography>}
-                    <Button variant="contained" fullWidth sx={{ background: "linear-gradient(180deg, #FED358 , #FFB472 )", color: "white", borderRadius: 4, mt: 2,textTransform:"none","&:disabled": {
+                    <Button variant="contained" fullWidth sx={{ background: "linear-gradient(90deg,#24ee89,#9fe871)", color: "white", borderRadius: 4, mt: 2,textTransform:"none","&:disabled": {
       background: "#454456", // Disabled color
       color: "#A8A5A1", // Adjust text color for better readability
     }, }} onClick={handleSubmit} disabled={loading}>{loading ? "Submitting..." : "Confirm"}</Button>

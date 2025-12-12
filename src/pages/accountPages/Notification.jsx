@@ -229,7 +229,7 @@ const Notification = ({ children }) => {
                         mt: 2,
                         borderRadius: 2,
                         boxShadow: 1,
-                        backgroundColor: "#241e22",
+                        backgroundColor: "#323738",
                         transition: "transform 0.3s, box-shadow 0.3s",
                         "&:hover": {
                           transform: "translateY(-4px)",

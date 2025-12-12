@@ -247,7 +247,7 @@ const RefundProcess = () => {
               style: { color: "#ffffff" },
             }}
             sx={{
-              bgcolor: "#241e22",
+              bgcolor: "#323738",
               "& .MuiOutlinedInput-root": {
                 color: "#ffffff",
                 input: {
@@ -277,7 +277,7 @@ const RefundProcess = () => {
           <FormControl
             fullWidth
             sx={{
-              bgcolor: "#241e22",
+              bgcolor: "#323738",
               "& .MuiOutlinedInput-root": {
                 color: "#ffffff",
                 "& fieldset": { borderColor: "#454037" },
@@ -300,7 +300,7 @@ const RefundProcess = () => {
               MenuProps={{
                 PaperProps: {
                   sx: {
-                    bgcolor: "#241e22",
+                    bgcolor: "#323738",
                     color: "#F5F3F0",
                     "& .MuiMenuItem-root": {
                       backgroundColor: "transparent !important", // removes selected bg
@@ -336,8 +336,8 @@ const RefundProcess = () => {
             variant="contained"
             fullWidth
             sx={{
-              background: "linear-gradient(180deg, #FED358 , #FFB472 )",
-              color: "#241e22",
+              background: "linear-gradient(90deg,#24ee89,#9fe871)",
+              color: "#323738",
               borderRadius: 4,
               mt: 3,
               mb: 3,
@@ -366,7 +366,7 @@ const RefundProcess = () => {
               <Paper
                 elevation={0}
                 sx={{
-                  bgcolor: "#241e22",
+                  bgcolor: "#323738",
                   color: "#ffffff",
                   borderRadius: 2,
                   mb: 2,
@@ -418,7 +418,7 @@ const RefundProcess = () => {
                 <Paper
                   elevation={0}
                   sx={{
-                    bgcolor: "#241e22",
+                    bgcolor: "#323738",
                     color: "#ffffff",
                     borderRadius: 2,
                     mb: 2,
@@ -465,7 +465,7 @@ const RefundProcess = () => {
                                 <Paper
                                     elevation={0}
                                     sx={{
-                                        bgcolor: "#241e22",
+                                        bgcolor: "#323738",
                                         color: "#ffffff",
                                         borderRadius: 2,
                                         mb: 2,
@@ -496,7 +496,7 @@ const RefundProcess = () => {
               {gameType !== "ALL" && refundData.refundTransactions && refundData.refundTransactions.length > 0 && (
                 <Accordion
                   sx={{
-                    bgcolor: "#241e22",
+                    bgcolor: "#323738",
                     color: "#ffffff",
                     borderRadius: 2,
                     mb: 2,
@@ -569,7 +569,7 @@ const RefundProcess = () => {
               {gameType !== "ALL" && refundData.bets && refundData.bets.length > 0 && (
                 <Accordion
                   sx={{
-                    bgcolor: "#241e22",
+                    bgcolor: "#323738",
                     color: "#ffffff",
                     borderRadius: 2,
                     mb: 2,

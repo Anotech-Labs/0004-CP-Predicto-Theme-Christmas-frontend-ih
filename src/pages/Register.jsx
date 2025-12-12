@@ -208,7 +208,7 @@ const Register = () => {
           sx={{
             // backgroundColor: "#0F6518",
             background:
-              "#241e22",
+              "#323738",
             padding: "8px 22px 50px",
 
             color: "white",
@@ -308,7 +308,7 @@ const Register = () => {
                     sx={{
                       marginLeft: "8px",
                       width: "110px",
-                      background: "#241e22",
+                      background: "#323738",
                       marginBottom: -1,
                       borderRadius: "10px",
                       "& .MuiOutlinedInput-root": {
@@ -390,7 +390,7 @@ const Register = () => {
                     required
                     sx={{
                       width: "80%",
-                      backgroundColor: "#241e22",
+                      backgroundColor: "#323738",
                       borderRadius: "10px",
                       "& .MuiOutlinedInput-root": {
                         height: "47.5px", // Smaller TextField size
@@ -451,7 +451,7 @@ const Register = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 sx={{
                   width: "96%",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   borderRadius: "10px",
                   "& .MuiOutlinedInput-root": {
                     height: "46px", // Smaller TextField size
@@ -522,7 +522,7 @@ const Register = () => {
                 margin="normal"
                 sx={{
                   width: "96%",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   borderRadius: "10px",
                   "& .MuiOutlinedInput-root": {
                     height: "47.5px", // Smaller TextField size
@@ -599,7 +599,7 @@ const Register = () => {
                 }}
                 sx={{
                   width: "96%",
-                  backgroundColor: "#241e22",
+                  backgroundColor: "#323738",
                   borderRadius: "10px",
                   "& .MuiOutlinedInput-root": {
                     height: "46px", // Smaller TextField size
@@ -682,7 +682,7 @@ const Register = () => {
                 fullWidth
                 style={{
                   background:
-                    "linear-gradient(180deg, #FED358 , #FFB472 ),#241e22",
+                    "linear-gradient(180deg, #FED358 , #FFB472 ),#323738",
                   borderRadius: "360px",
                   width: "85%",
                   height: "43px",

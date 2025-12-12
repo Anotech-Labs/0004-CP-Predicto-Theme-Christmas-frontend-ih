@@ -68,7 +68,7 @@ const DateOptions = ({ selectedOption, setSelectedOption }) => {
           key={option}
           onClick={() => setSelectedOption(option)}
           sx={{
-            background: selectedOption === option ? "linear-gradient(180deg, #FED358 , #FFB472 )" : "#241e22",
+            background: selectedOption === option ? "linear-gradient(90deg,#24ee89,#9fe871)" : "#323738",
             color: selectedOption === option ? "black" : "grey",
             borderRadius: "10px",
             padding: "8px 16px",
@@ -153,7 +153,7 @@ const SubordinateList = ({ filter }) => {
             key={sub.uid}
             elevation={1}
             sx={{
-              background: "#241e22",
+              background: "#323738",
               marginBottom: 1.5,
               padding: 2,
               borderRadius: "5px",

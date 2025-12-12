@@ -109,7 +109,7 @@ const LuckySpin = () => {
                 <Box sx={{ mx: 1, mt: 1, backgroundColor: "#232626" }}>
                     <Box
                         sx={{
-                            backgroundColor: "#241e22",
+                            backgroundColor: "#323738",
                             color: "white",
                             borderRadius: "12px",
                             padding: "16px",
@@ -146,7 +146,7 @@ const LuckySpin = () => {
                                     display: "flex",
                                     alignItems: "center",
                                     justifyContent: "space-around", // Ensures text and image are on opposite corners
-                                    background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+                                    background: "linear-gradient(90deg,#24ee89,#9fe871)",
                                     borderRadius: "20px",
                                     padding: "4px 10px",
                                     gap: "10px"
@@ -399,7 +399,7 @@ const LuckySpin = () => {
                                     </TableCell>
                                 </TableRow>
                             </TableHead>
-                            <TableBody sx={{ backgroundColor: "#241e22" }}>
+                            <TableBody sx={{ backgroundColor: "#323738" }}>
                                 {todaySpins?.length > 0 ? (
                                     todaySpins.map((spin, index) => (
                                         <TableRow key={index}>

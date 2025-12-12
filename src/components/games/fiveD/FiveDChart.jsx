@@ -48,7 +48,7 @@ const StyledTab = styled(Tab)(({ selected, index }) => ({
     fontWeight: "bold",
     fontSize: "16px",
     color: selected ? "transparent" : "#FDE4BC",
-    backgroundColor: selected ? "#241e22" : "#382e35",
+    backgroundColor: selected ? "#323738" : "#382e35",
     backgroundImage: selected ? `url(${chart[index]})` : "none",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -58,7 +58,7 @@ const StyledTab = styled(Tab)(({ selected, index }) => ({
 }))
 
 const TabWrapper = styled(Box)(({ theme }) => ({
-    backgroundColor: "#241e22",
+    backgroundColor: "#323738",
     borderRadius: "10px",
     padding: "16px",
     boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
@@ -192,7 +192,7 @@ const NumberTableWithLines = ({ historyData, selectedTab }) => {
                 container
                 direction="row"
                 alignItems="left"
-                backgroundColor="#241e22"
+                backgroundColor="#323738"
                 sx={{
                     borderRadius: "10px",
                     justifyContent: "space-evenly"
@@ -359,7 +359,7 @@ const Chart5D = ({ data }) => {
                     display: "flex",
                     justifyContent: "space-evenly",
                     marginTop: "10px",
-                    backgroundColor: "#241e22",
+                    backgroundColor: "#323738",
                     padding: { xs: "10px" },
                     borderRadius: "0 0 10px 10px",
                 }}
@@ -378,7 +378,7 @@ const Chart5D = ({ data }) => {
                         "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
                     }}
                 >
-                    <ArrowBackIosRoundedIcon style={{ color: chartPage === 1 ? "#FDE4BC" : "#241e22" }} />
+                    <ArrowBackIosRoundedIcon style={{ color: chartPage === 1 ? "#FDE4BC" : "#323738" }} />
                 </Button>
                 <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B", fontSize: "12.8px" }}>
                     {chartPage}/{gameTotalPage}
@@ -397,7 +397,7 @@ const Chart5D = ({ data }) => {
                         "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
                     }}
                 >
-                    <ArrowForwardIosRoundedIcon style={{ color: chartPage === gameTotalPage ? "#FDE4BC" : "#241e22" }} />
+                    <ArrowForwardIosRoundedIcon style={{ color: chartPage === gameTotalPage ? "#FDE4BC" : "#323738" }} />
                 </Button>
             </Box>
         </Box>

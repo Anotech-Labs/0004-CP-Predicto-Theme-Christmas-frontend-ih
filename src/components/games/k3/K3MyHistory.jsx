@@ -47,7 +47,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
     <Grid container sx={{ justifyContent: "center" }}>
       <Box
         sx={{
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           width: "100%",
           borderRadius: insideBettingRecord ? "0" : "10px 10px 0 0px",
         }}
@@ -101,7 +101,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
             <Accordion
               key={index}
               sx={{
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
                 boxShadow: "none",
                 "&::before": {
                   // backgroundColor:index === 0 ? "transparent" :"rgba(0, 0, 0, 0.12)"
@@ -443,7 +443,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                         <Grid
                           key={rowIndex}
                           sx={{
-                            border: "0.4rem solid #241e22",
+                            border: "0.4rem solid #323738",
                             backgroundColor: "#382e35",
                             borderRadius: "13px",
                             display: "flex",
@@ -498,7 +498,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
             justifyContent: "center",
             gap: "32px",
             marginTop: "30px",
-            backgroundColor: "#241e22",
+            backgroundColor: "#323738",
             padding: { xs: "10px 0", sm: "15px 0" },
             borderRadius: insideBettingRecord ? "0" : "0 0 10px 10px",
           }}
@@ -517,7 +517,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
               "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
             }}
           >
-            <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#FDE4BC" : "#241e22" }} />
+            <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#FDE4BC" : "#323738" }} />
           </Button>
           <Grid sx={{ display: "flex", alignItems: "center", color: "#FDE4BC", fontSize: "13px" }}>
             {page}/{totalPage}
@@ -536,7 +536,7 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
               "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
             }}
           >
-            <ArrowForwardIosRoundedIcon style={{ color: page >= totalPage ? "#FDE4BC" : "#241e22" }} />
+            <ArrowForwardIosRoundedIcon style={{ color: page >= totalPage ? "#FDE4BC" : "#323738" }} />
           </Button>
         </Box>
       </Box>

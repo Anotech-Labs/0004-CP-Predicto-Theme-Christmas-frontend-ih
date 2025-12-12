@@ -30,7 +30,7 @@ const FiveDHtp = ({ isOpen, onClose }) => {
     >
       <div
         style={{
-          background: "linear-gradient(180deg, #FED358 , #FFB472 ),#111111",
+          background: "linear-gradient(90deg,#24ee89,#9fe871),#111111",
           borderTopLeftRadius: '15px',
           borderTopRightRadius: '15px',
           padding: '15px',
@@ -90,7 +90,7 @@ const FiveDHtp = ({ isOpen, onClose }) => {
       >
         <div
           style={{
-            background: "linear-gradient(180deg, #FED358 , #FFB472 ),#111111",
+            background: "linear-gradient(90deg,#24ee89,#9fe871),#111111",
             padding: '10px 70px',
             width: 'fit-content',
             margin: '0 auto',

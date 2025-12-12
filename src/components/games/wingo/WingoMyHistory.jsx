@@ -55,7 +55,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
     <Grid container sx={{ justifyContent: "center" }}>
       <Box
         sx={{
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           width: "100%",
           borderRadius: insideBettingRecord ? "0" : "10px 10px 0 0px",
 
@@ -109,7 +109,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
             <Accordion
               key={index}
               sx={{
-                backgroundColor: "#241e22",
+                backgroundColor: "#323738",
                 boxShadow: "none",
                 "&::before": {
                   // backgroundColor:index === 0 ? "transparent" :"rgba(0, 0, 0, 0.12)"
@@ -373,7 +373,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
                         <Grid
                           key={rowIndex}
                           sx={{
-                            border: "0.4rem solid #241e22",
+                            border: "0.4rem solid #323738",
                             backgroundColor: "#382e35",
                             borderRadius: "13px",
                             display: "flex",
@@ -509,7 +509,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
           justifyContent: "center",
           gap: "32px",
           marginTop: "20px",
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           padding: { xs: "10px 0", sm: "15px 0" },
           borderRadius: insideBettingRecord ? "0" : "0 0 10px 10px",
         }}
@@ -528,7 +528,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#241e22" }} />
+          <ArrowBackIosRoundedIcon style={{ color: page === 1 ? "#B79C8B" : "#323738" }} />
         </Button>
         <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B", fontSize: "13px" }}>
           {page}/{totalPage}
@@ -547,7 +547,7 @@ const WingoMyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton, ins
             "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
           }}
         >
-          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B79C8B" : "#241e22" }} />
+          <ArrowForwardIosRoundedIcon style={{ color: page === totalPage ? "#B79C8B" : "#323738" }} />
         </Button>
       </Box>
     </Grid>

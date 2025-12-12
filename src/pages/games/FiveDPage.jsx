@@ -108,7 +108,7 @@ const TopButton = styled(Tab)(({ theme, selected, index }) => ({
     fontWeight: "bold",
     fontSize: "16px", // Default font size for larger screens
     color: selected ? "transparent" : "#FDE4BC",
-    backgroundColor: selected ? "#241e22" : "#382e35",
+    backgroundColor: selected ? "#323738" : "#382e35",
     backgroundImage: selected ? `url(${box[index]})` : "none",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -1442,7 +1442,7 @@ const FiveDPage = ({ timerKey }) => {
                                     cursor: "pointer",
                                     background:
                                         activeId === image.id
-                                            ? "linear-gradient(180deg, #FED358 , #FFB472 )"
+                                            ? "linear-gradient(90deg,#24ee89,#9fe871)"
                                             : "transparent",
                                     borderRadius: "10px",
                                     display: "flex",
@@ -1499,7 +1499,7 @@ const FiveDPage = ({ timerKey }) => {
                             justifyContent: "space-around",
                             maxWidth: "100%",
                             mt: 1.5,
-                            backgroundColor: "#241e22",
+                            backgroundColor: "#323738",
                             margin: 1.5,
                             color: "#768096",
                             borderRadius: "11px",
@@ -1623,7 +1623,7 @@ const FiveDPage = ({ timerKey }) => {
                             maxWidth: "90%",
                             boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                             p: 1,
-                            backgroundColor: "#241e22",
+                            backgroundColor: "#323738",
                             borderRadius: "10px",
                         }}
                     >
@@ -2034,7 +2034,7 @@ const FiveDPage = ({ timerKey }) => {
                             style={{
                                 position: "relative",
                                 color: "black",
-                                backgroundColor: "#241e22",
+                                backgroundColor: "#323738",
                             }}
                         >
                             {/* Top Buttons and Categories */}
@@ -2538,7 +2538,7 @@ const FiveDPage = ({ timerKey }) => {
                                             sx={{
                                                 height: "40px", // Adjust this value to change the tab height
                                                 background:
-                                                    activeTab === index ? "linear-gradient(180deg, #FED358 , #FFB472 )" : "#241e22",
+                                                    activeTab === index ? "linear-gradient(90deg,#24ee89,#9fe871)" : "#323738",
                                                 color: activeTab === index ? "#221f2e" : "#B79C8B",
                                                 borderRadius: 2,
                                                 display: "flex",
@@ -2578,7 +2578,7 @@ const FiveDPage = ({ timerKey }) => {
                                                 justifyContent: "center",
                                                 gap: "30px",
                                                 marginTop: "20px",
-                                                backgroundColor: "#241e22",
+                                                backgroundColor: "#323738",
                                                 padding: { xs: "10px 0", sm: "15px 0" },
                                                 borderRadius: "0 0 10px 10px",
                                             }}
@@ -2597,7 +2597,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
                                                 }}
                                             >
-                                                <ArrowBackIosRoundedIcon style={{ color: historyPage === 1 ? "#B79C8B" : "#241e22" }} />
+                                                <ArrowBackIosRoundedIcon style={{ color: historyPage === 1 ? "#B79C8B" : "#323738" }} />
                                             </Button>
                                             <Grid sx={{ display: "flex", alignItems: "center", color: "#B79C8B" ,fontSize:"14px"}}>
                                                 {historyPage}/{gameTotalPage}
@@ -2616,7 +2616,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     "&.MuiButtonBase-root": { minWidth: 0, padding: "5px 7px" },
                                                 }}
                                             >
-                                                <ArrowForwardIosRoundedIcon style={{ color: historyPage === gameTotalPage ? "#B79C8B" : "#241e22" }} />
+                                                <ArrowForwardIosRoundedIcon style={{ color: historyPage === gameTotalPage ? "#B79C8B" : "#323738" }} />
                                             </Button>
                                         </Box>
                                     </TabPanel>

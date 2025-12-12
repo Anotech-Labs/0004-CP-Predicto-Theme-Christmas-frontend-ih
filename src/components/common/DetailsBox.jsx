@@ -63,7 +63,7 @@ const DetailsBox = () => {
       <Grid
         item
         sx={{
-          backgroundColor: "#241e22",
+          backgroundColor: "#323738",
           mt: "5px",
           mx: "12px",
           height: "50px",
@@ -126,9 +126,9 @@ const DetailsBox = () => {
         <Button
           variant="contained"
           sx={{
-            background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+            background: "linear-gradient(90deg,#24ee89,#9fe871)",
             "&:hover": {
-              background: "linear-gradient(180deg, #FED358 , #FFB472 )",
+              background: "linear-gradient(90deg,#24ee89,#9fe871)",
             },
             borderRadius: "50px",
             fontSize: "11px",
