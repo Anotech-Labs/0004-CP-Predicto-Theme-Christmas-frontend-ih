@@ -181,6 +181,8 @@ const NumberTableWithLines = ({ historyData, selectedTab }) => {
                         fontSize: "0.9rem",
                         alignItems: "center",
                         justifyContent: "center",
+                        backgroundColor:"#24EE89",
+                        color:"black"
                     }}
                 >
                     {column.label}
@@ -193,7 +195,7 @@ const NumberTableWithLines = ({ historyData, selectedTab }) => {
                 alignItems="left"
                 backgroundColor="#323738"
                 sx={{
-                    borderRadius: "10px",
+                    borderRadius: "0 0 10px 10px",
                     justifyContent: "space-evenly"
                 }}
             >
@@ -236,7 +238,7 @@ const NumberTableWithLines = ({ historyData, selectedTab }) => {
                                         style={{
                                             position: "absolute",
                                             top: -5,
-                                            left:isSmallScreen ? "80px" : isMiddleScreen ? "120px" : "105px",
+                                            left: isSmallScreen ? "80px" : isMiddleScreen ? "120px" : "105px",
                                             overflow: "visible",
                                             transform: "rotate(3deg)",
                                         }}

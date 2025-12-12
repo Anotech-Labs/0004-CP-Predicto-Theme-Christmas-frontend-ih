@@ -67,7 +67,7 @@ const HeaderCell = styled(Box)({
   padding: "12px",
   textAlign: "center",
   color: "white",
-  fontWeight: "bold",
+  fontWeight: "600",
 });
 
 const RaceHistory = ({ data, page, setPage, totalPage }) => {
@@ -92,11 +92,11 @@ const RaceHistory = ({ data, page, setPage, totalPage }) => {
   return (
     <Card sx={{ maxWidth: "100%", bgcolor: "#323738" }}>
       <CardContent sx={{ p: 0 }}>
-        <Grid container sx={{ bgcolor: "#cf7c10" }}>
-          <Grid item xs={4}><HeaderCell>Period</HeaderCell></Grid>
-          <Grid item xs={3}><HeaderCell>Result</HeaderCell></Grid>
-          <Grid item xs={2.5}><HeaderCell>B/S</HeaderCell></Grid>
-          <Grid item xs={2.5}><HeaderCell>O/E</HeaderCell></Grid>
+        <Grid container sx={{ bgcolor: "#24EE89" }}>
+          <Grid item xs={4}><HeaderCell sx={{color:"black"}}>Period</HeaderCell></Grid>
+          <Grid item xs={3}><HeaderCell sx={{color:"black"}}>Result</HeaderCell></Grid>
+          <Grid item xs={2.5}><HeaderCell sx={{color:"black"}}>B/S</HeaderCell></Grid>
+          <Grid item xs={2.5}><HeaderCell sx={{color:"black"}}>O/E</HeaderCell></Grid>
         </Grid>
 
         {data.history?.map((item) => (

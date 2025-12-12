@@ -1580,7 +1580,7 @@ const CarRacingPage = ({ timerKey }) => {
                                         >
                                             <Typography
                                                 variant="h6"
-                                                sx={{ fontSize: isSmallScreen2 ? "15px" : "17px", display: "flex", justifyContent: "flex-start" }}
+                                                sx={{ fontSize: isSmallScreen2 ? "12px" : "15px", display: "flex", justifyContent: "flex-start" }}
                                             >
                                                 Add your money
                                             </Typography>
@@ -1592,7 +1592,7 @@ const CarRacingPage = ({ timerKey }) => {
                                                     onChange={handleCustomBetChange}
                                                     type="number"
                                                     sx={{
-                                                        width: isSmallScreen2 ? "80%" : "100%",
+                                                        width: isSmallScreen2 ? "70%" : "90%",
                                                         "& .MuiOutlinedInput-root": {
 
                                                             "& fieldset": {

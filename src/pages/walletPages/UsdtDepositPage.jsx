@@ -345,7 +345,7 @@ const USDTDepositPage = () => {
           elevation={0}
           sx={{
             width: "100%",
-            bgcolor: "#ffffff",
+            bgcolor: "#232626",
             boxShadow: "none",
           }}
         >
@@ -395,6 +395,7 @@ const USDTDepositPage = () => {
                 sx={{
                   fontWeight: "bold",
                   fontSize: "23px",
+                  color: "#ffffff",
                 }}
               >
                 {Number(amount).toFixed(2)} USDT
@@ -402,7 +403,7 @@ const USDTDepositPage = () => {
               <Typography
                 variant="body2"
                 sx={{
-                  color: "#666",
+                  color: "#9E9E9E",
                   fontSize: "13px",
                 }}
               >
@@ -414,18 +415,19 @@ const USDTDepositPage = () => {
           {/* Warning message */}
           <Box
             sx={{
-              bgcolor: "#ffe8e3",
+              bgcolor: "rgba(255, 232, 227, 0.1)",
               py: 0.5,
               px: 1.5,
               textAlign: "center",
               mb: 2,
               mx: 2,
               borderRadius: "5px",
+              border: "1px solid rgba(226, 35, 35, 0.3)",
             }}
           >
             <Typography
               variant="body2"
-              color="#E22323"
+              color="#ff6b6b"
               sx={{ fontSize: "11.8px" }}
             >
               The amount received will be subject to the actual transfer amount,
@@ -434,7 +436,7 @@ const USDTDepositPage = () => {
           </Box>
 
           <Box
-            sx={{ mx: 2, my: 2, background: "#f7f7f7", borderRadius: "5px" }}
+            sx={{ mx: 2, my: 2, background: "#2d3030", borderRadius: "5px" }}
           >
             {/* Timer and Order ID */}
             <Box
@@ -448,16 +450,16 @@ const USDTDepositPage = () => {
             >
               <Typography
                 variant="body2"
-                sx={{ color: "#6E6E6E", fontSize: "11.8px", fontWeight: "500" }}
+                sx={{ color: "#9E9E9E", fontSize: "11.8px", fontWeight: "500" }}
               >
                 CountDown
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ 
-                  fontWeight: "bold", 
+                sx={{
+                  fontWeight: "bold",
                   fontSize: "13.7px",
-                  color: timeRemaining < 60 ? "#E22323" : "#000"
+                  color: timeRemaining < 60 ? "#ff6b6b" : "#ffffff",
                 }}
               >
                 {formatTime(timeRemaining)}
@@ -475,7 +477,7 @@ const USDTDepositPage = () => {
             >
               <Typography
                 variant="body2"
-                sx={{ color: "#6E6E6E", fontSize: "11.8px" }}
+                sx={{ color: "#9E9E9E", fontSize: "11.8px" }}
               >
                 Order Number
               </Typography>
@@ -487,14 +489,14 @@ const USDTDepositPage = () => {
               >
                 <Typography
                   variant="body2"
-                  sx={{ mr: 1, color: "#000000", fontSize: "11.8px" }}
+                  sx={{ mr: 1, color: "#ffffff", fontSize: "11.8px" }}
                 >
                   {orderNumber}
                 </Typography>
                 <ContentCopyIcon
                   fontSize="small"
                   sx={{
-                    color: "#000000",
+                    color: "#9E9E9E",
                     cursor: "pointer",
                     fontSize: "14px",
                   }}
@@ -565,7 +567,7 @@ const USDTDepositPage = () => {
           </Box>
 
           {/* Network & Wallet Address */}
-          <Box sx={{ mx: 2, background: "#f7f7f7", borderRadius: "5px" }}>
+          <Box sx={{ mx: 2, background: "#2d3030", borderRadius: "5px" }}>
             <Box
               sx={{
                 display: "flex",
@@ -576,12 +578,12 @@ const USDTDepositPage = () => {
                 px: 2,
               }}
             >
-              <Typography variant="body2" sx={{ color: "#929292" }}>
+              <Typography variant="body2" sx={{ color: "#9E9E9E" }}>
                 Network
               </Typography>
               <Typography
                 variant="body2"
-                sx={{ fontWeight: "500", fontSize: "11.8px" }}
+                sx={{ fontWeight: "500", fontSize: "11.8px", color: "#ffffff" }}
               >
                 USDT-TRC20
               </Typography>
@@ -599,7 +601,7 @@ const USDTDepositPage = () => {
             >
               <Typography
                 variant="body2"
-                sx={{ color: "#929292", fontSize: "11.8px" }}
+                sx={{ color: "#9E9E9E", fontSize: "11.8px" }}
               >
                 Wallet Address
               </Typography>
@@ -619,6 +621,7 @@ const USDTDepositPage = () => {
                     fontSize: "11.8px",
                     mr: 1,
                     flex: 1,
+                    color: "#ffffff",
                   }}
                 >
                   {selectedTRX?.trxAddress || "Loading..."}
@@ -641,7 +644,7 @@ const USDTDepositPage = () => {
           <Grid item xs={12} sx={{ mx: 2, mt: 2 }}>
             <Typography
               variant="subtitle1"
-              color="#333333"
+              color="#ffffff"
               mb={1}
               fontWeight="600"
               fontSize="16px"
@@ -657,15 +660,16 @@ const USDTDepositPage = () => {
               sx={{
                 "& .MuiOutlinedInput-root": {
                   fontSize: "14px",
+                  color:"#fff",
                   borderRadius: "8px",
                   "& fieldset": {
                     borderColor: "#E0E0E0",
                   },
                   "&:hover fieldset": {
-                    borderColor: "#1565C0",
+                    borderColor: "#24EE89",
                   },
                   "&.Mui-focused fieldset": {
-                    borderColor: "#1565C0",
+                    borderColor: "#24EE89",
                   },
                 },
                 "& .MuiOutlinedInput-input": {
@@ -682,18 +686,18 @@ const USDTDepositPage = () => {
               disabled={!selectedTRX || loading}
               sx={{
                 py: { xs: 1.25, md: 1.5 },
-                bgcolor: "#1565C0",
-                color: "#FFFFFF",
+                background: "linear-gradient(90deg, #24EE89, #9fe871)",
+                color: "#000000",
                 fontWeight: "bold",
                 textTransform: "none",
                 "&:hover": {
-                  bgcolor: "#0D47A1",
+                  background: "linear-gradient(90deg, #1fd97a, #8be060)",
                 },
                 "&:disabled": {
                   bgcolor: "#CCCCCC",
                   color: "#666666",
                 },
-                boxShadow: "0 2px 4px rgba(21, 101, 192, 0.2)",
+                boxShadow: "0 2px 4px rgba(36, 238, 137, 0.3)",
                 borderRadius: "8px",
               }}
             >
@@ -713,23 +717,24 @@ const USDTDepositPage = () => {
                 mb: 1.5,
                 fontSize: "17px",
                 textAlign: "left",
+                color: "#ffffff",
               }}
             >
               Warning:
             </Typography>
 
-            <Typography variant="body2" sx={{ mb: 1.5, textAlign: "left" }}>
+            <Typography variant="body2" sx={{ mb: 1.5, textAlign: "left", color: "#9E9E9E" }}>
               1. Minimum deposit amount:{" "}
               <span style={{ color: "#E22323" }}>10 USDT</span>, deposits less
               than the minimum amount will not be credited;
             </Typography>
 
-            <Typography variant="body2" sx={{ mb: 1.5, textAlign: "left" }}>
+            <Typography variant="body2" sx={{ mb: 1.5, textAlign: "left", color: "#9E9E9E" }}>
               2. Please do not recharge any non-currency assets to the above
               address, otherwise the assets will not be retrieved;
             </Typography>
 
-            <Typography variant="body2" sx={{ textAlign: "left" }}>
+            <Typography variant="body2" sx={{ textAlign: "left", color: "#9E9E9E" }}>
               3. Please make sure the operating environment is safe to prevent
               information from being tampered with and leaked.
             </Typography>

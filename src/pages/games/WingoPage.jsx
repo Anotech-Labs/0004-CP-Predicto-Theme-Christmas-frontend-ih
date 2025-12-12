@@ -1999,7 +1999,7 @@ const WingoPage = ({ timerKey }) => {
                     >
                       <Typography
                         variant="h6"
-                        sx={{ fontSize: isSmallScreen2 ? "15px" : "17px", display: "flex", justifyContent: "flex-start" }}
+                        sx={{ fontSize: isSmallScreen2 ? "12px" : "15px", display: "flex", justifyContent: "flex-start" }}
                       >
                         Add your money
                       </Typography>
@@ -2011,7 +2011,7 @@ const WingoPage = ({ timerKey }) => {
                           onChange={handleCustomBetChange}
                           type="number"
                           sx={{
-                            width: isSmallScreen2 ? "80%" : "100%",
+                            width: isSmallScreen2 ? "70%" : "90%",
                             "& .MuiOutlinedInput-root": {
 
                               "& fieldset": {
@@ -2356,7 +2356,7 @@ const WingoPage = ({ timerKey }) => {
                         justifyContent: "center",
                         cursor: "pointer",
                         transition: "all 0.3s",
-                        // fontWeight: activeTab === index?"bold":"normal"
+                        fontWeight: activeTab === index?"bold":"normal"
                         // "&:hover": {
                         //   backgroundColor:
                         //     activeTab === index ? "#0F6518" : "#f5f5f5",
@@ -2368,7 +2368,7 @@ const WingoPage = ({ timerKey }) => {
                         sx={{
                           fontSize: { xs: "12px", sm: "15px" },
                           textTransform: "none",
-                          // fontWeight: activeTab === index ? "bold" : "normal"
+                          fontWeight: activeTab === index ? "bold" : "normal"
                         }}
                       >
                         {tab.label}

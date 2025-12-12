@@ -41,7 +41,7 @@ const ballImages = {
   10: speedPinball10,
 };
 
-const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, totalPage,hideDetailsButton ,insideBettingRecord}) => {
+const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, totalPage, hideDetailsButton, insideBettingRecord }) => {
   if (isLoading) {
     return (
       <Grid container justifyContent="center" sx={{ py: 2 }}>
@@ -53,7 +53,7 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
   if (!bets || bets.length === 0) {
     return (
       <Grid container justifyContent="center" sx={{ py: 2 }}>
-        <Typography>No bet history available</Typography>
+        <Typography sx={{ color: "white", opacity: 0.7 }}>No bet history available</Typography>
       </Grid>
     );
   }
@@ -75,8 +75,8 @@ const RacingMyHistory = ({ bets, isLoading, getGradientForItem, page, setPage, t
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
   };
-    const navigate = useNavigate();
-  
+  const navigate = useNavigate();
+
   const handleDetailsClick = () => {
     navigate("/home/AllLotteryGames/car-race/BettingRecordWin");
   };

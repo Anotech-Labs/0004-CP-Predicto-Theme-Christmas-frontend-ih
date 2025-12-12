@@ -958,7 +958,7 @@ const Deposit = ({ children }) => {
                     sx={{
                       textAlign: "left",
                       color: "#ffffff",
-                      fontSize: "13px",
+                      fontSize: "11.5px",
                       flexGrow: 1,
                     }}
                     onClick={handlePage}
@@ -1419,7 +1419,7 @@ const Deposit = ({ children }) => {
                   textTransform: "initial",
                   background: "linear-gradient(90deg,#24ee89,#9fe871)",
                   borderRadius: "16px",
-                  color: "white",
+                  color: "black",
                   "&:hover": { bgcolor: "#0e5415" },
                   boxShadow: "none",
                 }}

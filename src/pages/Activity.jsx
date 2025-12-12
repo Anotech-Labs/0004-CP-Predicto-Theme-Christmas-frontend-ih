@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Mobile from "../components/layout/Mobile";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
@@ -69,34 +69,34 @@ const Activity = () => {
           )}
           <Box flexGrow={1} sx={{ backgroundColor: "#232626" }}>
             <Grid
-  item
-  xs={12}
-  textAlign="center"
-  sx={{
-    display: "flex",
-    alignItems: "center",
-    padding: "5px 0",
-  }}
->
-  {/* BACK BUTTON */}
-  <ArrowBackIosNewIcon
-    onClick={() => navigate(-1)}
-    style={{
-      color: "white",
-      fontSize: "20px",
-      position: "absolute",
-      left: "16px",
-      cursor: "pointer",
-    }}
-  />
+              item
+              xs={12}
+              textAlign="center"
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                padding: "5px 0",
+              }}
+            >
+              {/* BACK BUTTON */}
+              <ArrowBackIosNewIcon
+                onClick={() => navigate(-1)}
+                style={{
+                  color: "white",
+                  fontSize: "20px",
+                  position: "absolute",
+                  left: "16px",
+                  cursor: "pointer",
+                }}
+              />
 
-  {/* LOGO */}
-  <img
-    src="/assets/logo/colorLogo.webp"
-    alt="logo"
-    style={{ width: "80px", margin: "0 auto" }}
-  />
-</Grid>
+              {/* LOGO */}
+              <img
+                src="/assets/logo/colorLogo.webp"
+                alt="logo"
+                style={{ width: "80px", margin: "0 auto" }}
+              />
+            </Grid>
 
             <Grid
               container
@@ -105,7 +105,7 @@ const Activity = () => {
               sx={{
                 width: "100%",
                 background: "#323738",
-                padding: "24px 16px",
+                padding: "0px 16px 42px 16px",
                 color: "white",
                 mb: 2,
               }}

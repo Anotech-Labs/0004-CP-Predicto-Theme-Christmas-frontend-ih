@@ -170,37 +170,38 @@ const K3MyHistory = ({ bets, page, setPage, totalPage, hideDetailsButton,insideB
                         }}
                       >
                         <Typography
-                          variant="body5"
-                          sx={{
-                            color: "white",
-                            fontSize: "13px",
-                            textTransform: "initial",
-                          }}
-                        >
-                           {bet.betType === "TOTAL_SUM"
-                            ? "Total"
-                            : bet.betType === "ALL_DIFFERENT"
-                              ? "Diff"
-                              : bet.betType === "THREE_CONSECUTIVE"
-                                ? "Diff"
-                                : bet.betType === "THREE_SAME_RANDOM"
-                                  ? "3 Same"
-                                  : bet.betType === "TWO_DIFFERENT"
-                                    ? "Diff"
-                                    : bet.betType === "TWO_SAME"
-                                      ? "2 Same"
-                                      : bet.betType === "TWO_SAME_SPECIFIC"
-                                        ? "2 Same"
-                                        : bet.betType === "BIG_SMALL"
-                                          ? bet.isBig
-                                            ? "Big"
-                                            : "Small"
-                                          : bet.betType === "ODD_EVEN"
-                                            ? bet.isOdd
-                                              ? "Odd"
-                                              : "Even"
-                                            : "3 Same"}
-                        </Typography>
+  variant="body5"
+  sx={{
+    color: "white",
+    fontSize: "13px",
+    textTransform: "initial",
+  }}
+>
+  {bet.betType === "TOTAL_SUM"
+    ? "TS"
+    : bet.betType === "ALL_DIFFERENT"
+      ? "AD"
+      : bet.betType === "THREE_CONSECUTIVE"
+        ? "TC"
+        : bet.betType === "THREE_SAME_RANDOM"
+          ? "3S"
+          : bet.betType === "TWO_DIFFERENT"
+            ? "TD"
+            : bet.betType === "TWO_SAME"
+              ? "2S"
+              : bet.betType === "TWO_SAME_SPECIFIC"
+                ? "2SS"
+                : bet.betType === "BIG_SMALL"
+                  ? bet.isBig
+                    ? "Big"
+                    : "Small"
+                  : bet.betType === "ODD_EVEN"
+                    ? bet.isOdd
+                      ? "Odd"
+                      : "Even"
+                    : "3S"}
+</Typography>
+
                       </Box>
 
                       <Box>

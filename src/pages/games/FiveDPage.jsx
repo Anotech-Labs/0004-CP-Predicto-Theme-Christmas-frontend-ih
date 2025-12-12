@@ -279,7 +279,7 @@ const FiveDPage = ({ timerKey }) => {
     const [isPlacingBet, setIsPlacingBet] = useState(false)
     const { axiosInstance } = useAuth();
     const [agreed, setAgreed] = useState(true);
-      const [show, setShow] = useState(true);
+    const [show, setShow] = useState(true);
     const [isSpinning, setIsSpinning] = useState(false);
     const previousOutcomesRef = useRef(null);
     const initialLoadRef = useRef(true);
@@ -740,7 +740,7 @@ const FiveDPage = ({ timerKey }) => {
     const handleNumberSelection = (value) => {
         if (selectedNumbers.includes(value)) {
             setSelectedNumbers(selectedNumbers.filter((num) => num !== value))
-        } else { 
+        } else {
             setSelectedNumbers([...selectedNumbers, value])
             setSelectedCategory(null)
         }
@@ -895,7 +895,7 @@ const FiveDPage = ({ timerKey }) => {
         // Prevent betting in last 5 seconds
         if (["00:06", "00:05", "00:04", "00:03", "00:02", "00:01"].includes(remainingTime)) {
             console.warn("Attempting to place bet in the last 5 seconds. Remaining time:", remainingTime);
-             setPopupMessage("You can't place a bet in the last 5 seconds.");
+            setPopupMessage("You can't place a bet in the last 5 seconds.");
             setIsPopupVisible(true);
             // Hide the popup after 2 seconds
             setTimeout(() => {
@@ -990,7 +990,7 @@ const FiveDPage = ({ timerKey }) => {
                 setMultiplier(1);
 
                 // Show success notification and reset states
-                 setPopupMessage("Bet placed successfully!");
+                setPopupMessage("Bet placed successfully!");
                 setIsPopupVisible(true);
                 // Hide the popup after 2 seconds
                 setTimeout(() => {
@@ -1006,10 +1006,10 @@ const FiveDPage = ({ timerKey }) => {
         } catch (err) {
             console.error("Error placing bet:", err);
             setPopupMessage(err.response?.data?.error?.startsWith("Insufficient balance")
-        ? "Insufficient balance"
-        : (err.response?.data?.error || "Failed to place bet. Please try again.")
-      );
-       handleCloseDrawer();
+                ? "Insufficient balance"
+                : (err.response?.data?.error || "Failed to place bet. Please try again.")
+            );
+            handleCloseDrawer();
             setIsPopupVisible(true);
             // Hide the popup after 2 seconds
             setTimeout(() => {
@@ -1047,7 +1047,7 @@ const FiveDPage = ({ timerKey }) => {
             return
         }
 
-       setTimeout(() => {
+        setTimeout(() => {
             setIsPopupVisible(false);
         }, 2000);
     }
@@ -1201,13 +1201,13 @@ const FiveDPage = ({ timerKey }) => {
     // Fetch bet history when userBets or selectedTimer changes
     useEffect(() => {
         let timeoutId;
-        
+
         if (userBets.length > 0) {
             timeoutId = setTimeout(() => {
                 fetchPopupBetHistory();
             }, 2000); // 2 seconds delay
         }
-        
+
         // Cleanup function to clear timeout if component unmounts or dependencies change
         return () => {
             if (timeoutId) {
@@ -1233,10 +1233,10 @@ const FiveDPage = ({ timerKey }) => {
             const announceBetResult = async () => {
                 setGameResult(currentBet.isWin ? "Won" : "Lost");
                 setWinLoss(
-                    currentBet.isWin 
-                      ? Number(currentBet.winAmount || 0).toFixed(2) 
-                      : Number(currentBet.actualBetAmount || 0).toFixed(2)
-                  );
+                    currentBet.isWin
+                        ? Number(currentBet.winAmount || 0).toFixed(2)
+                        : Number(currentBet.actualBetAmount || 0).toFixed(2)
+                );
                 setPopupPeriodId(currentBet.periodId);
                 setPopupResult([
                     currentBet.resultSectionA,
@@ -1373,7 +1373,7 @@ const FiveDPage = ({ timerKey }) => {
                             <img
                                 src="/assets/logo/colorLogo.webp"
                                 alt="logo"
-                                style={{ width: "90px"}}
+                                style={{ width: "90px" }}
                                 onClick={() => navigate('/')}
                             />
                         </Grid>
@@ -1628,7 +1628,7 @@ const FiveDPage = ({ timerKey }) => {
                         }}
                     >
                         <Grid container spacing={0} alignItems="center" marginBottom="6px">
-                            <Grid item xs={2} sx={{textAlign: "left" }}>
+                            <Grid item xs={2} sx={{ textAlign: "left" }}>
                                 <Typography
                                     variant="body1"
                                     color="#B3BEC1"
@@ -1637,7 +1637,7 @@ const FiveDPage = ({ timerKey }) => {
                                     Period
                                 </Typography>
                             </Grid>
-                            <Grid item xs={5} sx={{textAlign: "left" }}>
+                            <Grid item xs={5} sx={{ textAlign: "left" }}>
                                 <Button
                                     variant="outlined"
                                     sx={{
@@ -1953,7 +1953,7 @@ const FiveDPage = ({ timerKey }) => {
                             )}
                         </Box>
                     </Box>
-<div>
+                    <div>
                         {/* bet placed alert */}
                         {isPopupVisible && (
                             <Box
@@ -2088,7 +2088,9 @@ const FiveDPage = ({ timerKey }) => {
                                                     selectedCategory === label
                                                         ? selectedColor
                                                         : "#3a4142",
-                                                color: "#B3BEC1",
+                                                color: selectedCategory === label
+                                                        ? "black"
+                                                        : "#B3BEC1",
                                                 borderRadius: "5px",
                                                 textAlign: "center",
                                                 cursor: "pointer",
@@ -2221,7 +2223,7 @@ const FiveDPage = ({ timerKey }) => {
                                         >
                                             <Typography
                                                 variant="h6"
-                                                sx={{ fontSize: isSmallScreen2 ? "15px" : "17px", display: "flex", justifyContent: "flex-start" }}
+                                                sx={{ fontSize: isSmallScreen2 ? "12px" : "15px", display: "flex", justifyContent: "flex-start" }}
                                             >
                                                 Add your money
                                             </Typography>
@@ -2233,7 +2235,7 @@ const FiveDPage = ({ timerKey }) => {
                                                     onChange={handleCustomBetChange}
                                                     type="number"
                                                     sx={{
-                                                        width: isSmallScreen2 ? "80%" : "100%",
+                                                        width: isSmallScreen2 ? "70%" : "90%",
                                                         "& .MuiOutlinedInput-root": {
 
                                                             "& fieldset": {
@@ -2377,26 +2379,26 @@ const FiveDPage = ({ timerKey }) => {
                                         ))}
                                     </Grid>
                                     <Typography sx={{ alignItems: "center", display: "flex", mt: 1 }}>
-                                    <Checkbox
-                      checked={agreed}
-                      onClick={handleToggle} // Handle both check and uncheck
-                      icon={
-                        <RadioButtonUncheckedIcon
-                          sx={{
-                            color: "#c8c9cc", // Unchecked color
-                            fontSize: 22, // Adjust size
-                          }}
-                        />
-                      }
-                      checkedIcon={
-                        <CheckCircleIcon
-                          sx={{
-                            color: "#24ee89 ", // Checked color
-                            fontSize: 22, // Slightly bigger for effect
-                          }}
-                        />
-                      }
-                    />
+                                        <Checkbox
+                                            checked={agreed}
+                                            onClick={handleToggle} // Handle both check and uncheck
+                                            icon={
+                                                <RadioButtonUncheckedIcon
+                                                    sx={{
+                                                        color: "#c8c9cc", // Unchecked color
+                                                        fontSize: 22, // Adjust size
+                                                    }}
+                                                />
+                                            }
+                                            checkedIcon={
+                                                <CheckCircleIcon
+                                                    sx={{
+                                                        color: "#24ee89 ", // Checked color
+                                                        fontSize: 22, // Slightly bigger for effect
+                                                    }}
+                                                />
+                                            }
+                                        />
                                         <span style={{ marginLeft: 8, fontSize: "13px", color: "#B3BEC1" }}>
                                             I agree
                                         </span>
@@ -2440,7 +2442,7 @@ const FiveDPage = ({ timerKey }) => {
                                 </Grid>
                             </Grid>
 
-                     {/*       <>
+                            {/*       <>
                                 <Backdrop
                                     sx={{
                                         color: "#fff",
@@ -2599,7 +2601,7 @@ const FiveDPage = ({ timerKey }) => {
                                             >
                                                 <ArrowBackIosRoundedIcon style={{ color: historyPage === 1 ? "#B3BEC1" : "#323738" }} />
                                             </Button>
-                                            <Grid sx={{ display: "flex", alignItems: "center", color: "#B3BEC1" ,fontSize:"14px"}}>
+                                            <Grid sx={{ display: "flex", alignItems: "center", color: "#B3BEC1", fontSize: "14px" }}>
                                                 {historyPage}/{gameTotalPage}
                                             </Grid>
                                             <Button
@@ -2647,7 +2649,7 @@ const FiveDPage = ({ timerKey }) => {
 
                         <div
                             style={{
-                                display: show ?( open ? "flex" : "none") :"flex", // Toggle visibility based on `open`
+                                display: show ? (open ? "flex" : "none") : "flex", // Toggle visibility based on `open`
                                 // display: "flex",
                                 position: "absolute",
                                 zIndex: 2000,
@@ -2732,32 +2734,32 @@ const FiveDPage = ({ timerKey }) => {
                                        
                                     </span> */}
                                 </Typography>
-                                <Typography sx={{ color: gameResult ? "white" : "#7c9dc2", mt: 3,display:"flex",alignItems:"center",flexDirection:"row" }}>
-                  <Checkbox
-                      checked={show}
-                      onClick={handleToggle2} // Handle both check and uncheck
-                      icon={
-                        <RadioButtonUncheckedIcon
-                          sx={{
-                            color: gameResult ? "white" : "#7c9dc2", // Unchecked color
-                            fontSize: 22, // Adjust size
-                           
-                          }}
-                        />
-                      }
-                      checkedIcon={
-                        <CheckCircleIcon
-                          sx={{
-                            color: gameResult ? "white" : "#7c9dc2", // Checked color
-                            fontSize: 22, // Slightly bigger for effect
-                            
-                            borderRadius: "50px"
-                          }}
-                        />
-                      }
-                    />
-                    After 3 seconds auto close
-                </Typography>
+                                <Typography sx={{ color: gameResult ? "white" : "#7c9dc2", mt: 3, display: "flex", alignItems: "center", flexDirection: "row" }}>
+                                    <Checkbox
+                                        checked={show}
+                                        onClick={handleToggle2} // Handle both check and uncheck
+                                        icon={
+                                            <RadioButtonUncheckedIcon
+                                                sx={{
+                                                    color: gameResult ? "white" : "#7c9dc2", // Unchecked color
+                                                    fontSize: 22, // Adjust size
+
+                                                }}
+                                            />
+                                        }
+                                        checkedIcon={
+                                            <CheckCircleIcon
+                                                sx={{
+                                                    color: gameResult ? "white" : "#7c9dc2", // Checked color
+                                                    fontSize: 22, // Slightly bigger for effect
+
+                                                    borderRadius: "50px"
+                                                }}
+                                            />
+                                        }
+                                    />
+                                    After 3 seconds auto close
+                                </Typography>
                                 <IconButton onClick={() => setOpen(false)} sx={{ position: "absolute", bottom: -60 }}>
                                     <CancelOutlinedIcon
                                         sx={{ color: "white", fontSize: "45px" }}

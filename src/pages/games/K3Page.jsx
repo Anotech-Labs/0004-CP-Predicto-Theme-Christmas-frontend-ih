@@ -2387,7 +2387,7 @@ const K3Page = ({ timerKey }) => {
                       alignItems="center"
                       sx={{ color: "#ffffff", flexWrap: "nowrap" }}
                     >
-                      <Typography variant="h6" sx={{ fontSize: isSmallScreen2 ? "15px" : "17px", display: "flex", justifyContent: "flex-start" }}>
+                      <Typography variant="h6" sx={{ fontSize: isSmallScreen2 ? "12px" : "15px", display: "flex", justifyContent: "flex-start" }}>
                         Add your money
                       </Typography>
                       <Grid item xs="auto" display="flex" justifyContent="flex-end">
@@ -2398,7 +2398,7 @@ const K3Page = ({ timerKey }) => {
                           onChange={handleCustomBetChange}
                           type="number"
                           sx={{
-                            width: isSmallScreen2 ? "80%" : "100%",
+                            width: isSmallScreen2 ? "70%" : "90%",
                             "& .MuiOutlinedInput-root": {
 
                               "& fieldset": {

@@ -394,7 +394,7 @@ const FiveDMyHistory = ({ bets, page, setPage, hideDetailsButton, totalPage }) =
                         key={idx}
                         sx={{
                           border: "4px solid #323738",
-                          backgroundColor: "#3b3833",
+                          backgroundColor: "#232626",
                           borderRadius: "8px",
                           display: "flex",
                           padding: "2px 6px",
@@ -410,8 +410,8 @@ const FiveDMyHistory = ({ bets, page, setPage, hideDetailsButton, totalPage }) =
                             color: item.color || "#B3BEC1",
                             fontSize: "15px",
                             textAlign: "right",
-                            // padding: "2px 6px",
-                            borderBottom: "1px solid #3B3833",
+                            padding: "2px 6px",
+                            // borderBottom: "1px solid #3B3833",
                           }}
                         >
                           {item.value}

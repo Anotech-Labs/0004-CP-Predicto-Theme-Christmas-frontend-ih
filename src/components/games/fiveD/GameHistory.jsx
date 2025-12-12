@@ -58,7 +58,7 @@ const GameHistory = ({
           key={column.id}
           sx={{
             width: column.width,
-            color: "#ffffff",
+            color: "#000",
             padding: "2.5% 5.8%",
             borderTopLeftRadius: index === 0 ? "10px" : "0",
             borderTopRightRadius: index === columns.length - 1 ? "10px" : "0",

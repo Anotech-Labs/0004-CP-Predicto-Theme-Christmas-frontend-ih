@@ -86,8 +86,8 @@ const K3Charts = ({ data ,page, setPage ,totalPage}) => {
             display: "flex",
             flexDirection: "row",
             fontWeight: "bold",
-            backgroundColor: "#cf7c10",
-            color: "white",
+            backgroundColor: "#24EE89",
+            color: "black",
             height: "40px",
             alignItems: "center",
             padding: "0 5px",
@@ -109,6 +109,7 @@ const K3Charts = ({ data ,page, setPage ,totalPage}) => {
               alignItems: "center",
               padding: "0 10px",
               color: "#ffffff",
+              fontWeight:"600",
               justifyContent: "space-between",
             }}
           >

@@ -2427,132 +2427,142 @@ const WithDraw = ({ children }) => {
 
               {withdrawals.length > 0 ? (
                 withdrawals.map((withdrawal) => (
-                  <Card
-                    key={withdrawal.id}
-                    sx={{
-                      marginBottom: 1,
-                      borderRadius: 2,
-                      overflow: "hidden",
-                      background: "#323738",
-                      boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-                    }}
-                  >
-                    <CardContent sx={{ padding: 0, mb: -2 }}>
+                <Card
+  key={withdrawal.id}
+  sx={{
+    marginBottom: 1,
+    borderRadius: 2,
+    overflow: "hidden",
+    background: "#323738",
+    boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+  }}
+>
+  <CardContent sx={{ padding: 0, mb: -2 }}>
 
-                      {/* Header */}
-                      <Box sx={{ padding: 1, borderBottom: "1px solid #454037" }}>
-                        <Grid container alignItems="center">
+    {/* Header */}
+    <Box sx={{ padding: 1, borderBottom: "1px solid #454037" }}>
+      <Grid container alignItems="center">
 
-                          {/* Left Side Chip */}
-                          <Grid item xs={6} sx={{ textAlign: "left" }}>
-                            <Chip
-                              label="Withdraw"
-                              sx={{
-                                backgroundColor:
-                                  withdrawal.withdrawStatus === "COMPLETED"
-                                    ? "#27AE60"
-                                    : withdrawal.withdrawStatus === "PENDING"
-                                      ? "#F39C12"
-                                      : "#E74C3C",
-                                color: "white",
-                                height: "24px",
-                                fontSize: "14px",
-                                borderRadius: "4px",
-                                textTransform: "initial",   // NORMAL CASE
-                              }}
-                            />
-                          </Grid>
+        {/* Left Side Chip */}
+        <Grid item xs={6} sx={{ textAlign: "left" }}>
+          <Chip
+            label="Withdraw"
+            sx={{
+              backgroundColor:
+                withdrawal.withdrawStatus === "COMPLETED"
+                  ? "#27AE60"
+                  : withdrawal.withdrawStatus === "PENDING"
+                    ? "#F39C12"
+                    : "#E74C3C",
+              color: "white",
+              height: "24px",
+              fontSize: "14px",
+              borderRadius: "4px",
+              textTransform: "initial",
+            }}
+          />
+        </Grid>
 
-                          {/* Right Side STATUS TEXT */}
-                          <Grid item xs={6} sx={{ textAlign: "right" }}>
-                            <Typography
-                              sx={{
-                                color:
-                                  withdrawal.withdrawStatus === "COMPLETED"
-                                    ? "#27AE60"
-                                    : withdrawal.withdrawStatus === "PENDING"
-                                      ? "#F39C12"
-                                      : "#E74C3C",
-                                fontSize: "12px",            // SMALLER
-                                textTransform: "initial",    // NORMAL CASE
-                              }}
-                            >
-                              {withdrawal.withdrawStatus}
-                            </Typography>
-                          </Grid>
-                        </Grid>
-                      </Box>
+        {/* Right Side STATUS TEXT */}
+        <Grid item xs={6} sx={{ textAlign: "right" }}>
+          <Typography
+            sx={{
+              color:
+                withdrawal.withdrawStatus === "COMPLETED"
+                  ? "#27AE60"
+                  : withdrawal.withdrawStatus === "PENDING"
+                    ? "#F39C12"
+                    : "#E74C3C",
+              fontSize: "12px",
+              textTransform: "initial",
+            }}
+          >
+            {/* Normal case: Pending / Completed / Rejected */}
+            {withdrawal.withdrawStatus.charAt(0) +
+              withdrawal.withdrawStatus.slice(1).toLowerCase()}
+          </Typography>
+        </Grid>
+      </Grid>
+    </Box>
 
-                      {/* Content */}
-                      <Box sx={{ padding: 1.5 }}>
-                        <Grid container spacing={1} sx={{ textAlign: "left" }}>
+    {/* Content */}
+    <Box sx={{ padding: 1.5 }}>
+      <Grid container spacing={1} sx={{ textAlign: "left" }}>
 
-                          {[
-                            {
-                              label: "Balance",
-                              value: `₹${withdrawal.withdrawAmount}`,
-                              color:
-                                withdrawal.withdrawStatus === "COMPLETED"
-                                  ? "#27AE60"
-                                  : withdrawal.withdrawStatus === "PENDING"
-                                    ? "#F39C12"
-                                    : "#E74C3C",
-                              fontSize: "14px",
-                              fontWeight: "bold",
-                            },
-                            {
-                              label: "Type",
-                              value: withdrawal.withdrawMethod,
-                              fontSize: "12px",
-                            },
-                            {
-                              label: "Time",
-                              value: new Date(withdrawal.withdrawDate).toLocaleString(),
-                              fontSize: "12px",
-                            },
-                            {
-                              label: "Order number",
-                              value: withdrawal.id,
-                              fontSize: "12px",
-                            },
-                          ].map(({ label, value, color, fontSize, fontWeight }) => (
-                            <React.Fragment key={label}>
+        {[
+          {
+            label: "Balance",
+            value: `₹${withdrawal.withdrawAmount}`,
+            color:
+              withdrawal.withdrawStatus === "COMPLETED"
+                ? "#27AE60"
+                : withdrawal.withdrawStatus === "PENDING"
+                  ? "#F39C12"
+                  : "#E74C3C",
+            fontSize: "14px",
+            fontWeight: "bold",
+          },
+          {
+            label: "Type",
+            value:
+              withdrawal.withdrawMethod === "BANK_TRANSFER"
+                ? "Bank Transfer"
+                : withdrawal.withdrawMethod === "UPI"
+                  ? "UPI"
+                  : withdrawal.withdrawMethod === "USDT"
+                    ? "USDT"
+                    : withdrawal.withdrawMethod,
+            fontSize: "12px",
+          },
+          {
+            label: "Time",
+            value: new Date(withdrawal.withdrawDate).toLocaleString(),
+            fontSize: "12px",
+          },
+          {
+            label: "Order number",
+            value: withdrawal.id,
+            fontSize: "12px",
+          },
+        ].map(({ label, value, color, fontSize, fontWeight }) => (
+          <React.Fragment key={label}>
 
-                              {/* Left Label */}
-                              <Grid item xs={6}>
-                                <Typography
-                                  sx={{
-                                    color: "#B79C8B",
-                                    fontSize: "13px",
-                                    lineHeight: "20px",
-                                  }}
-                                >
-                                  {label}
-                                </Typography>
-                              </Grid>
+            {/* Left Label */}
+            <Grid item xs={6}>
+              <Typography
+                sx={{
+                  color: "#B79C8B",
+                  fontSize: "13px",
+                  lineHeight: "20px",
+                }}
+              >
+                {label}
+              </Typography>
+            </Grid>
 
-                              {/* Right Value */}
-                              <Grid item xs={6} sx={{ textAlign: "right" }}>
-                                <Typography
-                                  sx={{
-                                    fontSize,
-                                    fontWeight: fontWeight || "medium",
-                                    color: color || "#B79C8B",
-                                    lineHeight: "20px",
-                                    textTransform: "initial",   // NORMAL CASE
-                                  }}
-                                >
-                                  {value}
-                                </Typography>
-                              </Grid>
+            {/* Right Value */}
+            <Grid item xs={6} sx={{ textAlign: "right" }}>
+              <Typography
+                sx={{
+                  fontSize,
+                  fontWeight: fontWeight || "medium",
+                  color: color || "#B79C8B",
+                  lineHeight: "20px",
+                  textTransform: "initial",
+                }}
+              >
+                {value}
+              </Typography>
+            </Grid>
 
-                            </React.Fragment>
-                          ))}
+          </React.Fragment>
+        ))}
 
-                        </Grid>
-                      </Box>
-                    </CardContent>
-                  </Card>
+      </Grid>
+    </Box>
+  </CardContent>
+</Card>
+
 
 
                 ))

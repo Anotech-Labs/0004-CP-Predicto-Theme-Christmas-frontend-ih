@@ -36,7 +36,7 @@ const K3GameHistory = ({ data, page, setPage ,totalPage}) => {
         item
         direction="row"
         justifyContent="space-evenly"
-        backgroundColor="#cf7c10"
+        backgroundColor="#24EE89"
         borderRadius="5px 5px 0 0px"
       >
         {columns.map((column) => (
@@ -45,7 +45,7 @@ const K3GameHistory = ({ data, page, setPage ,totalPage}) => {
             xs={column.id === "diceOutcome" ? 4 : 4}
             key={column.id}
             sx={{
-              color: "white",
+              color: "black",
               height: 40,
               fontWeight: "bold",
               display: "flex",
@@ -54,6 +54,7 @@ const K3GameHistory = ({ data, page, setPage ,totalPage}) => {
               width: "100%",
               borderRadius: "5px",
               fontSize: "13px",
+              fontWeight:"600"
             }}
           >
             {column.label}
@@ -77,7 +78,7 @@ const K3GameHistory = ({ data, page, setPage ,totalPage}) => {
             color="#ffffff"
             key={row.id}
             fontSize="0.75rem"
-            // fontWeight="bold"
+            fontWeight="600"
             // borderBottom="1px solid #ccc"
             padding="8px 12px"
           >

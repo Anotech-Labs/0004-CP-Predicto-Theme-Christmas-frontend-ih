@@ -31,11 +31,11 @@ const WingoChart = ({ data, page, setPage, totalPage }) => {
       <div
         style={{
           display: "flex",
-          backgroundColor: "#cf7c10",
+          backgroundColor: "#24EE89",
           padding: "15px 0px",
           borderRadius: "5px 5px 0px 0px",
-          fontWeight: "bold",
-          color: "white",
+          fontWeight: "600",
+          color: "black",
         }}
       >
         <div style={{ width: "30%", fontSize: "14px" }}>Period</div>

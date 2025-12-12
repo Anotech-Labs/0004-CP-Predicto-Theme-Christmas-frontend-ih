@@ -47,8 +47,8 @@ const GameHistory = ({ data, page, setPage, totalPage }) => {
           key={column.id}
           sx={{
             width: column.width,
-            backgroundColor: "#cf7c10", // Changed to a golden yellow color
-            color: "white",
+            backgroundColor: "#24EE89", // Changed to a golden yellow color
+            color: "black",
             padding: "3.5% 1.8%",
             borderTopLeftRadius: index === 0 ? "5px" : "0",
             borderTopRightRadius: index === columns.length - 1 ? "5px" : "0",
@@ -57,6 +57,7 @@ const GameHistory = ({ data, page, setPage, totalPage }) => {
             fontSize: "0.9rem",
             alignItems: "center",
             justifyContent: "center",
+            fontWeight: "600",
           }}
         >
           {column.label}
@@ -82,7 +83,7 @@ const GameHistory = ({ data, page, setPage, totalPage }) => {
                 justifyContent: "left",
                 fontSize: "13px",
                 color: "#ffffff",
-                // fontWeight: "bold"
+                fontWeight: "600"
               }}
             >
               {row.periodId.toString()}
@@ -139,7 +140,7 @@ const GameHistory = ({ data, page, setPage, totalPage }) => {
                 textTransform: "capitalize",
                 fontSize: "13px",
                 color: "#ffffff",
-                // fontWeight: "bold"
+                fontWeight: "600"
               }}
             >
               {row.sizeOutcome.charAt(0).toUpperCase() + row.sizeOutcome.slice(1).toLowerCase()}
