@@ -21,13 +21,9 @@ import Divider from '@mui/material/Divider';
 import { useAuth } from "../../context/AuthContext";
 import { Badge, Button } from "@mui/material";
 import JackpotSection from "./JackpotSection";
-<<<<<<< Updated upstream
 import { Bell, Gift, Plus } from "lucide-react";
 import TrendingGames from "./TrendingGames";
-=======
-import { Bell, Divide, Gift, Plus } from "lucide-react";
 import GamingProvidersGrid from "./GamingProvidersGrid";
->>>>>>> Stashed changes
 const HomeMain = ({ children }) => {
   const RhombusIcon = (props) => (
     <SvgIcon {...props}>
@@ -312,68 +308,7 @@ const HomeMain = ({ children }) => {
           {/* Winning Information */}
           <Winning />
 
-<<<<<<< Updated upstream
-          {/* Today's earning chart */}
-          <Box
-            sx={{
-              mx: 1.7,
-              mt: 3.5,
-              // padding: "16px",
-              borderRadius: "8px",
-              maxWidth: "100%",
-            }}
-          >
-            <Box display="flex" alignItems="center" sx={{ mb: "15px" }}>
-              <img src="/assets/gameFilter/winning.webp" alt="" width="22px" />
-              <Typography
-                variant="h6"
-                sx={{
-                  color: "#ffffff",
-                  display: "flex",
-                  alignItems: "center",
-                  marginLeft: "7px",
-                  fontSize: "14.9px",
-                  fontWeight: "600",
-                  fontFamily: "'Times New Roman', Times, serif !important",
-                }}
-              >
-                Today's earnings chart
-              </Typography>
-            </Box>
-            {/* <Box sx={{ width: "100%", borderRadius: "12px", background: "#232626" }}>
-              <Stage /></Box> */}
-          </Box>
-
-          {/* InfoSection */}
-          <Box
-            display="flex"
-            flexDirection="column"
-            alignItems="flex-start"
-            sx={{
-              mx: "13px",
-              my: 2.5,
-            }}
-          >
-            <Box
-              display="flex"
-              flexDirection="column"
-              gap={1.5}
-              sx={{
-                backgroundColor: "#232626",
-                p: 1,
-                borderRadius: "8px",
-              }} // Optional container styling
-            >
-              {/* First Row: Two Images */}
-              <Box
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                sx={{ mt: 1 }}
-              >
-=======
           <GamingProvidersGrid />
->>>>>>> Stashed changes
 
 
           <br />
