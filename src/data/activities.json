@@ -1,31 +1,31 @@
 [
   {
     "id": "activity-3",
-    "title": "Cognix Real Time Rebate",
+    "title": "100Wins Real Time Rebate",
     "bannerImage": "/assets/Banner/ban_realtimerebate.webp",
     "posterImage": "/assets/activity-poster/poster_realtimerebate.webp"
   },
   {
     "id": "activity-4",
-    "title": "Cognix Youtube Creative Video Event",
+    "title": "100Wins Youtube Creative Video Event",
     "bannerImage": "/assets/Banner/ban_youtube.webp",
     "posterImage": "/assets/activity-poster/poster_youtube.webp"
   },
   {
       "id": "activity-5",
-      "title": "Cognix Winstreak Bonus",
+      "title": "100Wins Winstreak Bonus",
       "bannerImage": "/assets/Banner/ban_winstreak.webp",
       "posterImage": "/assets/activity-poster/poster_refrealBonus.webp"
     },
     {
       "id": "activity-6",
-      "title": "Cognix Slot & Aviator",
+      "title": "100Wins Slot & Aviator",
       "bannerImage": "/assets/Banner/ban_avaitor.webp",
       "posterImage": "/assets/activity-poster/poster_superjackpot1.webp"
     },
   {
     "id": "activity-7",
-    "title": "Cognix USDT Bonus",
+    "title": "100Wins USDT Bonus",
     "bannerImage": "/assets/Banner/ban_usdt.webp",
     "posterImage": "/assets/activity-poster/poster_usdt.webp"
   }

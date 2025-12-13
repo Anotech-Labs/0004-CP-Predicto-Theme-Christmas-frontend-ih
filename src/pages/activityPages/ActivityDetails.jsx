@@ -36,15 +36,15 @@ const ActivityDetails = () => {
     case "activity-2": // Special Attendance Bonus
       if (bannerPosterContext.attendanceUrl) bannerImageUrl = bannerPosterContext.attendanceUrl
       break
-    case "activity-3": // Cognix Solutions Partner Rewards
+    case "activity-3": // 100Wins Solutions Partner Rewards
       if (bannerPosterContext.realtimerebateUrl) bannerImageUrl = bannerPosterContext.realtimerebateUrl
       if (bannerPosterContext.realtimerebatePosterUrl) posterImageUrl = bannerPosterContext.realtimerebatePosterUrl
       break
-    case "activity-4": // Cognix Solutions Daily Luck Spin
+    case "activity-4": // 100Wins Solutions Daily Luck Spin
       if (bannerPosterContext.youtubeUrl) bannerImageUrl = bannerPosterContext.youtubeUrl
       if (bannerPosterContext.youtubePosterUrl) posterImageUrl = bannerPosterContext.youtubePosterUrl
       break
-    case "activity-6": // Cognix Solutions Official Channel
+    case "activity-6": // 100Wins Solutions Official Channel
       if (bannerPosterContext.avaiatorUrl) bannerImageUrl = bannerPosterContext.avaiatorUrl
       if (bannerPosterContext.superjackpotPosterUrl) posterImageUrl = bannerPosterContext.superjackpotPosterUrl
       break

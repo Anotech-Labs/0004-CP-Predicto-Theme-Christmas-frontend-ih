@@ -38,8 +38,8 @@ const DetailsBox = () => {
   const [index, setIndex] = useState(0);
 
   const textArray = [
-    "Welcome to the Cognix Solutions! Greetings, Gamers and Enthusiasts!",
-    "The Cognix Solutions are here to provide excitement and fun.",
+    "Welcome to the 100Wins Solutions! Greetings, Gamers and Enthusiasts!",
+    "The 100Wins Solutions are here to provide excitement and fun.",
     "For your convenience and account safety, please ensure",
     "you fill in the genuine mobile number registered with your bank.",
     "Thank you for your cooperation and enjoy the games!",

@@ -874,7 +874,7 @@ const Login = () => {
           direction="column"
           alignItems="center"
           justifyContent="center"
-          onClick={() => window.open("https://t.me/Cognixsupport", "_blank")}
+          onClick={() => window.open("https://t.me/100Winssupport", "_blank")}
           sx={{ padding: "16px", marginTop: "4px", cursor: "pointer" }}
         >
           <Box
