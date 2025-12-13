@@ -1234,13 +1234,10 @@ const Deposit = ({ children }) => {
                           selectedValue === value
                             ? "linear-gradient(90deg,#24ee89,#9fe871)"
                             : "#323738",
-                        color: selectedValue === value ? "#221F2E" : "#FED358",
+                        color: selectedValue === value ? "#221F2E" : "#24EE89",
                         justifyContent: "center",
-
-                        border: "1px solid",
-                        // borderRadius: "50px",
-                        borderImage: "linear-gradient(90deg,#24EE89,#9FE871) 1",
-
+                        border: "1px solid #24EE89",
+                        borderRadius: "8px",
                         "& .MuiButton-startIcon": {
                           position: "absolute",
                           left: "16px",
@@ -1344,7 +1341,7 @@ const Deposit = ({ children }) => {
                     <InputAdornment position="start">
                       <span
                         style={{
-                          color: "#FED358",
+                          color: "#24EE89",
                           fontSize: "20px",
                           fontWeight: "bold",
                           marginLeft: "0.5rem",

@@ -197,7 +197,7 @@ const Rule = () => {
             >
               <Table>
                 <TableHead>
-                  <TableRow sx={{ bgcolor: "#cf7c10" }}>
+                  <TableRow sx={{ background: "linear-gradient(90deg,#24EE89,#9FE871)" }}>
                     <TableCell
                       sx={{
                         color: "#ffffff",

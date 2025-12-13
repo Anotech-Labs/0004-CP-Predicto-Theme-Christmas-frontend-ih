@@ -1507,7 +1507,7 @@ const WithDraw = ({ children }) => {
                           <InputAdornment position="start">
                             <span
                               style={{
-                                color: "#FED358",
+                                color: "#24ee89",
                                 fontSize: "20px",
                                 fontWeight: "bold",
                                 marginLeft: "0.5rem",
@@ -1526,13 +1526,13 @@ const WithDraw = ({ children }) => {
                         height: "47.5px",
                         "& .MuiOutlinedInput-root": {
                           borderRadius: "8px",
-                          color: "#FED358", // Set text color for input
+                          color: "#24ee89", // Set text color for input
                           "& fieldset": { border: "none" },
                           "&:hover fieldset": { border: "none" },
                           "&.Mui-focused fieldset": { border: "none" },
                           "& input": {
                             fontSize: "13px",
-                            color: "#FED358", // Ensure input text color is white
+                            color: "#24ee89", // Ensure input text color is white
                           },
                           "& input::placeholder": {
                             fontSize: "13px",
@@ -1597,8 +1597,8 @@ const WithDraw = ({ children }) => {
                           mb: 0.5,
                           height: "20px",
                           minWidth: "67px", // Ensures the button has a minimum width
-                          borderColor: "#FED358", // Orange border
-                          color: "#FED358", // Orange text
+                          borderColor: "#24ee89", // Orange border
+                          color: "#24ee89", // Orange text
                           textTransform: "none", // Prevent capitalization
                           borderRadius: "5px",
                           padding: "0px 16px", // Adjust padding for button size
@@ -1643,7 +1643,7 @@ const WithDraw = ({ children }) => {
                         fontSize: "15px",
                         color: "#221f2e", // Explicitly set text color
                         "&:hover": {
-                          bgcolor: "#FED358",
+                          bgcolor: "#24ee89",
                         },
                         "&.Mui-disabled": {
                           background: "rgb(144, 144, 144)", // Retain gradient for disabled state
@@ -1698,7 +1698,7 @@ const WithDraw = ({ children }) => {
                               borderRadius: "10px",
                               height: "45px",
                               fontSize: "13px",
-                              color: "#FED358",
+                              color: "#24ee89",
                               "& fieldset": {
                                 border: "none",
                               },
@@ -1765,7 +1765,7 @@ const WithDraw = ({ children }) => {
                               borderRadius: "10px",
                               height: "45px",
                               fontSize: "13px",
-                              color: "#FED358",
+                              color: "#24ee89",
                               "& fieldset": {
                                 border: "none",
                               },
@@ -1776,12 +1776,12 @@ const WithDraw = ({ children }) => {
                               fontWeight: "normal",
                               opacity: 1,
                             },
-                            color: "#FED358",
+                            color: "#24ee89",
                           }}
                           InputProps={{
                             startAdornment: (
                               <InputAdornment position="start">
-                                <Typography sx={{ color: "#FED358" }}>
+                                <Typography sx={{ color: "#24ee89" }}>
                                   ₹
                                 </Typography>
                               </InputAdornment>
@@ -1818,7 +1818,7 @@ const WithDraw = ({ children }) => {
                       >
                         <Typography
                           variant="body2"
-                          color="#FED358"
+                          color="#24ee89"
                           fontSize="13px"
                         >
                           Withdrawable balance{" "}
@@ -1830,8 +1830,8 @@ const WithDraw = ({ children }) => {
                           variant="outlined"
                           size="small"
                           sx={{
-                            borderColor: "#FED358",
-                            color: "#FED358",
+                            borderColor: "#24ee89",
+                            color: "#24ee89",
                             // minWidth: "60px",
                             fontSize: "13px",
                             padding: "0px 16px",
@@ -1861,7 +1861,7 @@ const WithDraw = ({ children }) => {
                         fontSize: "15px",
                         color: "#221f2e", // Explicitly set text color
                         "&:hover": {
-                          bgcolor: "#FED358",
+                          bgcolor: "#24ee89",
                         },
                         "&.Mui-disabled": {
                           background: "rgb(144, 144, 144)", // Retain gradient for disabled state

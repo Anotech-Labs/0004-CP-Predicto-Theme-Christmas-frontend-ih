@@ -50,7 +50,7 @@ const RefundProcess = () => {
     WINGO: "Wingo",
     K3: "K3",
     FIVE_D: "5D",
-    CAR_RACE: "Car Race"
+    // CAR_RACE: "Car Race"
   };
 
   const timerLabels = {
@@ -322,7 +322,7 @@ const RefundProcess = () => {
               <MenuItem value="WINGO">Wingo</MenuItem>
               <MenuItem value="K3">K3</MenuItem>
               <MenuItem value="FIVE_D">5D</MenuItem>
-              <MenuItem value="CAR_RACE">Car Race</MenuItem>
+              {/* <MenuItem value="CAR_RACE">Car Race</MenuItem> */}
             </Select>
           </FormControl>
 
@@ -428,7 +428,7 @@ const RefundProcess = () => {
                   <Typography variant="h6" sx={{ mb: 1, color: "#24ee89 " }}>
                     Game Types Summary
                   </Typography>
-                  {refundData.gameTypeSummaries.map((summary, index) => (
+                 {refundData.gameTypeSummaries.filter((summary) => summary.gameType !== "CAR_RACE").map((summary, index) => (
                     <Box key={index} sx={{ mb: index < refundData.gameTypeSummaries.length - 1 ? 2 : 0 }}>
                       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 2 }}>
                         <Box sx={{ flex: 1, textAlign: "left" }}>

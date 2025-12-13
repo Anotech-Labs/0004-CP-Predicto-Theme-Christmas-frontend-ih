@@ -361,10 +361,10 @@ const InvitationRule = ({ children }) => {
               <TableContainer component={Paper} elevation={3} sx={{boxShadow:"none"}}>
                 <Table sx={{ minWidth: 350 }} aria-label="simple table">
                   <TableHead>
-                  <TableRow sx={{ bgcolor: "#cf7c10" }}>
+                  <TableRow sx={{ bgcolor: "#24ee89" }}>
                     <TableCell
                       sx={{
-                        color: "#FFFFFF",
+                        color: "#000000",
                         fontWeight: "bold",
                         p: "13px 0px 13px 5px", // Top padding is increased here
                         fontSize: "12.5px",
@@ -377,7 +377,7 @@ const InvitationRule = ({ children }) => {
                     </TableCell>
                     <TableCell
                       sx={{
-                        color: "#FFFFFF",
+                        color: "#000000",
                         fontWeight: "bold",
                         p: "13px 8px 13px 5px", // Top padding is increased here
                         fontSize: "12.2px",
@@ -391,7 +391,7 @@ const InvitationRule = ({ children }) => {
                     </TableCell>
                     <TableCell
                       sx={{
-                        color: "#FFFFFF",
+                        color: "#000000",
                         fontWeight: "bold",
                         p: "13px 8px 13px 5px", // Top padding is increased here
                         fontSize: "12.2px",
@@ -405,7 +405,7 @@ const InvitationRule = ({ children }) => {
                     </TableCell>
                     <TableCell
                       sx={{
-                        color: "#FFFFFF",
+                        color: "#000000",
                         fontWeight: "bold",
                         p: "13px 8px 13px 5px", // Top padding is increased here
                         fontSize: "12.5px",
@@ -463,7 +463,7 @@ const InvitationRule = ({ children }) => {
                                 top: "60%",
                                 left: "75%",
                                 transform: "translate(-50%, -50%)",
-                                color: "#fff670",
+                                color: "#000000",
                                 fontSize: "12.5px",
                               }}
                             >

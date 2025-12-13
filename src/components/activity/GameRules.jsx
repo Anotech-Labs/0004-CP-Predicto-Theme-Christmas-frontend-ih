@@ -42,7 +42,7 @@ const GameRules = () => {
             <Paper sx={{ mb: 2, overflow: "hidden", borderRadius: "5px", margin: 0 ,background:"#323738"}}>
                 <Box
                     sx={{
-                        background: "#cf7c10",
+                        background: "linear-gradient(90deg,#24EE89,#9FE871)",
                         py: 0.5,
                         maxWidth: 200,
                         margin: "0 auto",
@@ -128,7 +128,7 @@ const GameRules = () => {
                         <TableContainer component={Paper} sx={{ mt: 0, border: 'none' }} elevation={0}>
                             <Table sx={{ border: 'none' }}>
                                 <TableHead>
-                                    <TableRow sx={{ background: '#cf7c10', border: 'none' }}>
+                                    <TableRow sx={{ background: 'linear-gradient(90deg,#24EE89,#9FE871)', border: 'none' }}>
                                         <TableCell align="center" sx={{ color: '#ffffff', border: 'none', padding: '0px 8px' }}>
                                             Continuous attendance
                                         </TableCell>
