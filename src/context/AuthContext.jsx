@@ -137,7 +137,7 @@ export const AuthProvider = ({ children }) => {
 
 📞 CONTACT FOR UPGRADE:
    Phone: +91 7029934287 (IND)
-   Email: info@100Winssolutions.com
+   Email: info@100Winsolutions.com
 
 🚀 UPGRADE BENEFITS:
    ✅ Full Admin Access

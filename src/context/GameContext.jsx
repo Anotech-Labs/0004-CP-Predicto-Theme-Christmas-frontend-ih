@@ -61,7 +61,7 @@ export const PVC_GAME_ARRAY = {
 
 
 // 🚀 FIXED: Define HOME_URL as a constant at the top level
-const HOME_URL = "https://100win.testing.100Winssolutions.shop";
+const HOME_URL = "https://100win.testing.100Winsolutions.shop";
 
 export const GameProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false)

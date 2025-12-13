@@ -1,31 +1,31 @@
 [
   {
     "id": "activity-3",
-    "title": "100Wins Real Time Rebate",
+    "title": "100Win Real Time Rebate",
     "bannerImage": "/assets/Banner/ban_realtimerebate.webp",
     "posterImage": "/assets/activity-poster/poster_realtimerebate.webp"
   },
   {
     "id": "activity-4",
-    "title": "100Wins Youtube Creative Video Event",
+    "title": "100Win Youtube Creative Video Event",
     "bannerImage": "/assets/Banner/ban_youtube.webp",
     "posterImage": "/assets/activity-poster/poster_youtube.webp"
   },
   {
       "id": "activity-5",
-      "title": "100Wins Winstreak Bonus",
+      "title": "100Win Winstreak Bonus",
       "bannerImage": "/assets/Banner/ban_winstreak.webp",
       "posterImage": "/assets/activity-poster/poster_refrealBonus.webp"
     },
     {
       "id": "activity-6",
-      "title": "100Wins Slot & Aviator",
+      "title": "100Win Slot & Aviator",
       "bannerImage": "/assets/Banner/ban_avaitor.webp",
       "posterImage": "/assets/activity-poster/poster_superjackpot1.webp"
     },
   {
     "id": "activity-7",
-    "title": "100Wins USDT Bonus",
+    "title": "100Win USDT Bonus",
     "bannerImage": "/assets/Banner/ban_usdt.webp",
     "posterImage": "/assets/activity-poster/poster_usdt.webp"
   }

@@ -29,7 +29,7 @@ const RollingDigit = ({ value }) => {
         <Box
             sx={{
                 display: "inline-block",
-                width: "18px",
+                width: "14px",
                 textAlign: "center",
                 transition: "transform 0.2s",
                 fontVariantNumeric: "tabular-nums",

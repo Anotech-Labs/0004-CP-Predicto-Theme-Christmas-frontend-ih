@@ -50,7 +50,7 @@ function FirstDepositBonus({ children }) {
     navigate("/wallet/deposit")
   }
   const handleTabChange = (event, newValue) => {
-    setActiveTab(newValue);
+    // setActiveTab(newValue);
   };
 
   const formatDepositTypeName = (type) => {
@@ -76,7 +76,7 @@ function FirstDepositBonus({ children }) {
       <Paper sx={{ mb: 2, overflow: "hidden", borderRadius: "5px", margin: 0 ,background:"#323738"}}>
         <Box
           sx={{
-            bgcolor: "#cf7c10",
+            bgcolor: "#24EE89",
             py: 0.5,
             maxWidth: 200,
             margin: "0 auto",

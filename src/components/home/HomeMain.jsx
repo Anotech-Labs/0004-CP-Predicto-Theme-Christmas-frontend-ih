@@ -83,7 +83,7 @@ const HomeMain = ({ children }) => {
               zIndex: 9999,
             }}
           >
-            <LoadingLogo websiteName="100Wins Solutions" />
+            <LoadingLogo websiteName="100Win Solutions" />
           </div>
         )}
         <Box flexGrow={1}>
