@@ -53,7 +53,7 @@ const Mobile = ({ children }) => {
             position: "relative",
           }}
         >
-          {/* <ChristmasEffects numberOfSnowflakes={50} /> */}
+          <ChristmasEffects numberOfSnowflakes={50} />
           {children}
         </Box>
       </Container>
