@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import useMediaQuery from "@mui/material/useMediaQuery";
-// import ChristmasEffects from "../effects/Snowflakes";
+import ChristmasEffects from "../effects/Snowflakes";
 
 const Mobile = ({ children }) => {
   useEffect(() => {
