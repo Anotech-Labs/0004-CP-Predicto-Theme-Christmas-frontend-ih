@@ -9,7 +9,13 @@ export default function TrendingGamesMosaic() {
         sevenUp: "/assets/TrendingGames/7up7down_251210_69.webp",
         pappu: "/assets/TrendingGames/114.webp",
         roulette: "/assets/TrendingGames/EuropeanRoulette_251210_62.webp",
-        crazy: "/assets/TrendingGames/CrazyTime_251210_184.webp",
+        // crazy: "/assets/TrendingGames/CrazyTime_251210_184.webp",
+        rummy: "/assets/TrendingGames/JiliRummy.webp",
+        money: "/assets/TrendingGames/MoneyComing.webp",
+        andar: "/assets/TrendingGames/AndarBahar.webp",
+        fortune: "/assets/TrendingGames/FortuneGems.webp",
+        jhandi: "/assets/TrendingGames/JhandiMunda.webp",
+        thai: "/assets/TrendingGames/ThaiHilo.webp",
     };
 
     return (
@@ -46,7 +52,7 @@ export default function TrendingGamesMosaic() {
                     gridTemplateAreas: `
         "aviator seven"
         "pappu   seven"
-        "roulette crazy"
+        "roulette rummy"
       `,
                 }}
             >
@@ -60,7 +66,7 @@ export default function TrendingGamesMosaic() {
                         width: "100%",
                         paddingBottom: "56.25%", // 16:9 aspect ratio
                     }}
-                    onClick={() => handleApiClick(1,"SPRIBE", "SPRIBE" )}
+                    onClick={() => handleApiClick(1, "SPRIBE", "SPRIBE")}
                 >
                     <Box
                         component="img"
@@ -88,7 +94,7 @@ export default function TrendingGamesMosaic() {
                         width: "100%",
                         paddingBottom: "133.33%", // 3:4 aspect ratio (spans 2 rows)
                     }}
-                    onClick={() => handleApiClick(51,"JILI", "SLOT" )}
+                    onClick={() => handleApiClick(51, "JILI", "SLOT")}
                 >
                     <Box
                         component="img"
@@ -116,7 +122,7 @@ export default function TrendingGamesMosaic() {
                         width: "100%",
                         paddingBottom: "56.25%", // 16:9 aspect ratio
                     }}
-                    onClick={() => handleApiClick(52,"JILI", "SLOT" )}
+                    onClick={() => handleApiClick(52, "JILI", "SLOT")}
                 >
                     <Box
                         component="img"
@@ -144,7 +150,7 @@ export default function TrendingGamesMosaic() {
                         width: "100%",
                         paddingBottom: "56.25%", // 16:9 aspect ratio
                     }}
-                    onClick={() => handleApiClick(53,"JILI", "SLOT" )}
+                    onClick={() => handleApiClick(53, "JILI", "SLOT")}
                 >
                     <Box
                         component="img"
@@ -162,21 +168,178 @@ export default function TrendingGamesMosaic() {
                     />
                 </Box>
 
-                {/* Crazy Time - bottom-right */}
+                {/* rummy Time - bottom-right */}
                 <Box
                     sx={{
-                        gridArea: "crazy",
+                        gridArea: "rummy",
                         borderRadius: "10px",
                         overflow: "hidden",
                         position: "relative",
                         width: "100%",
                         paddingBottom: "56.25%", // 16:9 aspect ratio
                     }}
+                    onClick={() => handleApiClick(58, "JILI", "SLOT")}
+
                 >
                     <Box
                         component="img"
-                        src={items.crazy}
-                        alt="Crazy Time"
+                        src={items.rummy}
+                        alt="rummy Time"
+                        sx={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            display: "block"
+                        }}
+                    />
+                </Box>
+            </Box>
+            <Box
+                sx={{
+                    display: "grid",
+                    width: "calc(100% - 20px)",
+                    px: "10px",
+                    gap: 1.5,
+                    pb: 2,
+                    gridTemplateColumns: "repeat(2, 1fr)",
+                    gridAutoRows: "minmax(0, 1fr)",
+                    gridTemplateAreas: `
+        "thai money"
+        "thai fortune"
+        "jhandi andar"
+      `,
+                }}
+            >
+                {/* Money - top-left */}
+                <Box
+                    sx={{
+                        gridArea: "money",
+                        borderRadius: "10px",
+                        overflow: "hidden",
+                        position: "relative",
+                        width: "100%",
+                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                    }}
+                    onClick={() => handleApiClick(39, "JILI", "SLOT")}>
+                    <Box
+                        component="img"
+                        src={items.money}
+                        alt="money"
+                        sx={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            display: "block"
+                        }}
+                    />
+                </Box>
+                {/* Fortune - second row left */}
+                <Box
+                    sx={{
+                        gridArea: "fortune",
+                        borderRadius: "10px",
+                        overflow: "hidden",
+                        position: "relative",
+                        width: "100%",
+                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                    }}
+                    onClick={() => handleApiClick(50, "JILI", "SLOT")}
+                >
+                    <Box
+                        component="img"
+                        src={items.fortune}
+                        alt="fortune"
+                        sx={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            display: "block"
+                        }}
+                    />
+                </Box>
+
+                {/* Thai - top-right and spans second row */}
+                <Box
+                    sx={{
+                        gridArea: "thai",
+                        borderRadius: "10px",
+                        overflow: "hidden",
+                        position: "relative",
+                        width: "100%",
+                        paddingBottom: "133.33%", // 3:4 aspect ratio (spans 2 rows)
+                    }}
+                    onClick={() => handleApiClick(54, "JILI", "SLOT")}
+                >
+                    <Box
+                        component="img"
+                        src={items.thai}
+                        alt="thai"
+                        sx={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            display: "block"
+                        }}
+                    />
+                </Box>
+
+
+                {/* Jhandi - bottom-left */}
+                <Box
+                    sx={{
+                        gridArea: "jhandi",
+                        borderRadius: "10px",
+                        overflow: "hidden",
+                        position: "relative",
+                        width: "100%",
+                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                    }}
+                    onClick={() => handleApiClick(55, "JILI", "SLOT")}
+                >
+                    <Box
+                        component="img"
+                        src={items.jhandi}
+                        alt="jhandi"
+                        sx={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            display: "block"
+                        }}
+                    />
+                </Box>
+
+                {/* Andar  - bottom-right */}
+                <Box
+                    sx={{
+                        gridArea: "andar",
+                        borderRadius: "10px",
+                        overflow: "hidden",
+                        position: "relative",
+                        width: "100%",
+                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                    }}
+                    onClick={() => handleApiClick(56, "JILI", "SLOT")}
+                >
+                    <Box
+                        component="img"
+                        src={items.andar}
+                        alt="andar"
                         sx={{
                             position: "absolute",
                             top: 0,

@@ -142,7 +142,7 @@ const HomeMain = ({ children }) => {
                       lineHeight: "30px",
                       fontWeight: "600",
                     }}
-                    onClick={() =>  navigate("/login")}
+                    onClick={() => navigate("/login")}
                   >
                     Sign In
                   </Button>
@@ -161,7 +161,7 @@ const HomeMain = ({ children }) => {
                       boxShadow:
                         "0 0 12px rgba(35,238,136,.3), inset 0 -2px #1dca6a",
                     }}
-                    onClick={() =>  navigate("/register")}
+                    onClick={() => navigate("/register")}
                   >
                     Sign Up
                   </Button>
@@ -212,7 +212,7 @@ const HomeMain = ({ children }) => {
                   {/* Rupee Amount */}
                   <Typography
                     sx={{
-                      fontSize: "14px",
+                      fontSize: String(userWallet).length <= 4 ? "14px" : "12px",
                       color: "#fff",
                       fontWeight: 500,
                       mr: 1,
@@ -270,7 +270,7 @@ const HomeMain = ({ children }) => {
                   <Divider />
                   {/* Gift Icon */}
                   <IconButton sx={{ p: 0.5 }}
-                  onClick={() => navigate("/gift-coupon")}>
+                    onClick={() => navigate("/gift-coupon")}>
                     <Gift style={{ color: "white" }} />
                   </IconButton>
 
